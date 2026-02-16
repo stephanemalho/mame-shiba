@@ -1,14 +1,14 @@
 export const pageContent = {
     home: {
-        h1: "Elevage de Pomsky 🐺 Royal POMSKY",
+        h1: "Bienvenue dans notre élevage de Shiba Inu - Kawaii Shiba, MAMESHIBA",
         h1Subtitle:
-            "Premier élevage de Pomsky en France, et de lignées Américaines",
+            "Nous sommes parmi les premiers élevages de France",
         description:
-            "Royal Pomsky se situe dans la commune de SAINT-AMOUR (39160) en région Bourgogne Franche Comté. C'est le premier élevage de Pomsky en France ayant fait le choix de débuter sa sélection en 2017 avec des lignées Américaines : directement au berceau de la race, pour amener en France le Pomsky absolument parfait.",
+            "Nos mame-shiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine : l'excellence des lignées importées",
         descriptionSecondary:
-            "Depuis notre première portée née en 2018, notre objectif est de vous apporter le meilleur et l'excellence version Pomsky : Un physique parfait, une santé de fer, une expertise comportementale, une sociabilisation parfaite, un suivi tout au long de la vie du chiot.",
+            "L'élevage Kawaii Shiba est situé dans le JURA, 39 dans la commune de SAINT AMOUR",
         descriptionTertiary:
-            "Nous avons rédigé plusieurs articles contenant de très nombreuses informations, merci d'en prendre connaissance avant d'envisager l'adoption de votre chiot ! Vous pourrez ensuite consulter la page de nos chiots pomsky disponibles en cliquant ci-dessous :"
+            "Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et adoration pour la culture Japonaise nous a mené tout droit jusqu'à un véritable coup de cœur : LE MAMESHIBA ! "
     },
     pomsky: {
         h1: "Le Pomsky : taille, tempérament, origines et adoption responsable",

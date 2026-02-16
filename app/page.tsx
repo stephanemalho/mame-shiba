@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
-import { pomskyBenefits } from "@/components/content/home/pomsky/pomskyBenefits"
+import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
 import { pageContent } from "@/lib/page-content"
 
 export const metadata: Metadata = {
@@ -48,9 +48,9 @@ export default function HomePage() {
   const founders = [
     {
       name: "Aurélie",
-      image: "/assets/authors/aurelie-violette-elevage-royal-pomsky.webp",
+      image: "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
       description:
-        "Aurélie est une passionnée par les chiens et courses de traîneaux depuis sa plus tendre enfance: la sélection du cheptel royal Pomsky repose sur son expertise! Éducatrice comportementaliste, elle a collaboré avec de nombreux centres de rééducation, éducation canine ainsi que des associations de protection animale tels que la S.P.A: après des années de pratique en éducation elle se spécialise dans l'élevage canin grâce au Pomsky : depuis 2018. « L'idée la plus extraordinaire créée dans ma génération : un husky miniature possédant toutes les qualités d'un chien de compagnie ! Pour moi, pas question de créer une race en faisant des essais, je me suis tournée vers les éleveurs Américains qui m'ont appris à sélectionner et importer dès la première portée des reproducteurs exceptionnels. Faire naître et voir évoluer un chien ressemblent physiquement au nordique, au husky, ou au malamute, en miniature avec un comportement totalement équilibré est une honneur absolu, un bonheur et un privilège. Je ne trouve absolument aucun « défaut » à mes Pomsky, ils sont juste parfaits et adaptés à tout mode de vie, et c'est'objectif que je m'étais fixée depuis 2018 » Sa grande expérience, sa sensibilité la mène également vers la communication animale depuis 2020. Avec Aurélie votre suivi sera totalement holistique et ce durant toute la vie de votre chiot Pomsky. Ses grandes connaissances en matière de santé et soins prodigués à l'animal pourront également vous être très utiles.",
+        "Aurélie est passionnée par les chiens de type primitif et la culture japonaise depuis toujours. Son coup de cœur pour le Mameshiba l'a conduite à mettre son expertise d'éducatrice comportementaliste au service d'un accompagnement doux et exigeant. Elle privilégie la socialisation, l'équilibre émotionnel et le lien humain-chien, avec une approche positive qui respecte l'identité sensible et indépendante du Mameshiba.",
       badges: [
         "diplômée éducateur canin comportementaliste",
         "Ancienne éducatrice comportementaliste",
@@ -63,7 +63,7 @@ export default function HomePage() {
       name: "Marine",
       image: "/assets/authors/marine-ava.webp",
       description:
-        "Marine a suivi Aurelie dans l'aventure Pomsky, car à deux, la meute est absolument bichonnée ! Autodidacte, carrée c'est une véritable perfectionniste : ancienne responsable de boutique dans une grande enseigne spécialisée en automobile, Marine a l'esprit de leader : avec elle les locaux doivent être entretenus de façon très protocolaire afin que nos chiots évoluent dans des conditions optimales pour leur santé et leur bien être. Chaque chiot est soigneusement ausculté chaque jour, elle porte attention à chaque caractère également grâce à son instinct d'anticipation, chaque petit est bichonné dès sa naissance ! Son niveau d'exigence est extrêmement élevé, voir militaire : rien n'échappe aux yeux de Marine ! Chaque jour elle passe beaucoup de temps avec les chiens adultes, les chiots, elle les connaît absolument par cœur. Observatrice, elle sait anticiper ce dont chacun a besoin. Le bien être animal, les conditions sanitaires sont sa priorité. Marine gère le côté administratif de l'élevage ! C'est donc elle qui prépare soigneusement les formalités pour le départ.",
+        "Marine a rejoint l'aventure Mameshiba pour garantir un cadre stable et serein à chaque chien. Observatrice et méthodique, elle veille au bien-être quotidien, aux routines et à l'équilibre des groupes. Son exigence sur la propreté, la régularité des soins et l'organisation permet à chaque Mameshiba d'évoluer dans un environnement sain, apaisant et rassurant.",
       badges: [
         "4 ans d'expérience en élevage canin",
         "Protocoles d'hygiène rigoureux",
@@ -95,8 +95,8 @@ export default function HomePage() {
             {/* Image de fond (desktop only) */}
             <div className="absolute inset-0 z-0 m-auto hidden md:block">
               <Image
-                src="/cute-pomsky-looking-us.webp"
-                alt="Un chiot pomsky regarde tendrement l'objectif pour nous acceuillir"
+                src="/mame-shiba-in-a-sakura-tree.jpg"
+                alt="Un mame-shiba sur un cerisier regarde tendrement au loins"
                 fill
                 className="object-cover scale-105 transition-transform duration-2000 group-hover:scale-110"
                 priority
@@ -105,17 +105,15 @@ export default function HomePage() {
                 sizes="100vw"
                 quality={70}
               />
-              <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/45 to-black/75" aria-hidden="true" />
-              <div className="absolute inset-0 opacity-60 [background:radial-gradient(900px_circle_at_center,rgba(255,255,255,0.08),transparent_55%)]" aria-hidden="true" />
             </div>
             {/* Fallback background (mobile) */}
             <div
               className="absolute inset-0 z-0 md:hidden bg-linear-to-b from-[#4a2f1a] via-[#24160b] to-black"
               aria-hidden="true"
             />
-            <div className="relative z-10 text-center space-y-8 px-6 max-w-3xl py-10 mx-auto rounded-2xl border border-white/15 bg-black/35 backdrop-blur-md shadow-[0_30px_120px_rgba(0,0,0,0.55)]">
+            <div className="relative z-10 text-center space-y-8 px-6 max-w-3xl py-10 mx-auto rounded-2xl border border-white/15 bg-[#39210199] backdrop-blur-md shadow-[0_30px_120px_rgba(0,0,0,0.55)]">
               <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
-                Royal Pomsky
+                Kawaii Shiba - MAMESHIBA
               </div>
               <h1 className="text-2xl md:text-4xl font-semibold tracking-wide text-white">
                 {pageContent.home.h1}
@@ -132,7 +130,7 @@ export default function HomePage() {
                     <div className="relative aspect-4/5">
                       <Image
                         src="/SUSHI-pomsky.webp"
-                        alt="SUSHI pomsky gris et blanc avec un oeil bleu et un oeil marron"
+                        alt="Sushi, mameshiba gris et blanc avec un oeil bleu et un oeil marron"
                         fill
                         className="object-cover"
                         sizes="(max-width: 640px) 85vw, 360px"
@@ -152,39 +150,48 @@ export default function HomePage() {
               </div>
               <Link
                 href="/chiots-disponibles"
-                className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="inline-flex items-center justify-center rounded-sm border border-white/30 bg-white/10 px-6 py-3 mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
-                Voir les chiots Pomsky disponibles
+                Voir les chiots Mameshiba disponibles
               </Link>
             </div>
           </div>
 
         </section>
         {/* Contenu centré */}
-        {/* Présentation élevage */}
+        {/* Présentation Mameshiba */}
         <section className="py-16 bg-muted/30 my-8">
           <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center p-2">
               <div className="space-y-6">
                 <Badge variant="secondary" className="w-fit">
-                  Notre élevage
+                  Le Mameshiba
                 </Badge>
 
-                <h2 className="text-xl md:text-2xl font-bold">Des Pomsky élevés par des professionnelles passionnées, dans le respect de la race
+                <h2 className="text-xl md:text-2xl font-bold">
+                  Le Mameshiba, un Shiba Inu miniature d'origine japonaise
                 </h2>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Alors que la création de la race commençait à arriver en France et s'effectuait par des croisements au résultat aléatoire, aux caractéristiques physiques et comportementales peu précises, <strong>nous avons fait le choix d'importer nos premiers Pomsky directement aux États Unis d'Amérique</strong> dans le but d'apporter aux futurs adoptants de nos chiots un physique prévisible, un comportement prévisible, et une construction de la race avec une stabilisation des le départ : chez nous, aucune place pour le hasard depuis le début.
+                  Le Mameshiba est un véritable Shiba Inu, mais de taille miniature. Le mot
+                  « mame » signifie haricot en japonais : une façon affectueuse de parler
+                  d'un petit chien au charme intact. Rare en Europe, il s'inscrit dans une
+                  sélection rigoureuse menée au Japon depuis des décennies.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  <strong>Nos Pomsky sont uniques et font entièrement partie de notre univers</strong>, ils sont nos protégés ! Ils sont aimés et représentent notre passion et notre fierté, ils sont dans nos pensées permanentes, nous accompagnent à chaque instant.
-                  ils sont constamment au cœur de nos préoccupations.
+                  Le club de race japonais (KCJ) a officialisé le nom « Mameshiba » et
+                  a débuté les enregistrements en 2008. Cette reconnaissance souligne
+                  l'exigence autour de la généalogie et du type, afin de préserver un
+                  Shiba Inu miniature fidèle à son héritage.
                 </p>
 
                 <div className="space-y-2">
-                  <h3 className="font-semibold">Des Pomsky de tailles miniature et toy élevés dans le bonheur</h3>
+                  <h3 className="font-semibold">Un petit primitif de noble origine</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Notre élevage est situé dans le Jura (39), en France. Chez Royal Pomsky, nous n'expédions jamais nos chiots à distance,  Ils sont à adopter sur place, après visite de l'élevage et rencontre avec les parents. sauf cas particulier ( raison de santé, impossibilité de déplacement etc… ) votre demande sera étudiée au cas par cas après un entretien en appel visio
+                    Héritier direct du Shiba Inu, le Mameshiba conserve le tempérament
+                    vif et l'allure noble des chiens primitifs japonais. Il est connu pour
+                    sa curiosité, son intelligence et sa capacité à créer un lien profond,
+                    tout en gardant une part d'indépendance.
                   </p>
                 </div>
 
@@ -192,14 +199,14 @@ export default function HomePage() {
                   href="/presentation-elevage"
                   className="bg-primary text-white hover:bg-primary/80 p-4 font-semibold inline-block dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  Découvrir notre élevage
+                  Découvrir la race Mameshiba
                 </Link>
               </div>
 
               <div className="relative w-full aspect-video md:h-200 h-125 md:aspect-4/5 overflow-hidden rounded-lg">
                 <Image
-                  src="/MIKKY-pomsky-puppy.webp"
-                  alt="Mikky pomsky chiots levant les deux pattes avant"
+                  src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
+                  alt="Chiot Mame-Shiba blanc dans un décoe japonais"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 85vw, 50vw"
@@ -236,27 +243,25 @@ export default function HomePage() {
 
         </div>
       </section> */}
-        {/* Pourquoi choisir un pomsky */}
+        {/* Pourquoi choisir un Mameshiba */}
         <section className="py-16 my-8 bg-muted/30">
           <div className="container mx-auto p-2">
             <div className="text-center space-y-4 mb-10">
               <h2 className="text-xl md:text-2xl font-bold">
-                Pourquoi choisir un pomsky nain ou Toy ?
+                Pourquoi choisir un Mameshiba ?
               </h2>
 
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Petit chien au grand cœur, <strong>
-                  le pomsky nain et le pomsky Toy sont deux
-                  variétés de petit gabarit
-                </strong>, reconnues pour leur intelligence vive et leur
-                grande proximité avec leur famille.
+                Petit chien au grand cœur, <strong>le Mameshiba</strong> est un
+                Shiba Inu miniature réputé pour son intelligence vive, sa finesse de
+                communication et son attachement discret mais profond à sa famille.
               </p>
 
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              {pomskyBenefits.map((item) => (
+              {shibaBenefits.map((item) => (
                 <Card key={item.title} className="overflow-hidden bg-muted/70 p-2">
                   <div className="relative aspect-4/3 rounded-lg overflow-hidden">
                     <Image
@@ -283,7 +288,7 @@ export default function HomePage() {
             href="/le-pomsky"
             className="flex my-12 bg-primary m-auto text-white hover:bg-primary/80 p-4 font-semibold w-fit dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            En savoir plus sur le pomsky
+            En savoir plus sur le Mameshiba
           </Link>
         </section>
 
@@ -295,11 +300,10 @@ export default function HomePage() {
               <p className="text-muted-foreground max-w-3xl mx-auto text-sm leading-relaxed">
                 Derrière l'élevage se trouvent <strong>Aurélie et Marine</strong>, deux
                 éleveuses passionnées par le bien-être animal et unies par un amour
-                profond pour le <strong>pomsky miniature et le pomsky toy</strong>.
-                Issues de parcours complémentaires dans l'éducation, le comportement et
-                l'élevage canin, elles accordent une attention particulière à la
-                socialisation, à l'équilibre émotionnel et au développement harmonieux de
-                chaque chiot.
+                profond pour le Japon et le <strong>Mameshiba</strong>. Issues de parcours
+                complémentaires dans l'éducation, le comportement et l'élevage canin,
+                elles accordent une attention particulière à la socialisation, à
+                l'équilibre émotionnel et au développement harmonieux de chaque chiot.
               </p>
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
             </div>
@@ -313,50 +317,54 @@ export default function HomePage() {
                   aria-label={`Lire la présentation de ${founder.name}`}
                 >
                   <article className="relative text-center bg-muted/70 rounded-lg overflow-hidden">
-                  <div className="absolute top-4 left-4 md:flex hidden flex-col items-start gap-2 z-10">
-                    {founder.badges.map((badge, badgeIdx) => (
-                      <Badge
-                        key={badgeIdx}
-                        variant="secondary"
-                        className="text-[11px] shadow-sm p-2 backdrop-blur-sm bg-background/85"
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="relative w-full aspect-square">
-                    <Image
-                      src={founder.image || "/placeholder.svg"}
-                      alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      quality={70}
-                    />
-                  </div>
+                    <div
+                      className={`absolute top-4 ${
+                        index === 0 ? "right-4 items-end" : "left-4 items-start"
+                      } md:flex hidden flex-col gap-2 z-10`}
+                    >
+                      {founder.badges.map((badge, badgeIdx) => (
+                        <Badge
+                          key={badgeIdx}
+                          variant="secondary"
+                          className="text-[11px] shadow-sm p-2 backdrop-blur-sm bg-background/85"
+                        >
+                          {badge}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="relative w-full aspect-square">
+                      <Image
+                        src={founder.image || "/placeholder.svg"}
+                        alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        quality={70}
+                      />
+                    </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">{founder.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {founder.description}
-                    </p>
-                  </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold mb-2">{founder.name}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {founder.description}
+                      </p>
+                    </div>
                   </article>
                 </Link>
               ))}
             </div>
             <div className="text-center space-y-4 my-12">
               <h3 className="text-xl md:text-2xl font-semibold">
-                Vous souhaitez adopter un pomsky miniature ou toy ?
+                Vous souhaitez adopter un Mameshiba ?
               </h3>
               <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-                Échangeons ensemble sur votre projet d'adoption et trouvons le pomsky qui correspond le mieux à votre mode de vie.
+                Échangeons ensemble sur votre projet d'adoption et trouvons le Mameshiba qui correspond le mieux à votre mode de vie.
               </p>
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
             </div>
             <Link
               href="/contact"
-              aria-label="Contacter les éleveuses pour un projet d'adoption de pomsky"
+              aria-label="Contacter les éleveuses pour un projet d'adoption de Mameshiba"
               className="flex my-12 bg-primary m-auto text-white hover:bg-primary/80 p-4 font-semibold w-fit dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Contacter Aurélie et Marine
@@ -364,8 +372,8 @@ export default function HomePage() {
           </div>
         </section>
         <FAQSection
-          title="FAQ pomsky en bref"
-          description="Les points clés sur l'élevage Royal POMSKY en bref."
+          title="FAQ Mameshiba en bref"
+          description="Les points clés sur le Mameshiba en bref."
           items={faqHome}
         />
         <div className="container mx-auto text-right text-xs text-muted-foreground my-6">

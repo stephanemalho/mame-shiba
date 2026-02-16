@@ -18,7 +18,7 @@ export function Navigation() {
                 <Link href="/" className="flex items-center space-x-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
                     <div className="h-10 w-10 relative">
                         <Image
-                            src="/logo-royal-pomsky-black.webp"
+                            src="/logo-kawaii-mame-shiba.png"
                             alt="logo Royal POMSKY - Elevage de pomsky"
                             fill
                             sizes="40px"
@@ -26,7 +26,7 @@ export function Navigation() {
                             quality={80}
                         />
                     </div>
-                    <span className="text-xl font-bold text-primary">Royal POMSKY</span>
+                    <span className="text-xl font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
                 </Link>
 
                 {/* Desktop Navigation */}
