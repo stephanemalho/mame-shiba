@@ -130,7 +130,7 @@ export default function HomePage() {
                   <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-xl border border-white/15 shadow-[0_18px_60px_rgba(0,0,0,0.45)]">
                     <div className="relative aspect-4/5">
                       <Image
-                        src="/pages/homepage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
+                        src="/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
                         alt="Sushi, mameshiba gris et blanc avec un oeil bleu et un oeil marron"
                         fill
                         className="object-cover"
