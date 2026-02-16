@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
-import { faqPomsky } from "@/lib/faq-data"
+import { faqMameShiba } from "@/lib/faq-data"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { pageContent } from "@/lib/page-content"
@@ -98,7 +98,7 @@ export default function dogPage() {
         { name: "Accueil", url: "/" },
         { name: "Le Pomsky", url: siteConfig.pages.pomsky },
     ])
-    const faqSchema = generateFAQSchema(convertFAQsToSchema(faqPomsky))
+    const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameShiba))
     const lastMod = returnLastmod(siteConfig.pages.pomsky)
 
     return (
@@ -509,7 +509,7 @@ export default function dogPage() {
                     <FAQSection
                         title="FAQ sur le Pomsky"
                         description="Comportement, cohabitation, tailles et prix : tout ce qu'il faut savoir avant d'adopter."
-                        items={faqPomsky}
+                        items={faqMameShiba}
                     />
 
                     <div className="text-right text-xs text-muted-foreground mt-6">

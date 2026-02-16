@@ -23,7 +23,7 @@ export function Footer() {
                             <span className="text-lg font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            Elevage Professionel de pomsky Toys, miniatures, et standards dans le Jura (39). Santé, socialisation et accompagnement des familles.
+                            Elevage Professionel de Mame-Shiba dans le Jura (39). Santé, socialisation et accompagnement des familles.
                         </p>
                     </div>
 
@@ -148,29 +148,29 @@ export function Footer() {
                         <h3 className="font-semibold mb-4">Suivez-nous</h3>
                         <div className="flex space-x-4">
                             <a
-                                href="https://www.facebook.com/elevageroyalpomsky"
+                                href="https://www.facebook.com/people/Elevage-Mameshiba-Kawaii-Shiba/100088811580709"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez-nous sur Facebook (lien externe)"
+                                aria-label="Suivez Kawaii mame shiba sur Facebook (lien externe)"
                             >
                                 <Facebook className="h-5 w-5" aria-hidden="true" />
                             </a>
                             <a
-                                href="https://www.instagram.com/royalpomsky/"
+                                href="https://www.instagram.com/mameshiba.france/?hl=fr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez-nous sur Instagram (lien externe)"
+                                aria-label="Suivez Kawaii mame shiba sur Instagram (lien externe)"
                             >
                                 <Instagram className="h-5 w-5" aria-hidden="true" />
                             </a>
                             <a
-                                href="https://www.tiktok.com/@royalpomsky"
+                                href="https://www.tiktok.com/@kawaiimameshiba"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez-nous sur TikTok (lien externe)"
+                                aria-label="Suivez Kawaii mame shiba sur TikTok (lien externe)"
                             >
                                 <FaTiktok className="h-5 w-5" aria-hidden="true" />
                             </a>
