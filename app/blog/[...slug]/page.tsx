@@ -43,12 +43,12 @@ export async function generateMetadata({
             title: pageMetadata.blog.title,
             description: pageMetadata.blog.description,
             alternates: {
-                canonical: new URL("/blog/pomsky", siteConfig.siteUrl).toString(),
+                canonical: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
             },
             openGraph: buildOpenGraph({
                 title: pageMetadata.blog.title,
                 description: pageMetadata.blog.description,
-                url: new URL("/blog/pomsky", siteConfig.siteUrl).toString(),
+                url: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
                 images: [
                     {
                         url: new URL(siteConfig.ogImage, siteConfig.siteUrl).toString(),
@@ -119,7 +119,7 @@ export default async function BlogArticlePage({
         <div className="bg-background text-foreground">
             <header className="max-w-4xl mx-auto px-6 pt-12 md:pt-16 pb-8">
                 <Link
-                    href="/blog/pomsky"
+                    href="/blog/mame-shiba"
                     className="text-xs uppercase tracking-[0.2em] text-muted-foreground underline hover:text-foreground/80"
                 >
                     ← {articleLabels.backToBlog}
@@ -216,7 +216,7 @@ export default async function BlogArticlePage({
                                     {post.contactCta.label}
                                 </Link>
                                 <Link
-                                    href="/blog/pomsky"
+                                    href="/blog/mame-shiba"
                                     className="text-xs uppercase tracking-[0.2em] text-muted-foreground underline hover:text-foreground/80"
                                 >
                                     ← {articleLabels.backToBlog}

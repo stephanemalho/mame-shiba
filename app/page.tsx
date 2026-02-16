@@ -8,8 +8,9 @@ import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
-import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
+
 import { pageContent } from "@/lib/page-content"
+import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
 
 export const metadata: Metadata = {
   title: pageMetadata.home.title,
@@ -108,10 +109,10 @@ export default function HomePage() {
             </div>
             {/* Fallback background (mobile) */}
             <div
-              className="absolute inset-0 z-0 md:hidden bg-linear-to-b from-[#4a2f1a] via-[#24160b] to-black"
+              className="absolute inset-0 z-0 md:hidden bg-linear-to-b from-[#AB7F55] via-[#24160b] to-black"
               aria-hidden="true"
             />
-            <div className="relative z-10 text-center space-y-8 px-6 max-w-3xl py-10 mx-auto rounded-2xl border border-white/15 bg-[#39210199] backdrop-blur-md shadow-[0_30px_120px_rgba(0,0,0,0.55)]">
+            <div className="relative z-10 text-center space-y-8 px-6 max-w-3xl py-10 mx-auto md:rounded-2xl border border-white/15 bg-[#39210199] backdrop-blur-md shadow-[0_30px_120px_rgba(0,0,0,0.55)]">
               <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
                 Kawaii Shiba - MAMESHIBA
               </div>
@@ -129,7 +130,7 @@ export default function HomePage() {
                   <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-xl border border-white/15 shadow-[0_18px_60px_rgba(0,0,0,0.45)]">
                     <div className="relative aspect-4/5">
                       <Image
-                        src="/SUSHI-pomsky.webp"
+                        src="/pages/homepage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
                         alt="Sushi, mameshiba gris et blanc avec un oeil bleu et un oeil marron"
                         fill
                         className="object-cover"
@@ -285,7 +286,7 @@ export default function HomePage() {
             </div>
           </div>
           <Link
-            href="/le-pomsky"
+            href="/le-mame-shiba"
             className="flex my-12 bg-primary m-auto text-white hover:bg-primary/80 p-4 font-semibold w-fit dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             En savoir plus sur le Mameshiba

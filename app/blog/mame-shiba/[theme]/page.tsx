@@ -25,7 +25,7 @@ export async function generateMetadata({
             title: pageMetadata.blog.title,
             description: pageMetadata.blog.description,
             alternates: {
-                canonical: new URL("/blog/pomsky", siteConfig.siteUrl).toString(),
+                canonical: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
             },
         };
     }
@@ -33,7 +33,7 @@ export async function generateMetadata({
     const title = `${themeData.label} | Blog Pomsky`;
     const description =
         themeData.description ?? pageMetadata.blog.description;
-    const canonicalPath = `/blog/pomsky/${themeData.slug}`;
+    const canonicalPath = `/blog/mame-shiba/${themeData.slug}`;
 
     return {
         title,

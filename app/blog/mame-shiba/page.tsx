@@ -8,12 +8,12 @@ export const metadata: Metadata = {
     description: pageMetadata.blog.description,
     keywords: pageMetadata.blog.keywords,
     alternates: {
-        canonical: new URL("/blog/pomsky", siteConfig.siteUrl).toString(),
+        canonical: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
     },
     openGraph: buildOpenGraph({
         title: pageMetadata.blog.title,
         description: pageMetadata.blog.description,
-        url: new URL("/blog/pomsky", siteConfig.siteUrl).toString(),
+        url: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
         type: "website",
         images: [
             {

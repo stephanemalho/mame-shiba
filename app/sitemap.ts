@@ -18,22 +18,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
             | "monthly"
             | "yearly"
             | "never",
-        priority: page.priority,
+        priority: page.priority
     }));
 
     const blogListEntry: MetadataRoute.Sitemap[number] = {
-        url: toUrl("/blog/pomsky"),
+        url: toUrl("/blog/mame-shiba"),
         changeFrequency: "weekly",
         priority: 0.8,
-        lastModified: "2026-02-13",
+        lastModified: "2026-02-13"
     };
 
     const blogThemeEntries: MetadataRoute.Sitemap = blog.themes.map(
         (theme): MetadataRoute.Sitemap[number] => ({
-            url: toUrl(`/blog/pomsky/${theme.slug}`),
+            url: toUrl(`/blog/mame-shiba/${theme.slug}`),
             changeFrequency: "monthly",
             priority: 0.6,
-            lastModified: "2026-02-13",
+            lastModified: "2026-02-13"
         })
     );
 
@@ -42,9 +42,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: toUrl(`/blog/${post.slug}`),
             lastModified: post.date,
             changeFrequency: "monthly",
-            priority: 0.7,
+            priority: 0.7
         })
     );
 
-    return [...staticPages, blogListEntry, ...blogThemeEntries, ...blogPostEntries];
+    return [
+        ...staticPages,
+        blogListEntry,
+        ...blogThemeEntries,
+        ...blogPostEntries
+    ];
 }

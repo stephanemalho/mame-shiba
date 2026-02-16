@@ -12,15 +12,15 @@ export function Footer() {
                         <div className="flex items-center space-x-2">
                             <div className="h-10 w-10 relative">
                                 <Image
-                                    src="/logo-royal-pomsky-black.webp"
-                                    alt="logo de Royal POMSKY - Elevage de pomsky pour toute la france"
+                                    src="/logo-kawaii-mame-shiba.png"
+                                    alt="logo Royal POMSKY - Elevage de pomsky"
                                     fill
                                     sizes="40px"
                                     className="object-contain"
                                     quality={80}
                                 />
                             </div>
-                            <span className="text-lg font-bold text-primary">Royal POMSKY</span>
+                            <span className="text-lg font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
                             Elevage Professionel de pomsky Toys, miniatures, et standards dans le Jura (39). Santé, socialisation et accompagnement des familles.
@@ -40,10 +40,10 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/le-pomsky"
+                                    href="/le-mame-shiba"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Le Pomsky
+                                    Le Mame-Shiba
                                 </Link>
                             </li>
                             <li>

@@ -19,8 +19,8 @@ const navGroups = [
         label: "Découvrir",
         items: [
             {
-                title: "Le Pomsky",
-                href: "/le-pomsky",
+                title: "Le Mame-Shiba",
+                href: "/le-mame-shiba",
                 description: "Taille, tempérament, origines et adoption responsable.",
             },
             {

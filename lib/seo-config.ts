@@ -98,7 +98,7 @@ export const siteConfig = {
     /* ------------------------------- Pages ------------------------------------ */
     pages: {
         home: "/",
-        pomsky: "/le-pomsky",
+        pomsky: "/le-mame-shiba",
         puppies: "/chiots-disponibles",
         reproductors: "/femelles-reproductrices",
         presentation: "/presentation-elevage",
@@ -369,7 +369,7 @@ export const sitemapPages = [
         lastmod: "2026-02-13"
     },
     {
-        url: "/le-pomsky",
+        url: "/le-mame-shiba",
         changefreq: "monthly",
         priority: 0.75,
         lastmod: "2026-02-13"

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: buildOpenGraph({
         title: pageMetadata.pomsky.title,
         description: pageMetadata.pomsky.description,
-        url: `${siteConfig.siteUrl}/le-pomsky`,
+        url: `${siteConfig.siteUrl}/le-mame-shiba`,
         images: [
             {
                 url: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         imageUrl: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
     }),
     alternates: {
-        canonical: `${siteConfig.siteUrl}/le-pomsky`,
+        canonical: `${siteConfig.siteUrl}/le-mame-shiba`,
     },
 }
 
@@ -354,7 +354,7 @@ export default function dogPage() {
                                             Le regard est intense et expressif, ce qui participe beaucoup au charme du Pomsky.
                                         </p>
                                     </div>
-                                    <div  className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
+                                    <div className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
                                         <Image
                                             src="/pomsky-eye-colors-blue-brown-heterochromia.webp"
                                             alt="Montage de plusieurs couleurs des yeux du Pomsky"
