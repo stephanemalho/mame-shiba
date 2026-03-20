@@ -209,7 +209,7 @@ export default function PresentationPage() {
                                     href="/nos-chiens"
                                     className="flex items-center bg-primary h-10 text-white hover:bg-primary/80 px-4 font-semibold dark:text-[#5b3a1a] rounded-md w-fit"
                                 >
-                                    Voir nos chiens
+                                    Voir nos chiens reproducteurs
                                 </Link>
                             </div>
                         </div>

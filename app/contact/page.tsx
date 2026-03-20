@@ -230,6 +230,12 @@ export default function ContactPage() {
                                         <span className="text-sm italic text-muted-foreground/80">Vous recevrez un exemplaire par mail</span>
                                     </div>
                                 </div>
+                                <Link
+                                    href="/adoption/reussir-son-adoption"
+                                    className="inline-flex rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                >
+                                    Lire le guide adoption
+                                </Link>
                             </CardContent>
                         </Card>
                     </div>
@@ -247,6 +253,4 @@ export default function ContactPage() {
         </>
     )
 }
-
-
 

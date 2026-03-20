@@ -100,6 +100,7 @@ export const siteConfig = {
         home: "/",
         pomsky: "/le-mame-shiba",
         mameshibaPrice: "/mame-shiba-prix",
+        adoptionGuide: "/adoption/reussir-son-adoption",
         puppies: "/chiots-disponibles",
         reproductors: "/nos-chiens",
         presentation: "/presentation-elevage",
@@ -253,6 +254,21 @@ export const pageMetadata = {
         ]
     },
 
+    adoptionGuide: {
+        title: "Réussir l’adoption de son chiot Mame Shiba | Kawaii Shiba",
+        description:
+            "Guide pratique pour réussir l’adoption d’un chiot Mame Shiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
+        keywords: [
+            "adoption mame shiba",
+            "accueil chiot mameshiba",
+            "premiers jours chiot mameshiba",
+            "trajet adoption chiot",
+            "proprete chiot mameshiba",
+            "solitude chiot shiba",
+            "guide adoption mame shiba"
+        ]
+    },
+
     reproductors: {
         title: pageContent.reproductors.h1,
         description: pageContent.reproductors.description,
@@ -396,6 +412,12 @@ export const sitemapPages = [
         changefreq: "weekly",
         priority: 0.9,
         lastmod: "2026-02-13"
+    },
+    {
+        url: "/adoption/reussir-son-adoption",
+        changefreq: "monthly",
+        priority: 0.8,
+        lastmod: "2026-03-20"
     },
     {
         url: "/mame-shiba-prix",

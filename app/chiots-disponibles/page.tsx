@@ -212,6 +212,12 @@ export default function NosChiotsPage() {
                                         >
                                             Comprendre notre fourchette de prix
                                         </Link>
+                                        <Link
+                                            href="/adoption/reussir-son-adoption"
+                                            className="inline-flex w-fit rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                        >
+                                            Lire notre guide adoption
+                                        </Link>
                                     </CardContent>
                                 </Card>
 

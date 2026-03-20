@@ -16,6 +16,7 @@ const navigation = [
     { name: "Les éleveuses", href: "/presentation-eleveuses" },
     { name: "Nos chiens", href: "/nos-chiens" },
     { name: "Nos chiots", href: "/chiots-disponibles" },
+    { name: "Réussir son adoption", href: "/adoption/reussir-son-adoption" },
     { name: "Les conditions de vie", href: "/bien-etre-animal" },
     { name: "Blog", href: "/blog/mame-shiba" },
     { name: "Contact", href: "/contact" },

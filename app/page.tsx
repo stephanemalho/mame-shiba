@@ -197,7 +197,7 @@ export default function HomePage() {
                 </div>
 
                 <Link
-                  href="/presentation-elevage"
+                  href="/le-mame-shiba"
                   className="bg-primary text-white hover:bg-primary/80 p-4 font-semibold inline-block dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   Découvrir la race Mameshiba
@@ -286,7 +286,7 @@ export default function HomePage() {
             </div>
           </div>
           <Link
-            href="/le-mame-shiba"
+            href="/blog/mame-shiba"
             className="flex my-12 bg-primary m-auto text-white hover:bg-primary/80 p-4 font-semibold w-fit dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             En savoir plus sur le Mameshiba

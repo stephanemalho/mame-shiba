@@ -69,6 +69,11 @@ const navGroups = [
                 description: "Portées disponibles et informations d'adoption.",
             },
             {
+                title: "Réussir son adoption",
+                href: "/adoption/reussir-son-adoption",
+                description: "Trajet, arrivée à la maison et premières semaines.",
+            },
+            {
                 title: "Contact",
                 href: "/contact",
                 description: "Parlons de votre projet d'adoption.",
