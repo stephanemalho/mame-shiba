@@ -562,102 +562,92 @@ export const faqContact: FAQItem[] = [
 
 export const faqMameShiba: FAQItem[] = [
   {
-    question: "Le Mame-Shiba est-il proche de l'humain ?",
+    question: "Quelle est la différence entre un Shiba Inu et un Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, mais cela se mérite. Le Mame-Shiba est un chien très expressif et communicatif, qui crée un lien fort avec ses adoptants. Son regard, sa curiosité, ses attitudes et son comportement lui permettent d'interagir facilement avec son entourage.
+          Le Mameshiba descend du Shiba Inu et lui ressemble beaucoup dans son expression, sa silhouette et son tempérament primitif.
         </p>
         <p>
-          Il apprécie la présence humaine et développe une relation complice avec sa famille, si vous êtes absolument cohérent dans l'éducation : une éducation positive uniquement basée sur le renforcement et non la peur. Le Mame-Shiba ne sera pas proche de vous si vous utilisez une éducation basée sur la punition car il développera une méfiance permanente entraînant un éloignement.
+          La différence la plus visible reste la taille : le Shiba Inu adulte se situe autour de 39,5 cm chez le mâle et 36,5 cm chez la femelle, tandis que le Mameshiba est plus compact, avec un standard situé autour de 25 à 34 cm pour le mâle et 25 à 32 cm pour la femelle selon le KCJ.
         </p>
       </div>
     ),
   },
   {
-    question: "Le Mame-Shiba perd-il beaucoup de poils ?",
+    question: "Le Mameshiba est-il reconnu au LOF ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mame-Shiba perd son pelage épisodiquement lors de mues : son pelage ne tombe pas en continu.
+          Non. En France, le Mameshiba n'est pas reconnu au LOF à ce jour.
         </p>
         <p>
-          Lorsque la température commence à changer ( expl au printemps ou à l'automne ) le pelage commence à entamer sa mue. Il faudra brosser votre Mame-Shiba tous les jours durant les 3 semaines de mue ou vous rendre chez le toiletteur pour qu'il puisse l'aider à se dégager du poil qui a du mal à tomber tout seul.
-        </p>
-        <p>
-          Une fois que la mue est terminée le pelage est en période de repousse et ne tombe plus pendant environ 6 mois.
+          Le Shiba Inu, lui, appartient bien au groupe 5 des chiens de type spitz et primitifs. Pour le Mameshiba, la référence souvent citée est le Kennel Club of Japan, qui enregistre des chiens mesurés et confirmés à l'âge adulte.
         </p>
       </div>
     ),
   },
   {
-    question: "Le Mame-Shiba est-il facile à adapter à la vie de famille ?",
+    question: "Comment reconnaître un véritable Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Les Mame-Shiba sont préparés dès leurs premières semaines à la vie de famille grâce à une socialisation
-          progressive, des manipulations douces et une exposition aux bruits du quotidien.
+          Un Mameshiba sérieux ne se résume pas à un Shiba Inu plus petit que la moyenne. L'éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
         </p>
         <p>
-          Cette préparation facilite leur adaptation dans leur nouveau foyer.
+          La confirmation à plus d'un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN montrant l'absence d'autre race que le Shiba Inu sont des repères importants pour éviter les faux Mameshiba.
         </p>
       </div>
     ),
   },
   {
-    question: "Quelles sont les tailles possibles chez le Mame-Shiba ?",
-    answer: (
-      <div className="space-y-3">
-        <p>Il existe plusieurs tailles de Mame-Shiba :</p>
-        <ul className="list-disc ml-6">
-          <li>
-            <strong>Mame-Shiba standard</strong> : environ 41 à 45 cm au garrot à l'âge adulte.
-          </li>
-          <li>
-            <strong>Mame-Shiba miniature</strong> : environ 36 à 40 cm au garrot.
-          </li>
-          <li>
-            <strong>Mame-Shiba Toy</strong> : en dessous de ces tailles, autour de 30 cm au garrot pour environ 5 kg adulte.
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    question: "Le Mame-Shiba présente-t-il différentes textures de poil ?",
+    question: "Quel caractère faut-il attendre d'un Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Le Mame-Shiba possède généralement un poil dense et épais.
+          Le Mameshiba reste un petit chien primitif : éveillé, agile, propre, observateur et souvent très attaché à sa famille.
         </p>
         <p>
-          Il peut être de type polaire Husky, intermédiaire (Plush Coat) ou de type Wooly,
-          avec un aspect laineux et un poil mi-long à long, proche de celui du Loulou de Poméranie.
+          Il n'est pas fait pour une éducation dure. Il a besoin de cohérence, de respect et d'une socialisation sérieuse pour exprimer son meilleur équilibre.
         </p>
       </div>
     ),
   },
   {
-    question: "Le Mame-Shiba au pelage standard polaire nécessite t'il moins d'entretien que le Mame-Shiba au pelage fluffy ?",
+    question: "Le Mameshiba est-il rare en France ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, globalement le Mame-Shiba au pelage fluffy aura besoin d'un brossage 3 fois par semaine pour éviter les noeuds tandis que le Mame-Shiba au pelage standard polaire aura besoin d'un brossage une fois par semaine.
+          Oui. Le Mameshiba reste aujourd'hui une race très rare en France.
+        </p>
+        <p>
+          Cette rareté explique en partie la présence d'annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits Shiba Inu sans traçabilité sérieuse.
         </p>
       </div>
     ),
   },
   {
-    question: "Le Mame-Shiba peut-il avoir différentes couleurs d'yeux ?",
+    question: "Le Mameshiba perd-il beaucoup de poils ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Le Mame-Shiba peut présenter une grande diversité de couleurs d'yeux :
-          bleus, verts, ambre, bruns, gris ou noirs.
+          Comme le Shiba Inu, le Mameshiba possède un double poil et connaît des périodes de mue marquées.
         </p>
         <p>
-          Certains Mame-Shiba ont également des yeux vairons ou particolor,
-          une caractéristique héritée du Husky sibérien.
+          En dehors de ces périodes, l'entretien reste raisonnable avec un brossage régulier, davantage soutenu au printemps et à l'automne.
+        </p>
+      </div>
+    ),
+  },
+  {
+    question: "Pourquoi faut-il être vigilant avant d'acheter un Mameshiba ?",
+    answer: (
+      <div className="space-y-3">
+        <p>
+          Parce qu'un simple petit gabarit ne suffit pas à faire un Mameshiba. Sans sélection sérieuse, on peut obtenir des chiens trop petits, mal construits ou issus de croisements douteux.
+        </p>
+        <p>
+          Il vaut mieux vérifier la filiation, la cohérence de l'élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot "Mame-Shiba" sur une annonce.
         </p>
       </div>
     ),

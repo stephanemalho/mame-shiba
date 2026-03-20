@@ -25,7 +25,7 @@ const navGroups = [
             },
             {
                 title: "Blog",
-                href: "/blog/pomsky",
+                href: "/blog/mame-shiba",
                 description: "Conseils, race, génétique et bien-être.",
             },
         ],

@@ -211,15 +211,15 @@ export const pageMetadata = {
         title: pageContent.pomsky.h1,
         description: pageContent.pomsky.description,
         keywords: [
-            "taille du pomsky",
-            "pomsky toy miniature standard",
-            "différences pomsky toy miniature standard",
-            "origine du pomsky",
-            "histoire du pomsky",
-            "tempérament du pomsky",
-            "générations du pomsky",
-            "adopter un pomsky",
-            "ce qu'il faut savoir avant d'adopter un pomsky"
+            "mameshiba",
+            "mame shiba",
+            "taille du mameshiba",
+            "difference shiba inu mameshiba",
+            "origine du mameshiba",
+            "standard du mameshiba",
+            "kcj mameshiba",
+            "vrai mameshiba",
+            "adopter un mameshiba"
         ]
     },
 

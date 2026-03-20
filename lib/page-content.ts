@@ -11,15 +11,15 @@ export const pageContent = {
             "Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et adoration pour la culture Japonaise nous a mené tout droit jusqu'à un véritable coup de cœur : LE MAMESHIBA ! "
     },
     pomsky: {
-        h1: "Le Pomsky : taille, tempérament, origines et adoption responsable",
+        h1: "Le Mameshiba : description, standard, origines et repères avant adoption",
         description:
-            "Le Pomsky est un chien issu du croisement entre le Husky sibérien et le Spitz nain, encore non reconnu par la FCI. Apprécié pour son apparence de Husky miniature, il s'agit d'un compagnon intelligent et actif qui demande du temps, de la cohérence et une éducation adaptée. Ce guide vous aide à comprendre les tailles du Pomsky, son tempérament, ses origines et les conditions nécessaires à une adoption responsable.",
-        h2: "Les tailles du Pomsky",
-        h3Standard: "Pomsky Standard",
-        h3Miniature: "Pomsky Miniature",
-        h3toy: "Pomsky Toy",
-        pomskyOrigin: "D'où vient le Pomsky ?",
-        googToKnow: "Adopter un Pomsky : ce qu'il faut savoir"
+            "Le Mameshiba est issu du Shiba Inu, race japonaise primitive reconnue au LOF pour le Shiba, mais dont la version miniature n'est pas reconnue au LOF en France. Sélectionné au Japon à partir de très petits Shiba Inu, il conserve l'allure, la vivacité et la noblesse de son ancêtre dans un format plus compact. Cette page vous aide à comprendre son origine, ses tailles, son standard et les critères à vérifier avant toute adoption.",
+        h2: "Tailles et repères du Mameshiba",
+        h3Standard: "Mameshiba femelle",
+        h3Miniature: "Mameshiba mâle",
+        h3toy: "Shiba Inu",
+        pomskyOrigin: "Origines et reconnaissance du Mameshiba",
+        googToKnow: "Acheter un Mameshiba : les points essentiels"
     },
     puppies: {
         h1: "Nos chiots disponibles",

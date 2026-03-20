@@ -16,7 +16,7 @@ const navigation = [
     { name: "Nos reproducteurs", href: "/femelles-reproductrices" },
     { name: "Nos chiots", href: "/chiots-disponibles" },
     { name: "Les conditions de vie", href: "/bien-etre-animal" },
-    { name: "Blog", href: "/blog/pomsky" },
+    { name: "Blog", href: "/blog/mame-shiba" },
     { name: "Contact", href: "/contact" },
 ]
 
