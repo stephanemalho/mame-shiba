@@ -506,6 +506,12 @@ export default function MameShibaPage() {
                                 Découvrir nos chiots
                             </Link>
                             <Link
+                                href="/mame-shiba-prix"
+                                className="border border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-md font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            >
+                                Comprendre le prix d&apos;un Mame-Shiba
+                            </Link>
+                            <Link
                                 href="/contact"
                                 className="border border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-md font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >

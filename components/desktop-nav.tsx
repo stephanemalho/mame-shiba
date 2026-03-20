@@ -16,12 +16,17 @@ import {
 
 const navGroups = [
     {
-        label: "Découvrir",
+        label: "Le Mame-Shiba",
         items: [
             {
                 title: "Le Mame-Shiba",
                 href: "/le-mame-shiba",
                 description: "Taille, tempérament, origines et adoption responsable.",
+            },
+            {
+                title: "Prix du Mame-Shiba",
+                href: "/mame-shiba-prix",
+                description: "Fourchette de prix, rareté et repères avant adoption.",
             },
             {
                 title: "Blog",

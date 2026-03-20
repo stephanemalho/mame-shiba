@@ -99,6 +99,7 @@ export const siteConfig = {
     pages: {
         home: "/",
         pomsky: "/le-mame-shiba",
+        mameshibaPrice: "/mame-shiba-prix",
         puppies: "/chiots-disponibles",
         reproductors: "/nos-chiens",
         presentation: "/presentation-elevage",
@@ -234,6 +235,21 @@ export const pageMetadata = {
             "elevage mameshiba france",
             "acheter un mameshiba",
             "inscription portee mameshiba"
+        ]
+    },
+
+    mameshibaPrice: {
+        title: "Prix d’un Mame Shiba en France | Kawaii Shiba",
+        description:
+            "Comprendre le prix d’un Mame Shiba en France : rareté, sélection, lignées japonaises, socialisation et fourchette Kawaii Shiba de 3 800 € à 4 500 €.",
+        keywords: [
+            "prix mame shiba",
+            "prix mameshiba france",
+            "tarif mame shiba",
+            "acheter mameshiba france",
+            "prix chiot mameshiba",
+            "kawaii shiba prix",
+            "mameshiba rare france"
         ]
     },
 
@@ -380,6 +396,12 @@ export const sitemapPages = [
         changefreq: "weekly",
         priority: 0.9,
         lastmod: "2026-02-13"
+    },
+    {
+        url: "/mame-shiba-prix",
+        changefreq: "monthly",
+        priority: 0.8,
+        lastmod: "2026-03-20"
     },
     {
         url: "/nos-chiens",
