@@ -182,6 +182,48 @@ export default async function BlogArticlePage({
                         </section>
                     ))}
                 </div>
+
+                {post.relatedLinks && post.relatedLinks.length > 0 ? (
+                    <section className="mt-12 rounded-3xl border border-border bg-card p-6 md:p-8">
+                        <h2 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                            À lire aussi sur le site
+                        </h2>
+                        <ul className="space-y-3">
+                            {post.relatedLinks.map((item) => (
+                                <li key={item.href}>
+                                    <Link
+                                        href={item.href}
+                                        className="underline decoration-primary/40 underline-offset-4 hover:text-foreground"
+                                    >
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                ) : null}
+
+                {post.sources && post.sources.length > 0 ? (
+                    <section className="mt-12 rounded-3xl border border-border bg-card p-6 md:p-8">
+                        <h2 className="text-2xl font-serif font-semibold text-foreground mb-4">
+                            Sources japonaises et références
+                        </h2>
+                        <ul className="space-y-3">
+                            {post.sources.map((source) => (
+                                <li key={source.url}>
+                                    <a
+                                        href={source.url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="underline decoration-primary/40 underline-offset-4 hover:text-foreground"
+                                    >
+                                        {source.label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                ) : null}
             </article>
 
             <aside className="max-w-3xl mx-auto px-6 pb-16">
@@ -229,4 +271,3 @@ export default async function BlogArticlePage({
         </div>
     );
 }
-

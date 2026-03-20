@@ -33,6 +33,6 @@ export const metadata: Metadata = {
     },
 };
 
-export default function PomskyBlogPage() {
-    return <BlogList base="pomsky" />;
+export default function MameShibaBlogPage() {
+    return <BlogList base="mame-shiba" />;
 }

@@ -358,18 +358,18 @@ export const pageMetadata = {
         ]
     },
     blog: {
-        title: "Blog Pomsky | Conseils, race et bien-etre",
+        title: "Blog Mame Shiba | Shiba Inu, comportement et adoption",
         description:
-            "Articles sur le Pomsky : race, genetique, sante, caractere, prix et conseils d'adoption.",
+            "Articles sur le Shiba Inu et le Mame Shiba : comportement, comparatifs, vie quotidienne et conseils d'adoption.",
         keywords: [
-            "blog pomsky",
-            "conseils pomsky",
-            "race pomsky",
-            "sante pomsky",
-            "prix pomsky",
-            "caractere pomsky",
-            "genetique pomsky",
-            "adoption pomsky"
+            "blog mame shiba",
+            "blog shiba inu",
+            "shiba inu caractere",
+            "mame shiba adoption",
+            "chien japonais",
+            "comparatif shiba akita",
+            "shiba appartement",
+            "premiere adoption shiba"
         ]
     }
 };

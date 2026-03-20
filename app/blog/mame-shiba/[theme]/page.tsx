@@ -5,7 +5,7 @@ import BlogList from "@/app/blog/_components/BlogList";
 import { blog } from "@/constants/blog/blog";
 import { buildOpenGraph, pageMetadata, siteConfig } from "@/lib/seo-config";
 
-type PomskyThemePageProps = {
+type MameShibaThemePageProps = {
     params: { theme: string } | Promise<{ theme: string }>;
 };
 
@@ -15,7 +15,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
     params,
-}: PomskyThemePageProps): Promise<Metadata> {
+}: MameShibaThemePageProps): Promise<Metadata> {
     const resolvedParams = await params;
     const theme = decodeURIComponent(resolvedParams.theme);
     const themeData = blog.themes.find((item) => item.slug === theme);
@@ -30,7 +30,7 @@ export async function generateMetadata({
         };
     }
 
-    const title = `${themeData.label} | Blog Pomsky`;
+    const title = `${themeData.label} | Blog Mame Shiba`;
     const description =
         themeData.description ?? pageMetadata.blog.description;
     const canonicalPath = `/blog/mame-shiba/${themeData.slug}`;
@@ -66,7 +66,7 @@ export async function generateMetadata({
     };
 }
 
-export default async function PomskyThemePage({ params }: PomskyThemePageProps) {
+export default async function MameShibaThemePage({ params }: MameShibaThemePageProps) {
     const resolvedParams = await params;
     const theme = decodeURIComponent(resolvedParams.theme);
     const isValidTheme = blog.themes.some((item) => item.slug === theme);
@@ -75,5 +75,5 @@ export default async function PomskyThemePage({ params }: PomskyThemePageProps) 
         notFound();
     }
 
-    return <BlogList base="pomsky" theme={theme} />;
+    return <BlogList base="mame-shiba" theme={theme} />;
 }

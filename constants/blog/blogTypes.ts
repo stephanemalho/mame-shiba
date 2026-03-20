@@ -29,6 +29,14 @@ export type BlogPost = {
     contactCta?: {
         label?: string;
     };
+    relatedLinks?: Array<{
+        label: string;
+        href: string;
+    }>;
+    sources?: Array<{
+        label: string;
+        url: string;
+    }>;
 };
 
 export type BlogAllCategory = {

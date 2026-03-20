@@ -31,7 +31,7 @@ export default function BlogList({ base, theme }: BlogListProps) {
                 <div className="max-w-6xl mx-auto px-6 py-16 md:py-20">
                     <div className="flex flex-col gap-6">
                         <p className="text-xs uppercase tracking-[0.3em] text-foreground">
-                            Journal du Pomsky
+                            Journal du Mame Shiba
                         </p>
                         <h1 className="text-3xl md:text-5xl font-serif font-semibold leading-tight bg-linear-to-r from-foreground via-primary to-foreground text-transparent bg-clip-text">
                             {hero.title}

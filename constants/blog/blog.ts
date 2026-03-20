@@ -1,29 +1,16 @@
-import { pomskyLifeExpectancyPost } from "../posts/pomskyLifetime";
-import { pomskyToyGuidePost } from "../posts/pomskyToyGuidePost";
-import { pomskyNainPost } from "@/constants/posts/pomskyNainPost";
-import { huskySiberienPost } from "../posts/siberianHusky";
-import { spitzNainPost } from "../posts/spitzNainPost";
 import { BlogContentType } from "./blogTypes";
-import { pomskyGenerationsPost } from "../posts/pomskyFormatsPost";
-import { dogAdnTestPost } from "../posts/pomskyDnaPost";
-import { pomskyHistoryPost } from "../posts/pomskyRootsPost";
-import { pomskyAdultePost } from "../posts/pomskyAdultePost";
-import { pomskyNoirYeuxBleusPost } from "../posts/pomskyBlackBlueEyesPost";
-import { pomskyBeigeYeuxBleusPost } from "../posts/pomskyBeigePost";
-import { pomskyBlancYeuxBleusPost } from "../posts/pomskyWhiteBlueEyePost";
-import { pomskyPrixPost } from "../posts/pomskyPricePost";
-import { pomskyAVendrePost } from "../posts/pomskyForSalePost";
-import { pomskyRenardPost } from "../posts/pomsktLookFoxPost";
-import { chienPomskyPost } from "../posts/pomskyHybridRacePost";
-import { pomskyBlancPost } from "../posts/pomskyWhiteLookGreatPost";
+import { akitaShibaMameComparisonPost } from "../posts/akitaShibaMameComparisonPost";
+import { shibaApartmentPost } from "../posts/shibaApartmentPost";
+import { shibaFirstDogPost } from "../posts/shibaFirstDogPost";
+import { shibaSociablePost } from "../posts/shibaSociablePost";
 
 export const blog: BlogContentType = {
     hero: {
-        title: "Actualités & conseils autour du Pomsky",
+        title: "Articles utiles autour du Shiba Inu et du Mame Shiba",
         subtitle:
-            "Race, élevage responsable, éducation et bien-être du Pomsky au quotidien.",
-        cta: "Découvrir nos chiots",
-        linkTo: "/chiots-disponibles",
+            "Comparatifs, comportement, vie quotidienne et repères d'adoption pour mieux comprendre les chiens japonais qui vous attirent.",
+        cta: "Découvrir le Mame Shiba",
+        linkTo: "/le-mame-shiba",
         Icon: "paw",
         color: "orange"
     },
@@ -34,84 +21,61 @@ export const blog: BlogContentType = {
     allCategory: {
         name: "Toutes les catégories",
         description:
-            "Découvrez l'ensemble de nos articles autour du Pomsky et de l'élevage canin"
+            "Découvrez l'ensemble de nos articles autour du Shiba Inu, du Mame Shiba et de l'adoption responsable"
     },
     categories: [
         {
-            id: "race-pomsky",
-            name: "Race Pomsky",
-            description: "Origines, caractéristiques et standards du Pomsky",
-            slug: "race-pomsky"
+            id: "comparatifs-races",
+            name: "Comparatifs de races",
+            description: "Différences entre chiens japonais et repères avant adoption",
+            slug: "comparatifs-races"
         },
         {
-            id: "elevage-responsable",
-            name: "Élevage responsable",
-            description: "Bonnes pratiques, sélection et bien-être animal",
-            slug: "elevage-responsable"
+            id: "adoption-responsable",
+            name: "Adoption responsable",
+            description: "Questions à se poser avant de choisir son chien",
+            slug: "adoption-responsable"
         },
         {
-            id: "education-comportement",
-            name: "Éducation & comportement",
-            description: "Conseils d'éducation et compréhension du Pomsky",
-            slug: "education-comportement"
+            id: "comportement",
+            name: "Comportement",
+            description: "Tempérament, sociabilité et relation au quotidien",
+            slug: "comportement"
         },
         {
-            id: "sante-entretien",
-            name: "Santé & entretien",
-            description: "Santé, alimentation et soins du Pomsky",
-            slug: "sante-entretien"
+            id: "vie-quotidienne",
+            name: "Vie quotidienne",
+            description: "Appartement, rythme de vie et compatibilité avec le foyer",
+            slug: "vie-quotidienne"
         }
     ],
     themes: [
         {
             slug: "caracteristique",
-            label: "Caractéristiques",
-            description: "Taille, caractère et vie avec le chien"
-        },
-        {
-            slug: "apparence",
-            label: "Apparence & robe",
-            description: "Couleurs, pelages et variations physiques"
+            label: "Caractère",
+            description: "Tempérament, sociabilité et vie avec le chien"
         },
         {
             slug: "origine",
-            label: "Origines",
-            description: "Histoire et racines des races"
-        },
-        {
-            slug: "genetique",
-            label: "Génétique",
-            description: "Générations, ADN et croisements"
+            label: "Origines & comparatifs",
+            description: "Histoire, standards et différences entre chiens japonais"
         },
         {
             slug: "prix",
-            label: "Prix & adoption",
-            description: "Budget, éleveurs et conseils d'achat"
+            label: "Adoption responsable",
+            description: "Questions à se poser avant de choisir son chien"
         },
         {
             slug: "sante",
-            label: "Santé & bien-être",
-            description: "Longévité, soins et entretien"
+            label: "Vie quotidienne",
+            description: "Appartement, environnement et équilibre au quotidien"
         }
     ],
     posts: [
-        pomskyNainPost,
-        pomskyToyGuidePost,
-        pomskyLifeExpectancyPost,
-        huskySiberienPost,
-        spitzNainPost,
-        pomskyGenerationsPost,
-        dogAdnTestPost,
-        pomskyHistoryPost,
-        pomskyAdultePost,
-        pomskyNoirYeuxBleusPost,
-        pomskyBeigeYeuxBleusPost,
-        pomskyBlancYeuxBleusPost,
-        pomskyPrixPost,
-        pomskyAVendrePost,
-        pomskyRenardPost,
-        chienPomskyPost,
-        pomskyBlancPost
+        akitaShibaMameComparisonPost,
+        shibaSociablePost,
+        shibaApartmentPost,
+        shibaFirstDogPost
     ],
     filterLabels: {
         all: "Tous les articles",
@@ -123,17 +87,17 @@ export const blog: BlogContentType = {
         in: "dans"
     },
     seo: {
-        title: "Blog Pomsky - Élevage, conseils et bien-être",
+        title: "Blog Mame Shiba - Shiba Inu, comportement et adoption",
         description:
-            "Découvrez nos articles dédiés au Pomsky : race, élevage responsable, éducation, santé et conseils pour adopter un chiot Pomsky.",
+            "Découvrez nos articles dédiés au Shiba Inu et au Mame Shiba : comportement, comparatifs, vie quotidienne et repères d'adoption.",
         keywords: [
-            "pomsky",
-            "infos sur le pomsky",
-            "conseils autour du Pomsky",
-            "tout savoir sur le pomsky",
-            "éducation pomsky",
-            "blog élevage canin",
-            "Le pomsky toy"
+            "blog mame shiba",
+            "blog shiba inu",
+            "shiba inu caractère",
+            "mame shiba informations",
+            "adoption shiba inu",
+            "comparatif chiens japonais",
+            "questions avant adoption shiba"
         ]
     }
 };
