@@ -134,11 +134,11 @@ export function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="mailto:royal-pomsky@gmail.com"
+                                    href="mailto:elevagemameshiba@gmail.com"
                                     className="hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded"
-                                    aria-label="Envoyer un email à royal-pomsky@gmail.com"
+                                    aria-label="Envoyer un email à elevagemameshiba@gmail.com"
                                 >
-                                    e-mail : royal-pomsky@gmail.com
+                                    e-mail : elevagemameshiba@gmail.com
                                 </a>
                             </li>
                         </ul>

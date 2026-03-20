@@ -227,14 +227,13 @@ export const pageMetadata = {
         title: pageContent.puppies.h1,
         description: pageContent.puppies.description,
         keywords: [
-            "chiots pomsky",
-            "chiot Toy",
-            "chiot pomsky nain",
-            "chiots disponibles",
-            "reservation chiot",
-            "bon élevage de pomsky",
-            "acheter un pomsky",
-            "inscription portee"
+            "chiots mameshiba",
+            "mameshiba disponible",
+            "reservation chiot mameshiba",
+            "portee mameshiba",
+            "elevage mameshiba france",
+            "acheter un mameshiba",
+            "inscription portee mameshiba"
         ]
     },
 
@@ -288,7 +287,9 @@ export const pageMetadata = {
             "suivi vétérinaire dès la naissance",
             "respect du développement du chiot",
             "environnement sain pour chiots",
-            "élevage éthique de pomsky"
+            "elevage mameshiba",
+            "vie en elevage mameshiba",
+            "socialisation mameshiba"
         ]
     },
 

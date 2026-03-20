@@ -12,6 +12,8 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import Link from "next/link"
 import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 
+const pageImage = "/locaux.webp"
+
 export const metadata: Metadata = {
     title: pageMetadata.wellness.title,
     description: pageMetadata.wellness.description,
@@ -22,10 +24,10 @@ export const metadata: Metadata = {
         url: `${siteConfig.siteUrl}/bien-etre-animal`,
         images: [
             {
-                url: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
-                alt: siteConfig.ogImageAlt,
-                width: siteConfig.ogImageWidth,
-                height: siteConfig.ogImageHeight,
+                url: `${siteConfig.siteUrl}${pageImage}`,
+                alt: "Locaux et espaces de l elevage Kawaii Shiba",
+                width: 1200,
+                height: 630,
                 type: "image/webp",
             },
         ],
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     twitter: buildTwitter({
         title: pageMetadata.wellness.title,
         description: pageMetadata.wellness.description,
-        imageUrl: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
+        imageUrl: `${siteConfig.siteUrl}${pageImage}`,
     }),
     alternates: {
         canonical: `${siteConfig.siteUrl}/bien-etre-animal`,
@@ -69,7 +71,7 @@ export default function SejoursPage() {
                         <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
                             <Image
                                 src="/locaux.webp"
-                                alt="Image d'un des abris à Pomsky de Royal Pomsky"
+                                alt="Image d un des espaces de vie des chiens de l elevage"
                                 fill
                                 className="object-cover"
                                 priority
@@ -99,7 +101,7 @@ export default function SejoursPage() {
                             <div className="flex flex-col items-center justify-center p-2 md:flex-row">
                                 <Dog className="h-4 w-4" />
                                 {/* <span>6 chiots attendus</span> */}
-                                <span className="ml-2">La nouvelle portée déjà reservée <Link href="/contact" className="text-blue-700 underline hover:text-blue-500">(inscrivez vous pour la prochaine)</Link></span>
+                                <span className="ml-2">La nouvelle portée est déjà réservée <Link href="/contact" className="text-blue-700 underline hover:text-blue-500">(inscrivez-vous pour la prochaine)</Link></span>
                             </div>
                         </div>
                     </section>
@@ -114,14 +116,14 @@ export default function SejoursPage() {
                                         Nursery intérieure
                                     </Badge>
                                     <h3 className="text-xl md:text-2xl font-bold">Un cocon dès la naissance</h3>
-                                     <p className="text-muted-foreground leading-relaxed">
-                                        La nursery intérieure est pensée comme un véritable cocon, calme et sécurisé, où chaque chiot peut évoluer dans les meilleures conditions dès ses premières heures de vie. La température, l'hygiène et l'ambiance sonore sont maîtrisées afin de limiter le stress et de favoriser un développement harmonieux, aussi bien physique qu'émotionnel.
+                                    <p className="text-muted-foreground leading-relaxed">
+                                        La nursery intérieure est pensée comme un véritable cocon, calme et sécurisé, où chaque chiot peut évoluer dans les meilleures conditions dès ses premières heures de vie. La température, l’hygiène et l’ambiance sonore sont maîtrisées afin de limiter le stress et de favoriser un développement harmonieux, aussi bien physique qu’émotionnel.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Les chiots naissent dans une salle de mise bas : une pièce tempérée, sous surveillance et avec une présence humaine continue. Nous assurons un suivi vétérinaire rapproché et des pesées quotidiennes.
+                                        Les chiots naissent dans une salle de mise bas tempérée, sous surveillance et avec une présence humaine continue. Nous assurons un suivi vétérinaire rapproché et des pesées quotidiennes.
                                     </p>
-                                     <p className="text-muted-foreground leading-relaxed">
-                                        Cette présence humaine quotidienne permet aux chiots de s'habituer très tôt aux manipulations douces, aux odeurs et aux bruits du quotidien. Cette phase essentielle pose les bases d'un chiot confiant, serein et réceptif, facilitant les apprentissages futurs et la transition vers sa nouvelle famille. 
+                                    <p className="text-muted-foreground leading-relaxed">
+                                        Chez le Mameshiba, cette phase précoce est particulièrement importante : c’est un petit chien très sensible à son environnement. Cette présence humaine quotidienne lui permet de s’habituer en douceur aux manipulations, aux odeurs et aux bruits du quotidien, en posant les bases d’un chiot serein, observateur et confiant.
                                     </p>
                                 </div>
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden">
@@ -131,7 +133,7 @@ export default function SejoursPage() {
                                             "pages/conditions-de-vie/bebe-chiots-lit-douillet.webp",
                                             "pages/conditions-de-vie/salle-ambiante-pour-chiots.webp",
                                         ]}
-                                        alt="Carrousel d'images montrant les cocons et espaces de repos des chiots Royal Pomsky"
+                                        alt="Carrousel montrant les cocons et espaces de repos des chiots de l elevage"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
                                     />
@@ -160,8 +162,7 @@ export default function SejoursPage() {
                                     </Badge>
                                     <h3 className="text-xl md:text-2xl font-bold">Jeux d&apos;éveil et découvertes</h3>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Tunnels, textures, sons doux et rencontres quotidiennes : nous multiplions les expériences positives pour
-                                        des pomsky curieux et équilibrés.
+                                        Tunnels, textures, sons doux et rencontres quotidiennes : nous multiplions les expériences positives, tout en respectant le rythme propre au Mameshiba. L’idée n’est pas de surstimuler, mais d’aider chaque chiot à découvrir le monde avec curiosité, sécurité et stabilité.
                                     </p>
                                 </div>
                             </div>
@@ -174,21 +175,21 @@ export default function SejoursPage() {
                                         <Dumbbell className="h-4 w-4 mr-2" />
                                         Jardin sécurisé
                                     </Badge>
-                                    <h3 className="text-xl md:text-2xl font-bold">Des sorties régulières en pleine nature, au cœur de l'éducation Royal Pomsky</h3>
+                                    <h3 className="text-xl md:text-2xl font-bold">Des sorties régulières en pleine nature, au service de l’équilibre du Mameshiba</h3>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Chez Royal Pomsky, le bien-être et l'équilibre de nos chiens et chiots sont une priorité quotidienne. Au-delà d'un environnement sécurisé à la maison, nous accordons une place essentielle aux sorties régulières en pleine nature, encadrées par les éleveurs.
+                                        Chez Kawaii Shiba, le bien-être et l’équilibre de nos chiens et chiots sont une priorité quotidienne. Au-delà d’un environnement sécurisé à la maison, nous accordons une place essentielle aux sorties régulières en pleine nature, toujours encadrées.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Forêts, jardins, lacs, prairies et chemins de campagne font partie intégrante de leur quotidien. Ces promenades permettent aux chiens adultes comme aux chiots de découvrir des environnements variés, de développer leur curiosité naturelle et de renforcer leur confiance face aux bruits du monde extérieur.
+                                        Forêts, jardins, lacs, prairies et chemins de campagne font partie intégrante de leur quotidien. Ces promenades permettent aux adultes comme aux chiots de découvrir des environnements variés, de développer leur curiosité naturelle et de renforcer leur confiance face aux bruits du monde extérieur.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Les chiots bénéficient ainsi très tôt d'une socialisation progressive et positive : nouveaux sons, nouvelles odeurs, terrains différents, interactions avec leurs congénères et avec l'humain. Cette stimulation douce favorise leur équilibre émotionnel, leur capacité d'adaptation et prépare sereinement leur future vie de chien de famille.
+                                        Les chiots bénéficient ainsi très tôt d’une socialisation progressive et positive : nouveaux sons, nouvelles odeurs, terrains différents, interactions avec leurs congénères et avec l’humain. Pour le Mameshiba, cette progressivité est essentielle car sa sensibilité demande des repères clairs et une vraie douceur dans l’apprentissage.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        À la maison, cet apprentissage est complété par un parc d'herbe clôturé, des jeux en extérieur et un apprentissage progressif de la propreté, toujours dans le respect du rythme de chaque chiot.
+                                        À la maison, cet apprentissage est complété par un parc d’herbe clôturé, des jeux en extérieur et un apprentissage progressif de la propreté, toujours dans le respect du rythme de chaque chiot.
                                     </p>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        L'engagement de Royal Pomsky est : élever des chiens bien dans leurs pattes, sociables, équilibrés et prêts à s'épanouir pleinement au sein de leur future famille.
+                                        Notre engagement est simple : élever des Mameshiba bien dans leurs pattes, sociables, équilibrés et prêts à s’épanouir pleinement au sein de leur future famille.
                                     </p>
                                 </div>
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden">
@@ -199,7 +200,7 @@ export default function SejoursPage() {
                                             "pages/conditions-de-vie/sortie-avec-les-pomsky-adultes.webp",
                                             "pages/conditions-de-vie/pomsky-adulte-joue-avec-marine.webp"
                                         ]}
-                                        alt="Carrousel d'images de chiots et de Pomsky adultes jouant en plein air, sous encadrement"
+                                        alt="Carrousel d images de chiots et d adultes jouant en plein air sous encadrement"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
                                     />
@@ -229,8 +230,7 @@ export default function SejoursPage() {
                                     <h3
                                         className="text-xl md:text-2xl font-bold">Nutrition et soins adaptée</h3>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Sevrage en douceur, croquettes premium et introduction au BARF pour les familles qui le souhaitent.
-                                        Un kit alimentaire de départ est remis le jour du départ.
+                                        Sevrage en douceur, alimentation de qualité et accompagnement précis pour respecter le petit format du Mameshiba et ses besoins digestifs. Un kit alimentaire de départ est remis le jour du départ pour faciliter la transition.
                                     </p>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@ export default function SejoursPage() {
                                     <h3
                                         className="text-xl md:text-2xl font-bold">Attente avec maman</h3>
                                     <p className="text-muted-foreground leading-relaxed">
-                                        Espaces de repos individuels pour faciliter l&apos;apprentissage du calme et la gestion douce des séparations.
+                                        Espaces de repos et séparation progressive pour faciliter l’apprentissage du calme, l’autonomie et la gestion douce des séparations, tout en respectant le lien essentiel avec la mère.
                                     </p>
                                 </div>
                                 <div className="relative h-104 md:h-180 rounded-lg overflow-hidden">
@@ -255,7 +255,7 @@ export default function SejoursPage() {
                                             "pages/conditions-de-vie/la-maman-et-son-chiot-avec-marine.webp",
                                             "pages/conditions-de-vie/pomsky-femmel-et-son-chiot-avec-marine.webp",
                                         ]}
-                                        alt="Carrousel d'images des chiots avec leurs mamans et Marine l'éleveuse"
+                                        alt="Carrousel d images des chiots avec leurs mamans et l eleveuse"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
                                     />
@@ -278,7 +278,7 @@ export default function SejoursPage() {
                                 <CardContent className="space-y-4">
                                     <div className="space-y-2">
                                         <p>
-                                            <strong>8h :</strong> Pesée, câlins et nettoyage de la nurserie
+                                            <strong>8h :</strong> Pesée, soins et nettoyage de la nurserie
                                         </p>
                                         <p>
                                             <strong>9h :</strong> Jeux d&apos;éveil et manipulations douces
@@ -287,7 +287,7 @@ export default function SejoursPage() {
                                             <strong>10h :</strong> Sortie au jardin ou sur la terrasse
                                         </p>
                                         <p>
-                                            <strong>11h :</strong> Séance d&apos;imprégnation sons et textures
+                                            <strong>11h :</strong> Séance d&apos;imprégnation sons, textures et repères
                                         </p>
                                         <p>
                                             <strong>12h :</strong> Sieste et repas de la mère
@@ -305,7 +305,7 @@ export default function SejoursPage() {
                                             <strong>13h :</strong> Repas des chiots et jeux calmes
                                         </p>
                                         <p>
-                                            <strong>14h :</strong> Présentation de nouveaux objets/odeurs
+                                            <strong>14h :</strong> Présentation de nouveaux objets et odeurs
                                         </p>
                                         <p>
                                             <strong>15h :</strong> Séances individuelles avec manipulation vétérinaire simulée
@@ -323,7 +323,7 @@ export default function SejoursPage() {
                     </section>
                     <FAQSection
                         title="FAQ adoption et quotidien"
-                        description="Tout ce qu'il faut savoir sur le caractère, l'éducation, la cohabitation et les soins du pomsky."
+                        description="Tout ce qu’il faut savoir sur le quotidien en élevage, la socialisation et les besoins du Mameshiba."
                         items={faqBienEtre}
                     />
                     {/* Localisation */}
@@ -338,7 +338,7 @@ export default function SejoursPage() {
                         <Link
                             href="/contact"
                             className="flex items-center mt-6 w-fit m-auto bg-primary justify-center text-white hover:bg-primary/80 p-4 font-semibold dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                        >Contacter l'élevage</Link>
+                        >Contacter l&apos;élevage</Link>
                         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-3 text-muted-foreground">
                             <PawPrint className="h-5 w-5" aria-hidden="true" />
                             <span>Parking sur place et promenade à quelques minutes.</span>
@@ -352,8 +352,6 @@ export default function SejoursPage() {
         </>
     )
 }
-
-
 
 
 

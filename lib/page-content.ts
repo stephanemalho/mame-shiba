@@ -24,9 +24,9 @@ export const pageContent = {
     puppies: {
         h1: "Nos chiots disponibles",
         description:
-            "Chez Royal POMSKY, chaque naissance est le fruit d'un choix conscient, réfléchi et profondément respectueux du bien-être animal.",
+            "Les portées de Mameshiba comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.",
         descriptionSecondary:
-            "Notre élevage est dédié aux pomsky Toy rares et exotiques, élevés avec amour, patience et exigence, tant sur le plan de la santé que de l'équilibre émotionnel."
+            "Une nouvelle portée arrive très bientôt et les réservations sont déjà ouvertes. En attendant l'arrivée des chiots, nous recevons les demandes des familles souhaitant être accompagnées sérieusement dans leur projet d'adoption."
     },
     reproductors: {
         h1: "Nos chiens reproducteurs",
@@ -48,7 +48,7 @@ export const pageContent = {
     },
     wellness: {
         h1: "La vie en élevage",
-        description: "Voici comment vivent nos animaux chez Royal POMSKY"
+        description: "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba"
     },
     contact: {
         h1: "Contact & visites",
