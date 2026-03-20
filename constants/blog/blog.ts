@@ -10,7 +10,7 @@ export const blog: BlogContentType = {
         subtitle:
             "Comparatifs, comportement, vie quotidienne et repères d'adoption pour mieux comprendre les chiens japonais qui vous attirent.",
         cta: "Découvrir le Mame Shiba",
-        linkTo: "/le-mame-shiba",
+        linkTo: "/mameshiba",
         Icon: "paw",
         color: "orange"
     },
@@ -27,7 +27,8 @@ export const blog: BlogContentType = {
         {
             id: "comparatifs-races",
             name: "Comparatifs de races",
-            description: "Différences entre chiens japonais et repères avant adoption",
+            description:
+                "Différences entre chiens japonais et repères avant adoption",
             slug: "comparatifs-races"
         },
         {
@@ -45,7 +46,8 @@ export const blog: BlogContentType = {
         {
             id: "vie-quotidienne",
             name: "Vie quotidienne",
-            description: "Appartement, rythme de vie et compatibilité avec le foyer",
+            description:
+                "Appartement, rythme de vie et compatibilité avec le foyer",
             slug: "vie-quotidienne"
         }
     ],
@@ -58,7 +60,8 @@ export const blog: BlogContentType = {
         {
             slug: "origine",
             label: "Origines & comparatifs",
-            description: "Histoire, standards et différences entre chiens japonais"
+            description:
+                "Histoire, standards et différences entre chiens japonais"
         },
         {
             slug: "prix",

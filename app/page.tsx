@@ -197,7 +197,7 @@ export default function HomePage() {
                 </div>
 
                 <Link
-                  href="/le-mame-shiba"
+                  href="/mameshiba"
                   className="bg-primary text-white hover:bg-primary/80 p-4 font-semibold inline-block dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   Découvrir la race Mameshiba
@@ -319,9 +319,8 @@ export default function HomePage() {
                 >
                   <article className="relative text-center bg-muted/70 rounded-lg overflow-hidden">
                     <div
-                      className={`absolute top-4 ${
-                        index === 0 ? "right-4 items-end" : "left-4 items-start"
-                      } md:flex hidden flex-col gap-2 z-10`}
+                      className={`absolute top-4 ${index === 0 ? "right-4 items-end" : "left-4 items-start"
+                        } md:flex hidden flex-col gap-2 z-10`}
                     >
                       {founder.badges.map((badge, badgeIdx) => (
                         <Badge

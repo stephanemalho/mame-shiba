@@ -119,7 +119,7 @@ const pottySchedule = [
 const resources = [
     {
         title: "Bien comprendre le Mame Shiba",
-        href: "/le-mame-shiba",
+        href: "/mameshiba",
         description: "Origines, standard, tempérament et points de vigilance avant de vous engager.",
     },
     {
@@ -587,7 +587,7 @@ export default function AdoptionGuidePage() {
                                     Contacter l&apos;élevage
                                 </Link>
                                 <Link
-                                    href="/le-mame-shiba"
+                                    href="/mameshiba"
                                     className="inline-flex items-center rounded-md border border-white/40 px-4 py-2 font-semibold transition hover:bg-white/10"
                                 >
                                     Revoir les bases sur le Mame Shiba

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: buildOpenGraph({
         title: pageMetadata.pomsky.title,
         description: pageMetadata.pomsky.description,
-        url: `${siteConfig.siteUrl}/le-mame-shiba`,
+        url: `${siteConfig.siteUrl}/mameshiba`,
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         imageUrl: `${siteConfig.siteUrl}${pageImage}`,
     }),
     alternates: {
-        canonical: `${siteConfig.siteUrl}/le-mame-shiba`,
+        canonical: `${siteConfig.siteUrl}/mameshiba`,
     },
 }
 

@@ -39,7 +39,8 @@ export const shibaSociablePost: BlogPost = {
             ]
         },
         {
-            subtitle: "Ce qui aide vraiment un Shiba à bien vivre avec les autres",
+            subtitle:
+                "Ce qui aide vraiment un Shiba à bien vivre avec les autres",
             paragraphs: [
                 "La base, c'est une socialisation commencée tôt, menée sans brutalité, avec des rencontres choisies et une routine stable. Les sources japonaises insistent régulièrement sur le fait que l'environnement et l'éducation pèsent lourd dans l'expression du tempérament.",
                 "Il faut aussi accepter que le but n'est pas de rendre le Shiba 'copain avec tout le monde', mais de lui apprendre à rester serein. Un Shiba équilibré n'est pas forcément démonstratif ; c'est un chien capable de rester juste, lisible et confortable dans son quotidien."
@@ -65,14 +66,15 @@ export const shibaSociablePost: BlogPost = {
         "socialisation shiba"
     ],
     image: "/pages/homePage/mame-shiba-good-caractere.jpg",
-    imageAlt: "Mame Shiba au regard attentif pour illustrer le caractère du Shiba Inu",
+    imageAlt:
+        "Mame Shiba au regard attentif pour illustrer le caractère du Shiba Inu",
     contactCta: {
         label: "Nous poser vos questions"
     },
     relatedLinks: [
         {
             label: "Lire notre page de fond sur le Mame Shiba",
-            href: "/le-mame-shiba"
+            href: "/mameshiba"
         },
         {
             label: "Découvrir la vie en élevage",

@@ -40,7 +40,7 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/le-mame-shiba"
+                                    href="/mameshiba"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
                                     Le Mame-Shiba

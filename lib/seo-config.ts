@@ -98,7 +98,7 @@ export const siteConfig = {
     /* ------------------------------- Pages ------------------------------------ */
     pages: {
         home: "/",
-        pomsky: "/le-mame-shiba",
+        pomsky: "/mameshiba",
         mameshibaPrice: "/mame-shiba-prix",
         adoptionGuide: "/adoption/reussir-son-adoption",
         puppies: "/chiots-disponibles",
@@ -402,7 +402,7 @@ export const sitemapPages = [
         lastmod: "2026-02-13"
     },
     {
-        url: "/le-mame-shiba",
+        url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.75,
         lastmod: "2026-02-13"

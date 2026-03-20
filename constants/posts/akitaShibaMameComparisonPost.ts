@@ -32,7 +32,8 @@ export const akitaShibaMameComparisonPost: BlogPost = {
             ]
         },
         {
-            subtitle: "Mame Shiba : une sélection plus compacte, pensée pour la vie moderne",
+            subtitle:
+                "Mame Shiba : une sélection plus compacte, pensée pour la vie moderne",
             paragraphs: [
                 "Selon KC Japan, le Mame Shiba a été développé à partir de petits Shiba sélectionnés sur plusieurs générations pour mieux s'adapter aux modes de vie contemporains. Le standard KCJ parle d'un mâle autour de 30 à 34 cm et d'une femelle autour de 28 à 32 cm, tout en rappelant que le chien doit rester sain, équilibré et fidèle au type japonais.",
                 "Le Mame Shiba ne doit donc pas être compris comme un simple 'mini chien tendance'. Les sources japonaises insistent au contraire sur une sélection de long terme, sur le maintien des caractéristiques du Shiba et sur l'idée d'un petit chien de famille plus facile à intégrer dans les logements modernes. En pratique, cela allège surtout la gestion du gabarit, pas les exigences liées au tempérament."
@@ -66,14 +67,15 @@ export const akitaShibaMameComparisonPost: BlogPost = {
         "choisir un chien japonais"
     ],
     image: "/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg",
-    imageAlt: "Shiba Inu et Mameshiba pour illustrer un comparatif de races japonaises",
+    imageAlt:
+        "Shiba Inu et Mameshiba pour illustrer un comparatif de races japonaises",
     contactCta: {
         label: "Parler de votre projet"
     },
     relatedLinks: [
         {
             label: "Découvrir notre page de fond sur le Mame Shiba",
-            href: "/le-mame-shiba"
+            href: "/mameshiba"
         },
         {
             label: "Voir nos chiens adultes",

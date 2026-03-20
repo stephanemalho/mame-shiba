@@ -20,7 +20,7 @@ const navGroups = [
         items: [
             {
                 title: "Le Mame-Shiba",
-                href: "/le-mame-shiba",
+                href: "/mameshiba",
                 description: "Taille, tempérament, origines et adoption responsable.",
             },
             {
