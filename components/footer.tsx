@@ -13,7 +13,7 @@ export function Footer() {
                             <div className="h-10 w-10 relative">
                                 <Image
                                     src="/logo-kawaii-mame-shiba.png"
-                                    alt="logo Royal POMSKY - Elevage de pomsky"
+                                    alt="logo Kawaii Shiba elevage de mameshiba"
                                     fill
                                     sizes="40px"
                                     className="object-contain"
@@ -64,10 +64,10 @@ export function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/femelles-reproductrices"
+                                    href="/nos-chiens"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Nos reproducteurs
+                                    Nos chiens
                                 </Link>
                             </li>
                             <li>
@@ -188,7 +188,7 @@ export function Footer() {
                 </div>
 
                 <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-                    <p>&copy; 2026 Royal POMSKY. Tous droits réservés.</p>
+                    <p>&copy; 2026 Kawaii Shiba - Mameshiba. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>

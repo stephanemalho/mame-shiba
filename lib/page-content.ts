@@ -29,12 +29,12 @@ export const pageContent = {
             "Une nouvelle portée arrive très bientôt et les réservations sont déjà ouvertes. En attendant l'arrivée des chiots, nous recevons les demandes des familles souhaitant être accompagnées sérieusement dans leur projet d'adoption."
     },
     reproductors: {
-        h1: "Nos chiens reproducteurs",
-        subtitle: "La famille - Royal POMSKY",
+        h1: "Nos adultes reproducteurs Mameshiba",
+        subtitle: "Lignées japonaises, caractères et sélection de l'élevage",
         description:
-            "Les chiens présentés ici sont les reproducteurs de notre élevage Royal POMSKY. Ils constituent le cœur de notre lignée et participent activement à la transmission de nos valeurs, tant sur le plan physique que comportemental.",
+            "Les chiens présentés ici constituent le cœur de notre élevage Kawaii Shiba. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.",
         descriptionSecondary:
-            "Chaque mariage est soigneusement réfléchi et réalisé exclusivement au sein de notre élevage, dans une démarche responsable visant à préserver la santé, l'équilibre émotionnel et le type propre aux pomsky Toy rares et exotiques."
+            "Chaque mariage est soigneusement réfléchi afin de préserver l'équilibre émotionnel, la morphologie, la douceur de caractère et l'identité du véritable Mameshiba."
     },
     presentation: {
         h1: "L'élevage Kawaii Shiba - Mameshiba",

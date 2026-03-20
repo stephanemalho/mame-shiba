@@ -44,9 +44,9 @@ const navGroups = [
                 description: "Aurélie & Marine, leur parcours et leur vision.",
             },
             {
-                title: "Nos reproducteurs",
-                href: "/femelles-reproductrices",
-                description: "Les lignées et la sélection de nos chiens.",
+                title: "Nos chiens",
+                href: "/nos-chiens",
+                description: "Nos adultes, leurs lignées et notre sélection.",
             },
             {
                 title: "Conditions de vie",

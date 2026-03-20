@@ -206,10 +206,10 @@ export default function PresentationPage() {
                                     </div>
                                 </div>
                                 <Link
-                                    href="/femelles-reproductrices"
+                                    href="/nos-chiens"
                                     className="flex items-center bg-primary h-10 text-white hover:bg-primary/80 px-4 font-semibold dark:text-[#5b3a1a] rounded-md w-fit"
                                 >
-                                    Voir nos reproducteurs
+                                    Voir nos chiens
                                 </Link>
                             </div>
                         </div>

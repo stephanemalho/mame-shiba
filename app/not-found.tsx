@@ -3,7 +3,7 @@ import { AlertCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Page non trouvée - Royal POMSKY',
+    title: 'Page non trouvée - Kawaii Shiba',
     description: 'La page que tu cherches n\'existe pas.',
 };
 
@@ -20,7 +20,7 @@ export default function NotFound() {
                 <div className="space-y-2">
                     <h1 className="text-5xl font-bold">404</h1>
                     <p className="text-muted-foreground text-lg">
-                        La page que tu cherches n'existe pas ou a été supprimée.
+                        La page que tu cherches n&apos;existe pas ou a été supprimée.
                     </p>
                 </div>
 
@@ -30,7 +30,7 @@ export default function NotFound() {
                         href="/"
                         className="bg-primary hover:bg-primary/80 text-white dark:text-[#5b3a1a] font-semibold py-3 px-6 rounded-md transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
-                        Retour à l'accueil
+                        Retour à l&apos;accueil
                     </Link>
                     <Link
                         href="/contact"
@@ -50,8 +50,8 @@ export default function NotFound() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/femelles-reproductrices" className="text-primary hover:underline">
-                                Nos reproducteurs
+                            <Link href="/nos-chiens" className="text-primary hover:underline">
+                                Nos chiens
                             </Link>
                         </li>
                         <li>

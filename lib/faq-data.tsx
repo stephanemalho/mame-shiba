@@ -463,7 +463,7 @@ export const faqReproducteurs: FAQItem[] = [
           Des chiens stables et bien dans leur tête donnent naissance à des chiots plus confiants, plus adaptables et mieux préparés à la vie de famille et citadine.
         </p>
         <p>
-          Le Mame-Shiba étant issu de lignées Husky et Spitz, la sélection des reproducteurs est primordiale pour obtenir des chiens équilibrés, stables et conformes au type.
+          Chez le Mameshiba, la sélection des reproducteurs est primordiale pour obtenir des chiens équilibrés, stables, bien construits et fidèles au type recherché.
         </p>
         <p>Le tempérament, la morphologie, la santé et le comportement sont pris en compte avant chaque projet de reproduction.
         </p>
@@ -495,8 +495,8 @@ export const faqReproducteurs: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mame-Shiba étant issu de lignées Husky et Spitz, la sélection des reproducteurs
-          est primordiale pour obtenir des chiens équilibrés, stables et conformes au type.
+          Le choix des reproducteurs est essentiel pour conserver l’identité du Mameshiba :
+          un petit chien primitif, harmonieux, sensible, propre et bien codé.
         </p>
         <p>
           Le tempérament, la morphologie, la santé et le comportement sont pris en compte

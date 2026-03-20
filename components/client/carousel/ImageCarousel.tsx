@@ -16,6 +16,7 @@ function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: I
     const total = images.length
     const isOneImage = total === 1
     const resolvedSizes = sizes ?? "(min-width: 1024px) 50vw, (min-width: 768px) 50vw, 100vw"
+    const currentImage = images[index].startsWith("/") ? images[index] : `/${images[index]}`
 
     const prev = () => setIndex((i) => (i - 1 + total) % total)
     const next = () => setIndex((i) => (i + 1) % total)
@@ -23,7 +24,7 @@ function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: I
     return (
         <div className="relative h-72 md:h-full overflow-hidden rounded-lg bg-amber-950 mx-4">
             <Image
-                src={`/${images[index]}`}
+                src={currentImage}
                 alt={`${alt} - photo ${index + 1}`}
                 fill
                 className="object-cover transition duration-300 p-2"

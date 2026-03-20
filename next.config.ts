@@ -69,6 +69,11 @@ const nextConfig: NextConfig = {
                 permanent: true
             },
             {
+                source: "/femelles-reproductrices",
+                destination: "/nos-chiens",
+                permanent: true
+            },
+            {
                 source: "/pomsky-prix-guide-complet-pour-comprendre-le-cout-dadoption-et-dentretien",
                 destination:
                     "/blog/mame-shiba/prix/pomsky-prix-guide-complet-pour-comprendre-le-cout-dadoption-et-dentretien",

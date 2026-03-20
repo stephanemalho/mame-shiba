@@ -100,7 +100,7 @@ export const siteConfig = {
         home: "/",
         pomsky: "/le-mame-shiba",
         puppies: "/chiots-disponibles",
-        reproductors: "/femelles-reproductrices",
+        reproductors: "/nos-chiens",
         presentation: "/presentation-elevage",
         eleveuses: "/presentation-eleveuses",
         wellness: "/bien-etre-animal",
@@ -241,12 +241,12 @@ export const pageMetadata = {
         title: pageContent.reproductors.h1,
         description: pageContent.reproductors.description,
         keywords: [
-            "reproducteurs pomsky",
-            "lignees pomsky",
-            "standard de race",
-            "sante canine",
-            "tests genetiques",
-            "caractere pomsky"
+            "mameshiba japon",
+            "nos chiens mameshiba",
+            "adultes reproducteurs mameshiba",
+            "lignées japonaises mameshiba",
+            "tests genetiques shiba inu",
+            "caractere mameshiba"
         ]
     },
 
@@ -382,7 +382,7 @@ export const sitemapPages = [
         lastmod: "2026-02-13"
     },
     {
-        url: "/femelles-reproductrices",
+        url: "/nos-chiens",
         changefreq: "monthly",
         priority: 0.8,
         lastmod: "2026-02-13"
