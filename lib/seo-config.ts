@@ -255,12 +255,12 @@ export const pageMetadata = {
         title: pageContent.presentation.h1,
         description: pageContent.presentation.description,
         keywords: [
-            "elevage responsable",
-            "passion pomsky",
-            "selection rigoureuse",
+            "elevage mameshiba",
+            "elevage shiba japonais",
+            "selection rigoureuse mameshiba",
             "accompagnement adoptant",
             "ethique elevage",
-            "trouver bon elevage pomsky",
+            "trouver bon elevage mameshiba",
             "elevage chiots avec mere"
         ]
     },

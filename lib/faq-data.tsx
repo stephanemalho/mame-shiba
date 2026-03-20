@@ -81,15 +81,14 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Les parents ont été sélectionnés aux Japon, les mame-shiba au meme titre que les shiba inu sont des races primitives et doivent etre reproduit entre eux pour conserver l'originalité de cette incroyable lignée millénaire. Nous les retenons tout d'abord pour leur beauté physique et particulièrement leur correspondance au standard du Mame-Shiba établi selon le KENNEL CLUB OF JAPAN pour les Mame-Shiba ainsi que nos objectifs d'avancer en génération.
+          Les futurs parents sont choisis avec beaucoup d&apos;exigence : origine des lignées, cohérence du type, qualité de construction, tempérament et stabilité émotionnelle.
         </p>
         <p>
-          Mame-Shiba et l'IPA ( premier club américain fondateur de la race ) ainsi que nos objectifs d'avancer en génération.
+          Chez le Mameshiba, nous recherchons un chien harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif.
         </p>
-        <p>À l'âge d'1 an nous faisons les test ADN de santé et de dépistage des tares liées au pomeranien et husky ! Suite à celà un bilan comportemental du chien que nous avons sélectionné. </p>
-        <p>Si le bilan est positif et que le comportement correspond à ce qui est souhaité pour la race en devenir ( Mame-Shiba sociable, avenant, facile à éduquer, peu aboyeur, proche de l'humain et équilibré ) il sera sélectionné pour notre programme d'élevage et il reproduira à l'âge de 2 ans. </p>
-        <p>Si le comportement n'est pas adapté à la reproduction ( peur, méfiance, aboiement excessifs ) le chien est placé en famille d'accueil et stérilisé.</p>
-        <p>Tout ceci dans le but de vous garantir d'adopter un chien équilibré, avec une santé parfaite.</p>
+        <p>
+          Les tests de santé, l&apos;observation du caractère et la traçabilité sont des points centraux de notre sélection. Si un chien ne présente pas l&apos;équilibre recherché, il ne reproduit pas.
+        </p>
       </div>
     ),
   },
@@ -98,22 +97,19 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Ce nombre est variable, mais en moyenne une dizaine de portées par année.
+          Ce nombre est variable selon les femelles, les repos nécessaires et la qualité des mariages envisagés.
         </p>
         <p>
-          Ce cadre favorise l'équilibre émotionnel, la confiance et la sociabilité des chiots.
+          Chez Kawaii Mame-Shiba, nous privilégions clairement la qualité à la quantité.
         </p>
-        <p>Chez Kawaii Mame-Shiba nous privilégions la qualité à la quantité.</p>
-        <p>Nous n'hésitons pas à travailler la taille Toy qui est la taille la moins prolifique en Mame-Shiba. </p>
         <p>
-          Les femelles ont leur année de repos après gestation, le nombre de portées est volontairement limité afin de garantir :
+          Les femelles ont leurs périodes de repos après gestation, et le nombre de portées est volontairement limité afin de garantir :
         </p>
         <ul className="list-disc ml-4">
           <li>une présence quotidienne auprès des chiots,</li>
-          <li>une socialisation optimale,</li>
+          <li>une socialisation adaptée au tempérament du Mameshiba,</li>
           <li>un suivi individualisé pour chaque famille adoptante.</li>
         </ul>
-        <p>Nos portées arrivent souvent en même temps ce qui nous laisse beaucoup de chiots à proposer à certaines périodes et moins à d'autres.</p>
       </div>
     ),
   },
@@ -122,8 +118,10 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Les chiots évoluent dans un environnement professionnel, sécurisé et stimulant.
-          Ils sont exposés progressivement aux bruits, ( sons, vidéo projection ) et aux manipulations depuis leur naissance et aux situations courantes, favorisant leur équilibre et leur confiance.
+          Les chiots évoluent dans un environnement professionnel, sécurisé et stimulant, au contact de leur fratrie, de leur mère et de l&apos;humain.
+        </p>
+        <p>
+          Ils découvrent progressivement les bruits, les manipulations, les textures et les situations du quotidien, toujours de manière mesurée, afin de construire leur confiance sans les brusquer.
         </p>
       </div>
     ),
@@ -133,7 +131,7 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Chez Kawaii Mame-Shiba, chaque de nos chiens évolue dans le respect de son rythme physiologique et émotionnel.
+          Oui. Chez Kawaii Mame-Shiba, chaque chien évolue dans le respect de son rythme physiologique et émotionnel.
           Les périodes de reproduction, de repos et de récupération sont soigneusement respectées afin de préserver la santé et l'équilibre des reproducteurs.
         </p>
       </div>
@@ -144,10 +142,10 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Absolument. L'équilibre émotionnel est une partie essentielle de notre travail, de par mon ancien métier d'éducatrice dans lequel j'ai vu bien trop de chiens souffrant de troubles du comportement. Je donne à mes chiots toutes les clés possibles.
+          Absolument. L&apos;équilibre émotionnel est une partie essentielle de notre travail, en particulier chez le Mameshiba, qui peut être très fin dans sa lecture du monde et de l&apos;humain.
         </p>
-        <p>Un chiot bien dans sa tête devient un adulte stable, confiant et agréable à vivre. </p>
-        <p>C'est pourquoi chaque interaction est pensée pour renforcer la sécurité affective, la confiance en l'humain et en lui même.</p>
+        <p>Un chiot bien dans sa tête devient un adulte stable, confiant et agréable à vivre.</p>
+        <p>C&apos;est pourquoi chaque interaction est pensée pour renforcer la sécurité affective, la confiance en l&apos;humain et l&apos;autonomie.</p>
       </div>
     ),
   },
@@ -156,7 +154,7 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Cependant les enfants doivent être calme en présence de chiots pour faire connaissance avec eux de la meilleure manière possible. Une fois la relation établie les chiots seront à même de montrer leur personnalité véritable.
+          Oui, à condition que les rencontres se fassent dans le calme et le respect. Les enfants doivent apprendre à approcher le chiot en douceur, sans agitation.
         </p>
         <p>
           Les chiots sont habitués à une présence humaine variée et à des manipulations respectueuses, ce qui facilite leur intégration dans des foyers avec enfants, sous supervision et dans le respect mutuel.
@@ -169,7 +167,10 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, et j'adore cela !  J'accompagne tout particulièrement les premières adoptions, même si évidemment toute famille est traitée de la même manière ! Je le fais en prenant le temps d'expliquer les besoins du Mame-Shiba, les bases éducatives et les bonnes pratiques pour un départ serein, bien sûr le travail sera accompagné bien après le départ du chiot, l'élevage étant impliqué au delà du simple placement du chiot.
+          Oui, bien sûr. Nous accompagnons tout particulièrement les premières adoptions en prenant le temps d&apos;expliquer les besoins du Mameshiba, les bases éducatives et les bonnes pratiques pour un départ serein.
+        </p>
+        <p>
+          L&apos;accompagnement continue après le départ du chiot, car notre travail ne s&apos;arrête pas au moment du placement.
         </p>
       </div>
     ),
