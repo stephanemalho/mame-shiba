@@ -64,7 +64,7 @@ export const shibaApartmentPost: BlogPost = {
         "shiba ou mameshiba",
         "vie en intérieur"
     ],
-    image: "/pages/homePage/mame-shiba-for-modern-life.jpeg",
+    image: "/assets/blog/Kaito-et-Yushi-en-appartement.jpg",
     imageAlt: "Mame Shiba dans un décor de vie moderne",
     contactCta: {
         label: "Échanger sur votre mode de vie"
