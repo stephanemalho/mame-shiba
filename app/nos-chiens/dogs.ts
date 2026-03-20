@@ -26,8 +26,7 @@ export const dogs: AdultDog[] = [
             "Confirmé - Kennel Club of Japan",
         ],
         images: [
-            "/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg",
-            "/pages/homePage/mame-shiba-good-caractere.jpg",
+            "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.jpeg",
         ],
     },
     {
@@ -44,8 +43,7 @@ export const dogs: AdultDog[] = [
             "Confirmée - Kennel Club of Japan",
         ],
         images: [
-            "/pages/homePage/little-mame-shiba-red-white.jpeg",
-            "/pages/homePage/mame-shiba-for-modern-life.jpeg",
+            "/pages/reproducteurs/Yuzu-femelle-mame-shiba-couleur-feu.jpeg",
         ],
     },
     {
@@ -63,8 +61,7 @@ export const dogs: AdultDog[] = [
             "Confirmée - Kennel Club of Japan",
         ],
         images: [
-            "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg",
-            "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg",
+            "/pages/reproducteurs/SAKURA-white-mame-shiba-from-japan.jpg",
         ],
     },
     {
@@ -83,8 +80,7 @@ export const dogs: AdultDog[] = [
             "Pedigree DWKC",
         ],
         images: [
-            "/moshi.webp",
-            "/assets/authors/aurelie-moshi.webp",
+            "/pages/reproducteurs/KAWAII-femelle-mame-shiba-couleur-feu.jpeg",
         ],
     },
     {
@@ -103,13 +99,12 @@ export const dogs: AdultDog[] = [
             "Pedigree - Kennel Club of Japan",
         ],
         images: [
-            "/pages/homePage/mame-shiba-for-modern-life.jpeg",
-            "/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg",
+            "/pages/reproducteurs/NATSUKO-male-mame-shiba-noir-et-feu.jpeg",
         ],
     },
     {
         name: "Tori",
-        title: "KAWAII MAMESHIBA TORI - Femelle Mameshiba",
+        title: "TORI - Femelle Mameshiba",
         color: "Red",
         origin: "Née à l’élevage",
         lineage: "Excellente lignée 100% japonaise",
@@ -124,33 +119,12 @@ export const dogs: AdultDog[] = [
             "Pedigree - DWKC",
         ],
         images: [
-            "/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg",
-            "/pages/homePage/little-mame-shiba-red-white.jpeg",
-        ],
-    },
-    {
-        name: "Yu-Xi",
-        title: "YU-XI dite KIMI - Femelle Mameshiba",
-        color: "Red",
-        origin: "Origine Japon, née à l’élevage",
-        lineage: "Fille de Kawaii et Ichiro, excellente lignée 100% japonaise",
-        size: "25 cm au garrot • 3 kg",
-        temperament:
-            "Kimi est un vrai pot de colle ambulant. Proche de l’humain, sociable et paisible, elle aime la compagnie des personnes comme celle des autres chiens, tout en appréciant beaucoup sa tranquillité. Petite par la taille, grande par la personnalité.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark",
-            "Indemne de maladies génétiques",
-            "Confirmée - Kennel Club of Japan",
-        ],
-        images: [
-            "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
-            "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg",
+            "/pages/reproducteurs/TORI-femelle-mame-shiba-couleur-feu.jpeg",
         ],
     },
     {
         name: "Yumi",
-        title: "KAWAII MAMESHIBA YUMI - Femelle Mameshiba",
+        title: "YUMI - Femelle Mameshiba",
         color: "Red",
         origin: "Née à l’élevage",
         lineage: "Excellente lignée 100% japonaise",
@@ -164,8 +138,7 @@ export const dogs: AdultDog[] = [
             "Pedigree - Kennel Club of Japan",
         ],
         images: [
-            "/mame-shiba-in-a-sakura-tree.jpg",
-            "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg",
+            "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.jpeg",
         ],
     },
     {
@@ -184,8 +157,7 @@ export const dogs: AdultDog[] = [
             "Confirmé - Kennel Club of Japan",
         ],
         images: [
-            "/pages/homePage/mame-shiba-good-caractere.jpg",
-            "/pages/homePage/mame-shiba-for-modern-life.jpeg",
+            "/pages/reproducteurs/WARU-male-mame-shiba-couleur-feu.jpeg",
         ],
     },
 ]
