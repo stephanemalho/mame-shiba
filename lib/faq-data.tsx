@@ -184,7 +184,7 @@ export const faqEleveuses: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Le Toy, sans conteste la taille la plus mignonne, mais cela reste un chien difficile à obtenir et surtout obtenir une belle harmonie.
+          Le Mame Shiba est un petit chien, et j'aime particulièrement les chiens de petite taille, entre 4 et 6 kg, qui restent dans le type du Mameshiba : un petit primitif harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif. Attention cependant à ne pas chercher à faire du Mameshiba un chien de poche, il doit rester dans les standards de la race pour être un Mameshiba, c'est à dire entre 25 et 34 cm pour le mâle et entre 25 et 32 cm pour la femelle selon le KCJ.
         </p>
       </div>
     ),

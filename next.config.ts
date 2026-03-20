@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
                 source: "/le-shiba-inu/",
                 destination: "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix",
                 permanent: true
+            },
+            {
+                source: "/le-shiba-inu",
+                destination: "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix",
+                permanent: true
             }
         ];
     }

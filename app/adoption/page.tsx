@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation"
+import { permanentRedirect } from "next/navigation"
 
 export default function AdoptionPage() {
-    redirect("/adoption/reussir-son-adoption")
+    permanentRedirect("/adoption/reussir-son-adoption")
 }

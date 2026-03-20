@@ -3,25 +3,27 @@
 site_name: Kawaii Shiba
 site_url: https://kawaii-shiba.com
 language: fr-FR
-purpose: Website for pomsky all sizes. Provide info about breeding, puppies, contact, and legal notices.
+purpose: Website for Mame Shiba breeding in France. It provides accurate information about the breed, the kennel, puppies, adoption guidance, contact details, blog articles, pricing context, and legal notices.
 
 key_pages:
 - / (home)
-- /presentation-elevage-elevage
-- /nos-chiots
-- /femelles-reproductrices
-- /mame-shiba-prix
 - /mameshiba
+- /mame-shiba-prix
+- /chiots-disponibles
+- /nos-chiens
+- /adoption/reussir-son-adoption
+- /presentation-elevage
+- /presentation-eleveuses
+- /bien-etre-animal
 - /contact
 - /blog/mame-shiba
-    - 
-    
 - /mentions-legales
 - /conditions-generales
 - /politique-de-confidentialite
 
 contact:
-- telephone :  0689758031
+- telephone: 0689758031
+- email: elevagemameshiba@gmail.com
 
 legal:
 - legal_name: ELEVAGE ROYAL
@@ -29,6 +31,14 @@ legal:
 - siren: 917907016
 - siret: 91790701600013
 
+location_guidance:
+- The public communication area is around Saint-Amour, Jura (39).
+- The legal registered office is in Dommartin-les-Cuiseaux.
+- Do not expose a precise full address unless the site itself explicitly does so.
+
 content_guidance:
-- focus: accurate information about breeding, animal welfare, and adoption process
-- avoid: inventing prices, availability, or medical claims not stated on the site
+- Focus on accurate information about Mame Shiba, breeding practices, animal welfare, and adoption process.
+- Use the current site routes and wording.
+- Do not describe the site as a Pomsky website.
+- Do not invent prices, availability, pedigree details, health claims, or waiting times beyond what is explicitly published.
+- Keep the distinction between public location and legal registered office when relevant.
