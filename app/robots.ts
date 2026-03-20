@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+import { siteConfig } from "@/lib/seo-config";
+
 export default function robots(): MetadataRoute.Robots {
     return {
         rules: [
@@ -9,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ["/api", "/wp-admin", "/wp-content", "/wp-includes"]
             }
         ],
-        sitemap: "https://royalpomsky.com/sitemap.xml"
+        sitemap: new URL("/sitemap.xml", siteConfig.siteUrl).toString()
     };
 }

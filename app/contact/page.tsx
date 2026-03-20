@@ -57,7 +57,7 @@ const contactItems = [
         icon: Mail,
         title: "Email",
         type: "email",
-        content: "elevageroyalpomsky@gmail.com",
+        content: "elevagemameshiba@gmail.com",
         secondaryLine: "Réponse sous 24h, vidéos envoyées sur demande."
     },
     {
@@ -197,7 +197,7 @@ export default function ContactPage() {
                             <CardContent className="p-6 space-y-4">
                                 <h2 className="text-xl md:text-2xl font-semibold">Dites nous en plus sur votre projet avant de prendre rendez-vous</h2>
                                 <p className="text-muted-foreground">
-                                    Remplissez notre questionnaire de pré-visite pour que nous puissions mieux comprendre vos attentes et vous proposer le pomsky qui correspondra parfaitement à votre famille. <br /><span className="text-sm italic text-muted-foreground/80">(gratuit et sans engagement de votre part)</span>
+                                    Remplissez notre questionnaire de pré-visite pour que nous puissions mieux comprendre vos attentes et vous proposer le Mame-Shiba qui correspondra parfaitement à votre famille. <br /><span className="text-sm italic text-muted-foreground/80">(gratuit et sans engagement de votre part)</span>
                                 </p>
                                 <div className="space-y-3">
                                     <div className="flex items-center space-x-2">
@@ -217,7 +217,7 @@ export default function ContactPage() {
                                     <div className="relative w-40 aspect-square my-4">
                                         <Image
                                             src="/qr-code-contact-exotic-perle-teckel.webp"
-                                            alt="QR code pour contacter Royal POMSKY"
+                                            alt="QR code pour contacter Kawaii Shiba"
                                             fill
                                             className="object-cover"
                                             sizes="160px"
@@ -242,7 +242,7 @@ export default function ContactPage() {
 
                     <FAQSection
                         title="FAQ avant de prendre contact"
-                        description="Réponses rapides sur le caractère et la cohabitation du pomsky."
+                        description="Réponses rapides sur le caractère et la cohabitation du Mame-Shiba."
                         items={faqContact}
                     />
                     <div className="text-right text-xs text-muted-foreground mt-6">

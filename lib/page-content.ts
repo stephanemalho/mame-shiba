@@ -10,7 +10,7 @@ export const pageContent = {
         descriptionTertiary:
             "Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et adoration pour la culture Japonaise nous a mené tout droit jusqu'à un véritable coup de cœur : LE MAMESHIBA ! "
     },
-    pomsky: {
+    shiba: {
         h1: "Le Mameshiba : description, standard, origines et repères avant adoption",
         description:
             "Le Mameshiba est issu du Shiba Inu, race japonaise primitive reconnue au LOF pour le Shiba, mais dont la version miniature n'est pas reconnue au LOF en France. Sélectionné au Japon à partir de très petits Shiba Inu, il conserve l'allure, la vivacité et la noblesse de son ancêtre dans un format plus compact. Cette page vous aide à comprendre son origine, ses tailles, son standard et les critères à vérifier avant toute adoption.",
@@ -18,7 +18,7 @@ export const pageContent = {
         h3Standard: "Mameshiba femelle",
         h3Miniature: "Mameshiba mâle",
         h3toy: "Shiba Inu",
-        pomskyOrigin: "Origines et reconnaissance du Mameshiba",
+        shibaOrigin: "Origines et reconnaissance du Mameshiba",
         googToKnow: "Acheter un Mameshiba : les points essentiels"
     },
     puppies: {
@@ -58,16 +58,16 @@ export const pageContent = {
     legalNotice: {
         h1: "Mentions légales",
         description:
-            "Informations réglementaires de l'élevage Royal POMSKY et cadre juridique d'utilisation du site."
+            "Informations réglementaires de l'élevage Kawaii Shiba et cadre juridique d'utilisation du site."
     },
     terms: {
         h1: "Termes et conditions d'utilisation",
         description:
-            "Règles d'usage du site Royal POMSKY, informations précontractuelles et responsabilités de chacune des parties."
+            "Règles d'usage du site Kawaii Shiba, informations précontractuelles et responsabilités de chacune des parties."
     },
     privacy: {
         h1: "Politique de confidentialité",
         description:
-            "Comment Royal POMSKY collecte, utilise et protège vos données personnelles dans le respect du RGPD."
+            "Comment Kawaii Shiba collecte, utilise et protège vos données personnelles dans le respect du RGPD."
     }
 } as const;

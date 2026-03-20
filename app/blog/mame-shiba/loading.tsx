@@ -1,4 +1,4 @@
-export default function PomskyBlogLoading() {
+export default function MameShibaBlogLoading() {
     return (
         <div className="bg-background text-foreground">
             <section className="border-b-2 border-dashed border-border/60">

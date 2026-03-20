@@ -83,6 +83,7 @@ export default function MentionsLegalesPage() {
               <p>Forme juridique : {editor.legalForm}</p>
               <p>SIREN : {editor.siren}</p>
               <p>SIRET (siège) : {editor.siret}</p>
+              {/* @TODO modifier gouv link ou retirer */}
               <p>Activité : <a href="https://www.saone-et-loire.gouv.fr/Actions-de-l-Etat/Environnement-risques-naturels-et-technologiques/ICPE-Teledeclarations/Preuves-de-depot-Changement-d-exploitant/2022/ELEVAGE-CANIN-ROYAL-POMSKY-a-DOMMARTIN-LES-CUISEAUX" className="text-primary hover:underline" target="_blank" rel="noreferrer">{editor.activity}</a></p>
               <p>Adresse du siège : Commune de Dommartin-lès-Cuiseaux (71480) - France
                 Adresse complète communiquée uniquement après réservation.</p>
@@ -106,7 +107,7 @@ export default function MentionsLegalesPage() {
             <h2 className="text-xl md:text-2xl font-semibold">Propriété intellectuelle</h2>
             <p className="text-muted-foreground">
               L&apos;ensemble des contenus (textes, photographies, visuels, logo) présents sur ce site est protégé par le droit d&apos;auteur
-              et demeure la propriété exclusive d&apos;Royal POMSKY ou de leurs auteurs respectifs. Toute reproduction, adaptation ou
+              et demeure la propriété exclusive de Kawaii Shiba ou de leurs auteurs respectifs. Toute reproduction, adaptation ou
               diffusion, même partielle, nécessite une autorisation écrite préalable.
             </p>
           </section>
@@ -116,7 +117,7 @@ export default function MentionsLegalesPage() {
             <p className="text-muted-foreground">
               Les informations publiées sur ce site sont fournies à titre informatif sur l&apos;élevage, les chiots disponibles et les pratiques de bien-être animal.
               Malgré une mise à jour régulière, certaines données (disponibilités, tarifs indicatifs, dates de portées) peuvent évoluer. Nous vous invitons
-              à confirmer chaque information lors de la prise de contact. Royal POMSKY ne saurait être tenue responsable d&apos;une mauvaise interprétation
+              à confirmer chaque information lors de la prise de contact. Kawaii Shiba ne saurait être tenue responsable d&apos;une mauvaise interprétation
               ou d&apos;un usage inapproprié des contenus du site.
             </p>
           </section>
@@ -124,7 +125,7 @@ export default function MentionsLegalesPage() {
           <section className="space-y-3">
             <h2 className="text-xl md:text-2xl font-semibold">Liens hypertextes</h2>
             <p className="text-muted-foreground">
-              Les liens externes (Instagram, formulaires, ressources partenaires) sont proposés pour faciliter vos démarches. Royal POMSKY ne contrôle
+              Les liens externes (Instagram, formulaires, ressources partenaires) sont proposés pour faciliter vos démarches. Kawaii Shiba ne contrôle
               pas le contenu de ces sites tiers et décline toute responsabilité quant aux informations qui y figurent.
             </p>
           </section>

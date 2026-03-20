@@ -19,7 +19,7 @@ export function Navigation() {
                     <div className="h-10 w-10 relative">
                         <Image
                             src="/logo-kawaii-mame-shiba.png"
-                            alt="logo Royal POMSKY - Elevage de pomsky"
+                            alt="logo Kawaii Shiba - Elevage de shiba"
                             fill
                             sizes="40px"
                             className="object-contain"

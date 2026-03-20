@@ -2,7 +2,7 @@
 import { siteConfig } from "./seo-config";
 
 /**
- * Schéma Organization pour l'élevage Royal POMSKY
+ * Schéma Organization pour l'élevage Kawaii Shiba
  * Utilisé notamment sur la page d'accueil
  */
 export function generateOrganizationSchema() {
@@ -208,9 +208,9 @@ export function generatePuppyListSchema(
     return {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        name: "Chiots pomsky disponibles",
+        name: "Chiots Mame Shiba disponibles",
         description:
-            "Liste des chiots pomsky Royal POMSKYs disponibles à l'adoption.",
+            "Liste des chiots Mame Shiba de l'élevage Kawaii Shiba disponibles à l'adoption.",
         numberOfItems: puppies.length,
         itemListElement: puppies.map((puppy, index) => ({
             "@type": "ListItem",

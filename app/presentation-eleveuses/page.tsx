@@ -47,7 +47,7 @@ export default function PresentationEleveusesPage() {
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqEleveuses))
     const lastMod = returnLastmod(siteConfig.pages.eleveuses)
-
+  {/* @TODO modifier LES IMAGES DE AURELIE ET MARINE */}
     const aurelieGallery = [
         {
             src: "/assets/authors/aurelie-magnetisme-past-work.jpeg",

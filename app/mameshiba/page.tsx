@@ -14,12 +14,12 @@ import { Feather, Heart, History, PawPrint, Ruler, Scale, ScrollText, Sparkles }
 const pageImage = "/pages/homePage/mame-shiba-for-modern-life.jpeg"
 
 export const metadata: Metadata = {
-    title: pageMetadata.pomsky.title,
-    description: pageMetadata.pomsky.description,
-    keywords: pageMetadata.pomsky.keywords,
+    title: pageMetadata.shiba.title,
+    description: pageMetadata.shiba.description,
+    keywords: pageMetadata.shiba.keywords,
     openGraph: buildOpenGraph({
-        title: pageMetadata.pomsky.title,
-        description: pageMetadata.pomsky.description,
+        title: pageMetadata.shiba.title,
+        description: pageMetadata.shiba.description,
         url: `${siteConfig.siteUrl}/mameshiba`,
         images: [
             {
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
         ],
     }),
     twitter: buildTwitter({
-        title: pageMetadata.pomsky.title,
-        description: pageMetadata.pomsky.description,
+        title: pageMetadata.shiba.title,
+        description: pageMetadata.shiba.description,
         imageUrl: `${siteConfig.siteUrl}${pageImage}`,
     }),
     alternates: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 const sizes = [
     {
-        title: pageContent.pomsky.h3toy,
+        title: pageContent.shiba.h3toy,
         height: "Mâle : 38 à 41 cm • Femelle : 35 à 38 cm",
         frame: "Standard LOF du Shiba Inu",
         text: "Le Shiba Inu constitue la référence d'origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
@@ -51,7 +51,7 @@ const sizes = [
         alt: "Comparatif entre un Shiba Inu et un Mameshiba",
     },
     {
-        title: pageContent.pomsky.h3Miniature,
+        title: pageContent.shiba.h3Miniature,
         height: "25 à 34 cm au garrot",
         frame: "Format compact et masculin",
         text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d'un an, avec validation du type et de la taille.",
@@ -59,7 +59,7 @@ const sizes = [
         alt: "Mameshiba roux et blanc assis dans l'herbe",
     },
     {
-        title: pageContent.pomsky.h3Standard,
+        title: pageContent.shiba.h3Standard,
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
         text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
@@ -95,10 +95,10 @@ const historySteps = [
 export default function MameShibaPage() {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Le Mameshiba", url: siteConfig.pages.pomsky },
+        { name: "Le Mameshiba", url: siteConfig.pages.shiba },
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameShiba))
-    const lastMod = returnLastmod(siteConfig.pages.pomsky)
+    const lastMod = returnLastmod(siteConfig.pages.shiba)
 
     return (
         <>
@@ -119,10 +119,10 @@ export default function MameShibaPage() {
                                 Le Mameshiba
                             </Badge>
                             <h1 className="text-xl md:text-3xl font-bold">
-                                {pageContent.pomsky.h1}
+                                {pageContent.shiba.h1}
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                {pageContent.pomsky.description}
+                                {pageContent.shiba.description}
                             </p>
                             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function MameShibaPage() {
 
                     <section className="mb-16 space-y-10">
                         <div className="text-center space-y-3">
-                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.pomsky.h2}</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.shiba.h2}</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto">
                                 Le Mameshiba vient du Shiba Inu. Sa lecture commence donc par un comparatif simple des tailles
                                 adultes, toujours exprimées au garrot.
@@ -227,7 +227,7 @@ export default function MameShibaPage() {
                             <Badge variant="secondary" className="w-fit">
                                 Origines
                             </Badge>
-                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.pomsky.pomskyOrigin}</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.shiba.shibaOrigin}</h2>
                             <p className="text-muted-foreground leading-relaxed">
                                 Le Mameshiba descend directement du Shiba Inu, race japonaise ancestrale reconnue au LOF pour sa
                                 version standard. Le mot « mame » évoque la petite taille, mais il ne désigne pas simplement un
@@ -404,7 +404,7 @@ export default function MameShibaPage() {
 
                     <section className="mb-16 space-y-6 bg-muted/40 rounded-lg p-8">
                         <div className="text-center space-y-3">
-                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.pomsky.googToKnow}</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.shiba.googToKnow}</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                                 Comme la race n’est pas reconnue au LOF et qu’elle reste très rare, l’achat d’un Mameshiba demande
                                 davantage de vigilance qu’un simple coup de cœur sur photo.

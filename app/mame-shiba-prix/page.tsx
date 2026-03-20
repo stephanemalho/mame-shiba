@@ -428,7 +428,7 @@ export default function MameshibaPricePage() {
                                     Avant de comparer des prix, il est utile de bien comprendre ce qu’est réellement un Mame Shiba, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
                                 </p>
                                 <Link
-                                    href={siteConfig.pages.pomsky}
+                                    href={siteConfig.pages.shiba}
                                     className="inline-flex rounded-md border border-primary px-5 py-3 font-semibold text-primary transition-colors hover:bg-primary/10"
                                 >
                                     Découvrir le Mame Shiba

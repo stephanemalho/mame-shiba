@@ -3,7 +3,7 @@ import { pageContent } from "./page-content";
 
 /**
  * ============================================================
- * CONFIGURATION SEO & LÉGALE — Royal POMSKY
+ * CONFIGURATION SEO & LÉGALE — Kawaii Shiba
  * ============================================================
  * Source de vérité unique pour :
  * - SEO
@@ -16,7 +16,7 @@ import { pageContent } from "./page-content";
 /*  CANONICAL NAME (UNE SEULE SOURCE DE VÉRITÉ)                                */
 /* -------------------------------------------------------------------------- */
 
-const CANONICAL_NAME = "Royal POMSKY";
+const CANONICAL_NAME = "Kawaii Shiba";
 
 /* -------------------------------------------------------------------------- */
 /*  SITE CONFIG                                                                */
@@ -28,24 +28,25 @@ export const siteConfig = {
     author: CANONICAL_NAME,
     locale: "fr-FR",
 
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://royalpomsky.com",
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kawaii-shiba.com",
 
     /* ------------------------------ SEO Global -------------------------------- */
-    title: "Élevage de Pomsky | Royal POMSKY",
+    title: "Élevage de Mame Shiba en France | Kawaii Shiba",
     description:
-        "Royal POMSKY est le premier élevage spécialisé dans les pomskys Toy de lignée Américaines. Chiots sélectionnés, élevage responsable, reproducteurs suivis depuis 2017.",
+        "Kawaii Shiba est un élevage spécialisé en Mame Shiba en France. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
     keywords: [
-        "élevage pomsky",
-        "Pomsky France",
-        "chiots pomsky",
-        "pomsky toy",
-        "élevage responsable",
-        "pomsky miniature"
+        "élevage mame shiba",
+        "mame shiba france",
+        "chiot mame shiba",
+        "mame shiba japonais",
+        "élevage shiba inu",
+        "adopter mame shiba",
+        "elevage de chien japonais",
     ],
 
     /* ------------------------------ Contact ---------------------------------- */
     contact: {
-        email: "elevageroyalpomsky@gmail.com",
+        email: "elevagemameshiba@gmail.com",
         phone: "+33689758031",
         phoneFormatted: "06 89 75 80 31"
     },
@@ -67,7 +68,7 @@ export const siteConfig = {
         }
     },
 
-    /* ----------------------- Localisation (marketing) ------------------------- elevageroyalpomsky@gmail.com */
+    /* ----------------------- Localisation (marketing) ------------------------- elevagemameshiba@gmail.com */
     location: {
         region: "Bourgogne-Franche-Comté",
         department: "Saône-et-Loire (71)",
@@ -86,19 +87,20 @@ export const siteConfig = {
     ],
 
     /* ------------------------------ OpenGraph --------------------------------- */
-    ogImage: "/BEAUTY-pomsky-miniature-f4.webp",
-    ogImageAlt: "pomsky Toy noir de Royal POMSKY",
+    ogImage: "/mame-shiba-in-a-sakura-tree.jpg",
+    ogImageAlt:
+        "Mame shiba femelle de Kawaii Shiba sur un arbre en fleurs de cerisier",
     ogImageWidth: 1200,
     ogImageHeight: 630,
 
     socialLinks: {
-        instagram: "https://www.instagram.com/royalpomsky/"
+        instagram: "https://www.instagram.com/kawaiimameshiba/"
     },
 
     /* ------------------------------- Pages ------------------------------------ */
     pages: {
         home: "/",
-        pomsky: "/mameshiba",
+        shiba: "/mameshiba",
         mameshibaPrice: "/mame-shiba-prix",
         adoptionGuide: "/adoption/reussir-son-adoption",
         puppies: "/chiots-disponibles",
@@ -199,19 +201,23 @@ export const pageMetadata = {
         title: pageContent.home.h1 + " | " + pageContent.home.h1Subtitle,
         description: pageContent.home.description,
         keywords: [
-            "élevage de pomsky responsable",
-            "chiots pomsky toy miniature et standard",
-            "élevage de pomsky à taille humaine",
-            "chiots pomsky bien socialisés",
-            "pomsky aux yeux bleus",
-            "élevage éthique de pomsky",
-            "Royal Pomsky"
+            "élevage de mameshiba responsable",
+            "chiots mameshiba rares en France",
+            "élevage de petit shiba à taille humaine",
+            "chiots shiba bien socialisés",
+            "mame shiba roux",
+            "mame shiba noir",
+            "mame shiba blanc",
+            "adopter un chien japonais",
+            "Kawaii Shiba",
+            "élevage de mame shiba en France",
+            "adopter un mame shiba en France"
         ]
     },
 
-    pomsky: {
-        title: pageContent.pomsky.h1,
-        description: pageContent.pomsky.description,
+    shiba: {
+        title: pageContent.shiba.h1,
+        description: pageContent.shiba.description,
         keywords: [
             "mameshiba",
             "mame shiba",
@@ -221,7 +227,9 @@ export const pageMetadata = {
             "standard du mameshiba",
             "kcj mameshiba",
             "vrai mameshiba",
-            "adopter un mameshiba"
+            "adopter un mameshiba",
+            "chien ressemblant à un renard",
+            "chiens japonais"
         ]
     },
 
@@ -329,12 +337,14 @@ export const pageMetadata = {
         title: pageContent.contact.h1,
         description: pageContent.contact.description,
         keywords: [
-            "contact elevage pomsky",
+            "contact elevage kawaii shiba",
             "visite elevage",
             "rendez-vous",
-            "adoption pomsky",
+            "adoption mameshiba",
             "informations chiot",
-            "reservation chiot"
+            "reservation chiot",
+            "questions elevage mameshiba",
+            "prendre contact avec elevage mameshiba"
         ]
     },
 
@@ -399,19 +409,19 @@ export const sitemapPages = [
         url: "/",
         changefreq: "weekly",
         priority: 1.0,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.75,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.9,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/adoption/reussir-son-adoption",
@@ -429,49 +439,49 @@ export const sitemapPages = [
         url: "/nos-chiens",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/presentation-elevage",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/presentation-eleveuses",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-02-15"
+        lastmod: "2026-03-20"
     },
     {
         url: "/bien-etre-animal",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/contact",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/mentions-legales",
         changefreq: "yearly",
         priority: 0.6,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/conditions-generales",
         changefreq: "yearly",
         priority: 0.6,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     },
     {
         url: "/politique-de-confidentialite",
         changefreq: "yearly",
         priority: 0.7,
-        lastmod: "2026-02-13"
+        lastmod: "2026-03-20"
     }
 ];
 

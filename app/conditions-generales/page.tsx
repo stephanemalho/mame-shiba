@@ -71,7 +71,7 @@ export default function ConditionsGeneralesPage() {
             <h2 className="text-xl md:text-2xl font-semibold">2. Accès au site</h2>
             <p className="text-muted-foreground">
               Le site est accessible 7j/7 sous réserve des opérations de maintenance ou de force majeure.
-              L&apos;utilisateur s&apos;assure de disposer d&apos;un équipement et d&apos;une connexion adaptés. Royal POMSKY
+              L&apos;utilisateur s&apos;assure de disposer d&apos;un équipement et d&apos;une connexion adaptés. Kawaii Shiba
               ne peut être tenue responsable d&apos;une indisponibilité temporaire ni de dommages liés à l&apos;usage du réseau internet.
             </p>
           </section>
@@ -106,7 +106,7 @@ export default function ConditionsGeneralesPage() {
             <h2 className="text-xl md:text-2xl font-semibold">5. Propriété intellectuelle</h2>
             <p className="text-muted-foreground">
               Les contenus présents sur le site sont protégés par le droit d&apos;auteur. Toute reproduction ou réutilisation,
-              notamment des photographies des chiens, nécessite l&apos;accord écrit préalable d&apos;Royal POMSKY.
+              notamment des photographies des chiens, nécessite l&apos;accord écrit préalable de Kawaii Shiba.
               Pour plus de détails, consultez nos{" "}
               <Link href={siteConfig.pages.legalNotice} className="text-primary hover:underline">
                 mentions légales
@@ -118,7 +118,7 @@ export default function ConditionsGeneralesPage() {
           <section className="space-y-3">
             <h2 className="text-xl md:text-2xl font-semibold">6. Responsabilité</h2>
             <p className="text-muted-foreground">
-              Royal POMSKY met tout en œuvre pour assurer l&apos;exactitude des informations publiées et la sécurité du site.
+              Kawaii Shiba met tout en œuvre pour assurer l&apos;exactitude des informations publiées et la sécurité du site.
               Elle ne pourra toutefois être tenue responsable des dommages directs ou indirects résultant d&apos;une
               mauvaise utilisation du site, d&apos;une interruption de service, ou de la présence éventuelle de logiciels malveillants
               provenant de sites tiers ou du réseau.
@@ -129,7 +129,7 @@ export default function ConditionsGeneralesPage() {
             <h2 className="text-xl md:text-2xl font-semibold">7. Liens externes et réseaux sociaux</h2>
             <p className="text-muted-foreground">
               Les liens vers Instagram, formulaires et ressources externes sont fournis pour votre convenance.
-              Royal POMSKY ne contrôle pas ces contenus et décline toute responsabilité quant aux informations
+              Kawaii Shiba ne contrôle pas ces contenus et décline toute responsabilité quant aux informations
               ou pratiques appliquées par ces sites tiers.
             </p>
           </section>

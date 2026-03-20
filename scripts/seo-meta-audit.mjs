@@ -124,7 +124,7 @@ for (const item of results) {
           `BLOG_ARTICLE_MISSING_OG_TYPE_ARTICLE ${item.file}`
         );
       }
-    } else if (item.file.includes(`${path.sep}blog${path.sep}pomsky`)) {
+    } else if (item.file.includes(`${path.sep}blog${path.sep}mame-shiba`)) {
       const hasWebsiteType =
         /type\s*:\s*"website"/.test(content) || /type:\s*"website"/.test(content);
       if (!hasWebsiteType) {

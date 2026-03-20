@@ -129,7 +129,7 @@ export default function SejoursPage() {
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden">
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/cocom-pour-chiots-pomsky.webp",
+                                            "pages/conditions-de-vie/cocom-pour-chiots-mame-shiba.webp",
                                             "pages/conditions-de-vie/bebe-chiots-lit-douillet.webp",
                                             "pages/conditions-de-vie/salle-ambiante-pour-chiots.webp",
                                         ]}
@@ -144,6 +144,7 @@ export default function SejoursPage() {
                         <section className="bg-muted/30 -mx-4 px-4 py-16 rounded-lg">
                             <div className="grid md:grid-cols-2 gap-12 items-center">
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden md:order-2">
+                                    {/* @TODO RECTIFIER LES IMAGES DES CHIENS */}
                                     <ImageCarousel
                                         images={[
                                             "pages/conditions-de-vie/pomsky-joue-avec-balle-plastique.webp",

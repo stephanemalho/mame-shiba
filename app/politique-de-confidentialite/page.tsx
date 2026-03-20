@@ -122,7 +122,7 @@ export default function PolitiqueConfidentialitePage() {
           <section className="space-y-3">
             <h2 className="text-xl md:text-2xl font-semibold">5. Destinataires et sous-traitants</h2>
             <p className="text-muted-foreground">
-              Les données sont traitées par Royal POMSKY et, si nécessaire, par des prestataires autorisés pour l&apos;hébergement
+              Les données sont traitées par Kawaii Shiba et, si nécessaire, par des prestataires autorisés pour l&apos;hébergement
               et l&apos;analyse :
             </p>
             <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
