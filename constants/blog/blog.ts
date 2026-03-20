@@ -2,6 +2,7 @@ import { BlogContentType } from "./blogTypes";
 import { akitaShibaMameComparisonPost } from "../posts/akitaShibaMameComparisonPost";
 import { shibaApartmentPost } from "../posts/shibaApartmentPost";
 import { shibaFirstDogPost } from "../posts/shibaFirstDogPost";
+import { shibaOverviewPost } from "../posts/shibaOverviewPost";
 import { shibaSociablePost } from "../posts/shibaSociablePost";
 
 export const blog: BlogContentType = {
@@ -75,6 +76,7 @@ export const blog: BlogContentType = {
         }
     ],
     posts: [
+        shibaOverviewPost,
         akitaShibaMameComparisonPost,
         shibaSociablePost,
         shibaApartmentPost,
