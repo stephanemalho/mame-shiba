@@ -42,9 +42,9 @@ export const pageContent = {
             "Élevage spécialisé Mameshiba dans le Jura (39) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l'équilibre émotionnel."
     },
     eleveuses: {
-        h1: "Les éleveuses de Royal POMSKY",
+        h1: "Les éleveuses de Kawaii Shiba",
         description:
-            "Nous sommes Aurélie et Marine, pionnières dans l'importation de Pomskys d'Amérique depuis 2017. Cette page raconte notre parcours de vie, notre passion pour le Pomsky et l'accompagnement que nous proposons aux familles adoptives dès leurs premiers pas."
+            "Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence."
     },
     wellness: {
         h1: "La vie en élevage",

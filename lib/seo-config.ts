@@ -268,10 +268,10 @@ export const pageMetadata = {
         title: pageContent.eleveuses.h1,
         description: pageContent.eleveuses.description,
         keywords: [
-            "eleveuses pomsky",
-            "equipe elevage pomsky",
-            "aurélie pomsky",
-            "marine pomsky",
+            "eleveuses mameshiba",
+            "equipe elevage mameshiba",
+            "aurélie mameshiba",
+            "marine mameshiba",
             "presentation eleveuses",
             "approche holistique elevage"
         ]

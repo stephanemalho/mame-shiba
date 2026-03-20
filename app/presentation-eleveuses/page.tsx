@@ -1,14 +1,16 @@
 import Image from "next/image"
+import Link from "next/link"
+import type { Metadata } from "next"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
-import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { faqEleveuses } from "@/lib/faq-data"
-import Link from "next/link"
+
+const pageImage = "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg"
 
 export const metadata: Metadata = {
     title: pageMetadata.eleveuses.title,
@@ -20,18 +22,18 @@ export const metadata: Metadata = {
         url: `${siteConfig.siteUrl}/presentation-eleveuses`,
         images: [
             {
-                url: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
-                alt: siteConfig.ogImageAlt,
-                width: siteConfig.ogImageWidth,
-                height: siteConfig.ogImageHeight,
-                type: "image/webp",
+                url: `${siteConfig.siteUrl}${pageImage}`,
+                alt: "Aurélie avec un chiot mameshiba",
+                width: 1200,
+                height: 630,
+                type: "image/jpeg",
             },
         ],
     }),
     twitter: buildTwitter({
         title: pageMetadata.eleveuses.title,
         description: pageMetadata.eleveuses.description,
-        imageUrl: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
+        imageUrl: `${siteConfig.siteUrl}${pageImage}`,
     }),
     alternates: {
         canonical: `${siteConfig.siteUrl}/presentation-eleveuses`,
@@ -45,75 +47,75 @@ export default function PresentationEleveusesPage() {
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqEleveuses))
     const lastMod = returnLastmod(siteConfig.pages.eleveuses)
+
     const aurelieGallery = [
         {
             src: "/assets/authors/aurelie-magnetisme-past-work.jpeg",
-            alt: "Magnetisme première activité d'aurelie avant l'élevage de pomsky",
+            alt: "Aurélie dans son premier univers professionnel",
             className: "col-span-6 md:col-span-3 row-span-6 md:row-span-6",
         },
         {
-            src: "/assets/authors/aurelie-violette-elevage-royal-pomsky.webp",
-            alt: "Aurélie avec un Pomsky",
+            src: "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
+            alt: "Aurélie avec un chiot mameshiba",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/aurelie-and-puppies-and-children.jpeg",
-            alt: "Aurélie avec les enfants et les chiots jouant dans l'herbe",
+            alt: "Aurélie avec des chiots et des enfants dans l’herbe",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/aurelie-and-pomsky-see-view.jpeg",
-            alt: "Aurélie avec un Pomsky assis au bord d'un lac",
+            alt: "Aurélie en promenade au bord de l’eau avec un chien",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/aurelie-and-pomsky-on-a-bike.jpeg",
-            alt: "Aurélie et un Pomsky prets pour la route",
+            alt: "Aurélie en sortie avec un chien",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/aurelie-and-pomsky-walking-street.jpeg",
-            alt: "Aurélie dans les rues chics promène un pomsky",
+            alt: "Aurélie en balade avec un chien",
             className: "col-span-6 md:col-span-6 row-span-6 md:row-span-6",
         },
     ]
+
     const marineGallery = [
         {
             src: "/assets/authors/marine-walking-dogs.jpeg",
-            alt: "Marine en promenade des chiens",
+            alt: "Marine en promenade avec les chiens",
             className: "col-span-6 md:col-span-3 row-span-6 md:row-span-6",
         },
         {
             src: "/assets/authors/portrait-aurelie-and-pomsky.jpeg",
-            alt: "Marine avec un Pomsky",
+            alt: "Portrait au contact d’un chien de l’élevage",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/marine-in-a-chair-with-pomsky.jpeg",
-            alt: "Marine sur une chaise avec son bebe pomsky",
+            alt: "Marine avec un chiot sur une chaise",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/marine-and-a-new-puppy.jpeg",
-            alt: "Marine avec un Pomsky sur une chaise",
+            alt: "Marine avec un jeune chiot",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/marine-and-pomsky-in-grass.jpeg",
-            alt: "Marine et un pomsky dans le jardin vert",
+            alt: "Marine avec un chien dans le jardin",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/assets/authors/marine-and-a-puppy-pomsky-in-sofa.jpeg",
-            alt: "Marine sur le canapé avec un chiot pomsky",
+            alt: "Marine avec un chiot sur le canapé",
             className: "col-span-6 md:col-span-6 row-span-6 md:row-span-6",
         },
     ]
 
-
     return (
         <>
-            {/* JSON-LD Schemas */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -125,7 +127,6 @@ export default function PresentationEleveusesPage() {
 
             <div className="py-16">
                 <div className="container mx-auto">
-                    {/* Hero Section */}
                     <section className="text-center space-y-6 mb-16">
                         <h1 className="text-xl md:text-3xl font-bold">{pageContent.eleveuses.h1}</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -134,15 +135,13 @@ export default function PresentationEleveusesPage() {
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
 
-                    {/* Qui sommes nous */}
                     <section className="mb-16">
                         <div className="text-center mb-12">
-                            <h2 className="text-xl md:text-2xl font-bold">Qui sommes nous ?</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">Qui sommes-nous ?</h2>
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-4" aria-hidden="true" />
                         </div>
 
                         <div className="space-y-12">
-                            {/* Aurélie */}
                             <article id="aurelie" className="grid md:grid-cols-2 gap-12 items-start scroll-mt-28">
                                 <div className="grid grid-cols-6 auto-rows-[70px] sm:auto-rows-[90px] md:auto-rows-[105px] lg:auto-rows-[118px] gap-3">
                                     {aurelieGallery.map((image, index) => (
@@ -164,57 +163,51 @@ export default function PresentationEleveusesPage() {
                                         </div>
                                     ))}
                                 </div>
+
                                 <div className="space-y-6">
                                     <Badge variant="secondary" className="w-fit">
-                                        Celle qui murmure à l'oreille des Pomskys
+                                        Une lecture fine du lien humain-chien
                                     </Badge>
-                                    <h3 className="text-xl md:text-2xl font-bold">Aurélie - 34 ans !</h3>
+                                    <h3 className="text-xl md:text-2xl font-bold">Aurélie - 34 ans</h3>
 
                                     <div className="space-y-4 text-muted-foreground leading-relaxed">
                                         <p>
-                                            Lorsque je n'élève pas cette merveilleuse meute de chiens, je suis également hypnothérapeute et magnétiseuse que j'exerce en cabinet en parallèle de mon activité d'éleveuse.
+                                            Lorsque je ne suis pas avec mes chiens, j’exerce aussi comme hypnothérapeute et
+                                            magnétiseuse. Ce lien entre l’humain, ses émotions et l’animal fait partie de mon regard
+                                            depuis des années.
                                         </p>
                                         <p>
-                                            « Mon chemin m'a amenée vers le comportement de l'animal d'abord, puis plus tard celui de l'humain. Ils sont source de fascination pour moi, et la combinaison des deux explique énormément de phénomènes lors de certaines adoptions.
-                                        </p>
-                                        <p>Aucun chien n'arrive chez vous par hasard.</p>
-                                        <p>
-                                            Pour moi, et au regard de la thérapeute que je suis, l'animal vient révéler ce qui reste à mettre en lumière dans la personnalité de l'humain qui l'accueille.
-                                            À travers l'amour inconditionnel dont il fait preuve, il va révéler une partie enfouie, et venir apporter une certaine guérison psychique dans son environnement de vie.
-                                            Il nous apprennent à vivre l'instant présent. Pour moi ce sont des être qui ont un niveau de consciences supérieure aux humains.
+                                            Mon chemin m’a menée vers le comportement animal avant de m’ouvrir encore davantage à la
+                                            compréhension de l’humain. Dans l’élevage, cela change beaucoup de choses : j’observe
+                                            autant le chiot que la famille, parce qu’une adoption réussie repose sur une vraie
+                                            cohérence entre les deux.
                                         </p>
                                         <p>
-                                            Les expériences et processus d'apprentissages parfois difficiles révèlent nos parts d'ombres, nos blessures, un effet miroir… ils sont un accélérateur ou un déclencheur pour amener l'humain à entamer un processus de changement. Une personnalité contrôlante… des masques à faire tomber… l'animal révèle des dimensions psychiques assez étonnantes.
+                                            Le Mameshiba est un chien sensible, intelligent, très expressif et parfois plus subtil
+                                            qu’il n’y paraît. Il ne supporte pas bien la brutalité ni l’incohérence. Cette race me
+                                            touche justement pour cela : elle oblige à être juste, calme, présente et lucide.
                                         </p>
                                         <p>
-                                            J'accompagne chaque famille tant dans le bonheur que dans les phases difficiles de leur apprentissage, non seulement les familles adoptantes de mon élevage mais également généralement d'autres personnes ayant choisi un chien qui a un lourd passif : SPA… association… don.. et j'aide volontiers les gens à comprendre ce qu'il se passe à l'intérieur et à résoudre ces problématiques par étape.
+                                            Mon approche est profondément holistique. J’accorde beaucoup d’importance à la qualité du
+                                            lien, à la sécurité émotionnelle du chiot, à son observation quotidienne et à ce qu’il
+                                            révèle dans la relation avec son futur humain.
                                         </p>
-                                        <h4 className="text-lg font-semibold text-foreground">Une approche holistique :</h4>
+                                        <h4 className="text-lg font-semibold text-foreground">Une passion pour les chiens primitifs</h4>
                                         <p>
-                                            La communication animale est aussi une technique que j'ai approfondi à mesure des années : depuis 2020, je n'ai de cesse de développer et perfectionner cette technique, ce ressenti. Tout cela dans le but d'amener l'animal à se sentir bien, mieux s'adapter, et résoudre des problématiques comportementales. Le résultat est souvent flagrant.
-                                            Les animaux ressentent tout.
-                                        </p>
-                                        <h4 className="text-lg font-semibold text-foreground">La fascination autour du husky</h4>
-                                        <p>
-                                            La fascination autour du husky, du chien loup vient de mon enfance. Elle a toujours été la… petite j'aimais tous les chiens, mais à travers le dessin animé BALTO j'ai ressenti ce sentiment unique au monde.
-                                        </p>
-                                        <p>
-                                            Ce dessin animé au message initiatique m'a profondément marquée, les animaux totem, le grand nord, le loup, le chien, la mission de vie, la notion de guide spirituel, de découvrir qui nous sommes et pas ce que nous sommes. Tout ceci m'a amenée vers une fascination du husky, que je gardais à l'intérieur de moi, parce que le husky n'est absolument pas adapté au mode de vie urbain et citadin, je ne voulais pas d'un chien malheureux.
+                                            Ma fascination pour les chiens au tempérament fort et noble remonte à l’enfance. Avec le
+                                            temps, cette attirance s’est affinée vers les chiens primitifs et, plus tard, vers la
+                                            culture japonaise. Le Mameshiba a représenté une évidence : toute la dignité du Shiba Inu,
+                                            dans un petit format, avec une présence incroyable.
                                         </p>
                                         <p>
-                                            J'ai découvert la naissance du Pomsky en 2015 et ma vie était instable, toujours en déplacement professionnel. Quand j'ai décidé de me stabiliser en 2017, le Pomsky a occupé la place première dans mes pensées, mes rêves, mes objectifs, dans tout ce que j'étais à l'intérieur comme à l'extérieur. Puis j'ai accueilli mes 3 premiers chiens, je suis partie à la recherche du meilleur trio possible pour débuter : CHIPPER et ISIS venaient des États Unis, élevés dans un cadre familial au sein d'une communauté Amish, en pensylvannie et AVA est né en Irlande, et c'est ainsi que l'élevage fut créé.
-                                        </p>
-                                        <p>
-                                            Chaque adoptant était si heureux de voir une portée de chiots déjà ressemblant à de véritables mini husky que notre première portée de 9 chiots a eu un grand succès et a été adoptée en l'espace d'une semaine.
-                                            Beaucoup de gens rapportaient alors que nous étions le meilleur élevage existant en France.
-                                            Je ne sais pas si tel était le cas, mais ce que je sais c'est que le travail et l'investissement a été grandement apprécié par nos adoptants : bouche à oreille a été extrêmement présent et que notre élevage fut très sollicité par la suite… quelques années plus tard notre expertise et notre passion ainsi que notre enthousiasme augmenté.
-                                            C'est grâce aux adoptants et leur exigeance dès le début ainsi que leur exigeance actuelle que nous sommes ce que nous sommes aujourd'hui.
+                                            Accueillir cette race dans notre vie a transformé notre élevage. Aujourd’hui, j’accompagne
+                                            chaque famille avec beaucoup d’investissement, autant dans les moments joyeux que dans les
+                                            phases plus délicates d’adaptation et d’apprentissage.
                                         </p>
                                     </div>
                                 </div>
                             </article>
 
-                            {/* Marine */}
                             <article id="marine" className="grid md:grid-cols-2 gap-12 items-start scroll-mt-28">
                                 <div className="grid grid-cols-6 auto-rows-[70px] sm:auto-rows-[90px] md:auto-rows-[105px] lg:auto-rows-[118px] gap-3 md:order-2">
                                     {marineGallery.map((image, index) => (
@@ -235,71 +228,82 @@ export default function PresentationEleveusesPage() {
                                         </div>
                                     ))}
                                 </div>
+
                                 <div className="space-y-6 md:order-1">
                                     <Badge variant="secondary" className="w-fit">
-                                        Mode contrôle : ON 🐾, mais cool après le boulot
+                                        Le cadre, la rigueur et le quotidien de l’élevage
                                     </Badge>
-                                    <h3 className="text-xl md:text-2xl font-bold"> Marine - 32 ans !</h3>
+                                    <h3 className="text-xl md:text-2xl font-bold">Marine - 32 ans</h3>
+
                                     <div className="space-y-4 text-muted-foreground leading-relaxed">
                                         <p>
-                                            Marine : Grande adoratrice de chats à la base, ce n'est qu'après plusieurs années à côtoyer Aurélie et son élevage de chiens que j'ai apprécié la relation unique et fusionnelle qu'à le chien avec l'homme.
+                                            À la base, j’étais plutôt une grande amoureuse des chats. C’est au fil des années, au
+                                            contact de l’élevage et des chiens, que j’ai découvert la relation très particulière que
+                                            le chien peut construire avec l’humain.
                                         </p>
                                         <p>
-                                            Issue d'une école de commerce, J'ai évolué dans un milieu très compétitif et masculin à travers différentes professions telles que celle de responsable d'un magasin dans une grande enseigne automobile.
+                                            Mon parcours en école de commerce puis dans un univers professionnel très exigeant m’a
+                                            donné un vrai goût pour l’organisation, l’anticipation et la rigueur. Aujourd’hui, cette
+                                            partie de moi est un atout concret pour la vie de l’élevage.
                                         </p>
                                         <p>
-                                            Ceci a forgé ma personnalité et peu à peu, l'animal a pu m'apporter quelque chose de différent : ce calme, cette bonté naturelle, pas de compétition, pas de prise de pouvoir.
+                                            Je veille beaucoup à tout ce qui fait le quotidien réel des chiens : l’hygiène, la
+                                            stabilité des routines, l’observation des groupes, la sécurité, les mises bas, la
+                                            récupération des mères et le bon développement des chiots.
                                         </p>
                                         <p>
-                                            Ma vie a basculé après une longue réflexion, j'ai décidé de faire confiance à une opportunité unique qui était celle de m'associer avec Aurélie pour ce projet. Ce métier passion comporte beaucoup d'exigence sur le plan sanitaire, sur le plan émotionnel et responsabilité.
+                                            Le Mameshiba demande un environnement lisible, propre et cohérent. C’est une race qui
+                                            peut être très sensible à l’ambiance et aux variations autour d’elle. J’aime justement
+                                            apporter ce cadre calme, régulier et rassurant.
                                         </p>
                                         <p>
-                                            Avant j'étais très en contact avec les clients de mon magasin, aujourd'hui je suis en retrait et ne communique que peu avec les adoptants mais cela m'apporte un autre équilibre, je m'épanouis dans le milieu animalier : pas de malentendu à régler, de problèmes à résoudre sans cesse.
+                                            Même si je suis naturellement plus discrète dans la relation avec les adoptants, je prends
+                                            beaucoup de plaisir à vous accueillir, à vous présenter nos chiens et à partager ce qui
+                                            fait la singularité de notre élevage.
                                         </p>
                                         <p>
-                                            Je suis de nature contrôlante et les chiens me poussent depuis 4 ans à lâcher le contrôle, l'attente, pour vivre l'instant présent et ceci est un défi pour moi à la base.
+                                            Avec Aurélie, nous formons un duo complémentaire : elle porte une lecture très fine du
+                                            comportement et du lien, tandis que je veille à la structure, à la logistique et à la
+                                            constance du cadre. C’est cet équilibre qui fait aussi la force de Kawaii Shiba.
                                         </p>
-                                        <p>Mes passions sont également l'informatique et le gaming !</p>
-                                        <p>
-                                            Vous comprendrez que le contact humain aujourd'hui est pour moi secondaire et que je suis de ce fait toujours heureuse de pouvoir échanger avec nos visiteurs, les rencontrer, leur présenter nos chiens, cela change un peu le rythme des journées.
-                                        </p>
-                                        <p>
-                                            J'ai un haut niveau d'exigence envers moi même, envers les stagiaires qui peuvent venir nous accompagner, envers le bien être des animaux.
-                                        </p>
-                                        <p>
-                                            Les mises bas étaient au départ quelque chose d'angoissant pour moi mais avec l'expérience, c'est quelque chose d'extraordinaire, unique et cependant toujours à gérer avec technicité et un regard médical avisé.
-                                        </p>
-                                        <p>
-                                            Avec Aurélie nous formons un beau duo complémentaire et passionné.
-                                        </p>
-                                        <p>Je ne vois pas ma vie sans mes chiens aujourd'hui.</p>
-                                        <p>Chacun d'entre eux est absolument unique.</p>
                                     </div>
                                 </div>
                             </article>
                         </div>
                     </section>
+
                     <section className="mb-16">
                         <Card className="bg-muted/30">
                             <CardContent className="p-8 md:p-10">
                                 <div className="grid md:grid-cols-[1.3fr_0.7fr] gap-8 items-center">
                                     <div className="space-y-4">
                                         <h2 className="text-xl md:text-2xl font-bold">
-                                            Les articles d'Aurélie et Marine sur l'élevage de Pomsky Toy
+                                            Les articles d’Aurélie et Marine sur le Mameshiba
                                         </h2>
-                                        <h3 className="text-base md:text-xl font-semibold">Élevage de Pomsky Toy : conseils d'expertes, expériences terrain et adoption responsable.</h3>
+                                        <h3 className="text-base md:text-xl font-semibold">
+                                            Élevage de Mameshiba : expérience terrain, conseils sincères et adoption responsable.
+                                        </h3>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            Aurélie et Marine, éleveuses passionnées de Pomsky Toy, partagent à travers leurs articles une vision authentique et professionnelle de l'élevage. Elles y abordent le quotidien d'un élevage éthique, la sélection des lignées, la socialisation des chiots, la santé, l'éducation et les bonnes pratiques pour une adoption réussie.
+                                            À travers nos articles, nous partageons une vision concrète de l’élevage : la sélection
+                                            des lignées, la socialisation des chiots, la santé, le tempérament du Mameshiba et les
+                                            repères utiles avant d’accueillir un chiot.
                                         </p>
-                                        <p className="text-muted-foreground leading-relaxed">Chaque article s'appuie sur leur expérience concrète d'éleveuses de Pomsky Toy, avec des conseils clairs et pédagogiques destinés aux familles souhaitant comprendre la race, ses besoins spécifiques et les critères essentiels pour accueillir un chiot Pomsky Toy dans les meilleures conditions.</p>
-                                        <p className="text-muted-foreground leading-relaxed">Objectif : informer, rassurer et accompagner les futurs adoptants grâce à un contenu fiable, transparent et orienté bien-être animal.</p>
+                                        <p className="text-muted-foreground leading-relaxed">
+                                            Le but est simple : proposer un contenu fiable, pédagogique et honnête, nourri par notre
+                                            expérience quotidienne auprès des chiens et des familles.
+                                        </p>
+                                        <p className="text-muted-foreground leading-relaxed">
+                                            Objectif : informer, rassurer et vous aider à mieux comprendre ce petit chien primitif,
+                                            rare, sensible et absolument unique.
+                                        </p>
                                     </div>
+
                                     <div className="space-y-6 md:justify-self-end lg:justify-self-stretch">
                                         <div className="relative w-full overflow-hidden rounded-2xl">
                                             <div className="relative aspect-4/5 lg:aspect-4/3">
                                                 <Image
-                                                    src="/BANDIT-pomsky-toy-f5.webp"
-                                                    alt="Pomsky noir et blanc de g?n?ration F3"
+                                                    src="/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
+                                                    alt="Mameshiba gris et blanc en portrait"
                                                     fill
                                                     sizes="(min-width: 1024px) 360px, 100vw"
                                                     className="object-cover"
@@ -308,13 +312,13 @@ export default function PresentationEleveusesPage() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* Image */}
+
                                     <div className="flex md:justify-end">
                                         <Link
-                                            href="/blog"
+                                            href="/blog/mame-shiba"
                                             className="inline-flex items-center w-full justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-primary/80 dark:text-[#5b3a1a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                         >
-                                            Découvrir le blog des Pomsky
+                                            Découvrir le blog Mameshiba
                                         </Link>
                                     </div>
                                 </div>
@@ -324,14 +328,14 @@ export default function PresentationEleveusesPage() {
 
                     <FAQSection
                         title="FAQ sur notre vision et notre parcours"
-                        description="Quelques réponses aux questions fréquentes sur l'élevage et notre approche."
+                        description="Quelques réponses aux questions fréquentes sur notre approche du Mameshiba et de l’élevage."
                         items={faqEleveuses}
                     />
 
                     <section className="text-center space-y-6">
-                        <h2 className="text-xl md:text-2xl font-bold">Envie d'échanger avec nous ?</h2>
+                        <h2 className="text-xl md:text-2xl font-bold">Envie d’échanger avec nous ?</h2>
                         <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Parlons de votre projet et trouvons ensemble le Pomsky qui vous correspond.
+                            Parlons de votre projet et voyons ensemble si le Mameshiba correspond vraiment à votre mode de vie.
                         </p>
                         <div className="flex flex-col mt-10 sm:flex-row gap-8 justify-center h-10 items-center">
                             <Link
