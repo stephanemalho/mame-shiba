@@ -96,9 +96,9 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
+          <CookieConsent />
+          <AnalyticsConsent />
         </ThemeProvider>
-        <CookieConsent />
-        <AnalyticsConsent />
       </body>
     </html>
   )
