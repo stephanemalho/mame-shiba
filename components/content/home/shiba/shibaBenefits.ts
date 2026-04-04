@@ -1,8 +1,8 @@
 import mameSize from "@/public/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg";
 import nihonMame from "@/public/pages/homePage/mame-shiba-puppy-blanc-white.jpeg";
-import redMame from "@/public/pages/homePage/little-mame-shiba-red-white.jpeg";
+import redMame from "@/public/pages/homePage/mameshiba-urbain.jpg";
 import primitifDog from "@/public/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg";
-import shibaExpressive from "@/public/pages/homePage/mame-shiba-good-caractere.jpg";
+import shibaExpressive from "@/public/pages/homePage/mame-shiba-courant-dans-herbe.jpg";
 import shibaPolyvalent from "@/public/pages/homePage/mame-shiba-for-modern-life.jpeg";
 import { StaticImageData } from "next/image";
 

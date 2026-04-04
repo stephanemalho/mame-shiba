@@ -176,8 +176,8 @@ const historySteps: HistoryStep[] = [
                 rigoureuse.
             </>
         ),
-        image: "/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg",
-        alt: "Mameshiba gris et blanc assis devant un fond clair",
+        image: "/pages/le-mame-shiba/chiot-mameshiba.jpg",
+        alt: "Chiots Mameshiba fauve et blanc assis devant un fond sombre",
     },
 ]
 
