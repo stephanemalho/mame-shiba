@@ -173,7 +173,7 @@ export function Footer() {
                                 <Facebook className="h-5 w-5" aria-hidden="true" />
                             </a>
                             <a
-                                href="https://www.instagram.com/mameshiba.france/?hl=fr"
+                                href="https://www.instagram.com/kawaiimameshiba/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
