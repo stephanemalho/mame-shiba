@@ -240,7 +240,7 @@ export default function ContactPage() {
                                 <div className="flex justify-between items-center flex-col lg:flex-row gap-3">
                                     <div className="relative w-40 aspect-square my-4">
                                         <Image
-                                            src="/qr-code-contact-exotic-perle-teckel.webp"
+                                            src="/adobe-express-qr-code.png"
                                             alt="QR code pour contacter Kawaii Shiba"
                                             fill
                                             className="object-cover"
@@ -249,7 +249,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <div className="flex flex-col items-center space-y-2">
-                                        <Link target="_blank" href="https://forms.gle/2ZtWVzEzJ9QQhZfa8" className="flex h-10 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Remplir le questionnaire
+                                        <Link target="_blank" href="https://forms.gle/myGmQAj5Kim6UnVx8" className="flex h-10 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Remplir le questionnaire
                                         </Link>
                                         <span className="text-sm italic text-muted-foreground/80">Vous recevrez un exemplaire par mail</span>
                                     </div>
