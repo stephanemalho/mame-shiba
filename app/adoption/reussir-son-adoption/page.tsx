@@ -310,7 +310,7 @@ export default function AdoptionGuidePage() {
                             <div className="flex flex-wrap gap-3">
                                 <Link
                                     href="/chiots-disponibles"
-                                    className="inline-flex items-center rounded-md bg-primary px-4 py-2 font-semibold text-white transition hover:bg-primary/85 dark:text-[#5b3a1a]"
+                                    className="inline-flex items-center rounded-md bg-primary px-4 py-2 font-semibold text-primary-foreground transition hover:bg-primary/85"
                                 >
                                     Voir nos chiots Mame Shiba
                                 </Link>
@@ -460,16 +460,16 @@ export default function AdoptionGuidePage() {
                             </Card>
                         </div>
 
-                        <Card className="border-amber-600/30 bg-amber-50/70 dark:bg-amber-950/20">
+                        <Card className="border-primary/20 bg-primary/5 dark:bg-primary/10">
                             <CardContent className="p-4 md:p-6">
                                 <div className="mb-4 flex items-center gap-3">
-                                    <ShieldAlert className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+                                    <ShieldAlert className="h-5 w-5 text-primary" />
                                     <h3 className="font-semibold">À éviter pendant la première semaine</h3>
                                 </div>
                                 <ul className="space-y-3 text-sm text-muted-foreground">
                                     {firstWeekAvoid.map((item) => (
                                         <li key={item} className="flex items-start gap-3">
-                                            <div className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-700 dark:bg-amber-300" />
+                                            <div className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                                             <span>{item}</span>
                                         </li>
                                     ))}

@@ -256,7 +256,7 @@ export default function NosChiotsPage() {
                                         <div className="flex flex-col sm:flex-row gap-3">
                                             <Link
                                                 href="/contact"
-                                                className="flex items-center justify-center bg-primary text-white hover:bg-primary/80 p-4 font-semibold dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                                className="flex items-center justify-center rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                             >
                                                 Nous contacter
                                             </Link>
@@ -300,7 +300,7 @@ export default function NosChiotsPage() {
                         </div>
                         <Link
                             href="/bien-etre-animal"
-                            className="flex items-center bg-primary justify-center text-white hover:bg-primary/80 p-4 font-semibold dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            className="flex items-center justify-center rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >
                             Voir les conditions de vie des chiots
                         </Link>

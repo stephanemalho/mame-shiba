@@ -201,7 +201,7 @@ export default function MameshibaPricePage() {
                             <div className="flex flex-col gap-3 sm:flex-row">
                                 <Link
                                     href={siteConfig.pages.puppies}
-                                    className="inline-flex w-fit rounded-md bg-primary px-5 py-3 font-semibold text-white transition-colors hover:bg-primary/85 dark:text-[#5b3a1a]"
+                                    className="inline-flex w-fit rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85"
                                 >
                                     Voir les réservations en cours
                                 </Link>
@@ -451,7 +451,7 @@ export default function MameshibaPricePage() {
                                 <div className="flex flex-col gap-3 sm:flex-row">
                                     <Link
                                         href={siteConfig.pages.puppies}
-                                        className="inline-flex w-fit rounded-md bg-primary px-5 py-3 font-semibold text-white transition-colors hover:bg-primary/85 dark:text-[#5b3a1a]"
+                                        className="inline-flex w-fit rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85"
                                     >
                                         Voir les réservations
                                     </Link>

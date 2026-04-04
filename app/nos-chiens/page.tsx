@@ -132,7 +132,7 @@ export default function NosChiensPage() {
 
                         <Link
                             href="/chiots-disponibles"
-                            className="bg-primary w-fit m-auto text-white hover:bg-primary/80 p-4 font-semibold inline-block dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            className="inline-block w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >
                             Découvrir nos chiots
                         </Link>

@@ -316,7 +316,7 @@ export default function PresentationEleveusesPage() {
                                     <div className="flex md:justify-end">
                                         <Link
                                             href="/blog/mame-shiba"
-                                            className="inline-flex items-center w-full justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-primary/80 dark:text-[#5b3a1a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                            className="inline-flex w-full items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                         >
                                             Découvrir le blog Mameshiba
                                         </Link>
@@ -340,7 +340,7 @@ export default function PresentationEleveusesPage() {
                         <div className="flex flex-col mt-10 sm:flex-row gap-8 justify-center h-10 items-center">
                             <Link
                                 href="/contact"
-                                className="flex items-center min-h-12 bg-primary text-white hover:bg-primary/80 px-4 font-semibold dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                className="flex min-h-12 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Contacter Aurélie et Marine
                             </Link>

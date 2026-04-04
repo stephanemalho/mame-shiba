@@ -207,7 +207,7 @@ export default function PresentationPage() {
                                 </div>
                                 <Link
                                     href="/nos-chiens"
-                                    className="flex items-center bg-primary h-10 text-white hover:bg-primary/80 px-4 font-semibold dark:text-[#5b3a1a] rounded-md w-fit"
+                                    className="flex h-10 w-fit items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85"
                                 >
                                     Voir nos chiens reproducteurs
                                 </Link>
@@ -311,7 +311,7 @@ export default function PresentationPage() {
                         <div className="flex flex-col mt-12 sm:flex-row gap-8 justify-center h-10 items-center">
                             <Link
                                 href="/chiots-disponibles"
-                                className="flex items-center min-h-12 bg-primary text-white hover:bg-primary/80 px-4 font-semibold dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                className="flex min-h-12 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Voir nos portées
                             </Link>

@@ -28,7 +28,7 @@ export default function NotFound() {
                 <div className="flex flex-col gap-3">
                     <Link
                         href="/"
-                        className="bg-primary hover:bg-primary/80 text-white dark:text-[#5b3a1a] font-semibold py-3 px-6 rounded-md transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        className="rounded-md bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
                         Retour à l&apos;accueil
                     </Link>

@@ -90,74 +90,78 @@ export default function HomePage() {
       />
 
       <div className="flex flex-col">
-        <section className="bg-accent-foreground">
-          {/* Hero Section */}
-          <div className="relative h-auto md:h-[90vh] flex items-center justify-center overflow-hidden group">
-            {/* Image de fond (desktop only) */}
-            <div className="absolute inset-0 z-0 m-auto hidden md:block">
-              <Image
-                src="/mame-shiba-in-a-sakura-tree.jpg"
-                alt="Un mame-shiba sur un cerisier regarde tendrement au loins"
-                fill
-                className="object-cover scale-105 transition-transform duration-2000 group-hover:scale-110"
-                priority
-                fetchPriority="high"
-                loading="eager"
-                sizes="100vw"
-                quality={70}
-              />
-            </div>
-            {/* Fallback background (mobile) */}
-            <div
-              className="absolute inset-0 z-0 md:hidden bg-linear-to-b from-[#AB7F55] via-[#24160b] to-black"
-              aria-hidden="true"
-            />
-            <div className="relative z-10 text-center space-y-8 px-6 max-w-3xl py-10 mx-auto md:rounded-2xl border border-white/15 bg-[#39210199] backdrop-blur-md shadow-[0_30px_120px_rgba(0,0,0,0.55)]">
-              <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
-                Kawaii Shiba - MAMESHIBA
-              </div>
-              <h1 className="text-2xl md:text-4xl font-semibold tracking-wide text-white">
-                {pageContent.home.h1}
-                <span className="block text-base md:text-xl font-light text-white/80 mt-2">
-                  {pageContent.home.h1Subtitle}
-                </span>
-              </h1>
-              <div className="mx-auto">
-                <p className="text-base md:text-lg text-white/85">
-                  {pageContent.home.description}
-                </p>
-                <div className="mt-6 md:hidden">
-                  <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-xl border border-white/15 shadow-[0_18px_60px_rgba(0,0,0,0.45)]">
-                    <div className="relative aspect-4/5">
-                      <Image
-                        src="/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
-                        alt="Sushi, mameshiba gris et blanc avec un oeil bleu et un oeil marron"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 85vw, 360px"
-                        quality={65}
-                      />
+        <section className="bg-background">
+          <div className="overflow-hidden bg-linear-to-b from-primary/95 via-primary/75 to-foreground">
+            <div className="container mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
+              <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
+                <div className="overflow-hidden rounded-xl border border-primary-foreground/10 bg-card/10 shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
+                  <Image
+                    src="/pages/homePage/little-mame-shiba-red-white.jpeg"
+                    alt="Bandeau de présentation Kawaii Shiba Mameshiba"
+                    width={1260}
+                    height={400}
+                    priority
+                    fetchPriority="high"
+                    loading="eager"
+                    sizes="(min-width: 1280px) 1152px, (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
+                    className="block h-auto w-full"
+                  />
+                </div>
+
+                <div className="mx-auto max-w-6xl rounded-xl border border-primary-foreground/12 bg-primary/30 px-6 py-6 text-center text-primary-foreground shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-sm md:rounded-4xl md:px-8">
+                  <div className="mx-auto max-w-4xl">
+                    <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-primary-foreground/80">
+                      Kawaii Shiba
+                    </div>
+                    <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-primary-foreground md:text-4xl lg:text-5xl">
+                      {pageContent.home.h1}
+                    </h1>
+                  </div>
+                </div>
+
+                <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-primary-foreground/12 bg-card/10 shadow-[0_30px_100px_rgba(0,0,0,0.28)] backdrop-blur-sm md:rounded-4xl">
+                  <div className="relative aspect-4/3 sm:aspect-16/11 md:aspect-16/8 lg:aspect-16/7">
+                    <Image
+                      src="/mame-shiba-in-a-sakura-tree.jpg"
+                      alt="Mameshiba dans un décor inspiré du Japon"
+                      fill
+                      className="object-cover object-center"
+                      sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
+                      quality={70}
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-foreground/35 via-transparent to-transparent" aria-hidden="true" />
+                  </div>
+                </div>
+
+                <div className="mx-auto max-w-6xl rounded-xl border border-primary-foreground/12 bg-foreground/35 px-6 py-6 text-primary-foreground shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
+                  <p className="text-sm font-medium uppercase tracking-[0.28em] text-primary-foreground/72">
+                    {pageContent.home.h1Subtitle}
+                  </p>
+                  <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
+                    <div className="space-y-4">
+                      <p className="text-base leading-relaxed text-primary-foreground/88 md:text-lg">
+                        {pageContent.home.description}
+                      </p>
+                      <p className="text-base leading-relaxed text-primary-foreground/82 md:text-lg">
+                        {pageContent.home.descriptionSecondary}
+                      </p>
+                      <p className="text-base leading-relaxed text-primary-foreground/82 md:text-lg">
+                        {pageContent.home.descriptionTertiary}
+                      </p>
+                    </div>
+                    <div className="flex lg:justify-end">
+                      <Link
+                        href="/chiots-disponibles"
+                        className="inline-flex items-center justify-center rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground transition hover:bg-primary-foreground/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:rounded-full"
+                      >
+                        Voir les chiots Mameshiba disponibles
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className="mt-12">
-                  <p className="text-base md:text-lg text-white/85">
-                    {pageContent.home.descriptionSecondary}
-                  </p>
-                  <p className="text-base md:text-lg text-white/85">
-                    {pageContent.home.descriptionTertiary}
-                  </p>
-                </div>
               </div>
-              <Link
-                href="/chiots-disponibles"
-                className="inline-flex items-center justify-center rounded-sm border border-white/30 bg-white/10 px-6 py-3 mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                Voir les chiots Mameshiba disponibles
-              </Link>
             </div>
           </div>
-
         </section>
         {/* Contenu centré */}
         {/* Présentation Mameshiba */}
@@ -198,7 +202,7 @@ export default function HomePage() {
 
                 <Link
                   href="/mameshiba"
-                  className="bg-primary text-white hover:bg-primary/80 p-4 font-semibold inline-block dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="inline-block rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   Découvrir la race Mameshiba
                 </Link>
@@ -236,7 +240,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <Link href="/chiots-disponibles" className="bg-primary text-white hover:bg-primary/80 p-4 font-semibold inline-block dark:text-[#5b3a1a] rounded-md">
+            <Link href="/chiots-disponibles" className="inline-block rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85">
               Voir les chiots disponibles
             </Link>
           </div>
@@ -287,7 +291,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/blog/mame-shiba"
-            className="flex my-12 bg-primary m-auto text-white hover:bg-primary/80 p-4 font-semibold w-fit dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="flex my-12 m-auto w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             En savoir plus sur le Mameshiba
           </Link>
@@ -365,7 +369,7 @@ export default function HomePage() {
             <Link
               href="/contact"
               aria-label="Contacter les éleveuses pour un projet d'adoption de Mameshiba"
-              className="flex my-12 bg-primary m-auto text-white hover:bg-primary/80 p-4 font-semibold w-fit dark:text-[#5b3a1a] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="flex my-12 m-auto w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Contacter Aurélie et Marine
             </Link>
@@ -383,5 +387,3 @@ export default function HomePage() {
     </>
   )
 }
-
-

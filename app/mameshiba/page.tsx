@@ -501,7 +501,7 @@ export default function MameShibaPage() {
                         <div className="flex flex-col gap-4 justify-center sm:flex-row">
                             <Link
                                 href="/chiots-disponibles"
-                                className="bg-primary text-white hover:bg-primary/80 px-6 py-3 rounded-md font-semibold dark:text-[#5b3a1a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                className="rounded-md bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
                                 Découvrir nos chiots
                             </Link>
