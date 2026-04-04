@@ -67,13 +67,13 @@ export const shibaSociablePost: BlogPost = {
     ],
     image: "/pages/homePage/mame-shiba-good-caractere.jpg",
     imageAlt:
-        "Mame Shiba au regard attentif pour illustrer le caractère du Shiba Inu",
+        "Mameshiba au regard attentif pour illustrer le caractère du Shiba Inu",
     contactCta: {
         label: "Nous poser vos questions"
     },
     relatedLinks: [
         {
-            label: "Lire notre page de fond sur le Mame Shiba",
+            label: "Lire notre page de fond sur le Mameshiba",
             href: "/mameshiba"
         },
         {

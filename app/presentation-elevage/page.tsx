@@ -189,7 +189,7 @@ export default function PresentationPage() {
                             <div className="relative h-64 md:h-100 rounded-lg overflow-hidden md:order-2">
                                 <Image
                                     src="/pages/presentation-elevage/Karasuki.webp"
-                                    alt="Mame shiba caché dans l'herbe"
+                                    alt="Mameshiba caché dans l'herbe"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 50vw, 100vw"

@@ -145,7 +145,7 @@ export default async function BlogArticlePage({
         : resolveSocialImage(siteConfig.ogImage).url;
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Blog Mame Shiba", url: "/blog/mame-shiba" },
+        { name: "Blog Mameshiba", url: "/blog/mame-shiba" },
         { name: post.title, url: canonicalPath },
     ]);
     const blogPostingSchema = generateBlogPostingSchema({

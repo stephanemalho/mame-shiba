@@ -232,9 +232,9 @@ export function generatePuppyListSchema(
     return {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        name: "Chiots Mame Shiba disponibles",
+        name: "Chiots Mameshiba disponibles",
         description:
-            "Liste des chiots Mame Shiba de l'élevage Kawaii Shiba disponibles à l'adoption.",
+            "Liste des chiots Mameshiba de l'élevage Kawaii Shiba disponibles à l'adoption.",
         numberOfItems: puppies.length,
         itemListElement: puppies.map((puppy, index) => ({
             "@type": "ListItem",

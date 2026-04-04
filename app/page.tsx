@@ -114,7 +114,7 @@ export default function HomePage() {
                       Kawaii Shiba
                     </div>
                     <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-white md:text-4xl lg:text-5xl">
-                      Bienvenue dans notre élevage de Mame Shiba - Kawaii Shiba-MAMESHIBA
+                      Bienvenue dans notre élevage de Mameshiba - Kawaii Shiba-MAMESHIBA
                     </h1>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function HomePage() {
               <div className="relative w-full aspect-video md:h-200 h-125 md:aspect-4/5 overflow-hidden rounded-lg">
                 <Image
                   src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
-                  alt="Chiot Mame-Shiba blanc dans un décoe japonais"
+                  alt="Chiot Mameshiba blanc dans un décoe japonais"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 85vw, 50vw"

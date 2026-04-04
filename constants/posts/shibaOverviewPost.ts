@@ -6,15 +6,15 @@ export const shibaOverviewPost: BlogPost = {
     slug: "mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix",
     title: "Le Shiba Inu : caractère, santé, alimentation et prix",
     excerpt:
-        "Découvrez le caractère, la santé, l'alimentation, l'entretien et le prix moyen du Shiba Inu, la race japonaise qui se trouve à l'origine de nos Mame Shiba.",
+        "Découvrez le caractère, la santé, l'alimentation, l'entretien et le prix moyen du Shiba Inu, la race japonaise qui se trouve à l'origine de nos Mameshiba.",
     introduction:
-        "Le Shiba Inu est aujourd'hui l'un des chiens japonais les plus connus. Très apprécié pour sa beauté, sa vivacité et son expression malicieuse, il représente aussi l'origine directe du Mame Shiba. Avant d'envisager une adoption, il est utile de bien comprendre son tempérament, ses besoins essentiels, son entretien au quotidien et le budget qu'il implique. Cet article rassemble les repères les plus utiles pour découvrir le Shiba Inu dans sa globalité.",
+        "Le Shiba Inu est aujourd'hui l'un des chiens japonais les plus connus. Très apprécié pour sa beauté, sa vivacité et son expression malicieuse, il représente aussi l'origine directe du Mameshiba. Avant d'envisager une adoption, il est utile de bien comprendre son tempérament, ses besoins essentiels, son entretien au quotidien et le budget qu'il implique. Cet article rassemble les repères les plus utiles pour découvrir le Shiba Inu dans sa globalité.",
     sections: [
         {
             subtitle: "Qu'est-ce qu'un Shiba Inu ?",
             paragraphs: [
                 "Le Shiba Inu est une race japonaise ancienne, issue des chiens de type primitif du Japon. Il est aujourd'hui reconnu comme un petit chien bien proportionné, agile, vif et très expressif, historiquement utilisé pour la chasse dans des zones montagneuses.",
-                "Au fil du temps, il est devenu un chien de compagnie très apprécié, sans perdre pour autant les grandes lignes de son tempérament d'origine : vigilance, indépendance, intelligence et attachement fort à sa famille. C'est aussi ce fond de race que l'on retrouve derrière le Mame Shiba."
+                "Au fil du temps, il est devenu un chien de compagnie très apprécié, sans perdre pour autant les grandes lignes de son tempérament d'origine : vigilance, indépendance, intelligence et attachement fort à sa famille. C'est aussi ce fond de race que l'on retrouve derrière le Mameshiba."
             ]
         },
         {
@@ -67,10 +67,10 @@ export const shibaOverviewPost: BlogPost = {
             ]
         },
         {
-            subtitle: "Pourquoi bien comprendre le Shiba Inu avant de s'intéresser au Mame Shiba",
+            subtitle: "Pourquoi bien comprendre le Shiba Inu avant de s'intéresser au Mameshiba",
             paragraphs: [
-                "Le Mame Shiba s'inscrit dans l'histoire du Shiba Inu. Comprendre le Shiba, c'est donc comprendre la base : son tempérament, sa finesse émotionnelle, sa vigilance, son besoin de cadre et sa manière bien à lui d'entrer en relation. Le Mame Shiba ne sort pas de nulle part ; il hérite de cette identité japonaise primitive.",
-                "Si vous êtes attiré par le Mame Shiba, prendre le temps de découvrir d'abord le Shiba Inu est une excellente chose. Cela permet de mieux distinguer ce qui relève du format et ce qui relève du tempérament de fond, pour construire un projet d'adoption plus lucide et plus cohérent."
+                "Le Mameshiba s'inscrit dans l'histoire du Shiba Inu. Comprendre le Shiba, c'est donc comprendre la base : son tempérament, sa finesse émotionnelle, sa vigilance, son besoin de cadre et sa manière bien à lui d'entrer en relation. Le Mameshiba ne sort pas de nulle part ; il hérite de cette identité japonaise primitive.",
+                "Si vous êtes attiré par le Mameshiba, prendre le temps de découvrir d'abord le Shiba Inu est une excellente chose. Cela permet de mieux distinguer ce qui relève du format et ce qui relève du tempérament de fond, pour construire un projet d'adoption plus lucide et plus cohérent."
             ]
         }
     ],
@@ -84,7 +84,7 @@ export const shibaOverviewPost: BlogPost = {
         "shiba inu santé",
         "shiba inu alimentation",
         "prix shiba inu",
-        "origine mame shiba"
+        "origine Mameshiba"
     ],
     image: "/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg",
     imageAlt:
@@ -94,7 +94,7 @@ export const shibaOverviewPost: BlogPost = {
     },
     relatedLinks: [
         {
-            label: "Découvrir notre page de fond sur le Mame Shiba",
+            label: "Découvrir notre page de fond sur le Mameshiba",
             href: "/mameshiba"
         },
         {

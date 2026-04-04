@@ -32,10 +32,10 @@ export const shibaFirstDogPost: BlogPost = {
             ]
         },
         {
-            subtitle: "Le Mame Shiba change-t-il vraiment la difficulté ?",
+            subtitle: "Le Mameshiba change-t-il vraiment la difficulté ?",
             paragraphs: [
-                "Le Mame Shiba peut alléger une partie du quotidien matériel grâce à son gabarit plus compact. Pour certaines familles, cela simplifie les déplacements, les manipulations ou la vie en intérieur. Mais sur le fond, il garde une base comportementale proche du Shiba, avec les mêmes besoins de socialisation, de justesse et de respect.",
-                "Autrement dit, choisir un Mame Shiba à la place d'un Shiba ne transforme pas un projet mal préparé en projet facile. Le format aide, la qualité de la sélection aide, mais l'implication de la famille reste déterminante."
+                "Le Mameshiba peut alléger une partie du quotidien matériel grâce à son gabarit plus compact. Pour certaines familles, cela simplifie les déplacements, les manipulations ou la vie en intérieur. Mais sur le fond, il garde une base comportementale proche du Shiba, avec les mêmes besoins de socialisation, de justesse et de respect.",
+                "Autrement dit, choisir un Mameshiba à la place d'un Shiba ne transforme pas un projet mal préparé en projet facile. Le format aide, la qualité de la sélection aide, mais l'implication de la famille reste déterminante."
             ]
         },
         {
@@ -61,7 +61,7 @@ export const shibaFirstDogPost: BlogPost = {
         "premier chien shiba",
         "shiba inu debutant",
         "adoption shiba",
-        "mame shiba debutant",
+        "Mameshiba debutant",
         "choisir son chien"
     ],
     image: "/pages/homePage/little-mame-shiba-red-white.jpeg",

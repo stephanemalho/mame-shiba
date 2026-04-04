@@ -85,7 +85,7 @@ export default function PresentationEleveusesPage() {
         },
         {
             src: "/pages/les-eleveuses/aurelie-avec-ses-collegues-et-les-mame-shiba.jpeg",
-            alt: "Aurélie ses collègues de l’élevage et les mame shiba",
+            alt: "Aurélie ses collègues de l’élevage et les Mameshiba",
             className: "col-span-3 md:col-span-3 row-span-3",
         }
     ]
@@ -98,12 +98,12 @@ export default function PresentationEleveusesPage() {
         },
         {
             src: "/pages/les-eleveuses/marine-et-les-shiba.jpg",
-            alt: "Les mame shiba de Marine dans un restaurant",
+            alt: "Les Mameshiba de Marine dans un restaurant",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/pages/les-eleveuses/marine-a-paris.jpg",
-            alt: "Marine avec un mame shiba à Paris",
+            alt: "Marine avec un Mameshiba à Paris",
             className: "col-span-3 md:col-span-3 row-span-3",
         }
     ]

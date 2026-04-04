@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function MameShibaBlogPage() {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Blog Mame Shiba", url: "/blog/mame-shiba" },
+        { name: "Blog Mameshiba", url: "/blog/mame-shiba" },
     ]);
     const collectionSchema = generateCollectionPageSchema({
         name: pageMetadata.blog.title,

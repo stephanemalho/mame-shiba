@@ -6,41 +6,36 @@ export const faqHome: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Kawaii Shiba est un élevage professionel du groupe Elevage Royal, passionné par les Chiens de petits formats et de lignée originelles, avec une sélection rigoureuse
-          des reproducteurs et de leurs origines, nos portées sont limitées pour garantir la santé des chiots mais surtout des reproductuers, et un suivi structuré est éffectué à chaque étape du développement de nos chiots.
+          Kawaii MAMESHIBA est un élevage de type professionnel, aux normes du bien être animal passionné par les Chiens de petits formats et de lignée originelles, avec une sélection rigoureuse des reproducteurs et de leurs origines, nos portées sont limitées pour garantir la santé des chiots mais surtout des reproducteurs, et un suivi structuré est effectué à chaque étape du développement de nos chiots.
         </p>
         <p>
-          Chaque projet d'élevage vise à produire des chiens équilibrés, conformes au type
-          et adaptés à la vie de compagnie.
+          Chaque projet d'élevage vise à produire des chiens équilibrés, conformes au type et adaptés à la vie de compagnie.
         </p>
       </div>
     ),
   },
   {
-    question: "Comment les chiots Mame-Shiba sont-ils socialisés ?",
+    question: "Comment les chiots Mameshiba sont-ils socialisés ?",
     answer: (
       <div className="space-y-3">
         <p>
-          La socialisation des shiba commence dès les premiers jours, avec des stimulations adaptées à leurs caractére spécifique,
-          des manipulations régulières sont faite et une exposition progressive à l'environnement leurs permets d'etre préparé a leurs future vie adoptive.
+          La socialisation des mameshiba commence dès les premiers jours, avec des stimulations adaptées à leurs caractère spécifique, des manipulations régulières sont faite et une exposition progressive à l'environnement leurs permets d’être préparé a leurs future vie adoptive.
         </p>
         <p>
-          Les chiots sont habitués aux bruits du quotidien, aux interactions humaines
-          et aux différentes textures afin de favoriser confiance et stabilité.
+          Les chiots sont habitués aux bruits du quotidien, aux interactions humaines et aux différentes textures afin de favoriser confiance et stabilité.
         </p>
       </div>
     ),
   },
   {
-    question: "Quels types de Mame-Shiba sont proposés par Kawaii Mame-Shiba ?",
+    question: "Quels types de Mameshiba sont proposés par Kawaii Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          L'élevage travaille plusieurs tailles de Mame-Shiba, de 4 à 7kg une fois adultes.
+          L'élevage travaille plusieurs tailles de MAMESHIBA, de 4 à 7kg une fois adultes.
         </p>
         <p>
-          Les chiens présentent une grande variété de robes et de couleurs, les coloris vont de roux-blanc à noir-roux-blanc en passant par tout blanc,
-          issues d'une sélection visant à concilier esthétique, tempérament et santé.
+          Les chiens présentent une grande variété de robes et de couleurs, les coloris vont de roux-blanc à noir-roux-blanc en passant par tout blanc, issues d'une sélection visant à concilier esthétique, tempérament et santé.
         </p>
       </div>
     ),
@@ -50,7 +45,7 @@ export const faqHome: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mame-Shiba est un chien au caractère unique, Un accompagnement vous est assuré avant, pendant le processus d'adoption et également après le départ du chiot et tout au long de sa vie afin de répondre aux questions liées à l'alimentation, à l'adaptation et aux premiers mois de vie particulièrement.
+          Le Mameshiba est un chien au caractère unique, Un accompagnement vous est assuré avant, pendant le processus d'adoption et également après le départ du chiot et tout au long de sa vie afin de répondre aux questions liées à l'alimentation, à l'adaptation et aux premiers mois de vie particulièrement.
         </p>
         <p>
           Ce suivi permet d'accompagner chaque adoptant pour que chaque chiot soit heureux et équilibré dans son nouveau foyer.
@@ -100,7 +95,7 @@ export const faqPresentation: FAQItem[] = [
           Ce nombre est variable selon les femelles, les repos nécessaires et la qualité des mariages envisagés.
         </p>
         <p>
-          Chez Kawaii Mame-Shiba, nous privilégions clairement la qualité à la quantité.
+          Chez Kawaii Mameshiba, nous privilégions clairement la qualité à la quantité.
         </p>
         <p>
           Les femelles ont leurs périodes de repos après gestation, et le nombre de portées est volontairement limité afin de garantir :
@@ -131,7 +126,7 @@ export const faqPresentation: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Chez Kawaii Mame-Shiba, chaque chien évolue dans le respect de son rythme physiologique et émotionnel.
+          Oui. Chez Kawaii Mameshiba, chaque chien évolue dans le respect de son rythme physiologique et émotionnel.
           Les périodes de reproduction, de repos et de récupération sont soigneusement respectées afin de préserver la santé et l'équilibre des reproducteurs.
         </p>
       </div>
@@ -180,11 +175,11 @@ export const faqPresentation: FAQItem[] = [
 
 export const faqEleveuses: FAQItem[] = [
   {
-    question: "Quelle est votre taille de Mame-Shiba préférée ?",
+    question: "Quelle est votre taille de Mameshiba préférée ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mame Shiba est un petit chien, et j'aime particulièrement les chiens de petite taille, entre 4 et 6 kg, qui restent dans le type du Mameshiba : un petit primitif harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif. Attention cependant à ne pas chercher à faire du Mameshiba un chien de poche, il doit rester dans les standards de la race pour être un Mameshiba, c'est à dire entre 25 et 34 cm pour le mâle et entre 25 et 32 cm pour la femelle selon le KCJ.
+          Le Mameshiba est un petit chien, et j'aime particulièrement les chiens de petite taille, entre 4 et 6 kg, qui restent dans le type du Mameshiba : un petit primitif harmonieux, expressif, sain et capable de vivre sereinement en famille sans perdre son identité de petit primitif. Attention cependant à ne pas chercher à faire du Mameshiba un chien de poche, il doit rester dans les standards de la race pour être un Mameshiba, c'est à dire entre 25 et 34 cm pour le mâle et entre 25 et 32 cm pour la femelle selon le KCJ.
         </p>
       </div>
     ),
@@ -194,7 +189,7 @@ export const faqEleveuses: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Jusqu'à présent non, je suis membre de la fédération française du Mame-Shiba, et j'ai été ( aurelie ) juge d'un concours organisé par l'european Mame-Shiba club et la fédération française du Mame-Shiba ( FFP) je me suis beaucoup amusée. Depuis je n'ai pas participé à des expositions cependant ce n'est pas exclu que j'envisage de le faire à l'avenir. Les concours sont très contraignants en terme de planning, de risques sanitaires de mon point de vue. Cependant c'est aussi très intéressant pour présenter la race en devenir et connecter à d'autres passionnés.
+          Jusqu'à présent non, je suis membre de la fédération française du Mameshiba, et j'ai été ( aurelie ) juge d'un concours organisé par l'european Mameshiba club et la fédération française du Mameshiba ( FFP) je me suis beaucoup amusée. Depuis je n'ai pas participé à des expositions cependant ce n'est pas exclu que j'envisage de le faire à l'avenir. Les concours sont très contraignants en terme de planning, de risques sanitaires de mon point de vue. Cependant c'est aussi très intéressant pour présenter la race en devenir et connecter à d'autres passionnés.
         </p>
       </div>
     ),
@@ -204,7 +199,7 @@ export const faqEleveuses: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          C'est une façon de retracer les lignées à travers la création de la race et de féderer les gens autour du Mame-Shiba, pour le moment les clubs en France sont nombreux mais non officiels, étant donné que la race n'est pas recconue par la FCI, le but des clubs est d'accéder à la reconnaissance de la race Mame-Shiba un jour ou l'autre.
+          C'est une façon de retracer les lignées à travers la création de la race et de féderer les gens autour du Mameshiba, pour le moment les clubs en France sont nombreux mais non officiels, étant donné que la race n'est pas recconue par la FCI, le but des clubs est d'accéder à la reconnaissance de la race Mameshiba un jour ou l'autre.
         </p>
       </div>
     ),
@@ -226,11 +221,11 @@ export const faqEleveuses: FAQItem[] = [
 
 export const faqBienEtre: FAQItem[] = [
   {
-    question: "Dans quel environnement vivent les chiens et les chiots chez Kawaii Mame-Shiba ?",
+    question: "Dans quel environnement vivent les chiens et les chiots chez Kawaii Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Les chiens et les chiots Mame-Shiba de notre élevage évoluent dans un environnement propre, sécurisé et adapté à leurs besoins, au sein d'un élevage professionnel déclaré.
+          Les chiens et les chiots Mameshiba de notre élevage évoluent dans un environnement propre, sécurisé et adapté à leurs besoins, au sein d'un élevage professionnel déclaré.
         </p>
         <p>
           Les espaces sont pensés pour garantir confort, hygiène, repos et stimulation, tout en respectant les normes en vigueur.
@@ -239,11 +234,11 @@ export const faqBienEtre: FAQItem[] = [
     ),
   },
   {
-    question: "Quel est le cadre naturel de l'élevage Kawaii Mame-Shiba ?",
+    question: "Quel est le cadre naturel de l'élevage Kawaii Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          Kawaii Mame-Shiba est implanté dans un cadre naturel calme et préservé, propice au bien-être des chiens et des chiots.</p>
+          Kawaii Mameshiba est implanté dans un cadre naturel calme et préservé, propice au bien-être des chiens et des chiots.</p>
         <p>L'environnement est volontairement éloigné de l'agitation urbaine, offrant sérénité, espace et qualité de vie.</p>
       </div>
     ),
@@ -264,16 +259,16 @@ export const faqBienEtre: FAQItem[] = [
       <div className="space-y-3">
         <p>
           Oui, parfaitement.</p>
-        <p>Kawaii Mame-Shiba allie cadre naturel et structure professionnelle, en respectant les normes sanitaires, réglementaires et organisationnelles d'un élevage canin.</p>
+        <p>Kawaii Mameshiba allie cadre naturel et structure professionnelle, en respectant les normes sanitaires, réglementaires et organisationnelles d'un élevage canin.</p>
       </div>
     ),
   },
   {
-    question: "Comment accompagnez-vous la croissance du Mame-Shiba ?",
+    question: "Comment accompagnez-vous la croissance du Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
-          La croissance est progressive et adaptée au gabarit du Mame-Shiba.
+          La croissance est progressive et adaptée au gabarit du Mameshiba.
           L'activité est encadrée, les jeux sont choisis pour limiter les impacts,
           et le rythme du chiot est toujours respecté.
         </p>
@@ -285,15 +280,15 @@ export const faqBienEtre: FAQItem[] = [
     ),
   },
   {
-    question: "Le Mame-Shiba peut il vivre en appartement ? ",
+    question: "Le Mameshiba peut il vivre en appartement ? ",
     answer: (
       <div className="space-y-3">
         <p>
           Oui, il peut vivre en appartement et souvent un chien est plus heureux en appartement qu'en maison car les balades sont plus nombreuses !
         </p>
         <p>
-          4 balades par jour seront nécessaires pour rendre votre Mame-Shiba heureux, pour la propreté également.
-          Vous pouvez alterner des balades en ville et en campagne, le Mame-Shiba aime la variété.
+          4 balades par jour seront nécessaires pour rendre votre Mameshiba heureux, pour la propreté également.
+          Vous pouvez alterner des balades en ville et en campagne, le Mameshiba aime la variété.
         </p>
       </div>
     ),
@@ -326,7 +321,7 @@ export const faqBienEtre: FAQItem[] = [
 
 export const faqNosChiots: FAQItem[] = [
   {
-    question: "Comment sont préparés les chiots Mame-Shiba avant leur départ ?",
+    question: "Comment sont préparés les chiots Mameshiba avant leur départ ?",
     answer: (
       <div className="space-y-3">
         <p>
@@ -346,13 +341,13 @@ export const faqNosChiots: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Nos chiots Mame-Shiba rejoignent leur famille à l'âge de 9 à 10 semaines : leur développement, leur permettant d'avoir acquis les codes canins appris par leur mère, les bases essentielles pour une transition en douceur vers leur nouveau foyer.
+          Nos chiots Mameshiba rejoignent leur famille à l'âge de 9 à 10 semaines : leur développement, leur permettant d'avoir acquis les codes canins appris par leur mère, les bases essentielles pour une transition en douceur vers leur nouveau foyer.
         </p>
       </div>
     ),
   },
   {
-    question: "Les chiots Mame-Shiba sont-ils suivis sur le plan vétérinaire ?",
+    question: "Les chiots Mameshiba sont-ils suivis sur le plan vétérinaire ?",
     answer: (
       <div className="space-y-3">
         <p>
@@ -371,7 +366,7 @@ export const faqNosChiots: FAQItem[] = [
     ),
   },
   {
-    question: "Aidez-vous les familles à choisir leur chiot Mame-Shiba ?",
+    question: "Aidez-vous les familles à choisir leur chiot Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
@@ -385,7 +380,7 @@ export const faqNosChiots: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Nos petits chiots Mame-Shiba sont élevés dans une optique de chien de compagnie, adaptés à la vie de famille, avec enfants, dans le respect mutuel et sous supervision.
+          Oui. Nos petits chiots Mameshiba sont élevés dans une optique de chien de compagnie, adaptés à la vie de famille, avec enfants, dans le respect mutuel et sous supervision.
         </p>
       </div>
     ),
@@ -394,7 +389,7 @@ export const faqNosChiots: FAQItem[] = [
     question: "Que signifie pour vous un chiot bien préparé ?",
     answer: (
       <div className="space-y-3">
-        <p>Un chiot Mame-Shiba bien préparé est un chiot :</p>
+        <p>Un chiot Mameshiba bien préparé est un chiot :</p>
         <ul className="list-disc ml-6">
           <li>confiant,</li>
           <li>équilibré,</li>
@@ -415,13 +410,13 @@ export const faqNosChiots: FAQItem[] = [
           Les visites sont proposées sur rendez-vous, lorsque l'âge des chiots le permet et dans le respect de leur développement, de leur rythme et des règles sanitaires.
         </p>
         <p>
-          Chez Kawaii Mame-Shiba, les rencontres sont pensées comme un temps privilégié, permettant aux familles de découvrir les chiots, l'environnement dans lequel ils grandissent et la philosophie de l'élevage, en toute transparence et bienveillance
+          Chez Kawaii Mameshiba, les rencontres sont pensées comme un temps privilégié, permettant aux familles de découvrir les chiots, l'environnement dans lequel ils grandissent et la philosophie de l'élevage, en toute transparence et bienveillance
         </p>
       </div>
     ),
   },
   {
-    question: "Peut-on manipuler les chiots Mame-Shiba ?",
+    question: "Peut-on manipuler les chiots Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
@@ -433,7 +428,7 @@ export const faqNosChiots: FAQItem[] = [
           <li>respecter leur rythme de développement,</li>
           <li>garantir des manipulations douces, adaptées et cohérentes.</li>
         </ul>
-        <p>Cette règle est essentielle et fait partie intégrante de l'engagement de Kawaii Mame-Shiba pour le bien-être et la protection des chiots déjà adoptés, des portées et de la santé sanitaire de l'élevage selon les recommandations de notre équipe vétérinaire.</p>
+        <p>Cette règle est essentielle et fait partie intégrante de l'engagement de Kawaii Mameshiba pour le bien-être et la protection des chiots déjà adoptés, des portées et de la santé sanitaire de l'élevage selon les recommandations de notre équipe vétérinaire.</p>
 
       </div>
     ),
@@ -474,7 +469,7 @@ export const faqReproducteurs: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Chaque reproducteur s'inscrit dans un projet d'élevage cohérent et durable pour la réaction de la race Mame-Shiba, visant à améliorer la qualité, l'équilibre et le type des générations futures.
+          Oui. Chaque reproducteur s'inscrit dans un projet d'élevage cohérent et durable pour la réaction de la race Mameshiba, visant à améliorer la qualité, l'équilibre et le type des générations futures.
         </p>
       </div>
     ),
@@ -486,12 +481,12 @@ export const faqReproducteurs: FAQItem[] = [
           Nos mâles reproducteurs sont très doux et vivent ensemble, nos femelles vivent ensemble également.
         </p>
         <p>
-          Nous n'avons aucun problème d'incompatibilité de caractère malgré quelques ajustements dans la meute. Le Mame-Shiba n'est pas un chien dominant et territorial mais sociable et équilibré.
+          Nous n'avons aucun problème d'incompatibilité de caractère malgré quelques ajustements dans la meute. Le Mameshiba n'est pas un chien dominant et territorial mais sociable et équilibré.
         </p>
       </div>
     ),
   }, {
-    question: "Pourquoi le choix des reproducteurs est-il essentiel chez le Mame-Shiba ?",
+    question: "Pourquoi le choix des reproducteurs est-il essentiel chez le Mameshiba ?",
     answer: (
       <div className="space-y-3">
         <p>
@@ -516,7 +511,7 @@ export const faqContact: FAQItem[] = [
         <p>
           Chaque projet d'adoption est différent.
           L'échange permet de comprendre votre mode de vie,
-          vos attentes et de vérifier que le Mame-Shiba correspond à votre quotidien.
+          vos attentes et de vérifier que le Mameshiba correspond à votre quotidien.
         </p>
         <p>
           Cela permet également de vous orienter vers le gabarit
@@ -530,7 +525,7 @@ export const faqContact: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui, il est tout à fait possible d'être inscrit sur liste d'attente chez Kawaii Mame-Shiba.
+          Oui, il est tout à fait possible d'être inscrit sur liste d'attente chez Kawaii Mameshiba.
         </p>
         <p>
           La liste d'attente permet d'anticiper un futur projet d'adoption et de prendre le temps d'échanger afin de vérifier la compatibilité entre le chiot et la future famille.
@@ -538,7 +533,7 @@ export const faqContact: FAQItem[] = [
         <p>Elle ne constitue pas un engagement automatique, mais une démarche réfléchie et encadrée.</p>
         <p>L'inscription se fait après un premier échange, permettant de mieux comprendre votre mode de vie, vos attentes et votre projet.</p>
         <p>Chaque demande est étudiée avec attention, dans l'intérêt du chiot comme de la famille.</p>
-        <p>Chez Kawaii Mame-Shiba, la liste d'attente est avant tout un moyen de confiance et de préparation, pour des adoptions sereines et durables</p>
+        <p>Chez Kawaii Mameshiba, la liste d'attente est avant tout un moyen de confiance et de préparation, pour des adoptions sereines et durables</p>
 
       </div>
     ),
@@ -551,10 +546,10 @@ export const faqContact: FAQItem[] = [
           Oui, bien sûr.
         </p>
         <p>
-          Chez Kawaii Mame-Shiba, l'accompagnement ne s'arrête pas au départ du chiot.
+          Chez Kawaii Mameshiba, l'accompagnement ne s'arrête pas au départ du chiot.
         </p>
         <p>L'élevage reste disponible après l'adoption pour répondre aux questions, accompagner les premières étapes et apporter des conseils sur l'adaptation, l'éducation et le quotidien du chiot.</p>
-        <p>Garder le lien avec les familles fait partie intégrante de la philosophie de Kawaii Mame-Shiba, car une adoption réussie se construit dans la durée, avec écoute, bienveillance et responsabilité</p>
+        <p>Garder le lien avec les familles fait partie intégrante de la philosophie de Kawaii Mameshiba, car une adoption réussie se construit dans la durée, avec écoute, bienveillance et responsabilité</p>
       </div>
     ),
   },
@@ -648,7 +643,7 @@ export const faqMameShiba: FAQItem[] = [
           Parce qu'un simple petit gabarit ne suffit pas à faire un Mameshiba. Sans sélection sérieuse, on peut obtenir des chiens trop petits, mal construits ou issus de croisements douteux.
         </p>
         <p>
-          Il vaut mieux vérifier la filiation, la cohérence de l'élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot "Mame-Shiba" sur une annonce.
+          Il vaut mieux vérifier la filiation, la cohérence de l'élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot "Mameshiba" sur une annonce.
         </p>
       </div>
     ),

@@ -7,10 +7,10 @@ import { shibaSociablePost } from "../posts/shibaSociablePost";
 
 export const blog: BlogContentType = {
     hero: {
-        title: "Articles utiles autour du Shiba Inu et du Mame Shiba",
+        title: "Articles utiles autour du Shiba Inu et du Mameshiba",
         subtitle:
             "Comparatifs, comportement, vie quotidienne et repères d'adoption pour mieux comprendre les chiens japonais qui vous attirent.",
-        cta: "Découvrir le Mame Shiba",
+        cta: "Découvrir le Mameshiba",
         linkTo: "/mameshiba",
         Icon: "paw",
         color: "orange"
@@ -22,7 +22,7 @@ export const blog: BlogContentType = {
     allCategory: {
         name: "Toutes les catégories",
         description:
-            "Découvrez l'ensemble de nos articles autour du Shiba Inu, du Mame Shiba et de l'adoption responsable"
+            "Découvrez l'ensemble de nos articles autour du Shiba Inu, du Mameshiba et de l'adoption responsable"
     },
     categories: [
         {
@@ -92,14 +92,14 @@ export const blog: BlogContentType = {
         in: "dans"
     },
     seo: {
-        title: "Blog Mame Shiba - Shiba Inu, comportement et adoption",
+        title: "Blog Mameshiba - Shiba Inu, comportement et adoption",
         description:
-            "Découvrez nos articles dédiés au Shiba Inu et au Mame Shiba : comportement, comparatifs, vie quotidienne et repères d'adoption.",
+            "Découvrez nos articles dédiés au Shiba Inu et au Mameshiba : comportement, comparatifs, vie quotidienne et repères d'adoption.",
         keywords: [
-            "blog mame shiba",
+            "blog Mameshiba",
             "blog shiba inu",
             "shiba inu caractère",
-            "mame shiba informations",
+            "Mameshiba informations",
             "adoption shiba inu",
             "comparatif chiens japonais",
             "questions avant adoption shiba"

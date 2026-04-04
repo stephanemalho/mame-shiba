@@ -31,7 +31,7 @@ export async function generateMetadata({
         };
     }
 
-    const title = `${themeData.label} | Blog Mame Shiba`;
+    const title = `${themeData.label} | Blog Mameshiba`;
     const description =
         themeData.description ?? pageMetadata.blog.description;
     const canonicalPath = `/blog/mame-shiba/${themeData.slug}`;
@@ -77,11 +77,11 @@ export default async function MameShibaThemePage({ params }: MameShibaThemePageP
 
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Blog Mame Shiba", url: "/blog/mame-shiba" },
+        { name: "Blog Mameshiba", url: "/blog/mame-shiba" },
         { name: themeData.label, url: `/blog/mame-shiba/${themeData.slug}` },
     ]);
     const collectionSchema = generateCollectionPageSchema({
-        name: `${themeData.label} | Blog Mame Shiba`,
+        name: `${themeData.label} | Blog Mameshiba`,
         description: themeData.description ?? pageMetadata.blog.description,
         url: new URL(`/blog/mame-shiba/${themeData.slug}`, siteConfig.siteUrl).toString(),
     });

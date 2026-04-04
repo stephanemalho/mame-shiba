@@ -23,7 +23,7 @@ export function Footer() {
                             <span className="text-lg font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            Elevage Professionel de Mame-Shiba dans le Jura (39). Santé, socialisation et accompagnement des familles.
+                            Elevage Professionel de Mameshiba dans le Jura (39). Santé, socialisation et accompagnement des familles.
                         </p>
                     </div>
 
@@ -43,7 +43,7 @@ export function Footer() {
                                     href="/mameshiba"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Le Mame-Shiba
+                                    Le Mameshiba
                                 </Link>
                             </li>
                             <li>
@@ -51,7 +51,7 @@ export function Footer() {
                                     href="/mame-shiba-prix"
                                     className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
                                 >
-                                    Prix du Mame-Shiba
+                                    Prix du Mameshiba
                                 </Link>
                             </li>
                             <li>
@@ -168,7 +168,7 @@ export function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez Kawaii mame shiba sur Facebook (lien externe)"
+                                aria-label="Suivez Kawaii Mameshiba sur Facebook (lien externe)"
                             >
                                 <Facebook className="h-5 w-5" aria-hidden="true" />
                             </a>
@@ -177,7 +177,7 @@ export function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez Kawaii mame shiba sur Instagram (lien externe)"
+                                aria-label="Suivez Kawaii Mameshiba sur Instagram (lien externe)"
                             >
                                 <Instagram className="h-5 w-5" aria-hidden="true" />
                             </a>
@@ -186,7 +186,7 @@ export function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
-                                aria-label="Suivez Kawaii mame shiba sur TikTok (lien externe)"
+                                aria-label="Suivez Kawaii Mameshiba sur TikTok (lien externe)"
                             >
                                 <FaTiktok className="h-5 w-5" aria-hidden="true" />
                             </a>

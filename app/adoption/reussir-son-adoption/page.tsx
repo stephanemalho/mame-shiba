@@ -88,7 +88,7 @@ const travelModes = [
             "L'avion doit rester un trajet préparé avec beaucoup d'anticipation.",
             "Vérifiez très tôt les conditions de la compagnie et les formalités demandées.",
             "Privilégiez les trajets simples, avec peu d'attente et peu de changements.",
-            "Pour un chiot sensible comme le Mame Shiba, chaque étape doit rester lisible et calme.",
+            "Pour un chiot sensible comme le Mameshiba, chaque étape doit rester lisible et calme.",
         ],
     },
 ]
@@ -118,7 +118,7 @@ const pottySchedule = [
 
 const resources = [
     {
-        title: "Bien comprendre le Mame Shiba",
+        title: "Bien comprendre le Mameshiba",
         href: "/mameshiba",
         description: "Origines, standard, tempérament et points de vigilance avant de vous engager.",
     },
@@ -135,7 +135,7 @@ const resources = [
     {
         title: "Lire nos articles de blog",
         href: "/blog/mame-shiba",
-        description: "Des contenus complémentaires sur le Shiba Inu, le Mame Shiba et la vie quotidienne avec un chien japonais.",
+        description: "Des contenus complémentaires sur le Shiba Inu, le Mameshiba et la vie quotidienne avec un chien japonais.",
     },
 ]
 
@@ -148,13 +148,13 @@ const adoptionGuideFaq = [
                     Préparez une couverture, de l&apos;eau, une alèse ou une serviette absorbante et un transport sécurisé comme une caisse ou un harnais adapté.
                 </p>
                 <p>
-                    Pour un chiot Mame Shiba, l&apos;objectif est surtout de garder le trajet calme, lisible et sans surstimulation inutile.
+                    Pour un chiot Mameshiba, l&apos;objectif est surtout de garder le trajet calme, lisible et sans surstimulation inutile.
                 </p>
             </div>
         ),
     },
     {
-        question: "Comment accueillir un chiot Mame Shiba à la maison la première semaine ?",
+        question: "Comment accueillir un chiot Mameshiba à la maison la première semaine ?",
         answer: (
             <div className="space-y-3">
                 <p>
@@ -187,17 +187,17 @@ const adoptionGuideFaq = [
                     Oui, mais très progressivement. On évite les départs brutaux et on construit des absences courtes, répétées et compréhensibles pour le chiot.
                 </p>
                 <p>
-                    Chez un Mame Shiba sensible, la qualité des débuts compte énormément pour éviter que chaque séparation ne devienne une montée de stress.
+                    Chez un Mameshiba sensible, la qualité des débuts compte énormément pour éviter que chaque séparation ne devienne une montée de stress.
                 </p>
             </div>
         ),
     },
     {
-        question: "Le Mame Shiba a-t-il besoin de davantage de calme les premiers jours ?",
+        question: "Le Mameshiba a-t-il besoin de davantage de calme les premiers jours ?",
         answer: (
             <div className="space-y-3">
                 <p>
-                    Oui, c&apos;est souvent préférable. Le Mame Shiba est généralement un petit chien fin, observateur et sensible à son environnement.
+                    Oui, c&apos;est souvent préférable. Le Mameshiba est généralement un petit chien fin, observateur et sensible à son environnement.
                 </p>
                 <p>
                     Plus les premières journées sont sobres, prévisibles et reposantes, plus il prend facilement ses repères et se détend dans son nouveau foyer.
@@ -240,7 +240,7 @@ export default function AdoptionGuidePage() {
             `${siteConfig.siteUrl}/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg`,
         ],
         about: [
-            { "@type": "Thing", name: "Mame Shiba" },
+            { "@type": "Thing", name: "Mameshiba" },
             { "@type": "Thing", name: "Adoption de chiot" },
             { "@type": "Thing", name: "Premiers jours à la maison" },
             { "@type": "Thing", name: "Propreté du chiot" },
@@ -284,7 +284,7 @@ export default function AdoptionGuidePage() {
                                 </p>
                                 <p className="max-w-3xl text-muted-foreground">
                                     Ces conseils sont pensés pour un petit chien japonais sensible, observateur et très réceptif à son environnement.
-                                    Le Mame Shiba a besoin d&apos;un quotidien sobre, stable et progressif pour bien démarrer dans sa nouvelle famille.
+                                    Le Mameshiba a besoin d&apos;un quotidien sobre, stable et progressif pour bien démarrer dans sa nouvelle famille.
                                 </p>
                             </div>
                             <div className="grid gap-3 sm:grid-cols-3">
@@ -312,7 +312,7 @@ export default function AdoptionGuidePage() {
                                     href="/chiots-disponibles"
                                     className="inline-flex items-center rounded-md bg-primary px-4 py-2 font-semibold text-primary-foreground transition hover:bg-primary/85"
                                 >
-                                    Voir nos chiots Mame Shiba
+                                    Voir nos chiots Mameshiba
                                 </Link>
                                 <Link
                                     href="/contact"
@@ -341,7 +341,7 @@ export default function AdoptionGuidePage() {
                                     <div className="space-y-2">
                                         <h2 className="font-semibold">Ce qui aide vraiment un petit chiot sensible</h2>
                                         <p className="text-sm text-muted-foreground">
-                                            Pour un Mame Shiba, la douceur du départ compte énormément. Un repère olfactif familier, une ambiance calme et des humains qui n&apos;en font pas trop sont souvent plus utiles que mille stimulations de bienvenue.
+                                            Pour un Mameshiba, la douceur du départ compte énormément. Un repère olfactif familier, une ambiance calme et des humains qui n&apos;en font pas trop sont souvent plus utiles que mille stimulations de bienvenue.
                                         </p>
                                     </div>
                                 </div>
@@ -369,7 +369,7 @@ export default function AdoptionGuidePage() {
                                     Le chiot quitte tout son univers en quelques minutes. Plus l&apos;ambiance est calme, plus la transition est facile. On évite donc l&apos;excitation, les manipulations répétées et les départs précipités.
                                 </p>
                                 <p className="text-muted-foreground">
-                                    Avec un Mame Shiba, le trop-plein émotionnel se voit vite : fatigue, inhibition, agitation ou difficultés à s&apos;apaiser. Préparer votre sac avant d&apos;arriver et garder un rythme sobre aide vraiment.
+                                    Avec un Mameshiba, le trop-plein émotionnel se voit vite : fatigue, inhibition, agitation ou difficultés à s&apos;apaiser. Préparer votre sac avant d&apos;arriver et garder un rythme sobre aide vraiment.
                                 </p>
                             </div>
                             <Card className="bg-muted/30">
@@ -398,7 +398,7 @@ export default function AdoptionGuidePage() {
                             </Badge>
                             <h2 className="text-xl font-bold md:text-2xl">Voiture, train ou avion : on adapte le matériel au trajet, pas l&apos;inverse</h2>
                             <p className="text-muted-foreground">
-                                Le meilleur trajet est celui qui reste simple, sécurisé et prévisible. Un chiot Mame Shiba n&apos;a pas besoin de stimulation, il a besoin de stabilité, de température confortable et d&apos;un adulte disponible.
+                                Le meilleur trajet est celui qui reste simple, sécurisé et prévisible. Un chiot Mameshiba n&apos;a pas besoin de stimulation, il a besoin de stabilité, de température confortable et d&apos;un adulte disponible.
                             </p>
                         </div>
                         <div className="grid gap-6 md:grid-cols-3">
@@ -625,14 +625,14 @@ export default function AdoptionGuidePage() {
                                     href="/mameshiba"
                                     className="inline-flex items-center rounded-md border border-white/40 px-4 py-2 font-semibold transition hover:bg-white/10"
                                 >
-                                    Revoir les bases sur le Mame Shiba
+                                    Revoir les bases sur le Mameshiba
                                 </Link>
                             </div>
                         </div>
                     </section>
 
                     <FAQSection
-                        title="FAQ adoption du chiot Mame Shiba"
+                        title="FAQ adoption du chiot Mameshiba"
                         description="Les repères essentiels pour préparer le départ, les premiers jours à la maison et les bases d'un démarrage serein."
                         items={adoptionGuideFaq}
                     />

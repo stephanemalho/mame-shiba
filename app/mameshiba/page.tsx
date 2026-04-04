@@ -531,7 +531,7 @@ export default function MameShibaPage() {
                                 <CardContent className="text-sm text-muted-foreground leading-relaxed space-y-3">
                                     <p>
                                         Demandez toujours l’origine exacte des chiens, le pedigree, la logique de sélection et les
-                                        justificatifs de filiation. Un simple « type Mame-Shiba » ne suffit pas.
+                                        justificatifs de filiation. Un simple « type Mameshiba » ne suffit pas.
                                     </p>
                                     <p>
                                         Un élevage sérieux doit pouvoir expliquer son travail de génération en génération, et pas
@@ -621,7 +621,7 @@ export default function MameShibaPage() {
                                 href="/mame-shiba-prix"
                                 className="border border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-md font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
-                                Comprendre le prix d&apos;un Mame-Shiba
+                                Comprendre le prix d&apos;un Mameshiba
                             </Link>
                             <Link
                                 href="/contact"

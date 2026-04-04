@@ -33,16 +33,16 @@ export const siteConfig = {
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kawaii-shiba.com",
 
     /* ------------------------------ SEO Global -------------------------------- */
-    title: "Élevage de Mame Shiba en France | Kawaii Shiba",
+    title: "Élevage de Mameshiba en France | Kawaii Shiba",
     description:
-        "Kawaii Shiba est un élevage spécialisé en Mame Shiba en France. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
+        "Kawaii Shiba est un élevage spécialisé en Mameshiba en France. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
     keywords: [
-        "élevage mame shiba",
-        "mame shiba france",
-        "chiot mame shiba",
-        "mame shiba japonais",
+        "élevage Mameshiba",
+        "Mameshiba France",
+        "chiot Mameshiba",
+        "Mameshiba japonais",
         "élevage shiba inu",
-        "adopter mame shiba",
+        "adopter Mameshiba",
         "elevage de chien japonais"
     ],
 
@@ -91,7 +91,7 @@ export const siteConfig = {
     /* ------------------------------ OpenGraph --------------------------------- */
     ogImage: "/mame-shiba-in-a-sakura-tree.jpg",
     ogImageAlt:
-        "Mame shiba femelle de Kawaii Shiba sur un arbre en fleurs de cerisier",
+        "Mameshiba femelle de Kawaii Shiba sur un arbre en fleurs de cerisier",
     ogImageWidth: 2560,
     ogImageHeight: 1707,
 
@@ -347,21 +347,21 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage de chiots Mame Shiba nées en France | Kawaii Shiba",
+        title: "Élevage de chiots Mameshiba nées en France | Kawaii Shiba",
         description:
-            "Kawaii Shiba est un élevage spécialisé en Mame Shiba. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
+            "Kawaii Shiba est un élevage spécialisé en Mameshiba. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
             "élevage de petit shiba à taille humaine",
             "chiots shiba bien socialisés",
-            "mame shiba roux",
-            "mame shiba noir",
-            "mame shiba blanc",
+            "Mameshiba roux",
+            "Mameshiba noir",
+            "Mameshiba blanc",
             "adopter un chien japonais",
             "Kawaii Shiba",
-            "élevage de mame shiba en France",
-            "adopter un mame shiba en France"
+            "élevage de Mameshiba en France",
+            "adopter un Mameshiba en France"
         ]
     },
 
@@ -370,7 +370,7 @@ export const pageMetadata = {
         description: pageContent.shiba.description,
         keywords: [
             "mameshiba",
-            "mame shiba",
+            "Mameshiba",
             "taille du mameshiba",
             "difference shiba inu mameshiba",
             "origine du mameshiba",
@@ -402,9 +402,9 @@ export const pageMetadata = {
         description:
             "Découvrez les prix de nos Mameshiba à l’élevage Kawaii Shiba : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
         keywords: [
-            "prix mame shiba",
+            "prix Mameshiba",
             "prix mameshiba elevage",
-            "tarif mame shiba",
+            "tarif Mameshiba",
             "prix mameshiba kawaii shiba",
             "prix chiot mameshiba",
             "prix male mameshiba",
@@ -414,17 +414,17 @@ export const pageMetadata = {
     },
 
     adoptionGuide: {
-        title: "Réussir l’adoption de son chiot Mame Shiba | Kawaii Shiba",
+        title: "Réussir l’adoption de son chiot Mameshiba | Kawaii Shiba",
         description:
-            "Guide pratique pour réussir l’adoption d’un chiot Mame Shiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
+            "Guide pratique pour réussir l’adoption d’un chiot Mameshiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
         keywords: [
-            "adoption mame shiba",
+            "adoption Mameshiba",
             "accueil chiot mameshiba",
             "premiers jours chiot mameshiba",
             "trajet adoption chiot",
             "proprete chiot mameshiba",
             "solitude chiot shiba",
-            "guide adoption mame shiba"
+            "guide adoption Mameshiba"
         ]
     },
 
@@ -535,14 +535,14 @@ export const pageMetadata = {
         ]
     },
     blog: {
-        title: "Blog Mame Shiba | Shiba Inu, comportement et adoption",
+        title: "Blog Mameshiba | Shiba Inu, comportement et adoption",
         description:
-            "Articles sur le Shiba Inu et le Mame Shiba : comportement, comparatifs, vie quotidienne et conseils d'adoption.",
+            "Articles sur le Shiba Inu et le Mameshiba : comportement, comparatifs, vie quotidienne et conseils d'adoption.",
         keywords: [
-            "blog mame shiba",
+            "blog Mameshiba",
             "blog shiba inu",
             "shiba inu caractere",
-            "mame shiba adoption",
+            "Mameshiba adoption",
             "chien japonais",
             "comparatif shiba akita",
             "shiba appartement",

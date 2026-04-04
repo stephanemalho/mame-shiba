@@ -2,9 +2,9 @@ export const pageContent = {
     home: {
         h1: "Bienvenue dans notre élevage de Shiba Inu - Kawaii Shiba, MAMESHIBA",
         h1Subtitle:
-            "Nous sommes parmi les premiers élevages de Mame shiba en France",
+            "Nous sommes parmi les premiers élevages de Mameshiba en France",
         description:
-            "Nos mame-shiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine : l'excellence des lignées importées",
+            "Nos Mameshiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine : l'excellence des lignées importées",
         descriptionSecondary:
             "L'élevage Kawaii Shiba est situé dans le JURA, 39 dans la commune de SAINT AMOUR",
         descriptionTertiary:
@@ -17,7 +17,7 @@ export const pageContent = {
         h2: "Tailles et repères du Mameshiba",
         h3Standard: "Mameshiba femelle",
         h3Miniature: "Mameshiba mâle",
-        h3toy: "Shiba Inu",
+        h3toy: "Shiba Inu vs Mameshiba",
         shibaOrigin: "Origines et reconnaissance du Mameshiba",
         googToKnow: "Acheter un Mameshiba : les points essentiels"
     },

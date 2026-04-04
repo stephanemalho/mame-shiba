@@ -16,15 +16,15 @@ import {
 
 const navGroups = [
     {
-        label: "Le Mame-Shiba",
+        label: "Le Mameshiba",
         items: [
             {
-                title: "Le Mame-Shiba",
+                title: "Le Mameshiba",
                 href: "/mameshiba",
                 description: "Taille, tempérament, origines et adoption responsable.",
             },
             {
-                title: "Prix du Mame-Shiba",
+                title: "Prix du Mameshiba",
                 href: "/mame-shiba-prix",
                 description: "Fourchette de prix, rareté et repères avant adoption.",
             },

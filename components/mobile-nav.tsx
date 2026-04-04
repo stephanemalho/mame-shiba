@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils"
 
 const navigation = [
     { name: "Accueil", href: "/" },
-    { name: "Le Mame-Shiba", href: "/mameshiba" },
-    { name: "Prix du Mame-Shiba", href: "/mame-shiba-prix" },
+    { name: "Le Mameshiba", href: "/mameshiba" },
+    { name: "Prix du Mameshiba", href: "/mame-shiba-prix" },
     { name: "L'elevage", href: "/presentation-elevage" },
     { name: "Les éleveuses", href: "/presentation-eleveuses" },
     { name: "Nos chiens", href: "/nos-chiens" },

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${mameshibaPriceOgJpg}`,
-                alt: "Chiot Mame Shiba de l elevage Kawaii Shiba",
+                alt: "Chiot Mameshiba de l elevage Kawaii Shiba",
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
                 type: "image/jpeg",
@@ -121,7 +121,7 @@ const categoryGuides = [
 
 const faqMameshibaPrice: FAQItem[] = [
     {
-        question: "Quel est le prix d’un Mame Shiba chez Kawaii Shiba ?",
+        question: "Quel est le prix d’un Mameshiba chez Kawaii Shiba ?",
         answer: (
             <p>
                 Chez Kawaii Shiba, le prix de nos chiots Mameshiba est actuellement de 4 500 € pour un mâle et de 5 000 € pour une femelle.
@@ -137,7 +137,7 @@ const faqMameshibaPrice: FAQItem[] = [
         ),
     },
     {
-        question: "Que comprend le prix d’un chiot Mame Shiba ?",
+        question: "Que comprend le prix d’un chiot Mameshiba ?",
         answer: (
             <p>
                 Le prix ne correspond pas seulement au chiot le jour de son départ. Il comprend aussi tout le travail réalisé avant : sélection des adultes, suivi de la portée, soins, socialisation, préparation du chiot et échanges avec sa future famille.
@@ -217,7 +217,7 @@ export default function MameshibaPricePage() {
                         <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-[30rem]">
                             <Image
                                 src={mameshibaPriceOgJpg}
-                                alt="Chiot Mame Shiba de Kawaii Shiba"
+                                alt="Chiot Mameshiba de Kawaii Shiba"
                                 fill
                                 priority
                                 fetchPriority="high"
@@ -355,7 +355,7 @@ export default function MameshibaPricePage() {
                                 <div className="relative min-h-72">
                                     <Image
                                         src="/pages/mame-shiba-prix/deux-mame-shiba-chiots-blanc-et-un-noir.jpeg"
-                                        alt="Mame Shiba adulte de l elevage Kawaii Shiba"
+                                        alt="Mameshiba adulte de l elevage Kawaii Shiba"
                                         fill
                                         className="object-cover"
                                         sizes="(min-width: 1024px) 30vw, 100vw"
@@ -379,7 +379,7 @@ export default function MameshibaPricePage() {
                             <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
                                     src="/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
-                                    alt="Mame Shiba adulte chez Kawaii Shiba"
+                                    alt="Mameshiba adulte chez Kawaii Shiba"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 1024px) 35vw, 100vw"
@@ -425,13 +425,13 @@ export default function MameshibaPricePage() {
                                 </div>
                                 <h2 className="text-xl font-bold md:text-2xl">Vous souhaitez mieux connaître la race avant de réserver ?</h2>
                                 <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                    Avant une réservation, il est utile de bien comprendre ce qu’est réellement un Mame Shiba, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
+                                    Avant une réservation, il est utile de bien comprendre ce qu’est réellement un Mameshiba, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
                                 </p>
                                 <Link
                                     href={siteConfig.pages.shiba}
                                     className="inline-flex rounded-md border border-primary px-5 py-3 font-semibold text-primary transition-colors hover:bg-primary/10"
                                 >
-                                    Découvrir le Mame Shiba
+                                    Découvrir le Mameshiba
                                 </Link>
                             </CardContent>
                         </Card>
