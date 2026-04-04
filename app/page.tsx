@@ -90,11 +90,11 @@ export default function HomePage() {
       />
 
       <div className="flex flex-col">
-        <section className="bg-background">
-          <div className="overflow-hidden bg-linear-to-b from-primary to-foreground">
+        <section className="bg-accent-foreground">
+          <div className="overflow-hidden bg-linear-to-b from-[#6a1820] via-[#3a1016] to-[#1a090d]">
             <div className="container mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
-                <div className="overflow-hidden rounded-xl border border-primary-foreground/10 bg-card/10 shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
+                <div className="overflow-hidden rounded-xl border border-white/10 bg-[#3a1117] shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
                   <Image
                     src="/pages/homePage/bandeau-presentation-kawaii-mameshiba.jpg"
                     alt="Bandeau de présentation Kawaii Shiba Mameshiba"
@@ -108,18 +108,18 @@ export default function HomePage() {
                   />
                 </div>
 
-                <div className="mx-auto max-w-6xl rounded-xl border border-primary-foreground/12 bg-primary/30 px-6 py-6 text-center text-primary-foreground shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-sm md:rounded-4xl md:px-8">
+                <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#47131b]/72 px-6 py-6 text-center text-white shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-sm md:rounded-4xl md:px-8">
                   <div className="mx-auto max-w-4xl">
-                    <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-primary-foreground/80">
+                    <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
                       Kawaii Shiba
                     </div>
-                    <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-primary-foreground md:text-4xl lg:text-5xl">
+                    <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-white md:text-4xl lg:text-5xl">
                       Bienvenue dans notre élevage de Mame Shiba - Kawaii Shiba-MAMESHIBA
                     </h1>
                   </div>
                 </div>
 
-                <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-primary-foreground/12 bg-card/10 shadow-[0_30px_100px_rgba(0,0,0,0.28)] backdrop-blur-sm md:rounded-4xl">
+                <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-white/12 bg-[#3a1117]/55 shadow-[0_30px_100px_rgba(0,0,0,0.28)] backdrop-blur-sm md:rounded-4xl">
                   <div className="relative aspect-4/3 sm:aspect-16/11 md:aspect-16/8 lg:aspect-16/7">
                     <Image
                       src="/mame-shiba-in-a-sakura-tree.jpg"
@@ -129,30 +129,30 @@ export default function HomePage() {
                       sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
                       quality={70}
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-foreground/35 via-transparent to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#2a0d12]/35 via-transparent to-transparent" aria-hidden="true" />
                   </div>
                 </div>
 
-                <div className="mx-auto max-w-6xl rounded-xl border border-primary-foreground/12 bg-foreground/35 px-6 py-6 text-primary-foreground shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
-                  <p className="text-sm font-medium uppercase tracking-[0.28em] text-primary-foreground/72">
+                <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#2b0d13]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
+                  <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
                     {pageContent.home.h1Subtitle}
                   </p>
                   <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
                     <div className="space-y-4">
-                      <p className="text-base leading-relaxed text-primary-foreground/88 md:text-lg">
+                      <p className="text-base leading-relaxed text-white/88 md:text-lg">
                         {pageContent.home.description}
                       </p>
-                      <p className="text-base leading-relaxed text-primary-foreground/82 md:text-lg">
+                      <p className="text-base leading-relaxed text-white/82 md:text-lg">
                         {pageContent.home.descriptionSecondary}
                       </p>
-                      <p className="text-base leading-relaxed text-primary-foreground/82 md:text-lg">
+                      <p className="text-base leading-relaxed text-white/82 md:text-lg">
                         {pageContent.home.descriptionTertiary}
                       </p>
                     </div>
                     <div className="flex lg:justify-end">
                       <Link
                         href="/chiots-disponibles"
-                        className="inline-flex items-center justify-center rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground transition hover:bg-primary-foreground/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:rounded-full"
+                        className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:rounded-full"
                       >
                         Voir les chiots Mameshiba disponibles
                       </Link>
