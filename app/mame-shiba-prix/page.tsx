@@ -376,9 +376,9 @@ export default function MameshibaPricePage() {
 
                     <section className="space-y-8">
                         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-                            <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-[30rem]">
+                            <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
-                                    src="/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
+                                    src="/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
                                     alt="Mame Shiba adulte chez Kawaii Shiba"
                                     fill
                                     className="object-cover"

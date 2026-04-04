@@ -121,6 +121,63 @@ export const dogs: AdultDog[] = [
         ],
     },
     {
+        name: "Hina",
+        title: "HINA - Femelle Mameshiba",
+        color: "Non précisé",
+        origin: "Née chez Kawaii Mameshiba",
+        size: "28 cm au garrot • 4,5 kg",
+        temperament:
+            "Femelle née à l’élevage, Hina représente notre sélection maison avec un petit format certifié et confirmé au Kennel Club of Japan.",
+        health: [
+            "Certifiée Mameshiba",
+            "Confirmée - Kennel Club of Japan",
+        ],
+        images: [
+            {
+                src: "/pages/reproducteurs/Hina.webp",
+                alt: "Hina, femelle Mameshiba née chez Kawaii Mameshiba",
+            },
+        ],
+    },
+    {
+        name: "Karasuki",
+        title: "KARASUKI - Femelle Mameshiba",
+        color: "Non précisé",
+        origin: "Née chez Kawaii Shiba",
+        size: "27 cm au garrot • 4 kg",
+        temperament:
+            "Karasuki est une femelle Mameshiba née chez Kawaii Shiba, au petit gabarit, certifiée et confirmée au Kennel Club of Japan.",
+        health: [
+            "Certifiée Mameshiba",
+            "Confirmée - Kennel Club of Japan",
+        ],
+        images: [
+            {
+                src: "/pages/reproducteurs/Karasuki.webp",
+                alt: "Karasuki, femelle Mameshiba née chez Kawaii Shiba",
+            },
+        ],
+    },
+    {
+        name: "Kimi",
+        title: "KIMI - Femelle Mameshiba",
+        color: "Non précisé",
+        origin: "Née chez Kawaii Mameshiba",
+        size: "25 cm au garrot • 3,5 kg",
+        temperament:
+            "Kimi est une petite femelle Mameshiba née chez Kawaii Mameshiba, certifiée et confirmée, dans un format très compact fidèle à la sélection de l’élevage.",
+        health: [
+            "Certifiée Mameshiba",
+            "Confirmée - Kennel Club of Japan",
+        ],
+        images: [
+            {
+                src: "/pages/reproducteurs/Kimi.webp",
+                alt: "Kimi, femelle Mameshiba née chez Kawaii Mameshiba",
+            },
+        ],
+    },
+    {
         name: "Natsuko",
         title: "NATSUKO dit NATSU - Mâle Mameshiba",
         color: "Noire et feu",

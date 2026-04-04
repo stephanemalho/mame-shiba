@@ -76,10 +76,10 @@ export const blog: BlogContentType = {
         }
     ],
     posts: [
-        shibaOverviewPost,
         akitaShibaMameComparisonPost,
         shibaSociablePost,
         shibaApartmentPost,
+        shibaOverviewPost,
         shibaFirstDogPost
     ],
     filterLabels: {
