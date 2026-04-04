@@ -57,7 +57,7 @@ const sizes = [
         height: "25 à 34 cm au garrot",
         frame: "Format compact et masculin",
         text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d'un an, avec validation du type et de la taille.",
-        image: "/pages/le-mame-shiba/ichiro-mame-shiba-kawaii-shiba-portrait.webp",
+        image: "/pages/le-mame-shiba/ichiro-mame-shiba-kawaii-shiba-portrait-v2.webp",
         alt: "Mameshiba roux et blanc assis dans l'herbe",
     },
     {
@@ -65,7 +65,7 @@ const sizes = [
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
         text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
-        image: "/pages/le-mame-shiba/sakura-mame-shiba-kawaii-shiba-portrait.webp",
+        image: "/pages/le-mame-shiba/sakura-mame-shiba-kawaii-shiba-portrait-v2.webp",
         alt: "Jeune Mameshiba blanc dans un jardin",
     },
 ]
