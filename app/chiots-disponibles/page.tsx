@@ -200,7 +200,7 @@ export default function NosChiotsPage() {
                                         </div>
 
                                         <p className="text-muted-foreground">
-                                            Le tarif de nos chiots Mameshiba évolue généralement entre <strong className="text-foreground">3 800 € et 4 500 €</strong>, selon le profil du chiot, la portée et les critères de sélection, toutes couleurs confondues.
+                                            Le prix de nos chiots Mameshiba est actuellement de <strong className="text-foreground">4 500 € pour un mâle</strong> et de <strong className="text-foreground">5 000 € pour une femelle</strong>.
                                         </p>
                                         <p className="text-muted-foreground">
                                             Nos chiots sont issus de lignées soigneusement sélectionnées, socialisés avec sérieux et élevés
@@ -210,7 +210,7 @@ export default function NosChiotsPage() {
                                             href="/mame-shiba-prix"
                                             className="inline-flex w-fit rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                         >
-                                            Comprendre notre fourchette de prix
+                                            Voir nos prix à l’élevage
                                         </Link>
                                         <Link
                                             href="/adoption/reussir-son-adoption"

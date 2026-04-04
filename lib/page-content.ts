@@ -2,7 +2,7 @@ export const pageContent = {
     home: {
         h1: "Bienvenue dans notre élevage de Shiba Inu - Kawaii Shiba, MAMESHIBA",
         h1Subtitle:
-            "Nous sommes parmi les premiers élevages de France",
+            "Nous sommes parmi les premiers élevages de Mame shiba enFrance",
         description:
             "Nos mame-shiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine : l'excellence des lignées importées",
         descriptionSecondary:
@@ -11,7 +11,7 @@ export const pageContent = {
             "Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et adoration pour la culture Japonaise nous a mené tout droit jusqu'à un véritable coup de cœur : LE MAMESHIBA ! "
     },
     shiba: {
-        h1: "Le Mameshiba : description, standard, origines et repères avant adoption",
+        h1: "Tout savoir sur le Mameshiba : origines, tailles et critères d'adoption, avant de se lancer",
         description:
             "Le Mameshiba est issu du Shiba Inu, race japonaise primitive reconnue au LOF pour le Shiba, mais dont la version miniature n'est pas reconnue au LOF en France. Sélectionné au Japon à partir de très petits Shiba Inu, il conserve l'allure, la vivacité et la noblesse de son ancêtre dans un format plus compact. Cette page vous aide à comprendre son origine, ses tailles, son standard et les critères à vérifier avant toute adoption.",
         h2: "Tailles et repères du Mameshiba",
@@ -22,7 +22,7 @@ export const pageContent = {
         googToKnow: "Acheter un Mameshiba : les points essentiels"
     },
     puppies: {
-        h1: "Nos chiots disponibles",
+        h1: "Nos chiots actuellement disponibles",
         description:
             "Les portées de Mameshiba comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.",
         descriptionSecondary:

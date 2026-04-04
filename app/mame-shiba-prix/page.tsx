@@ -40,55 +40,55 @@ export const metadata: Metadata = {
 }
 
 const quickPrices = [
-    { label: "Fourchette Kawaii Shiba", price: "3 800 € à 4 500 €" },
-    { label: "Réservations", price: "ouvertes" },
-    { label: "Prochaine portée", price: "très bientôt" },
+    { label: "Mâle Mameshiba", price: "4 500 €" },
+    { label: "Femelle Mameshiba", price: "5 000 €" },
+    { label: "Réservations", price: "sur demande" },
 ]
 
 const priceCategories = [
     {
-        category: "Réservation sur portée à venir",
-        profile: "accompagnement en amont, projet réfléchi et étude du mode de vie",
+        category: "Mâle Mameshiba",
+        profile: "chiot de compagnie issu de notre sélection, suivi avec sérieux et élevé pour une vie de famille équilibrée",
         lineage: "sélection Kawaii Shiba",
-        price: "3 800 € à 4 500 €",
+        price: "4 500 €",
+        availability: "Selon les portées",
+    },
+    {
+        category: "Femelle Mameshiba",
+        profile: "chiot de compagnie issu de notre sélection, avec le même niveau d’exigence sur le type, le caractère et le suivi",
+        lineage: "sélection Kawaii Shiba",
+        price: "5 000 €",
+        availability: "Selon les portées",
+    },
+    {
+        category: "Réservation",
+        profile: "échange préalable, présentation du projet, étude du mode de vie et accompagnement avant la naissance ou avant le départ",
+        lineage: "approche personnalisée",
+        price: "sur demande",
         availability: "Oui",
-    },
-    {
-        category: "Chiot Mame Shiba de compagnie",
-        profile: "petit format harmonieux, tempérament suivi, sélection sérieuse, morphologie parfaite",
-        lineage: "origines japonaises travaillées",
-        price: "à partir de 4 200 €",
-        availability: "Selon la portée",
-    },
-    {
-        category: "Profils les plus recherchés",
-        profile: "combinaison d'excellence, couleur très rare, morphologie parfaite, sexe ou expression très convoitée",
-        lineage: "sélection exigeante",
-        price: "haut de fourchette",
-        availability: "Très limité",
     },
 ]
 
 const priceFactors = [
     {
-        title: "1. La rareté du Mame Shiba en France",
-        text: "Le Mame Shiba reste un chien très rare. Les portées sont souvent petites et les sujets réellement cohérents avec le type recherché sont peu nombreux. Cette rareté influence naturellement le prix d’un chiot bien sélectionné.",
+        title: "1. Une sélection exigeante des lignées",
+        text: "Nos tarifs reflètent d’abord le travail de sélection réalisé autour de nos reproducteurs. Nous cherchons un Mameshiba cohérent, bien construit, équilibré et fidèle au type que nous souhaitons préserver à l’élevage.",
     },
     {
-        title: "2. La qualité des origines et des lignées",
-        text: "Le prix dépend aussi du travail réalisé autour des lignées japonaises, de la cohérence du type, du petit format recherché et de la vision d’élevage sur plusieurs générations. On ne parle pas seulement d’un chiot mignon, mais d’un vrai travail de sélection.",
+        title: "2. Des portées rares et suivies de près",
+        text: "Nos portées restent limitées et chaque chiot bénéficie d’une attention quotidienne. Le prix tient compte du temps réellement consacré à la portée, du rythme de nos chiens adultes et de notre volonté de ne pas produire vite.",
     },
     {
-        title: "3. La santé et la transparence",
-        text: "Un élevage sérieux investit dans le suivi des reproducteurs, la traçabilité des origines, les tests utiles et une sélection rigoureuse pour éviter les profils approximatifs. Le tarif reflète aussi ce niveau d’exigence et de sécurité pour les familles.",
+        title: "3. La santé, le cadre de vie et la transparence",
+        text: "Nos prix incluent aussi le soin porté au suivi des adultes, au quotidien des chiots, à la qualité de leur environnement et à la lisibilité de notre travail. Nous préférons une démarche claire à des promesses commerciales floues.",
     },
     {
-        title: "4. Le temps consacré à la socialisation",
-        text: "Le Mame Shiba est un petit chien sensible, fin et intelligent. Son équilibre dépend énormément de la qualité des premières semaines, du calme de son environnement, des manipulations douces et de l’accompagnement mis en place avant son départ.",
+        title: "4. Une socialisation sérieuse",
+        text: "Le Mameshiba est un petit chien fin, sensible et intelligent. Nous attachons beaucoup d’importance à la qualité des premières semaines, à la stabilité émotionnelle et aux manipulations adaptées avant le départ.",
     },
     {
-        title: "5. L’accompagnement avant et après l’adoption",
-        text: "Le prix comprend aussi le temps passé à échanger avec les familles, à comprendre leur projet, à orienter le choix du chiot et à accompagner les débuts de la relation. Une adoption réussie commence bien avant le départ du chiot.",
+        title: "5. Un accompagnement d’élevage, pas une simple vente",
+        text: "Nous prenons le temps d’échanger avec chaque famille, de comprendre le projet d’adoption et d’accompagner le départ du chiot. Le prix comprend aussi cette disponibilité et cette exigence dans le suivi.",
     },
 ]
 
@@ -106,16 +106,16 @@ const includedItems = [
 
 const categoryGuides = [
     {
-        title: "Le plus petit n’est pas toujours le meilleur choix",
-        text: "Pour un Mame Shiba, la cohérence du type, la santé et l’équilibre émotionnel comptent davantage qu’une simple recherche du plus petit gabarit possible.",
+        title: "Le prix ne remplace jamais la compatibilité",
+        text: "Le bon chiot n’est pas simplement celui qui vous plaît sur photo. Le plus important reste la cohérence entre son tempérament, votre mode de vie et le sérieux du travail mené à l’élevage.",
     },
     {
-        title: "Le caractère mérite autant d’attention que le physique",
-        text: "Un chiot bien dans ses pattes, sensible sans être débordé, curieux et capable de s’adapter à votre foyer sera toujours un meilleur choix qu’un profil sélectionné uniquement sur l’apparence.",
+        title: "Le caractère compte autant que le physique",
+        text: "Chez un Mameshiba, nous regardons autant l’équilibre émotionnel, la sensibilité et la qualité de la socialisation que l’esthétique du chiot.",
     },
     {
-        title: "L’origine doit rester lisible et sérieuse",
-        text: "Dans une race encore rare et parfois source de confusion, il est essentiel de s’intéresser à la traçabilité des lignées, à la qualité de l’élevage et à la cohérence globale du projet.",
+        title: "Le tarif s’apprécie dans l’ensemble du projet",
+        text: "Un prix ne se lit pas isolément. Il faut regarder les lignées, la qualité de vie des chiens, la vision d’élevage, la transparence et l’accompagnement proposé autour du chiot.",
     },
 ]
 
@@ -124,15 +124,15 @@ const faqMameshibaPrice: FAQItem[] = [
         question: "Quel est le prix d’un Mame Shiba chez Kawaii Shiba ?",
         answer: (
             <p>
-                Chez Kawaii Shiba, le prix d’un chiot Mame Shiba se situe actuellement entre 3 800 € et 4 500 € selon le profil du chiot, la portée, sa morphologie et les critères de sélection propres à notre élevage.
+                Chez Kawaii Shiba, le prix de nos chiots Mameshiba est actuellement de 4 500 € pour un mâle et de 5 000 € pour une femelle.
             </p>
         ),
     },
     {
-        question: "Pourquoi le prix d’un Mame Shiba peut-il sembler élevé ?",
+        question: "Pourquoi le prix d’une femelle est-il plus élevé ?",
         answer: (
             <p>
-                Le Mame Shiba est une race rare, avec peu de chiots par portée et un vrai travail de sélection en amont. Le prix reflète la qualité des origines, le suivi des adultes, la socialisation, le temps consacré au chiot et l’accompagnement des familles.
+                Le prix d’une femelle est fixé à 5 000 € dans notre élevage. Cette différence s’inscrit dans notre politique tarifaire actuelle et dans la gestion globale de notre sélection.
             </p>
         ),
     },
@@ -145,10 +145,10 @@ const faqMameshibaPrice: FAQItem[] = [
         ),
     },
     {
-        question: "Faut-il se méfier d’un Mame Shiba proposé beaucoup moins cher ?",
+        question: "Le prix varie-t-il selon le sexe du chiot ?",
         answer: (
             <p>
-                Oui, il est important de rester vigilant. Dans une race encore peu répandue, un tarif très bas doit vous pousser à vérifier sérieusement l’origine du chiot, la transparence de l’éleveur, la cohérence des lignées et la qualité réelle de la sélection.
+                Oui. Dans notre élevage, le tarif actuel est de 4 500 € pour un mâle et de 5 000 € pour une femelle.
             </p>
         ),
     },
@@ -166,7 +166,7 @@ export default function MameshibaPricePage() {
     const pageLastModValue = sitemapPages.find((page) => page.url === siteConfig.pages.mameshibaPrice)?.lastmod
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Prix du Mame Shiba", url: siteConfig.pages.mameshibaPrice },
+        { name: "Prix de nos Mameshiba", url: siteConfig.pages.mameshibaPrice },
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameshibaPrice))
     const lastMod = returnLastmod(siteConfig.pages.mameshibaPrice)
@@ -187,16 +187,16 @@ export default function MameshibaPricePage() {
                     <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                         <div className="space-y-6">
                             <Badge variant="secondary" className="w-fit">
-                                Prix du Mame Shiba
+                                Prix de nos Mameshiba
                             </Badge>
                             <h1 className="text-2xl font-bold md:text-4xl">
-                                Prix d’un Mame Shiba en France : fourchette, critères et repères avant adoption
+                                Prix de nos Mameshiba à l’élevage Kawaii Shiba
                             </h1>
                             <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
-                                Le prix d’un Mame Shiba en France peut varier selon la rareté de la portée, la qualité des origines, le travail de sélection, la socialisation et le sérieux de l’élevage. Chez Kawaii Shiba, nous faisons le choix d’une fourchette claire et assumée pour aider les familles à mieux comprendre ce qui se cache derrière le tarif d’un chiot.
+                                Chez Kawaii Shiba, nous souhaitons afficher nos tarifs de manière simple et lisible. Le prix de nos chiots Mameshiba est actuellement fixé à 4 500 € pour un mâle et 5 000 € pour une femelle.
                             </p>
                             <p className="max-w-3xl leading-relaxed text-muted-foreground">
-                                À titre indicatif, nos chiots Mame Shiba se situent actuellement entre 3 800 € et 4 500 €. Cette page vous aide à comprendre pourquoi cette fourchette existe et quels points regarder avant de vous engager.
+                                Cette page présente nos prix à l’élevage, ce qu’ils reflètent dans notre travail et la manière dont nous accompagnons les familles avant toute réservation.
                             </p>
                             <div className="flex flex-col gap-3 sm:flex-row">
                                 <Link
@@ -230,12 +230,12 @@ export default function MameshibaPricePage() {
 
                     <section className="space-y-8">
                         <div className="space-y-3">
-                            <h2 className="text-xl font-bold md:text-2xl">Combien coûte un Mame Shiba ?</h2>
+                            <h2 className="text-xl font-bold md:text-2xl">Nos tarifs à l’élevage</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Chez Kawaii Shiba, la fourchette de prix actuellement pratiquée pour un chiot Mame Shiba se situe entre 3 800 € et 4 500 €. Le prix exact dépend du profil du chiot, de la portée et de la cohérence globale du projet d’adoption.
+                                Nos chiots Mameshiba sont proposés à 4 500 € pour un mâle et 5 000 € pour une femelle. Nous avons fait le choix d’un affichage clair pour que les familles puissent se projeter sereinement.
                             </p>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Plus qu’un simple prix affiché, cette fourchette reflète la rareté de la race, le travail de sélection en amont et l’investissement nécessaire pour proposer des chiots équilibrés, bien entourés et issus d’une démarche sérieuse.
+                                Au-delà du tarif affiché, ces prix reflètent notre sélection, le temps consacré aux chiots, la qualité de vie proposée à l’élevage et l’accompagnement autour de chaque adoption.
                             </p>
                         </div>
 
@@ -256,9 +256,9 @@ export default function MameshibaPricePage() {
 
                     <section className="space-y-8">
                         <div className="space-y-3">
-                            <h2 className="text-xl font-bold md:text-2xl">Nos repères de prix pour le Mame Shiba</h2>
+                            <h2 className="text-xl font-bold md:text-2xl">Comment se présentent nos prix ?</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Le Mame Shiba n’est pas une race de grande diffusion. Pour vous aider à mieux comprendre notre positionnement, voici les principaux repères que nous utilisons lorsque nous parlons de prix et de réservations.
+                                Voici la manière dont nous présentons nos tarifs à l’élevage aujourd’hui, avec une lecture simple par profil et par mode de réservation.
                             </p>
                         </div>
 
@@ -267,10 +267,10 @@ export default function MameshibaPricePage() {
                                 <table className="min-w-full text-left text-sm">
                                     <thead className="bg-background/80">
                                         <tr className="border-b">
-                                            <th className="px-5 py-4 font-semibold">Repère</th>
                                             <th className="px-5 py-4 font-semibold">Profil</th>
-                                            <th className="px-5 py-4 font-semibold">Origine et sélection</th>
-                                            <th className="px-5 py-4 font-semibold">Fourchette indicative</th>
+                                            <th className="px-5 py-4 font-semibold">Description</th>
+                                            <th className="px-5 py-4 font-semibold">Approche d’élevage</th>
+                                            <th className="px-5 py-4 font-semibold">Tarif</th>
                                             <th className="px-5 py-4 font-semibold">Chez Kawaii Shiba</th>
                                         </tr>
                                     </thead>
@@ -292,10 +292,10 @@ export default function MameshibaPricePage() {
                         <Card className="bg-muted/45">
                             <CardContent className="space-y-3 p-6 text-sm leading-relaxed text-muted-foreground md:p-8">
                                 <p>
-                                    Chez nous, le prix ne vise pas à vendre “le plus petit possible” ou à créer une rareté artificielle. Il reflète une recherche d’équilibre entre type, petit format harmonieux, caractère, santé, traçabilité des origines et qualité de vie donnée au chiot.
+                                    Chez nous, le prix ne vise pas à nourrir un discours commercial flou. Il correspond à notre politique tarifaire actuelle et à une vision d’élevage centrée sur la sélection, la cohérence du type, l’équilibre du chiot et la qualité de vie qui lui est offerte.
                                 </p>
                                 <p>
-                                    Dans une race comme le Mame Shiba, il est essentiel de regarder l’ensemble du projet d’élevage et non un seul argument commercial. Le bon chiot est celui qui réunit cohérence, sérieux et compatibilité avec votre foyer.
+                                    Nous préférons une page simple, lisible et honnête : des tarifs affichés clairement, puis des explications sur ce qu’ils recouvrent dans notre travail quotidien.
                                 </p>
                             </CardContent>
                         </Card>
@@ -303,9 +303,9 @@ export default function MameshibaPricePage() {
 
                     <section className="space-y-8">
                         <div className="space-y-3">
-                            <h2 className="text-xl font-bold md:text-2xl">Pourquoi le prix d’un Mame Shiba peut-il varier ?</h2>
+                            <h2 className="text-xl font-bold md:text-2xl">Ce que reflètent nos prix à l’élevage</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Deux chiots issus d’une même race ne représentent pas toujours le même niveau de travail, de rareté ou de sélection. Pour le Mame Shiba, plusieurs critères expliquent les écarts que l’on peut observer d’un élevage à l’autre.
+                                Nos tarifs ne sont pas pensés comme un simple chiffre. Ils reflètent l’ensemble du travail d’élevage réalisé autour de chaque portée et le niveau d’exigence que nous souhaitons maintenir chez Kawaii Shiba.
                             </p>
                         </div>
 
@@ -325,9 +325,9 @@ export default function MameshibaPricePage() {
 
                     <section className="space-y-8 rounded-2xl bg-muted/35 p-8">
                         <div className="space-y-3">
-                            <h2 className="text-xl font-bold md:text-2xl">Que comprend le prix d’un chiot Mame Shiba chez Kawaii Shiba ?</h2>
+                            <h2 className="text-xl font-bold md:text-2xl">Que comprennent nos prix ?</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Adopter un chiot dans un élevage sérieux ne consiste pas seulement à réserver un chien. Le prix comprend tout le travail invisible réalisé en amont pour vous confier un chiot préparé, entouré et accompagné de manière responsable.
+                                Adopter un chiot chez nous ne consiste pas seulement à réserver un chien. Le tarif comprend tout le travail invisible réalisé en amont pour vous confier un chiot préparé, entouré et accompagné de manière responsable.
                             </p>
                         </div>
 
@@ -336,7 +336,7 @@ export default function MameshibaPricePage() {
                                 <CardHeader>
                                     <div className="flex items-center gap-2">
                                         <NotebookText className="h-4 w-4 text-primary" aria-hidden="true" />
-                                        <h3 className="font-semibold">Ce que le prix inclut notamment</h3>
+                                        <h3 className="font-semibold">Ce que nos tarifs incluent notamment</h3>
                                     </div>
                                 </CardHeader>
                                 <CardContent>
@@ -367,7 +367,7 @@ export default function MameshibaPricePage() {
                                         <span className="font-medium">Bloc de réassurance</span>
                                     </div>
                                     <p>
-                                        Un chiot bien né, bien entouré et bien préparé ne se résume jamais à une étiquette de prix. La valeur d’un Mame Shiba sérieux se joue aussi dans tout ce qui ne se voit pas immédiatement : le temps, l’exigence, la patience et la cohérence du travail réalisé autour de lui.
+                                        Un chiot bien né, bien entouré et bien préparé ne se résume jamais à une étiquette. La valeur de notre travail se joue aussi dans tout ce qui ne se voit pas immédiatement : le temps, l’exigence, la patience et la cohérence du projet d’élevage.
                                     </p>
                                 </CardContent>
                             </Card>
@@ -389,12 +389,12 @@ export default function MameshibaPricePage() {
                                 <Badge variant="secondary" className="w-fit">
                                     Bien choisir
                                 </Badge>
-                                <h2 className="text-xl font-bold md:text-2xl">Comment bien lire le prix d’un Mame Shiba ?</h2>
+                                <h2 className="text-xl font-bold md:text-2xl">Comment bien lire le prix d’un chiot chez nous ?</h2>
                                 <p className="leading-relaxed text-muted-foreground">
-                                    Le meilleur choix n’est pas forcément le moins cher, ni le plus petit, ni le plus rare en apparence. Un bon projet d’adoption repose surtout sur la compatibilité entre le chiot, votre mode de vie et la qualité du travail réalisé par l’élevage.
+                                    Le bon choix ne consiste pas à regarder seulement un montant. Un projet d’adoption réussi repose surtout sur la compatibilité entre le chiot, votre mode de vie et la qualité réelle du travail mené par l’élevage.
                                 </p>
                                 <p className="leading-relaxed text-muted-foreground">
-                                    Dans une race encore confidentielle, mieux vaut prendre le temps de comprendre l’origine, la sélection et le tempérament du chiot plutôt que de décider uniquement sur un prix ou une promesse marketing.
+                                    Nous vous encourageons à lire nos prix comme un repère clair, puis à regarder l’ensemble : origine, sélection, cadre de vie, socialisation, accompagnement et sérieux de la relation construite avant le départ du chiot.
                                 </p>
                             </div>
                         </div>
@@ -423,9 +423,9 @@ export default function MameshibaPricePage() {
                                     <ShieldCheck className="h-4 w-4" aria-hidden="true" />
                                     <span className="text-sm font-medium">Mieux comprendre la race</span>
                                 </div>
-                                <h2 className="text-xl font-bold md:text-2xl">Vous souhaitez aller plus loin avant de réserver ?</h2>
+                                <h2 className="text-xl font-bold md:text-2xl">Vous souhaitez mieux connaître la race avant de réserver ?</h2>
                                 <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                    Avant de comparer des prix, il est utile de bien comprendre ce qu’est réellement un Mame Shiba, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
+                                    Avant une réservation, il est utile de bien comprendre ce qu’est réellement un Mame Shiba, son origine, son standard, sa rareté et les points de vigilance à connaître avant toute adoption.
                                 </p>
                                 <Link
                                     href={siteConfig.pages.shiba}
@@ -446,7 +446,7 @@ export default function MameshibaPricePage() {
                                 </div>
                                 <h2 className="text-xl font-bold md:text-2xl">Découvrir nos prochaines disponibilités</h2>
                                 <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                    Tous nos chiots actuellement disponibles sont déjà réservés, mais une prochaine portée arrive très bientôt. Vous pouvez consulter la page dédiée ou nous contacter pour échanger sur votre projet et les réservations en cours.
+                                    Vous pouvez consulter la page dédiée ou nous contacter pour échanger sur votre projet d’adoption, les réservations en cours et les prochaines disponibilités de l’élevage.
                                 </p>
                                 <div className="flex flex-col gap-3 sm:flex-row">
                                     <Link
@@ -467,8 +467,8 @@ export default function MameshibaPricePage() {
                     </section>
 
                     <FAQSection
-                        title="Questions fréquentes sur le prix du Mame Shiba"
-                        description="Les réponses essentielles sur la fourchette de prix, ce qu’elle recouvre et les points de vigilance avant réservation."
+                        title="Questions fréquentes sur nos prix Mameshiba"
+                        description="Les réponses essentielles sur nos tarifs à l’élevage, ce qu’ils recouvrent et la manière dont nous accompagnons les réservations."
                         items={faqMameshibaPrice}
                     />
 

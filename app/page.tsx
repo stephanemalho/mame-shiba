@@ -91,12 +91,12 @@ export default function HomePage() {
 
       <div className="flex flex-col">
         <section className="bg-background">
-          <div className="overflow-hidden bg-linear-to-b from-primary/95 via-primary/75 to-foreground">
+          <div className="overflow-hidden bg-linear-to-b from-primary/95  to-foreground">
             <div className="container mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
                 <div className="overflow-hidden rounded-xl border border-primary-foreground/10 bg-card/10 shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
                   <Image
-                    src="/pages/homePage/little-mame-shiba-red-white.jpeg"
+                    src="/pages/homePage/bandeau-presentation-kawaii-mameshiba.jpg"
                     alt="Bandeau de présentation Kawaii Shiba Mameshiba"
                     width={1260}
                     height={400}
@@ -114,7 +114,7 @@ export default function HomePage() {
                       Kawaii Shiba
                     </div>
                     <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-primary-foreground md:text-4xl lg:text-5xl">
-                      {pageContent.home.h1}
+                      Bienvenue dans notre élevage de Mame Shiba - Kawaii Shiba-MAMESHIBA
                     </h1>
                   </div>
                 </div>

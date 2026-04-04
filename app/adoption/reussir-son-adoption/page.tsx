@@ -123,9 +123,9 @@ const resources = [
         description: "Origines, standard, tempérament et points de vigilance avant de vous engager.",
     },
     {
-        title: "Comprendre notre fourchette de prix",
+        title: "Voir nos prix à l’élevage",
         href: "/mame-shiba-prix",
-        description: "Une page claire pour comprendre ce que recouvre le prix d'un chiot Mame Shiba chez nous.",
+        description: "Une page claire pour consulter nos tarifs Mameshiba à l’élevage et comprendre ce qu’ils recouvrent.",
     },
     {
         title: "Voir les réservations et prochaines portées",

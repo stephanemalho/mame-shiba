@@ -41,7 +41,7 @@ export const siteConfig = {
         "mame shiba japonais",
         "élevage shiba inu",
         "adopter mame shiba",
-        "elevage de chien japonais",
+        "elevage de chien japonais"
     ],
 
     /* ------------------------------ Contact ---------------------------------- */
@@ -198,8 +198,9 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: pageContent.home.h1 + " | " + pageContent.home.h1Subtitle,
-        description: pageContent.home.description,
+        title: "Élevage de chiots Mame Shiba nées en France | Kawaii Shiba",
+        description:
+            "Kawaii Shiba est un élevage spécialisé en Mame Shiba. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
@@ -248,17 +249,18 @@ export const pageMetadata = {
     },
 
     mameshibaPrice: {
-        title: "Prix d’un Mame Shiba en France | Kawaii Shiba",
+        title: "Prix de nos Mameshiba | Kawaii Shiba",
         description:
-            "Comprendre le prix d’un Mame Shiba en France : rareté, sélection, lignées japonaises, socialisation et fourchette Kawaii Shiba de 3 800 € à 4 500 €.",
+            "Découvrez les prix de nos Mameshiba à l’élevage Kawaii Shiba : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
         keywords: [
             "prix mame shiba",
-            "prix mameshiba france",
+            "prix mameshiba elevage",
             "tarif mame shiba",
-            "acheter mameshiba france",
+            "prix mameshiba kawaii shiba",
             "prix chiot mameshiba",
-            "kawaii shiba prix",
-            "mameshiba rare france"
+            "prix male mameshiba",
+            "prix femelle mameshiba",
+            "kawaii shiba prix"
         ]
     },
 
