@@ -100,6 +100,14 @@ export const shibaOverviewPost: BlogPost = {
         {
             label: "Lire notre guide pour réussir l'adoption",
             href: "/adoption/reussir-son-adoption"
+        },
+        {
+            label: "Voir nos chiens reproducteurs",
+            href: "/nos-chiens"
+        },
+        {
+            label: "Consulter nos prochaines disponibilités",
+            href: "/chiots-disponibles"
         }
     ],
     sources: [

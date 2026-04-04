@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Badge } from "@/components/ui/badge";
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection";
 import { blog } from "@/constants/blog/blog";
 import { buildOpenGraph, pageMetadata, siteConfig } from "@/lib/seo-config";
 import type { BlogPost } from "@/constants/blog/blogTypes";
@@ -24,6 +25,29 @@ const formatDate = (value: string) =>
         month: "long",
         day: "numeric",
     });
+
+const blogInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/mameshiba",
+        title: "Comprendre le Mameshiba",
+        description: "Retrouver notre page pilier sur la race, sa taille, son origine et son tempérament.",
+    },
+    {
+        href: "/chiots-disponibles",
+        title: "Voir les prochaines portées",
+        description: "Consulter les disponibilités et les réservations autour de nos chiots Mameshiba.",
+    },
+    {
+        href: "/mame-shiba-prix",
+        title: "Consulter nos prix à l’élevage",
+        description: "Accéder à nos tarifs actuels et à leur lecture dans le cadre de notre sélection.",
+    },
+    {
+        href: "/contact",
+        title: "Parler de votre projet",
+        description: "Nous écrire si vous souhaitez un échange après la lecture de l’article.",
+    },
+];
 
 export function generateStaticParams() {
     return blog.posts.map((post) => ({ slug: post.slug.split("/") }));
@@ -225,6 +249,14 @@ export default async function BlogArticlePage({
                     </section>
                 ) : null}
             </article>
+
+            <div className="max-w-5xl mx-auto px-6 pb-12">
+                <InternalLinksSection
+                    title="Pages utiles pour aller plus loin"
+                    description="Si cet article vous aide dans votre réflexion, voici les pages du site qui prolongent le mieux la lecture vers la race, l’élevage et votre projet d’adoption."
+                    items={blogInternalLinks}
+                />
+            </div>
 
             <aside className="max-w-3xl mx-auto px-6 pb-16">
                 <div className="rounded-3xl border border-border bg-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">

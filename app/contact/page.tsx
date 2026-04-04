@@ -9,6 +9,7 @@ import { generateLocalBusinessSchema, generateContactPointSchema, generateBreadc
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import Image from "next/image"
 import Link from "next/link"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 
 export const metadata: Metadata = {
     title: pageMetadata.contact.title,
@@ -37,6 +38,29 @@ export const metadata: Metadata = {
         canonical: `${siteConfig.siteUrl}/contact`,
     },
 }
+
+const contactInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/chiots-disponibles",
+        title: "Voir les chiots et réservations",
+        description: "Consulter les disponibilités actuelles et l’état des prochaines portées.",
+    },
+    {
+        href: "/adoption/reussir-son-adoption",
+        title: "Préparer votre adoption",
+        description: "Lire notre guide pratique avant un premier échange ou une future réservation.",
+    },
+    {
+        href: "/mame-shiba-prix",
+        title: "Consulter nos tarifs",
+        description: "Retrouver les prix de nos Mameshiba à l’élevage et ce qu’ils recouvrent.",
+    },
+    {
+        href: "/nos-chiens",
+        title: "Découvrir nos adultes",
+        description: "Mieux connaître les reproducteurs, leurs lignées et leur tempérament avant de nous contacter.",
+    },
+]
 
 const contactItems = [
     {
@@ -239,6 +263,13 @@ export default function ContactPage() {
                             </CardContent>
                         </Card>
                     </div>
+
+                    <InternalLinksSection
+                        title="Avant ou après nous avoir écrit"
+                        description="Voici les pages les plus utiles pour mieux préparer votre prise de contact et situer votre projet d’adoption."
+                        items={contactInternalLinks}
+                        className="mt-16"
+                    />
 
                     <FAQSection
                         title="FAQ avant de prendre contact"

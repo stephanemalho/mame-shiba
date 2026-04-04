@@ -354,7 +354,7 @@ export default function MameshibaPricePage() {
                             <Card className="overflow-hidden bg-background/85">
                                 <div className="relative min-h-72">
                                     <Image
-                                        src="/pages/reproducteurs/SAKURA-white-mame-shiba-from-japan.jpg"
+                                        src="/pages/mame-shiba-prix/deux-mame-shiba-chiots-blanc-et-un-noir.jpeg"
                                         alt="Mame Shiba adulte de l elevage Kawaii Shiba"
                                         fill
                                         className="object-cover"

@@ -10,9 +10,33 @@ import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { pageContent } from "@/lib/page-content"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { dogs } from "./dogs"
 
 const pageImage = "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp"
+
+const reproductorsInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/mameshiba",
+        title: "Mieux comprendre la race",
+        description: "Relier nos chiens adultes au standard, à l’histoire et au tempérament du Mameshiba.",
+    },
+    {
+        href: "/bien-etre-animal",
+        title: "Voir leur cadre de vie",
+        description: "Découvrir le quotidien de la meute, la socialisation et l’environnement de l’élevage.",
+    },
+    {
+        href: "/mame-shiba-prix",
+        title: "Consulter nos prix",
+        description: "Retrouver nos tarifs actuels pour les chiots issus de cette sélection.",
+    },
+    {
+        href: "/contact",
+        title: "Échanger avec nous",
+        description: "Nous poser vos questions sur une lignée, un mariage ou un projet d’adoption.",
+    },
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.reproductors.title,
@@ -137,6 +161,13 @@ export default function NosChiensPage() {
                             Découvrir nos chiots
                         </Link>
                     </div>
+
+                    <InternalLinksSection
+                        title="Continuer votre découverte de l’élevage"
+                        description="Après les reproducteurs, voici les pages les plus utiles pour comprendre la race, le cadre de vie, les tarifs et les prochaines étapes."
+                        items={reproductorsInternalLinks}
+                        className="mt-16"
+                    />
 
                     <FAQSection
                         title="FAQ sélection et lignées"

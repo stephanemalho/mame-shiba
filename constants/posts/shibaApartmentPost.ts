@@ -77,6 +77,14 @@ export const shibaApartmentPost: BlogPost = {
         {
             label: "Voir les prochaines disponibilités",
             href: "/chiots-disponibles"
+        },
+        {
+            label: "Découvrir l’élevage Kawaii Shiba",
+            href: "/presentation-elevage"
+        },
+        {
+            label: "Nous contacter pour parler de votre rythme de vie",
+            href: "/contact"
         }
     ],
     sources: [

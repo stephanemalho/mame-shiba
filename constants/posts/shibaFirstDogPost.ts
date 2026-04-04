@@ -71,8 +71,16 @@ export const shibaFirstDogPost: BlogPost = {
     },
     relatedLinks: [
         {
-            label: "Comprendre le prix d'un Mame Shiba",
+            label: "Voir nos prix à l’élevage",
             href: "/mame-shiba-prix"
+        },
+        {
+            label: "Lire notre guide adoption",
+            href: "/adoption/reussir-son-adoption"
+        },
+        {
+            label: "Voir les prochaines portées",
+            href: "/chiots-disponibles"
         },
         {
             label: "Nous contacter pour parler de votre projet",

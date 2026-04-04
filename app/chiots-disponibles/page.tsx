@@ -10,9 +10,33 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { puppies } from "./puppies"
 import { Card, CardContent } from "@/components/ui/card"
 import ImageCarousel from "@/components/client/carousel/ImageCarousel"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { Badge } from "@/components/ui/badge"
 
 const pageImage = "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
+
+const puppiesInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/nos-chiens",
+        title: "Voir les parents et reproducteurs",
+        description: "Relier les futures portées aux adultes qui composent notre sélection Mameshiba.",
+    },
+    {
+        href: "/mame-shiba-prix",
+        title: "Consulter nos prix à l’élevage",
+        description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent dans notre travail quotidien.",
+    },
+    {
+        href: "/adoption/reussir-son-adoption",
+        title: "Lire le guide adoption",
+        description: "Préparer l’arrivée du chiot, le trajet du départ et les premières semaines à la maison.",
+    },
+    {
+        href: "/contact",
+        title: "Parler de votre projet",
+        description: "Nous contacter pour vous présenter, poser vos questions et préparer une réservation.",
+    },
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.puppies.title,
@@ -305,6 +329,13 @@ export default function NosChiotsPage() {
                             Voir les conditions de vie des chiots
                         </Link>
                     </section>
+
+                    <InternalLinksSection
+                        title="Pages utiles avant de réserver"
+                        description="Ces contenus vous aident à mieux comprendre les adultes, les tarifs, l’adoption et la prise de contact autour de nos prochaines portées."
+                        items={puppiesInternalLinks}
+                        className="mt-16"
+                    />
 
                     <FAQSection
                         title="FAQ adoption et vie avec un Mameshiba"

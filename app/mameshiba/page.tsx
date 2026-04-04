@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { faqMameShiba } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { pageContent } from "@/lib/page-content"
@@ -55,7 +56,7 @@ const sizes = [
         height: "25 à 34 cm au garrot",
         frame: "Format compact et masculin",
         text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d'un an, avec validation du type et de la taille.",
-        image: "/pages/homePage/little-mame-shiba-red-white.jpeg",
+        image: "/pages/le-mame-shiba/ichiro-mame-shiba-kawaii-shiba-portrait.webp",
         alt: "Mameshiba roux et blanc assis dans l'herbe",
     },
     {
@@ -63,7 +64,7 @@ const sizes = [
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
         text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
-        image: "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg",
+        image: "/pages/le-mame-shiba/sakura-mame-shiba-kawaii-shiba-portrait.webp",
         alt: "Jeune Mameshiba blanc dans un jardin",
     },
 ]
@@ -80,7 +81,7 @@ const historySteps = [
         title: "Une sélection poursuivie à partir des années 1950",
         description:
             "Le travail de sélection s'est construit sur plusieurs générations à partir de Shiba Inu trop petits pour entrer dans le standard classique. L'objectif n'était pas de produire un chien fragile, mais de fixer un petit format cohérent et sain.",
-        image: "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg",
+        image: "/pages/le-mame-shiba/mame-shiba-puppy-blanc-white.jpeg",
         alt: "Chiot Mameshiba blanc dans un univers japonais",
     },
     {
@@ -89,6 +90,29 @@ const historySteps = [
             "Le Kennel Club of Japan a donné un cadre plus officiel à la race et a commencé les enregistrements de Mameshiba en 2008. La reconnaissance du club s'appuie sur la mesure à l'âge adulte et sur la traçabilité généalogique.",
         image: "/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg",
         alt: "Mameshiba gris et blanc assis devant un fond clair",
+    },
+]
+
+const mameshibaInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/nos-chiens",
+        title: "Voir nos chiens reproducteurs",
+        description: "Découvrir les adultes qui portent notre sélection et leurs lignées.",
+    },
+    {
+        href: "/bien-etre-animal",
+        title: "Comprendre leur cadre de vie",
+        description: "Voir comment nous socialisons les chiots et organisons le quotidien de l’élevage.",
+    },
+    {
+        href: "/mame-shiba-prix",
+        title: "Consulter nos prix à l’élevage",
+        description: "Retrouver nos tarifs actuels et ce qu’ils recouvrent concrètement.",
+    },
+    {
+        href: "/blog/mame-shiba",
+        title: "Lire nos articles dédiés",
+        description: "Approfondir la race, le comportement et l’adoption responsable du Mameshiba.",
     },
 ]
 
@@ -360,7 +384,7 @@ export default function MameShibaPage() {
                                     </div>
                                     <div className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
                                         <Image
-                                            src="/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
+                                            src="/pages/le-mame-shiba/Yuzu-femelle-mame-shiba-couleur-feu.webp"
                                             alt="Portrait d'un Mameshiba gris et blanc"
                                             fill
                                             className="object-cover"
@@ -389,7 +413,7 @@ export default function MameShibaPage() {
                                     </div>
                                     <div className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
                                         <Image
-                                            src="/pages/homePage/little-mame-shiba-red-white.jpeg"
+                                            src="/pages/le-mame-shiba/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
                                             alt="Mameshiba roux et blanc assis dans un jardin"
                                             fill
                                             className="object-cover"
@@ -519,6 +543,13 @@ export default function MameShibaPage() {
                             </Link>
                         </div>
                     </section>
+
+                    <InternalLinksSection
+                        title="À explorer aussi sur le site"
+                        description="Pour aller plus loin après cette page, voici les contenus les plus utiles autour du Mameshiba, de l’élevage et d’une future adoption."
+                        items={mameshibaInternalLinks}
+                        className="mb-16"
+                    />
 
                     <FAQSection
                         title="FAQ sur le Mameshiba"

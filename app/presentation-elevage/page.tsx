@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { faqPresentation } from "@/lib/faq-data"
 import { Heart, Leaf, Star, Users } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
@@ -12,6 +13,29 @@ import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-genera
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 
 const pageImage = "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
+
+const presentationInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/presentation-eleveuses",
+        title: "Rencontrer les éleveuses",
+        description: "Découvrir le parcours d’Aurélie et Marine et leur vision du Mameshiba.",
+    },
+    {
+        href: "/nos-chiens",
+        title: "Voir nos chiens adultes",
+        description: "Observer les reproducteurs qui composent notre programme d’élevage.",
+    },
+    {
+        href: "/bien-etre-animal",
+        title: "Voir le quotidien des chiens",
+        description: "Explorer les espaces de vie, la socialisation et l’organisation à l’élevage.",
+    },
+    {
+        href: "/chiots-disponibles",
+        title: "Suivre les prochaines portées",
+        description: "Consulter les disponibilités et les réservations autour de nos chiots.",
+    },
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.presentation.title,
@@ -294,6 +318,13 @@ export default function PresentationPage() {
                             </Card>
                         </div>
                     </section>
+
+                    <InternalLinksSection
+                        title="Pages utiles pour prolonger la visite"
+                        description="Ces pages complètent la présentation de l’élevage avec les adultes, le quotidien de la meute et les prochaines disponibilités."
+                        items={presentationInternalLinks}
+                        className="mb-16"
+                    />
 
                     <FAQSection
                         title="FAQ élevage et Mameshiba"

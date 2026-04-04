@@ -29,7 +29,7 @@ export const shibaBenefits: BenefitCard[] = [
     {
         title: "Une race encore rare en Europe",
         text: "Le Mameshiba reste extrêmement rare en Europe. Sa reconnaissance par le KCJ en 2008 souligne la volonté de préserver un type miniature fidèle au Shiba Inu d’origine.",
-        image: redMame,
+        image: shibaPolyvalent,
         alt: "Mameshiba mouillé après une baignade, regard vif"
     },
     {
@@ -47,7 +47,7 @@ export const shibaBenefits: BenefitCard[] = [
     {
         title: "Un petit compagnon de la vie moderne",
         text: "Sa petite taille et son intelligence en font un excellent chien de compagnie, capable de s’adapter à la vie en appartement à condition d’être bien socialisé dès le plus jeune âge.",
-        image: shibaPolyvalent,
+        image: redMame,
         alt: "Mameshiba actif en extérieur sur l'herbe verte"
     }
 ];

@@ -80,6 +80,14 @@ export const akitaShibaMameComparisonPost: BlogPost = {
         {
             label: "Voir nos chiens adultes",
             href: "/nos-chiens"
+        },
+        {
+            label: "Consulter les prochaines portées",
+            href: "/chiots-disponibles"
+        },
+        {
+            label: "Nous écrire pour parler de votre projet",
+            href: "/contact"
         }
     ],
     sources: [

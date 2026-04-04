@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { faqBienEtre } from "@/lib/faq-data"
 import { Calendar, MapPin, Bed, Utensils, Dumbbell, SpadeIcon as Spa, PawPrint, Dog } from "lucide-react"
 import type { Metadata } from "next"
@@ -13,6 +14,29 @@ import Link from "next/link"
 import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 
 const pageImage = "/locaux.webp"
+
+const wellnessInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/presentation-elevage",
+        title: "Découvrir l’élevage",
+        description: "Relier ce quotidien à notre philosophie, à notre sélection et à notre façon de travailler.",
+    },
+    {
+        href: "/adoption/reussir-son-adoption",
+        title: "Préparer l’arrivée du chiot",
+        description: "Anticiper les premiers jours à la maison après cette phase d’élevage et de socialisation.",
+    },
+    {
+        href: "/chiots-disponibles",
+        title: "Voir les prochaines portées",
+        description: "Suivre les disponibilités et les réservations si vous souhaitez adopter chez nous.",
+    },
+    {
+        href: "/contact",
+        title: "Organiser une visite ou un échange",
+        description: "Nous contacter pour parler de votre projet et découvrir l’élevage sur rendez-vous.",
+    },
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.wellness.title,
@@ -322,6 +346,14 @@ export default function SejoursPage() {
                             </Card>
                         </div>
                     </section>
+
+                    <InternalLinksSection
+                        title="Liens utiles pour continuer la visite"
+                        description="Après le quotidien des chiots et des adultes, voici les pages les plus utiles pour comprendre l’élevage, préparer l’adoption et suivre nos disponibilités."
+                        items={wellnessInternalLinks}
+                        className="mt-16"
+                    />
+
                     <FAQSection
                         title="FAQ adoption et quotidien"
                         description="Tout ce qu’il faut savoir sur le quotidien en élevage, la socialisation et les besoins du Mameshiba."
@@ -353,5 +385,4 @@ export default function SejoursPage() {
         </>
     )
 }
-
 

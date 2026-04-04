@@ -79,6 +79,14 @@ export const shibaSociablePost: BlogPost = {
         {
             label: "Découvrir la vie en élevage",
             href: "/bien-etre-animal"
+        },
+        {
+            label: "Préparer l’adoption d’un chiot",
+            href: "/adoption/reussir-son-adoption"
+        },
+        {
+            label: "Nous poser vos questions sur le tempérament",
+            href: "/contact"
         }
     ],
     sources: [

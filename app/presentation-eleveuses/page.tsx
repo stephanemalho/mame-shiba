@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
+import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
@@ -11,6 +12,29 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { faqEleveuses } from "@/lib/faq-data"
 
 const pageImage = "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg"
+
+const eleveusesInternalLinks: InternalLinkItem[] = [
+    {
+        href: "/presentation-elevage",
+        title: "Découvrir l’élevage",
+        description: "Comprendre l’environnement, la philosophie et les engagements de Kawaii Shiba.",
+    },
+    {
+        href: "/nos-chiens",
+        title: "Voir nos reproducteurs",
+        description: "Mettre des chiens et des lignées concrètes derrière notre travail quotidien.",
+    },
+    {
+        href: "/blog/mame-shiba",
+        title: "Lire le blog Mameshiba",
+        description: "Retrouver nos articles de fond sur la race, le tempérament et l’adoption.",
+    },
+    {
+        href: "/contact",
+        title: "Parler de votre projet",
+        description: "Échanger directement avec nous pour préparer une rencontre ou une réservation.",
+    },
+]
 
 export const metadata: Metadata = {
     title: pageMetadata.eleveuses.title,
@@ -325,6 +349,13 @@ export default function PresentationEleveusesPage() {
                             </CardContent>
                         </Card>
                     </section>
+
+                    <InternalLinksSection
+                        title="Pour mieux nous situer dans l’ensemble du site"
+                        description="Ces pages relient notre parcours à notre travail concret en élevage, à nos chiens et à l’accompagnement des familles."
+                        items={eleveusesInternalLinks}
+                        className="mb-16"
+                    />
 
                     <FAQSection
                         title="FAQ sur notre vision et notre parcours"
