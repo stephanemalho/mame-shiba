@@ -178,7 +178,7 @@ export default function HomePage() {
                 </h2>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Le Mameshiba est un véritable Shiba Inu, mais de petite taille. Le mot
+                  C'est un véritable Shiba Inu, mais de petite taille. Le mot
                   « mame » signifie haricot en japonais : une façon affectueuse de parler
                   d'un petit chien au charme intact. Rare en Europe, il s'inscrit dans une
                   sélection rigoureuse menée au Japon depuis des décennies.

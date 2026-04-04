@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 
 import BlogList from "@/app/blog/_components/BlogList";
 import { blog } from "@/constants/blog/blog";
-import { buildOpenGraph, pageMetadata, siteConfig } from "@/lib/seo-config";
+import { buildOpenGraph, buildTwitter, pageMetadata, siteConfig } from "@/lib/seo-config";
+import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema-generators";
 
 type MameShibaThemePageProps = {
     params: { theme: string } | Promise<{ theme: string }>;
@@ -57,23 +58,45 @@ export async function generateMetadata({
                 },
             ],
         }),
-        twitter: {
-            card: "summary_large_image",
+        twitter: buildTwitter({
             title,
             description,
-            images: [new URL(siteConfig.ogImage, siteConfig.siteUrl).toString()],
-        },
+            imageUrl: new URL(siteConfig.ogImage, siteConfig.siteUrl).toString(),
+        }),
     };
 }
 
 export default async function MameShibaThemePage({ params }: MameShibaThemePageProps) {
     const resolvedParams = await params;
     const theme = decodeURIComponent(resolvedParams.theme);
-    const isValidTheme = blog.themes.some((item) => item.slug === theme);
+    const themeData = blog.themes.find((item) => item.slug === theme);
 
-    if (!isValidTheme) {
+    if (!themeData) {
         notFound();
     }
 
-    return <BlogList base="mame-shiba" theme={theme} />;
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: "Accueil", url: "/" },
+        { name: "Blog Mame Shiba", url: "/blog/mame-shiba" },
+        { name: themeData.label, url: `/blog/mame-shiba/${themeData.slug}` },
+    ]);
+    const collectionSchema = generateCollectionPageSchema({
+        name: `${themeData.label} | Blog Mame Shiba`,
+        description: themeData.description ?? pageMetadata.blog.description,
+        url: new URL(`/blog/mame-shiba/${themeData.slug}`, siteConfig.siteUrl).toString(),
+    });
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+            />
+            <BlogList base="mame-shiba" theme={theme} />
+        </>
+    );
 }

@@ -12,7 +12,7 @@ import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 
-const pageImage = "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
+const pageImage = "/pages/homePage/mame-shiba-good-caractere.jpg"
 
 const presentationInternalLinks: InternalLinkItem[] = [
     {

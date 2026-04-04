@@ -97,7 +97,7 @@ const historySteps: HistoryStep[] = [
                 </a>{" "}
                 et certains{" "}
                 <a
-                    href="https://syokota888.ec-net.jp/essei-kisyuu-kisyuu-shiro-mono-gatari-115-2014-08-09-.html"
+                    href="https://mame-shiba.co.jp/blog/detail/20200314153700/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={historyLinkClassName}

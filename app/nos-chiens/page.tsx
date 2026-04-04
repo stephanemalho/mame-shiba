@@ -13,7 +13,7 @@ import { pageContent } from "@/lib/page-content"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { dogs } from "./dogs"
 
-const pageImage = "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp"
+const pageImage = "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp"
 
 const reproductorsInternalLinks: InternalLinkItem[] = [
     {

@@ -18,6 +18,8 @@ import { pageContent } from "./page-content";
 
 const CANONICAL_NAME = "Kawaii Shiba";
 
+export const seoLastmod = "2026-04-04";
+
 /* -------------------------------------------------------------------------- */
 /*  SITE CONFIG                                                                */
 /* -------------------------------------------------------------------------- */
@@ -90,8 +92,8 @@ export const siteConfig = {
     ogImage: "/mame-shiba-in-a-sakura-tree.jpg",
     ogImageAlt:
         "Mame shiba femelle de Kawaii Shiba sur un arbre en fleurs de cerisier",
-    ogImageWidth: 1200,
-    ogImageHeight: 630,
+    ogImageWidth: 2560,
+    ogImageHeight: 1707,
 
     socialLinks: {
         instagram: "https://www.instagram.com/kawaiimameshiba/"
@@ -113,6 +115,146 @@ export const siteConfig = {
         terms: "/conditions-generales",
         privacy: "/politique-de-confidentialite"
     }
+};
+
+type SocialImageAsset = {
+    width: number;
+    height: number;
+    type: string;
+};
+
+const socialImageAssets: Record<string, SocialImageAsset> = {
+    "/mame-shiba-in-a-sakura-tree.jpg": {
+        width: 2560,
+        height: 1707,
+        type: "image/jpeg"
+    },
+    "/locaux.webp": {
+        width: 2048,
+        height: 1536,
+        type: "image/webp"
+    },
+    "/pages/homePage/mame-shiba-for-modern-life.jpeg": {
+        width: 2560,
+        height: 1709,
+        type: "image/jpeg"
+    },
+    "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg": {
+        width: 1320,
+        height: 1908,
+        type: "image/jpeg"
+    },
+    "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg": {
+        width: 1320,
+        height: 866,
+        type: "image/jpeg"
+    },
+    "/pages/homePage/mame-shiba-good-caractere.jpg": {
+        width: 2560,
+        height: 1707,
+        type: "image/jpeg"
+    },
+    "/pages/homePage/little-mame-shiba-red-white.jpeg": {
+        width: 2560,
+        height: 1708,
+        type: "image/jpeg"
+    },
+    "/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg": {
+        width: 300,
+        height: 261,
+        type: "image/jpeg"
+    },
+    "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg": {
+        width: 1600,
+        height: 1066,
+        type: "image/jpeg"
+    },
+    "/pages/mame-shiba-prix/deux-mame-shiba-chiots-blanc-et-un-noir.jpeg": {
+        width: 2560,
+        height: 1707,
+        type: "image/jpeg"
+    },
+    "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp": {
+        width: 683,
+        height: 1024,
+        type: "image/webp"
+    },
+    "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp": {
+        width: 2560,
+        height: 1709,
+        type: "image/webp"
+    },
+    "/pages/reproducteurs/kawaii-sur-un-champ-de-fleurs-jaunes.webp": {
+        width: 3127,
+        height: 2087,
+        type: "image/webp"
+    },
+    "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg": {
+        width: 3301,
+        height: 2203,
+        type: "image/jpeg"
+    },
+    "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg": {
+        width: 1708,
+        height: 2560,
+        type: "image/jpeg"
+    },
+    "/assets/blog/Kaito-et-Yushi-en-appartement.jpg": {
+        width: 1600,
+        height: 1200,
+        type: "image/jpeg"
+    }
+};
+
+const mimeTypeByExtension: Record<string, string> = {
+    jpg: "image/jpeg",
+    jpeg: "image/jpeg",
+    png: "image/png",
+    webp: "image/webp",
+    gif: "image/gif",
+    svg: "image/svg+xml"
+};
+
+const getSiteRelativeImagePath = (urlOrPath: string) => {
+    if (urlOrPath.startsWith("/")) {
+        return urlOrPath;
+    }
+
+    try {
+        const parsedUrl = new URL(urlOrPath);
+        if (parsedUrl.origin === siteConfig.siteUrl) {
+            return parsedUrl.pathname;
+        }
+    } catch {
+        return undefined;
+    }
+
+    return undefined;
+};
+
+const inferMimeType = (urlOrPath: string) => {
+    const withoutQuery = urlOrPath.split("?")[0] ?? urlOrPath;
+    const extension = withoutQuery.split(".").pop()?.toLowerCase();
+
+    return extension ? mimeTypeByExtension[extension] : undefined;
+};
+
+export const resolveSocialImage = (urlOrPath: string) => {
+    const siteRelativePath = getSiteRelativeImagePath(urlOrPath);
+    const asset =
+        (siteRelativePath ? socialImageAssets[siteRelativePath] : undefined) ??
+        undefined;
+
+    return {
+        url: siteRelativePath
+            ? new URL(siteRelativePath, siteConfig.siteUrl).toString()
+            : urlOrPath,
+        ...(asset?.width ? { width: asset.width } : {}),
+        ...(asset?.height ? { height: asset.height } : {}),
+        ...(asset?.type || inferMimeType(urlOrPath)
+            ? { type: asset?.type ?? inferMimeType(urlOrPath) }
+            : {})
+    };
 };
 
 type OpenGraphParams = {
@@ -150,25 +292,30 @@ export const buildOpenGraph = ({
     ...(type === "article" && authors ? { authors } : {}),
     images:
         images && images.length > 0
-            ? images.map((image) => ({
-                  width: siteConfig.ogImageWidth,
-                  height: siteConfig.ogImageHeight,
-                  alt: siteConfig.ogImageAlt,
-                  type: "image/webp",
-                  ...image
-              }))
-            : [
-                  {
-                      url: new URL(
-                          siteConfig.ogImage,
-                          siteConfig.siteUrl
-                      ).toString(),
-                      width: siteConfig.ogImageWidth,
-                      height: siteConfig.ogImageHeight,
-                      alt: siteConfig.ogImageAlt,
-                      type: "image/webp"
-                  }
-              ]
+            ? images.map((image) => {
+                  const resolvedImage = resolveSocialImage(image.url);
+
+                  return {
+                      url: resolvedImage.url,
+                      width: resolvedImage.width ?? siteConfig.ogImageWidth,
+                      height: resolvedImage.height ?? siteConfig.ogImageHeight,
+                      alt: image.alt ?? siteConfig.ogImageAlt,
+                      type: resolvedImage.type,
+                  };
+              })
+            : (() => {
+                  const resolvedImage = resolveSocialImage(siteConfig.ogImage);
+
+                  return [
+                      {
+                          url: resolvedImage.url,
+                          width: resolvedImage.width ?? siteConfig.ogImageWidth,
+                          height: resolvedImage.height ?? siteConfig.ogImageHeight,
+                          alt: siteConfig.ogImageAlt,
+                          type: resolvedImage.type
+                      }
+                  ];
+              })()
 });
 
 type TwitterParams = {
@@ -186,9 +333,11 @@ export const buildTwitter = ({
     title,
     description,
     images: [
-        imageUrl
-            ? imageUrl
-            : new URL(siteConfig.ogImage, siteConfig.siteUrl).toString()
+        resolveSocialImage(
+            imageUrl
+                ? imageUrl
+                : new URL(siteConfig.ogImage, siteConfig.siteUrl).toString()
+        ).url
     ]
 });
 
@@ -411,79 +560,79 @@ export const sitemapPages = [
         url: "/",
         changefreq: "weekly",
         priority: 1.0,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.75,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.9,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/adoption/reussir-son-adoption",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/mame-shiba-prix",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/nos-chiens",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/presentation-elevage",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/presentation-eleveuses",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/bien-etre-animal",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/contact",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/mentions-legales",
         changefreq: "yearly",
         priority: 0.6,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/conditions-generales",
         changefreq: "yearly",
         priority: 0.6,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     },
     {
         url: "/politique-de-confidentialite",
         changefreq: "yearly",
         priority: 0.7,
-        lastmod: "2026-03-20"
+        lastmod: seoLastmod
     }
 ];
 

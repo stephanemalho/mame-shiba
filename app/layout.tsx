@@ -6,7 +6,7 @@ import "./globals.css"
 import { ThemeProvider } from "next-themes"
 import { Navigation } from "../components/navigation"
 import { Footer } from "../components/footer"
-import { siteConfig } from "@/lib/seo-config"
+import { buildOpenGraph, buildTwitter, siteConfig } from "@/lib/seo-config"
 import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/schema-generators"
 import { Questrial } from "next/font/google"
 
@@ -26,31 +26,24 @@ export const metadata: Metadata = {
   publisher: siteConfig.author,
 
   // Open Graph
-  openGraph: {
-    type: "website",
-    locale: siteConfig.locale,
-    url: siteConfig.siteUrl,
+  openGraph: buildOpenGraph({
     title: siteConfig.title,
     description: siteConfig.description,
+    url: siteConfig.siteUrl,
     images: [
       {
         url: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
-        width: siteConfig.ogImageWidth,
-        height: siteConfig.ogImageHeight,
         alt: siteConfig.ogImageAlt,
-        type: "image/webp",
       },
     ],
-    siteName: siteConfig.name,
-  },
+  }),
 
   // Twitter Card
-  twitter: {
-    card: "summary_large_image",
+  twitter: buildTwitter({
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [`${siteConfig.siteUrl}${siteConfig.ogImage}`],
-  },
+    imageUrl: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
+  }),
 
   // Autres métadonnées
   referrer: "strict-origin-when-cross-origin",

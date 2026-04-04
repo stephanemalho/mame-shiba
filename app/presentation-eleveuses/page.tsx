@@ -11,7 +11,7 @@ import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-genera
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { faqEleveuses } from "@/lib/faq-data"
 
-const pageImage = "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg"
+const pageImage = "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
 
 const eleveusesInternalLinks: InternalLinkItem[] = [
     {

@@ -13,7 +13,7 @@ import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { Badge } from "@/components/ui/badge"
 
-const pageImage = "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
+const pageImage = "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {

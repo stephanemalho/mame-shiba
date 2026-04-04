@@ -19,7 +19,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
-import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
+import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 
 const pageImage = "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg"
@@ -221,7 +221,7 @@ export default function AdoptionGuidePage() {
         mainEntityOfPage: `${siteConfig.siteUrl}${siteConfig.pages.adoptionGuide}`,
         inLanguage: "fr-FR",
         datePublished: "2026-03-20",
-        dateModified: "2026-03-20",
+        dateModified: seoLastmod,
         author: {
             "@type": "Organization",
             name: siteConfig.name,

@@ -2,7 +2,7 @@ export const pageContent = {
     home: {
         h1: "Bienvenue dans notre élevage de Shiba Inu - Kawaii Shiba, MAMESHIBA",
         h1Subtitle:
-            "Nous sommes parmi les premiers élevages de Mame shiba enFrance",
+            "Nous sommes parmi les premiers élevages de Mame shiba en France",
         description:
             "Nos mame-shiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine : l'excellence des lignées importées",
         descriptionSecondary:
@@ -48,7 +48,8 @@ export const pageContent = {
     },
     wellness: {
         h1: "La vie en élevage",
-        description: "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba"
+        description:
+            "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba"
     },
     contact: {
         h1: "Contact & visites",

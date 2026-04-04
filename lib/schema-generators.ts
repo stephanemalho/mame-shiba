@@ -32,6 +32,7 @@ export function generateOrganizationSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": `${siteConfig.siteUrl}#organization`,
         name: legal.tradeName || siteConfig.name,
         alternateName: legal.legalName,
         legalName: legal.legalName,
@@ -90,10 +91,23 @@ export function generateLocalBusinessSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": `${siteConfig.siteUrl}#localbusiness`,
         name: siteConfig.name,
         url: siteConfig.siteUrl,
+        description: siteConfig.description,
         email: siteConfig.contact.email,
         telephone: siteConfig.contact.phone,
+        image: [`${siteConfig.siteUrl}${siteConfig.ogImage}`],
+        logo: `${siteConfig.siteUrl}/icon.png`,
+        foundingDate: legal.foundingDate,
+        sameAs: Object.values(siteConfig.socialLinks ?? {}).filter(Boolean),
+        areaServed: {
+            "@type": "AdministrativeArea",
+            name: `${siteConfig.location.region}, ${legal.address.country}`
+        },
+        parentOrganization: {
+            "@id": `${siteConfig.siteUrl}#organization`
+        },
         address: {
             "@type": "PostalAddress",
             addressLocality: address.city,
@@ -113,7 +127,16 @@ export function generateLocalBusinessSchema() {
               }
             : {}),
         openingHoursSpecification,
-        priceRange: "$$" // ? ajuster selon votre gamme tarifaire
+        contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "Customer Service",
+            email: siteConfig.contact.email,
+            telephone: siteConfig.contact.phone,
+            areaServed: ["FR"],
+            availableLanguage: ["fr"]
+        },
+        currenciesAccepted: "EUR",
+        priceRange: "4500€-5000€"
     };
 }
 
@@ -124,6 +147,7 @@ export function generateContactPointSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "ContactPoint",
+        "@id": `${siteConfig.siteUrl}#contactpoint`,
         contactType: "Customer Service",
         email: siteConfig.contact.email,
         telephone: siteConfig.contact.phone,
@@ -273,16 +297,70 @@ export function generateWebsiteSchema() {
     return {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": `${siteConfig.siteUrl}#website`,
         name: siteConfig.name,
         url: siteConfig.siteUrl,
         description: siteConfig.description,
-        potentialAction: {
-            "@type": "SearchAction",
-            target: {
-                "@type": "EntryPoint",
-                urlTemplate: `${siteConfig.siteUrl}/search?q={search_term_string}`
-            },
-            "query-input": "required name=search_term_string"
+        inLanguage: "fr-FR",
+        publisher: {
+            "@id": `${siteConfig.siteUrl}#organization`
         }
+    };
+}
+
+export function generateCollectionPageSchema(params: {
+    name: string;
+    description: string;
+    url: string;
+}) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: params.name,
+        description: params.description,
+        url: params.url,
+        inLanguage: "fr-FR",
+        isPartOf: {
+            "@id": `${siteConfig.siteUrl}#website`
+        },
+        publisher: {
+            "@id": `${siteConfig.siteUrl}#organization`
+        }
+    };
+}
+
+export function generateBlogPostingSchema(params: {
+    headline: string;
+    description: string;
+    url: string;
+    image?: string;
+    datePublished: string;
+    dateModified: string;
+    authorName: string;
+    authorImage?: string;
+    keywords?: string[];
+    articleSection?: string;
+}) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: params.headline,
+        description: params.description,
+        mainEntityOfPage: params.url,
+        url: params.url,
+        inLanguage: "fr-FR",
+        ...(params.image ? { image: [params.image] } : {}),
+        datePublished: params.datePublished,
+        dateModified: params.dateModified,
+        author: {
+            "@type": "Person",
+            name: params.authorName,
+            ...(params.authorImage ? { image: params.authorImage } : {})
+        },
+        publisher: {
+            "@id": `${siteConfig.siteUrl}#organization`
+        },
+        ...(params.keywords?.length ? { keywords: params.keywords.join(", ") } : {}),
+        ...(params.articleSection ? { articleSection: params.articleSection } : {})
     };
 }

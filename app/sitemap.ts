@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { blog } from "@/constants/blog/blog";
-import { siteConfig, sitemapPages } from "@/lib/seo-config";
+import { seoLastmod, siteConfig, sitemapPages } from "@/lib/seo-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = siteConfig.siteUrl;
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: toUrl("/blog/mame-shiba"),
         changeFrequency: "weekly",
         priority: 0.8,
-        lastModified: "2026-03-20"
+        lastModified: seoLastmod
     };
 
     const blogThemeEntries: MetadataRoute.Sitemap = blog.themes.map(
@@ -33,14 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: toUrl(`/blog/mame-shiba/${theme.slug}`),
             changeFrequency: "monthly",
             priority: 0.6,
-            lastModified: "2026-03-20"
+            lastModified: seoLastmod
         })
     );
 
     const blogPostEntries: MetadataRoute.Sitemap = blog.posts.map(
         (post): MetadataRoute.Sitemap[number] => ({
             url: toUrl(`/blog/${post.slug}`),
-            lastModified: post.date,
+            lastModified: seoLastmod,
             changeFrequency: "monthly",
             priority: 0.7
         })
