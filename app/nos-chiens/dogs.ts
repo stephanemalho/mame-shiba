@@ -1,3 +1,8 @@
+export type DogImage = {
+    src: string
+    alt: string
+}
+
 export type AdultDog = {
     name: string
     title: string
@@ -7,7 +12,7 @@ export type AdultDog = {
     size: string
     temperament: string
     health: string[]
-    images: string[]
+    images: DogImage[]
 }
 
 export const dogs: AdultDog[] = [
@@ -26,7 +31,14 @@ export const dogs: AdultDog[] = [
             "Confirmé - Kennel Club of Japan",
         ],
         images: [
-            "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.jpeg",
+            {
+                src: "/pages/reproducteurs/ichiro-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Portrait d'Ichiro, mâle Mameshiba de l'élevage Kawaii Shiba",
+            },
+            {
+                src: "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp",
+                alt: "Ichiro, mâle Mameshiba de l'élevage Kawaii Shiba",
+            },
         ],
     },
     {
@@ -43,7 +55,14 @@ export const dogs: AdultDog[] = [
             "Confirmée - Kennel Club of Japan",
         ],
         images: [
-            "/pages/reproducteurs/Yuzu-femelle-mame-shiba-couleur-feu.jpeg",
+            {
+                src: "/pages/reproducteurs/yuzu-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Portrait de Yuzu, femelle Mameshiba de l'élevage Kawaii Shiba",
+            },
+            {
+                src: "/pages/reproducteurs/Yuzu-femelle-mame-shiba-couleur-feu.webp",
+                alt: "Yuzu, femelle Mameshiba couleur feu",
+            },
         ],
     },
     {
@@ -61,7 +80,14 @@ export const dogs: AdultDog[] = [
             "Confirmée - Kennel Club of Japan",
         ],
         images: [
-            "/pages/reproducteurs/SAKURA-white-mame-shiba-from-japan.jpg",
+            {
+                src: "/pages/reproducteurs/sakura-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Portrait de Sakura, femelle Mameshiba crème de l'élevage Kawaii Shiba",
+            },
+            {
+                src: "/pages/reproducteurs/SAKURA-white-mame-shiba-from-japan.webp",
+                alt: "Sakura, femelle Mameshiba crème importée du Japon",
+            },
         ],
     },
     {
@@ -80,7 +106,18 @@ export const dogs: AdultDog[] = [
             "Pedigree DWKC",
         ],
         images: [
-            "/pages/reproducteurs/KAWAII-femelle-mame-shiba-couleur-feu.jpeg",
+            {
+                src: "/pages/reproducteurs/kawaii-de-nuit-sur-un-rocher.webp",
+                alt: "Kawaii de nuit sur un rocher",
+            },
+            {
+                src: "/pages/reproducteurs/kawaii-sur-un-champ-de-fleurs-jaunes.webp",
+                alt: "Kawaii dans un champ de fleurs jaunes",
+            },
+            {
+                src: "/pages/reproducteurs/KAWAII-femelle-mame-shiba-couleur-feu.webp",
+                alt: "Kawaii, femelle Mameshiba couleur feu",
+            },
         ],
     },
     {
@@ -99,7 +136,14 @@ export const dogs: AdultDog[] = [
             "Pedigree - Kennel Club of Japan",
         ],
         images: [
-            "/pages/reproducteurs/NATSUKO-male-mame-shiba-noir-et-feu.jpeg",
+            {
+                src: "/pages/reproducteurs/natsuko-dit-natsu-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Portrait de Natsuko dit Natsu, mâle Mameshiba noir et feu",
+            },
+            {
+                src: "/pages/reproducteurs/NATSUKO-male-mame-shiba-noir-et-feu.webp",
+                alt: "Natsuko dit Natsu, mâle Mameshiba noir et feu",
+            },
         ],
     },
     {
@@ -119,7 +163,10 @@ export const dogs: AdultDog[] = [
             "Pedigree - DWKC",
         ],
         images: [
-            "/pages/reproducteurs/TORI-femelle-mame-shiba-couleur-feu.jpeg",
+            {
+                src: "/pages/reproducteurs/TORI-femelle-mame-shiba-couleur-feu.webp",
+                alt: "Tori, femelle Mameshiba couleur feu",
+            },
         ],
     },
     {
@@ -138,7 +185,14 @@ export const dogs: AdultDog[] = [
             "Pedigree - Kennel Club of Japan",
         ],
         images: [
-            "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.jpeg",
+            {
+                src: "/pages/reproducteurs/yumi-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Portrait de Yumi, femelle Mameshiba de l'élevage Kawaii Shiba",
+            },
+            {
+                src: "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp",
+                alt: "Yumi, femelle Mameshiba couleur feu",
+            },
         ],
     },
     {
@@ -157,7 +211,14 @@ export const dogs: AdultDog[] = [
             "Confirmé - Kennel Club of Japan",
         ],
         images: [
-            "/pages/reproducteurs/WARU-male-mame-shiba-couleur-feu.jpeg",
+            {
+                src: "/pages/reproducteurs/waru-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Portrait de Waru, mâle Mameshiba de l'élevage Kawaii Shiba",
+            },
+            {
+                src: "/pages/reproducteurs/WARU-male-mame-shiba-couleur-feu.webp",
+                alt: "Waru, mâle Mameshiba couleur feu",
+            },
         ],
     },
 ]

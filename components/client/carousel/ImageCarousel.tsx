@@ -3,8 +3,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
+type CarouselImage = {
+    src: string
+    alt: string
+}
+
 type ImageCarouselProps = {
-    images: string[]
+    images: Array<string | CarouselImage>
     alt: string
     priority?: boolean
     sizes?: string
@@ -13,10 +18,12 @@ type ImageCarouselProps = {
 
 function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: ImageCarouselProps) {
     const [index, setIndex] = useState(0)
-    const total = images.length
+    const resolvedImages = images.map((image) => (typeof image === "string" ? { src: image, alt } : image))
+    const total = resolvedImages.length
     const isOneImage = total === 1
     const resolvedSizes = sizes ?? "(min-width: 1024px) 50vw, (min-width: 768px) 50vw, 100vw"
-    const currentImage = images[index].startsWith("/") ? images[index] : `/${images[index]}`
+    const currentImage = resolvedImages[index]
+    const currentImageSrc = currentImage.src.startsWith("/") ? currentImage.src : `/${currentImage.src}`
 
     const prev = () => setIndex((i) => (i - 1 + total) % total)
     const next = () => setIndex((i) => (i + 1) % total)
@@ -24,8 +31,8 @@ function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: I
     return (
         <div className="relative h-72 md:h-full overflow-hidden rounded-lg bg-amber-950 mx-4">
             <Image
-                src={currentImage}
-                alt={`${alt} - photo ${index + 1}`}
+                src={currentImageSrc}
+                alt={currentImage.alt}
                 fill
                 className="object-cover transition duration-300 p-2"
                 sizes={resolvedSizes}
@@ -57,7 +64,7 @@ function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: I
                 </>
             )}
             <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-2">
-                {images.map((_, i) => (
+                {resolvedImages.map((_, i) => (
                     <span
                         key={i}
                         className={`h-2 w-2 rounded-full ${i === index ? "bg-primary" : "bg-white/60"}`}

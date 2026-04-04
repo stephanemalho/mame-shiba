@@ -12,7 +12,7 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { pageContent } from "@/lib/page-content"
 import { dogs } from "./dogs"
 
-const pageImage = "/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg"
+const pageImage = "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp"
 
 export const metadata: Metadata = {
     title: pageMetadata.reproductors.title,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
                 alt: "Ichiro mameshiba de l elevage Kawaii Shiba",
                 width: 1200,
                 height: 630,
-                type: "image/jpeg",
+                type: "image/webp",
             },
         ],
     }),
