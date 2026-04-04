@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import type { ReactNode } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
@@ -69,25 +70,112 @@ const sizes = [
     },
 ]
 
-const historySteps = [
+type HistoryStep = {
+    title: string
+    description: ReactNode
+    image: string
+    alt: string
+}
+
+const historyLinkClassName =
+    "rounded-sm font-semibold text-primary underline decoration-primary/55 underline-offset-4 transition-colors hover:text-primary/85 hover:decoration-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"
+
+const historySteps: HistoryStep[] = [
     {
         title: "Des petits Shiba déjà présents dans le Japon rural",
-        description:
-            "Bien avant que le nom Mameshiba ne soit popularisé, il existait déjà de très petits Shiba Inu élevés dans certaines régions japonaises. Ils partageaient les aptitudes de chasse et la rusticité des chiens primitifs du pays.",
+        description: (
+            <>
+                Bien avant que le nom Mameshiba ne soit popularisé, il existait déjà de très petits Shiba Inu élevés dans
+                certaines régions japonaises. Les{" "}
+                <a
+                    href="https://www.kcj.gr.jp/about_mameshiba.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    repères donnés par le KCJ
+                </a>{" "}
+                et certains{" "}
+                <a
+                    href="https://syokota888.ec-net.jp/essei-kisyuu-kisyuu-shiro-mono-gatari-115-2014-08-09-.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    récits historiques japonais
+                </a>{" "}
+                décrivent déjà cette présence ancienne de petits sujets rustiques, proches du chien primitif du pays.
+            </>
+        ),
         image: "/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg",
         alt: "Mameshiba roux dans un decor floral",
     },
     {
         title: "Une sélection poursuivie à partir des années 1950",
-        description:
-            "Le travail de sélection s'est construit sur plusieurs générations à partir de Shiba Inu trop petits pour entrer dans le standard classique. L'objectif n'était pas de produire un chien fragile, mais de fixer un petit format cohérent et sain.",
+        description: (
+            <>
+                Le travail de sélection s'est construit sur plusieurs générations à partir de Shiba Inu trop petits pour
+                entrer dans le standard classique. Les informations diffusées par le{" "}
+                <a
+                    href="https://www.kcj.gr.jp/about_mameshiba.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    Kennel Club of Japan
+                </a>{" "}
+                et ce{" "}
+                <a
+                    href="https://www.mameshiba-729.com/blog/%E8%B1%86%E6%9F%B4%E3%81%AE%E7%8F%BE%E6%B3%81%E3%81%A8%E5%85%AC%E8%AA%8D%E3%81%AE%E7%B5%8C%E7%94%B1%E3%83%BB%E3%83%BB%E3%83%BB/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    retour détaillé sur la reconnaissance
+                </a>{" "}
+                rappellent que l'objectif n'était pas de produire un chien fragile, mais de fixer un petit format cohérent,
+                harmonieux et sain.
+            </>
+        ),
         image: "/pages/le-mame-shiba/mame-shiba-puppy-blanc-white.jpeg",
         alt: "Chiot Mameshiba blanc dans un univers japonais",
     },
     {
         title: "Un enregistrement encadré par le KCJ",
-        description:
-            "Le Kennel Club of Japan a donné un cadre plus officiel à la race et a commencé les enregistrements de Mameshiba en 2008. La reconnaissance du club s'appuie sur la mesure à l'âge adulte et sur la traçabilité généalogique.",
+        description: (
+            <>
+                Le Kennel Club of Japan a donné un cadre plus officiel à la race et a commencé les enregistrements de
+                Mameshiba en 2008. La{" "}
+                <a
+                    href="https://www.kcj.gr.jp/about_mameshiba_touroku.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    page d'enregistrement dédiée
+                </a>
+                , les{" "}
+                <a
+                    href="https://www.kcj.gr.jp/assets/pdf/application_list/application_touroku_standard.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    conditions officielles en PDF
+                </a>{" "}
+                et la{" "}
+                <a
+                    href="https://www.kcj.gr.jp/application_list.php"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={historyLinkClassName}
+                >
+                    liste des formulaires KCJ
+                </a>{" "}
+                montrent que la reconnaissance s'appuie sur la mesure à l'âge adulte et sur une traçabilité généalogique
+                rigoureuse.
+            </>
+        ),
         image: "/pages/homePage/ISHIRO-mame-shiba-kawaii-shiba.jpeg",
         alt: "Mameshiba gris et blanc assis devant un fond clair",
     },

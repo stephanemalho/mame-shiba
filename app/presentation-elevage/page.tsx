@@ -118,8 +118,8 @@ export default function PresentationPage() {
                             </div>
                             <div className="relative h-64 md:h-100 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
-                                    alt="Chiot mameshiba blanc dans un decor inspire du Japon"
+                                    src="/pages/presentation-elevage/Yuzu-femelle-mame-shiba-couleur-feu.webp"
+                                    alt="Chiot mameshiba couleur feu dans un decor vert"
                                     fill
                                     className="object-cover"
                                     priority
@@ -188,8 +188,8 @@ export default function PresentationPage() {
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div className="relative h-64 md:h-100 rounded-lg overflow-hidden md:order-2">
                                 <Image
-                                    src="/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg"
-                                    alt="Aurelie avec un mameshiba dans l univers de l elevage"
+                                    src="/pages/presentation-elevage/Karasuki.webp"
+                                    alt="Mame shiba caché dans l'herbe"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 50vw, 100vw"

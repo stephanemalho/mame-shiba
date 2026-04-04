@@ -350,9 +350,9 @@ export default function AdoptionGuidePage() {
                     </section>
 
                     <section className="grid gap-8 md:grid-cols-[0.95fr_1.05fr] md:items-center">
-                        <div className="relative min-h-96 overflow-hidden rounded-3xl">
+                        <div className="relative min-h-112 overflow-hidden rounded-3xl">
                             <Image
-                                src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
+                                src="/pages/adoption/waru-mame-shiba-kawaii-shiba-portrait.webp"
                                 alt="Chiot mameshiba calme pendant ses premières découvertes"
                                 fill
                                 className="object-cover"

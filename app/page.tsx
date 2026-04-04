@@ -62,7 +62,7 @@ export default function HomePage() {
     },
     {
       name: "Marine",
-      image: "/assets/authors/marine-ava.webp",
+      image: "/pages/homePage/marine-de-kawaii-avec-un-chiot-mame.jpg",
       description:
         "Marine a rejoint l'aventure Mameshiba pour garantir un cadre stable et serein à chaque chien. Observatrice et méthodique, elle veille au bien-être quotidien, aux routines et à l'équilibre des groupes. Son exigence sur la propreté, la régularité des soins et l'organisation permet à chaque Mameshiba d'évoluer dans un environnement sain, apaisant et rassurant.",
       badges: [
@@ -91,7 +91,7 @@ export default function HomePage() {
 
       <div className="flex flex-col">
         <section className="bg-background">
-          <div className="overflow-hidden bg-linear-to-b from-primary/95  to-foreground">
+          <div className="overflow-hidden bg-linear-to-b from-primary to-foreground">
             <div className="container mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
                 <div className="overflow-hidden rounded-xl border border-primary-foreground/10 bg-card/10 shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
@@ -323,8 +323,7 @@ export default function HomePage() {
                 >
                   <article className="relative text-center bg-muted/70 rounded-lg overflow-hidden">
                     <div
-                      className={`absolute top-4 ${index === 0 ? "right-4 items-end" : "left-4 items-start"
-                        } md:flex hidden flex-col gap-2 z-10`}
+                      className={`absolute top-4 right-4 items-end md:flex hidden flex-col gap-2 z-10`}
                     >
                       {founder.badges.map((badge, badgeIdx) => (
                         <Badge
