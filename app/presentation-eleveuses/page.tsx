@@ -84,25 +84,10 @@ export default function PresentationEleveusesPage() {
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
-            src: "/assets/authors/aurelie-and-puppies-and-children.jpeg",
-            alt: "Aurélie avec des chiots et des enfants dans l’herbe",
+            src: "/pages/les-eleveuses/aurelie-avec-ses-collegues-et-les-mame-shiba.jpeg",
+            alt: "Aurélie ses collègues de l’élevage et les mame shiba",
             className: "col-span-3 md:col-span-3 row-span-3",
-        },
-        {
-            src: "/assets/authors/aurelie-and-pomsky-see-view.jpeg",
-            alt: "Aurélie en promenade au bord de l’eau avec un chien",
-            className: "col-span-3 md:col-span-3 row-span-3",
-        },
-        {
-            src: "/assets/authors/aurelie-and-pomsky-on-a-bike.jpeg",
-            alt: "Aurélie en sortie avec un chien",
-            className: "col-span-3 md:col-span-3 row-span-3",
-        },
-        {
-            src: "/assets/authors/aurelie-and-pomsky-walking-street.jpeg",
-            alt: "Aurélie en balade avec un chien",
-            className: "col-span-6 md:col-span-6 row-span-6 md:row-span-6",
-        },
+        }
     ]
 
     const marineGallery = [
@@ -112,30 +97,15 @@ export default function PresentationEleveusesPage() {
             className: "col-span-6 md:col-span-3 row-span-6 md:row-span-6",
         },
         {
-            src: "/assets/authors/portrait-aurelie-and-pomsky.jpeg",
-            alt: "Portrait au contact d’un chien de l’élevage",
+            src: "/pages/les-eleveuses/marine-et-les-shiba.jpg",
+            alt: "Les mame shiba de Marine dans un restaurant",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
-            src: "/assets/authors/marine-in-a-chair-with-pomsky.jpeg",
-            alt: "Marine avec un chiot sur une chaise",
+            src: "/pages/les-eleveuses/marine-a-paris.jpg",
+            alt: "Marine avec un mame shiba à Paris",
             className: "col-span-3 md:col-span-3 row-span-3",
-        },
-        {
-            src: "/assets/authors/marine-and-a-new-puppy.jpeg",
-            alt: "Marine avec un jeune chiot",
-            className: "col-span-3 md:col-span-3 row-span-3",
-        },
-        {
-            src: "/assets/authors/marine-and-pomsky-in-grass.jpeg",
-            alt: "Marine avec un chien dans le jardin",
-            className: "col-span-3 md:col-span-3 row-span-3",
-        },
-        {
-            src: "/assets/authors/marine-and-a-puppy-pomsky-in-sofa.jpeg",
-            alt: "Marine avec un chiot sur le canapé",
-            className: "col-span-6 md:col-span-6 row-span-6 md:row-span-6",
-        },
+        }
     ]
 
     return (
