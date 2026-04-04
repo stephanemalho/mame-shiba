@@ -272,11 +272,11 @@ export default function AdoptionGuidePage() {
                             </Badge>
                             <div className="space-y-4">
                                 <h1 className="text-2xl font-bold md:text-3xl">
-                                    Réussir l&apos;adoption de son chiot Mame Shiba : le jour du départ, l&apos;arrivée à la maison et les premières semaines
+                                    Réussir l&apos;adoption de son chiot le jour du départ, l&apos;arrivée à la maison et les premières semaines
                                 </h1>
                                 <p className="max-w-3xl text-muted-foreground">
                                     Une adoption réussie se prépare avant même le trajet. Le jour J, l&apos;objectif n&apos;est pas d&apos;en faire trop, mais
-                                    d&apos;offrir à votre chiot Mame Shiba un départ doux, prévisible et rassurant.
+                                    d&apos;offrir à votre chiot un départ doux, prévisible et rassurant.
                                 </p>
                                 <p className="max-w-3xl text-muted-foreground">
                                     Cette page réunit les repères essentiels pour les futures familles : trajet en voiture, train ou avion,
@@ -428,6 +428,36 @@ export default function AdoptionGuidePage() {
                         </div>
                     </section>
 
+                    <section className="grid gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+                        <figure className="space-y-3">
+                            <div className="relative min-h-120 overflow-hidden rounded-3xl">
+                                <Image
+                                    src="/pages/adoption/Kaito-7mois-adore-les-hotel.jpg"
+                                    alt="Kaito à 7 mois à l arrivée à son hôtel après le trajet"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 40vw, 100vw"
+                                />
+                            </div>
+                            <figcaption className="text-sm text-muted-foreground">
+                                Kaito à 7 mois à l&apos;arrivée à son hôtel
+                            </figcaption>
+                        </figure>
+                        <div className="space-y-4">
+                            <Badge variant="secondary" className="w-fit">
+                                Après le trajet
+                            </Badge>
+                            <h2 className="text-xl font-bold md:text-2xl">
+                                Une étape calme aide beaucoup le chiot à rester disponible
+                            </h2>
+                            <p className="text-muted-foreground">
+                                Quand un arrêt à l&apos;hôtel ou une nuit de transition est nécessaire, l&apos;objectif reste le même :
+                                peu de bruit, peu de sollicitations, un couchage simple et des repères stables. Plus l&apos;environnement
+                                est lisible, plus le chiot récupère facilement du trajet.
+                            </p>
+                        </div>
+                    </section>
+
                     <section className="grid gap-8 md:grid-cols-[1fr_0.9fr]">
                         <div className="space-y-6">
                             <div className="space-y-3">
@@ -539,15 +569,20 @@ export default function AdoptionGuidePage() {
                             <p className="text-muted-foreground">
                                 Cette page vous donne les bases pour bien démarrer. Pour compléter votre préparation, nous vous conseillons aussi de parcourir nos pages de fond sur la race, le prix, les réservations et nos articles de blog.
                             </p>
-                            <div className="relative min-h-96 overflow-hidden rounded-3xl">
-                                <Image
-                                    src="/pages/homePage/little-mame-shiba-red-white.jpeg"
-                                    alt="Jeune mameshiba dans un moment calme avec sa future famille en perspective"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(min-width: 768px) 40vw, 100vw"
-                                />
-                            </div>
+                            <figure>
+                                <div className="relative min-h-140 overflow-hidden rounded-3xl">
+                                    <Image
+                                        src="/pages/adoption/kaito-7-mois-en-voiture.jpg"
+                                        alt="Jeune mameshiba dans un moment calme avec sa future famille en perspective"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 40vw, 100vw"
+                                    />
+                                </div>
+                                <figcaption className="mt-3 text-sm text-muted-foreground">
+                                    Kaito à 7 mois, il adore dormir en voiture
+                                </figcaption>
+                            </figure>
                         </div>
                         <div className="grid gap-4">
                             {resources.map((resource) => (
