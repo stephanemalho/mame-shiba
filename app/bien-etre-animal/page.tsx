@@ -173,12 +173,20 @@ export default function SejoursPage() {
                         <section className="bg-muted/30 -mx-4 px-4 py-16 rounded-lg">
                             <div className="grid md:grid-cols-2 gap-12 items-center">
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden md:order-2">
-                                    {/* @TODO RECTIFIER LES IMAGES DES CHIENS */}
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/pomsky-joue-avec-balle-plastique.webp",
-                                            "pages/conditions-de-vie/chiots-jouent-dans-bac-a-boules.webp",
-                                            "pages/conditions-de-vie/ensemble-de-jouets-pour-chiots.webp",
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-sur-structure-bois-01.webp",
+                                                alt: "Mameshiba en découverte sur une structure en bois",
+                                            },
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-parmi-les-branches.webp",
+                                                alt: "Mameshiba observant son environnement pendant une phase de découverte",
+                                            },
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-jardin-course-02.webp",
+                                                alt: "Mameshiba en mouvement pendant une séance de jeux d'éveil",
+                                            },
                                         ]}
                                         alt="Carrousel d'images montrant les jeux et activités de nos chiots"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
@@ -225,10 +233,18 @@ export default function SejoursPage() {
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden">
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/sortie-encadree-avec-marine.webp",
-                                            "pages/conditions-de-vie/marine-joue-avec-les-chiots.webp",
-                                            "pages/conditions-de-vie/sortie-avec-les-pomsky-adultes.webp",
-                                            "pages/conditions-de-vie/pomsky-adulte-joue-avec-marine.webp"
+                                            {
+                                                src: "/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp",
+                                                alt: "Parc extérieur clôturé de l'élevage pour les sorties quotidiennes",
+                                            },
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-en-laisse-herbe-01.webp",
+                                                alt: "Mameshiba accompagné en longe pendant une sortie encadrée",
+                                            },
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-jardin-ensemble-03.webp",
+                                                alt: "Mameshiba évoluant dans un espace extérieur sécurisé de l'élevage",
+                                            },
                                         ]}
                                         alt="Carrousel d images de chiots et d adultes jouant en plein air sous encadrement"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
@@ -243,9 +259,14 @@ export default function SejoursPage() {
                                 <div className="relative h-80 rounded-lg overflow-hidden md:order-2">
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/pomsky-nurcery-veterinaire.webp",
-                                            "pages/conditions-de-vie/nourriture-des-pomsky.webp",
-                                            "pages/conditions-de-vie/nourrite-des-chiots-marque.webp"
+                                            {
+                                                src: "/pages/conditions-de-vie/nourrite-des-chiots-marque.webp",
+                                                alt: "Alimentation remise au départ pour accompagner la transition du chiot",
+                                            },
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-interieur-textile-01.webp",
+                                                alt: "Mameshiba au calme dans un environnement intérieur soigné",
+                                            },
                                         ]}
                                         alt="Carrousel d'images de l'alimentation et les soins des chiots et des chiens adultes reproducteurs"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
@@ -266,7 +287,7 @@ export default function SejoursPage() {
                             </div>
                         </section>
                         {/* Chambres */}
-                        <section>
+                        {/* <section>
                             <div className="grid md:grid-cols-2 gap-12 items-center">
                                 <div className="space-y-6">
                                     <Badge variant="secondary" className="w-fit">
@@ -282,8 +303,14 @@ export default function SejoursPage() {
                                 <div className="relative h-104 md:h-180 rounded-lg overflow-hidden">
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/la-maman-et-son-chiot-avec-marine.webp",
-                                            "pages/conditions-de-vie/pomsky-femmel-et-son-chiot-avec-marine.webp",
+                                            {
+                                                src: "/pages/image-all-shiba/mameshiba-interieur-textile-01.webp",
+                                                alt: "Mameshiba au repos dans un espace intérieur calme et rassurant",
+                                            },
+                                            {
+                                                src: "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg",
+                                                alt: "Jeune chiot Mameshiba dans une ambiance calme et douce",
+                                            },
                                         ]}
                                         alt="Carrousel d images des chiots avec leurs mamans et l eleveuse"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
@@ -291,7 +318,7 @@ export default function SejoursPage() {
                                     />
                                 </div>
                             </div>
-                        </section>
+                        </section> */}
                     </div>
                     {/* Programme Type */}
                     <section className="mt-16">
@@ -375,7 +402,7 @@ export default function SejoursPage() {
                         </p>
                         <Link
                             href="/contact"
-                            className="mt-6 flex w-fit items-center justify-center rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            className="mt-6 m-auto flex w-fit items-center justify-center rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >Contacter l&apos;élevage</Link>
                         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-3 text-muted-foreground">
                             <PawPrint className="h-5 w-5" aria-hidden="true" />

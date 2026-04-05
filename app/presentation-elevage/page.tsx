@@ -139,7 +139,7 @@ export default function PresentationPage() {
                                     un lien solide avec sa future famille.
                                 </p>
                             </div>
-                            <div className="relative h-64 md:h-100 rounded-lg overflow-hidden">
+                            <div className="relative h-82 md:h-100 rounded-lg overflow-hidden">
                                 <Image
                                     src="/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp"
                                     alt="Espaces extérieurs sécurisés de l'élevage pour les Mameshiba"
@@ -209,7 +209,7 @@ export default function PresentationPage() {
 
                     <section className="mb-16">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
-                            <div className="relative h-64 md:h-100 rounded-lg overflow-hidden md:order-2">
+                            <div className="relative h-82 md:h-100 rounded-lg overflow-hidden md:order-2">
                                 <Image
                                     src="/pages/image-all-shiba/mameshiba-parmi-les-branches.webp"
                                     alt="Mameshiba attentif au milieu des branches"
@@ -281,7 +281,7 @@ export default function PresentationPage() {
 
                         <div className="grid gap-6 md:grid-cols-3">
                             <figure className="space-y-3">
-                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                <div className="relative h-82 rounded-lg overflow-hidden">
                                     <Image
                                         src="/pages/image-all-shiba/humain-avec-mameshiba-exterieur-02.jpeg"
                                         alt="Interaction en extérieur entre l'éleveuse et un Mameshiba"
@@ -298,7 +298,7 @@ export default function PresentationPage() {
                             </figure>
 
                             <figure className="space-y-3">
-                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                <div className="relative h-82 rounded-lg overflow-hidden">
                                     <Image
                                         src="/pages/image-all-shiba/mameshiba-jardin-01.webp"
                                         alt="Mameshiba évoluant librement dans les espaces extérieurs de l'élevage"
@@ -315,7 +315,7 @@ export default function PresentationPage() {
                             </figure>
 
                             <figure className="space-y-3">
-                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                <div className="relative h-82 rounded-lg overflow-hidden">
                                     <Image
                                         src="/pages/image-all-shiba/mameshiba-en-laisse-parc-01.webp"
                                         alt="Mameshiba accompagné en laisse lors d'une sortie en extérieur"
@@ -352,7 +352,7 @@ export default function PresentationPage() {
 
                         <div className="grid gap-6 md:grid-cols-3">
                             <figure className="space-y-3">
-                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                <div className="relative h-82 rounded-lg overflow-hidden">
                                     <Image
                                         src="/pages/image-all-shiba/mameshiba-en-laisse-herbe-01.webp"
                                         alt="Mameshiba en longe dans l'herbe"
@@ -369,7 +369,7 @@ export default function PresentationPage() {
                             </figure>
 
                             <figure className="space-y-3">
-                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                <div className="relative h-82 rounded-lg overflow-hidden">
                                     <Image
                                         src="/pages/image-all-shiba/mameshiba-jardin-ensemble-02.webp"
                                         alt="Mameshiba évoluant en extérieur dans l'environnement de l'élevage"
@@ -387,7 +387,7 @@ export default function PresentationPage() {
                             </figure>
 
                             <figure className="space-y-3">
-                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                <div className="relative h-82 rounded-lg overflow-hidden">
                                     <Image
                                         src="/pages/image-all-shiba/mameshiba-en-laisse-avec-humain-01.webp"
                                         alt="Mameshiba en laisse avec un humain pendant un apprentissage en extérieur"

@@ -9,7 +9,7 @@ import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig, 
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { Banknote, Heart, NotebookText, PawPrint, ShieldCheck, Sprout } from "lucide-react"
 
-const mameshibaPriceOgJpg = "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg"
+const mameshibaPriceOgJpg = "/pages/image-all-shiba/mameshiba-exterieur-profil-01.webp"
 
 export const metadata: Metadata = {
     title: pageMetadata.mameshibaPrice.title,
