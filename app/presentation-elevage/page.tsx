@@ -279,23 +279,58 @@ export default function PresentationPage() {
                             </CardContent>
                         </Card>
 
-                        <figure className="space-y-3">
-                            <div className="relative h-72 md:h-[420px] rounded-lg overflow-hidden">
-                                <Image
-                                    src="/pages/image-all-shiba/humain-avec-mameshiba-exterieur-02.jpeg"
-                                    alt="Interaction en extérieur entre l'éleveuse et un Mameshiba"
-                                    fill
-                                    className="object-cover"
-                                    sizes="100vw"
-                                    quality={75}
-                                />
-                            </div>
-                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
-                                L’accompagnement ne se limite pas au départ du chiot : il commence dans la relation
-                                construite à l’élevage, avec de l’observation, de la disponibilité et un humain qui
-                                devient progressivement un point de repère fiable.
-                            </figcaption>
-                        </figure>
+                        <div className="grid gap-6 md:grid-cols-3">
+                            <figure className="space-y-3">
+                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                    <Image
+                                        src="/pages/image-all-shiba/humain-avec-mameshiba-exterieur-02.jpeg"
+                                        alt="Interaction en extérieur entre l'éleveuse et un Mameshiba"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 33vw, 100vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                    La relation commence à l’élevage, avec de l’observation, de la disponibilité et un
+                                    humain qui devient progressivement un point de repère fiable.
+                                </figcaption>
+                            </figure>
+
+                            <figure className="space-y-3">
+                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                    <Image
+                                        src="/pages/image-all-shiba/mameshiba-jardin-01.webp"
+                                        alt="Mameshiba évoluant librement dans les espaces extérieurs de l'élevage"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 33vw, 100vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                    La mise en confiance passe aussi par un environnement lisible, où le chiot peut
+                                    explorer, observer et construire ses repères à son rythme.
+                                </figcaption>
+                            </figure>
+
+                            <figure className="space-y-3">
+                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                    <Image
+                                        src="/pages/image-all-shiba/mameshiba-en-laisse-parc-01.webp"
+                                        alt="Mameshiba accompagné en laisse lors d'une sortie en extérieur"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 33vw, 100vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                    Les premières sorties se font de manière progressive pour préparer un chiot plus
+                                    serein, plus attentif et mieux accompagné dans sa future vie de famille.
+                                </figcaption>
+                            </figure>
+                        </div>
                     </section>
 
                     <section id="travail-educatif-elevage" className="mb-16 space-y-6">
