@@ -205,6 +205,21 @@ export default function NosChiotsPage() {
                                             </div>
                                         ))}
                                     </div>
+
+                                    <div className="flex flex-col gap-3 sm:flex-row">
+                                        <Link
+                                            href="https://forms.gle/myGmQAj5Kim6UnVx8"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                        >
+                                            Rejoindre la liste d&apos;attente
+                                        </Link>
+                                        <p className="text-sm text-muted-foreground sm:max-w-sm">
+                                            Remplissez le questionnaire pour nous présenter votre projet et être recontacté
+                                            pour la prochaine portée.
+                                        </p>
+                                    </div>
                                 </CardContent>
                             </Card>
 
