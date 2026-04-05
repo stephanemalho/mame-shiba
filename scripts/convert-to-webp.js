@@ -3,6 +3,10 @@ const fs = require("fs");
 const path = require("path");
 
 const publicDir = path.join(__dirname, "..", "public");
+const targetArg = process.argv[2];
+const targetDir = targetArg
+    ? path.resolve(__dirname, "..", targetArg)
+    : publicDir;
 const imageExtensions = [".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"];
 
 let totalOriginalSize = 0;
@@ -64,20 +68,25 @@ async function scanDirectory(dir) {
 async function main() {
     console.log("🖼️  Starting image conversion to WebP...\n");
 
-    await scanDirectory(publicDir);
+    if (!fs.existsSync(targetDir)) {
+        throw new Error(`Directory not found: ${targetDir}`);
+    }
+
+    await scanDirectory(targetDir);
+
+    const originalSizeMb = totalOriginalSize / 1024 / 1024;
+    const webpSizeMb = totalWebpSize / 1024 / 1024;
+    const totalReduction =
+        totalOriginalSize > 0
+            ? ((1 - totalWebpSize / totalOriginalSize) * 100).toFixed(1)
+            : "0.0";
 
     console.log("\n📊 Conversion Summary:");
     console.log(`   Files converted: ${convertedCount}`);
-    console.log(
-        `   Original size: ${(totalOriginalSize / 1024 / 1024).toFixed(2)} MB`
-    );
-    console.log(`   WebP size: ${(totalWebpSize / 1024 / 1024).toFixed(2)} MB`);
-    console.log(
-        `   Total reduction: ${(
-            (1 - totalWebpSize / totalOriginalSize) *
-            100
-        ).toFixed(1)}%`
-    );
+    console.log(`   Scanned directory: ${targetDir}`);
+    console.log(`   Original size: ${originalSizeMb.toFixed(2)} MB`);
+    console.log(`   WebP size: ${webpSizeMb.toFixed(2)} MB`);
+    console.log(`   Total reduction: ${totalReduction}%`);
     console.log(
         "\n✨ Done! You can now update your code to use .webp extensions."
     );
