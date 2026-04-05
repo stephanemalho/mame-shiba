@@ -264,6 +264,42 @@ export default function ContactPage() {
                         </Card>
                     </div>
 
+                    <section className="mt-16 grid gap-6 md:grid-cols-2">
+                        <figure className="space-y-3">
+                            <div className="relative h-72 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/pages/image-all-shiba/jardin-cloture-elevage-vertical.webp"
+                                    alt="Vue d'un espace extérieur sécurisé de l'élevage"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 50vw, 100vw"
+                                    quality={75}
+                                />
+                            </div>
+                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                Une visite se prépare toujours sur rendez-vous, dans un cadre calme qui nous permet
+                                d’échanger sérieusement sur votre projet et sur la réalité du Mameshiba.
+                            </figcaption>
+                        </figure>
+
+                        <figure className="space-y-3">
+                            <div className="relative h-72 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/pages/image-all-shiba/mameshiba-exterieur-portrait-01.webp"
+                                    alt="Mameshiba observant son environnement en extérieur"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 50vw, 100vw"
+                                    quality={75}
+                                />
+                            </div>
+                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                Le premier contact sert aussi à vérifier que le tempérament du Mameshiba correspond
+                                réellement à votre mode de vie, à vos attentes et à votre cadre familial.
+                            </figcaption>
+                        </figure>
+                    </section>
+
                     <InternalLinksSection
                         title="Avant ou après nous avoir écrit"
                         description="Voici les pages les plus utiles pour mieux préparer votre prise de contact et situer votre projet d’adoption."

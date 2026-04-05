@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { FAQSection } from "@/components/faq"
 import { faqNosChiots } from "@/lib/faq-data"
 import { Calendar, Dog, Heart, NotebookText, PawPrint, Phone, Mail, Sprout } from "lucide-react"
@@ -328,6 +329,59 @@ export default function NosChiotsPage() {
                         >
                             Voir les conditions de vie des chiots
                         </Link>
+                    </section>
+
+                    <section className="mt-12 grid gap-6 md:grid-cols-3">
+                        <figure className="space-y-3">
+                            <div className="relative h-64 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/pages/image-all-shiba/mameshiba-jardin-course-01.webp"
+                                    alt="Mameshiba en mouvement dans le jardin de l'élevage"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 33vw, 100vw"
+                                    quality={75}
+                                />
+                            </div>
+                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                Des portées pensées avec soin visent des chiots vifs, équilibrés et à l’aise dans
+                                leurs découvertes dès les premières semaines.
+                            </figcaption>
+                        </figure>
+
+                        <figure className="space-y-3">
+                            <div className="relative h-64 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/pages/image-all-shiba/mameshiba-jardin-ensemble-01.webp"
+                                    alt="Mameshiba évoluant dans l'environnement extérieur de l'élevage"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 33vw, 100vw"
+                                    quality={75}
+                                />
+                            </div>
+                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                Le travail autour des futures portées commence par un cadre de vie stable, de
+                                l’observation et une attention constante portée à l’équilibre des chiens.
+                            </figcaption>
+                        </figure>
+
+                        <figure className="space-y-3">
+                            <div className="relative h-64 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/pages/image-all-shiba/mameshiba-exterieur-profil-01.webp"
+                                    alt="Portrait de Mameshiba en extérieur dans un moment calme"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 33vw, 100vw"
+                                    quality={75}
+                                />
+                            </div>
+                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                Attendre la bonne portée, c’est aussi respecter le rythme des reproducteurs et garder
+                                une sélection cohérente, plutôt que produire vite.
+                            </figcaption>
+                        </figure>
                     </section>
 
                     <InternalLinksSection
