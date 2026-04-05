@@ -22,6 +22,15 @@ const supportSectionParagraphs = [
     "Il faudra surtout appliquer nos précieux conseils au quotidien et nous faire confiance !",
 ]
 
+const educationalWorkSectionParagraphs = [
+    "Le rappel doit être travaillé sur la base de la motivation le plus tôt possible, c’est pourquoi nous commençons à leur enseigner le rappel aussi tôt que faire se peut. Nous mettons en place le suivi naturel qui encourage votre chiot à prendre un humain comme point de repère, apprécier le contact à l’humain dans les vastes étendues.",
+    "Votre chiot par donc avec la connaissance du rappel en lieu clos, vaste ou avec peu de distraction en extérieur : il est rapide à acquérir avec un MAMESHIBA s’il est pratiqué de façon journalière. Ensuite, nous allons vous guider, mais il faudra toujours travailler progressivement et de façon régulière, avec l’aide d’une grande longe. Avec de la patience, du temps, de la vigilance, de la motivation, et de l’amour, absolument tout est réalisable !",
+    "La propreté : votre chiot MAMESHIBA partira avec l’habitude de faire ses besoins dans un lieu pré défini, et sur tous types de substrats naturels : cela l’aidera durant la phase d’adaptation chez vous et facilitera l’apprentissage de la propreté en appartement.",
+    "La socialisation : votre chiot sera sociabilisé aux bruits divers qui feront partie de son quotidien : bruits de la maison, bruits forts, des véhicules, de la musique, aspirateur, bruits de la nature, de la circulation, mouvements, jeux de lumières, tonnerre, feux d’artifices, hall de gare etc… il sera également au contact avec d’autres chiens adultes qui effectueront l’apprentissage de la communication canine appelée également les « codes canins » afin de savoir se comporter avec les autres chiens, apprendre la morsure inhibée etc…",
+    "Cette sociabilisation vis à vis des autres chien devra être maintenue tout au long de la vie du chien afin que cet apprentissage de codes canins puisse se compléter, s’améliorer, et que ses acquis demeurent intacts. Pour cela il y’a groupes de balade ou des clubs d’éducation canines qui proposent des sorties collectives.",
+    "La manipulation : Nos chiots sont manipulés et stimulés le plus tôt possible grâce à la méthode de stimulation neurologique précoce dite Bio Sensor, ils sont ensuite manipulés chaque jour, et reçoivent énormément d’affection, ils adorent le contact humain et sont à l’aise lors de la manipulation.",
+]
+
 const presentationInternalLinks: InternalLinkItem[] = [
     {
         href: "/presentation-eleveuses",
@@ -112,7 +121,12 @@ export default function PresentationPage() {
                                 <h2 className="text-xl md:text-2xl font-bold">
                                     Faire naître des Mameshiba bien dans leur tête
                                 </h2>
-                                 <p className="text-muted-foreground leading-relaxed">Fort de notre expérience dans le domaine de l’élevage canin ainsi que celui de l’éducation et la rééducation canine, nous avons choisi de nous investir dans le développement de cette nouvelle race en création qu’est le MAMESHIBA, un SHIBA INU, mais de taille miniature. E</p>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Fort de notre expérience dans le domaine de l’élevage canin ainsi que celui de
+                                    l’éducation et la rééducation canine, nous avons choisi de nous investir dans le
+                                    développement de cette nouvelle race en création qu’est le MAMESHIBA, un SHIBA INU,
+                                    mais de taille miniature.
+                                </p>
                                 <p className="text-muted-foreground leading-relaxed">
                                     Notre travail commence bien avant la naissance : choix des lignées, respect du rythme
                                     des reproducteurs, suivi sanitaire et attention constante à l’équilibre émotionnel.
@@ -127,8 +141,8 @@ export default function PresentationPage() {
                             </div>
                             <div className="relative h-64 md:h-100 rounded-lg overflow-hidden">
                                 <Image
-                                    src="/pages/presentation-elevage/Yuzu-femelle-mame-shiba-couleur-feu.webp"
-                                    alt="Chiot mameshiba couleur feu dans un decor vert"
+                                    src="/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp"
+                                    alt="Espaces extérieurs sécurisés de l'élevage pour les Mameshiba"
                                     fill
                                     className="object-cover"
                                     priority
@@ -197,8 +211,8 @@ export default function PresentationPage() {
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div className="relative h-64 md:h-100 rounded-lg overflow-hidden md:order-2">
                                 <Image
-                                    src="/pages/presentation-elevage/Karasuki.webp"
-                                    alt="Mameshiba caché dans l'herbe"
+                                    src="/pages/image-all-shiba/mameshiba-parmi-les-branches.webp"
+                                    alt="Mameshiba attentif au milieu des branches"
                                     fill
                                     className="object-cover"
                                     sizes="(min-width: 768px) 50vw, 100vw"
@@ -264,6 +278,96 @@ export default function PresentationPage() {
                                 ))}
                             </CardContent>
                         </Card>
+
+                        <figure className="space-y-3">
+                            <div className="relative h-72 md:h-[420px] rounded-lg overflow-hidden">
+                                <Image
+                                    src="/pages/image-all-shiba/humain-avec-mameshiba-exterieur-02.jpeg"
+                                    alt="Interaction en extérieur entre l'éleveuse et un Mameshiba"
+                                    fill
+                                    className="object-cover"
+                                    sizes="100vw"
+                                    quality={75}
+                                />
+                            </div>
+                            <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                L’accompagnement ne se limite pas au départ du chiot : il commence dans la relation
+                                construite à l’élevage, avec de l’observation, de la disponibilité et un humain qui
+                                devient progressivement un point de repère fiable.
+                            </figcaption>
+                        </figure>
+                    </section>
+
+                    <section id="travail-educatif-elevage" className="mb-16 space-y-6">
+                        <div className="text-center space-y-3">
+                            <h2 className="text-xl md:text-2xl font-bold">LE TRAVAIL EDUCATIF EFFECTUE DANS NOTRE ELEVAGE :</h2>
+                            <p className="text-muted-foreground max-w-3xl mx-auto">
+                                Cette partie détaille plus concrètement ce que nous mettons déjà en place avant le départ du chiot.
+                            </p>
+                            <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
+                        </div>
+
+                        <Card className="bg-muted/60">
+                            <CardContent className="px-6 py-8 md:px-10 space-y-5 text-muted-foreground leading-relaxed">
+                                {educationalWorkSectionParagraphs.map((paragraph, index) => (
+                                    <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>
+                                ))}
+                            </CardContent>
+                        </Card>
+
+                        <div className="grid gap-6 md:grid-cols-3">
+                            <figure className="space-y-3">
+                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                    <Image
+                                        src="/pages/image-all-shiba/mameshiba-en-laisse-herbe-01.webp"
+                                        alt="Mameshiba en longe dans l'herbe"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 33vw, 100vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                    Le rappel s’apprend tôt, dans le calme et sur la motivation, afin que le chiot
+                                    associe naturellement l’humain à un repère sécurisant.
+                                </figcaption>
+                            </figure>
+
+                            <figure className="space-y-3">
+                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                    <Image
+                                        src="/pages/image-all-shiba/mameshiba-jardin-ensemble-02.webp"
+                                        alt="Mameshiba évoluant en extérieur dans l'environnement de l'élevage"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 33vw, 100vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                    L’environnement de l’élevage sert aussi la socialisation : exploration, repères,
+                                    mouvements et découvertes se construisent progressivement avant l’arrivée dans la
+                                    famille.
+                                </figcaption>
+                            </figure>
+
+                            <figure className="space-y-3">
+                                <div className="relative h-64 rounded-lg overflow-hidden">
+                                    <Image
+                                        src="/pages/image-all-shiba/mameshiba-en-laisse-avec-humain-01.webp"
+                                        alt="Mameshiba en laisse avec un humain pendant un apprentissage en extérieur"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 33vw, 100vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <figcaption className="text-sm leading-relaxed text-muted-foreground">
+                                    La manipulation, le contact humain et les premiers apprentissages se travaillent
+                                    ensemble pour préparer un chiot plus confiant, plus lisible et plus disponible.
+                                </figcaption>
+                            </figure>
+                        </div>
                     </section>
 
                     <section className="mb-16 bg-muted/30 -mx-4 px-4 py-16 rounded-lg">

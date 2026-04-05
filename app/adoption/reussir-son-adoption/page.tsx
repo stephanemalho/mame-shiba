@@ -134,6 +134,11 @@ const resources = filterBlogLinks([
         description: "Consultez les disponibilités actuelles et les informations pratiques liées aux réservations.",
     },
     {
+        title: "Comprendre le travail éducatif à l’élevage",
+        href: "/presentation-elevage#travail-educatif-elevage",
+        description: "Voir ce que nous commençons déjà à travailler sur le rappel, la propreté, la socialisation et la manipulation.",
+    },
+    {
         title: "Lire nos articles de blog",
         href: "/blog/mame-shiba",
         description: "Des contenus complémentaires sur le Shiba Inu, le Mameshiba et la vie quotidienne avec un chien japonais.",

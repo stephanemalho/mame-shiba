@@ -22,6 +22,11 @@ const wellnessInternalLinks: InternalLinkItem[] = [
         description: "Relier ce quotidien à notre philosophie, à notre sélection et à notre façon de travailler.",
     },
     {
+        href: "/presentation-elevage#travail-educatif-elevage",
+        title: "Voir le travail éducatif",
+        description: "Retrouver le rappel, la propreté, la socialisation et la manipulation déjà travaillés à l’élevage.",
+    },
+    {
         href: "/adoption/reussir-son-adoption",
         title: "Préparer l’arrivée du chiot",
         description: "Anticiper les premiers jours à la maison après cette phase d’élevage et de socialisation.",
@@ -385,4 +390,3 @@ export default function SejoursPage() {
         </>
     )
 }
-
