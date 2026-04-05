@@ -114,8 +114,9 @@ export default function HomePage() {
                     <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
                       Kawaii Shiba
                     </div>
-                    <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-white md:text-4xl lg:text-5xl">
-                      Bienvenue dans notre élevage de Mameshiba - Kawaii Shiba-MAMESHIBA
+                    <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-white md:text-4xl">
+                      Bienvenue dans notre élevage Kawaii - Shiba
+                      MAMESHIBA
                     </h1>
                   </div>
                 </div>

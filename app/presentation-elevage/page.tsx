@@ -14,6 +14,14 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 
 const pageImage = "/pages/homePage/mame-shiba-good-caractere.jpg"
 
+const supportSectionParagraphs = [
+    "Etant titulaire d’un diplôme d’éducateur canin / rééducateur spécialisé au comportement, j’analyse parfaitement le comportement de nos chiens adultes, et de chacun de nos chiots durant leur période de développement et d’apprentissage. Je me fie également énormément à mon ressenti concernant la compatibilité de chaque chiot avec sa famille future.",
+    "Nous veillons à ce que chaque chiot qui partira puisse parfaitement s’intégrer au sein de votre foyer grâce à une excellente sociabilisation et une grande disponibilité de notre part.",
+    "Nous vous guiderons dans le choix, l’éducation de votre chiot MAMESHIBA, et ce avant, pendant et après l’adoption. Nous nous engageons à vous apporter les meilleurs conseils en la matière pour que vous puissiez avoir les clés de la réussite concernant l’éducation de votre chiot. Un guide de conseils sera envoyé à chaque adoptant, une prise de nouvelles régulières, et un suivi même à distance, sera effectué continuellement.",
+    "Il n’est pas nécessaire d’être expérimenté pour adopter un MAMESHIBA, cependant il faut se passionner pour cette race de chien, et s’intéresser de près au méthodes éducatives, lire, se renseigner, être curieux, avoir soif d’apprendre, ne pas hésiter à demander les conseils d’un éducateur canin qui travaille avec des méthodes positives afin de pouvoir vous « coacher » si cela est nécessaire. Il faut lui accorder le temps de dépense physique intellectuelle nécessaire à son bien être.",
+    "Il faudra surtout appliquer nos précieux conseils au quotidien et nous faire confiance !",
+]
+
 const presentationInternalLinks: InternalLinkItem[] = [
     {
         href: "/presentation-eleveuses",
@@ -104,6 +112,7 @@ export default function PresentationPage() {
                                 <h2 className="text-xl md:text-2xl font-bold">
                                     Faire naître des Mameshiba bien dans leur tête
                                 </h2>
+                                 <p className="text-muted-foreground leading-relaxed">Fort de notre expérience dans le domaine de l’élevage canin ainsi que celui de l’éducation et la rééducation canine, nous avons choisi de nous investir dans le développement de cette nouvelle race en création qu’est le MAMESHIBA, un SHIBA INU, mais de taille miniature. E</p>
                                 <p className="text-muted-foreground leading-relaxed">
                                     Notre travail commence bien avant la naissance : choix des lignées, respect du rythme
                                     des reproducteurs, suivi sanitaire et attention constante à l’équilibre émotionnel.
@@ -237,6 +246,24 @@ export default function PresentationPage() {
                                 </Link>
                             </div>
                         </div>
+                    </section>
+
+                    <section className="mb-16 space-y-6">
+                        <div className="text-center space-y-3">
+                            <h2 className="text-xl md:text-2xl font-bold">L’EDUCATION DU MAMESHIBA :</h2>
+                            <p className="text-muted-foreground max-w-3xl mx-auto">
+                                Cette partie relève surtout de notre manière d’accompagner les chiots et les familles dans le temps.
+                            </p>
+                            <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
+                        </div>
+
+                        <Card className="bg-muted/60">
+                            <CardContent className="px-6 py-8 md:px-10 space-y-5 text-muted-foreground leading-relaxed">
+                                {supportSectionParagraphs.map((paragraph, index) => (
+                                    <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>
+                                ))}
+                            </CardContent>
+                        </Card>
                     </section>
 
                     <section className="mb-16 bg-muted/30 -mx-4 px-4 py-16 rounded-lg">
