@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 import BlogList from "@/app/blog/_components/BlogList";
+import { isBlogEnabled } from "@/lib/blog-visibility";
 import { buildOpenGraph, buildTwitter, pageMetadata, siteConfig } from "@/lib/seo-config";
 import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema-generators";
 
@@ -34,6 +36,10 @@ export const metadata: Metadata = {
 };
 
 export default function MameShibaBlogPage() {
+    if (!isBlogEnabled) {
+        notFound();
+    }
+
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
         { name: "Blog Mameshiba", url: "/blog/mame-shiba" },

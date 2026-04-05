@@ -18,6 +18,7 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
+import { filterBlogLinks } from "@/lib/blog-visibility"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
@@ -116,7 +117,7 @@ const pottySchedule = [
     { age: "Jusqu'à 6 mois", rhythm: "la retenue reste limitée", note: "on garde des sorties fréquentes sans attendre un contrôle complet trop tôt" },
 ]
 
-const resources = [
+const resources = filterBlogLinks([
     {
         title: "Bien comprendre le Mameshiba",
         href: "/mameshiba",
@@ -137,7 +138,7 @@ const resources = [
         href: "/blog/mame-shiba",
         description: "Des contenus complémentaires sur le Shiba Inu, le Mameshiba et la vie quotidienne avec un chien japonais.",
     },
-]
+])
 
 const adoptionGuideFaq = [
     {

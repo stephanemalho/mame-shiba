@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isBlogEnabled = process.env.NEXT_PUBLIC_ENABLE_BLOG !== "false";
+
 const nextConfig: NextConfig = {
     async redirects() {
         return [
@@ -15,12 +17,16 @@ const nextConfig: NextConfig = {
             },
             {
                 source: "/le-shiba-inu/",
-                destination: "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix",
+                destination: isBlogEnabled
+                    ? "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix"
+                    : "/mameshiba",
                 permanent: true
             },
             {
                 source: "/le-shiba-inu",
-                destination: "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix",
+                destination: isBlogEnabled
+                    ? "/blog/mame-shiba/sante/le-shiba-inu-caractere-sante-alimentation-prix"
+                    : "/mameshiba",
                 permanent: true
             }
         ];

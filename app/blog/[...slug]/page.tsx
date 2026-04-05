@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection";
 import { blog } from "@/constants/blog/blog";
+import { isBlogEnabled } from "@/lib/blog-visibility";
 import { buildOpenGraph, buildTwitter, pageMetadata, resolveSocialImage, seoLastmod, siteConfig } from "@/lib/seo-config";
 import { generateBlogPostingSchema, generateBreadcrumbSchema } from "@/lib/schema-generators";
 import type { BlogPost } from "@/constants/blog/blogTypes";
@@ -51,12 +52,20 @@ const blogInternalLinks: InternalLinkItem[] = [
 ];
 
 export function generateStaticParams() {
+    if (!isBlogEnabled) {
+        return [];
+    }
+
     return blog.posts.map((post) => ({ slug: post.slug.split("/") }));
 }
 
 export async function generateMetadata({
     params,
 }: BlogArticlePageProps): Promise<Metadata> {
+    if (!isBlogEnabled) {
+        notFound();
+    }
+
     const resolvedParams = await params;
     const slug = Array.isArray(resolvedParams.slug)
         ? resolvedParams.slug.map((segment) => decodeURIComponent(segment)).join("/")
@@ -127,6 +136,10 @@ export async function generateMetadata({
 export default async function BlogArticlePage({
     params,
 }: BlogArticlePageProps) {
+    if (!isBlogEnabled) {
+        notFound();
+    }
+
     const resolvedParams = await params;
     const slug = Array.isArray(resolvedParams.slug)
         ? resolvedParams.slug.map((segment) => decodeURIComponent(segment)).join("/")

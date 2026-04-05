@@ -3,6 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { isBlogEnabled } from "@/lib/blog-visibility"
 import { cn } from "@/lib/utils"
 import {
     NavigationMenu,
@@ -84,6 +85,12 @@ const navGroups = [
 
 export function DesktopNav() {
     const pathname = usePathname()
+    const visibleNavGroups = navGroups.map((group) => ({
+        ...group,
+        items: isBlogEnabled
+            ? group.items
+            : group.items.filter((item) => !item.href.startsWith("/blog")),
+    }))
 
     return (
         <NavigationMenu className="hidden lg:flex" aria-label="Navigation principale">
@@ -103,7 +110,7 @@ export function DesktopNav() {
                     </NavigationMenuLink>
                 </NavigationMenuItem>
 
-                {navGroups.map((group) => {
+                {visibleNavGroups.map((group) => {
                     const isActive = group.items.some((item) => pathname === item.href)
                     return (
                         <NavigationMenuItem key={group.label}>

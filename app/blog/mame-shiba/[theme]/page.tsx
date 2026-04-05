@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import BlogList from "@/app/blog/_components/BlogList";
 import { blog } from "@/constants/blog/blog";
+import { isBlogEnabled } from "@/lib/blog-visibility";
 import { buildOpenGraph, buildTwitter, pageMetadata, siteConfig } from "@/lib/seo-config";
 import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema-generators";
 
@@ -11,12 +12,20 @@ type MameShibaThemePageProps = {
 };
 
 export function generateStaticParams() {
+    if (!isBlogEnabled) {
+        return [];
+    }
+
     return blog.themes.map((theme) => ({ theme: theme.slug }));
 }
 
 export async function generateMetadata({
     params,
 }: MameShibaThemePageProps): Promise<Metadata> {
+    if (!isBlogEnabled) {
+        notFound();
+    }
+
     const resolvedParams = await params;
     const theme = decodeURIComponent(resolvedParams.theme);
     const themeData = blog.themes.find((item) => item.slug === theme);
@@ -67,6 +76,10 @@ export async function generateMetadata({
 }
 
 export default async function MameShibaThemePage({ params }: MameShibaThemePageProps) {
+    if (!isBlogEnabled) {
+        notFound();
+    }
+
     const resolvedParams = await params;
     const theme = decodeURIComponent(resolvedParams.theme);
     const themeData = blog.themes.find((item) => item.slug === theme);

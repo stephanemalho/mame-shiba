@@ -1,6 +1,8 @@
 import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
 
+const BLOG_ENABLED = process.env.NEXT_PUBLIC_ENABLE_BLOG !== "false"
+
 const BLOCKED_PREFIXES = [
   "/wp-admin",
   "/wp-content",
@@ -65,6 +67,14 @@ function looksLikeInjectedCatalogPath(pathname: string) {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
+
+  if (!BLOG_ENABLED && pathname === "/blog") {
+    return new NextResponse("Not Found", { status: 404 })
+  }
+
+  if (!BLOG_ENABLED && pathname.startsWith("/blog/")) {
+    return new NextResponse("Not Found", { status: 404 })
+  }
 
   if (BLOCKED_PATHS.includes(pathname)) {
     return new NextResponse("Gone", { status: 410 })

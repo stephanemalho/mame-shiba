@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
+import { isBlogEnabled } from "@/lib/blog-visibility"
 import { cn } from "@/lib/utils"
 
 const navigation = [
@@ -25,6 +26,9 @@ const navigation = [
 export function MobileNav() {
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
+    const visibleNavigation = isBlogEnabled
+        ? navigation
+        : navigation.filter((item) => !item.href.startsWith("/blog"))
 
     return (
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -45,7 +49,7 @@ export function MobileNav() {
                     <SheetDescription>Liens principaux du site</SheetDescription>
                 </div>
                 <nav className="flex flex-col space-y-4 mt-8 p-4" aria-label="Navigation mobile">
-                    {navigation.map((item) => (
+                    {visibleNavigation.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}

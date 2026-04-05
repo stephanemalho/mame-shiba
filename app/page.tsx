@@ -8,6 +8,7 @@ import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
+import { isBlogEnabled } from "@/lib/blog-visibility"
 
 import { pageContent } from "@/lib/page-content"
 import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
@@ -289,12 +290,14 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <Link
-            href="/blog/mame-shiba"
-            className="flex my-12 m-auto w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-          >
-            En savoir plus sur le Mameshiba
-          </Link>
+          {isBlogEnabled ? (
+            <Link
+              href="/blog/mame-shiba"
+              className="flex my-12 m-auto w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              En savoir plus sur le Mameshiba
+            </Link>
+          ) : null}
         </section>
 
         {/* éleveurs */}

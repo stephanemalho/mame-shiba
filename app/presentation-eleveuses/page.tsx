@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
+import { filterBlogLinks, isBlogEnabled } from "@/lib/blog-visibility"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
@@ -13,7 +14,7 @@ import { faqEleveuses } from "@/lib/faq-data"
 
 const pageImage = "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
 
-const eleveusesInternalLinks: InternalLinkItem[] = [
+const eleveusesInternalLinks: InternalLinkItem[] = filterBlogLinks([
     {
         href: "/presentation-elevage",
         title: "Découvrir l’élevage",
@@ -34,7 +35,7 @@ const eleveusesInternalLinks: InternalLinkItem[] = [
         title: "Parler de votre projet",
         description: "Échanger directement avec nous pour préparer une rencontre ou une réservation.",
     },
-]
+])
 
 export const metadata: Metadata = {
     title: pageMetadata.eleveuses.title,
@@ -307,14 +308,16 @@ export default function PresentationEleveusesPage() {
                                         </div>
                                     </div>
 
-                                    <div className="flex md:justify-end">
-                                        <Link
-                                            href="/blog/mame-shiba"
-                                            className="inline-flex w-full items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                        >
-                                            Découvrir le blog Mameshiba
-                                        </Link>
-                                    </div>
+                                    {isBlogEnabled ? (
+                                        <div className="flex md:justify-end">
+                                            <Link
+                                                href="/blog/mame-shiba"
+                                                className="inline-flex w-full items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                            >
+                                                Découvrir le blog Mameshiba
+                                            </Link>
+                                        </div>
+                                    ) : null}
                                 </div>
                             </CardContent>
                         </Card>
