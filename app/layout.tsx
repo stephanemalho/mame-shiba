@@ -24,6 +24,18 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.author, url: siteConfig.siteUrl }],
   creator: siteConfig.author,
   publisher: siteConfig.author,
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", type: "image/png", sizes: "512x512" },
+    ],
+  },
 
   // Open Graph
   openGraph: buildOpenGraph({
