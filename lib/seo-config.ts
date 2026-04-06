@@ -347,9 +347,9 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage de chiots Mameshiba nées en France | Kawaii Shiba",
+        title: "Élevage KAWAII MAMESHIBA - Le plus petit Shiba du monde, le plus rare en France",
         description:
-            "Kawaii Shiba est un élevage spécialisé en Mameshiba. Nos chiens sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
+            "Nos chiens reproducteurs sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
@@ -400,7 +400,7 @@ export const pageMetadata = {
     mameshibaPrice: {
         title: "Prix de nos Mameshiba | Kawaii Shiba",
         description:
-            "Découvrez les prix de nos Mameshiba à l’élevage Kawaii Shiba : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
+            "Découvrez les prix de nos Mameshiba à l'élevage Kawaii Shiba : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
         keywords: [
             "prix Mameshiba",
             "prix mameshiba elevage",
@@ -414,9 +414,9 @@ export const pageMetadata = {
     },
 
     adoptionGuide: {
-        title: "Réussir l’adoption de son chiot Mameshiba | Kawaii Shiba",
+        title: "Réussir l'adoption de son chiot Mameshiba | Kawaii Shiba",
         description:
-            "Guide pratique pour réussir l’adoption d’un chiot Mameshiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
+            "Guide pratique pour réussir l'adoption d'un chiot Mameshiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
         keywords: [
             "adoption Mameshiba",
             "accueil chiot mameshiba",
@@ -560,13 +560,13 @@ export const sitemapPages = [
         url: "/",
         changefreq: "weekly",
         priority: 1.0,
-        lastmod: seoLastmod
+        lastmod: "2026-04-06"
     },
     {
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.75,
-        lastmod: seoLastmod
+        lastmod: "2026-04-06"
     },
     {
         url: "/chiots-disponibles",
@@ -584,7 +584,7 @@ export const sitemapPages = [
         url: "/mame-shiba-prix",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: seoLastmod
+        lastmod: "2026-04-06"
     },
     {
         url: "/nos-chiens",

@@ -22,6 +22,8 @@ export function InternalLinksSection({
     items,
     className,
 }: InternalLinksSectionProps) {
+    const isThreeItems = items.length === 3
+
     return (
         <section className={cn("space-y-8", className)}>
             <div className="text-center space-y-3">
@@ -32,7 +34,12 @@ export function InternalLinksSection({
                 <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
             </div>
 
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <div
+                className={cn(
+                    "grid gap-4",
+                    isThreeItems ? "md:mx-auto md:max-w-5xl md:grid-cols-3" : "md:grid-cols-2 xl:grid-cols-4"
+                )}
+            >
                 {items.map((item) => (
                     <Link
                         key={item.href}

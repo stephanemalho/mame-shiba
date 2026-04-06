@@ -11,9 +11,9 @@ export const pageContent = {
             "Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et adoration pour la culture Japonaise nous a mené tout droit jusqu'à un véritable coup de cœur : LE MAMESHIBA ! "
     },
     shiba: {
-        h1: "Tout savoir sur le Mameshiba : origines, tailles et critères d'adoption, avant de se lancer",
+        h1: "Tout savoir sur le Mameshiba : Le plus petit Shiba du monde ! origines, tailles et critères d'adoption, avant de se lancer.",
         description:
-            "Le Mameshiba est issu du Shiba Inu, race japonaise primitive reconnue au LOF pour le Shiba, mais dont la version miniature n'est pas reconnue au LOF en France. Sélectionné au Japon à partir de très petits Shiba Inu, il conserve l'allure, la vivacité et la noblesse de son ancêtre dans un format plus compact. Cette page vous aide à comprendre son origine, ses tailles, son standard et les critères à vérifier avant toute adoption.",
+            "Le Mameshiba est issu du Shiba Inu, en format miniature ! Contrairement au Shiba Inu classique, souvent réputé pour son indépendance marquée, le Mameshiba présente généralement un tempérament plus souple et plus proche de l’humain, ce qui le rend globalement plus facile à éduquer.",
         h2: "Tailles et repères du Mameshiba",
         h3Standard: "Mameshiba femelle",
         h3Miniature: "Mameshiba mâle",

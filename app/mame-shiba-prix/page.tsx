@@ -106,10 +106,6 @@ const includedItems = [
 
 const categoryGuides = [
     {
-        title: "Le prix ne remplace jamais la compatibilité",
-        text: "Le bon chiot n’est pas simplement celui qui vous plaît sur photo. Le plus important reste la cohérence entre son tempérament, votre mode de vie et le sérieux du travail mené à l’élevage.",
-    },
-    {
         title: "Le caractère compte autant que le physique",
         text: "Chez un Mameshiba, nous regardons autant l’équilibre émotionnel, la sensibilité et la qualité de la socialisation que l’esthétique du chiot.",
     },
@@ -190,11 +186,13 @@ export default function MameshibaPricePage() {
                                 Prix de nos Mameshiba
                             </Badge>
                             <h1 className="text-2xl font-bold md:text-4xl">
-                                Prix de nos Mameshiba à l’élevage Kawaii Shiba
+                                Prix de nos Mameshiba à l'élevage Kawaii Shiba
                             </h1>
                             <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">
-                                Chez Kawaii Shiba, nous souhaitons afficher nos tarifs de manière simple et lisible. Le prix de nos chiots Mameshiba est actuellement fixé à 4 500 € pour un mâle et 5 000 € pour une femelle.
+                                Chez Kawaii Shiba, nous souhaitons afficher nos
+                                tarifs de manière simple et lisible. Le prix de nos chiots Mameshiba correspond au prix d'un chiot Mameshiba au Japon : ils sont fixés à 4 500 € pour un mâle et 5 000 € pour une femelle.
                             </p>
+                            <p className="max-w-3xl text-lg leading-relaxed text-muted-foreground">Ce prix élevé est le reflet de la rareté absolue qu'est le Mameshiba. </p>
                             <p className="max-w-3xl leading-relaxed text-muted-foreground">
                                 Cette page présente nos prix à l’élevage, ce qu’ils reflètent dans notre travail et la manière dont nous accompagnons les familles avant toute réservation.
                             </p>
@@ -292,7 +290,7 @@ export default function MameshibaPricePage() {
                         <Card className="bg-muted/45">
                             <CardContent className="space-y-3 p-6 text-sm leading-relaxed text-muted-foreground md:p-8">
                                 <p>
-                                    Chez nous, le prix ne vise pas à nourrir un discours commercial flou. Il correspond à notre politique tarifaire actuelle et à une vision d’élevage centrée sur la sélection, la cohérence du type, l’équilibre du chiot et la qualité de vie qui lui est offerte.
+                                    Chez nous, le prix reflète l’absolue rareté du Mameshiba, la qualité d’un élevage centré sur la sélection, la cohérence du type, l’équilibre du chiot et la qualité de vie qui lui est offerte.
                                 </p>
                                 <p>
                                     Nous préférons une page simple, lisible et honnête : des tarifs affichés clairement, puis des explications sur ce qu’ils recouvrent dans notre travail quotidien.
@@ -384,18 +382,6 @@ export default function MameshibaPricePage() {
                                     className="object-cover"
                                     sizes="(min-width: 1024px) 35vw, 100vw"
                                 />
-                            </div>
-                            <div className="space-y-4">
-                                <Badge variant="secondary" className="w-fit">
-                                    Bien choisir
-                                </Badge>
-                                <h2 className="text-xl font-bold md:text-2xl">Comment bien lire le prix d’un chiot chez nous ?</h2>
-                                <p className="leading-relaxed text-muted-foreground">
-                                    Le bon choix ne consiste pas à regarder seulement un montant. Un projet d’adoption réussi repose surtout sur la compatibilité entre le chiot, votre mode de vie et la qualité réelle du travail mené par l’élevage.
-                                </p>
-                                <p className="leading-relaxed text-muted-foreground">
-                                    Nous vous encourageons à lire nos prix comme un repère clair, puis à regarder l’ensemble : origine, sélection, cadre de vie, socialisation, accompagnement et sérieux de la relation construite avant le départ du chiot.
-                                </p>
                             </div>
                         </div>
 

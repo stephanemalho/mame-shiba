@@ -237,6 +237,15 @@ export default function MameShibaPage() {
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 {pageContent.shiba.description}
                             </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                Sa sélection sur plusieurs générations tend à favoriser des individus plus réceptifs, plus attentifs et plus enclins à coopérer, tout en conservant le physique primitif qui fait tout son charme.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                C'est un chien extrêmement rare.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                ❤️ petit format, tempérament facile à éduquer
+                            </p>
                             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-2">
                                     <Heart className="h-4 w-4 text-primary" aria-hidden="true" />
@@ -317,9 +326,10 @@ export default function MameShibaPage() {
                                 <div className="space-y-3">
                                     <h3 className="text-2xl font-semibold">Ce que retient le standard japonais</h3>
                                     <p className="text-muted-foreground max-w-3xl">
-                                        Le Shiba Inu reste la base historique. Le Mameshiba est enregistré comme race distincte
-                                        par le KCJ lorsqu’un sujet adulte présente le bon type, la bonne taille et une filiation
-                                        documentée sur plusieurs générations.
+                                        La race est sélectionnée au Japon depuis l’année 1950 par le
+                                        Kennel club of Japan.
+                                    </p>
+                                    <p className="text-muted-foreground max-w-3xl">Le Mameshiba est enregistré comme race distincte par le KCJ lorsqu’un sujet adulte présente le bon type, la bonne taille et une filiation documentée sur plusieurs générations.
                                     </p>
                                 </div>
                                 <div className="text-sm text-muted-foreground bg-background/60 border rounded-lg p-4 space-y-2 max-w-sm">
@@ -340,18 +350,48 @@ export default function MameShibaPage() {
                             <Badge variant="secondary" className="w-fit">
                                 Origines
                             </Badge>
-                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.shiba.shibaOrigin}</h2>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Le Mameshiba descend directement du Shiba Inu, race japonaise ancestrale reconnue au LOF pour sa
-                                version standard. Le mot « mame » évoque la petite taille, mais il ne désigne pas simplement un
-                                Shiba plus petit : il renvoie à un travail de sélection poursuivi au Japon sur plusieurs
-                                décennies.
+                            <h2 className="text-xl md:text-2xl font-bold">Pourquoi le Mameshiba a-t-il été créé ?</h2>
+                            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary/80">
+                                Origines et but de la création du Mameshiba
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Dans le cadre présenté par le Kennel Club of Japan, un Mameshiba ne se définit pas seulement par
-                                quelques centimètres de moins. Il doit aussi conserver le type du Shiba Inu et pouvoir être relié
-                                à une lignée suivie sérieusement.
+                                Au Japon, l'urbanisation connaît une expansion fulgurante : entre 1930 et 1975, la population
+                                des grandes villes est multipliée par dix.
                             </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                Avant la Seconde Guerre mondiale, les villes japonaises étaient encore largement composées de
+                                maisons traditionnelles, avec une densité de population relativement modérée. Après les
+                                destructions massives liées à la guerre, le pays se reconstruit rapidement en adoptant un modèle
+                                urbain inspiré des grandes métropoles occidentales.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                Les habitations laissent alors place à des immeubles de plusieurs étages, les centres-villes se
+                                densifient et les espaces verts deviennent plus rares. Dans ce nouveau mode de vie, les Japonais
+                                conservent le besoin de partager leur quotidien avec un chien, mais les conditions changent.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                Le Shiba Inu, initialement chien de chasse en milieu rural, est progressivement introduit en
+                                ville comme chien de compagnie. Parallèlement, jusque dans les années 1960, peu de foyers
+                                possèdent une voiture : les déplacements urbains se font surtout à vélo, puis via des transports
+                                en commun plus adaptés à la vie citadine.
+                            </p>
+                            <p className="text-muted-foreground leading-relaxed">
+                                C'est dans ce contexte que les éleveurs japonais commencent à sélectionner les plus petits
+                                individus de Shiba Inu, avec un objectif clair : créer un chien capable de s'adapter
+                                parfaitement à la vie urbaine moderne.
+                            </p>
+                            <div className="space-y-3 rounded-2xl border border-border/60 bg-muted/40 p-5">
+                                <p className="font-semibold text-foreground">Le Mameshiba voit ainsi le jour :</p>
+                                <ul className="list-disc ml-4 space-y-1 text-muted-foreground">
+                                    <li>plus compact</li>
+                                    <li>plus léger, souvent sous les 5 kg</li>
+                                    <li>plus adapté aux petits espaces</li>
+                                    <li>plus facile à transporter au quotidien</li>
+                                </ul>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Tout en conservant l'élégance et l'âme du Shiba Inu.
+                                </p>
+                            </div>
                         </div>
 
                         <div className="grid gap-4 sm:grid-cols-2">
@@ -359,7 +399,7 @@ export default function MameShibaPage() {
                                 {
                                     icon: <History className="h-4 w-4 text-primary" aria-hidden="true" />,
                                     title: "Héritier du Shiba Inu",
-                                    text: "Même silhouette compacte, même queue portée sur le dos, mêmes oreilles dressées et même tempérament primitif.",
+                                    text: "Silhouette plus fine, plus compacte, même queue portée sur le dos, même oreilles dressées et tempérament plus facile",
                                 },
                                 {
                                     icon: <ScrollText className="h-4 w-4 text-primary" aria-hidden="true" />,
@@ -605,12 +645,14 @@ export default function MameShibaPage() {
                     </section>
 
                     <section className="mb-16 text-center space-y-6">
-                        <h2 className="text-xl md:text-2xl font-bold">Un vrai petit Shiba, pas juste un Shiba plus petit</h2>
-                        <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                            Le Mameshiba concentre l’allure, la propreté, la vivacité et la fidélité du Shiba Inu dans un format
-                            plus compact. Ce qui fait sa valeur, ce n’est pas seulement sa taille, mais la qualité de la sélection
-                            derrière lui.
-                        </p>
+                        <h2 className="text-xl md:text-2xl font-bold">Adopter un vrai Mameshiba : </h2>
+                        <ul className="text-muted-foreground max-w-3xl mx-auto leading-relaxed list-disc text-left space-y-2 pl-6">
+                            <li>Portées très petites : 1 à 3 chiots</li>
+                            <li>Poids adulte miniature : 3 à 6 kg</li>
+                            <li>Pedigree du Kennel Club of Japan</li>
+                            <li>Tempérament facile à éduquer</li>
+                            <li>3 couleurs : noir et feu / fauve / blanc crème</li>
+                        </ul>
                         <div className="flex flex-col gap-4 justify-center sm:flex-row">
                             <Link
                                 href="/chiots-disponibles"
