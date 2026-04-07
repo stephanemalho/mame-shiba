@@ -30,7 +30,7 @@ export const siteConfig = {
     author: CANONICAL_NAME,
     locale: "fr-FR",
 
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kawaii-shiba.com",
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kawaii-shiba.com",
 
     /* ------------------------------ SEO Global -------------------------------- */
     title: "Élevage de Mameshiba en France | Kawaii Shiba",

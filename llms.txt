@@ -1,7 +1,7 @@
 # LLMs.txt for Kawaii Shiba website
 
 site_name: Kawaii Shiba
-site_url: https://kawaii-shiba.com
+site_url: https://www.kawaii-shiba.com
 language: fr-FR
 purpose: Website for Mame Shiba breeding in France. It provides accurate information about the breed, the kennel, puppies, adoption guidance, contact details, blog articles, pricing context, and legal notices.
 
