@@ -243,13 +243,10 @@ export default function MameShibaPage() {
                             <p className="text-muted-foreground leading-relaxed">
                                 C'est un chien extrêmement rare.
                             </p>
-                            <p className="text-muted-foreground leading-relaxed">
-                                ❤️ petit format, tempérament facile à éduquer
-                            </p>
                             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-2">
                                     <Heart className="h-4 w-4 text-primary" aria-hidden="true" />
-                                    <span>Petit format, grand tempérament</span>
+                                    <span>petit format, tempérament facile à éduquer</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Sparkles className="h-4 w-4 text-primary" aria-hidden="true" />

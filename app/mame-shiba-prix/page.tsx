@@ -62,10 +62,24 @@ const priceCategories = [
     },
     {
         category: "Réservation",
-        profile: "échange préalable, présentation du projet, étude du mode de vie et accompagnement avant la naissance ou avant le départ",
+        profile: "échange préalable, présentation du projet, étude du mode de vie et accompagnement avant la naissance ou avant le départ. Une avance de 500 € est demandée pour s’inscrire sur la liste d’attente d’une future portée, puis déduite du montant total",
         lineage: "approche personnalisée",
-        price: "sur demande",
+        price: "500 € à la réservation",
         availability: "Oui",
+    },
+    {
+        category: "Mameshiba retraité d’élevage",
+        profile: "chien adulte retraité de l’élevage, si moins de 3 ans et n’ayant pas eu de chiot",
+        lineage: "accompagnement personnalisé",
+        price: "2 000 €",
+        availability: "Selon profil",
+    },
+    {
+        category: "Mameshiba retraité d’élevage",
+        profile: "chien adulte retraité de l’élevage de plus de 3 ans",
+        lineage: "tarif ajusté selon l’âge",
+        price: "~ 1 000 €",
+        availability: "Selon âge",
     },
 ]
 
@@ -117,14 +131,6 @@ const categoryGuides = [
 
 const faqMameshibaPrice: FAQItem[] = [
     {
-        question: "Quel est le prix d’un Mameshiba chez Kawaii Shiba ?",
-        answer: (
-            <p>
-                Chez Kawaii Shiba, le prix de nos chiots Mameshiba est actuellement de 4 500 € pour un mâle et de 5 000 € pour une femelle.
-            </p>
-        ),
-    },
-    {
         question: "Pourquoi le prix d’une femelle est-il plus élevé ?",
         answer: (
             <p>
@@ -136,7 +142,7 @@ const faqMameshibaPrice: FAQItem[] = [
         question: "Que comprend le prix d’un chiot Mameshiba ?",
         answer: (
             <p>
-                Le prix ne correspond pas seulement au chiot le jour de son départ. Il comprend aussi tout le travail réalisé avant : sélection des adultes, suivi de la portée, soins, socialisation, préparation du chiot et échanges avec sa future famille.
+                Le prix ne correspond pas seulement au chiot le jour de son départ. Il comprend aussi tout le travail réalisé avant : sélection des adultes, suivi de la portée, soins vétérinaires, socialisation, préparation du chiot et échanges avec sa future famille.
             </p>
         ),
     },
@@ -228,7 +234,7 @@ export default function MameshibaPricePage() {
 
                     <section className="space-y-8">
                         <div className="space-y-3">
-                            <h2 className="text-xl font-bold md:text-2xl">Nos tarifs à l’élevage</h2>
+                            <h2 className="text-xl font-bold md:text-2xl">Nos tarifs 2026</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
                                 Nos chiots Mameshiba sont proposés à 4 500 € pour un mâle et 5 000 € pour une femelle. Nous avons fait le choix d’un affichage clair pour que les familles puissent se projeter sereinement.
                             </p>
@@ -256,7 +262,7 @@ export default function MameshibaPricePage() {
                         <div className="space-y-3">
                             <h2 className="text-xl font-bold md:text-2xl">Comment se présentent nos prix ?</h2>
                             <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Voici la manière dont nous présentons nos tarifs à l’élevage aujourd’hui, avec une lecture simple par profil et par mode de réservation.
+                                Voici la manière dont nous présentons nos tarifs à l’élevage en 2026, avec une lecture simple par profil et par mode de réservation.
                             </p>
                         </div>
 
@@ -286,17 +292,6 @@ export default function MameshibaPricePage() {
                                 </table>
                             </div>
                         </div>
-
-                        <Card className="bg-muted/45">
-                            <CardContent className="space-y-3 p-6 text-sm leading-relaxed text-muted-foreground md:p-8">
-                                <p>
-                                    Chez nous, le prix reflète l’absolue rareté du Mameshiba, la qualité d’un élevage centré sur la sélection, la cohérence du type, l’équilibre du chiot et la qualité de vie qui lui est offerte.
-                                </p>
-                                <p>
-                                    Nous préférons une page simple, lisible et honnête : des tarifs affichés clairement, puis des explications sur ce qu’ils recouvrent dans notre travail quotidien.
-                                </p>
-                            </CardContent>
-                        </Card>
                     </section>
 
                     <section className="space-y-8">
@@ -320,63 +315,20 @@ export default function MameshibaPricePage() {
                             ))}
                         </div>
                     </section>
-
-                    <section className="space-y-8 rounded-2xl bg-muted/35 p-8">
-                        <div className="space-y-3">
-                            <h2 className="text-xl font-bold md:text-2xl">Que comprennent nos prix ?</h2>
-                            <p className="max-w-4xl leading-relaxed text-muted-foreground">
-                                Adopter un chiot chez nous ne consiste pas seulement à réserver un chien. Le tarif comprend tout le travail invisible réalisé en amont pour vous confier un chiot préparé, entouré et accompagné de manière responsable.
-                            </p>
-                        </div>
-
-                        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-                            <Card className="bg-background/85">
-                                <CardHeader>
-                                    <div className="flex items-center gap-2">
-                                        <NotebookText className="h-4 w-4 text-primary" aria-hidden="true" />
-                                        <h3 className="font-semibold">Ce que nos tarifs incluent notamment</h3>
-                                    </div>
-                                </CardHeader>
-                                <CardContent>
-                                    <ul className="space-y-3 text-sm leading-relaxed text-muted-foreground">
-                                        {includedItems.map((item) => (
-                                            <li key={item} className="flex items-start gap-3">
-                                                <span className="mt-1 h-2 w-2 rounded-full bg-primary" aria-hidden="true" />
-                                                <span>{item}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </CardContent>
-                            </Card>
-
-                            <Card className="overflow-hidden bg-background/85">
-                                <div className="relative min-h-72">
-                                    <Image
-                                        src="/pages/mame-shiba-prix/deux-mame-shiba-chiots-blanc-et-un-noir.jpeg"
-                                        alt="Mameshiba adulte de l elevage Kawaii Shiba"
-                                        fill
-                                        className="object-cover"
-                                        sizes="(min-width: 1024px) 30vw, 100vw"
-                                    />
-                                </div>
-                                <CardContent className="space-y-3 p-6 text-sm leading-relaxed text-muted-foreground">
-                                    <div className="flex items-center gap-2 text-primary">
-                                        <Heart className="h-4 w-4" aria-hidden="true" />
-                                        <span className="font-medium">Bloc de réassurance</span>
-                                    </div>
-                                    <p>
-                                        Un chiot bien né, bien entouré et bien préparé ne se résume jamais à une étiquette. La valeur de notre travail se joue aussi dans tout ce qui ne se voit pas immédiatement : le temps, l’exigence, la patience et la cohérence du projet d’élevage.
-                                    </p>
-                                </CardContent>
-                            </Card>
-                        </div>
-                    </section>
-
                     <section className="space-y-8">
                         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
                             <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
                                 <Image
                                     src="/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg"
+                                    alt="Mameshiba adulte chez Kawaii Shiba"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 1024px) 35vw, 100vw"
+                                />
+                            </div>
+                            <div className="relative h-80 overflow-hidden rounded-2xl bg-muted lg:h-120">
+                                <Image
+                                    src="/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.webp"
                                     alt="Mameshiba adulte chez Kawaii Shiba"
                                     fill
                                     className="object-cover"
