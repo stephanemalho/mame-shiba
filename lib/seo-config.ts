@@ -569,9 +569,9 @@ export const pageMetadata = {
 export const sitemapPages = [
     {
         url: "/",
-        changefreq: "weekly",
+        changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-04-06"
+        lastmod: "2026-04-12"
     },
     {
         url: "/mameshiba",
@@ -601,13 +601,13 @@ export const sitemapPages = [
         url: "/nos-chiens",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: seoLastmod
+        lastmod: "2026-04-12"
     },
     {
         url: "/presentation-elevage",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: seoLastmod
+        lastmod: "2026-04-12"
     },
     {
         url: "/presentation-eleveuses",
