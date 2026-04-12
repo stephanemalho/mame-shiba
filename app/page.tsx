@@ -92,10 +92,10 @@ export default function HomePage() {
 
       <div className="flex flex-col">
         <section className="bg-accent-foreground">
-          <div className="overflow-hidden bg-linear-to-b from-[#a58a5b] via-[#665239] to-[#2a2118]">
+          <div className="overflow-hidden bg-linear-to-b from-[#f4cd97] via-[#be8659] to-[#5a3f2a]">
             <div className="container mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
-                <div className="overflow-hidden rounded-xl border border-white/10 bg-[#56432f] shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
+                <div className="overflow-hidden rounded-xl border border-white/10 bg-[#6d4d34] shadow-[0_35px_120px_rgba(0,0,0,0.35)] md:rounded-4xl">
                   <Image
                     src="/pages/homePage/bandeau-presentation-kawaii-mameshiba.jpg"
                     alt="Bandeau de présentation Kawaii Shiba Mameshiba"
@@ -109,7 +109,7 @@ export default function HomePage() {
                   />
                 </div>
 
-                <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#705941]/72 px-6 py-6 text-center text-white shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-sm md:rounded-4xl md:px-8">
+                <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#7b583b]/72 px-6 py-6 text-center text-white shadow-[0_30px_100px_rgba(0,0,0,0.32)] backdrop-blur-sm md:rounded-4xl md:px-8">
                   <div className="mx-auto max-w-4xl">
                     <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-white/80">
                       Kawaii Shiba
@@ -121,7 +121,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-white/12 bg-[#594732]/55 shadow-[0_30px_100px_rgba(0,0,0,0.28)] backdrop-blur-sm md:rounded-4xl">
+                <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-white/12 bg-[#6f5037]/55 shadow-[0_30px_100px_rgba(0,0,0,0.28)] backdrop-blur-sm md:rounded-4xl">
                   <div className="relative aspect-4/3 sm:aspect-16/11 md:aspect-16/8 lg:aspect-16/7">
                     <Image
                       src="/mame-shiba-in-a-sakura-tree.jpg"
@@ -131,11 +131,11 @@ export default function HomePage() {
                       sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
                       quality={70}
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-[#2d2218]/35 via-transparent to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#463223]/35 via-transparent to-transparent" aria-hidden="true" />
                   </div>
                 </div>
 
-                <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#3b2e22]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
+                <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#4b3627]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
                   <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
                     {pageContent.home.h1Subtitle}
                   </p>
