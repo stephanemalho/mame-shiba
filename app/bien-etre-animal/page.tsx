@@ -7,7 +7,6 @@ import { faqBienEtre } from "@/lib/faq-data"
 import { Calendar, MapPin, Bed, Utensils, Dumbbell, SpadeIcon as Spa, PawPrint, Dog } from "lucide-react"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import Link from "next/link"
@@ -110,7 +109,7 @@ export default function SejoursPage() {
                             />
                             <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                                 <div className="text-white text-center space-y-4">
-                                    <h1 className="text-xl md:text-3xl font-bold">{pageContent.wellness.h1}</h1>
+                                    <h1 className="text-xl md:text-3xl font-bold">La vie en élevage</h1>
                                     <div className="flex flex-col items-center justify-center space-x-4 p-2 md:flex-row">
                                         <Calendar className="h-5 w-5" aria-hidden="true" />
                                         <span className="md:text-lg">Prochaine portée prévue premier semestre 2026</span>
@@ -121,7 +120,7 @@ export default function SejoursPage() {
                     </section>
                     {/* Portée Info */}
                     <section className="text-center mb-16">
-                        <h2 className="text-xl md:text-2xl font-bold mb-4">{pageContent.wellness.description}</h2>
+                        <h2 className="text-xl md:text-2xl font-bold mb-4">Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba</h2>
                         <div className="flex flex-col md:flex-row items-center justify-center text-muted-foreground mb-8 gap-6">
                             <div className="flex flex-col items-center justify-center md:flex-row">
                                 <MapPin className="h-4 w-4" aria-hidden="true" />

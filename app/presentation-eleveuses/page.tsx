@@ -7,7 +7,6 @@ import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { filterBlogLinks, isBlogEnabled } from "@/lib/blog-visibility"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { faqEleveuses } from "@/lib/faq-data"
@@ -123,9 +122,9 @@ export default function PresentationEleveusesPage() {
             <div className="py-16">
                 <div className="container mx-auto">
                     <section className="text-center space-y-6 mb-16">
-                        <h1 className="text-xl md:text-3xl font-bold">{pageContent.eleveuses.h1}</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">Les éleveuses de Kawaii Shiba</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                            {pageContent.eleveuses.description}
+                            Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>

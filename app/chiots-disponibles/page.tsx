@@ -5,7 +5,6 @@ import { FAQSection } from "@/components/faq"
 import { faqNosChiots } from "@/lib/faq-data"
 import { Calendar, Dog, Heart, NotebookText, PawPrint, Phone, Mail, Sprout } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { puppies } from "./puppies"
@@ -91,12 +90,12 @@ export default function NosChiotsPage() {
             <div className="py-16">
                 <div className="container mx-auto my-12">
                     <section className="text-center space-y-4 mb-12">
-                        <h1 className="text-xl md:text-3xl font-bold">{pageContent.puppies.h1}</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">Nos chiots actuellement disponibles</h1>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            {pageContent.puppies.description}
+                            Les portées de Mameshiba comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            {pageContent.puppies.descriptionSecondary}
+                            Une nouvelle portée arrive très bientôt et les réservations sont déjà ouvertes. En attendant l'arrivée des chiots, nous recevons les demandes des familles souhaitant être accompagnées sérieusement dans leur projet d'adoption.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>

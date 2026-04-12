@@ -1,5 +1,4 @@
 import { createLastmodGetter } from "./lastmod";
-import { pageContent } from "./page-content";
 
 /**
  * ============================================================
@@ -349,9 +348,9 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage de Mameshiba en France | Kawaii Shiba",
+        title: "Élevage de Mameshiba en France | Chiots & lignées japonaises | Kawaii Shiba",
         description:
-            "Kawaii Shiba est un élevage spécialisé en Mameshiba, qui sont des Shiba Inu de petite taille. Nos chiens reproducteurs sont importés du Japon et élevés avec soin afin de proposer des chiots conformes au standard du Japan Kennel Club pour le Mameshiba.",
+            "Élevage de Mameshiba en France (Shiba Inu de petite taille): chiots élevés avec soin, lignées japonaises, socialisation sérieuse et accompagnement avant adoption. Découvrez Kawaii Shiba.",
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
@@ -368,8 +367,9 @@ export const pageMetadata = {
     },
 
     shiba: {
-        title: pageContent.shiba.h1,
-        description: pageContent.shiba.description,
+        title: "Mameshiba : caractère, taille, prix et différences avec le Shiba Inu",
+        description:
+            "Découvrez le vrai Mameshiba : petite taille, son caractère, ses origines japonaises, prix et différences avec le Shiba Inu. Un guide clair avant adoption.",
         keywords: [
             "mameshiba",
             "Mameshiba",
@@ -386,8 +386,9 @@ export const pageMetadata = {
     },
 
     puppies: {
-        title: pageContent.puppies.h1,
-        description: pageContent.puppies.description,
+        title: "Nos chiots actuellement disponibles",
+        description:
+            "Les portées de Mameshiba comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.",
         keywords: [
             "chiots mameshiba",
             "mameshiba disponible",
@@ -431,8 +432,9 @@ export const pageMetadata = {
     },
 
     reproductors: {
-        title: pageContent.reproductors.h1,
-        description: pageContent.reproductors.description,
+        title: "Nos adultes reproducteurs Mameshiba",
+        description:
+            "Les chiens présentés ici constituent le cœur de notre élevage Kawaii Shiba. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.",
         keywords: [
             "mameshiba japon",
             "nos chiens mameshiba",
@@ -444,8 +446,9 @@ export const pageMetadata = {
     },
 
     presentation: {
-        title: pageContent.presentation.h1,
-        description: pageContent.presentation.description,
+        title: "L'élevage Kawaii Shiba - Mameshiba",
+        description:
+            "Élevage spécialisé Mameshiba à Dommartin-lès-Cuiseaux (71) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l'équilibre émotionnel.",
         keywords: [
             "elevage mameshiba",
             "elevage shiba japonais",
@@ -457,8 +460,9 @@ export const pageMetadata = {
         ]
     },
     eleveuses: {
-        title: pageContent.eleveuses.h1,
-        description: pageContent.eleveuses.description,
+        title: "Les éleveuses de Kawaii Shiba",
+        description:
+            "Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.",
         keywords: [
             "eleveuses mameshiba",
             "equipe elevage mameshiba",
@@ -470,8 +474,9 @@ export const pageMetadata = {
     },
 
     wellness: {
-        title: pageContent.wellness.h1,
-        description: pageContent.wellness.description,
+        title: "La vie en élevage",
+        description:
+            "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba",
         keywords: [
             "conditions de vie des chiots en élevage",
             "élevage familial responsable",
@@ -487,8 +492,9 @@ export const pageMetadata = {
     },
 
     contact: {
-        title: pageContent.contact.h1,
-        description: pageContent.contact.description,
+        title: "Contact & visites",
+        description:
+            "Parlons de votre futur compagnon. Les visites se font uniquement sur rendez-vous pour respecter le rythme des chiots.",
         keywords: [
             "contact elevage kawaii shiba",
             "visite elevage",
@@ -502,8 +508,9 @@ export const pageMetadata = {
     },
 
     legalNotice: {
-        title: pageContent.legalNotice.h1,
-        description: pageContent.legalNotice.description,
+        title: "Mentions légales",
+        description:
+            "Informations réglementaires de l'élevage Kawaii Shiba et cadre juridique d'utilisation du site.",
         keywords: [
             "mentions legales",
             "informations legales",
@@ -514,8 +521,9 @@ export const pageMetadata = {
     },
 
     terms: {
-        title: pageContent.terms.h1,
-        description: pageContent.terms.description,
+        title: "Termes et conditions d'utilisation",
+        description:
+            "Règles d'usage du site Kawaii Shiba, informations précontractuelles et responsabilités de chacune des parties.",
         keywords: [
             "conditions generales",
             "conditions dutilisation",
@@ -526,8 +534,9 @@ export const pageMetadata = {
     },
 
     privacy: {
-        title: pageContent.privacy.h1,
-        description: pageContent.privacy.description,
+        title: "Politique de confidentialité",
+        description:
+            "Comment Kawaii Shiba collecte, utilise et protège vos données personnelles dans le respect du RGPD.",
         keywords: [
             "RGPD",
             "confidentialite",

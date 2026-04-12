@@ -8,7 +8,6 @@ import { InternalLinksSection, type InternalLinkItem } from "@/components/Intern
 import { faqPresentation } from "@/lib/faq-data"
 import { Heart, Leaf, Star, Users } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 
@@ -104,9 +103,9 @@ export default function PresentationPage() {
             <div className="py-16">
                 <div className="container mx-auto">
                     <section className="text-center space-y-6 mb-16">
-                        <h1 className="text-xl md:text-3xl font-bold">{pageContent.presentation.h1}</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">L&apos;élevage Kawaii Shiba - Mameshiba</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                            {pageContent.presentation.description}
+                            Élevage spécialisé Mameshiba dans le Jura (39) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l&apos;équilibre émotionnel.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema } from "@/lib/schema-generators"
 
 export const metadata: Metadata = {
@@ -41,7 +40,7 @@ const dataContact = {
 export default function PolitiqueConfidentialitePage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Accueil", url: "/" },
-    { name: pageContent.privacy.h1, url: siteConfig.pages.privacy },
+    { name: "Politique de confidentialité", url: siteConfig.pages.privacy },
   ])
 
   const lastMod = returnLastmod(siteConfig.pages.privacy)
@@ -57,9 +56,9 @@ export default function PolitiqueConfidentialitePage() {
         <div className="container mx-auto max-w-4xl space-y-10">
           <header className="space-y-3">
             <p className="text-sm uppercase tracking-wide text-primary/80">Protection des données</p>
-            <h1 className="text-xl md:text-3xl font-bold">{pageContent.privacy.h1}</h1>
+            <h1 className="text-xl md:text-3xl font-bold">Politique de confidentialité</h1>
             <p className="text-muted-foreground">
-              {pageContent.privacy.description}
+              Comment Kawaii Shiba collecte, utilise et protège vos données personnelles dans le respect du RGPD.
             </p>
           </header>
 
@@ -192,4 +191,3 @@ export default function PolitiqueConfidentialitePage() {
     </>
   )
 }
-

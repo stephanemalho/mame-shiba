@@ -9,7 +9,6 @@ import { InternalLinksSection, type InternalLinkItem } from "@/components/Intern
 import { filterBlogLinks } from "@/lib/blog-visibility"
 import { faqMameShiba } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { Feather, Heart, History, PawPrint, Ruler, Scale, ScrollText, Sparkles } from "lucide-react"
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
 
 const sizes = [
     {
-        title: pageContent.shiba.h3toy,
+        title: "Shiba Inu vs Mameshiba",
         height: "Mâle : 38 à 41 cm • Femelle : 35 à 38 cm",
         frame: "Standard LOF du Shiba Inu",
         text: "Le Shiba Inu constitue la référence d'origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
@@ -54,7 +53,7 @@ const sizes = [
         alt: "Comparatif entre un Shiba Inu et un Mameshiba",
     },
     {
-        title: pageContent.shiba.h3Miniature,
+        title: "Mameshiba mâle",
         height: "25 à 34 cm au garrot",
         frame: "Format compact et masculin",
         text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d'un an, avec validation du type et de la taille.",
@@ -62,7 +61,7 @@ const sizes = [
         alt: "Mameshiba roux et blanc assis dans l'herbe",
     },
     {
-        title: pageContent.shiba.h3Standard,
+        title: "Mameshiba femelle",
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
         text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
@@ -232,10 +231,10 @@ export default function MameShibaPage() {
                                 Le Mameshiba
                             </Badge>
                             <h1 className="text-xl md:text-3xl font-bold">
-                                {pageContent.shiba.h1}
+                                Tout savoir sur le Mameshiba : Le plus petit Shiba du monde ! origines, tailles et critères d&apos;adoption, avant de se lancer.
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                {pageContent.shiba.description}
+                                Le Mameshiba est issu du Shiba Inu, en format miniature ! Contrairement au Shiba Inu classique, souvent réputé pour son indépendance marquée, le Mameshiba présente généralement un tempérament plus souple et plus proche de l’humain, ce qui le rend globalement plus facile à éduquer.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
                                 Sa sélection sur plusieurs générations tend à favoriser des individus plus réceptifs, plus attentifs et plus enclins à coopérer, tout en conservant le physique primitif qui fait tout son charme.
@@ -276,7 +275,7 @@ export default function MameShibaPage() {
 
                     <section className="mb-16 space-y-10">
                         <div className="text-center space-y-3">
-                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.shiba.h2}</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">Tailles et repères du Mameshiba</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto">
                                 Le Mameshiba vient du Shiba Inu. Sa lecture commence donc par un comparatif simple des tailles
                                 adultes, toujours exprimées au garrot.
@@ -554,7 +553,7 @@ export default function MameShibaPage() {
 
                     <section className="mb-16 space-y-6 bg-muted/40 rounded-lg p-8">
                         <div className="text-center space-y-3">
-                            <h2 className="text-xl md:text-2xl font-bold">{pageContent.shiba.googToKnow}</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">Acheter un Mameshiba : les points essentiels</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                                 Comme la race n’est pas reconnue au LOF et qu’elle reste très rare, l’achat d’un Mameshiba demande
                                 davantage de vigilance qu’un simple coup de cœur sur photo.

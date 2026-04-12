@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
 import { faqHome } from "@/lib/faq-data"
+import { Heart, MapPin, Route } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
@@ -10,7 +11,6 @@ import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchem
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { isBlogEnabled } from "@/lib/blog-visibility"
 
-import { pageContent } from "@/lib/page-content"
 import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
 
 export const metadata: Metadata = {
@@ -137,18 +137,12 @@ export default function HomePage() {
 
                 <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#6a4021]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
                   <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
-                    {pageContent.home.h1Subtitle}
+                    Nous sommes parmi les premiers élevages de Mameshiba en France
                   </p>
                   <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
                     <div className="space-y-4">
                       <p className="text-base leading-relaxed text-white/88 md:text-lg">
-                        {pageContent.home.description}
-                      </p>
-                      <p className="text-base leading-relaxed text-white/82 md:text-lg">
-                        {pageContent.home.descriptionSecondary}
-                      </p>
-                      <p className="text-base leading-relaxed text-white/82 md:text-lg">
-                        {pageContent.home.descriptionTertiary}
+                        Nos Mameshiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine pour garantir l'excellence des lignées importées
                       </p>
                     </div>
                     <div className="flex lg:justify-end">
@@ -165,6 +159,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
         {/* Contenu centré */}
         {/* Présentation Mameshiba */}
         <section className="py-16 bg-muted/30 my-8">
@@ -223,7 +218,46 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <section className="py-12 my-8">
+          <div className="container mx-auto">
+            <div className="grid gap-6 md:grid-cols-2">
+              <Card className="border-primary/15 bg-card/80 shadow-sm">
+                <CardContent className="p-6 md:p-8">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/12 text-primary">
+                    <MapPin className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <div className="space-y-3">
+                    <h2 className="text-xl font-semibold">Un élevage accessible depuis toute la France</h2>
+                    <p className="text-muted-foreground leading-relaxed">
+                      L'élevage Kawaii Shiba est situé en Bourgogne-Franche-Comté à la limite du JURA, dans la commune de Dommartin-lès-Cuiseaux (71), à 1h30 de Lyon, 2h de Genève et moins de 4h de Paris en voiture.
+                    </p>
+                    <div className="flex items-start gap-3 rounded-xl bg-primary/6 px-4 py-3 text-sm text-muted-foreground">
+                      <Route className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                      <span>Nous sommes idéalement situés pour accueillir les familles de toute la France et des pays limitrophes qui souhaitent adopter un Mameshiba.</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
+              <Card className="border-primary/15 bg-card/80 shadow-sm">
+                <CardContent className="p-6 md:p-8">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/12 text-primary">
+                    <Heart className="h-5 w-5" aria-hidden="true" />
+                  </div>
+                  <div className="space-y-3">
+                    <h2 className="text-xl font-semibold">Une passion née des chiens primitifs et du Japon</h2>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et notre adoration pour la culture japonaise nous ont menés tout droit jusqu'à un véritable coup de cœur : le Mameshiba.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Cette rencontre a façonné l'identité de Kawaii Shiba, avec une sélection portée par l'émotion, l'exigence et le respect du type japonais.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
         {/* Portées disponibles */}
         {/* <section className="py-16 my-8">
         <div className="container mx-auto">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { pageContent } from "@/lib/page-content"
 import { generateBreadcrumbSchema } from "@/lib/schema-generators"
 
 export const metadata: Metadata = {
@@ -53,7 +52,7 @@ const host = {
 export default function MentionsLegalesPage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Accueil", url: "/" },
-    { name: pageContent.legalNotice.h1, url: siteConfig.pages.legalNotice },
+    { name: "Mentions légales", url: siteConfig.pages.legalNotice },
   ])
 
   const lastMod = returnLastmod(siteConfig.pages.legalNotice)
@@ -69,9 +68,9 @@ export default function MentionsLegalesPage() {
         <div className="container mx-auto max-w-4xl space-y-10">
           <header className="space-y-3">
             <p className="text-sm uppercase tracking-wide text-primary/80">Informations légales</p>
-            <h1 className="text-xl md:text-3xl font-bold">{pageContent.legalNotice.h1}</h1>
+            <h1 className="text-xl md:text-3xl font-bold">Mentions légales</h1>
             <p className="text-muted-foreground">
-              {pageContent.legalNotice.description}
+              Informations réglementaires de l&apos;élevage Kawaii Shiba et cadre juridique d&apos;utilisation du site.
             </p>
           </header>
 
@@ -157,5 +156,4 @@ export default function MentionsLegalesPage() {
     </>
   )
 }
-
 

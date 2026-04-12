@@ -9,7 +9,6 @@ import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-genera
 import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
-import { pageContent } from "@/lib/page-content"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { dogs } from "./dogs"
 
@@ -88,13 +87,13 @@ export default function NosChiensPage() {
             <div className="py-16">
                 <div className="container mx-auto my-12">
                     <section className="text-center space-y-4 mb-12">
-                        <h1 className="text-xl md:text-3xl font-bold">{pageContent.reproductors.h1}</h1>
-                        <h2 className="text-xl md:text-2xl">{pageContent.reproductors.subtitle}</h2>
+                        <h1 className="text-xl md:text-3xl font-bold">Nos adultes reproducteurs Mameshiba</h1>
+                        <h2 className="text-xl md:text-2xl">Lignées japonaises, caractères et sélection de l&apos;élevage</h2>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            {pageContent.reproductors.description}
+                            Les chiens présentés ici constituent le cœur de notre élevage Kawaii Shiba. Chacun participe à la construction de notre sélection, avec une attention particulière portée au type, à la santé, au caractère et à la cohérence des lignées japonaises.
                         </p>
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                            {pageContent.reproductors.descriptionSecondary}
+                            Chaque mariage est soigneusement réfléchi afin de préserver l&apos;équilibre émotionnel, la morphologie, la douceur de caractère et l&apos;identité du véritable Mameshiba.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
