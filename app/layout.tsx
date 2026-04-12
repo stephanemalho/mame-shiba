@@ -16,6 +16,8 @@ const questrial = Questrial({
   display: "swap",
 })
 
+const iconVersion = "v2"
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: siteConfig.title,
@@ -26,14 +28,14 @@ export const metadata: Metadata = {
   publisher: siteConfig.author,
   icons: {
     icon: [
-      { url: "/favicon.ico", type: "image/x-icon", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: `/favicon.ico?${iconVersion}`, type: "image/x-icon", sizes: "any" },
+      { url: `/icon.png?${iconVersion}`, type: "image/png", sizes: "512x512" },
     ],
     shortcut: [
-      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: `/favicon.ico?${iconVersion}`, type: "image/x-icon" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", type: "image/png", sizes: "512x512" },
+      { url: `/apple-touch-icon.png?${iconVersion}`, type: "image/png", sizes: "512x512" },
     ],
   },
 

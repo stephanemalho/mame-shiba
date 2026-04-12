@@ -60,10 +60,6 @@ export const dogs: AdultDog[] = [
             {
                 src: "/pages/reproducteurs/yuzu-mame-shiba-kawaii-shiba-portrait.webp",
                 alt: "Portrait de Yuzu, femelle Mameshiba de l'élevage Kawaii Shiba"
-            },
-            {
-                src: "/pages/reproducteurs/Yuzu-femelle-mame-shiba-couleur-feu.webp",
-                alt: "Yuzu, femelle Mameshiba couleur feu"
             }
         ]
     },

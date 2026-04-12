@@ -131,7 +131,7 @@ gtag('config', '${GA_ID}');`
                             </Button>
                         </div>
                         <div className="flex items-center gap-2">
-                            <Button onClick={accept} className="bg-primary text-white px-4 py-2 font-semibold">
+                            <Button onClick={accept} className="bg-primary text-primary-foreground px-4 py-2 font-semibold">
                                 Accepter
                             </Button>
                         </div>
