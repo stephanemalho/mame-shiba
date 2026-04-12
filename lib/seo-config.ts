@@ -189,11 +189,12 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         height: 2087,
         type: "image/webp"
     },
-    "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg": {
-        width: 3301,
-        height: 2203,
-        type: "image/jpeg"
-    },
+    "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg":
+        {
+            width: 3301,
+            height: 2203,
+            type: "image/jpeg"
+        },
     "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg": {
         width: 1708,
         height: 2560,
@@ -300,7 +301,7 @@ export const buildOpenGraph = ({
                       width: resolvedImage.width ?? siteConfig.ogImageWidth,
                       height: resolvedImage.height ?? siteConfig.ogImageHeight,
                       alt: image.alt ?? siteConfig.ogImageAlt,
-                      type: resolvedImage.type,
+                      type: resolvedImage.type
                   };
               })
             : (() => {
@@ -310,7 +311,8 @@ export const buildOpenGraph = ({
                       {
                           url: resolvedImage.url,
                           width: resolvedImage.width ?? siteConfig.ogImageWidth,
-                          height: resolvedImage.height ?? siteConfig.ogImageHeight,
+                          height:
+                              resolvedImage.height ?? siteConfig.ogImageHeight,
                           alt: siteConfig.ogImageAlt,
                           type: resolvedImage.type
                       }
@@ -347,9 +349,9 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage KAWAII MAMESHIBA - Le plus petit Shiba du monde, le plus rare en France",
+        title: "Élevage de Mameshiba en France | Kawaii Shiba",
         description:
-            "Nos chiens reproducteurs sont importés du Japon et élevés avec soin pour proposer des chiots bien socialisés, équilibrés et issus de lignées rigoureusement sélectionnées.",
+            "Kawaii Shiba est un élevage spécialisé en Mameshiba, qui sont des Shiba Inu de petite taille. Nos chiens reproducteurs sont importés du Japon et élevés avec soin afin de proposer des chiots conformes au standard du Japan Kennel Club pour le Mameshiba.",
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
@@ -572,7 +574,7 @@ export const sitemapPages = [
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.9,
-        lastmod: seoLastmod
+        lastmod: "2026-04-12"
     },
     {
         url: "/adoption/reussir-son-adoption",
