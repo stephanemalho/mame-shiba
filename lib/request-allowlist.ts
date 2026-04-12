@@ -10,7 +10,7 @@ const APP_METADATA_ROUTES = [
     "/sitemap.xml",
     "/favicon.ico",
     "/icon.png",
-    "/apple-touch-icon.png",
+    "/apple-icon.png",
 ] as const;
 
 const TECHNICAL_ROUTE_PREFIXES = [
