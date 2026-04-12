@@ -176,19 +176,15 @@ export default function NosChiotsPage() {
                                         <NotebookText className="h-6 w-6 text-primary" aria-hidden="true" />
                                         <div>
                                             <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                Aucun chiot disponible pour le moment
+                                                Inscrivez vous pour la prochaine portée de chiots Mameshiba
                                             </h2>
-                                            <p className="text-muted-foreground mt-2">
-                                                Tous nos Mameshiba sont actuellement adoptés, mais une nouvelle portée arrive très bientôt.
+                                            <p className="text-muted-foreground">
+                                                Parlez nous de votre projet d’adoption et rejoignez la liste d’attente pour être recontacté dès l’annonce de la prochaine portée.
                                             </p>
                                         </div>
                                     </div>
 
-                                    <p className="text-muted-foreground">
-                                        Les Mameshiba ont généralement un très petit nombre de chiots, ce qui explique leur rareté
-                                        en Europe. Cette confidentialité fait aussi partie de la qualité de notre travail :
-                                        chaque portée est réfléchie, suivie et accompagnée avec beaucoup d&apos;attention.
-                                    </p>
+
 
                                     <div className="grid gap-3">
                                         {[
@@ -267,10 +263,10 @@ export default function NosChiotsPage() {
                                             <Sprout className="h-6 w-6 text-primary" aria-hidden="true" />
                                             <div>
                                                 <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                    Réserver sur la prochaine portée
+                                                    Contactez nous 
                                                 </h2>
                                                 <p className="text-muted-foreground mt-2">
-                                                    Si vous êtes intéressé par un futur chiot, nous prenons le temps d’échanger avec vous
+                                                    Si vous avez des questions au sujet de nos chiots ou de la prochaine portée, ou vous réflechissez à adopter un Mameshiba, nous prenons le temps d'échanger avec vous
                                                     avant toute réservation.
                                                 </p>
                                             </div>
@@ -320,7 +316,7 @@ export default function NosChiotsPage() {
                             </div>
                         </div>
                         <p className="text-muted-foreground">
-                            Chaque future portée est pensée avec sérieux, dans le respect du rythme de nos reproducteurs
+                            Chaque future portée est pensée avec sérieux, dans le respect du rythme de nos chiens reproducteurs
                             et de la singularité du Mameshiba.
                         </p>
                         <div className="grid gap-3">
