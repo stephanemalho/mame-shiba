@@ -28,8 +28,16 @@ const TECHNICAL_EXACT_ROUTES = [
 
 const normalizeSlashes = (pathname: string) => pathname.replace(/\/{2,}/g, "/");
 
+const decodePathname = (pathname: string) => {
+    try {
+        return decodeURI(pathname);
+    } catch {
+        return pathname;
+    }
+};
+
 export const normalizePathname = (pathname: string): string => {
-    const normalized = normalizeSlashes(pathname);
+    const normalized = normalizeSlashes(decodePathname(pathname));
 
     if (normalized === "/") {
         return normalized;
