@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "generate:public-asset-paths": "node scripts/generate-public-asset-paths.mjs",
     "dev": "next dev --turbopack",
+    "prebuild": "npm run generate:public-asset-paths",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
