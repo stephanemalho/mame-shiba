@@ -8,6 +8,7 @@ import { siteConfig } from "./seo-config";
 export function generateOrganizationSchema() {
     const legal = siteConfig.legal;
     const address = legal.address;
+    const { location } = siteConfig;
     const identifiers = [
         {
             "@type": "PropertyValue",
@@ -52,7 +53,8 @@ export function generateOrganizationSchema() {
             "@type": "PostalAddress",
             addressLocality: address.city,
             postalCode: address.postalCode,
-            addressCountry: address.country
+            addressCountry: address.country,
+            ...(location?.department ? { addressRegion: location.department } : {})
         },
         additionalProperty: [
             {
@@ -72,6 +74,7 @@ export function generateOrganizationSchema() {
 export function generateLocalBusinessSchema() {
     const legal = siteConfig.legal;
     const address = legal.address;
+    const { location } = siteConfig;
     const coordinates = (
         legal as {
             address?: {
@@ -101,10 +104,28 @@ export function generateLocalBusinessSchema() {
         logo: `${siteConfig.siteUrl}/icon.png`,
         foundingDate: legal.foundingDate,
         sameAs: Object.values(siteConfig.socialLinks ?? {}).filter(Boolean),
-        areaServed: {
-            "@type": "AdministrativeArea",
-            name: `${siteConfig.location.region}, ${legal.address.country}`
-        },
+        areaServed: [
+            {
+                "@type": "Country",
+                name: legal.address.country
+            },
+            ...(location?.region
+                ? [
+                      {
+                          "@type": "AdministrativeArea",
+                          name: location.region
+                      }
+                  ]
+                : []),
+            ...(location?.department
+                ? [
+                      {
+                          "@type": "AdministrativeArea",
+                          name: location.department
+                      }
+                  ]
+                : [])
+        ],
         parentOrganization: {
             "@id": `${siteConfig.siteUrl}#organization`
         },
@@ -113,8 +134,10 @@ export function generateLocalBusinessSchema() {
             addressLocality: address.city,
             postalCode: address.postalCode,
             addressCountry: address.country,
-            ...(siteConfig.location?.region
-                ? { addressRegion: siteConfig.location.region }
+            ...(location?.department
+                ? { addressRegion: location.department }
+                : location?.region
+                  ? { addressRegion: location.region }
                 : {})
         },
         ...(coordinates?.latitude != null && coordinates?.longitude != null

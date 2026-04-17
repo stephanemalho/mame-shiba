@@ -72,8 +72,8 @@ export const siteConfig = {
     /* ----------------------- Localisation (marketing) ------------------------- elevagemameshiba@gmail.com */
     location: {
         region: "Bourgogne-Franche-Comté",
-        department: "Saône-et-Loire (71)",
-        city: "Dommartin-lès-Cuiseaux",
+        department: "Saône-et-Loire",
+        departmentCode: "71",
         nearbyCity: "Saint-Amour (39) Jura"
     },
 
