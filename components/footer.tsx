@@ -23,7 +23,7 @@ export function Footer() {
                             <span className="text-lg font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                            Elevage Professionel de Mameshiba dans le Jura (39). Santé, socialisation et accompagnement des familles.
+                            Elevage Professionel de Mameshiba en Saône-et-Loire (71). Santé, socialisation et accompagnement des familles.
                         </p>
                     </div>
 
@@ -138,7 +138,7 @@ export function Footer() {
                     <address className="not-italic">
                         <h3 className="font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li>Jura (39) commune de SAINT AMOUR</li>
+                            <li>Dommartin-lès-Cuiseaux, Saône-et-Loire (71)</li>
                             <li>Visites sur rendez-vous</li>
                             <li>
                                 <Link

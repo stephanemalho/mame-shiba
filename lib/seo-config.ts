@@ -73,7 +73,8 @@ export const siteConfig = {
     location: {
         region: "Bourgogne-Franche-Comté",
         department: "Saône-et-Loire (71)",
-        nearbyCity: "Saint-Amour (39)"
+        city: "Dommartin-lès-Cuiseaux",
+        nearbyCity: "Saint-Amour (39) Jura"
     },
 
     /* ------------------------------ Horaires ---------------------------------- */
@@ -607,7 +608,7 @@ export const sitemapPages = [
         url: "/presentation-elevage",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-04-12"
+        lastmod: "2026-04-17"
     },
     {
         url: "/presentation-eleveuses",

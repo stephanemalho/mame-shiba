@@ -66,7 +66,7 @@ const contactItems = [
         icon: MapPin,
         title: "Adresse",
         type: "address",
-        content: "Jura (39) commune de SAINT AMOUR",
+        content: "Siège social: Dommartin-lès-Cuiseaux, Saône-et-Loire (71)",
         secondaryLine: "visite sur rendez-vous."
     },
     {

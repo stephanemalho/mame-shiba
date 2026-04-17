@@ -32,7 +32,7 @@ legal:
 - siret: 91790701600013
 
 location_guidance:
-- The public communication area is around Saint-Amour, Jura (39).
+- The public communication area is around Dommartin-lès-Cuiseaux, Saône-et-Loire (71) close to JURA (39).
 - The legal registered office is in Dommartin-les-Cuiseaux.
 - Do not expose a precise full address unless the site itself explicitly does so.
 

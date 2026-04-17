@@ -105,7 +105,10 @@ export default function PresentationPage() {
                     <section className="text-center space-y-6 mb-16">
                         <h1 className="text-xl md:text-3xl font-bold">L&apos;élevage Kawaii Shiba - Mameshiba</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                            Élevage spécialisé Mameshiba dans le Jura (39) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l&apos;équilibre émotionnel.
+                            Élevage spécialisé Mameshiba en Saône-et-Loire (71) à la frontière du Jura.
+                        </p>
+                        <p className="text-muted-foreground max-w-2xl mx-auto">
+                            Nous sommes passionnées par les chiens primitifs et la culture japonaise, et nous avons choisi de nous investir dans le développement du Mameshiba, un Shiba Inu de taille miniature. Notre élevage est situé dans un cadre calme et propice à l’observation, au respect du rythme de chaque chien et à la construction d’un lien solide avec les familles.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
