@@ -74,7 +74,7 @@ export const siteConfig = {
         region: "Bourgogne-Franche-Comté",
         department: "Saône-et-Loire",
         departmentCode: "71",
-        nearbyCity: "Saint-Amour (39) Jura"
+        nearbyCity: "Dommartin-lès-Cuiseaux, Saône-et-Loire (71)"
     },
 
     /* ------------------------------ Horaires ---------------------------------- */

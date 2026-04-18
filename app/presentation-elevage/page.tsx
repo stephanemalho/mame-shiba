@@ -105,7 +105,7 @@ export default function PresentationPage() {
                     <section className="text-center space-y-6 mb-16">
                         <h1 className="text-xl md:text-3xl font-bold">L&apos;élevage Kawaii Shiba - Mameshiba</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                            Élevage spécialisé Mameshiba en Saône-et-Loire (71) à la frontière du Jura.
+                            Élevage spécialisé Mameshiba à Dommartin-lès-Cuiseaux, en Saône-et-Loire (71).
                         </p>
                         <p className="text-muted-foreground max-w-2xl mx-auto">
                             Nous sommes passionnées par les chiens primitifs et la culture japonaise, et nous avons choisi de nous investir dans le développement du Mameshiba, un Shiba Inu de taille miniature. Notre élevage est situé dans un cadre calme et propice à l’observation, au respect du rythme de chaque chien et à la construction d’un lien solide avec les familles.
@@ -412,11 +412,11 @@ export default function PresentationPage() {
                             <h2 className="text-xl md:text-2xl font-bold">Notre histoire</h2>
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8" aria-hidden="true" />
                             <h3 className="text-2xl font-bold">
-                                Un élevage familial au cœur du Jura, à deux pas de Saint-Amour
+                                Un élevage familial à Dommartin-lès-Cuiseaux, en Saône-et-Loire (71)
                             </h3>
                             <p className="text-muted-foreground leading-relaxed">
                                 Notre histoire s’est naturellement orientée vers le Mameshiba à travers notre passion pour
-                                les chiens primitifs et la culture japonaise. Installées dans le Jura, nous avons voulu
+                                les chiens primitifs et la culture japonaise. Installées à Dommartin-lès-Cuiseaux, en Saône-et-Loire (71), nous avons voulu
                                 construire un élevage à taille humaine, dans un cadre calme, propice à l’observation et
                                 au respect du rythme de chaque chien.
                             </p>

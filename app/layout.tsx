@@ -66,9 +66,6 @@ export const metadata: Metadata = {
     telephone: true,
     address: true,
   },
-  other: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    ? { "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
-    : undefined,
 }
 
 export default function RootLayout({

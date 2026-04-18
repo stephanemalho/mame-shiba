@@ -124,7 +124,7 @@ export default function SejoursPage() {
                         <div className="flex flex-col md:flex-row items-center justify-center text-muted-foreground mb-8 gap-6">
                             <div className="flex flex-col items-center justify-center md:flex-row">
                                 <MapPin className="h-4 w-4" aria-hidden="true" />
-                                <span className="ml-2">Saint Amour, Jura</span>
+                                <span className="ml-2">Dommartin-lès-Cuiseaux, Saône-et-Loire (71)</span>
                             </div>
                             <div className="flex flex-col items-center justify-center p-2 md:flex-row">
                                 <Dog className="h-4 w-4" />
@@ -396,7 +396,7 @@ export default function SejoursPage() {
                             className="text-xl md:text-2xl font-bold mb-4">Visiter l&apos;élevage</h2>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8" />
                         <p className="text-muted-foreground max-w-3xl mx-auto">
-                            Notre élevage se situe dans le Jura. Les visites se font exclusivement sur
+                            Notre élevage se situe à Dommartin-lès-Cuiseaux, en Saône-et-Loire (71). Les visites se font exclusivement sur
                             rendez-vous pour préserver la tranquillité des chiots et des mamans.
                         </p>
                         <Link
