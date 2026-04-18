@@ -95,7 +95,7 @@ const contactItems = [
         title: "Avis Google",
         type: "link",
         content: "Laisser un avis sur Google",
-        href: "https://share.google/owpyAE3sBdFrFKSYN",
+        href: "https://share.google/00ts6sEEy9yHK4eSj",
         secondaryLine: "Voir nos avis sur Google"
     }
 ]
