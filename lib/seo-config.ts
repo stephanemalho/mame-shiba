@@ -354,7 +354,7 @@ export const pageMetadata = {
             "Elevage de Mameshiba en France, le Shiba Inu de petite taille issu de lignées japonaises. Chiots Mameshiba élevés avec soin, socialisés et accompagnés avant adoption.",
 
         keywords: [
-            "élevage de mameshiba responsable",
+            "élevage de mameshiba",
             "chiots mameshiba rares en France",
             "élevage de petit shiba à taille humaine",
             "chiots shiba bien socialisés",
@@ -573,7 +573,7 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-04-12"
+        lastmod: "2026-04-30"
     },
     {
         url: "/mameshiba",
