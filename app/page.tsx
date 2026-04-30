@@ -115,8 +115,7 @@ export default function HomePage() {
                       Kawaii Shiba
                     </div>
                     <h1 className="mt-4 text-3xl font-semibold tracking-[0.03em] text-white md:text-4xl">
-                      Bienvenue dans notre élevage Kawaii - Shiba
-                      MAMESHIBA
+                      Élevage de Shiba Inu Mameshiba en France
                     </h1>
                   </div>
                 </div>
@@ -136,9 +135,9 @@ export default function HomePage() {
                 </div>
 
                 <div className="mx-auto max-w-6xl rounded-xl border border-white/12 bg-[#6a4021]/82 px-6 py-6 text-white shadow-[0_35px_120px_rgba(0,0,0,0.4)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
-                  <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
+                  <span className="text-sm font-medium uppercase tracking-[0.28em] text-white/72">
                     Nous sommes parmi les premiers élevages de Mameshiba en France
-                  </p>
+                  </span>
                   <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
                     <div className="space-y-4">
                       <p className="text-base leading-relaxed text-white/88 md:text-lg">

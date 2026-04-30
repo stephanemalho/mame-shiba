@@ -349,9 +349,10 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "Élevage de Mameshiba en France | Chiots & lignées japonaises | Kawaii Shiba",
+        title: "ELEVAGE DE SHIBA INU MAMESHIBA : Le plus petit shiba du monde!",
         description:
-            "Élevage de Mameshiba en France (Shiba Inu de petite taille): chiots élevés avec soin, lignées japonaises, socialisation sérieuse et accompagnement avant adoption. Découvrez Kawaii Shiba.",
+            "Elevage de Mameshiba en France, le Shiba Inu de petite taille issu de lignées japonaises. Chiots Mameshiba élevés avec soin, socialisés et accompagnés avant adoption.",
+
         keywords: [
             "élevage de mameshiba responsable",
             "chiots mameshiba rares en France",
