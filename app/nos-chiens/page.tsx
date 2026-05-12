@@ -37,6 +37,16 @@ const reproductorsInternalLinks: InternalLinkItem[] = [
     },
 ]
 
+function getDogAnchorId(name: string) {
+    return name
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/['"]/g, "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+}
+
 export const metadata: Metadata = {
     title: pageMetadata.reproductors.title,
     description: pageMetadata.reproductors.description,
@@ -100,7 +110,11 @@ export default function NosChiensPage() {
 
                     <div className="grid gap-10">
                         {dogs.map((dog, index) => (
-                            <Card key={dog.name} className="overflow-hidden bg-muted/30">
+                            <Card
+                                key={dog.name}
+                                id={getDogAnchorId(dog.name)}
+                                className="scroll-mt-28 overflow-hidden bg-muted/30"
+                            >
                                 <CardContent className="p-0">
                                     <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:grid-flow-col-dense" : ""}`}>
                                         <div className={`relative md:min-h-120 min-w-0 ${index % 2 === 1 ? "md:order-2" : ""}`}>

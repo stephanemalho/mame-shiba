@@ -33,7 +33,8 @@ export type Puppy = {
     pedigree?: string
 }
 
-const formUrl = "https://forms.gle/myGmQAj5Kim6UnVx8"
+const yumiNatsuFormUrl = "https://forms.gle/KQuUAmWPiB5kJKqU7"
+const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18"
 const malePrice = 4500
 const femalePrice = 5000
 const defaultHealth = ["Suivi vétérinaire en cours", "Socialisation progressive à l'élevage"]
@@ -80,7 +81,7 @@ export const puppies: Puppy[] = [
             "mameshiba-blanc-hotaru-3.jpg",
             "mameshiba-blanc-hotaru-4.jpg",
         ]),
-        linkTo: formUrl,
+        linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -104,7 +105,7 @@ export const puppies: Puppy[] = [
         highlights: ["Mâle", "Fauve", "Réservé", "Pédigrée Kennel Club of Japan"],
         health: defaultHealth,
         images: puppyImages("KENSHI", ["Kenshi-male-1.jpg"]),
-        linkTo: formUrl,
+        linkTo: yumiNatsuFormUrl,
         isReserved: true,
         price: malePrice,
         priceCurrency: "EUR",
@@ -134,7 +135,7 @@ export const puppies: Puppy[] = [
             "mameshiba-akiro-blanc-2.jpg",
             "akiro-mameshiba-blanc-4.jpg",
         ]),
-        linkTo: formUrl,
+        linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -158,7 +159,7 @@ export const puppies: Puppy[] = [
         highlights: ["Mâle", "Blanc", "Lignée japonaise", "Disponible à la réservation"],
         health: defaultHealth,
         images: puppyImages("IKARI", ["ikari-male-mameshiba-3.jpg"]),
-        linkTo: formUrl,
+        linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -187,7 +188,7 @@ export const puppies: Puppy[] = [
             "kenshiro-mameshiba-3.jpg",
             "kenshiro-mameshiba-4.jpg",
         ]),
-        linkTo: formUrl,
+        linkTo: karasukiWaruFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -215,7 +216,7 @@ export const puppies: Puppy[] = [
             "mitsuki-mameshiba-2.jpg",
             "mitsuki-mameshiba-3.jpg",
         ]),
-        linkTo: formUrl,
+        linkTo: karasukiWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -243,7 +244,7 @@ export const puppies: Puppy[] = [
             "airisu-mameshiba-2.jpg",
             "airisu-mameshiba-3.jpg",
         ]),
-        linkTo: formUrl,
+        linkTo: karasukiWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
