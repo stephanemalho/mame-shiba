@@ -143,6 +143,10 @@ function getPuppyStatus(puppy: Puppy) {
     return "available"
 }
 
+function getPuppyReservedLabel(puppy: Puppy) {
+    return puppy.sexe.toLowerCase().includes("femelle") ? "Réservée" : "Réservé"
+}
+
 function getPuppyParentProfiles(puppy: Puppy) {
     return puppyParentProfilesByLabel[puppy.parents] ?? []
 }
@@ -210,7 +214,7 @@ function buildPuppyStructuredData() {
                 ...(puppy.birthDate ? [{ "@type": "PropertyValue", name: "Date de naissance", value: puppy.birthDate }] : []),
                 ...(puppy.availableFrom ? [{ "@type": "PropertyValue", name: "Date de disponibilité", value: puppy.availableFrom }] : []),
                 { "@type": "PropertyValue", name: "Pédigrée", value: puppy.pedigree ?? "Kennel Club of Japan" },
-                { "@type": "PropertyValue", name: "Statut", value: status === "reserved" ? "Réservé" : "Disponible" },
+                { "@type": "PropertyValue", name: "Statut", value: status === "reserved" ? getPuppyReservedLabel(puppy) : "Disponible" },
             ],
             ...(offers ? { offers } : {}),
             position: index + 1,
@@ -250,6 +254,10 @@ export default function NosChiotsPage() {
     const puppyStructuredData = buildPuppyStructuredData()
     const lastMod = returnLastmod(siteConfig.pages.puppies)
     const visiblePuppies = puppies.filter((puppy) => !puppy.isAdopted)
+    const availablePuppiesCount = visiblePuppies.filter((puppy) => !puppy.isReserved).length
+    const availablePuppiesTitle = availablePuppiesCount > 0
+        ? `${availablePuppiesCount} chiot${availablePuppiesCount > 1 ? "s" : ""} disponible${availablePuppiesCount > 1 ? "s" : ""}`
+        : "Aucun chiot disponible actuellement"
     const hasVisiblePuppies = visiblePuppies.length > 0
 
     return (
@@ -281,22 +289,35 @@ export default function NosChiotsPage() {
                     </section>
 
                     {hasVisiblePuppies ? (
-                        <section className="grid gap-10 my-12">
-                            {visiblePuppies.map((puppy, index) => {
-                                const puppyAnchorId = getPuppyAnchorId(puppy.name)
-                                const puppyStatus = getPuppyStatus(puppy)
-                                const isReserved = puppyStatus === "reserved"
-                                const parentProfiles = getPuppyParentProfiles(puppy)
-                                const priceTextClass = isReserved ? "text-muted-foreground line-through" : "text-primary"
+                        <section className="my-12 rounded-3xl border border-primary/10 bg-muted/20 p-4 shadow-sm md:p-8">
+                            <div className="mb-8 max-w-3xl space-y-3">
+                                <Badge variant="secondary" className="w-fit">
+                                    Chiots disponibles
+                                </Badge>
+                                <h2 className="text-2xl font-bold md:text-3xl">
+                                    {availablePuppiesTitle}
+                                </h2>
+                                <p className="text-muted-foreground">
+                                    Retrouvez ici les chiots actuellement présentés par l'élevage. Le compteur ne prend en compte que les chiots encore ouverts à la réservation : les chiots réservés restent affichés pour suivre la portée, mais ne sont pas comptabilisés comme disponibles.
+                                </p>
+                            </div>
+                            <div className="grid gap-10">
+                                {visiblePuppies.map((puppy, index) => {
+                                    const puppyAnchorId = getPuppyAnchorId(puppy.name)
+                                    const puppyStatus = getPuppyStatus(puppy)
+                                    const isReserved = puppyStatus === "reserved"
+                                    const reservedLabel = getPuppyReservedLabel(puppy)
+                                    const parentProfiles = getPuppyParentProfiles(puppy)
+                                    const priceTextClass = isReserved ? "text-muted-foreground line-through" : "text-primary"
 
-                                return (
-                                    <Card
-                                        key={puppy.name}
-                                        className={`relative overflow-hidden bg-muted/30 ${isReserved ? "border-2 border-green-600 ring-2 ring-green-600/25 ring-offset-2 ring-offset-background" : ""}`}
-                                    >
+                                    return (
+                                        <Card
+                                            key={puppy.name}
+                                            className={`relative overflow-hidden bg-background ${isReserved ? "border-2 border-green-600 ring-2 ring-green-600/25 ring-offset-2 ring-offset-background" : ""}`}
+                                        >
                                         {isReserved ? (
                                             <div className="absolute right-4 top-4 z-20 rotate-6 rounded-md border-2 border-green-700 bg-green-100 px-4 py-1 text-sm font-extrabold uppercase tracking-wider text-green-800 shadow-[0_0_0_3px_#166534]">
-                                                Réservé
+                                                {reservedLabel}
                                             </div>
                                         ) : null}
                                         <CardContent className="p-0">
@@ -307,6 +328,8 @@ export default function NosChiotsPage() {
                                                         alt={`Photos du chiot Mameshiba ${puppy.name}`}
                                                         priority={index === 0}
                                                         sizes="(min-width: 1024px) 42vw, 100vw"
+                                                        fit="contain"
+                                                        containerClassName="h-96 md:h-full"
                                                     />
                                                 </div>
                                                 <div className={`min-w-0 space-y-5 p-6 md:p-8 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
@@ -317,7 +340,7 @@ export default function NosChiotsPage() {
                                                         </Badge>
                                                         <Badge variant="outline">{puppy.color}</Badge>
                                                         {isReserved ? (
-                                                            <Badge className="bg-green-700 text-white hover:bg-green-700">Réservé</Badge>
+                                                            <Badge className="bg-green-700 text-white hover:bg-green-700">{reservedLabel}</Badge>
                                                         ) : (
                                                             <Badge className="bg-primary text-primary-foreground hover:bg-primary">Disponible</Badge>
                                                         )}
@@ -465,7 +488,7 @@ export default function NosChiotsPage() {
                                                     <div className="flex flex-col gap-3 sm:flex-row">
                                                         {isReserved ? (
                                                             <span className="cursor-not-allowed rounded-md border border-green-700 bg-green-50 px-4 py-2 text-center font-medium text-green-800">
-                                                                {puppy.name} est réservé
+                                                                {puppy.name} est {reservedLabel.toLowerCase()}
                                                             </span>
                                                         ) : (
                                                             <>
@@ -489,9 +512,10 @@ export default function NosChiotsPage() {
                                                 </div>
                                             </div>
                                         </CardContent>
-                                    </Card>
-                                )
-                            })}
+                                        </Card>
+                                    )
+                                })}
+                            </div>
                         </section>
                     ) : (
                         <section className="max-w-5xl mx-auto my-12 grid gap-8">

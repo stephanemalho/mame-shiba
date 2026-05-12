@@ -2,6 +2,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 type CarouselImage = {
     src: string
@@ -14,9 +15,19 @@ type ImageCarouselProps = {
     priority?: boolean
     sizes?: string
     quality?: number
+    fit?: "cover" | "contain"
+    containerClassName?: string
 }
 
-function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: ImageCarouselProps) {
+function ImageCarousel({
+    images,
+    alt,
+    priority = false,
+    sizes,
+    quality = 70,
+    fit = "cover",
+    containerClassName,
+}: ImageCarouselProps) {
     const [index, setIndex] = useState(0)
     const resolvedImages = images.map((image) => (typeof image === "string" ? { src: image, alt } : image))
     const total = resolvedImages.length
@@ -29,12 +40,15 @@ function ImageCarousel({ images, alt, priority = false, sizes, quality = 70 }: I
     const next = () => setIndex((i) => (i + 1) % total)
 
     return (
-        <div className="relative h-72 md:h-full overflow-hidden rounded-lg bg-card/40 mx-4">
+        <div className={cn("relative h-72 md:h-full overflow-hidden rounded-lg bg-card/40 mx-4", fit === "contain" && "bg-muted/50", containerClassName)}>
             <Image
                 src={currentImageSrc}
                 alt={currentImage.alt}
                 fill
-                className="object-cover transition duration-300 p-2"
+                className={cn(
+                    "transition duration-300 p-2",
+                    fit === "contain" ? "object-contain md:p-3" : "object-cover"
+                )}
                 sizes={resolvedSizes}
                 priority={priority}
                 fetchPriority={priority ? "high" : "auto"}
