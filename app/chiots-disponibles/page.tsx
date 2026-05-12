@@ -152,6 +152,38 @@ function buildPuppyStructuredData() {
         const status = getPuppyStatus(puppy)
         const url = `${siteConfig.siteUrl}/chiots-disponibles#${getPuppyAnchorId(puppy.name)}`
         const firstImage = puppy.images[0]?.src
+        const availability = status === "available" ? "https://schema.org/InStock" : "https://schema.org/SoldOut"
+        const offers = typeof puppy.price === "number"
+            ? {
+                "@type": "Offer",
+                url: puppy.linkTo,
+                availability,
+                priceCurrency: puppy.priceCurrency ?? "EUR",
+                price: puppy.price.toString(),
+                ...(puppy.availableFrom ? { availabilityStarts: puppy.availableFrom } : {}),
+                seller: {
+                    "@type": "Organization",
+                    name: siteConfig.name,
+                    url: siteConfig.siteUrl,
+                },
+            }
+            : puppy.priceMin && puppy.priceMax
+                ? {
+                    "@type": "AggregateOffer",
+                    url: puppy.linkTo,
+                    availability,
+                    priceCurrency: puppy.priceCurrency ?? "EUR",
+                    lowPrice: puppy.priceMin.toString(),
+                    highPrice: puppy.priceMax.toString(),
+                    offerCount: "1",
+                    ...(puppy.availableFrom ? { availabilityStarts: puppy.availableFrom } : {}),
+                    seller: {
+                        "@type": "Organization",
+                        name: siteConfig.name,
+                        url: siteConfig.siteUrl,
+                    },
+                }
+                : undefined
 
         return {
             "@type": "Product",
@@ -175,24 +207,12 @@ function buildPuppyStructuredData() {
                 { "@type": "PropertyValue", name: "Sexe", value: puppy.sexe },
                 { "@type": "PropertyValue", name: "Parents", value: puppy.parents.replace("Parents : ", "") },
                 { "@type": "PropertyValue", name: "Naissance", value: puppy.age },
+                ...(puppy.birthDate ? [{ "@type": "PropertyValue", name: "Date de naissance", value: puppy.birthDate }] : []),
+                ...(puppy.availableFrom ? [{ "@type": "PropertyValue", name: "Date de disponibilité", value: puppy.availableFrom }] : []),
                 { "@type": "PropertyValue", name: "Pédigrée", value: puppy.pedigree ?? "Kennel Club of Japan" },
                 { "@type": "PropertyValue", name: "Statut", value: status === "reserved" ? "Réservé" : "Disponible" },
             ],
-            offers: {
-                "@type": "Offer",
-                url: puppy.linkTo,
-                availability:
-                    status === "available"
-                        ? "https://schema.org/InStock"
-                        : "https://schema.org/SoldOut",
-                priceCurrency: puppy.priceCurrency ?? "EUR",
-                ...(typeof puppy.price === "number" ? { price: puppy.price.toString() } : {}),
-                seller: {
-                    "@type": "Organization",
-                    name: siteConfig.name,
-                    url: siteConfig.siteUrl,
-                },
-            },
+            ...(offers ? { offers } : {}),
             position: index + 1,
             ...(firstImage ? { thumbnailUrl: `${siteConfig.siteUrl}${firstImage}` } : {}),
         }
@@ -335,7 +355,7 @@ export default function NosChiotsPage() {
                                                         <div className="grid gap-1 border-t border-primary/8 px-4 py-3 sm:grid-cols-[minmax(150px,0.7fr)_1fr] sm:items-center">
                                                             <dt className="flex items-center gap-2 font-semibold text-muted-foreground">
                                                                 <Calendar className="h-4 w-4 text-primary" aria-hidden="true" />
-                                                                Statut
+                                                                Disponibilité
                                                             </dt>
                                                             <dd className="text-foreground sm:text-right">{puppy.readyDate}</dd>
                                                         </div>
@@ -371,9 +391,6 @@ export default function NosChiotsPage() {
                                                                         {typeof puppy.price === "number"
                                                                             ? formatPuppyPrice(puppy.price, puppy.priceCurrency ?? "EUR")
                                                                             : puppy.priceLabel}
-                                                                    </span>
-                                                                    <span className="mt-1 block text-xs text-muted-foreground">
-                                                                        {puppy.priceIncludes}
                                                                     </span>
                                                                 </dd>
                                                             </div>
