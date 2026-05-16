@@ -207,13 +207,13 @@ export default function MameshibaPricePage() {
                                     href={siteConfig.pages.puppies}
                                     className="inline-flex w-fit rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85"
                                 >
-                                    Voir les réservations en cours
+                                    Visiter la page des chiots disponibles
                                 </Link>
                                 <Link
                                     href={siteConfig.pages.contact}
                                     className="inline-flex w-fit rounded-md border border-primary px-5 py-3 font-semibold text-primary transition-colors hover:bg-primary/10"
                                 >
-                                    Nous contacter
+                                    Vous avez un projet d’adoption ? Contactez-nous
                                 </Link>
                             </div>
                         </div>
@@ -391,7 +391,7 @@ export default function MameshibaPricePage() {
                                         href={siteConfig.pages.puppies}
                                         className="inline-flex w-fit rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85"
                                     >
-                                        Voir les réservations
+                                        Voir les chiots disponibles à l’élevage
                                     </Link>
                                     <Link
                                         href={siteConfig.pages.contact}

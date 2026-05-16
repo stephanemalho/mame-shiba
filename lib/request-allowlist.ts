@@ -1,4 +1,6 @@
 import { blog } from "@/constants/blog/blog";
+import { puppies } from "@/app/chiots-disponibles/puppies";
+import { getPuppyUrl } from "@/app/chiots-disponibles/puppy-seo";
 import { isBlogEnabled } from "@/lib/blog-visibility";
 import { publicAssetRoutes } from "@/lib/generated-public-asset-paths";
 import { sitemapPages, siteConfig } from "@/lib/seo-config";
@@ -54,6 +56,7 @@ const toPathSet = (paths: Iterable<string>): ReadonlySet<string> =>
 const staticPageRoutes = [
     ...Object.values(siteConfig.pages),
     ...sitemapPages.map((page) => page.url),
+    ...puppies.map((puppy) => getPuppyUrl(puppy)),
     ...EXTRA_STATIC_PAGE_ROUTES,
 ] as const;
 

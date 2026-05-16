@@ -14,6 +14,12 @@ export type Puppy = {
     age: string;
     birthDate?: string;
     availableFrom?: string;
+    /**
+     * Date ISO de dernière mise à jour de la fiche chiot.
+     * À modifier quand les photos, le statut, le prix ou les informations importantes changent.
+     * Exemple : "2026-05-16"
+     */
+    updatedAt?: string;
     size: string;
     ruler: string;
     description: string;
@@ -23,6 +29,13 @@ export type Puppy = {
     linkTo: string;
     isReserved?: boolean;
     isAdopted?: boolean;
+    /**
+     * Redirection SEO optionnelle pour les fiches de chiots adoptés.
+     * Exemple : redirectTo: "/chiots-disponibles/akiro"
+     * À utiliser seulement si une ancienne fiche reçoit du trafic et doit pousser
+     * vers un autre chiot disponible ou vers "/chiots-disponibles".
+     */
+    redirectTo?: string;
     price?: number;
     priceLabel?: string;
     priceMin?: number;
@@ -42,7 +55,6 @@ const defaultHealth = [
     "Socialisation progressive à l'élevage"
 ];
 const defaultPriceIncludes = `Tarif Kawaii Shiba : ${malePrice.toLocaleString("fr-FR")} € pour un mâle, ${femalePrice.toLocaleString("fr-FR")} € pour une femelle.`;
-const priceToConfirmBySex = `${malePrice.toLocaleString("fr-FR")} € mâle / ${femalePrice.toLocaleString("fr-FR")} € femelle`;
 const yumiBirthDate = "Né le 30 avril 2026";
 const yumiBirthDateIso = "2026-04-30";
 const yumiAvailableDate = "Disponible le 1 juillet 2026";
@@ -73,6 +85,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Hotaru est un mâle Mameshiba blanc issu de Yumi et Natsu. Il possède un pédigrée Kennel Club of Japan et descend d'une lignée avec petit-fils de KC Champion.",
         highlights: [
@@ -107,6 +120,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Kenshi est un mâle Mameshiba fauve issu de Yumi et Natsu. Il dispose d'un pédigrée Kennel Club of Japan et descend d'une lignée avec petit-fils de KC Champion. Kenshi est actuellement réservé.",
         highlights: [
@@ -137,6 +151,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Akiro est un mâle Mameshiba blanc issu de Yumi et Natsu. Son type lumineux, son expression douce et sa lignée japonaise sont suivis avec attention pendant sa croissance.",
         highlights: [
@@ -171,6 +186,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Ikari est un mâle Mameshiba blanc issu de Yumi et Natsu. Il est présenté avec les chiots disponibles de la portée et pourra être suivi en photos et vidéos sur demande.",
         highlights: [
@@ -200,6 +216,7 @@ export const puppies: Puppy[] = [
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Kenshiro est un mâle Mameshiba fauve issu de Karasuki et Waru. Son évolution est suivie à l'élevage afin de confirmer son gabarit, son tempérament et son type.",
         highlights: [
@@ -234,6 +251,7 @@ export const puppies: Puppy[] = [
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Mitsuki est une femelle Mameshiba fauve de la portée Karasuki et Waru. Elle possède un pédigrée Kennel Club of Japan et nous suivons son développement avec attention. Mitsuki est actuellement réservée.",
         highlights: [
@@ -268,6 +286,7 @@ export const puppies: Puppy[] = [
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
+        updatedAt: "2026-05-16",
         description:
             "Airisu est une femelle Mameshiba fauve issue de Karasuki et Waru. Son profil sera précisé au fil des prochaines semaines avec de nouvelles photos, vidéos et observations. Airisu est actuellement réservée.",
         highlights: [

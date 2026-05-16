@@ -11,7 +11,7 @@ import { faqMameShiba } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
-import { Feather, Heart, History, PawPrint, Ruler, Scale, ScrollText, Sparkles } from "lucide-react"
+import { BadgeAlert, Feather, Heart, History, PawPrint, Quote, Ruler, Scale, ScrollText, Sparkles } from "lucide-react"
 
 const pageImage = "/pages/homePage/mame-shiba-for-modern-life.jpeg"
 
@@ -231,7 +231,7 @@ export default function MameShibaPage() {
                                 Le Mameshiba
                             </Badge>
                             <h1 className="text-xl md:text-3xl font-bold">
-                                Tout savoir sur le Mameshiba : Le plus petit Shiba du monde ! origines, tailles et critères d&apos;adoption, avant de se lancer.
+                                Tout savoir sur le Mameshiba : son origines, sa taille et les critères d&apos;adoption, avant de se lancer.
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 Le Mameshiba est issu du Shiba Inu, en format miniature ! Contrairement au Shiba Inu classique, souvent réputé pour son indépendance marquée, le Mameshiba présente généralement un tempérament plus souple et plus proche de l’humain, ce qui le rend globalement plus facile à éduquer.
@@ -242,6 +242,17 @@ export default function MameShibaPage() {
                             <p className="text-muted-foreground leading-relaxed">
                                 C'est un chien extrêmement rare.
                             </p>
+                            <aside className="rounded-2xl border border-primary/15 bg-primary/6 p-4 text-sm leading-relaxed text-muted-foreground">
+                                <p className="flex gap-3">
+                                    <Quote className="mt-0.5 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
+                                    <span>
+                                        Petite précision : on ne dit pas <strong className=" text-red-500">Mame shiba</strong>.
+                                        L&apos;appellation correcte est <strong className="text-green-500">le Mameshiba</strong>.
+                                        Un éleveur qui écrit encore le nom en deux mots mérite au minimum une petite vérification avant de lui confier votre projet
+                                        <BadgeAlert className="ml-1 inline h-4 w-4 align-[-0.125em] text-primary" aria-hidden="true" />
+                                    </span>
+                                </p>
+                            </aside>
                             <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
                                 <div className="flex items-center gap-2">
                                     <Heart className="h-4 w-4 text-primary" aria-hidden="true" />

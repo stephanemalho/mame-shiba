@@ -129,7 +129,7 @@ const resources = filterBlogLinks([
         description: "Une page claire pour consulter nos tarifs Mameshiba à l’élevage et comprendre ce qu’ils recouvrent.",
     },
     {
-        title: "Voir les réservations et prochaines portées",
+        title: "Voir les chiots et connaitre les prochaines portées",
         href: "/chiots-disponibles",
         description: "Consultez les disponibilités actuelles et les informations pratiques liées aux réservations.",
     },

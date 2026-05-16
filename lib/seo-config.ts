@@ -369,11 +369,11 @@ export const pageMetadata = {
     },
 
     shiba: {
-        title: "Mameshiba : caractère, taille, prix et différences avec le Shiba Inu",
+        title: "Mameshiba : Le vrai Shiba Inu nain | Kawaii Shiba",
         description:
-            "Découvrez le vrai Mameshiba : petite taille, son caractère, ses origines japonaises, prix et différences avec le Shiba Inu. Un guide clair avant adoption.",
+            "Découvrez le Mameshiba, le Shiba Inu de petite taille, star du Japon. Apprenez tout sur son origine, sa taille, son caractère et comment il se différencie du Shiba Inu classique.",
         keywords: [
-            "mameshiba",
+            "mame shiba",
             "Mameshiba",
             "taille du mameshiba",
             "difference shiba inu mameshiba",
@@ -388,9 +388,9 @@ export const pageMetadata = {
     },
 
     puppies: {
-        title: "Nos chiots actuellement disponibles",
+        title: "ADOPTEZ UN CHIOT MAMESHIBA chez Kawaii Shiba",
         description:
-            "Les portées de Mameshiba comptent généralement peu de chiots, ce qui explique leur très grande rareté. La qualité de nos lignées, leur morphologie, leur socialisation et leur équilibre en font de merveilleux chiens de compagnie.",
+            "Découvrez nos SHIBA INU - MAMESHIBA disponibles à l'adoption : des petits shibas japonais élevés avec soin, issus de lignées rigoureusement sélectionnées et prêts à rejoindre leur nouvelle famille.",
         keywords: [
             "chiots mameshiba",
             "mameshiba disponible",
@@ -403,9 +403,9 @@ export const pageMetadata = {
     },
 
     mameshibaPrice: {
-        title: "Prix de nos Mameshiba | Kawaii Shiba",
+        title: "Prix de nos Mameshiba en 2026 chez Kawaii Shiba",
         description:
-            "Découvrez les prix de nos Mameshiba à l'élevage Kawaii Shiba : 4 500 € pour un mâle et 5 000 € pour une femelle, avec sélection sérieuse et accompagnement.",
+            "4 500 € pour un mâle et 5 000 € pour une femelle, cette page vous donne les détails sur les tarifs et les conditions de reservation.",
         keywords: [
             "prix Mameshiba",
             "prix mameshiba elevage",
@@ -419,7 +419,7 @@ export const pageMetadata = {
     },
 
     adoptionGuide: {
-        title: "Réussir l'adoption de son chiot Mameshiba | Kawaii Shiba",
+        title: "Réussir l'adoption de son Mameshiba avec les conseilles Kawaii Shiba",
         description:
             "Guide pratique pour réussir l'adoption d'un chiot Mameshiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
         keywords: [
@@ -428,7 +428,7 @@ export const pageMetadata = {
             "premiers jours chiot mameshiba",
             "trajet adoption chiot",
             "proprete chiot mameshiba",
-            "solitude chiot shiba",
+            "chiot mame shiba inu",
             "guide adoption Mameshiba"
         ]
     },
@@ -448,7 +448,7 @@ export const pageMetadata = {
     },
 
     presentation: {
-        title: "L'élevage Kawaii Shiba - Mameshiba",
+        title: "L'élevage Kawaii Shiba Mameshiba",
         description:
             "Élevage spécialisé Mameshiba à Dommartin-lès-Cuiseaux (71) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l'équilibre émotionnel.",
         keywords: [
@@ -478,7 +478,7 @@ export const pageMetadata = {
     wellness: {
         title: "La vie en élevage",
         description:
-            "Voici comment vivent nos Mameshiba et nos chiots au sein de l’élevage Kawaii Shiba",
+            "Voici comment vivent nos Mameshiba reproducteurs et nos chiots au sein de notre élevage",
         keywords: [
             "conditions de vie des chiots en élevage",
             "élevage familial responsable",
@@ -496,7 +496,7 @@ export const pageMetadata = {
     contact: {
         title: "Contact & visites",
         description:
-            "Parlons de votre futur compagnon. Les visites se font uniquement sur rendez-vous pour respecter le rythme des chiots.",
+            "Parlons de votre projet d'adoption. Les visites se font uniquement sur rendez-vous pour respecter le rythme des chiots.",
         keywords: [
             "contact elevage kawaii shiba",
             "visite elevage",
@@ -548,9 +548,9 @@ export const pageMetadata = {
         ]
     },
     blog: {
-        title: "Blog Mameshiba | Shiba Inu, comportement et adoption",
+        title: "Tout savoir sur le Shiba Inu et le Mameshiba | Blog de Kawaii Shiba",
         description:
-            "Articles sur le Shiba Inu et le Mameshiba : comportement, comparatifs, vie quotidienne et conseils d'adoption.",
+            "Articles complets sur le comportement, les comparatifs, la vie quotidienne et les conseils d'adoption pour les Shiba Inu et les Mameshiba, rédigés par les éleveuses de Kawaii Shiba.",
         keywords: [
             "blog Mameshiba",
             "blog shiba inu",
@@ -573,31 +573,31 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-04-30"
+        lastmod: "2026-05-16"
     },
     {
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.75,
-        lastmod: "2026-04-06"
+        lastmod: "2026-05-16"
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.9,
-        lastmod: "2026-05-12"
+        lastmod: "2026-05-16"
     },
     {
         url: "/adoption/reussir-son-adoption",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: seoLastmod
+        lastmod: "2026-05-16"
     },
     {
         url: "/mame-shiba-prix",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-04-06"
+        lastmod: "2026-05-16"
     },
     {
         url: "/nos-chiens",
@@ -627,7 +627,7 @@ export const sitemapPages = [
         url: "/contact",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: seoLastmod
+        lastmod: "2026-05-16"
     },
     {
         url: "/mentions-legales",

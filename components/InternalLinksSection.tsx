@@ -1,12 +1,37 @@
 import Link from "next/link"
+import Image from "next/image"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { siteConfig } from "@/lib/seo-config"
 import { cn } from "@/lib/utils"
 
 export type InternalLinkItem = {
     href: string
     title: string
     description: string
+    image?: string
+    imageAlt?: string
+}
+
+const internalLinkImagesByHref: Record<string, string> = {
+    "/": siteConfig.ogImage,
+    "/mameshiba": "/pages/homePage/mame-shiba-for-modern-life.jpeg",
+    "/mame-shiba-prix": "/pages/image-all-shiba/mameshiba-exterieur-profil-01.webp",
+    "/presentation-elevage": "/pages/homePage/mame-shiba-good-caractere.jpg",
+    "/presentation-eleveuses": "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg",
+    "/nos-chiens": "/pages/reproducteurs/YUMI-femelle-mame-shiba-couleur-feu.webp",
+    "/chiots-disponibles": "/pages/puppies/mameshiba-blanc-hotaru-1.jpg",
+    "/adoption/reussir-son-adoption": "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg",
+    "/bien-etre-animal": "/locaux.webp",
+    "/contact": siteConfig.ogImage,
+    "/blog": siteConfig.ogImage,
+    "/blog/mame-shiba": siteConfig.ogImage,
+}
+
+function getInternalLinkImage(item: InternalLinkItem) {
+    const hrefWithoutAnchor = item.href.split("#")[0]?.split("?")[0] || item.href
+
+    return item.image ?? internalLinkImagesByHref[hrefWithoutAnchor] ?? siteConfig.ogImage
 }
 
 type InternalLinksSectionProps = {
@@ -47,10 +72,22 @@ export function InternalLinksSection({
                         className="group block rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
                         <Card className="h-full border-muted bg-muted/35 transition-colors group-hover:border-primary/35 group-hover:bg-muted/55">
-                            <CardHeader className="space-y-3">
-                                <CardTitle className="text-lg leading-snug group-hover:text-primary">
-                                    {item.title}
-                                </CardTitle>
+                            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
+                                <span className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border border-primary/15 bg-background shadow-sm ring-4 ring-background transition-transform group-hover:scale-105">
+                                    <Image
+                                        src={getInternalLinkImage(item)}
+                                        alt={item.imageAlt ?? `Image de la page ${item.title}`}
+                                        fill
+                                        className="object-cover"
+                                        sizes="64px"
+                                        quality={60}
+                                    />
+                                </span>
+                                <div className="min-w-0 pt-1">
+                                    <CardTitle className="text-lg leading-snug group-hover:text-primary">
+                                        {item.title}
+                                    </CardTitle>
+                                </div>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-sm leading-relaxed text-muted-foreground">
