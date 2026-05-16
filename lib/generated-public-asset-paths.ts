@@ -2,6 +2,7 @@
 // Do not edit it by hand.
 
 export const publicAssetRoutes = [
+    "/.DS_Store",
     "/adobe-express-qr-code.png",
     "/assets/authors/aurelie-and-pomsky-on-a-bike.jpeg",
     "/assets/authors/aurelie-and-pomsky-see-view.jpeg",
@@ -22,6 +23,7 @@ export const publicAssetRoutes = [
     "/logo-kawaii-mame-shiba.png",
     "/logo-kawaii-shiba.jpg",
     "/mame-shiba-in-a-sakura-tree.jpg",
+    "/pages/.DS_Store",
     "/pages/adoption/kaito-7-mois-en-voiture.jpg",
     "/pages/adoption/Kaito-7mois-adore-les-hotel.jpg",
     "/pages/adoption/waru-mame-shiba-kawaii-shiba-portrait.webp",
@@ -120,6 +122,7 @@ export const publicAssetRoutes = [
     "/pages/image-all-shiba/mameshiba-sur-structure-bois-01.webp",
     "/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.jpeg",
     "/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.webp",
+    "/pages/japan-desktop.png",
     "/pages/le-mame-shiba/chiot-mameshiba.jpg",
     "/pages/le-mame-shiba/ichiro-mame-shiba-kawaii-shiba-portrait-v2.webp",
     "/pages/le-mame-shiba/mame-shiba-puppy-blanc-white.jpeg",
@@ -134,8 +137,10 @@ export const publicAssetRoutes = [
     "/pages/les-eleveuses/marine-et-les-shiba.jpg",
     "/pages/mame-shiba-prix/deux-mame-shiba-chiots-blanc-et-un-noir.jpeg",
     "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg",
+    "/pages/mameshiba-desktop.jpg",
     "/pages/presentation-elevage/Karasuki.webp",
     "/pages/presentation-elevage/Yuzu-femelle-mame-shiba-couleur-feu.webp",
+    "/pages/puppies/.DS_Store",
     "/pages/puppies/airisu-mameshiba-1.jpg",
     "/pages/puppies/airisu-mameshiba-2.jpg",
     "/pages/puppies/airisu-mameshiba-3.jpg",

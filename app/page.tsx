@@ -153,21 +153,7 @@ export default function HomePage() {
           >
             <div className="container relative mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
-                <div className="overflow-hidden rounded-xl border border-[#57331f]/10 bg-white/70 shadow-[0_24px_90px_rgba(95,54,31,0.18)] md:rounded-4xl">
-                  <Image
-                    src="/pages/homePage/bandeau-presentation-kawaii-mameshiba.jpg"
-                    alt="Bandeau de présentation Kawaii Shiba Mameshiba"
-                    width={1260}
-                    height={400}
-                    priority
-                    fetchPriority="high"
-                    loading="eager"
-                    sizes="(min-width: 1280px) 1152px, (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)"
-                    className="block h-auto w-full"
-                  />
-                </div>
-
-                <div className="mx-auto max-w-6xl rounded-xl border border-[#7a4a2f]/15 bg-[#fff8ef]/88 px-6 py-6 text-center text-[#57331f] shadow-[0_24px_90px_rgba(95,54,31,0.16)] backdrop-blur-md md:rounded-4xl md:px-8">
+                <div className="mx-auto max-w-6xl rounded-xl border border-[#7a4a2f]/15 bg-[#fff8ef]/70 px-6 py-6 text-center text-[#57331f] shadow-[0_24px_90px_rgba(95,54,31,0.16)] md:rounded-4xl md:px-8">
                   <div className="mx-auto max-w-4xl">
                     <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-[#9a4a35]/20 bg-[#f7eadc]/85 px-4 py-1 text-[11px] uppercase tracking-[0.35em] text-[#7a4a2f]">
                       Kawaii Shiba
@@ -195,20 +181,20 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="mx-auto max-w-6xl rounded-xl border border-[#57331f]/10 bg-[#57331f]/90 px-6 py-6 text-white shadow-[0_28px_100px_rgba(62,35,21,0.28)] backdrop-blur-md md:rounded-4xl md:px-8 md:py-8 lg:px-10">
-                  <span className="text-sm font-medium uppercase tracking-[0.28em] text-white/76">
+                <div className="mx-auto max-w-6xl rounded-xl border border-[#57331f]/10 bg-white/40 px-6 py-6 text-[#57331f] shadow-[0_28px_100px_rgba(62,35,21,0.28)] md:rounded-4xl md:px-8 md:py-8 lg:px-10">
+                  <span className="text-sm font-medium uppercase tracking-[0.28em] text-[#57331f]">
                     Nous sommes parmi les premiers élevages de Mameshiba en France
                   </span>
                   <div className="mt-5 grid gap-6 lg:grid-cols-[1.5fr_0.75fr] lg:items-end">
                     <div className="space-y-4">
-                      <p className="text-base leading-relaxed text-white/88 md:text-lg">
+                      <p className="text-[#57331f] leading-relaxed md:text-lg">
                         Nos Mameshiba reproducteurs sont arrivés tout droit du Japon au printemps 2022, avec une exigence particulière envers leur éleveur d'origine pour garantir l'excellence des lignées importées
                       </p>
                     </div>
                     <div className="flex lg:justify-end">
                       <Link
                         href="/nos-chiens"
-                        className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold uppercase text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/50 px-6 py-3 text-sm font-semibold uppercase text-[#57331f] transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                       >
                         Découvrir nos reproducteurs
                       </Link>
