@@ -442,44 +442,46 @@ export default function HomePage() {
               <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid gap-6 lg:grid-cols-2">
               {founders.map((founder, index) => (
                 <Link
-                  key={index}
+                  key={founder.name}
                   href={`/presentation-eleveuses#${founder.name.toLowerCase()}`}
-                  className="block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
+                  className="group block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   aria-label={`Lire la présentation de ${founder.name}`}
                 >
-                  <article className="relative text-center bg-muted/70 rounded-lg overflow-hidden">
-                    <div
-                      className={`absolute top-4 right-4 items-end md:flex hidden flex-col gap-2 z-10`}
-                    >
-                      {founder.badges.map((badge, badgeIdx) => (
-                        <Badge
-                          key={badgeIdx}
-                          variant="secondary"
-                          className="text-[11px] shadow-sm p-2 backdrop-blur-sm bg-background/85"
-                        >
-                          {badge}
-                        </Badge>
-                      ))}
-                    </div>
-                    <div className="relative w-full aspect-square">
-                      <Image
-                        src={founder.image || "/home-founder-fallback.jpg"}
-                        alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        quality={70}
-                      />
+                  <article className="grid h-full gap-5 rounded-lg border border-primary/10 bg-background/80 p-4 shadow-sm transition-colors group-hover:border-primary/30 group-hover:bg-background md:grid-cols-[144px_1fr]">
+                    <div className="relative aspect-square w-28 overflow-hidden rounded-lg bg-muted shadow-sm ring-1 ring-primary/10 md:w-full">
+                        <Image
+                          src={founder.image || "/home-founder-fallback.jpg"}
+                          alt={`Photo d'${founder.name}, fondatrice de l'élevage`}
+                          fill
+                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          sizes="(min-width: 1024px) 144px, 112px"
+                          quality={70}
+                        />
                     </div>
 
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold mb-2">{founder.name}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                    <div className="min-w-0 space-y-4">
+                      <div className="space-y-2">
+                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">
+                          Éleveuse Kawaii Shiba
+                        </p>
+                        <h3 className="text-xl font-semibold">{founder.name}</h3>
+                      </div>
+                      <p className="text-sm leading-relaxed text-muted-foreground">
                         {founder.description}
                       </p>
+                      <div className="flex flex-wrap gap-2">
+                        {founder.badges.slice(0, 3).map((badge) => (
+                          <Badge key={badge} variant="outline" className="bg-background/70 text-[11px]">
+                            {badge}
+                          </Badge>
+                        ))}
+                      </div>
+                      <span className="inline-flex text-sm font-semibold text-primary transition-colors group-hover:text-primary/80">
+                        Voir son profil
+                      </span>
                     </div>
                   </article>
                 </Link>

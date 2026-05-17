@@ -240,7 +240,7 @@ export default function MameShibaPage() {
                                 Sa sélection sur plusieurs générations tend à favoriser des individus plus réceptifs, plus attentifs et plus enclins à coopérer, tout en conservant le physique primitif qui fait tout son charme.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                C'est un chien extrêmement rare.
+                                C'est un chien extrêmement rare et fascinant..
                             </p>
                             <aside className="rounded-2xl border border-primary/15 bg-primary/6 p-4 text-sm leading-relaxed text-muted-foreground">
                                 <p className="flex gap-3">

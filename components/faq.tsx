@@ -27,6 +27,7 @@ export function FAQSection({ title, description, items }: FAQSectionProps) {
         {items.map((item) => (
           <details
             key={item.question}
+            open
             className="group rounded-2xl border border-muted bg-muted/40 p-5 transition hover:border-primary/50 focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-primary"
           >
             <summary className="flex items-center justify-between gap-4 cursor-pointer list-none rounded px-2 py-1 -mx-2 -my-1 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">

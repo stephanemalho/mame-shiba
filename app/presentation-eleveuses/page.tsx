@@ -108,6 +108,18 @@ export default function PresentationEleveusesPage() {
         }
     ]
 
+    const aurelieHighlights = [
+        "Lecture du comportement",
+        "Lien humain-chien",
+        "Accompagnement des familles",
+    ]
+
+    const marineHighlights = [
+        "Organisation du quotidien",
+        "Hygiène et routines",
+        "Stabilité du cadre",
+    ]
+
     return (
         <>
             <script
@@ -135,134 +147,173 @@ export default function PresentationEleveusesPage() {
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-4" aria-hidden="true" />
                         </div>
 
-                        <div className="space-y-12">
-                            <article id="aurelie" className="grid md:grid-cols-2 gap-12 items-start scroll-mt-28">
-                                <div className="grid grid-cols-6 auto-rows-[70px] sm:auto-rows-[90px] md:auto-rows-[105px] lg:auto-rows-[118px] gap-3">
-                                    {aurelieGallery.map((image, index) => (
-                                        <div
-                                            key={`${image.src}-${index}`}
-                                            className={`relative overflow-hidden rounded-xl ${image.className}`}
-                                        >
-                                            <Image
-                                                src={image.src}
-                                                alt={image.alt}
-                                                fill
-                                                sizes="(min-width: 1280px) 360px, (min-width: 1024px) 320px, (min-width: 768px) 40vw, 90vw"
-                                                className="object-cover"
-                                                priority={index === 0}
-                                                loading={index === 0 ? "eager" : "lazy"}
-                                                fetchPriority={index === 0 ? "high" : "auto"}
-                                                quality={50}
-                                            />
+                        <div className="grid gap-8">
+                            <Card id="aurelie" className="scroll-mt-28 overflow-hidden border-primary/10 bg-muted/25">
+                                <CardContent className="p-5 md:p-6 lg:p-8">
+                                    <article className="grid gap-6 lg:grid-cols-[220px_1fr] lg:items-start xl:grid-cols-[240px_1fr]">
+                                        <div className="grid max-w-sm grid-cols-[1fr_88px] gap-3 lg:max-w-none lg:grid-cols-1">
+                                            <div className="relative aspect-4/3 overflow-hidden rounded-lg bg-muted lg:aspect-square">
+                                                <Image
+                                                    src={aurelieGallery[0].src}
+                                                    alt={aurelieGallery[0].alt}
+                                                    fill
+                                                    sizes="(min-width: 1280px) 240px, (min-width: 1024px) 220px, 70vw"
+                                                    className="object-cover"
+                                                    priority
+                                                    fetchPriority="high"
+                                                    quality={70}
+                                                />
+                                            </div>
+                                            <div className="grid grid-rows-2 gap-3 lg:grid-cols-2 lg:grid-rows-1">
+                                                {aurelieGallery.slice(1).map((image) => (
+                                                    <div key={image.src} className="relative aspect-square overflow-hidden rounded-lg bg-muted">
+                                                        <Image
+                                                            src={image.src}
+                                                            alt={image.alt}
+                                                            fill
+                                                            sizes="120px"
+                                                            className="object-cover"
+                                                            loading="lazy"
+                                                            quality={60}
+                                                        />
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
-                                    ))}
-                                </div>
 
-                                <div className="space-y-6">
-                                    <Badge variant="secondary" className="w-fit">
-                                        Une lecture fine du lien humain-chien
-                                    </Badge>
-                                    <h3 className="text-xl md:text-2xl font-bold">Aurélie - 34 ans</h3>
+                                        <div className="space-y-5">
+                                            <div className="space-y-3">
+                                                <Badge variant="secondary" className="w-fit">
+                                                    Une lecture fine du lien humain-chien
+                                                </Badge>
+                                                <div className="space-y-2">
+                                                    <h3 className="text-2xl font-bold">Aurélie</h3>
+                                                    <p className="text-sm font-medium text-primary">Comportement, relation et accompagnement des familles</p>
+                                                </div>
+                                                <div className="flex flex-wrap gap-2">
+                                                    {aurelieHighlights.map((item) => (
+                                                        <Badge key={item} variant="outline">
+                                                            {item}
+                                                        </Badge>
+                                                    ))}
+                                                </div>
+                                            </div>
 
-                                    <div className="space-y-4 text-muted-foreground leading-relaxed">
-                                        <p>
-                                            Lorsque je ne suis pas avec mes chiens, j’exerce aussi comme hypnothérapeute et
-                                            magnétiseuse. Ce lien entre l’humain, ses émotions et l’animal fait partie de mon regard
-                                            depuis des années.
-                                        </p>
-                                        <p>
-                                            Mon chemin m’a menée vers le comportement animal avant de m’ouvrir encore davantage à la
-                                            compréhension de l’humain. Dans l’élevage, cela change beaucoup de choses : j’observe
-                                            autant le chiot que la famille, parce qu’une adoption réussie repose sur une vraie
-                                            cohérence entre les deux.
-                                        </p>
-                                        <p>
-                                            Le Mameshiba est un chien sensible, intelligent, très expressif et parfois plus subtil
-                                            qu’il n’y paraît. Il ne supporte pas bien la brutalité ni l’incohérence. Cette race me
-                                            touche justement pour cela : elle oblige à être juste, calme, présente et lucide.
-                                        </p>
-                                        <p>
-                                            Mon approche est profondément holistique. J’accorde beaucoup d’importance à la qualité du
-                                            lien, à la sécurité émotionnelle du chiot, à son observation quotidienne et à ce qu’il
-                                            révèle dans la relation avec son futur humain.
-                                        </p>
-                                        <h4 className="text-lg font-semibold text-foreground">Une passion pour les chiens primitifs</h4>
-                                        <p>
-                                            Ma fascination pour les chiens au tempérament fort et noble remonte à l’enfance. Avec le
-                                            temps, cette attirance s’est affinée vers les chiens primitifs et, plus tard, vers la
-                                            culture japonaise. Le Mameshiba a représenté une évidence : toute la dignité du Shiba Inu,
-                                            dans un petit format, avec une présence incroyable.
-                                        </p>
-                                        <p>
-                                            Accueillir cette race dans notre vie a transformé notre élevage. Aujourd’hui, j’accompagne
-                                            chaque famille avec beaucoup d’investissement, autant dans les moments joyeux que dans les
-                                            phases plus délicates d’adaptation et d’apprentissage.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
+                                            <div className="grid gap-4 text-sm leading-relaxed text-muted-foreground md:grid-cols-2">
+                                                <p>
+                                                    Lorsque je ne suis pas avec mes chiens, j’exerce aussi comme hypnothérapeute et
+                                                    magnétiseuse. Ce lien entre l’humain, ses émotions et l’animal fait partie de mon regard
+                                                    depuis des années.
+                                                </p>
+                                                <p>
+                                                    Mon chemin m’a menée vers le comportement animal avant de m’ouvrir encore davantage à la
+                                                    compréhension de l’humain. Dans l’élevage, cela change beaucoup de choses : j’observe
+                                                    autant le chiot que la famille.
+                                                </p>
+                                                <p>
+                                                    Le Mameshiba est un chien sensible, intelligent, très expressif et parfois plus subtil
+                                                    qu’il n’y paraît. Il oblige à être juste, calme, présente et lucide.
+                                                </p>
+                                                <p>
+                                                    Aujourd’hui, j’accompagne chaque famille avec beaucoup d’investissement, autant dans les
+                                                    moments joyeux que dans les phases plus délicates d’adaptation et d’apprentissage.
+                                                </p>
+                                            </div>
 
-                            <article id="marine" className="grid md:grid-cols-2 gap-12 items-start scroll-mt-28">
-                                <div className="grid grid-cols-6 auto-rows-[70px] sm:auto-rows-[90px] md:auto-rows-[105px] lg:auto-rows-[118px] gap-3 md:order-2">
-                                    {marineGallery.map((image, index) => (
-                                        <div
-                                            key={`${image.src}-${index}`}
-                                            className={`relative overflow-hidden rounded-xl ${image.className}`}
-                                        >
-                                            <Image
-                                                src={image.src}
-                                                alt={image.alt}
-                                                fill
-                                                sizes="(min-width: 1280px) 360px, (min-width: 1024px) 320px, (min-width: 768px) 40vw, 90vw"
-                                                className="object-cover"
-                                                loading="lazy"
-                                                fetchPriority="auto"
-                                                quality={50}
-                                            />
+                                            <div className="rounded-lg border border-primary/10 bg-background/80 p-4">
+                                                <h4 className="font-semibold text-foreground">Une passion pour les chiens primitifs</h4>
+                                                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                                                    Ma fascination pour les chiens au tempérament fort et noble remonte à l’enfance. Avec le
+                                                    temps, cette attirance s’est affinée vers les chiens primitifs et la culture japonaise.
+                                                    Le Mameshiba a représenté une évidence : toute la dignité du Shiba Inu dans un petit format.
+                                                </p>
+                                            </div>
                                         </div>
-                                    ))}
-                                </div>
+                                    </article>
+                                </CardContent>
+                            </Card>
 
-                                <div className="space-y-6 md:order-1">
-                                    <Badge variant="secondary" className="w-fit">
-                                        Le cadre, la rigueur et le quotidien de l’élevage
-                                    </Badge>
-                                    <h3 className="text-xl md:text-2xl font-bold">Marine - 32 ans</h3>
+                            <Card id="marine" className="scroll-mt-28 overflow-hidden border-primary/10 bg-muted/25">
+                                <CardContent className="p-5 md:p-6 lg:p-8">
+                                    <article className="grid gap-6 lg:grid-cols-[1fr_220px] lg:items-start xl:grid-cols-[1fr_240px]">
+                                        <div className="grid max-w-sm grid-cols-[1fr_88px] gap-3 lg:order-2 lg:max-w-none lg:grid-cols-1">
+                                            <div className="relative aspect-4/3 overflow-hidden rounded-lg bg-muted lg:aspect-square">
+                                                <Image
+                                                    src={marineGallery[0].src}
+                                                    alt={marineGallery[0].alt}
+                                                    fill
+                                                    sizes="(min-width: 1280px) 240px, (min-width: 1024px) 220px, 70vw"
+                                                    className="object-cover"
+                                                    loading="lazy"
+                                                    quality={70}
+                                                />
+                                            </div>
+                                            <div className="grid grid-rows-2 gap-3 lg:grid-cols-2 lg:grid-rows-1">
+                                                {marineGallery.slice(1).map((image) => (
+                                                    <div key={image.src} className="relative aspect-square overflow-hidden rounded-lg bg-muted">
+                                                        <Image
+                                                            src={image.src}
+                                                            alt={image.alt}
+                                                            fill
+                                                            sizes="120px"
+                                                            className="object-cover"
+                                                            loading="lazy"
+                                                            quality={60}
+                                                        />
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
 
-                                    <div className="space-y-4 text-muted-foreground leading-relaxed">
-                                        <p>
-                                            À la base, j’étais plutôt une grande amoureuse des chats. C’est au fil des années, au
-                                            contact de l’élevage et des chiens, que j’ai découvert la relation très particulière que
-                                            le chien peut construire avec l’humain.
-                                        </p>
-                                        <p>
-                                            Mon parcours en école de commerce puis dans un univers professionnel très exigeant m’a
-                                            donné un vrai goût pour l’organisation, l’anticipation et la rigueur. Aujourd’hui, cette
-                                            partie de moi est un atout concret pour la vie de l’élevage.
-                                        </p>
-                                        <p>
-                                            Je veille beaucoup à tout ce qui fait le quotidien réel des chiens : l’hygiène, la
-                                            stabilité des routines, l’observation des groupes, la sécurité, les mises bas, la
-                                            récupération des mères et le bon développement des chiots.
-                                        </p>
-                                        <p>
-                                            Le Mameshiba demande un environnement lisible, propre et cohérent. C’est une race qui
-                                            peut être très sensible à l’ambiance et aux variations autour d’elle. J’aime justement
-                                            apporter ce cadre calme, régulier et rassurant.
-                                        </p>
-                                        <p>
-                                            Même si je suis naturellement plus discrète dans la relation avec les adoptants, je prends
-                                            beaucoup de plaisir à vous accueillir, à vous présenter nos chiens et à partager ce qui
-                                            fait la singularité de notre élevage.
-                                        </p>
-                                        <p>
-                                            Avec Aurélie, nous formons un duo complémentaire : elle porte une lecture très fine du
-                                            comportement et du lien, tandis que je veille à la structure, à la logistique et à la
-                                            constance du cadre. C’est cet équilibre qui fait aussi la force de Kawaii Shiba.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
+                                        <div className="space-y-5 lg:order-1">
+                                            <div className="space-y-3">
+                                                <Badge variant="secondary" className="w-fit">
+                                                    Le cadre, la rigueur et le quotidien de l’élevage
+                                                </Badge>
+                                                <div className="space-y-2">
+                                                    <h3 className="text-2xl font-bold">Marine</h3>
+                                                    <p className="text-sm font-medium text-primary">Organisation, routines et équilibre du groupe</p>
+                                                </div>
+                                                <div className="flex flex-wrap gap-2">
+                                                    {marineHighlights.map((item) => (
+                                                        <Badge key={item} variant="outline">
+                                                            {item}
+                                                        </Badge>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+                                            <div className="grid gap-4 text-sm leading-relaxed text-muted-foreground md:grid-cols-2">
+                                                <p>
+                                                    À la base, j’étais plutôt une grande amoureuse des chats. C’est au contact de l’élevage
+                                                    et des chiens que j’ai découvert la relation très particulière que le chien peut construire
+                                                    avec l’humain.
+                                                </p>
+                                                <p>
+                                                    Mon parcours en école de commerce puis dans un univers professionnel exigeant m’a donné
+                                                    un vrai goût pour l’organisation, l’anticipation et la rigueur.
+                                                </p>
+                                                <p>
+                                                    Je veille à tout ce qui fait le quotidien réel des chiens : l’hygiène, les routines,
+                                                    l’observation des groupes, la sécurité, les mises bas et le développement des chiots.
+                                                </p>
+                                                <p>
+                                                    Avec Aurélie, nous formons un duo complémentaire : elle porte une lecture fine du
+                                                    comportement et du lien, tandis que je veille à la structure et à la constance du cadre.
+                                                </p>
+                                            </div>
+
+                                            <div className="rounded-lg border border-primary/10 bg-background/80 p-4">
+                                                <h4 className="font-semibold text-foreground">Un cadre lisible pour les chiens</h4>
+                                                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                                                    Le Mameshiba demande un environnement propre, régulier et cohérent. J’aime apporter ce
+                                                    cadre calme et rassurant, autant pour les chiens que pour les familles qui viennent nous rencontrer.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </CardContent>
+                            </Card>
                         </div>
                     </section>
 
@@ -290,6 +341,20 @@ export default function PresentationEleveusesPage() {
                                             Objectif : informer, rassurer et vous aider à mieux comprendre ce petit chien primitif,
                                             rare, sensible et absolument unique.
                                         </p>
+                                        <div className="flex flex-col gap-3 pt-2 sm:flex-row">
+                                            <Link
+                                                href="/mameshiba"
+                                                className="inline-flex items-center justify-center rounded-md border border-primary px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                            >
+                                                Comprendre le Mameshiba
+                                            </Link>
+                                            <Link
+                                                href="/adoption/reussir-son-adoption"
+                                                className="inline-flex items-center justify-center rounded-md border border-primary/30 px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                            >
+                                                Préparer son adoption
+                                            </Link>
+                                        </div>
                                     </div>
 
                                     <div className="space-y-6 md:justify-self-end lg:justify-self-stretch">
