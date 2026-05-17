@@ -1,6 +1,8 @@
 import { ChevronDown, PawPrint } from "lucide-react"
 import type { ReactNode } from "react"
 
+import { SectionTitleIcon } from "@/components/section-title-icon"
+
 export type FAQItem = {
   question: string
   answer: ReactNode
@@ -16,7 +18,10 @@ export function FAQSection({ title, description, items }: FAQSectionProps) {
   return (
     <section className="container mx-auto my-16">
       <div className="text-center mb-10 space-y-3">
-        <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+        <div className="flex items-center justify-center gap-3">
+          <SectionTitleIcon icon={PawPrint} />
+          <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+        </div>
         {description ? (
           <p className="text-muted-foreground max-w-3xl mx-auto">{description}</p>
         ) : null}

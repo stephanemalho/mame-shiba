@@ -2,8 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { SectionTitleIcon } from "@/components/section-title-icon"
 import { siteConfig } from "@/lib/seo-config"
 import { cn } from "@/lib/utils"
+import { Search } from "lucide-react"
 
 export type InternalLinkItem = {
     href: string
@@ -52,7 +54,10 @@ export function InternalLinksSection({
     return (
         <section className={cn("space-y-8", className)}>
             <div className="text-center space-y-3">
-                <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+                <div className="flex items-center gap-3 justify-center">
+                    <SectionTitleIcon icon={Search} />
+                    <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+                </div>
                 {description ? (
                     <p className="text-muted-foreground max-w-3xl mx-auto">{description}</p>
                 ) : null}

@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
 import { faqHome } from "@/lib/faq-data"
-import { Heart, MapPin, PawPrint, Route } from "lucide-react"
+import { Dog, Heart, MapPin, PawPrint, Route, Sparkles } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
@@ -13,6 +13,7 @@ import { isBlogEnabled } from "@/lib/blog-visibility"
 import { puppies } from "@/app/chiots-disponibles/puppies"
 import { getPuppyUrl } from "@/app/chiots-disponibles/puppy-seo"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
+import { SectionTitleIcon } from "@/components/section-title-icon"
 
 import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
 
@@ -216,9 +217,12 @@ export default function HomePage() {
                   Le Mameshiba
                 </Badge>
 
-                <h2 className="text-xl md:text-2xl font-bold">
-                  Le Mameshiba, un Shiba Inu miniature d'origine japonaise
-                </h2>
+                <div className="flex items-center gap-3">
+                  <SectionTitleIcon icon={Dog} />
+                  <h2 className="text-xl md:text-2xl font-bold">
+                    Le Mameshiba, un Shiba Inu miniature d'origine japonaise
+                  </h2>
+                </div>
 
                 <p className="text-muted-foreground leading-relaxed">
                   C'est un véritable Shiba Inu, mais de petite taille. Le mot
@@ -268,9 +272,12 @@ export default function HomePage() {
         <section className="py-16 my-8 bg-muted/30">
           <div className="container mx-auto p-2">
             <div className="text-center space-y-4 mb-10">
-              <h2 className="text-xl md:text-2xl font-bold">
-                Pourquoi choisir un Mameshiba ?
-              </h2>
+              <div className="flex items-center justify-center gap-3">
+                <SectionTitleIcon icon={Heart} />
+                <h2 className="text-xl md:text-2xl font-bold">
+                  Pourquoi choisir un Mameshiba ?
+                </h2>
+              </div>
 
               <p className="text-muted-foreground max-w-3xl mx-auto">
                 Petit chien au grand cœur, <strong>le Mameshiba</strong> est un
@@ -319,11 +326,11 @@ export default function HomePage() {
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="border-primary/15 bg-card/80 shadow-sm">
                 <CardContent className="p-6 md:p-8">
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/12 text-primary">
-                    <MapPin className="h-5 w-5" aria-hidden="true" />
-                  </div>
                   <div className="space-y-3">
-                    <h2 className="text-xl font-semibold">Un élevage accessible depuis toute la France</h2>
+                    <div className="flex items-center gap-3">
+                      <SectionTitleIcon icon={MapPin} />
+                      <h2 className="text-xl font-semibold">Un élevage accessible depuis toute la France</h2>
+                    </div>
                     <p className="text-muted-foreground leading-relaxed">
                       L'élevage Kawaii Shiba est situé en Bourgogne-Franche-Comté à la limite du JURA, dans la commune de Dommartin-lès-Cuiseaux (71), à 1h30 de Lyon, 2h de Genève et moins de 4h de Paris en voiture.
                     </p>
@@ -337,11 +344,11 @@ export default function HomePage() {
 
               <Card className="border-primary/15 bg-card/80 shadow-sm">
                 <CardContent className="p-6 md:p-8">
-                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/12 text-primary">
-                    <Heart className="h-5 w-5" aria-hidden="true" />
-                  </div>
                   <div className="space-y-3">
-                    <h2 className="text-xl font-semibold">Une passion née des chiens primitifs et du Japon</h2>
+                    <div className="flex items-center gap-3">
+                      <SectionTitleIcon icon={Sparkles} />
+                      <h2 className="text-xl font-semibold">Une passion née des chiens primitifs et du Japon</h2>
+                    </div>
                     <p className="text-muted-foreground leading-relaxed">
                       Notre passion absolue pour les chiens de type primitif, notre amour pour le voyage et notre adoration pour la culture japonaise nous ont menés tout droit jusqu'à un véritable coup de cœur : le Mameshiba.
                     </p>
@@ -360,12 +367,15 @@ export default function HomePage() {
             <div className="grid gap-8 rounded-2xl border border-primary/10 bg-muted/30 p-6 md:grid-cols-[0.85fr_1.15fr] md:p-10">
               <div className="space-y-4">
                 <Badge variant="secondary" className="w-fit">
-                  <PawPrint className="mr-2 h-4 w-4" aria-hidden="true" />
+                  <Heart className="mr-2 h-4 w-4" aria-hidden="true" />
                   Chiots à adopter
                 </Badge>
-                <h2 className="text-2xl font-bold md:text-3xl">
-                  {availablePuppiesTitle}
-                </h2>
+                <div className="flex items-start gap-3">
+                  <SectionTitleIcon icon={PawPrint} />
+                  <h2 className="text-2xl font-bold md:text-3xl">
+                    {availablePuppiesTitle}
+                  </h2>
+                </div>
               </div>
               <div className="space-y-5">
                 {availablePuppies.length > 0 ? (
@@ -430,7 +440,10 @@ export default function HomePage() {
         <section className="py-16 my-8 bg-muted/30">
           <div className="container mx-auto p-2">
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-xl md:text-2xl font-bold">Les Éleveuses</h2>
+              <div className="flex items-center justify-center gap-3">
+                <SectionTitleIcon icon={Dog} />
+                <h2 className="text-xl md:text-2xl font-bold">Les Éleveuses</h2>
+              </div>
               <p className="text-muted-foreground max-w-3xl mx-auto text-sm leading-relaxed">
                 Derrière l'élevage se trouvent <strong>Aurélie et Marine</strong>, deux
                 éleveuses passionnées par le bien-être animal et unies par un amour
@@ -443,7 +456,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-6 lg:grid-cols-2">
-              {founders.map((founder, index) => (
+              {founders.map((founder) => (
                 <Link
                   key={founder.name}
                   href={`/presentation-eleveuses#${founder.name.toLowerCase()}`}
