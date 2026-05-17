@@ -17,6 +17,26 @@ import {
 
 const navGroups = [
     {
+        label: "Adoption",
+        items: [
+            {
+                title: "Nos chiots disponibles",
+                href: "/chiots-disponibles",
+                description: "Portées disponibles et informations d'adoption.",
+            },
+            {
+                title: "Réussir son adoption",
+                href: "/adoption/reussir-son-adoption",
+                description: "Trajet, arrivée à la maison et premières semaines.",
+            },
+            {
+                title: "Contact",
+                href: "/contact",
+                description: "Parlons de votre projet d'adoption.",
+            },
+        ],
+    },
+    {
         label: "Le Mameshiba",
         items: [
             {
@@ -25,7 +45,7 @@ const navGroups = [
                 description: "Taille, tempérament, origines et adoption responsable.",
             },
             {
-                title: "Prix du Mameshiba",
+                title: "Prix de nos Mameshibas",
                 href: "/mame-shiba-prix",
                 description: "Fourchette de prix, rareté et repères avant adoption.",
             },
@@ -50,7 +70,7 @@ const navGroups = [
                 description: "Aurélie & Marine, leur parcours et leur vision.",
             },
             {
-                title: "Nos chiens",
+                title: "Nos chiens adultes",
                 href: "/nos-chiens",
                 description: "Nos adultes, leurs lignées et notre sélection.",
             },
@@ -58,26 +78,6 @@ const navGroups = [
                 title: "Conditions de vie",
                 href: "/bien-etre-animal",
                 description: "Le quotidien de nos chiens et chiots.",
-            },
-        ],
-    },
-    {
-        label: "Adoption",
-        items: [
-            {
-                title: "Nos chiots",
-                href: "/chiots-disponibles",
-                description: "Portées disponibles et informations d'adoption.",
-            },
-            {
-                title: "Réussir son adoption",
-                href: "/adoption/reussir-son-adoption",
-                description: "Trajet, arrivée à la maison et premières semaines.",
-            },
-            {
-                title: "Contact",
-                href: "/contact",
-                description: "Parlons de votre projet d'adoption.",
             },
         ],
     },

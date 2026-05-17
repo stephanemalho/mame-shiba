@@ -91,7 +91,7 @@ export default function NosChiotsPage() {
     const puppyStructuredData = buildPuppyItemListStructuredData(visiblePuppies)
     const availablePuppiesCount = visiblePuppies.filter((puppy) => !puppy.isReserved).length
     const availablePuppiesTitle = availablePuppiesCount > 0
-        ? `${availablePuppiesCount} chiot${availablePuppiesCount > 1 ? "s" : ""} disponible${availablePuppiesCount > 1 ? "s" : ""}`
+        ? `${availablePuppiesCount} chiot${availablePuppiesCount > 1 ? "s" : ""} disponible${availablePuppiesCount > 1 ? "s" : ""} à l'adoption`
         : "Aucun chiot disponible actuellement"
     const hasVisiblePuppies = visiblePuppies.length > 0
 

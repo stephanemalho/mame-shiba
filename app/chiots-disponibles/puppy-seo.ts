@@ -87,6 +87,14 @@ export function buildPuppyProductStructuredData(puppy: Puppy) {
                 ],
                 doesNotShip: true,
             },
+            hasMerchantReturnPolicy: {
+                "@type": "MerchantReturnPolicy",
+                returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+                applicableCountry: ["FR", "CH"],
+                name: "Pas de retour possible pour les animaux vivants",
+                description:
+                    "Les retours ne sont pas possibles pour les animaux vivants, sauf cas particulier étudié avec l'élevage dans l'intérêt du chiot.",
+            },
             seller: {
                 "@type": "Organization",
                 name: siteConfig.name,
