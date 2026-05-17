@@ -573,7 +573,7 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-05-16"
+        lastmod: "2026-05-17"
     },
     {
         url: "/mameshiba",
@@ -615,7 +615,7 @@ export const sitemapPages = [
         url: "/presentation-eleveuses",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: seoLastmod
+        lastmod: "2026-05-17"
     },
     {
         url: "/bien-etre-animal",
