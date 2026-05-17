@@ -280,7 +280,7 @@ export default function MameshibaPricePage() {
                                     </thead>
                                     <tbody>
                                         {priceCategories.map((item) => (
-                                            <tr key={item.category} className="border-b last:border-b-0">
+                                            <tr key={`${item.category}-${item.price}`} className="border-b last:border-b-0">
                                                 <td className="px-5 py-4 font-semibold text-foreground">{item.category}</td>
                                                 <td className="px-5 py-4 text-muted-foreground">{item.profile}</td>
                                                 <td className="px-5 py-4 text-muted-foreground">{item.lineage}</td>
