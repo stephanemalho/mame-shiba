@@ -63,9 +63,11 @@ export const siteConfig = {
         activity: "Élevage d'autres animaux",
         foundingDate: "2022-06-15",
         address: {
+            streetAddress: "800 chemin de la Liambe",
             city: "Dommartin-lès-Cuiseaux",
             postalCode: "71480",
-            country: "France"
+            country: "FR",
+            countryName: "France"
         }
     },
 

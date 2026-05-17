@@ -42,6 +42,7 @@ export function generateOrganizationSchema() {
             "@type": "ImageObject",
             url: `${siteConfig.siteUrl}/icon.png`
         },
+        image: [`${siteConfig.siteUrl}${siteConfig.ogImage}`],
         description: siteConfig.description,
         email: `mailto:${siteConfig.contact.email}`,
         telephone: siteConfig.contact.phone,
@@ -51,6 +52,7 @@ export function generateOrganizationSchema() {
         identifier: identifiers,
         address: {
             "@type": "PostalAddress",
+            streetAddress: address.streetAddress,
             addressLocality: address.city,
             postalCode: address.postalCode,
             addressCountry: address.country,
@@ -107,7 +109,7 @@ export function generateLocalBusinessSchema() {
         areaServed: [
             {
                 "@type": "Country",
-                name: legal.address.country
+                name: legal.address.countryName ?? legal.address.country
             },
             ...(location?.region
                 ? [
@@ -131,6 +133,7 @@ export function generateLocalBusinessSchema() {
         },
         address: {
             "@type": "PostalAddress",
+            streetAddress: address.streetAddress,
             addressLocality: address.city,
             postalCode: address.postalCode,
             addressCountry: address.country,
