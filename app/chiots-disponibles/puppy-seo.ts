@@ -73,6 +73,20 @@ export function buildPuppyProductStructuredData(puppy: Puppy) {
             itemCondition: "https://schema.org/NewCondition",
             ...(puppy.availableFrom ? { availabilityStarts: puppy.availableFrom } : {}),
             ...(puppy.priceValidUntil ? { priceValidUntil: puppy.priceValidUntil } : {}),
+            shippingDetails: {
+                "@type": "OfferShippingDetails",
+                shippingDestination: [
+                    {
+                        "@type": "DefinedRegion",
+                        addressCountry: "FR",
+                    },
+                    {
+                        "@type": "DefinedRegion",
+                        addressCountry: "CH",
+                    },
+                ],
+                doesNotShip: true,
+            },
             seller: {
                 "@type": "Organization",
                 name: siteConfig.name,

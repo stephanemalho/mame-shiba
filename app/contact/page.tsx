@@ -66,8 +66,8 @@ const contactItems = [
         icon: MapPin,
         title: "Adresse",
         type: "address",
-        content: "Siège social: Dommartin-lès-Cuiseaux, Saône-et-Loire (71)",
-        secondaryLine: "visite sur rendez-vous."
+        content: "Siège social : Dommartin-lès-Cuiseaux, Saône-et-Loire (71)",
+        secondaryLine: "Visites sur rendez-vous."
     },
     {
         icon: Phone,

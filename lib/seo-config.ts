@@ -42,7 +42,7 @@ export const siteConfig = {
         "Mameshiba japonais",
         "élevage shiba inu",
         "adopter Mameshiba",
-        "elevage de chien japonais"
+        "élevage de chien japonais"
     ],
 
     /* ------------------------------ Contact ---------------------------------- */
@@ -349,9 +349,9 @@ export const buildTwitter = ({
 
 export const pageMetadata = {
     home: {
-        title: "ELEVAGE DE SHIBA INU MAMESHIBA : Le plus petit shiba du monde!",
+        title: "Élevage de Shiba Inu Mameshiba : le plus petit Shiba du monde",
         description:
-            "Elevage de Mameshiba en France, le Shiba Inu de petite taille issu de lignées japonaises. Chiots Mameshiba élevés avec soin, socialisés et accompagnés avant adoption.",
+            "Élevage de Mameshiba en France, le Shiba Inu de petite taille issu de lignées japonaises. Chiots Mameshiba élevés avec soin, socialisés et accompagnés avant adoption.",
 
         keywords: [
             "élevage de mameshiba",
@@ -376,7 +376,7 @@ export const pageMetadata = {
             "mame shiba",
             "Mameshiba",
             "taille du mameshiba",
-            "difference shiba inu mameshiba",
+            "différence shiba inu mameshiba",
             "origine du mameshiba",
             "standard du mameshiba",
             "kcj mameshiba",
@@ -388,38 +388,38 @@ export const pageMetadata = {
     },
 
     puppies: {
-        title: "ADOPTEZ UN CHIOT MAMESHIBA chez Kawaii Shiba",
+        title: "Adoptez un chiot Mameshiba chez Kawaii Shiba",
         description:
-            "Découvrez nos SHIBA INU - MAMESHIBA disponibles à l'adoption : des petits shibas japonais élevés avec soin, issus de lignées rigoureusement sélectionnées et prêts à rejoindre leur nouvelle famille.",
+            "Découvrez nos Shiba Inu Mameshiba disponibles à l'adoption : des petits Shiba japonais élevés avec soin, issus de lignées rigoureusement sélectionnées et prêts à rejoindre leur nouvelle famille.",
         keywords: [
             "chiots mameshiba",
             "mameshiba disponible",
-            "reservation chiot mameshiba",
-            "portee mameshiba",
-            "elevage mameshiba france",
+            "réservation chiot mameshiba",
+            "portée mameshiba",
+            "élevage mameshiba france",
             "acheter un mameshiba",
-            "inscription portee mameshiba"
+            "inscription portée mameshiba"
         ]
     },
 
     mameshibaPrice: {
         title: "Prix de nos Mameshiba en 2026 chez Kawaii Shiba",
         description:
-            "4 500 € pour un mâle et 5 000 € pour une femelle, cette page vous donne les détails sur les tarifs et les conditions de reservation.",
+            "4 500 € pour un mâle et 5 000 € pour une femelle : cette page détaille les tarifs et les conditions de réservation.",
         keywords: [
             "prix Mameshiba",
-            "prix mameshiba elevage",
+            "prix mameshiba élevage",
             "tarif Mameshiba",
             "prix mameshiba kawaii shiba",
             "prix chiot mameshiba",
-            "prix male mameshiba",
+            "prix mâle mameshiba",
             "prix femelle mameshiba",
             "kawaii shiba prix"
         ]
     },
 
     adoptionGuide: {
-        title: "Réussir l'adoption de son Mameshiba avec les conseilles Kawaii Shiba",
+        title: "Réussir l'adoption de son Mameshiba avec les conseils Kawaii Shiba",
         description:
             "Guide pratique pour réussir l'adoption d'un chiot Mameshiba : trajet du départ, arrivée à la maison, premières nuits, propreté, solitude et repères essentiels.",
         keywords: [
@@ -427,7 +427,7 @@ export const pageMetadata = {
             "accueil chiot mameshiba",
             "premiers jours chiot mameshiba",
             "trajet adoption chiot",
-            "proprete chiot mameshiba",
+            "propreté chiot mameshiba",
             "chiot mame shiba inu",
             "guide adoption Mameshiba"
         ]
@@ -442,8 +442,8 @@ export const pageMetadata = {
             "nos chiens mameshiba",
             "adultes reproducteurs mameshiba",
             "lignées japonaises mameshiba",
-            "tests genetiques shiba inu",
-            "caractere mameshiba"
+            "tests génétiques shiba inu",
+            "caractère mameshiba"
         ]
     },
 
@@ -452,13 +452,13 @@ export const pageMetadata = {
         description:
             "Élevage spécialisé Mameshiba à Dommartin-lès-Cuiseaux (71) : sélection raisonnée, lignées japonaises, santé suivie et chiots élevés avec une vraie attention portée à l'équilibre émotionnel.",
         keywords: [
-            "elevage mameshiba",
-            "elevage shiba japonais",
-            "selection rigoureuse mameshiba",
+            "élevage mameshiba",
+            "élevage shiba japonais",
+            "sélection rigoureuse mameshiba",
             "accompagnement adoptant",
-            "ethique elevage",
-            "trouver bon elevage mameshiba",
-            "elevage chiots avec mere"
+            "éthique élevage",
+            "trouver bon élevage mameshiba",
+            "élevage chiots avec mère"
         ]
     },
     eleveuses: {
@@ -466,12 +466,12 @@ export const pageMetadata = {
         description:
             "Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.",
         keywords: [
-            "eleveuses mameshiba",
-            "equipe elevage mameshiba",
+            "éleveuses mameshiba",
+            "équipe élevage mameshiba",
             "aurélie mameshiba",
             "marine mameshiba",
-            "presentation eleveuses",
-            "approche holistique elevage"
+            "présentation éleveuses",
+            "approche holistique élevage"
         ]
     },
 
@@ -487,8 +487,8 @@ export const pageMetadata = {
             "suivi vétérinaire dès la naissance",
             "respect du développement du chiot",
             "environnement sain pour chiots",
-            "elevage mameshiba",
-            "vie en elevage mameshiba",
+            "élevage mameshiba",
+            "vie en élevage mameshiba",
             "socialisation mameshiba"
         ]
     },
@@ -498,14 +498,14 @@ export const pageMetadata = {
         description:
             "Parlons de votre projet d'adoption. Les visites se font uniquement sur rendez-vous pour respecter le rythme des chiots.",
         keywords: [
-            "contact elevage kawaii shiba",
-            "visite elevage",
+            "contact élevage kawaii shiba",
+            "visite élevage",
             "rendez-vous",
             "adoption mameshiba",
             "informations chiot",
-            "reservation chiot",
-            "questions elevage mameshiba",
-            "prendre contact avec elevage mameshiba"
+            "réservation chiot",
+            "questions élevage mameshiba",
+            "prendre contact avec élevage mameshiba"
         ]
     },
 
@@ -514,11 +514,11 @@ export const pageMetadata = {
         description:
             "Informations réglementaires de l'élevage Kawaii Shiba et cadre juridique d'utilisation du site.",
         keywords: [
-            "mentions legales",
-            "informations legales",
+            "mentions légales",
+            "informations légales",
             "siren",
             "siret",
-            "editeur du site"
+            "éditeur du site"
         ]
     },
 
@@ -527,11 +527,11 @@ export const pageMetadata = {
         description:
             "Règles d'usage du site Kawaii Shiba, informations précontractuelles et responsabilités de chacune des parties.",
         keywords: [
-            "conditions generales",
-            "conditions dutilisation",
+            "conditions générales",
+            "conditions d'utilisation",
             "CGU",
-            "responsabilite",
-            "propriete intellectuelle"
+            "responsabilité",
+            "propriété intellectuelle"
         ]
     },
 
@@ -541,8 +541,8 @@ export const pageMetadata = {
             "Comment Kawaii Shiba collecte, utilise et protège vos données personnelles dans le respect du RGPD.",
         keywords: [
             "RGPD",
-            "confidentialite",
-            "donnees personnelles",
+            "confidentialité",
+            "données personnelles",
             "cookies",
             "droits des utilisateurs"
         ]
@@ -554,12 +554,12 @@ export const pageMetadata = {
         keywords: [
             "blog Mameshiba",
             "blog shiba inu",
-            "shiba inu caractere",
+            "shiba inu caractère",
             "Mameshiba adoption",
             "chien japonais",
             "comparatif shiba akita",
             "shiba appartement",
-            "premiere adoption shiba"
+            "première adoption shiba"
         ]
     }
 };

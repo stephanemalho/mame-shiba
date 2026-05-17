@@ -237,10 +237,10 @@ export default function NosChiotsPage() {
                                         <NotebookText className="h-6 w-6 text-primary" aria-hidden="true" />
                                         <div>
                                             <h2 className="text-xl md:text-2xl font-semibold leading-tight">
-                                                Inscrivez vous pour la prochaine portée de chiots Mameshiba
+                                                Inscrivez-vous pour la prochaine portée de chiots Mameshiba
                                             </h2>
                                             <p className="text-muted-foreground">
-                                                Parlez nous de votre projet d'adoption et rejoignez la liste d'attente pour être recontacté dès l'annonce de la prochaine portée.
+                                                Parlez-nous de votre projet d'adoption et rejoignez la liste d'attente pour être recontacté dès l'annonce de la prochaine portée.
                                             </p>
                                         </div>
                                     </div>

@@ -53,7 +53,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Locaux et espaces de l elevage Kawaii Shiba",
+                alt: "Locaux et espaces de l'élevage Kawaii Shiba",
                 width: 1200,
                 height: 630,
                 type: "image/webp",
@@ -99,7 +99,7 @@ export default function SejoursPage() {
                         <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
                             <Image
                                 src="/locaux.webp"
-                                alt="Image d un des espaces de vie des chiens de l elevage"
+                                alt="Image d'un des espaces de vie des chiens de l'élevage"
                                 fill
                                 className="object-cover"
                                 priority
@@ -161,7 +161,7 @@ export default function SejoursPage() {
                                             "pages/conditions-de-vie/bebe-chiots-lit-douillet.webp",
                                             "pages/conditions-de-vie/salle-ambiante-pour-chiots.webp",
                                         ]}
-                                        alt="Carrousel montrant les cocons et espaces de repos des chiots de l elevage"
+                                        alt="Carrousel montrant les cocons et espaces de repos des chiots de l'élevage"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
                                     />

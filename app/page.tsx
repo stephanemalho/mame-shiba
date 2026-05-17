@@ -254,7 +254,7 @@ export default function HomePage() {
               <div className="relative w-full aspect-video md:h-200 h-125 md:aspect-4/5 overflow-hidden rounded-lg">
                 <Image
                   src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
-                  alt="Chiot Mameshiba blanc dans un décoe japonais"
+                  alt="Chiot Mameshiba blanc dans un décor japonais"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 85vw, 50vw"

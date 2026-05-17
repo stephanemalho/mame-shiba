@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot mameshiba prêt pour une adoption en douceur",
+                alt: "Chiot Mameshiba prêt pour une adoption en douceur",
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
                 type: "image/jpeg",
@@ -129,7 +129,7 @@ const resources = filterBlogLinks([
         description: "Une page claire pour consulter nos tarifs Mameshiba à l’élevage et comprendre ce qu’ils recouvrent.",
     },
     {
-        title: "Voir les chiots et connaitre les prochaines portées",
+        title: "Voir les chiots et connaître les prochaines portées",
         href: "/chiots-disponibles",
         description: "Consultez les disponibilités actuelles et les informations pratiques liées aux réservations.",
     },
@@ -333,7 +333,7 @@ export default function AdoptionGuidePage() {
                             <div className="relative min-h-70 overflow-hidden rounded-2xl">
                                 <Image
                                     src={pageImage}
-                                    alt="Chiot mameshiba prêt pour une arrivée douce dans sa nouvelle famille"
+                                    alt="Chiot Mameshiba prêt pour une arrivée douce dans sa nouvelle famille"
                                     fill
                                     className="object-cover"
                                     priority
@@ -359,7 +359,7 @@ export default function AdoptionGuidePage() {
                         <div className="relative min-h-112 overflow-hidden rounded-3xl">
                             <Image
                                 src="/pages/adoption/waru-mame-shiba-kawaii-shiba-portrait.webp"
-                                alt="Chiot mameshiba calme pendant ses premières découvertes"
+                                alt="Chiot Mameshiba calme pendant ses premières découvertes"
                                 fill
                                 className="object-cover"
                                 sizes="(min-width: 768px) 45vw, 100vw"
@@ -579,7 +579,7 @@ export default function AdoptionGuidePage() {
                                 <div className="relative min-h-140 overflow-hidden rounded-3xl">
                                     <Image
                                         src="/pages/adoption/kaito-7-mois-en-voiture.jpg"
-                                        alt="Jeune mameshiba dans un moment calme avec sa future famille en perspective"
+                                        alt="Jeune Mameshiba dans un moment calme avec sa future famille en perspective"
                                         fill
                                         className="object-cover"
                                         sizes="(min-width: 768px) 40vw, 100vw"

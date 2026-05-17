@@ -19,14 +19,14 @@ export function Navigation() {
                     <div className="h-10 w-10 relative">
                         <Image
                             src="/icon.png"
-                            alt="logo Kawaii Shiba - Elevage de shiba"
+                            alt="Logo Kawaii Shiba - élevage de Shiba"
                             fill
                             sizes="40px"
                             className="object-contain"
                             quality={80}
                         />
                     </div>
-                    <span className="text-xl font-bold text-primary">Kawaii Shiba - MAMESHIBA</span>
+                    <span className="text-xl font-bold text-primary">Kawaii Shiba - Mameshiba</span>
                 </Link>
 
                 {/* Desktop Navigation */}

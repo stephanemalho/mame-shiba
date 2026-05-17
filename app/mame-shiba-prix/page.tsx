@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${mameshibaPriceOgJpg}`,
-                alt: "Chiot Mameshiba de l elevage Kawaii Shiba",
+                alt: "Chiot Mameshiba de l'élevage Kawaii Shiba",
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
                 type: "image/jpeg",

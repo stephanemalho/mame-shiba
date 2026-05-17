@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Mameshiba assis dans un decor doux et naturel",
+                alt: "Mameshiba assis dans un décor doux et naturel",
                 width: 1200,
                 height: 630,
                 type: "image/jpeg",
@@ -108,7 +108,7 @@ const historySteps: HistoryStep[] = [
             </>
         ),
         image: "/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg",
-        alt: "Mameshiba roux dans un decor floral",
+        alt: "Mameshiba roux dans un décor floral",
     },
     {
         title: "Une sélection poursuivie à partir des années 1950",
@@ -272,7 +272,7 @@ export default function MameShibaPage() {
                         <div className="relative h-72 rounded-lg overflow-hidden bg-black md:h-105">
                             <Image
                                 src={pageImage}
-                                alt="Mameshiba dans un decor naturel aux couleurs douces"
+                                alt="Mameshiba dans un décor naturel aux couleurs douces"
                                 fill
                                 className="object-cover"
                                 priority

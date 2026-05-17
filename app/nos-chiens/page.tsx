@@ -58,7 +58,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Ichiro mameshiba de l elevage Kawaii Shiba",
+                alt: "Ichiro, Mameshiba de l'élevage Kawaii Shiba",
                 width: 1200,
                 height: 630,
                 type: "image/webp",
@@ -171,7 +171,7 @@ export default function NosChiensPage() {
                             href="/chiots-disponibles"
                             className="inline-block w-fit rounded-md bg-primary p-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                         >
-                            Découvrir nos chiots
+                            Adopter un chiot
                         </Link>
                     </div>
 

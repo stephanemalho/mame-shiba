@@ -10,6 +10,7 @@ import {
     Dog,
     FileText,
     Heart,
+    MapPin,
     Mars,
     PawPrint,
     ShieldCheck,
@@ -230,6 +231,7 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                                             { icon: Weight, label: "Poids estimé", value: puppy.weight },
                                             { icon: BadgeCheck, label: "Sélection", value: puppy.ruler },
                                             { icon: Banknote, label: "Prix", value: priceLabel },
+                                            { icon: MapPin, label: "Remise", value: "Retrait à l'élevage uniquement, sauf cas particulier pour les pays étrangers. Nous accompagnons les adoptants si besoin pour préserver les meilleures conditions du chiot." },
                                         ].map((item) => {
                                             const Icon = item.icon
 

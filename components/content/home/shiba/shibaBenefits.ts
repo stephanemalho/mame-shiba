@@ -18,13 +18,13 @@ export const shibaBenefits: BenefitCard[] = [
         title: "Une taille miniature, un vrai Shiba Inu",
         text: "Le Mameshiba est un Shiba Inu miniature. Le standard du KCJ situe sa taille autour de 25 à 32 cm au garrot pour les femelles et 25 à 34 cm pour les mâles, tout en conservant l’allure et l’équilibre du Shiba Inu.",
         image: mameSize,
-        alt: "Un mameshiba se tenant debout sur l'herbe"
+        alt: "Un Mameshiba se tenant debout sur l'herbe"
     },
     {
         title: "Un nom japonais plein de sens",
         text: "« Mame » signifie haricot et « Shiba » signifie chien. Au Japon, cette expression évoque un petit chien adorable, à la fois compact et plein de caractère.",
         image: nihonMame,
-        alt: "Deux chiots mameshiba blottis l'un contre l'autre"
+        alt: "Deux chiots Mameshiba blottis l'un contre l'autre"
     },
     {
         title: "Une race encore rare en Europe",

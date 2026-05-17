@@ -14,20 +14,20 @@ import { convertFAQsToSchema } from "@/lib/faq-utils"
 const pageImage = "/pages/homePage/mame-shiba-good-caractere.jpg"
 
 const supportSectionParagraphs = [
-    "Etant titulaire d’un diplôme d’éducateur canin / rééducateur spécialisé au comportement, j’analyse parfaitement le comportement de nos chiens adultes, et de chacun de nos chiots durant leur période de développement et d’apprentissage. Je me fie également énormément à mon ressenti concernant la compatibilité de chaque chiot avec sa famille future.",
-    "Nous veillons à ce que chaque chiot qui partira puisse parfaitement s’intégrer au sein de votre foyer grâce à une excellente sociabilisation et une grande disponibilité de notre part.",
-    "Nous vous guiderons dans le choix, l’éducation de votre chiot MAMESHIBA, et ce avant, pendant et après l’adoption. Nous nous engageons à vous apporter les meilleurs conseils en la matière pour que vous puissiez avoir les clés de la réussite concernant l’éducation de votre chiot. Un guide de conseils sera envoyé à chaque adoptant, une prise de nouvelles régulières, et un suivi même à distance, sera effectué continuellement.",
-    "Il n’est pas nécessaire d’être expérimenté pour adopter un MAMESHIBA, cependant il faut se passionner pour cette race de chien, et s’intéresser de près au méthodes éducatives, lire, se renseigner, être curieux, avoir soif d’apprendre, ne pas hésiter à demander les conseils d’un éducateur canin qui travaille avec des méthodes positives afin de pouvoir vous « coacher » si cela est nécessaire. Il faut lui accorder le temps de dépense physique intellectuelle nécessaire à son bien être.",
+    "Étant titulaire d’un diplôme d’éducateur canin et rééducateur spécialisé en comportement, j’analyse le comportement de nos chiens adultes et de chacun de nos chiots durant leur période de développement et d’apprentissage. Je me fie également à mon ressenti concernant la compatibilité de chaque chiot avec sa future famille.",
+    "Nous veillons à ce que chaque chiot puisse s’intégrer sereinement au sein de votre foyer grâce à une excellente socialisation et une grande disponibilité de notre part.",
+    "Nous vous guidons dans le choix et l’éducation de votre chiot Mameshiba, avant, pendant et après l’adoption. Nous nous engageons à vous apporter les meilleurs conseils pour vous donner les clés de la réussite. Un guide est envoyé à chaque adoptant, avec une prise de nouvelles régulière et un suivi même à distance.",
+    "Il n’est pas nécessaire d’être expérimenté pour adopter un Mameshiba. Il faut cependant se passionner pour cette race, s’intéresser aux méthodes éducatives, lire, se renseigner, être curieux, avoir soif d’apprendre et ne pas hésiter à demander les conseils d’un éducateur canin travaillant avec des méthodes positives. Il faut aussi lui accorder le temps de dépense physique et intellectuelle nécessaire à son bien-être.",
     "Il faudra surtout appliquer nos précieux conseils au quotidien et nous faire confiance !",
 ]
 
 const educationalWorkSectionParagraphs = [
-    "Le rappel doit être travaillé sur la base de la motivation le plus tôt possible, c’est pourquoi nous commençons à leur enseigner le rappel aussi tôt que faire se peut. Nous mettons en place le suivi naturel qui encourage votre chiot à prendre un humain comme point de repère, apprécier le contact à l’humain dans les vastes étendues.",
-    "Votre chiot par donc avec la connaissance du rappel en lieu clos, vaste ou avec peu de distraction en extérieur : il est rapide à acquérir avec un MAMESHIBA s’il est pratiqué de façon journalière. Ensuite, nous allons vous guider, mais il faudra toujours travailler progressivement et de façon régulière, avec l’aide d’une grande longe. Avec de la patience, du temps, de la vigilance, de la motivation, et de l’amour, absolument tout est réalisable !",
-    "La propreté : votre chiot MAMESHIBA partira avec l’habitude de faire ses besoins dans un lieu pré défini, et sur tous types de substrats naturels : cela l’aidera durant la phase d’adaptation chez vous et facilitera l’apprentissage de la propreté en appartement.",
-    "La socialisation : votre chiot sera sociabilisé aux bruits divers qui feront partie de son quotidien : bruits de la maison, bruits forts, des véhicules, de la musique, aspirateur, bruits de la nature, de la circulation, mouvements, jeux de lumières, tonnerre, feux d’artifices, hall de gare etc… il sera également au contact avec d’autres chiens adultes qui effectueront l’apprentissage de la communication canine appelée également les « codes canins » afin de savoir se comporter avec les autres chiens, apprendre la morsure inhibée etc…",
-    "Cette sociabilisation vis à vis des autres chien devra être maintenue tout au long de la vie du chien afin que cet apprentissage de codes canins puisse se compléter, s’améliorer, et que ses acquis demeurent intacts. Pour cela il y’a groupes de balade ou des clubs d’éducation canines qui proposent des sorties collectives.",
-    "La manipulation : Nos chiots sont manipulés et stimulés le plus tôt possible grâce à la méthode de stimulation neurologique précoce dite Bio Sensor, ils sont ensuite manipulés chaque jour, et reçoivent énormément d’affection, ils adorent le contact humain et sont à l’aise lors de la manipulation.",
+    "Le rappel doit être travaillé sur la base de la motivation le plus tôt possible. C’est pourquoi nous commençons à leur enseigner le rappel très tôt. Nous mettons en place le suivi naturel, qui encourage votre chiot à prendre l’humain comme point de repère et à apprécier le contact dans de vastes espaces.",
+    "Votre chiot part donc avec une première connaissance du rappel en lieu clos, vaste ou avec peu de distractions en extérieur. Le rappel est rapide à acquérir avec un Mameshiba s’il est pratiqué quotidiennement. Ensuite, nous vous guidons, mais il faudra toujours travailler progressivement et régulièrement, avec l’aide d’une grande longe. Avec de la patience, du temps, de la vigilance, de la motivation et de l’amour, beaucoup de choses sont possibles.",
+    "La propreté : votre chiot Mameshiba partira avec l’habitude de faire ses besoins dans un lieu prédéfini et sur différents substrats naturels. Cela l’aidera durant la phase d’adaptation chez vous et facilitera l’apprentissage de la propreté en appartement.",
+    "La socialisation : votre chiot sera socialisé aux bruits qui feront partie de son quotidien : bruits de la maison, véhicules, musique, aspirateur, bruits de la nature, circulation, mouvements, jeux de lumière, tonnerre, feux d’artifice, hall de gare, etc. Il sera également au contact d’autres chiens adultes qui participeront à l’apprentissage de la communication canine, aussi appelée les « codes canins ».",
+    "Cette socialisation vis-à-vis des autres chiens devra être maintenue tout au long de sa vie afin que l’apprentissage des codes canins puisse se compléter, s’améliorer et rester solide. Pour cela, il existe des groupes de balade ou des clubs d’éducation canine qui proposent des sorties collectives.",
+    "La manipulation : nos chiots sont manipulés et stimulés le plus tôt possible grâce à la méthode de stimulation neurologique précoce dite Bio Sensor. Ils sont ensuite manipulés chaque jour et reçoivent beaucoup d’affection. Ils apprécient le contact humain et sont à l’aise lors des manipulations.",
 ]
 
 const presentationInternalLinks: InternalLinkItem[] = [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot mameshiba blanc dans un decor japonais",
+                alt: "Chiot Mameshiba blanc dans un décor japonais",
                 width: 1200,
                 height: 630,
                 type: "image/jpeg",
@@ -126,7 +126,7 @@ export default function PresentationPage() {
                                 <p className="text-muted-foreground leading-relaxed">
                                     Fort de notre expérience dans le domaine de l’élevage canin ainsi que celui de
                                     l’éducation et la rééducation canine, nous avons choisi de nous investir dans le
-                                    développement de cette nouvelle race en création qu’est le MAMESHIBA, un SHIBA INU,
+                                    développement de cette nouvelle race en création qu’est le Mameshiba, un Shiba Inu,
                                     mais de taille miniature.
                                 </p>
                                 <p className="text-muted-foreground leading-relaxed">
@@ -266,7 +266,7 @@ export default function PresentationPage() {
 
                     <section className="mb-16 space-y-6">
                         <div className="text-center space-y-3">
-                            <h2 className="text-xl md:text-2xl font-bold">L’EDUCATION DU MAMESHIBA :</h2>
+                            <h2 className="text-xl md:text-2xl font-bold">L’éducation du Mameshiba</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto">
                                 Cette partie relève surtout de notre manière d’accompagner les chiots et les familles dans le temps.
                             </p>

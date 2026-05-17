@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Aurélie avec un chiot mameshiba",
+                alt: "Aurélie avec un chiot Mameshiba",
                 width: 1200,
                 height: 630,
                 type: "image/jpeg",
@@ -71,7 +71,7 @@ export default function PresentationEleveusesPage() {
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqEleveuses))
     const lastMod = returnLastmod(siteConfig.pages.eleveuses)
-  {/* @TODO modifier LES IMAGES DE AURELIE ET MARINE */}
+  {/* @TODO modifier les images d'Aurélie et Marine */}
     const aurelieGallery = [
         {
             src: "/assets/authors/aurelie-magnetisme-past-work.jpeg",
@@ -80,12 +80,12 @@ export default function PresentationEleveusesPage() {
         },
         {
             src: "/assets/authors/aurélie-elevage-kawaii-shiba-et-chiot-mame.jpeg",
-            alt: "Aurélie avec un chiot mameshiba",
+            alt: "Aurélie avec un chiot Mameshiba",
             className: "col-span-3 md:col-span-3 row-span-3",
         },
         {
             src: "/pages/les-eleveuses/aurelie-avec-ses-collegues-et-les-mame-shiba.jpeg",
-            alt: "Aurélie ses collègues de l’élevage et les Mameshiba",
+            alt: "Aurélie, ses collègues de l’élevage et les Mameshiba",
             className: "col-span-3 md:col-span-3 row-span-3",
         }
     ]

@@ -13,7 +13,7 @@ const navigation = [
     { name: "Accueil", href: "/" },
     { name: "Le Mameshiba", href: "/mameshiba" },
     { name: "Prix du Mameshiba", href: "/mame-shiba-prix" },
-    { name: "L'elevage", href: "/presentation-elevage" },
+    { name: "L'élevage", href: "/presentation-elevage" },
     { name: "Les éleveuses", href: "/presentation-eleveuses" },
     { name: "Nos chiens", href: "/nos-chiens" },
     { name: "Nos chiots", href: "/chiots-disponibles" },
