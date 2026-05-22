@@ -19,27 +19,27 @@ const PUBLIC = path.join(__dirname, "../public");
 // Per-directory config derived from component `sizes=` props × 2 DPR
 const CONFIGS = [
     // authors: max 240px display (144px desktop, 240px on breeders page) × 2
-    { dir: "assets/authors", maxWidth: 500, quality: 75 },
+    { dir: "assets/authors", maxWidth: 500, quality: 88 },
     // blog: generic article images, up to ~50vw
-    { dir: "assets/blog", maxWidth: 1200, quality: 80 },
+    { dir: "assets/blog", maxWidth: 1200, quality: 88 },
     // homePage: hero at 50vw, grid at 33vw → largest wins
-    { dir: "pages/homePage", maxWidth: 1300, quality: 82 },
+    { dir: "pages/homePage", maxWidth: 1300, quality: 90 },
     // image-all-shiba: used at 50vw across multiple pages
-    { dir: "pages/image-all-shiba", maxWidth: 1300, quality: 82 },
+    { dir: "pages/image-all-shiba", maxWidth: 1300, quality: 90 },
     // conditions-de-vie: carousel at 45vw
-    { dir: "pages/conditions-de-vie", maxWidth: 1200, quality: 80 },
+    { dir: "pages/conditions-de-vie", maxWidth: 1200, quality: 88 },
     // les-eleveuses: tiny thumbnails at 120px fixed × 2
-    { dir: "pages/les-eleveuses", maxWidth: 300, quality: 75 },
+    { dir: "pages/les-eleveuses", maxWidth: 300, quality: 85 },
     // reproducteurs: carousel at 50vw
-    { dir: "pages/reproducteurs", maxWidth: 1300, quality: 82 },
+    { dir: "pages/reproducteurs", maxWidth: 1300, quality: 90 },
     // le-mame-shiba: 3-col grid at 33vw
-    { dir: "pages/le-mame-shiba", maxWidth: 900, quality: 80 },
+    { dir: "pages/le-mame-shiba", maxWidth: 900, quality: 88 },
     // mame-shiba-prix: 3-col grid at 33vw
-    { dir: "pages/mame-shiba-prix", maxWidth: 900, quality: 80 },
+    { dir: "pages/mame-shiba-prix", maxWidth: 900, quality: 88 },
     // adoption: two-col at 45vw
-    { dir: "pages/adoption", maxWidth: 1200, quality: 80 },
+    { dir: "pages/adoption", maxWidth: 1200, quality: 88 },
     // presentation-elevage: two-col at 50vw
-    { dir: "pages/presentation-elevage", maxWidth: 1300, quality: 82 },
+    { dir: "pages/presentation-elevage", maxWidth: 1300, quality: 90 },
 ];
 
 const IMAGE_EXTS = new Set([".webp", ".jpeg", ".jpg", ".png"]);
