@@ -143,7 +143,7 @@ export default function NosChiotsPage() {
                                     const statusLabel = getPuppyStatusLabel(puppy)
                                     const puppyUrl = getPuppyUrl(puppy)
                                     const priceTextClass = isReserved ? "text-muted-foreground line-through" : "text-primary"
-                                    const firstImage = puppy.images[0]
+                                    const firstImage = puppy.thumbnailImage ?? puppy.images[0]
 
                                     return (
                                         <Card

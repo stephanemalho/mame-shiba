@@ -31,7 +31,10 @@ async function convertToWebP(filePath) {
         const originalStats = fs.statSync(filePath);
         totalOriginalSize += originalStats.size;
 
-        await sharp(filePath).webp({ quality: 85, effort: 6 }).toFile(webpPath);
+        await sharp(filePath)
+            .rotate()
+            .webp({ quality: 85, effort: 6 })
+            .toFile(webpPath);
 
         const webpStats = fs.statSync(webpPath);
         totalWebpSize += webpStats.size;
@@ -74,19 +77,20 @@ async function main() {
 
     await scanDirectory(targetDir);
 
-    const originalSizeMb = totalOriginalSize / 1024 / 1024;
-    const webpSizeMb = totalWebpSize / 1024 / 1024;
-    const totalReduction =
-        totalOriginalSize > 0
-            ? ((1 - totalWebpSize / totalOriginalSize) * 100).toFixed(1)
-            : "0.0";
-
     console.log("\n📊 Conversion Summary:");
     console.log(`   Files converted: ${convertedCount}`);
     console.log(`   Scanned directory: ${targetDir}`);
-    console.log(`   Original size: ${originalSizeMb.toFixed(2)} MB`);
-    console.log(`   WebP size: ${webpSizeMb.toFixed(2)} MB`);
-    console.log(`   Total reduction: ${totalReduction}%`);
+    console.log(
+        `   Original size: ${(totalOriginalSize / 1024 / 1024).toFixed(2)} MB`
+    );
+    console.log(`   WebP size: ${(totalWebpSize / 1024 / 1024).toFixed(2)} MB`);
+    console.log(
+        `   Total reduction: ${
+            totalOriginalSize > 0
+                ? ((1 - totalWebpSize / totalOriginalSize) * 100).toFixed(1)
+                : "0.0"
+        }%`
+    );
     console.log(
         "\n✨ Done! You can now update your code to use .webp extensions."
     );

@@ -1,5 +1,6 @@
 export type PuppyImage = {
     src: string;
+    sourceSrc?: string;
     alt: string;
 };
 
@@ -26,6 +27,7 @@ export type Puppy = {
     health?: string[];
     highlights: string[];
     images: PuppyImage[];
+    thumbnailImage?: PuppyImage;
     linkTo: string;
     isReserved?: boolean;
     isAdopted?: boolean;
@@ -64,11 +66,20 @@ const karasukiBirthDateIso = "2026-05-06";
 const karasukiAvailableDate = "Disponible le 7 juillet 2026";
 const karasukiAvailableDateIso = "2026-07-07";
 
-function puppyImages(name: string, files: string[]): PuppyImage[] {
-    return files.map((file, index) => ({
-        src: `/pages/puppies/${file}`,
+function toWebpFile(file: string) {
+    return file.replace(/\.(jpe?g|png)$/i, ".webp");
+}
+
+function puppyImage(name: string, file: string, index = 0): PuppyImage {
+    return {
+        src: `/pages/puppies/${toWebpFile(file)}`,
+        sourceSrc: `/pages/puppies/${file}`,
         alt: `${name}, chiot Mameshiba de l'élevage Kawaii Shiba - photo ${index + 1}`
-    }));
+    };
+}
+
+function puppyImages(name: string, files: string[]): PuppyImage[] {
+    return files.map((file, index) => puppyImage(name, file, index));
 }
 
 export const puppies: Puppy[] = [
@@ -79,13 +90,13 @@ export const puppies: Puppy[] = [
         sexe: "Mâle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
+        weight: "Estimé à 4-5 kg adulte",
         parents: "Parents : YUMI & NATSU",
         readyDate: yumiAvailableDate,
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Hotaru est un mâle Mameshiba blanc issu de Yumi et Natsu. Il possède un pédigrée Kennel Club of Japan et descend d'une lignée avec petit-fils de KC Champion.",
         highlights: [
@@ -96,11 +107,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("HOTARU", [
-            "mameshiba-blanc-hotaru-1.jpg",
-            "mameshiba-blanc-hotaru-2.jpg",
-            "mameshiba-blanc-hotaru-3.jpg",
-            "mameshiba-blanc-hotaru-4.jpg"
+            "shiba-inu-mameshiba-hotaru-blanc-1.jpeg",
+            "shiba-inu-mameshiba-hotaru-blanc-2.jpeg",
+            "shiba-inu-mameshiba-hotaru-blanc-3.jpeg",
+            "shiba-inu-mameshiba-hotaru-blanc-4.jpeg"
         ]),
+        thumbnailImage: puppyImage("HOTARU", "shiba-inu-mameshiba-hotaru-blanc-2.jpeg", 1),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -120,7 +132,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Kenshi est un mâle Mameshiba fauve issu de Yumi et Natsu. Il dispose d'un pédigrée Kennel Club of Japan et descend d'une lignée avec petit-fils de KC Champion. Kenshi est actuellement réservé.",
         highlights: [
@@ -130,7 +142,12 @@ export const puppies: Puppy[] = [
             "Pédigrée Kennel Club of Japan"
         ],
         health: defaultHealth,
-        images: puppyImages("KENSHI", ["Kenshi-male-1.jpg"]),
+        images: puppyImages("KENSHI", [
+            "shiba-mameshiba-kenshi-1.jpeg",
+            "shiba-mameshiba-kenshi-2.jpeg",
+            "shiba-mameshiba-kenshi-3.jpeg"
+        ]),
+        thumbnailImage: puppyImage("KENSHI", "shiba-mameshiba-kenshi-3.jpeg", 2),
         linkTo: yumiNatsuFormUrl,
         isReserved: true,
         price: malePrice,
@@ -145,13 +162,13 @@ export const puppies: Puppy[] = [
         sexe: "Mâle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
+        weight: "Estimé à 4-5 kg adulte",
         parents: "Parents : YUMI & NATSU",
         readyDate: yumiAvailableDate,
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Akiro est un mâle Mameshiba blanc issu de Yumi et Natsu. Son type lumineux, son expression douce et sa lignée japonaise sont suivis avec attention pendant sa croissance.",
         highlights: [
@@ -162,11 +179,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("AKIRO", [
-            "Akiro-mameshiba-blanc.jpg",
-            "mameshiba-akiro-1.jpg",
-            "mameshiba-akiro-blanc-2.jpg",
-            "akiro-mameshiba-blanc-4.jpg"
+            "shiba-inu-mameshiba-akiro-1.jpeg",
+            "shiba-inu-mameshiba-akiro-2.jpeg",
+            "shiba-inu-mameshiba-akiro-3.jpeg",
+            "shiba-inu-mameshiba-akiro-4.jpeg"
         ]),
+        thumbnailImage: puppyImage("AKIRO", "shiba-inu-mameshiba-akiro-3.jpeg", 2),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -180,13 +198,13 @@ export const puppies: Puppy[] = [
         sexe: "Mâle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
+        weight: "Estimé à 3.5/4.5 kg adulte",
         parents: "Parents : YUMI & NATSU",
         readyDate: yumiAvailableDate,
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Ikari est un mâle Mameshiba blanc issu de Yumi et Natsu. Il est présenté avec les chiots disponibles de la portée et pourra être suivi en photos et vidéos sur demande.",
         highlights: [
@@ -196,7 +214,13 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: puppyImages("IKARI", ["ikari-male-mameshiba-3.jpg"]),
+        images: puppyImages("IKARI", [
+            "shiba-inu-mameshiba-ikari-1.jpeg",
+            "shiba-inu-mameshiba-ikari-2.jpeg",
+            "shiba-inu-mameshiba-ikari-3.jpeg",
+            "shiba-inu-mameshiba-ikari-4.jpeg"
+        ]),
+        thumbnailImage: puppyImage("IKARI", "shiba-inu-mameshiba-ikari-4.jpeg", 3),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -210,13 +234,13 @@ export const puppies: Puppy[] = [
         sexe: "Mâle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
+        weight: "Estimé à 3 à 4,5 kg adulte",
         parents: "Parents : KARASUKI & WARU",
         readyDate: karasukiAvailableDate,
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Kenshiro est un mâle Mameshiba fauve issu de Karasuki et Waru. Son évolution est suivie à l'élevage afin de confirmer son gabarit, son tempérament et son type.",
         highlights: [
@@ -226,12 +250,8 @@ export const puppies: Puppy[] = [
             "Lignée japonaise"
         ],
         health: defaultHealth,
-        images: puppyImages("KENSHIRO", [
-            "kenshiro-mameshiba-1.jpg",
-            "kenshiro-mameshiba-2.jpg",
-            "kenshiro-mameshiba-3.jpg",
-            "kenshiro-mameshiba-4.jpg"
-        ]),
+        images: puppyImages("KENSHIRO", ["shiba-inu-mameshiba-kenshiro-1.jpeg"]),
+        thumbnailImage: puppyImage("KENSHIRO", "shiba-inu-mameshiba-kenshiro-1.jpeg"),
         linkTo: karasukiWaruFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -245,13 +265,13 @@ export const puppies: Puppy[] = [
         sexe: "Femelle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
+        weight: "Estimée à 4-5 kg adulte",
         parents: "Parents : KARASUKI & WARU",
         readyDate: karasukiAvailableDate,
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Mitsuki est une femelle Mameshiba fauve de la portée Karasuki et Waru. Elle possède un pédigrée Kennel Club of Japan et nous suivons son développement avec attention. Mitsuki est actuellement réservée.",
         highlights: [
@@ -262,10 +282,11 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("MITSUKI", [
-            "mitsuki-mameshiba-1.jpg",
-            "mitsuki-mameshiba-2.jpg",
-            "mitsuki-mameshiba-3.jpg"
+            "shiba-inu-mameshiba-mitsuki-1.jpeg",
+            "shiba-inu-mameshiba-mitsuki-2.jpeg",
+            "shiba-inu-mameshiba-mitsuki-3.jpeg"
         ]),
+        thumbnailImage: puppyImage("MITSUKI", "shiba-inu-mameshiba-mitsuki-1.jpeg"),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,
@@ -280,13 +301,13 @@ export const puppies: Puppy[] = [
         sexe: "Femelle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
+        weight: "Estimée à 4-5 kg adulte",
         parents: "Parents : KARASUKI & WARU",
         readyDate: karasukiAvailableDate,
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
-        updatedAt: "2026-05-16",
+        updatedAt: "2026-05-22",
         description:
             "Airisu est une femelle Mameshiba fauve issue de Karasuki et Waru. Son profil sera précisé au fil des prochaines semaines avec de nouvelles photos, vidéos et observations. Airisu est actuellement réservée.",
         highlights: [
@@ -297,10 +318,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("Airisu", [
-            "airisu-mameshiba-1.jpg",
-            "airisu-mameshiba-2.jpg",
-            "airisu-mameshiba-3.jpg"
+            "shiba-inu-mameshiba-airisu-1.jpeg",
+            "shiba-inu-mameshiba-airisu-2.jpeg",
+            "shiba-inu-mameshiba-airisu-3.jpeg",
+            "shiba-inu-mameshiba-airisu-4.jpeg"
         ]),
+        thumbnailImage: puppyImage("Airisu", "shiba-inu-mameshiba-airisu-3.jpeg", 2),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,

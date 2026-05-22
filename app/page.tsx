@@ -381,7 +381,7 @@ export default function HomePage() {
                 {availablePuppies.length > 0 ? (
                   <div className="flex flex-wrap gap-4">
                     {availablePuppies.map((puppy) => {
-                      const firstImage = puppy.images[0]
+                      const firstImage = puppy.thumbnailImage ?? puppy.images[0]
 
                       return (
                         <Link

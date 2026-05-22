@@ -27,6 +27,14 @@ export function getAbsolutePuppyUrl(puppy: Puppy) {
     return `${siteConfig.siteUrl}${getPuppyUrl(puppy)}`
 }
 
+export function getPuppySourceImageSrc(image: Puppy["images"][number]) {
+    return image.sourceSrc ?? image.src
+}
+
+export function getPuppySocialImageSrc(puppy: Puppy) {
+    return puppy.images[0] ? getPuppySourceImageSrc(puppy.images[0]) : undefined
+}
+
 export function getPuppyStatus(puppy: Puppy) {
     if (puppy.isAdopted) return "adopted"
     if (puppy.isReserved) return "reserved"
@@ -110,7 +118,7 @@ export function buildPuppyProductStructuredData(puppy: Puppy) {
         name: `${puppy.name} - chiot Mameshiba ${puppy.color}`,
         description: puppy.description,
         url,
-        image: puppy.images.map((image) => `${siteConfig.siteUrl}${image.src}`),
+        image: puppy.images.map((image) => `${siteConfig.siteUrl}${getPuppySourceImageSrc(image)}`),
         ...(getPuppyLastModified(puppy) ? { dateModified: getPuppyLastModified(puppy) } : {}),
         sku: `mameshiba-${getPuppySlug(puppy.name)}`,
         category: "Chiot Mameshiba",

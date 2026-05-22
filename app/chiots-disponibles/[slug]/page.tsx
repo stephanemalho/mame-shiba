@@ -30,6 +30,7 @@ import {
     getPuppySeoDescription,
     getPuppyLastModified,
     getPuppySlug,
+    getPuppySocialImageSrc,
     getPuppyStatus,
     getPuppyStatusLabel,
     getPuppyUrl,
@@ -79,7 +80,7 @@ export async function generateMetadata({ params }: PuppyPageProps): Promise<Meta
         return {}
     }
 
-    const firstImage = puppy.images[0]?.src ?? "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
+    const firstImage = getPuppySocialImageSrc(puppy) ?? "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
     const description = getPuppySeoDescription(puppy)
     const title = `${puppy.name}, chiot Mameshiba ${puppy.color} ${getPuppyStatusLabel(puppy).toLowerCase()}`
     const url = `${siteConfig.siteUrl}${getPuppyUrl(puppy)}`
