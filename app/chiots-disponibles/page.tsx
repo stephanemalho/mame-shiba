@@ -6,11 +6,13 @@ import { faqNosChiots } from "@/lib/faq-data"
 import {
     Banknote,
     Heart,
+    Mars,
     Mail,
     NotebookText,
     PawPrint,
     Phone,
     Sprout,
+    Venus,
 } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
@@ -26,6 +28,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { Badge } from "@/components/ui/badge"
+import { getPuppyParentProfiles } from "./puppy-parents"
 
 const pageImage = "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
 
@@ -144,17 +147,18 @@ export default function NosChiotsPage() {
                                     const puppyUrl = getPuppyUrl(puppy)
                                     const priceTextClass = isReserved ? "text-muted-foreground line-through" : "text-primary"
                                     const firstImage = puppy.thumbnailImage ?? puppy.images[0]
+                                    const parentProfiles = getPuppyParentProfiles(puppy.parents)
 
                                     return (
                                         <Card
                                             key={puppy.name}
-                                            className={`relative overflow-hidden bg-background ${isReserved ? "border-2 border-green-600 ring-2 ring-green-600/20 ring-offset-2 ring-offset-background" : ""}`}
+                                            className={`relative overflow-hidden bg-background py-0 ${isReserved ? "border-2 border-green-600 ring-2 ring-green-600/20 ring-offset-2 ring-offset-background" : ""}`}
                                         >
-                                            <CardContent className="p-5 md:p-6">
-                                                <div className="grid gap-5 md:grid-cols-[112px_1fr_auto] md:items-center">
+                                            <CardContent className="p-0">
+                                                <div className="grid md:grid-cols-[220px_1fr_auto] md:items-stretch">
                                                     <Link
                                                         href={puppyUrl}
-                                                        className="relative mx-auto h-28 w-28 overflow-hidden rounded-full border-4 border-primary/10 bg-muted shadow-sm transition-transform hover:scale-105 md:mx-0"
+                                                        className="relative block h-[28rem] w-full overflow-hidden bg-muted transition-opacity hover:opacity-90 sm:h-[34rem] md:h-full md:min-h-full"
                                                         aria-label={`Voir la fiche détaillée de ${puppy.name}`}
                                                     >
                                                         {firstImage ? (
@@ -163,21 +167,21 @@ export default function NosChiotsPage() {
                                                                 alt={firstImage.alt}
                                                                 fill
                                                                 className="object-cover"
-                                                                sizes="112px"
+                                                                sizes="(min-width: 768px) 220px, 100vw"
                                                                 priority={index === 0}
                                                             />
                                                         ) : null}
                                                     </Link>
 
-                                                    <div className="min-w-0 space-y-3 text-center md:text-left">
+                                                    <div className="min-w-0 space-y-2 px-4 pb-4 pt-3 text-left md:space-y-3 md:p-6">
                                                         <div className="space-y-1">
-                                                            <h2 className="text-2xl font-bold">{puppy.name}</h2>
-                                                            <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
+                                                            <h2 className="text-xl font-bold md:text-2xl">{puppy.name}</h2>
+                                                            <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground md:line-clamp-none md:text-base">
                                                                 {puppy.description}
                                                             </p>
                                                         </div>
 
-                                                        <div className="flex flex-wrap justify-center gap-2 md:justify-start">
+                                                        <div className="flex flex-wrap gap-1.5 md:gap-2">
                                                             <Badge variant="secondary">
                                                                 <PawPrint className="mr-1 h-4 w-4" aria-hidden="true" />
                                                                 {puppy.sexe}
@@ -198,9 +202,46 @@ export default function NosChiotsPage() {
                                                                 </Badge>
                                                             ) : null}
                                                         </div>
+
+                                                        {parentProfiles.length > 0 ? (
+                                                            <div className="grid gap-2 pt-1 sm:grid-cols-2">
+                                                                {parentProfiles.map((parent) => {
+                                                                    const ParentIcon = parent.role === "Mère" ? Venus : Mars
+                                                                    const iconClassName = parent.role === "Mère" ? "text-rose-500" : "text-sky-500"
+
+                                                                    return (
+                                                                        <Link
+                                                                            key={`${puppy.name}-${parent.role}-${parent.name}`}
+                                                                            href={parent.href}
+                                                                            className="group/parent flex min-w-0 items-center gap-2 rounded-lg border border-primary/10 bg-muted/25 p-2 transition hover:border-primary/25 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                                                            aria-label={`Voir ${parent.name}, ${parent.role.toLowerCase()} de ${puppy.name}`}
+                                                                        >
+                                                                            <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-primary/10 bg-background">
+                                                                                <Image
+                                                                                    src={parent.image}
+                                                                                    alt={`${parent.name}, ${parent.role.toLowerCase()} de ${puppy.name}`}
+                                                                                    fill
+                                                                                    className="object-cover"
+                                                                                    sizes="44px"
+                                                                                />
+                                                                            </span>
+                                                                            <span className="min-w-0">
+                                                                                <span className="flex items-center gap-1 text-xs font-medium text-muted-foreground">
+                                                                                    <ParentIcon className={`h-3.5 w-3.5 ${iconClassName}`} aria-hidden="true" />
+                                                                                    {parent.role}
+                                                                                </span>
+                                                                                <span className="block truncate text-sm font-semibold text-foreground group-hover/parent:text-primary">
+                                                                                    {parent.name}
+                                                                                </span>
+                                                                            </span>
+                                                                        </Link>
+                                                                    )
+                                                                })}
+                                                            </div>
+                                                        ) : null}
                                                     </div>
 
-                                                    <div className="flex flex-col gap-2 md:min-w-55">
+                                                    <div className="flex flex-col justify-center gap-2 border-t border-primary/10 p-4 pt-3 md:min-w-55 md:border-t-0 md:p-6 md:pl-0">
                                                         <Link
                                                             href={puppyUrl}
                                                             className="inline-flex items-center justify-center rounded-md border border-primary px-4 py-2 font-semibold text-primary transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
