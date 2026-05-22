@@ -4,6 +4,7 @@ const isBlogEnabled = process.env.NEXT_PUBLIC_ENABLE_BLOG !== "false";
 
 const nextConfig: NextConfig = {
     images: {
+        unoptimized: true,
         qualities: [60, 70, 75, 80]
     },
     async redirects() {
