@@ -13,7 +13,8 @@
     "update:images": "node scripts/update-image-references.js",
     "audit:schemas": "node scripts/seo-schema-audit.mjs",
     "audit:meta": "node scripts/seo-meta-audit.mjs",
-    "optimize:images": "node scripts/optimize-puppies-images.mjs && npm run generate:public-asset-paths"
+    "optimize:images": "node scripts/optimize-puppies-images.mjs && npm run generate:public-asset-paths",
+    "optimize:images:all": "node scripts/optimize-all-images.mjs && npm run generate:public-asset-paths"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
