@@ -183,7 +183,7 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                                     }`}
                                 >
                                     <Image
-                                        src={image.src}
+                                        src={index === 0 ? image.src : (image.thumbSrc ?? image.src)}
                                         alt={image.alt}
                                         fill
                                         priority={index === 0}

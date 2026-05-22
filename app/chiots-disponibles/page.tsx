@@ -163,7 +163,7 @@ export default function NosChiotsPage() {
                                                     >
                                                         {firstImage ? (
                                                             <Image
-                                                                src={firstImage.src}
+                                                                src={firstImage.thumbSrc ?? firstImage.src}
                                                                 alt={firstImage.alt}
                                                                 fill
                                                                 className="object-cover"

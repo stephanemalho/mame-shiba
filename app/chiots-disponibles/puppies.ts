@@ -1,5 +1,6 @@
 export type PuppyImage = {
     src: string;
+    thumbSrc?: string;
     sourceSrc?: string;
     alt: string;
 };
@@ -71,8 +72,10 @@ function toWebpFile(file: string) {
 }
 
 function puppyImage(name: string, file: string, index = 0): PuppyImage {
+    const webpFile = toWebpFile(file);
     return {
-        src: `/pages/puppies/${toWebpFile(file)}`,
+        src: `/pages/puppies/${webpFile}`,
+        thumbSrc: `/pages/puppies/${webpFile.replace(".webp", "-thumb.webp")}`,
         sourceSrc: `/pages/puppies/${file}`,
         alt: `${name}, chiot Mameshiba de l'élevage Kawaii Shiba - photo ${index + 1}`
     };
