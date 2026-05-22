@@ -19,6 +19,7 @@ export const publicAssetRoutes = [
     "/assets/authors/portrait-aurelie-and-pomsky.jpeg",
     "/assets/blog/Kaito-et-Yushi-en-appartement.jpg",
     "/home-founder-fallback.jpg",
+    "/icon-sm.webp",
     "/locaux.webp",
     "/logo-kawaii-mame-shiba.png",
     "/logo-kawaii-shiba.jpg",
