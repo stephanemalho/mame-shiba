@@ -107,12 +107,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("HOTARU", [
-            "shiba-inu-mameshiba-hotaru-blanc-1.jpeg",
-            "shiba-inu-mameshiba-hotaru-blanc-2.jpeg",
-            "shiba-inu-mameshiba-hotaru-blanc-3.jpeg",
-            "shiba-inu-mameshiba-hotaru-blanc-4.jpeg"
+            "shiba-inu-mameshiba-hotaru-blanc-1.webp",
+            "shiba-inu-mameshiba-hotaru-blanc-2.webp",
+            "shiba-inu-mameshiba-hotaru-blanc-3.webp",
+            "shiba-inu-mameshiba-hotaru-blanc-4.webp"
         ]),
-        thumbnailImage: puppyImage("HOTARU", "shiba-inu-mameshiba-hotaru-blanc-2.jpeg", 1),
+        thumbnailImage: puppyImage("HOTARU", "shiba-inu-mameshiba-hotaru-blanc-2.webp", 1),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -143,11 +143,11 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("KENSHI", [
-            "shiba-mameshiba-kenshi-1.jpeg",
-            "shiba-mameshiba-kenshi-2.jpeg",
-            "shiba-mameshiba-kenshi-3.jpeg"
+            "shiba-mameshiba-kenshi-1.webp",
+            "shiba-mameshiba-kenshi-2.webp",
+            "shiba-mameshiba-kenshi-3.webp"
         ]),
-        thumbnailImage: puppyImage("KENSHI", "shiba-mameshiba-kenshi-3.jpeg", 2),
+        thumbnailImage: puppyImage("KENSHI", "shiba-mameshiba-kenshi-3.webp", 2),
         linkTo: yumiNatsuFormUrl,
         isReserved: true,
         price: malePrice,
@@ -179,12 +179,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("AKIRO", [
-            "shiba-inu-mameshiba-akiro-1.jpeg",
-            "shiba-inu-mameshiba-akiro-2.jpeg",
-            "shiba-inu-mameshiba-akiro-3.jpeg",
-            "shiba-inu-mameshiba-akiro-4.jpeg"
+            "shiba-inu-mameshiba-akiro-1.webp",
+            "shiba-inu-mameshiba-akiro-2.webp",
+            "shiba-inu-mameshiba-akiro-3.webp",
+            "shiba-inu-mameshiba-akiro-4.webp"
         ]),
-        thumbnailImage: puppyImage("AKIRO", "shiba-inu-mameshiba-akiro-3.jpeg", 2),
+        thumbnailImage: puppyImage("AKIRO", "shiba-inu-mameshiba-akiro-3.webp", 2),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -215,12 +215,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("IKARI", [
-            "shiba-inu-mameshiba-ikari-1.jpeg",
-            "shiba-inu-mameshiba-ikari-2.jpeg",
-            "shiba-inu-mameshiba-ikari-3.jpeg",
-            "shiba-inu-mameshiba-ikari-4.jpeg"
+            "shiba-inu-mameshiba-ikari-1.webp",
+            "shiba-inu-mameshiba-ikari-2.webp",
+            "shiba-inu-mameshiba-ikari-3.webp",
+            "shiba-inu-mameshiba-ikari-4.webp"
         ]),
-        thumbnailImage: puppyImage("IKARI", "shiba-inu-mameshiba-ikari-4.jpeg", 3),
+        thumbnailImage: puppyImage("IKARI", "shiba-inu-mameshiba-ikari-4.webp", 3),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -250,8 +250,8 @@ export const puppies: Puppy[] = [
             "Lignée japonaise"
         ],
         health: defaultHealth,
-        images: puppyImages("KENSHIRO", ["shiba-inu-mameshiba-kenshiro-1.jpeg"]),
-        thumbnailImage: puppyImage("KENSHIRO", "shiba-inu-mameshiba-kenshiro-1.jpeg"),
+        images: puppyImages("KENSHIRO", ["shiba-inu-mameshiba-kenshiro-1.webp"]),
+        thumbnailImage: puppyImage("KENSHIRO", "shiba-inu-mameshiba-kenshiro-1.webp"),
         linkTo: karasukiWaruFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -282,11 +282,11 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("MITSUKI", [
-            "shiba-inu-mameshiba-mitsuki-1.jpeg",
-            "shiba-inu-mameshiba-mitsuki-2.jpeg",
-            "shiba-inu-mameshiba-mitsuki-3.jpeg"
+            "shiba-inu-mameshiba-mitsuki-1.webp",
+            "shiba-inu-mameshiba-mitsuki-2.webp",
+            "shiba-inu-mameshiba-mitsuki-3.webp"
         ]),
-        thumbnailImage: puppyImage("MITSUKI", "shiba-inu-mameshiba-mitsuki-1.jpeg"),
+        thumbnailImage: puppyImage("MITSUKI", "shiba-inu-mameshiba-mitsuki-1.webp"),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,
@@ -318,12 +318,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("Airisu", [
-            "shiba-inu-mameshiba-airisu-1.jpeg",
-            "shiba-inu-mameshiba-airisu-2.jpeg",
-            "shiba-inu-mameshiba-airisu-3.jpeg",
-            "shiba-inu-mameshiba-airisu-4.jpeg"
+            "shiba-inu-mameshiba-airisu-1.webp",
+            "shiba-inu-mameshiba-airisu-2.webp",
+            "shiba-inu-mameshiba-airisu-3.webp",
+            "shiba-inu-mameshiba-airisu-4.webp"
         ]),
-        thumbnailImage: puppyImage("Airisu", "shiba-inu-mameshiba-airisu-3.jpeg", 2),
+        thumbnailImage: puppyImage("Airisu", "shiba-inu-mameshiba-airisu-3.webp", 2),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,
