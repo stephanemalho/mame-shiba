@@ -149,9 +149,15 @@ export default function HomePage() {
 
       <div className="flex flex-col">
         <section className="bg-background">
-          <div
-            className="overflow-hidden bg-[url('/pages/mameshiba-desktop.jpg')] bg-cover bg-center bg-no-repeat"
-          >
+          <div className="relative overflow-hidden">
+            <Image
+              src="/pages/mameshiba-desktop.jpg"
+              alt=""
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+              priority
+            />
             <div className="container relative mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
                 <div className="mx-auto max-w-6xl rounded-xl border border-[#7a4a2f]/15 bg-[#fff8ef]/70 px-6 py-6 text-center text-[#57331f] shadow-[0_24px_90px_rgba(95,54,31,0.16)] md:rounded-4xl md:px-8">
@@ -174,6 +180,7 @@ export default function HomePage() {
                       src="/mame-shiba-in-a-sakura-tree.jpg"
                       alt="Mameshiba dans un décor inspiré du Japon"
                       fill
+                      priority
                       className="object-cover object-center"
                       sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
                       quality={70}
@@ -392,7 +399,7 @@ export default function HomePage() {
                         <span className="relative block aspect-square overflow-hidden rounded-lg border border-primary/12 bg-background shadow-sm transition group-hover:border-primary/35 group-hover:shadow-md">
                           {firstImage ? (
                             <Image
-                              src={firstImage.src}
+                              src={firstImage.thumbSrc ?? firstImage.src}
                               alt={firstImage.alt}
                               fill
                               className="object-cover transition-transform group-hover:scale-105"
