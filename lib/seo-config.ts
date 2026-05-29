@@ -575,19 +575,25 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-05-22"
-    },
-    {
-        url: "/mameshiba",
-        changefreq: "monthly",
-        priority: 0.75,
-        lastmod: "2026-05-16"
+        lastmod: "2026-05-29"
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
+        priority: 0.95,
+        lastmod: "2026-05-29"
+    },
+    {
+        url: "/mameshiba",
+        changefreq: "monthly",
         priority: 0.9,
-        lastmod: "2026-05-22"
+        lastmod: "2026-05-16"
+    },
+    {
+        url: "/nos-chiens",
+        changefreq: "monthly",
+        priority: 0.85,
+        lastmod: "2026-04-12"
     },
     {
         url: "/adoption/reussir-son-adoption",
@@ -600,12 +606,6 @@ export const sitemapPages = [
         changefreq: "monthly",
         priority: 0.8,
         lastmod: "2026-05-16"
-    },
-    {
-        url: "/nos-chiens",
-        changefreq: "monthly",
-        priority: 0.8,
-        lastmod: "2026-04-12"
     },
     {
         url: "/presentation-elevage",
@@ -634,19 +634,19 @@ export const sitemapPages = [
     {
         url: "/mentions-legales",
         changefreq: "yearly",
-        priority: 0.6,
+        priority: 0.2,
         lastmod: seoLastmod
     },
     {
         url: "/conditions-generales",
         changefreq: "yearly",
-        priority: 0.6,
+        priority: 0.2,
         lastmod: seoLastmod
     },
     {
         url: "/politique-de-confidentialite",
         changefreq: "yearly",
-        priority: 0.7,
+        priority: 0.2,
         lastmod: seoLastmod
     }
 ];

@@ -6,7 +6,7 @@ import "./globals.css"
 import { ThemeProvider } from "next-themes"
 import { Navigation } from "../components/navigation"
 import { Footer } from "../components/footer"
-import { buildOpenGraph, buildTwitter, siteConfig } from "@/lib/seo-config"
+import { siteConfig } from "@/lib/seo-config"
 import { generateOrganizationSchema, generateWebsiteSchema } from "@/lib/schema-generators"
 import { Questrial } from "next/font/google"
 
@@ -20,9 +20,6 @@ const iconVersion = "v2"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
-  title: siteConfig.title,
-  description: siteConfig.description,
-  keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.author, url: siteConfig.siteUrl }],
   creator: siteConfig.author,
   publisher: siteConfig.author,
@@ -39,27 +36,6 @@ export const metadata: Metadata = {
     ],
   },
 
-  // Open Graph
-  openGraph: buildOpenGraph({
-    title: siteConfig.title,
-    description: siteConfig.description,
-    url: siteConfig.siteUrl,
-    images: [
-      {
-        url: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
-        alt: siteConfig.ogImageAlt,
-      },
-    ],
-  }),
-
-  // Twitter Card
-  twitter: buildTwitter({
-    title: siteConfig.title,
-    description: siteConfig.description,
-    imageUrl: `${siteConfig.siteUrl}${siteConfig.ogImage}`,
-  }),
-
-  // Autres métadonnées
   referrer: "strict-origin-when-cross-origin",
   formatDetection: {
     email: true,

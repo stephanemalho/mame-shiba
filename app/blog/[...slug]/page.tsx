@@ -76,6 +76,7 @@ export async function generateMetadata({
         return {
             title: pageMetadata.blog.title,
             description: pageMetadata.blog.description,
+            keywords: pageMetadata.blog.keywords,
             alternates: {
                 canonical: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
             },
@@ -92,6 +93,11 @@ export async function generateMetadata({
                         type: "image/webp",
                     },
                 ],
+            }),
+            twitter: buildTwitter({
+                title: pageMetadata.blog.title,
+                description: pageMetadata.blog.description,
+                imageUrl: new URL(siteConfig.ogImage, siteConfig.siteUrl).toString(),
             }),
         };
     }
