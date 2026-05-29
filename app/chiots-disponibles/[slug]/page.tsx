@@ -187,6 +187,7 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                                         alt={image.alt}
                                         fill
                                         priority={index === 0}
+                                        fetchPriority={index === 0 ? "high" : "auto"}
                                         sizes={index === 0
                                             ? "(min-width: 1024px) 52vw, 100vw"
                                             : "(min-width: 1024px) 25vw, 50vw"}
