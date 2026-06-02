@@ -464,14 +464,16 @@ export const pageMetadata = {
         ]
     },
     eleveuses: {
-        title: "Les éleveuses de Kawaii Shiba",
+        title: "L'équipe de Kawaii Shiba",
         description:
-            "Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.",
+            "Nous sommes Aurélie, Marine et Jérôme. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.",
         keywords: [
             "éleveuses mameshiba",
+            "éleveur mameshiba",
             "équipe élevage mameshiba",
             "aurélie mameshiba",
             "marine mameshiba",
+            "jérôme mameshiba",
             "présentation éleveuses",
             "approche holistique élevage"
         ]
@@ -617,7 +619,7 @@ export const sitemapPages = [
         url: "/presentation-eleveuses",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-05-17"
+        lastmod: "2026-06-02"
     },
     {
         url: "/bien-etre-animal",

@@ -13,6 +13,13 @@ import { faqEleveuses } from "@/lib/faq-data"
 
 const pageImage = "/pages/les-eleveuses/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
 
+const jeromePortrait = {
+    alt: "Jérôme, éleveur de Kawaii Shiba",
+    avif: "/assets/authors/jerome-eleveur-sm.avif 240w, /assets/authors/jerome-eleveur-md.avif 360w",
+    webp: "/assets/authors/jerome-eleveur-sm.webp 240w, /assets/authors/jerome-eleveur-md.webp 360w",
+    fallback: "/assets/authors/jerome-eleveur.jpeg",
+}
+
 const eleveusesInternalLinks: InternalLinkItem[] = filterBlogLinks([
     {
         href: "/presentation-elevage",
@@ -67,7 +74,7 @@ export const metadata: Metadata = {
 export default function PresentationEleveusesPage() {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
-        { name: "Les éleveuses", url: siteConfig.pages.eleveuses },
+        { name: "L’équipe Kawaii Shiba", url: siteConfig.pages.eleveuses },
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqEleveuses))
     const lastMod = returnLastmod(siteConfig.pages.eleveuses)
@@ -120,6 +127,13 @@ export default function PresentationEleveusesPage() {
         "Stabilité du cadre",
     ]
 
+    const jeromeHighlights = [
+        "Travail de terrain",
+        "Aménagement des parcs",
+        "Soins quotidiens",
+        "Accompagnement des familles",
+    ]
+
     return (
         <>
             <script
@@ -134,9 +148,9 @@ export default function PresentationEleveusesPage() {
             <div className="py-16">
                 <div className="container mx-auto">
                     <section className="text-center space-y-6 mb-16">
-                        <h1 className="text-xl md:text-3xl font-bold">Les éleveuses de Kawaii Shiba</h1>
+                        <h1 className="text-xl md:text-3xl font-bold">L’équipe de Kawaii Shiba</h1>
                         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                            Nous sommes Aurélie et Marine. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.
+                            Nous sommes Aurélie, Marine et Jérôme. Cette page raconte notre parcours, notre vision de l’élevage et la manière dont nous accompagnons les familles autour du Mameshiba, avec exigence, sensibilité et transparence.
                         </p>
                         <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                     </section>
@@ -314,6 +328,84 @@ export default function PresentationEleveusesPage() {
                                     </article>
                                 </CardContent>
                             </Card>
+
+                            <Card id="jerome" className="scroll-mt-28 overflow-hidden border-primary/10 bg-muted/25">
+                                <CardContent className="p-5 md:p-6 lg:p-8">
+                                    <article className="grid gap-6 lg:grid-cols-[220px_1fr] lg:items-start xl:grid-cols-[240px_1fr]">
+                                        <div className="max-w-sm lg:max-w-none">
+                                            <picture>
+                                                <source
+                                                    type="image/avif"
+                                                    srcSet={jeromePortrait.avif}
+                                                    sizes="(min-width: 1280px) 240px, (min-width: 1024px) 220px, 70vw"
+                                                />
+                                                <source
+                                                    type="image/webp"
+                                                    srcSet={jeromePortrait.webp}
+                                                    sizes="(min-width: 1280px) 240px, (min-width: 1024px) 220px, 70vw"
+                                                />
+                                                <img
+                                                    src={jeromePortrait.fallback}
+                                                    alt={jeromePortrait.alt}
+                                                    width={360}
+                                                    height={480}
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    className="aspect-3/4 w-full rounded-lg bg-muted object-cover"
+                                                />
+                                            </picture>
+                                        </div>
+
+                                        <div className="space-y-5">
+                                            <div className="space-y-3">
+                                                <Badge variant="secondary" className="w-fit">
+                                                    Le terrain, les chiens et le travail bien fait
+                                                </Badge>
+                                                <div className="space-y-2">
+                                                    <h3 className="text-2xl font-bold">Jérôme</h3>
+                                                    <p className="text-sm font-medium text-primary">Bien-être des chiens, infrastructures et accompagnement quotidien</p>
+                                                </div>
+                                                <div className="flex flex-wrap gap-2">
+                                                    {jeromeHighlights.map((item) => (
+                                                        <Badge key={item} variant="outline">
+                                                            {item}
+                                                        </Badge>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+                                            <div className="grid gap-4 text-sm leading-relaxed text-muted-foreground md:grid-cols-2">
+                                                <p>
+                                                    Jérôme a rejoint l’aventure de l’élevage en 2026. Éleveur passionné, il est animé par
+                                                    l’amour des chiens, de la nature et du travail bien fait.
+                                                </p>
+                                                <p>
+                                                    Chasseur responsable et amoureux de la nature, il accorde une grande importance au respect
+                                                    de la faune sauvage, des territoires et des équilibres naturels.
+                                                </p>
+                                                <p>
+                                                    Convaincu que l’homme a un rôle à jouer dans la préservation du vivant, il privilégie une
+                                                    approche responsable, éthique et respectueuse des chiens comme de leur environnement.
+                                                </p>
+                                                <p>
+                                                    Au quotidien, il participe à l’entretien des espaces de vie, à l’aménagement des parcs, aux
+                                                    travaux d’amélioration, aux soins, à la socialisation des chiots et à l’accompagnement des familles.
+                                                </p>
+                                            </div>
+
+                                            <div className="rounded-lg border border-primary/10 bg-background/80 p-4">
+                                                <h4 className="font-semibold text-foreground">Un pilier du quotidien de l’élevage</h4>
+                                                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                                                    Son sens pratique, sa rigueur et son dévouement contribuent chaque jour à la qualité de
+                                                    l’élevage. Toujours présent sur le terrain, Jérôme veille à ce que chaque chien évolue dans
+                                                    un environnement sain, sécurisé et adapté à ses besoins. Pour lui, l’élevage est bien plus
+                                                    qu’un métier : c’est une passion vécue chaque jour au contact des chiens et de la nature.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </CardContent>
+                            </Card>
                         </div>
                     </section>
 
@@ -323,7 +415,7 @@ export default function PresentationEleveusesPage() {
                                 <div className="grid md:grid-cols-[1.3fr_0.7fr] gap-8 items-center">
                                     <div className="space-y-4">
                                         <h2 className="text-xl md:text-2xl font-bold">
-                                            Les articles d’Aurélie et Marine sur le Mameshiba
+                                            Les articles de l’équipe Kawaii Shiba sur le Mameshiba
                                         </h2>
                                         <h3 className="text-base md:text-xl font-semibold">
                                             Élevage de Mameshiba : expérience terrain, conseils sincères et adoption responsable.
@@ -334,8 +426,8 @@ export default function PresentationEleveusesPage() {
                                             repères utiles avant d’accueillir un chiot.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            Le but est simple : proposer un contenu fiable, pédagogique et honnête, nourri par notre
-                                            expérience quotidienne auprès des chiens et des familles.
+                                            Le but est simple : proposer un contenu fiable, pédagogique et honnête, nourri par l’expérience
+                                            quotidienne de l’équipe auprès des chiens et des familles.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
                                             Objectif : informer, rassurer et vous aider à mieux comprendre ce petit chien primitif,
@@ -410,7 +502,7 @@ export default function PresentationEleveusesPage() {
                                 href="/contact"
                                 className="flex min-h-12 items-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                             >
-                                Contacter Aurélie et Marine
+                                Contacter l’équipe Kawaii Shiba
                             </Link>
                             <Link
                                 href="/chiots-disponibles"
