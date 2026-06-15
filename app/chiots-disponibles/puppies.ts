@@ -328,11 +328,25 @@ export const puppies: Puppy[] = [
             "Portée Karasuki & Waru"
         ],
         health: defaultHealth,
-        images: puppyImages("Airisu", [
-            "airisu-mameshiba-2-6semaine.jpeg",
-            "airisu-mameshiba-3-6semaine.jpeg",
-            "airisu-mameshiba-4-6semaine.jpeg"
-        ]),
+        images: [
+            {
+                src: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-1-desktop.webp",
+                thumbSrc: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-1-mobile.webp",
+                sourceSrc: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-1-desktop.webp",
+                alt: "Airisu, chiot Mameshiba de l'élevage Kawaii Shiba - photo 1"
+            },
+            {
+                src: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-2-desktop.webp",
+                thumbSrc: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-2-mobile.webp",
+                sourceSrc: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-2-desktop.webp",
+                alt: "Airisu, chiot Mameshiba de l'élevage Kawaii Shiba - photo 2"
+            },
+            ...puppyImages("Airisu", [
+                "airisu-mameshiba-2-6semaine.jpeg",
+                "airisu-mameshiba-3-6semaine.jpeg",
+                "airisu-mameshiba-4-6semaine.jpeg"
+            ])
+        ],
         thumbnailImage: puppyImage("Airisu", "airisu-mameshiba-1-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
