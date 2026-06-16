@@ -84,8 +84,21 @@ function puppyImage(name: string, sourceFile: string, index = 0): PuppyImage {
     };
 }
 
-function puppyImages(name: string, files: string[]): PuppyImage[] {
-    return files.map((file, index) => puppyImage(name, file, index));
+function responsivePuppyImage(name: string, folderName: string, assetName: string, index = 0): PuppyImage {
+    return {
+        src: `/pages/puppies/${folderName}/webp/${assetName}-desktop.webp`,
+        thumbSrc: `/pages/puppies/${folderName}/webp/${assetName}-mobile.webp`,
+        sourceSrc: `/pages/puppies/${folderName}/webp/${assetName}-desktop.webp`,
+        alt: `${name}, chiot Mameshiba de l'élevage Kawaii Shiba - photo ${index + 1}`
+    };
+}
+
+function responsivePuppyImages(name: string, folderName: string, assetNames: string[]): PuppyImage[] {
+    return assetNames.map((assetName, index) => responsivePuppyImage(name, folderName, assetName, index));
+}
+
+function puppyImages(name: string, files: string[], startIndex = 0): PuppyImage[] {
+    return files.map((file, index) => puppyImage(name, file, startIndex + index));
 }
 
 export const puppies: Puppy[] = [
@@ -112,11 +125,14 @@ export const puppies: Puppy[] = [
             "Petit-fils KC Champion"
         ],
         health: defaultHealth,
-        images: puppyImages("HOTARU", [
-            "shiba-inu-mameshiba-hotaru-blanc-2-6semaine.jpeg",
-            "shiba-inu-mameshiba-hotaru-blanc-3-6semaine.jpeg",
-            "shiba-inu-mameshiba-hotaru-blanc-4-6semaine.jpeg"
-        ]),
+        images: [
+            responsivePuppyImage("HOTARU", "mameshiba-hotaru-blanc-fauve", "mameshiba-hotaru-blanc-fauve", 0),
+            ...puppyImages("HOTARU", [
+                "shiba-inu-mameshiba-hotaru-blanc-2-6semaine.jpeg",
+                "shiba-inu-mameshiba-hotaru-blanc-3-6semaine.jpeg",
+                "shiba-inu-mameshiba-hotaru-blanc-4-6semaine.jpeg"
+            ], 1)
+        ],
         thumbnailImage: puppyImage("HOTARU", "shiba-inu-mameshiba-hotaru-blanc-2-6semaine.jpeg", 0),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
@@ -183,13 +199,16 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: puppyImages("AKIRO", [
-            "akiro-mameshiba-blanc-1-6semaine.jpeg",
-            "akiro-mameshiba-blanc-2-6semaine.jpeg",
-            "akiro-mameshiba-blanc-3-6semaine.jpeg",
-            "akiro-mameshiba-blanc-4-6semaine.jpeg",
-            "akiro-mameshiba-blanc-5-6semaine.jpeg"
-        ]),
+        images: [
+            responsivePuppyImage("AKIRO", "mameshiba-blanc-fauve-akiro", "mameshiba-blanc-fauve-akiro", 0),
+            ...puppyImages("AKIRO", [
+                "akiro-mameshiba-blanc-1-6semaine.jpeg",
+                "akiro-mameshiba-blanc-2-6semaine.jpeg",
+                "akiro-mameshiba-blanc-3-6semaine.jpeg",
+                "akiro-mameshiba-blanc-4-6semaine.jpeg",
+                "akiro-mameshiba-blanc-5-6semaine.jpeg"
+            ], 1)
+        ],
         thumbnailImage: puppyImage("AKIRO", "akiro-mameshiba-blanc-1-6semaine.jpeg", 0),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
@@ -221,12 +240,19 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: puppyImages("IKARI", [
-            "ikari-male-mameshiba-1-6semaine.jpeg",
-            "ikari-male-mameshiba-2-6semaine.jpeg",
-            "ikari-male-mameshiba-3-6semaine.jpeg",
-            "ikari-male-mameshiba-4-6semaine.jpeg"
-        ]),
+        images: [
+            ...responsivePuppyImages("IKARI", "mameshiba-male-blanc-fauve-ikari", [
+                "mameshiba-male-blanc-fauve-ikari-1",
+                "mameshiba-male-blanc-fauve-ikari-2",
+                "mameshiba-male-blanc-fauve-ikari-3"
+            ]),
+            ...puppyImages("IKARI", [
+                "ikari-male-mameshiba-1-6semaine.jpeg",
+                "ikari-male-mameshiba-2-6semaine.jpeg",
+                "ikari-male-mameshiba-3-6semaine.jpeg",
+                "ikari-male-mameshiba-4-6semaine.jpeg"
+            ], 3)
+        ],
         thumbnailImage: puppyImage("IKARI", "ikari-male-mameshiba-2-6semaine.jpeg", 0),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
@@ -257,11 +283,14 @@ export const puppies: Puppy[] = [
             "Lignée japonaise"
         ],
         health: defaultHealth,
-        images: puppyImages("KENSHIRO", [
-            "kenshiro-mameshiba-1-6semaine.jpeg",
-            "kenshiro-mameshiba-2-6semaine.jpeg",
-            "kenshiro-mameshiba-3-6semaine.jpeg"
-        ]),
+        images: [
+            responsivePuppyImage("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", "mameshiba-blanc-fauve-kenshiro", 0),
+            ...puppyImages("KENSHIRO", [
+                "kenshiro-mameshiba-1-6semaine.jpeg",
+                "kenshiro-mameshiba-2-6semaine.jpeg",
+                "kenshiro-mameshiba-3-6semaine.jpeg"
+            ], 1)
+        ],
         thumbnailImage: puppyImage("KENSHIRO", "kenshiro-mameshiba-2-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
         price: malePrice,

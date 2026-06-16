@@ -1,0 +1,126 @@
+{
+  "folderName": "mameshiba-blanc-fauve-kenshiro",
+  "imageCount": 1,
+  "images": [
+    {
+      "index": 1,
+      "sourceFilename": "1-Photo-1.jpg",
+      "assetName": "mameshiba-blanc-fauve-kenshiro",
+      "source": {
+        "width": 853,
+        "height": 1280,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 720
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 1152
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 853,
+          "outputHeight": 1280,
+          "warning": "Source plus petite que 1200px: sortie desktop generee en 853px."
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-fauve-kenshiro-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 26882
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-fauve-kenshiro-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 53829
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-fauve-kenshiro-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-desktop.avif",
+          "width": 853,
+          "height": 1280,
+          "size": 63308
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-fauve-kenshiro-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 42916
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-fauve-kenshiro-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 82368
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-fauve-kenshiro-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-desktop.webp",
+          "width": 853,
+          "height": 1280,
+          "size": 95622
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-fauve-kenshiro-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 65364
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-fauve-kenshiro-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 137272
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-fauve-kenshiro-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-desktop.jpeg",
+          "width": 853,
+          "height": 1280,
+          "size": 167756
+        }
+      ],
+      "warnings": [
+        "Source plus petite que 1200px: sortie desktop generee en 853px."
+      ]
+    }
+  ],
+  "warnings": [
+    "mameshiba-blanc-fauve-kenshiro: Source plus petite que 1200px: sortie desktop generee en 853px."
+  ]
+}

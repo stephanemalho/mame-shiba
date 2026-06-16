@@ -1,0 +1,126 @@
+{
+  "folderName": "mameshiba-blanc-fauve-akiro",
+  "imageCount": 1,
+  "images": [
+    {
+      "index": 1,
+      "sourceFilename": "1-Photo-1.jpg",
+      "assetName": "mameshiba-blanc-fauve-akiro",
+      "source": {
+        "width": 853,
+        "height": 1280,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 720
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 1152
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 853,
+          "outputHeight": 1280,
+          "warning": "Source plus petite que 1200px: sortie desktop generee en 853px."
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-fauve-akiro-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-akiro-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 26110
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-fauve-akiro-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-akiro-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 50549
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-fauve-akiro-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-akiro-desktop.avif",
+          "width": 853,
+          "height": 1280,
+          "size": 59620
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-fauve-akiro-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-akiro-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 41024
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-fauve-akiro-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-akiro-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 76124
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-fauve-akiro-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-akiro-desktop.webp",
+          "width": 853,
+          "height": 1280,
+          "size": 89054
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-fauve-akiro-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-akiro-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 63377
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-fauve-akiro-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-akiro-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 130524
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-fauve-akiro-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-akiro-desktop.jpeg",
+          "width": 853,
+          "height": 1280,
+          "size": 160685
+        }
+      ],
+      "warnings": [
+        "Source plus petite que 1200px: sortie desktop generee en 853px."
+      ]
+    }
+  ],
+  "warnings": [
+    "mameshiba-blanc-fauve-akiro: Source plus petite que 1200px: sortie desktop generee en 853px."
+  ]
+}
