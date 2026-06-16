@@ -383,5 +383,39 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan"
+    },
+    {
+        name: "YOSHI",
+        coat: "Mameshiba",
+        color: "Noir et feu",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Estimée à 4-5 kg adulte",
+        parents: "Parents : KARASUKI & WARU",
+        readyDate: karasukiAvailableDate,
+        age: karasukiBirthDate,
+        birthDate: karasukiBirthDateIso,
+        availableFrom: karasukiAvailableDateIso,
+        updatedAt: "2026-06-16",
+        description:
+            "Yoshi est une femelle Mameshiba noir et feu issue de Karasuki et Waru. Elle est présentée avec les chiots disponibles de la portée et son évolution sera suivie avec attention.",
+        highlights: [
+            "Femelle",
+            "Noir et feu",
+            "Portée Karasuki & Waru",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("YOSHI", "mameshiba-noir-feu-yoshi", [
+            "mameshiba-noir-feu-yoshi-1",
+            "mameshiba-noir-feu-yoshi-2"
+        ]),
+        thumbnailImage: responsivePuppyImage("YOSHI", "mameshiba-noir-feu-yoshi", "mameshiba-noir-feu-yoshi-1", 0),
+        linkTo: karasukiWaruFormUrl,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan"
     }
 ];
