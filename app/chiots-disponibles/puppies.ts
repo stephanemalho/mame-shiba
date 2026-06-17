@@ -130,7 +130,6 @@ export const puppies: Puppy[] = [
             ...puppyImages("HOTARU", [
                 "shiba-inu-mameshiba-hotaru-blanc-2-6semaine.jpeg",
                 "shiba-inu-mameshiba-hotaru-blanc-3-6semaine.jpeg",
-                "shiba-inu-mameshiba-hotaru-blanc-4-6semaine.jpeg"
             ], 1)
         ],
         thumbnailImage: puppyImage("HOTARU", "shiba-inu-mameshiba-hotaru-blanc-2-6semaine.jpeg", 0),
@@ -206,7 +205,6 @@ export const puppies: Puppy[] = [
                 "akiro-mameshiba-blanc-2-6semaine.jpeg",
                 "akiro-mameshiba-blanc-3-6semaine.jpeg",
                 "akiro-mameshiba-blanc-4-6semaine.jpeg",
-                "akiro-mameshiba-blanc-5-6semaine.jpeg"
             ], 1)
         ],
         thumbnailImage: puppyImage("AKIRO", "akiro-mameshiba-blanc-1-6semaine.jpeg", 0),
@@ -249,8 +247,6 @@ export const puppies: Puppy[] = [
             ...puppyImages("IKARI", [
                 "ikari-male-mameshiba-1-6semaine.jpeg",
                 "ikari-male-mameshiba-2-6semaine.jpeg",
-                "ikari-male-mameshiba-3-6semaine.jpeg",
-                "ikari-male-mameshiba-4-6semaine.jpeg"
             ], 3)
         ],
         thumbnailImage: puppyImage("IKARI", "ikari-male-mameshiba-2-6semaine.jpeg", 0),

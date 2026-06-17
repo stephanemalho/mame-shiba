@@ -583,7 +583,7 @@ export const sitemapPages = [
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.95,
-        lastmod: "2026-05-29"
+        lastmod: "2026-06-17"
     },
     {
         url: "/mameshiba",
