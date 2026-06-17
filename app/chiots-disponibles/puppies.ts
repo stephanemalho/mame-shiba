@@ -132,7 +132,6 @@ export const puppies: Puppy[] = [
                 "shiba-inu-mameshiba-hotaru-blanc-3-6semaine.jpeg",
             ], 1)
         ],
-        thumbnailImage: puppyImage("HOTARU", "shiba-inu-mameshiba-hotaru-blanc-2-6semaine.jpeg", 0),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -167,7 +166,6 @@ export const puppies: Puppy[] = [
             "shiba-mameshiba-kenshi-2.webp",
             "shiba-mameshiba-kenshi-3.webp"
         ]),
-        thumbnailImage: puppyImage("KENSHI", "shiba-mameshiba-kenshi-3.webp", 2),
         linkTo: yumiNatsuFormUrl,
         isReserved: true,
         price: malePrice,
@@ -207,7 +205,6 @@ export const puppies: Puppy[] = [
                 "akiro-mameshiba-blanc-4-6semaine.jpeg",
             ], 1)
         ],
-        thumbnailImage: puppyImage("AKIRO", "akiro-mameshiba-blanc-1-6semaine.jpeg", 0),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         isReserved: true,
@@ -249,7 +246,6 @@ export const puppies: Puppy[] = [
                 "ikari-male-mameshiba-2-6semaine.jpeg",
             ], 3)
         ],
-        thumbnailImage: puppyImage("IKARI", "ikari-male-mameshiba-2-6semaine.jpeg", 0),
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -287,7 +283,6 @@ export const puppies: Puppy[] = [
                 "kenshiro-mameshiba-3-6semaine.jpeg"
             ], 1)
         ],
-        thumbnailImage: puppyImage("KENSHIRO", "kenshiro-mameshiba-2-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -322,7 +317,6 @@ export const puppies: Puppy[] = [
             "shiba-inu-mameshiba-mitsuki-2-6semaine.jpeg",
             "shiba-inu-mameshiba-mitsuki-3-6semaine.jpeg"
         ]),
-        thumbnailImage: puppyImage("MITSUKI", "shiba-inu-mameshiba-mitsuki-1-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,
@@ -372,7 +366,6 @@ export const puppies: Puppy[] = [
                 "airisu-mameshiba-4-6semaine.jpeg"
             ])
         ],
-        thumbnailImage: puppyImage("Airisu", "airisu-mameshiba-1-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,
@@ -407,7 +400,6 @@ export const puppies: Puppy[] = [
             "mameshiba-noir-feu-yoshi-1",
             "mameshiba-noir-feu-yoshi-2"
         ]),
-        thumbnailImage: responsivePuppyImage("YOSHI", "mameshiba-noir-feu-yoshi", "mameshiba-noir-feu-yoshi-1", 0),
         linkTo: karasukiWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
