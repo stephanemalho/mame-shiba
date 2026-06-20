@@ -488,7 +488,7 @@ export const pageMetadata = {
             "Voici comment vivent nos Mameshiba reproducteurs et nos chiots au sein de notre élevage",
         keywords: [
             "conditions de vie des chiots en élevage",
-            "élevage familial responsable",
+            "élevage professionnel responsable",
             "bien-être et socialisation des chiots",
             "chiots élevés avec leur mère",
             "suivi vétérinaire dès la naissance",
@@ -580,13 +580,13 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-05-29"
+        lastmod: "2026-06-23"
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.95,
-        lastmod: "2026-06-17"
+        lastmod: "2026-06-23"
     },
     {
         url: "/mameshiba",
@@ -616,7 +616,7 @@ export const sitemapPages = [
         url: "/presentation-elevage",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-04-17"
+        lastmod: "2026-06-23"
     },
     {
         url: "/presentation-eleveuses",

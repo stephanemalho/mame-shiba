@@ -145,6 +145,8 @@ export const publicAssetRoutes = [
     "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg",
     "/pages/mameshiba-desktop.jpg",
     "/pages/presentation-elevage/Karasuki.webp",
+    "/pages/presentation-elevage/pomsky-adulte-pelage-fluffy.webp",
+    "/pages/presentation-elevage/pomsky-chiot-format-miniature.webp",
     "/pages/presentation-elevage/Yuzu-femelle-mame-shiba-couleur-feu.webp",
     "/pages/puppies/airisu-mameshiba-2-6semaine-thumb.webp",
     "/pages/puppies/airisu-mameshiba-2-6semaine.jpeg",

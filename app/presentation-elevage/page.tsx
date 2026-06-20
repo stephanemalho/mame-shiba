@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { faqPresentation } from "@/lib/faq-data"
-import { Heart, Leaf, Star, Users } from "lucide-react"
+import { ArrowUpRight, Heart, Leaf, PawPrint, Star, Users } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
@@ -412,7 +412,7 @@ export default function PresentationPage() {
                             <h2 className="text-xl md:text-2xl font-bold">Notre histoire</h2>
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8" aria-hidden="true" />
                             <h3 className="text-2xl font-bold">
-                                Un élevage familial à Dommartin-lès-Cuiseaux, en Saône-et-Loire (71)
+                                Un élevage professionnel à Dommartin-lès-Cuiseaux, en Saône-et-Loire (71)
                             </h3>
                             <p className="text-muted-foreground leading-relaxed">
                                 Notre histoire s’est naturellement orientée vers le Mameshiba à travers notre passion pour
@@ -435,6 +435,74 @@ export default function PresentationPage() {
                                 pour nourrir leur curiosité. Les familles repartent avec un accompagnement concret, des conseils
                                 pratiques, des nouvelles régulières et un vrai suivi après le départ.
                             </p>
+                        </div>
+                    </section>
+
+                    <section className="mb-16">
+                        <div className="grid gap-10 md:grid-cols-[0.95fr_1.05fr] md:items-center">
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="relative h-72 overflow-hidden rounded-lg md:h-96">
+                                    <Image
+                                        src="/pages/presentation-elevage/pomsky-chiot-format-miniature.webp"
+                                        alt="Chiot Pomsky de l'élevage Royal Pomsky"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 24vw, 50vw"
+                                        quality={75}
+                                    />
+                                </div>
+                                <div className="relative mt-8 h-72 overflow-hidden rounded-lg md:h-96">
+                                    <Image
+                                        src="/pages/presentation-elevage/pomsky-adulte-pelage-fluffy.webp"
+                                        alt="Pomsky adulte au pelage dense de Royal Pomsky"
+                                        fill
+                                        className="object-cover"
+                                        sizes="(min-width: 768px) 24vw, 50vw"
+                                        quality={75}
+                                    />
+                                </div>
+                            </div>
+                            <div className="space-y-6">
+                                <Badge variant="secondary" className="w-fit">
+                                    <PawPrint className="h-4 w-4 mr-2" aria-hidden="true" />
+                                    Notre autre univers
+                                </Badge>
+                                <div className="space-y-4">
+                                    <h2 className="text-xl md:text-2xl font-bold">
+                                        Royal Pomsky, le même élevage autour du Pomsky
+                                    </h2>
+                                    <p className="text-muted-foreground leading-relaxed">
+                                        Kawaii Shiba et Royal Pomsky appartiennent au même élevage professionnel. À côté du
+                                        Mameshiba, nous avons développé un travail dédié au Pomsky, un chien expressif,
+                                        proche de l’humain et sélectionné pour conjuguer allure nordique, format adapté
+                                        à la vie de famille et tempérament équilibré.
+                                    </p>
+                                    <p className="text-muted-foreground leading-relaxed">
+                                        Sur Royal Pomsky, vous retrouverez notre approche appliquée à cette race en
+                                        construction : sélection des lignées, socialisation progressive, suivi sanitaire
+                                        et accompagnement des familles avant comme après l’adoption.
+                                    </p>
+                                </div>
+                                <div className="flex flex-col gap-3 sm:flex-row">
+                                    <a
+                                        href="https://royalpomsky.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex min-h-12 items-center justify-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                    >
+                                        Découvrir Royal Pomsky
+                                        <ArrowUpRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                                    </a>
+                                    <a
+                                        href="https://royalpomsky.com/le-pomsky"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex min-h-12 items-center justify-center rounded-md border border-primary/30 px-4 font-semibold text-primary hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                    >
+                                        Comprendre le Pomsky
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
