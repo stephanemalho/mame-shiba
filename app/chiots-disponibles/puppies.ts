@@ -53,7 +53,6 @@ const yumiNatsuFormUrl = "https://forms.gle/KQuUAmWPiB5kJKqU7";
 const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18";
 const defaultPuppyFormUrl = "https://forms.gle/myGmQAj5Kim6UnVx8";
 const soboWaruFormUrl = defaultPuppyFormUrl;
-const soboNatsuFormUrl = defaultPuppyFormUrl;
 const sakuraWaruFormUrl = defaultPuppyFormUrl;
 const malePrice = 4500;
 const femalePrice = 5000;

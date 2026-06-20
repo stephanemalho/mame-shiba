@@ -265,7 +265,7 @@ export default function ContactPage() {
 
                     <section className="mt-16 grid gap-6 md:grid-cols-2">
                         <figure className="space-y-3">
-                            <div className="relative h-72 rounded-lg overflow-hidden">
+                            <div className="relative h-122 rounded-lg overflow-hidden">
                                 <Image
                                     src="/pages/image-all-shiba/jardin-cloture-elevage-vertical.webp"
                                     alt="Vue d'un espace extérieur sécurisé de l'élevage"
@@ -282,7 +282,7 @@ export default function ContactPage() {
                         </figure>
 
                         <figure className="space-y-3">
-                            <div className="relative h-72 rounded-lg overflow-hidden">
+                            <div className="relative h-122 rounded-lg overflow-hidden">
                                 <Image
                                     src="/pages/image-all-shiba/mameshiba-exterieur-portrait-01.webp"
                                     alt="Mameshiba observant son environnement en extérieur"
