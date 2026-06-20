@@ -1,0 +1,497 @@
+{
+  "folderName": "mameshiba-fauve-kaito",
+  "generatedAt": "2026-06-20T21:41:19.040Z",
+  "images": [
+    {
+      "assetName": "mameshiba-fauve-kaito-1",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/0/0C191DDC-D6D5-4DC7-87B6-DEED26472AB9.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-1-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-1-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 31279
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-1-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-1-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 51562
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-1-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 62605
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-1-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-1-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-1-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 60873
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-1-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-1-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-1-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 101730
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-1-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-1-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 130993
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-1-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-1-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-1-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 123973
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-1-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-1-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-1-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 204644
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-1-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 276873
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-fauve-kaito-2",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/6/6FEF43E4-AD1C-4C2B-A4E4-8474C14CC6AA.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-2-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-2-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-2-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 25217
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-2-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-2-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-2-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 40514
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-2-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-2-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 43961
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-2-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-2-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-2-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "bytes": 51097
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-2-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-2-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-2-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 83718
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-2-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-2-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "bytes": 95136
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-2-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-2-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-2-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 92963
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-2-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-2-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-2-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 160036
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-2-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-2-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 191968
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-fauve-kaito-3",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/B/BB341A4E-2956-432F-B724-1BEDDA47B7C1.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-3-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-3-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 29782
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-3-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-3-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 48632
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-3-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 58388
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-3-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-3-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 58370
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-3-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-3-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 96234
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-3-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 123135
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-3-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-3-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 120527
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-3-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-3-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 194760
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-3-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 261961
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-fauve-kaito-4",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/7/73ADFF56-410F-4002-B58E-CF5B9994C36B.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-4-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-4-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 38019
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-4-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-4-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 60702
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-4-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 72977
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-4-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-4-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 68901
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-4-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-4-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 119728
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-4-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 150127
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-4-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-4-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 137886
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-4-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-4-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 245850
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-4-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 317758
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-fauve-kaito-5",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/8/859D8D34-5858-4FCD-AD56-9083033452F1.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-5-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-5-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-5-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 40243
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-5-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-5-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-5-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 65116
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-fauve-kaito-5-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-5-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-5-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 75771
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-5-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-5-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-5-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 74315
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-5-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-5-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-5-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 129422
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-fauve-kaito-5-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-5-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-5-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 158947
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-5-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-kaito-5-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/avif/mameshiba-fauve-kaito-5-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 152102
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-5-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-kaito-5-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/webp/mameshiba-fauve-kaito-5-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 270618
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-fauve-kaito-5-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kaito-5-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-fauve-kaito/jpeg/mameshiba-fauve-kaito-5-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 340235
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

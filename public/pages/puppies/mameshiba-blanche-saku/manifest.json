@@ -1,0 +1,399 @@
+{
+  "folderName": "mameshiba-blanche-saku",
+  "generatedAt": "2026-06-20T21:41:00.265Z",
+  "images": [
+    {
+      "assetName": "mameshiba-blanche-saku-1",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/4/43FC3CA8-2849-4695-8EF3-7EBD45A11DAC.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-1-mobile.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-1-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 11468
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-1-mobile.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-1-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 14378
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-1-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 26139
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-1-tablet.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-1-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-1-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 19521
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-1-tablet.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-1-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-1-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 25804
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-1-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-1-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 49834
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-1-desktop.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-1-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-1-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 33478
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-1-desktop.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-1-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-1-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 47230
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-1-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 93798
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-blanche-saku-2",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/D/D111A37B-D8F1-42A8-B766-1C73EFC94152.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-2-mobile.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-2-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-2-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 30602
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-2-mobile.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-2-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-2-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 47516
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-2-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-2-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 57880
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-2-tablet.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-2-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-2-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 55820
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-2-tablet.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-2-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-2-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 89312
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-2-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-2-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 119341
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-2-desktop.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-2-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-2-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 111229
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-2-desktop.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-2-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-2-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 177956
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-2-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-2-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 246196
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-blanche-saku-3",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/5/59C9AB49-DAD3-4C36-AE4A-60F375CB2C5A.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-3-mobile.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-3-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 30192
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-3-mobile.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-3-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 47854
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-3-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 59853
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-3-tablet.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-3-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 54218
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-3-tablet.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-3-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 86348
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-3-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 119940
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-3-desktop.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-3-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 102309
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-3-desktop.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-3-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 162538
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-3-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 239566
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-blanche-saku-4",
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/C/CAE203E8-937F-45A6-807C-7E8568F64880.jpeg",
+      "originalWidth": 6000,
+      "originalHeight": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-4-mobile.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-4-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 30804
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-4-mobile.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-4-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 48864
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-blanche-saku-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-4-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 60382
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-4-tablet.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-4-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 54510
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-4-tablet.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-4-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 87346
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-blanche-saku-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-4-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 120569
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-4-desktop.avif",
+          "relativePath": "avif/mameshiba-blanche-saku-4-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/avif/mameshiba-blanche-saku-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 101130
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-4-desktop.webp",
+          "relativePath": "webp/mameshiba-blanche-saku-4-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/webp/mameshiba-blanche-saku-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 163866
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-blanche-saku-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanche-saku-4-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-saku/jpeg/mameshiba-blanche-saku-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 239596
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

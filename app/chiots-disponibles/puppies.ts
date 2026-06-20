@@ -52,7 +52,7 @@ export type Puppy = {
 const yumiNatsuFormUrl = "https://forms.gle/KQuUAmWPiB5kJKqU7";
 const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18";
 const defaultPuppyFormUrl = "https://forms.gle/myGmQAj5Kim6UnVx8";
-const soboWaruFormUrl = karasukiWaruFormUrl;
+const soboWaruFormUrl = defaultPuppyFormUrl;
 const soboNatsuFormUrl = defaultPuppyFormUrl;
 const sakuraWaruFormUrl = defaultPuppyFormUrl;
 const malePrice = 4500;
@@ -74,6 +74,10 @@ const soboBirthDate = "Né le 23 mai 2026";
 const soboBirthDateIso = "2026-05-23";
 const soboAvailableDate = "Disponible le 24 juillet 2026";
 const soboAvailableDateIso = "2026-07-24";
+const sakuraBirthDate = "Né le 25 mai 2026";
+const sakuraBirthDateIso = "2026-05-25";
+const sakuraAvailableDate = "Disponible le 20 juillet 2026";
+const sakuraAvailableDateIso = "2026-07-20";
 
 function withoutImageExtension(file: string) {
     return file.replace(/\.(jpe?g|png|webp)$/i, "");
@@ -388,6 +392,77 @@ export const puppies: Puppy[] = [
         pedigree: "Kennel Club of Japan"
     },
     {
+        name: "KAITO",
+        coat: "Mameshiba",
+        color: "Fauve",
+        sexe: "Mâle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : SAKURA & WARU",
+        readyDate: sakuraAvailableDate,
+        age: sakuraBirthDate,
+        birthDate: sakuraBirthDateIso,
+        availableFrom: sakuraAvailableDateIso,
+        updatedAt: "2026-06-20",
+        description:
+            "Kaito est un mâle Mameshiba fauve issu de Sakura et Waru. Sa croissance est suivie à l'élevage afin de préciser son gabarit, son type et son tempérament.",
+        highlights: [
+            "Mâle",
+            "Fauve",
+            "Portée Sakura & Waru",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
+            "mameshiba-fauve-kaito-1",
+            "mameshiba-fauve-kaito-2",
+            "mameshiba-fauve-kaito-3",
+            "mameshiba-fauve-kaito-4",
+            "mameshiba-fauve-kaito-5"
+        ]),
+        linkTo: sakuraWaruFormUrl,
+        price: malePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan"
+    },
+    {
+        name: "SAKU",
+        coat: "Mameshiba",
+        color: "Blanche",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : SAKURA & WARU",
+        readyDate: sakuraAvailableDate,
+        age: sakuraBirthDate,
+        birthDate: sakuraBirthDateIso,
+        availableFrom: sakuraAvailableDateIso,
+        updatedAt: "2026-06-20",
+        description:
+            "Saku est une femelle Mameshiba blanche issue de Sakura et Waru. Son évolution sera suivie avec attention à l'élevage au fil des prochaines semaines.",
+        highlights: [
+            "Femelle",
+            "Blanche",
+            "Portée Sakura & Waru",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("SAKU", "mameshiba-blanche-saku", [
+            "mameshiba-blanche-saku-1",
+            "mameshiba-blanche-saku-2",
+            "mameshiba-blanche-saku-3",
+            "mameshiba-blanche-saku-4"
+        ]),
+        linkTo: sakuraWaruFormUrl,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan"
+    },
+    {
         name: "YUKI",
         coat: "Mameshiba",
         color: "Blanche",
@@ -396,8 +471,10 @@ export const puppies: Puppy[] = [
         ruler: "Lignée japonaise",
         weight: "Poids adulte en cours d'estimation",
         parents: "Parents : SAKURA & WARU",
-        readyDate: "Disponibilité à préciser",
-        age: "Naissance à préciser",
+        readyDate: sakuraAvailableDate,
+        age: sakuraBirthDate,
+        birthDate: sakuraBirthDateIso,
+        availableFrom: sakuraAvailableDateIso,
         updatedAt: "2026-06-20",
         description:
             "Yuki est une femelle Mameshiba blanche issue de Sakura et Waru. Son poids adulte est en cours d'estimation et son évolution sera suivie avec attention à l'élevage.",
@@ -429,19 +506,19 @@ export const puppies: Puppy[] = [
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
         weight: "Estimée à 3-5 kg adulte",
-        parents: "Parents : SOBO & NATSU",
+        parents: "Parents : SOBO & WARU",
         readyDate: soboAvailableDate,
         age: soboBirthDate,
         birthDate: soboBirthDateIso,
         availableFrom: soboAvailableDateIso,
         updatedAt: "2026-06-20",
         description:
-            "Neko est une femelle Mameshiba blanche issue de Sobo et Natsu. Son poids adulte est estimé entre 3 et 5 kg et son évolution sera suivie avec attention à l'élevage.",
+            "Neko est une femelle Mameshiba blanche issue de Sobo et Waru. Son poids adulte est estimé entre 3 et 5 kg et son évolution sera suivie avec attention à l'élevage.",
         highlights: [
             "Femelle",
             "Blanche",
             "Estimée à 3-5 kg adulte",
-            "Portée Sobo & Natsu"
+            "Portée Sobo & Waru"
         ],
         health: defaultHealth,
         images: responsivePuppyImages("NEKO", "mameshiba-blanche-neko", [
@@ -451,7 +528,7 @@ export const puppies: Puppy[] = [
             "mameshiba-blanche-neko-4",
             "mameshiba-blanche-neko-5"
         ]),
-        linkTo: soboNatsuFormUrl,
+        linkTo: soboWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
