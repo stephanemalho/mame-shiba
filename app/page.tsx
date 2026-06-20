@@ -399,7 +399,7 @@ export default function HomePage() {
                         <span className="relative block aspect-square overflow-hidden rounded-lg border border-primary/12 bg-background shadow-sm transition group-hover:border-primary/35 group-hover:shadow-md">
                           {firstImage ? (
                             <Image
-                              src={firstImage.thumbSrc ?? firstImage.src}
+                              src={firstImage.src}
                               alt={firstImage.alt}
                               fill
                               className="object-cover transition-transform group-hover:scale-105"

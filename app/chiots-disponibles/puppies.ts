@@ -51,6 +51,7 @@ export type Puppy = {
 
 const yumiNatsuFormUrl = "https://forms.gle/KQuUAmWPiB5kJKqU7";
 const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18";
+const soboWaruFormUrl = karasukiWaruFormUrl;
 const malePrice = 4500;
 const femalePrice = 5000;
 const defaultHealth = [
@@ -406,7 +407,7 @@ export const puppies: Puppy[] = [
             "mameshiba-fauve-maneki-3",
             "mameshiba-fauve-maneki-4"
         ]),
-        linkTo: karasukiWaruFormUrl,
+        linkTo: soboWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -442,7 +443,7 @@ export const puppies: Puppy[] = [
             "mameshiba-noir-feu-yoshi-6",
             "mameshiba-noir-feu-yoshi-7"
         ]),
-        linkTo: karasukiWaruFormUrl,
+        linkTo: soboWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
