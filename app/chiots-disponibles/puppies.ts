@@ -66,6 +66,10 @@ const karasukiBirthDate = "Né le 6 mai 2026";
 const karasukiBirthDateIso = "2026-05-06";
 const karasukiAvailableDate = "Disponible le 7 juillet 2026";
 const karasukiAvailableDateIso = "2026-07-07";
+const soboBirthDate = "Né le 23 mai 2026";
+const soboBirthDateIso = "2026-05-23";
+const soboAvailableDate = "Disponible le 24 juillet 2026";
+const soboAvailableDateIso = "2026-07-24";
 
 function withoutImageExtension(file: string) {
     return file.replace(/\.(jpe?g|png|webp)$/i, "");
@@ -374,6 +378,41 @@ export const puppies: Puppy[] = [
         pedigree: "Kennel Club of Japan"
     },
     {
+        name: "MANEKI",
+        coat: "Mameshiba",
+        color: "Fauve",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Estimée à 3 kg adulte",
+        parents: "Parents : SOBO & WARU",
+        readyDate: soboAvailableDate,
+        age: soboBirthDate,
+        birthDate: soboBirthDateIso,
+        availableFrom: soboAvailableDateIso,
+        updatedAt: "2026-06-20",
+        description:
+            "Maneki est une femelle Mameshiba fauve issue de Sobo et Waru. Son poids adulte est estimé autour de 3 kg et son évolution sera suivie avec attention à l'élevage.",
+        highlights: [
+            "Femelle",
+            "Fauve",
+            "Estimée à 3 kg adulte",
+            "Portée Sobo & Waru"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("MANEKI", "mameshiba-fauve-maneki", [
+            "mameshiba-fauve-maneki-1",
+            "mameshiba-fauve-maneki-2",
+            "mameshiba-fauve-maneki-3",
+            "mameshiba-fauve-maneki-4"
+        ]),
+        linkTo: karasukiWaruFormUrl,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan"
+    },
+    {
         name: "YOSHI",
         coat: "Mameshiba",
         color: "Noir et feu",
@@ -381,18 +420,18 @@ export const puppies: Puppy[] = [
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
         weight: "Estimée à 4-5 kg adulte",
-        parents: "Parents : KARASUKI & WARU",
-        readyDate: karasukiAvailableDate,
-        age: karasukiBirthDate,
-        birthDate: karasukiBirthDateIso,
-        availableFrom: karasukiAvailableDateIso,
+        parents: "Parents : SOBO & WARU",
+        readyDate: soboAvailableDate,
+        age: soboBirthDate,
+        birthDate: soboBirthDateIso,
+        availableFrom: soboAvailableDateIso,
         updatedAt: "2026-06-20",
         description:
-            "Yoshi est une femelle Mameshiba noir et feu issue de Karasuki et Waru. Elle est présentée avec les chiots disponibles de la portée et son évolution sera suivie avec attention.",
+            "Yoshi est une femelle Mameshiba noir et feu issue de Sobo et Waru. Elle est présentée avec les chiots disponibles de la portée et son évolution sera suivie avec attention.",
         highlights: [
             "Femelle",
             "Noir et feu",
-            "Portée Karasuki & Waru",
+            "Portée Sobo & Waru",
             "Disponible à la réservation"
         ],
         health: defaultHealth,

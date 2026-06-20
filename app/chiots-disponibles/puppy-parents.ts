@@ -1,9 +1,9 @@
 export type PuppyParentProfile = {
     role: "Mère" | "Père"
     name: string
-    image: string
+    image?: string
     description: string
-    href: string
+    href?: string
 }
 
 export const puppyParentProfilesByLabel: Record<string, PuppyParentProfile[]> = {
@@ -30,6 +30,20 @@ export const puppyParentProfilesByLabel: Record<string, PuppyParentProfile[]> = 
             image: "/pages/reproducteurs/Karasuki.webp",
             description: "Femelle Mameshiba confirmée KCJ",
             href: "/nos-chiens#karasuki",
+        },
+        {
+            role: "Père",
+            name: "Waru",
+            image: "/pages/reproducteurs/waru-mame-shiba-kawaii-shiba-portrait.webp",
+            description: "Mâle Mameshiba origine Japon",
+            href: "/nos-chiens#waru",
+        },
+    ],
+    "Parents : SOBO & WARU": [
+        {
+            role: "Mère",
+            name: "Sobo",
+            description: "Fiche parent bientôt disponible",
         },
         {
             role: "Père",

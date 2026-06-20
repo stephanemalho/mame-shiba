@@ -208,33 +208,51 @@ export default function NosChiotsPage() {
                                                                 {parentProfiles.map((parent) => {
                                                                     const ParentIcon = parent.role === "Mère" ? Venus : Mars
                                                                     const iconClassName = parent.role === "Mère" ? "text-rose-500" : "text-sky-500"
-
-                                                                    return (
-                                                                        <Link
-                                                                            key={`${puppy.name}-${parent.role}-${parent.name}`}
-                                                                            href={parent.href}
-                                                                            className="group/parent flex min-w-0 items-center gap-2 rounded-lg border border-primary/10 bg-muted/25 p-2 transition hover:border-primary/25 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                                                                            aria-label={`Voir ${parent.name}, ${parent.role.toLowerCase()} de ${puppy.name}`}
-                                                                        >
+                                                                    const parentContent = (
+                                                                        <>
                                                                             <span className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-primary/10 bg-background">
-                                                                                <Image
-                                                                                    src={parent.image}
-                                                                                    alt={`${parent.name}, ${parent.role.toLowerCase()} de ${puppy.name}`}
-                                                                                    fill
-                                                                                    className="object-cover"
-                                                                                    sizes="44px"
-                                                                                />
+                                                                                {parent.image ? (
+                                                                                    <Image
+                                                                                        src={parent.image}
+                                                                                        alt={`${parent.name}, ${parent.role.toLowerCase()} de ${puppy.name}`}
+                                                                                        fill
+                                                                                        className="object-cover"
+                                                                                        sizes="44px"
+                                                                                    />
+                                                                                ) : (
+                                                                                    <span className="flex h-full w-full items-center justify-center text-sm font-bold text-primary">
+                                                                                        {parent.name.charAt(0)}
+                                                                                    </span>
+                                                                                )}
                                                                             </span>
                                                                             <span className="min-w-0">
                                                                                 <span className="flex items-center gap-1 text-xs font-medium text-muted-foreground">
                                                                                     <ParentIcon className={`h-3.5 w-3.5 ${iconClassName}`} aria-hidden="true" />
                                                                                     {parent.role}
                                                                                 </span>
-                                                                                <span className="block truncate text-sm font-semibold text-foreground group-hover/parent:text-primary">
+                                                                                <span className={`block truncate text-sm font-semibold text-foreground ${parent.href ? "group-hover/parent:text-primary" : ""}`}>
                                                                                     {parent.name}
                                                                                 </span>
                                                                             </span>
+                                                                        </>
+                                                                    )
+
+                                                                    return parent.href ? (
+                                                                        <Link
+                                                                            key={`${puppy.name}-${parent.role}-${parent.name}`}
+                                                                            href={parent.href}
+                                                                            className="group/parent flex min-w-0 items-center gap-2 rounded-lg border border-primary/10 bg-muted/25 p-2 transition hover:border-primary/25 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                                                                            aria-label={`Voir ${parent.name}, ${parent.role.toLowerCase()} de ${puppy.name}`}
+                                                                        >
+                                                                            {parentContent}
                                                                         </Link>
+                                                                    ) : (
+                                                                        <div
+                                                                            key={`${puppy.name}-${parent.role}-${parent.name}`}
+                                                                            className="flex min-w-0 items-center gap-2 rounded-lg border border-primary/10 bg-muted/25 p-2"
+                                                                        >
+                                                                            {parentContent}
+                                                                        </div>
                                                                     )
                                                                 })}
                                                             </div>

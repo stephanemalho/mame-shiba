@@ -1,0 +1,462 @@
+{
+  "folderName": "mameshiba-fauve-maneki",
+  "imageCount": 4,
+  "images": [
+    {
+      "index": 1,
+      "sourceFilename": "070EB601-C32E-4C4F-A306-554B731B1A6A.jpeg",
+      "assetName": "mameshiba-fauve-maneki-1",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-1-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-1-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "size": 8857
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-1-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-1-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "size": 15264
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-1-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "size": 19114
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-1-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-1-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "size": 17834
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-1-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-1-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "size": 31078
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-1-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "size": 39276
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-1-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-1-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "size": 35365
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-1-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-1-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "size": 59962
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-1-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "size": 79192
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 2,
+      "sourceFilename": "2EBFD74C-E882-4E72-9313-E5C1123C4618.jpeg",
+      "assetName": "mameshiba-fauve-maneki-2",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-2-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-2-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 40300
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-2-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-2-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 77150
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-2-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 77971
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-2-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-2-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 73570
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-2-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-2-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 147764
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-2-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 160670
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-2-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-2-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 143766
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-2-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-2-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 287832
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-2-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 330814
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 3,
+      "sourceFilename": "5A757302-E43F-4413-B6DE-B937A2D88E98.jpeg",
+      "assetName": "mameshiba-fauve-maneki-3",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-3-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 42198
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-3-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 80372
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 80202
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-3-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 78433
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-3-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 158166
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 166910
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-3-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 159677
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-3-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 325398
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 351869
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 4,
+      "sourceFilename": "F9D5F787-9162-4002-979D-5556D3CB5A91.jpeg",
+      "assetName": "mameshiba-fauve-maneki-4",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-4-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 42457
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-4-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 80856
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-maneki-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 79847
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-4-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 81092
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-4-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 166812
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-maneki-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 169637
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-4-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-maneki-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 167479
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-4-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-maneki-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 344152
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-maneki-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-maneki-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 364159
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}
