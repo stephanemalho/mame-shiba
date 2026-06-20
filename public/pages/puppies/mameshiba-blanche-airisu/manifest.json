@@ -1,0 +1,85 @@
+{
+  "folder": "mameshiba-blanche-airisu",
+  "generatedAt": "2026-06-20T21:31:46.080Z",
+  "images": [
+    {
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/C/C3E3DDB3-DBB0-44FA-9F1E-8C5275D9A9C8.jpeg",
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/avif/mameshiba-blanche-airisu-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 15536
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/webp/mameshiba-blanche-airisu-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 19960
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/jpeg/mameshiba-blanche-airisu-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 34461
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/avif/mameshiba-blanche-airisu-1-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 25905
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/webp/mameshiba-blanche-airisu-1-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 34082
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/jpeg/mameshiba-blanche-airisu-1-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 65035
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/avif/mameshiba-blanche-airisu-1-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 45320
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/webp/mameshiba-blanche-airisu-1-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 59406
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-airisu/jpeg/mameshiba-blanche-airisu-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 121231
+        }
+      ]
+    }
+  ]
+}

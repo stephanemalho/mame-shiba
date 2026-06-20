@@ -194,7 +194,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
-        updatedAt: "2026-05-29",
+        updatedAt: "2026-06-20",
         description:
             "Akiro est un mâle Mameshiba blanc issu de Yumi et Natsu. Son type lumineux, son expression douce et sa lignée japonaise sont suivis avec attention pendant sa croissance.",
         highlights: [
@@ -361,6 +361,7 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: [
+            responsivePuppyImage("Airisu", "mameshiba-blanche-airisu", "mameshiba-blanche-airisu-1", 0),
             {
                 src: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-1-desktop.webp",
                 thumbSrc: "/pages/puppies/mameshiba-blanc-fauve/webp/mameshiba-blanc-fauve-1-mobile.webp",
