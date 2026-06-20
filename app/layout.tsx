@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import Script from "next/script"
 import CookieConsent from "../components/cookie-consent"
 import AnalyticsConsent from "../components/analytics-consent"
 import "./globals.css"
@@ -17,6 +18,11 @@ const questrial = Questrial({
 })
 
 const iconVersion = "v2"
+const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18234888597"
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GA_ID
+const googleTagIds = [googleAdsId, googleAnalyticsId].filter(
+  (id, index, array): id is string => Boolean(id) && array.indexOf(id) === index
+)
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
@@ -55,7 +61,37 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        {/* Google Analytics will be injected by the client cookie consent manager */}
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = window.gtag || gtag;
+            var storedCookieConsent = null;
+            try {
+              storedCookieConsent = localStorage.getItem('cookie_consent');
+            } catch (error) {}
+            var hasGoogleConsent = storedCookieConsent === 'accepted';
+            gtag('consent', 'default', {
+              ad_storage: hasGoogleConsent ? 'granted' : 'denied',
+              analytics_storage: hasGoogleConsent ? 'granted' : 'denied',
+              ad_user_data: hasGoogleConsent ? 'granted' : 'denied',
+              ad_personalization: hasGoogleConsent ? 'granted' : 'denied',
+              wait_for_update: hasGoogleConsent ? 0 : 500
+            });
+            gtag('set', 'ads_data_redaction', !hasGoogleConsent);
+          `}
+        </Script>
+        <Script
+          id="google-tag-loader"
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAdsId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag-config" strategy="afterInteractive">
+          {`
+            gtag('js', new Date());
+            ${googleTagIds.map((id) => `gtag('config', '${id}');`).join("\n")}
+          `}
+        </Script>
 
         {/* JSON-LD Schema Markup */}
         <script

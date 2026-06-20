@@ -4,30 +4,42 @@ import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 import { Cookie } from "lucide-react"
 
+const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18234888597"
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const GOOGLE_TAG_IDS = [GOOGLE_ADS_ID, GA_ID].filter(
+    (id, index, array): id is string => Boolean(id) && array.indexOf(id) === index
+)
+
+const GOOGLE_CONSENT_GRANTED = {
+    ad_storage: "granted",
+    analytics_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted",
+} as const
+
+const GOOGLE_CONSENT_DENIED = {
+    ad_storage: "denied",
+    analytics_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+} as const
 
 export default function CookieConsent() {
     const [consent, setConsent] = useState<"accepted" | "denied" | "unknown">("unknown")
     const [open, setOpen] = useState(false)
 
-    function injectGAScript() {
-        if (!GA_ID) return
-        const alreadyLoaded = document.querySelector('script[data-cookie-consent="ga-loader"]')
-        if (alreadyLoaded) return
+    function updateGoogleConsent(granted: boolean) {
+        try {
+            const gtag = (window as any).gtag
+            if (!gtag) return
 
-        const s1 = document.createElement("script")
-        s1.async = true
-        s1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
-        s1.dataset.cookieConsent = "ga-loader"
-        document.head.appendChild(s1)
+            gtag("consent", "update", granted ? GOOGLE_CONSENT_GRANTED : GOOGLE_CONSENT_DENIED)
+            gtag("set", "ads_data_redaction", !granted)
 
-        const s2 = document.createElement("script")
-        s2.dataset.cookieConsent = "ga-inline"
-        s2.innerHTML = `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${GA_ID}');`
-        document.head.appendChild(s2)
+            if (granted) {
+                GOOGLE_TAG_IDS.forEach((id) => gtag("config", id))
+            }
+        } catch { }
     }
 
     useEffect(() => {
@@ -56,6 +68,7 @@ gtag('config', '${GA_ID}');`
         try {
             localStorage.setItem("cookie_consent", "accepted")
         } catch { }
+        updateGoogleConsent(true)
         setConsent("accepted")
         setOpen(false)
         notifyConsentChange()
@@ -74,17 +87,12 @@ gtag('config', '${GA_ID}');`
         } catch { }
     }
 
-    function removeGAScript() {
-        if (!GA_ID) return
+    function removeLegacyGAScripts() {
         try {
             const scripts = Array.from(document.querySelectorAll('script[data-cookie-consent^="ga"]'))
             scripts.forEach((s) => s.parentElement?.removeChild(s))
-            try {
-                delete (window as any).gtag
-                delete (window as any).dataLayer
-            } catch { }
         } catch (e) {
-            console.warn("cookie-consent: failed to remove GA scripts", e)
+            console.warn("cookie-consent: failed to remove legacy GA scripts", e)
         }
     }
 
@@ -92,41 +100,39 @@ gtag('config', '${GA_ID}');`
         try {
             localStorage.setItem("cookie_consent", "denied")
         } catch { }
-        // If GA already loaded, inform Google Consent Mode and try to clear cookies
         try {
-            if ((window as any).gtag) {
-                ; (window as any).gtag("consent", "update", { analytics_storage: "denied" })
-            }
+            updateGoogleConsent(false)
             clearGACookies()
-            removeGAScript()
+            removeLegacyGAScripts()
         } catch { }
         setConsent("denied")
         setOpen(false)
         notifyConsentChange()
     }
 
-    // Inject GA script when accepted, remove when refused
+    // The Google tag is loaded globally with denied consent by default.
     useEffect(() => {
         if (consent === "accepted") {
-            injectGAScript()
+            updateGoogleConsent(true)
+            removeLegacyGAScripts()
         } else if (consent === "denied") {
-            // Remove GA scripts and cookies
-            removeGAScript()
+            updateGoogleConsent(false)
+            removeLegacyGAScripts()
             clearGACookies()
         }
     }, [consent])
 
     return (
         <>
-            {/* scripts are injected manually into <head> when consent is given */}
+            {/* Google consent is updated here after the visitor makes a choice. */}
 
             {/* Banner/modal */}
             {open && (
                 <div className="fixed w-full bottom-4 z-50 md:bottom-8">
                     <div className="max-w-4xl mx-auto h-40 bg-background/95 backdrop-blur border p-4 rounded-lg shadow-lg flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
                         <div className="flex-1 text-sm text-muted-foreground">
-                            Nous utilisons des cookies pour améliorer votre expérience et effectuer des analyses. Acceptez-vous
-                            l'utilisation des cookies analytiques ?   <Button variant="ghost" onClick={decline} className="px-4 py-2 rounded-md">
+                            Nous utilisons des cookies pour améliorer votre expérience, mesurer l'audience et suivre nos campagnes.
+                            Acceptez-vous les cookies d'analyse et publicitaires ?   <Button variant="ghost" onClick={decline} className="px-4 py-2 rounded-md">
                                 Refuser
                             </Button>
                         </div>
