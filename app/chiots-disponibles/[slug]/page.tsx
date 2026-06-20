@@ -29,8 +29,8 @@ import {
     formatPuppyPrice,
     getPuppySeoDescription,
     getPuppyLastModified,
+    getPuppySeoImageSources,
     getPuppySlug,
-    getPuppySocialImageSrc,
     getPuppyStatus,
     getPuppyStatusLabel,
     getPuppyUrl,
@@ -80,7 +80,10 @@ export async function generateMetadata({ params }: PuppyPageProps): Promise<Meta
         return {}
     }
 
-    const firstImage = getPuppySocialImageSrc(puppy) ?? "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
+    const firstPuppyImage = puppy.images[0]
+    const socialImages = firstPuppyImage
+        ? getPuppySeoImageSources(firstPuppyImage)
+        : ["/pages/puppies/mameshiba-blanc-hotaru-1.jpg"]
     const description = getPuppySeoDescription(puppy)
     const title = `${puppy.name}, chiot Mameshiba ${puppy.color} ${getPuppyStatusLabel(puppy).toLowerCase()}`
     const url = `${siteConfig.siteUrl}${getPuppyUrl(puppy)}`
@@ -99,18 +102,20 @@ export async function generateMetadata({ params }: PuppyPageProps): Promise<Meta
             title,
             description,
             url,
-            images: [
-                {
-                    url: `${siteConfig.siteUrl}${firstImage}`,
-                    alt: `${puppy.name}, chiot Mameshiba ${puppy.color} de l'élevage Kawaii Shiba`,
-                    type: "image/jpeg",
-                },
-            ],
+            images: socialImages.map((image) => ({
+                url: `${siteConfig.siteUrl}${image}`,
+                alt: `${puppy.name}, chiot Mameshiba ${puppy.color} de l'élevage Kawaii Shiba`,
+                type: image.endsWith(".jpeg") || image.endsWith(".jpg")
+                    ? "image/jpeg"
+                    : image.endsWith(".avif")
+                        ? "image/avif"
+                        : "image/webp",
+            })),
         }),
         twitter: buildTwitter({
             title,
             description,
-            imageUrl: `${siteConfig.siteUrl}${firstImage}`,
+            images: socialImages.map((image) => `${siteConfig.siteUrl}${image}`),
         }),
         alternates: {
             canonical: url,

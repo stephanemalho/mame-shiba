@@ -386,7 +386,7 @@ export const puppies: Puppy[] = [
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
-        updatedAt: "2026-06-16",
+        updatedAt: "2026-06-20",
         description:
             "Yoshi est une femelle Mameshiba noir et feu issue de Karasuki et Waru. Elle est présentée avec les chiots disponibles de la portée et son évolution sera suivie avec attention.",
         highlights: [
@@ -397,8 +397,11 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: responsivePuppyImages("YOSHI", "mameshiba-noir-feu-yoshi", [
-            "mameshiba-noir-feu-yoshi-1",
-            "mameshiba-noir-feu-yoshi-2"
+            "mameshiba-noir-feu-yoshi-3",
+            "mameshiba-noir-feu-yoshi-4",
+            "mameshiba-noir-feu-yoshi-5",
+            "mameshiba-noir-feu-yoshi-6",
+            "mameshiba-noir-feu-yoshi-7"
         ]),
         linkTo: karasukiWaruFormUrl,
         price: femalePrice,

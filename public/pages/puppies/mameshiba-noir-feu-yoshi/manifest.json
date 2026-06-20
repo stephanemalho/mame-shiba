@@ -1,6 +1,6 @@
 {
   "folderName": "mameshiba-noir-feu-yoshi",
-  "imageCount": 2,
+  "imageCount": 7,
   "images": [
     {
       "index": 1,
@@ -235,6 +235,576 @@
       "warnings": [
         "Source plus petite que 1200px: sortie desktop generee en 853px."
       ]
+    },
+    {
+      "index": 3,
+      "sourceFilename": "0AB1AF83-BF01-46BF-A49A-42268FFCF383.jpeg",
+      "assetName": "mameshiba-noir-feu-yoshi-3",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-3-mobile.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 25629
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-3-tablet.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 44887
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-3-desktop.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 79998
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-3-mobile.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 46476
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-3-tablet.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 79634
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-3-desktop.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 143572
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 59763
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 117032
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 224425
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 4,
+      "sourceFilename": "6CC4D08F-C665-46CF-A1B0-49E02CABAA65.jpeg",
+      "assetName": "mameshiba-noir-feu-yoshi-4",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-4-mobile.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 27994
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-4-tablet.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 51999
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-4-desktop.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 97940
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-4-mobile.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 51258
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-4-tablet.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 93512
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-4-desktop.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 175882
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 62488
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 127667
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 256117
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 5,
+      "sourceFilename": "D3753BD4-14CF-4143-8B3F-CB1881E43135.jpeg",
+      "assetName": "mameshiba-noir-feu-yoshi-5",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-5-mobile.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-5-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 20326
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-5-tablet.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-5-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 43896
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-5-desktop.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-5-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 91722
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-5-mobile.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-5-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 34416
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-5-tablet.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-5-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 72492
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-5-desktop.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-5-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 152554
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-5-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-5-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 44703
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-5-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-5-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 99225
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-5-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-5-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 216920
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 6,
+      "sourceFilename": "CD5E9E93-5515-42DE-9826-603325199C06.jpeg",
+      "assetName": "mameshiba-noir-feu-yoshi-6",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-6-mobile.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-6-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 28992
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-6-tablet.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-6-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 56048
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-6-desktop.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-6-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 109755
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-6-mobile.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-6-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 54802
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-6-tablet.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-6-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 105440
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-6-desktop.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-6-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 203588
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-6-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-6-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 65828
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-6-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-6-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 137052
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-6-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-6-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 283253
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "index": 7,
+      "sourceFilename": "6C8A4197-7380-45AF-B41F-4CE58ED9193C.jpeg",
+      "assetName": "mameshiba-noir-feu-yoshi-7",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480,
+          "outputWidth": 480,
+          "outputHeight": 320
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768,
+          "outputWidth": 768,
+          "outputHeight": 512
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200,
+          "outputWidth": 1200,
+          "outputHeight": 800
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-7-mobile.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-7-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 30058
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-7-tablet.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-7-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 55802
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-7-desktop.avif",
+          "relativePath": "avif/mameshiba-noir-feu-yoshi-7-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 105146
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-7-mobile.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-7-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 56792
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-7-tablet.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-7-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 105548
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-7-desktop.webp",
+          "relativePath": "webp/mameshiba-noir-feu-yoshi-7-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 193932
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-noir-feu-yoshi-7-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-7-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 68044
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-noir-feu-yoshi-7-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-7-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 138934
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-noir-feu-yoshi-7-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-noir-feu-yoshi-7-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 277766
+        }
+      ],
+      "warnings": []
     }
   ],
   "warnings": [

@@ -31,8 +31,37 @@ export function getPuppySourceImageSrc(image: Puppy["images"][number]) {
     return image.sourceSrc ?? image.src
 }
 
+function getFormatVariantImageSrc(image: Puppy["images"][number], format: "avif" | "jpeg") {
+    const source = getPuppySourceImageSrc(image)
+
+    if (!source.includes("/webp/") || !source.endsWith(".webp")) {
+        return undefined
+    }
+
+    return source.replace("/webp/", `/${format}/`).replace(/\.webp$/, `.${format}`)
+}
+
+export function getPuppyJpegImageSrc(image: Puppy["images"][number]) {
+    return getFormatVariantImageSrc(image, "jpeg")
+}
+
+export function getPuppyAvifImageSrc(image: Puppy["images"][number]) {
+    return getFormatVariantImageSrc(image, "avif")
+}
+
 export function getPuppySocialImageSrc(puppy: Puppy) {
     return puppy.images[0] ? getPuppySourceImageSrc(puppy.images[0]) : undefined
+}
+
+export function getPuppySeoImageSources(image: Puppy["images"][number]) {
+    const jpegImage = getPuppyJpegImageSrc(image)
+    const avifImage = getPuppyAvifImageSrc(image)
+
+    return [
+        ...(jpegImage ? [jpegImage] : []),
+        getPuppySourceImageSrc(image),
+        ...(avifImage ? [avifImage] : []),
+    ]
 }
 
 export function getPuppyStatus(puppy: Puppy) {
@@ -118,7 +147,9 @@ export function buildPuppyProductStructuredData(puppy: Puppy) {
         name: `${puppy.name} - chiot Mameshiba ${puppy.color}`,
         description: puppy.description,
         url,
-        image: puppy.images.map((image) => `${siteConfig.siteUrl}${getPuppySourceImageSrc(image)}`),
+        image: puppy.images.flatMap((image) =>
+            getPuppySeoImageSources(image).map((source) => `${siteConfig.siteUrl}${source}`)
+        ),
         ...(getPuppyLastModified(puppy) ? { dateModified: getPuppyLastModified(puppy) } : {}),
         sku: `mameshiba-${getPuppySlug(puppy.name)}`,
         category: "Chiot Mameshiba",

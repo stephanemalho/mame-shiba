@@ -326,23 +326,26 @@ type TwitterParams = {
     title: string;
     description: string;
     imageUrl?: string;
+    images?: string[];
 };
 
 export const buildTwitter = ({
     title,
     description,
-    imageUrl
+    imageUrl,
+    images
 }: TwitterParams) => ({
     card: "summary_large_image",
     title,
     description,
-    images: [
-        resolveSocialImage(
-            imageUrl
-                ? imageUrl
-                : new URL(siteConfig.ogImage, siteConfig.siteUrl).toString()
-        ).url
-    ]
+    images: (images && images.length > 0
+        ? images
+        : [
+              imageUrl
+                  ? imageUrl
+                  : new URL(siteConfig.ogImage, siteConfig.siteUrl).toString()
+          ]
+    ).map((image) => resolveSocialImage(image).url)
 });
 
 /* -------------------------------------------------------------------------- */
