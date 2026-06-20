@@ -1,0 +1,401 @@
+{
+  "folder": "mameshiba-blanche-neko",
+  "generatedAt": "2026-06-20T21:13:04.763Z",
+  "images": [
+    {
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/9/9329A444-4B40-4B68-8F15-8D3C627FAB33.jpeg",
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 24664
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 36116
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 50622
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-1-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 45018
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-1-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 64448
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-1-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 100529
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-1-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 81915
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-1-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 115892
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 195126
+        }
+      ]
+    },
+    {
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/2/21D638B3-29C5-4954-9162-19FEFDE4F3A4.jpeg",
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-2-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 16777
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-2-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 25372
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-2-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 31419
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-2-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "bytes": 30727
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-2-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 48972
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-2-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "bytes": 64211
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-2-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 53192
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-2-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 82358
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-2-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 121939
+        }
+      ]
+    },
+    {
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/8/8F4F7EAB-6736-48F2-AF29-BCE0084DAD84.jpeg",
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 28005
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 44342
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 56901
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 49675
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 75496
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 112023
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 88287
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 133082
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 215348
+        }
+      ]
+    },
+    {
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/6/6EA969AD-1DE9-48D1-842B-7F63165B2C10.jpeg",
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 30149
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 46968
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 59950
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "bytes": 57254
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "bytes": 89558
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "bytes": 122259
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 115856
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 175940
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "bytes": 252707
+        }
+      ]
+    },
+    {
+      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/A/ADBEEEE5-2D31-4AD9-AF7B-6AE03AB3FD0E.jpeg",
+      "width": 6000,
+      "height": 4000,
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-5-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 20565
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-5-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 30412
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-5-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 35982
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-5-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "bytes": 39407
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-5-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 62012
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-5-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "bytes": 76124
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/avif/mameshiba-blanche-neko-5-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 69580
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/webp/mameshiba-blanche-neko-5-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 113616
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "path": "/pages/puppies/mameshiba-blanche-neko/jpeg/mameshiba-blanche-neko-5-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 149599
+        }
+      ]
+    }
+  ]
+}

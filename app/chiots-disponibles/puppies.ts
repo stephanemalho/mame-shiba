@@ -52,6 +52,7 @@ export type Puppy = {
 const yumiNatsuFormUrl = "https://forms.gle/KQuUAmWPiB5kJKqU7";
 const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18";
 const soboWaruFormUrl = karasukiWaruFormUrl;
+const soboNatsuFormUrl = "https://forms.gle/myGmQAj5Kim6UnVx8";
 const malePrice = 4500;
 const femalePrice = 5000;
 const defaultHealth = [
@@ -120,7 +121,7 @@ export const puppies: Puppy[] = [
         age: yumiBirthDate,
         birthDate: yumiBirthDateIso,
         availableFrom: yumiAvailableDateIso,
-        updatedAt: "2026-05-29",
+        updatedAt: "2026-06-20",
         description:
             "Hotaru est un mâle Mameshiba blanc issu de Yumi et Natsu. Il possède un pédigrée Kennel Club of Japan et descend d'une lignée avec petit-fils de KC Champion.",
         highlights: [
@@ -281,12 +282,17 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: [
-            responsivePuppyImage("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", "mameshiba-blanc-fauve-kenshiro", 0),
+            ...responsivePuppyImages("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", [
+                "mameshiba-blanc-fauve-kenshiro-1",
+                "mameshiba-blanc-fauve-kenshiro-2",
+                "mameshiba-blanc-fauve-kenshiro-3"
+            ]),
+            responsivePuppyImage("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", "mameshiba-blanc-fauve-kenshiro", 3),
             ...puppyImages("KENSHIRO", [
                 "kenshiro-mameshiba-1-6semaine.jpeg",
                 "kenshiro-mameshiba-2-6semaine.jpeg",
                 "kenshiro-mameshiba-3-6semaine.jpeg"
-            ], 1)
+            ], 4)
         ],
         linkTo: karasukiWaruFormUrl,
         price: malePrice,
@@ -373,6 +379,42 @@ export const puppies: Puppy[] = [
         ],
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan"
+    },
+    {
+        name: "NEKO",
+        coat: "Mameshiba",
+        color: "Blanche",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Estimée à 3-5 kg adulte",
+        parents: "Parents : SOBO & NATSU",
+        readyDate: soboAvailableDate,
+        age: soboBirthDate,
+        birthDate: soboBirthDateIso,
+        availableFrom: soboAvailableDateIso,
+        updatedAt: "2026-06-20",
+        description:
+            "Neko est une femelle Mameshiba blanche issue de Sobo et Natsu. Son poids adulte est estimé entre 3 et 5 kg et son évolution sera suivie avec attention à l'élevage.",
+        highlights: [
+            "Femelle",
+            "Blanche",
+            "Estimée à 3-5 kg adulte",
+            "Portée Sobo & Natsu"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("NEKO", "mameshiba-blanche-neko", [
+            "mameshiba-blanche-neko-1",
+            "mameshiba-blanche-neko-2",
+            "mameshiba-blanche-neko-3",
+            "mameshiba-blanche-neko-4",
+            "mameshiba-blanche-neko-5"
+        ]),
+        linkTo: soboNatsuFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,

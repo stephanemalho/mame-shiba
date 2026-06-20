@@ -53,6 +53,20 @@ export const puppyParentProfilesByLabel: Record<string, PuppyParentProfile[]> = 
             href: "/nos-chiens#waru",
         },
     ],
+    "Parents : SOBO & NATSU": [
+        {
+            role: "Mère",
+            name: "Sobo",
+            description: "Fiche parent bientôt disponible",
+        },
+        {
+            role: "Père",
+            name: "Natsu",
+            image: "/pages/reproducteurs/natsuko-dit-natsu-mame-shiba-kawaii-shiba-portrait.webp",
+            description: "Mâle Mameshiba noir et feu",
+            href: "/nos-chiens#natsuko",
+        },
+    ],
 }
 
 export function getPuppyParentProfiles(parentLabel: string) {
