@@ -51,8 +51,10 @@ export type Puppy = {
 
 const yumiNatsuFormUrl = "https://forms.gle/KQuUAmWPiB5kJKqU7";
 const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18";
+const defaultPuppyFormUrl = "https://forms.gle/myGmQAj5Kim6UnVx8";
 const soboWaruFormUrl = karasukiWaruFormUrl;
-const soboNatsuFormUrl = "https://forms.gle/myGmQAj5Kim6UnVx8";
+const soboNatsuFormUrl = defaultPuppyFormUrl;
+const sakuraWaruFormUrl = defaultPuppyFormUrl;
 const malePrice = 4500;
 const femalePrice = 5000;
 const defaultHealth = [
@@ -379,6 +381,40 @@ export const puppies: Puppy[] = [
         ],
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan"
+    },
+    {
+        name: "YUKI",
+        coat: "Mameshiba",
+        color: "Blanche",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : SAKURA & WARU",
+        readyDate: "Disponibilité à préciser",
+        age: "Naissance à préciser",
+        updatedAt: "2026-06-20",
+        description:
+            "Yuki est une femelle Mameshiba blanche issue de Sakura et Waru. Son poids adulte est en cours d'estimation et son évolution sera suivie avec attention à l'élevage.",
+        highlights: [
+            "Femelle",
+            "Blanche",
+            "Portée Sakura & Waru",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("YUKI", "mameshiba-blanche-yuki", [
+            "mameshiba-blanche-yuki-1",
+            "mameshiba-blanche-yuki-2",
+            "mameshiba-blanche-yuki-3",
+            "mameshiba-blanche-yuki-4",
+            "mameshiba-blanche-yuki-5"
+        ]),
+        linkTo: sakuraWaruFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,

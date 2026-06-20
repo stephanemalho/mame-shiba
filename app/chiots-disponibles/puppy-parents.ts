@@ -39,6 +39,22 @@ export const puppyParentProfilesByLabel: Record<string, PuppyParentProfile[]> = 
             href: "/nos-chiens#waru",
         },
     ],
+    "Parents : SAKURA & WARU": [
+        {
+            role: "Mère",
+            name: "Sakura",
+            image: "/pages/reproducteurs/sakura-mame-shiba-kawaii-shiba-portrait.webp",
+            description: "Femelle Mameshiba crème importée du Japon",
+            href: "/nos-chiens#sakura",
+        },
+        {
+            role: "Père",
+            name: "Waru",
+            image: "/pages/reproducteurs/waru-mame-shiba-kawaii-shiba-portrait.webp",
+            description: "Mâle Mameshiba origine Japon",
+            href: "/nos-chiens#waru",
+        },
+    ],
     "Parents : SOBO & WARU": [
         {
             role: "Mère",
