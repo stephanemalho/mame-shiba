@@ -211,7 +211,7 @@ export default function PresentationPage() {
 
                     <section className="mb-16">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
-                            <div className="relative h-82 md:h-100 rounded-lg overflow-hidden md:order-2">
+                            <div className="relative h-82 md:h-150 rounded-lg overflow-hidden md:order-2">
                                 <Image
                                     src="/pages/image-all-shiba/mameshiba-parmi-les-branches.webp"
                                     alt="Mameshiba attentif au milieu des branches"
