@@ -490,7 +490,7 @@ export default function PresentationPage() {
                                         rel="noopener noreferrer"
                                         className="inline-flex min-h-12 items-center justify-center rounded-md bg-primary px-4 font-semibold text-primary-foreground hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                     >
-                                        Découvrir Royal Pomsky
+                                        Visiter le site web de Royal Pomsky
                                         <ArrowUpRight className="ml-2 h-4 w-4" aria-hidden="true" />
                                     </a>
                                     <a
