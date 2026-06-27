@@ -49,7 +49,7 @@ const sizes = [
         height: "Mâle : 38 à 41 cm • Femelle : 35 à 38 cm",
         frame: "Standard LOF du Shiba Inu",
         text: "Le Shiba Inu constitue la référence d'origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
-        image: "/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg",
+        image: "/pages/homePage/shiba-inu-vs-mameshiba-size-bottom.webp",
         alt: "Comparatif entre un Shiba Inu et un Mameshiba",
     },
     {
@@ -65,8 +65,8 @@ const sizes = [
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
         text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
-        image: "/pages/le-mame-shiba/sakura-mame-shiba-kawaii-shiba-portrait-v2.webp",
-        alt: "Jeune Mameshiba blanc dans un jardin",
+        image: "/pages/le-mame-shiba/mame-shiba-femelle-noire-et-blanche.webp",
+        alt: "femelle mameshiba noire et blanche debout sur l'herbe, regard vif et expressif",
     },
 ]
 

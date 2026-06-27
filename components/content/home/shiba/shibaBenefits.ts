@@ -1,4 +1,4 @@
-import mameSize from "@/public/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg";
+import mameSize from "@/public/pages/homePage/shiba-inu-vs-mameshiba-size-bottom.webp";
 import nihonMame from "@/public/pages/homePage/mame-shiba-puppy-blanc-white.jpeg";
 import redMame from "@/public/pages/homePage/ushiro-paris.jpg";
 import primitifDog from "@/public/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg";
