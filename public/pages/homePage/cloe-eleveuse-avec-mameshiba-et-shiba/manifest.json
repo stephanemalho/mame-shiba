@@ -1,0 +1,79 @@
+{
+  "source": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba.jpg",
+  "generatedWith": "responsive-image-generator presets",
+  "sourceMetadata": {
+    "width": 1366,
+    "height": 2048,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 720
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 1151
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 1799
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "path": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/webp/cloe-eleveuse-avec-mameshiba-et-shiba-mobile.webp",
+      "width": 480,
+      "height": 720,
+      "bytes": 75978
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "path": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/jpeg/cloe-eleveuse-avec-mameshiba-et-shiba-mobile.jpeg",
+      "width": 480,
+      "height": 720,
+      "bytes": 94721
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "path": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/webp/cloe-eleveuse-avec-mameshiba-et-shiba-tablet.webp",
+      "width": 768,
+      "height": 1151,
+      "bytes": 151666
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "path": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/jpeg/cloe-eleveuse-avec-mameshiba-et-shiba-tablet.jpeg",
+      "width": 768,
+      "height": 1151,
+      "bytes": 206974
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "path": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/webp/cloe-eleveuse-avec-mameshiba-et-shiba-desktop.webp",
+      "width": 1200,
+      "height": 1799,
+      "bytes": 281868
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "path": "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/jpeg/cloe-eleveuse-avec-mameshiba-et-shiba-desktop.jpeg",
+      "width": 1200,
+      "height": 1799,
+      "bytes": 421045
+    }
+  ]
+}

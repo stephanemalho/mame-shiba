@@ -1,4 +1,5 @@
 import { createLastmodGetter } from "./lastmod";
+import { responsiveImages } from "./responsive-images";
 
 /**
  * ============================================================
@@ -141,10 +142,10 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
         height: 1709,
         type: "image/jpeg"
     },
-    "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg": {
-        width: 1320,
-        height: 1908,
-        type: "image/jpeg"
+    [responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.src]: {
+        width: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.width,
+        height: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.height,
+        type: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.type
     },
     "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg": {
         width: 1320,

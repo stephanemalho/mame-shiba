@@ -6,10 +6,12 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
+import { ResponsivePicture } from "@/components/responsive-picture"
 import { filterBlogLinks } from "@/lib/blog-visibility"
 import { faqMameShiba } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
+import { isResponsiveImageAsset, responsiveImages, type ResponsiveImageAsset } from "@/lib/responsive-images"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { BadgeAlert, Feather, Heart, History, PawPrint, Quote, Ruler, Scale, ScrollText, Sparkles } from "lucide-react"
 
@@ -43,14 +45,25 @@ export const metadata: Metadata = {
     },
 }
 
-const sizes = [
+type PageImage = string | ResponsiveImageAsset;
+
+type SizeCard = {
+    title: string
+    height: string
+    frame: string
+    text: string
+    image: PageImage
+    alt: string
+}
+
+const sizes: SizeCard[] = [
     {
         title: "Shiba Inu vs Mameshiba",
         height: "Mâle : 38 à 41 cm • Femelle : 35 à 38 cm",
         frame: "Standard LOF du Shiba Inu",
         text: "Le Shiba Inu constitue la référence d'origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
-        image: "/pages/homePage/shiba-inu-vs-mameshiba-size-bottom.webp",
-        alt: "Comparatif entre un Shiba Inu et un Mameshiba",
+        image: responsiveImages.shibaVsMameshiba,
+        alt: "Shiba Inu et Mameshiba côte à côte dans l'herbe",
     },
     {
         title: "Mameshiba mâle",
@@ -73,7 +86,7 @@ const sizes = [
 type HistoryStep = {
     title: string
     description: ReactNode
-    image: string
+    image: PageImage
     alt: string
 }
 
@@ -137,8 +150,8 @@ const historySteps: HistoryStep[] = [
                 harmonieux et sain.
             </>
         ),
-        image: "/pages/le-mame-shiba/mame-shiba-puppy-blanc-white.jpeg",
-        alt: "Chiot Mameshiba blanc dans un univers japonais",
+        image: responsiveImages.chiotMameshibaNoirEtBlancMale,
+        alt: "Chiot Mameshiba noir et feu dans un univers japonais",
     },
     {
         title: "Un enregistrement encadré par le KCJ",
@@ -305,14 +318,24 @@ export default function MameShibaPage() {
                                     </CardHeader>
                                     <CardContent className="space-y-3 text-sm text-muted-foreground">
                                         <div className="relative aspect-4/3 w-full overflow-hidden rounded-md mb-6 bg-black">
-                                            <Image
-                                                src={item.image}
-                                                alt={item.alt}
-                                                fill
-                                                className="object-cover"
-                                                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                                quality={75}
-                                            />
+                                            {isResponsiveImageAsset(item.image) ? (
+                                                <ResponsivePicture
+                                                    asset={item.image}
+                                                    alt={item.alt}
+                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                    className="absolute inset-0 h-full w-full"
+                                                    imageClassName="h-full w-full object-cover"
+                                                />
+                                            ) : (
+                                                <Image
+                                                    src={item.image}
+                                                    alt={item.alt}
+                                                    fill
+                                                    className="object-cover"
+                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                    quality={75}
+                                                />
+                                            )}
                                         </div>
                                         <div className="flex items-center gap-2">
                                             <Ruler className="h-4 w-4 text-primary" aria-hidden="true" />
@@ -460,14 +483,24 @@ export default function MameShibaPage() {
                                             {step.description}
                                         </p>
                                         <div className="relative h-72 rounded-md overflow-hidden mt-auto">
-                                            <Image
-                                                src={step.image}
-                                                alt={step.alt}
-                                                fill
-                                                className="object-cover"
-                                                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                                quality={75}
-                                            />
+                                            {isResponsiveImageAsset(step.image) ? (
+                                                <ResponsivePicture
+                                                    asset={step.image}
+                                                    alt={step.alt}
+                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                    className="absolute inset-0 h-full w-full"
+                                                    imageClassName="h-full w-full object-cover"
+                                                />
+                                            ) : (
+                                                <Image
+                                                    src={step.image}
+                                                    alt={step.alt}
+                                                    fill
+                                                    className="object-cover"
+                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                    quality={75}
+                                                />
+                                            )}
                                         </div>
                                     </CardContent>
                                 </Card>
@@ -519,13 +552,12 @@ export default function MameShibaPage() {
                                         </p>
                                     </div>
                                     <div className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
-                                        <Image
-                                            src="/pages/le-mame-shiba/Yuzu-femelle-mame-shiba-couleur-feu.webp"
-                                            alt="Portrait d'un Mameshiba gris et blanc"
-                                            fill
-                                            className="object-cover"
+                                        <ResponsivePicture
+                                            asset={responsiveImages.mameshibaBlancTailleStandard}
+                                            alt="Mameshiba blanc debout dans l'herbe"
                                             sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                            quality={75}
+                                            className="absolute inset-0 h-full w-full"
+                                            imageClassName="h-full w-full object-cover"
                                         />
                                     </div>
                                 </CardContent>

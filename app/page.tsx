@@ -14,6 +14,8 @@ import { puppies } from "@/app/chiots-disponibles/puppies"
 import { getPuppyUrl } from "@/app/chiots-disponibles/puppy-seo"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { SectionTitleIcon } from "@/components/section-title-icon"
+import { ResponsivePicture } from "@/components/responsive-picture"
+import { isResponsiveImageAsset, responsiveImages } from "@/lib/responsive-images"
 
 import { shibaBenefits } from "@/components/content/home/shiba/shibaBenefits"
 
@@ -262,14 +264,13 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="relative w-full aspect-video md:h-200 h-125 md:aspect-4/5 overflow-hidden rounded-lg">
-                <Image
-                  src="/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg"
-                  alt="Chiot Mameshiba blanc dans un décor japonais"
-                  fill
-                  className="object-cover"
+              <div className="relative w-full aspect-video md:h-220 h-125 md:aspect-4/5 overflow-hidden rounded-lg">
+                <ResponsivePicture
+                  asset={responsiveImages.cloeEleveuseAvecMameshibaEtShiba}
+                  alt="Cloé avec un Mameshiba et un Shiba Inu dans l'herbe"
                   sizes="(max-width: 768px) 85vw, 50vw"
-                  quality={70}
+                  className="absolute inset-0 h-full w-full"
+                  imageClassName="h-full w-full object-cover"
                 />
               </div>
             </div>
@@ -299,14 +300,24 @@ export default function HomePage() {
               {shibaBenefits.map((item) => (
                 <Card key={item.title} className="overflow-hidden bg-muted/70 p-2">
                   <div className="relative aspect-4/3 rounded-lg overflow-hidden">
-                    <Image
-                      src={item.image}
-                      alt={item.alt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      quality={75}
-                    />
+                    {isResponsiveImageAsset(item.image) ? (
+                      <ResponsivePicture
+                        asset={item.image}
+                        alt={item.alt}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="absolute inset-0 h-full w-full"
+                        imageClassName="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        quality={75}
+                      />
+                    )}
                   </div>
 
                   <CardContent className="p-6 space-y-3">

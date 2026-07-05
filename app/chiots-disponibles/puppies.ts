@@ -383,6 +383,7 @@ export const puppies: Puppy[] = [
                 "airisu-mameshiba-4-6semaine.jpeg"
             ])
         ],
+        thumbnailImage: puppyImage("Airisu", "airisu-mameshiba-2-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
         isReserved: true,
         price: femalePrice,

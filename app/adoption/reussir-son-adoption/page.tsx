@@ -22,6 +22,7 @@ import { filterBlogLinks } from "@/lib/blog-visibility"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { responsiveImages } from "@/lib/responsive-images"
 
 const pageImage = "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg"
 
@@ -243,7 +244,7 @@ export default function AdoptionGuidePage() {
         },
         image: [
             `${siteConfig.siteUrl}${pageImage}`,
-            `${siteConfig.siteUrl}/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg`,
+            `${siteConfig.siteUrl}${responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.src}`,
         ],
         about: [
             { "@type": "Thing", name: "Mameshiba" },

@@ -1,0 +1,79 @@
+{
+  "source": "/pages/homePage/shiba-vs-mameshiba.jpg",
+  "generatedWith": "responsive-image-generator presets",
+  "sourceMetadata": {
+    "width": 2048,
+    "height": 1366,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 320
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 512
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 800
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "path": "/pages/homePage/shiba-vs-mameshiba/webp/shiba-vs-mameshiba-mobile.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 25028
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "path": "/pages/homePage/shiba-vs-mameshiba/jpeg/shiba-vs-mameshiba-mobile.jpeg",
+      "width": 480,
+      "height": 320,
+      "bytes": 35055
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "path": "/pages/homePage/shiba-vs-mameshiba/webp/shiba-vs-mameshiba-tablet.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 50810
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "path": "/pages/homePage/shiba-vs-mameshiba/jpeg/shiba-vs-mameshiba-tablet.jpeg",
+      "width": 768,
+      "height": 512,
+      "bytes": 74977
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "path": "/pages/homePage/shiba-vs-mameshiba/webp/shiba-vs-mameshiba-desktop.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 94084
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "path": "/pages/homePage/shiba-vs-mameshiba/jpeg/shiba-vs-mameshiba-desktop.jpeg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 151707
+    }
+  ]
+}

@@ -1,15 +1,14 @@
-import mameSize from "@/public/pages/homePage/shiba-inu-vs-mameshiba-size-bottom.webp";
 import nihonMame from "@/public/pages/homePage/mame-shiba-puppy-blanc-white.jpeg";
-import redMame from "@/public/pages/homePage/ushiro-paris.jpg";
 import primitifDog from "@/public/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg";
 import shibaExpressive from "@/public/pages/homePage/mame-shiba-courant-dans-herbe.jpg";
 import shibaPolyvalent from "@/public/pages/homePage/mame-shiba-for-modern-life.jpeg";
+import { responsiveImages, type ResponsiveImageAsset } from "@/lib/responsive-images";
 import { StaticImageData } from "next/image";
 
 type BenefitCard = {
     title: string;
     text: string;
-    image: StaticImageData;
+    image: StaticImageData | ResponsiveImageAsset;
     alt: string;
 };
 
@@ -17,8 +16,8 @@ export const shibaBenefits: BenefitCard[] = [
     {
         title: "Une taille miniature, un vrai Shiba Inu",
         text: "Le Mameshiba est un Shiba Inu miniature. Le standard du KCJ situe sa taille autour de 25 à 32 cm au garrot pour les femelles et 25 à 34 cm pour les mâles, tout en conservant l’allure et l’équilibre du Shiba Inu.",
-        image: mameSize,
-        alt: "Un Mameshiba se tenant debout sur l'herbe"
+        image: responsiveImages.chiotMameshibaBlancAssis,
+        alt: "Chiot Mameshiba blanc assis dans l'herbe"
     },
     {
         title: "Un nom japonais plein de sens",
@@ -47,7 +46,7 @@ export const shibaBenefits: BenefitCard[] = [
     {
         title: "Un petit compagnon de la vie moderne",
         text: "Sa petite taille et son intelligence en font un excellent chien de compagnie, capable de s’adapter à la vie en appartement à condition d’être bien socialisé dès le plus jeune âge.",
-        image: redMame,
-        alt: "Mameshiba actif en extérieur sur l'herbe verte"
+        image: responsiveImages.shibaVsMameshiba,
+        alt: "Shiba Inu et Mameshiba côte à côte dans un sous-bois"
     }
 ];

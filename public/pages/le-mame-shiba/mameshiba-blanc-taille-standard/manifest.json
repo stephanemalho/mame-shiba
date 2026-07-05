@@ -1,0 +1,79 @@
+{
+  "source": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard.jpg",
+  "generatedWith": "responsive-image-generator presets",
+  "sourceMetadata": {
+    "width": 2048,
+    "height": 1366,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 320
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 512
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 800
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "path": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard/webp/mameshiba-blanc-taille-standard-mobile.webp",
+      "width": 480,
+      "height": 320,
+      "bytes": 20108
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "path": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard/jpeg/mameshiba-blanc-taille-standard-mobile.jpeg",
+      "width": 480,
+      "height": 320,
+      "bytes": 29848
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "path": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard/webp/mameshiba-blanc-taille-standard-tablet.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 39110
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "path": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard/jpeg/mameshiba-blanc-taille-standard-tablet.jpeg",
+      "width": 768,
+      "height": 512,
+      "bytes": 62392
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "path": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard/webp/mameshiba-blanc-taille-standard-desktop.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 73000
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "path": "/pages/le-mame-shiba/mameshiba-blanc-taille-standard/jpeg/mameshiba-blanc-taille-standard-desktop.jpeg",
+      "width": 1200,
+      "height": 800,
+      "bytes": 124634
+    }
+  ]
+}
