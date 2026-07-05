@@ -54,6 +54,7 @@ type SizeCard = {
     text: string
     image: PageImage
     alt: string
+    caption: string
 }
 
 const sizes: SizeCard[] = [
@@ -64,6 +65,7 @@ const sizes: SizeCard[] = [
         text: "Le Shiba Inu constitue la référence d'origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
         image: responsiveImages.shibaVsMameshiba,
         alt: "Shiba Inu et Mameshiba côte à côte dans l'herbe",
+        caption: "Le Shiba Inu sert de référence de taille et de type pour comprendre le format Mameshiba.",
     },
     {
         title: "Mameshiba mâle",
@@ -72,6 +74,7 @@ const sizes: SizeCard[] = [
         text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d'un an, avec validation du type et de la taille.",
         image: "/pages/le-mame-shiba/ichiro-mame-shiba-kawaii-shiba-portrait-v2.webp",
         alt: "Mameshiba roux et blanc assis dans l'herbe",
+        caption: "Un Mameshiba mâle adulte doit rester compact tout en conservant une construction harmonieuse.",
     },
     {
         title: "Mameshiba femelle",
@@ -80,6 +83,7 @@ const sizes: SizeCard[] = [
         text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
         image: "/pages/le-mame-shiba/mame-shiba-femelle-noire-et-blanche.webp",
         alt: "femelle mameshiba noire et blanche debout sur l'herbe, regard vif et expressif",
+        caption: "La femelle Mameshiba garde l’expression vive du Shiba Inu dans un format plus léger.",
     },
 ]
 
@@ -88,6 +92,7 @@ type HistoryStep = {
     description: ReactNode
     image: PageImage
     alt: string
+    caption: string
 }
 
 const historyLinkClassName =
@@ -122,6 +127,7 @@ const historySteps: HistoryStep[] = [
         ),
         image: "/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg",
         alt: "Mameshiba roux dans un décor floral",
+        caption: "Les petits Shiba rustiques sont à l’origine de la sélection qui mènera au Mameshiba moderne.",
     },
     {
         title: "Une sélection poursuivie à partir des années 1950",
@@ -152,6 +158,7 @@ const historySteps: HistoryStep[] = [
         ),
         image: responsiveImages.chiotMameshibaNoirEtBlancMale,
         alt: "Chiot Mameshiba noir et feu dans un univers japonais",
+        caption: "La sélection du petit format s’est construite sur plusieurs générations, sans perdre le type Shiba.",
     },
     {
         title: "Un enregistrement encadré par le KCJ",
@@ -191,6 +198,7 @@ const historySteps: HistoryStep[] = [
         ),
         image: "/pages/le-mame-shiba/chiot-mameshiba.jpg",
         alt: "Chiots Mameshiba fauve et blanc assis devant un fond sombre",
+        caption: "L’enregistrement KCJ repose sur la taille adulte, le type et la traçabilité généalogique.",
     },
 ]
 
@@ -282,19 +290,24 @@ export default function MameShibaPage() {
                             </div>
                         </div>
 
-                        <div className="relative h-72 rounded-lg overflow-hidden bg-black md:h-105">
-                            <Image
-                                src={pageImage}
-                                alt="Mameshiba dans un décor naturel aux couleurs douces"
-                                fill
-                                className="object-cover"
-                                priority
-                                fetchPriority="high"
-                                sizes="(min-width: 768px) 50vw, 100vw"
-                                quality={75}
-                            />
-                            <div className="absolute inset-0 bg-linear-to-t from-black/45 to-transparent" aria-hidden="true" />
-                        </div>
+                        <figure className="space-y-2">
+                            <div className="relative h-72 rounded-lg overflow-hidden bg-black md:h-105">
+                                <Image
+                                    src={pageImage}
+                                    alt="Mameshiba dans un décor naturel aux couleurs douces"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                    fetchPriority="high"
+                                    sizes="(min-width: 768px) 50vw, 100vw"
+                                    quality={75}
+                                />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/45 to-transparent" aria-hidden="true" />
+                            </div>
+                            <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                Le Mameshiba conserve le type du Shiba Inu dans un format plus compact.
+                            </figcaption>
+                        </figure>
                     </section>
 
                     <section className="mb-16 space-y-10">
@@ -317,26 +330,31 @@ export default function MameShibaPage() {
                                         </div>
                                     </CardHeader>
                                     <CardContent className="space-y-3 text-sm text-muted-foreground">
-                                        <div className="relative aspect-4/3 w-full overflow-hidden rounded-md mb-6 bg-black">
-                                            {isResponsiveImageAsset(item.image) ? (
-                                                <ResponsivePicture
-                                                    asset={item.image}
-                                                    alt={item.alt}
-                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                                    className="absolute inset-0 h-full w-full"
-                                                    imageClassName="h-full w-full object-cover"
-                                                />
-                                            ) : (
-                                                <Image
-                                                    src={item.image}
-                                                    alt={item.alt}
-                                                    fill
-                                                    className="object-cover"
-                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                                    quality={75}
-                                                />
-                                            )}
-                                        </div>
+                                        <figure className="mb-6 space-y-2">
+                                            <div className="relative aspect-4/3 w-full overflow-hidden rounded-md bg-black">
+                                                {isResponsiveImageAsset(item.image) ? (
+                                                    <ResponsivePicture
+                                                        asset={item.image}
+                                                        alt={item.alt}
+                                                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                        className="absolute inset-0 h-full w-full"
+                                                        imageClassName="h-full w-full object-cover"
+                                                    />
+                                                ) : (
+                                                    <Image
+                                                        src={item.image}
+                                                        alt={item.alt}
+                                                        fill
+                                                        className="object-cover"
+                                                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                        quality={75}
+                                                    />
+                                                )}
+                                            </div>
+                                            <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                                {item.caption}
+                                            </figcaption>
+                                        </figure>
                                         <div className="flex items-center gap-2">
                                             <Ruler className="h-4 w-4 text-primary" aria-hidden="true" />
                                             <span>{item.height}</span>
@@ -482,26 +500,31 @@ export default function MameShibaPage() {
                                         <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                                             {step.description}
                                         </p>
-                                        <div className="relative h-72 rounded-md overflow-hidden mt-auto">
-                                            {isResponsiveImageAsset(step.image) ? (
-                                                <ResponsivePicture
-                                                    asset={step.image}
-                                                    alt={step.alt}
-                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                                    className="absolute inset-0 h-full w-full"
-                                                    imageClassName="h-full w-full object-cover"
-                                                />
-                                            ) : (
-                                                <Image
-                                                    src={step.image}
-                                                    alt={step.alt}
-                                                    fill
-                                                    className="object-cover"
-                                                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                                    quality={75}
-                                                />
-                                            )}
-                                        </div>
+                                        <figure className="mt-auto space-y-2">
+                                            <div className="relative h-72 rounded-md overflow-hidden">
+                                                {isResponsiveImageAsset(step.image) ? (
+                                                    <ResponsivePicture
+                                                        asset={step.image}
+                                                        alt={step.alt}
+                                                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                        className="absolute inset-0 h-full w-full"
+                                                        imageClassName="h-full w-full object-cover"
+                                                    />
+                                                ) : (
+                                                    <Image
+                                                        src={step.image}
+                                                        alt={step.alt}
+                                                        fill
+                                                        className="object-cover"
+                                                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                        quality={75}
+                                                    />
+                                                )}
+                                            </div>
+                                            <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                                {step.caption}
+                                            </figcaption>
+                                        </figure>
                                     </CardContent>
                                 </Card>
                             ))}
@@ -551,15 +574,20 @@ export default function MameShibaPage() {
                                             portée au-dessus du dos. Le mouvement doit rester léger, vif et élégant.
                                         </p>
                                     </div>
-                                    <div className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
-                                        <ResponsivePicture
-                                            asset={responsiveImages.mameshibaBlancTailleStandard}
-                                            alt="Mameshiba blanc debout dans l'herbe"
-                                            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                            className="absolute inset-0 h-full w-full"
-                                            imageClassName="h-full w-full object-cover"
-                                        />
-                                    </div>
+                                    <figure className="mt-4 mx-auto w-full flex-[0_0_50%] space-y-2 lg:w-2/3">
+                                        <div className="relative min-h-64 overflow-hidden rounded-md">
+                                            <ResponsivePicture
+                                                asset={responsiveImages.mameshibaBlancTailleStandard}
+                                                alt="Mameshiba blanc debout dans l'herbe"
+                                                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                className="absolute inset-0 h-full w-full"
+                                                imageClassName="h-full w-full object-cover"
+                                            />
+                                        </div>
+                                        <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                            Un sujet bien construit doit rester équilibré, avec une silhouette compacte mais solide.
+                                        </figcaption>
+                                    </figure>
                                 </CardContent>
                             </Card>
 
@@ -579,16 +607,21 @@ export default function MameShibaPage() {
                                             Une taille minuscule obtenue au détriment de la construction n’est pas un gage de qualité.
                                         </p>
                                     </div>
-                                    <div className="relative mt-4 mx-auto w-full lg:w-2/3 flex-[0_0_50%] min-h-64 overflow-hidden rounded-md">
-                                        <Image
-                                            src="/pages/le-mame-shiba/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
-                                            alt="Mameshiba roux et blanc assis dans un jardin"
-                                            fill
-                                            className="object-cover"
-                                            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                                            quality={75}
-                                        />
-                                    </div>
+                                    <figure className="mt-4 mx-auto w-full flex-[0_0_50%] space-y-2 lg:w-2/3">
+                                        <div className="relative min-h-64 overflow-hidden rounded-md">
+                                            <Image
+                                                src="/pages/le-mame-shiba/marine-aurelie-et-clea-avec-trois-mame-shiba-de-elevage-kawaii.jpeg"
+                                                alt="Mameshiba roux et blanc assis dans un jardin"
+                                                fill
+                                                className="object-cover"
+                                                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                                quality={75}
+                                            />
+                                        </div>
+                                        <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                            Les robes et expressions doivent rester lisibles sans faire oublier l’équilibre général du chien.
+                                        </figcaption>
+                                    </figure>
                                 </CardContent>
                             </Card>
                         </div>

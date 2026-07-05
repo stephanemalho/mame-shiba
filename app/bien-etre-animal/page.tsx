@@ -97,27 +97,32 @@ export default function SejoursPage() {
             <div className="py-16">
                 <div className="container mx-auto">
                     <section className="text-center space-y-6 mb-16">
-                        <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
-                            <Image
-                                src="/locaux.webp"
-                                alt="Image d'un des espaces de vie des chiens de l'élevage"
-                                fill
-                                className="object-cover"
-                                priority
-                                fetchPriority="high"
-                                sizes="(max-width: 768px) 100vw, 70vw"
-                                quality={60}
-                            />
-                            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                                <div className="text-white text-center space-y-4">
-                                    <h1 className="text-xl md:text-3xl font-bold">La vie en élevage</h1>
-                                    <div className="flex flex-col items-center justify-center space-x-4 p-2 md:flex-row">
-                                        <Calendar className="h-5 w-5" aria-hidden="true" />
-                                        <span className="md:text-lg">Prochaine portée prévue premier semestre 2026</span>
+                        <figure className="space-y-2">
+                            <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
+                                <Image
+                                    src="/locaux.webp"
+                                    alt="Image d'un des espaces de vie des chiens de l'élevage"
+                                    fill
+                                    className="object-cover"
+                                    priority
+                                    fetchPriority="high"
+                                    sizes="(max-width: 768px) 100vw, 70vw"
+                                    quality={60}
+                                />
+                                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                                    <div className="text-white text-center space-y-4">
+                                        <h1 className="text-xl md:text-3xl font-bold">La vie en élevage</h1>
+                                        <div className="flex flex-col items-center justify-center space-x-4 p-2 md:flex-row">
+                                            <Calendar className="h-5 w-5" aria-hidden="true" />
+                                            <span className="md:text-lg">Prochaine portée prévue premier semestre 2026</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                Un aperçu des espaces de vie pensés pour préserver le calme et le confort des chiens.
+                            </figcaption>
+                        </figure>
                     </section>
                     {/* Portée Info */}
                     <section className="text-center mb-16">
@@ -158,13 +163,26 @@ export default function SejoursPage() {
                                 <div className="relative h-80 md:h-122 rounded-lg overflow-hidden">
                                     <ImageCarousel
                                         images={[
-                                            "pages/conditions-de-vie/cocom-pour-chiots-mame-shiba.webp",
-                                            "pages/conditions-de-vie/bebe-chiots-lit-douillet.webp",
-                                            "pages/conditions-de-vie/salle-ambiante-pour-chiots.webp",
+                                            {
+                                                src: "pages/conditions-de-vie/cocom-pour-chiots-mame-shiba.webp",
+                                                alt: "Cocon de repos pour les chiots Mameshiba",
+                                                caption: "Un cocon de repos aide les chiots à récupérer dans une ambiance douce et stable.",
+                                            },
+                                            {
+                                                src: "pages/conditions-de-vie/bebe-chiots-lit-douillet.webp",
+                                                alt: "Chiots Mameshiba dans un couchage douillet",
+                                                caption: "Les couchages moelleux offrent un repère rassurant pendant les premières semaines.",
+                                            },
+                                            {
+                                                src: "pages/conditions-de-vie/salle-ambiante-pour-chiots.webp",
+                                                alt: "Salle intérieure aménagée pour les chiots Mameshiba",
+                                                caption: "La nursery intérieure garde une température, une hygiène et une ambiance sonore maîtrisées.",
+                                            },
                                         ]}
                                         alt="Carrousel montrant les cocons et espaces de repos des chiots de l'élevage"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
+                                        showCaptions
                                     />
                                 </div>
                             </div>
@@ -178,19 +196,23 @@ export default function SejoursPage() {
                                             {
                                                 src: responsiveImages.petitChiotMameJoueur,
                                                 alt: "Chiot Mameshiba fauve jouant dans un espace d'éveil sécurisé",
+                                                caption: "Les jeux d’éveil sont proposés dans un cadre sécurisé, avec des objets adaptés au jeune âge du chiot.",
                                             },
                                             {
                                                 src: responsiveImages.mameshibaFauveAvecBebeDauphinPeluche,
                                                 alt: "Chiot Mameshiba fauve découvrant une peluche pendant une séance de socialisation",
+                                                caption: "Les peluches et textures nouvelles servent à construire une socialisation positive, sans surstimulation.",
                                             },
                                             {
                                                 src: responsiveImages.mameshibaChiotBlancKawaiiShiba,
                                                 alt: "Chiot Mameshiba blanc observant son environnement de jeux",
+                                                caption: "Un chiot qui observe tranquillement son environnement développe confiance et curiosité à son rythme.",
                                             },
                                         ]}
                                         alt="Carrousel d'images montrant les jeux et activités de nos chiots"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
+                                        showCaptions
                                     />
                                 </div>
                                 <div className="space-y-6 md:order-1">
@@ -236,19 +258,23 @@ export default function SejoursPage() {
                                             {
                                                 src: "/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp",
                                                 alt: "Parc extérieur clôturé de l'élevage pour les sorties quotidiennes",
+                                                caption: "Le parc clôturé permet des sorties régulières dans un espace extérieur sécurisé.",
                                             },
                                             {
                                                 src: "/pages/image-all-shiba/mameshiba-en-laisse-herbe-01.webp",
                                                 alt: "Mameshiba accompagné en longe pendant une sortie encadrée",
+                                                caption: "Les sorties en longe accompagnent les découvertes sans perdre le cadre rassurant de l’humain.",
                                             },
                                             {
                                                 src: "/pages/image-all-shiba/mameshiba-jardin-ensemble-03.webp",
                                                 alt: "Mameshiba évoluant dans un espace extérieur sécurisé de l'élevage",
+                                                caption: "Les adultes et les jeunes chiens profitent d’espaces variés pour entretenir leur équilibre.",
                                             },
                                         ]}
                                         alt="Carrousel d images de chiots et d adultes jouant en plein air sous encadrement"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
+                                        showCaptions
                                     />
                                 </div>
                             </div>
@@ -262,15 +288,18 @@ export default function SejoursPage() {
                                             {
                                                 src: "/pages/conditions-de-vie/nourrite-des-chiots-marque.webp",
                                                 alt: "Alimentation remise au départ pour accompagner la transition du chiot",
+                                                caption: "Le kit alimentaire accompagne le départ du chiot et limite les changements brusques.",
                                             },
                                             {
                                                 src: "/pages/image-all-shiba/mameshiba-interieur-textile-01.webp",
                                                 alt: "Mameshiba au calme dans un environnement intérieur soigné",
+                                                caption: "Les temps calmes en intérieur complètent les jeux, les sorties et les apprentissages.",
                                             },
                                         ]}
                                         alt="Carrousel d'images de l'alimentation et les soins des chiots et des chiens adultes reproducteurs"
                                         sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 45vw"
                                         quality={60}
+                                        showCaptions
                                     />
                                 </div>
                                 <div className="space-y-6 md:order-1">

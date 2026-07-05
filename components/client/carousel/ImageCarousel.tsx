@@ -12,6 +12,7 @@ import {
 type CarouselImage = {
     src: string | ResponsiveImageAsset
     alt: string
+    caption?: string
 }
 
 type CarouselImageInput = string | ResponsiveImageAsset | CarouselImage
@@ -24,6 +25,7 @@ type ImageCarouselProps = {
     quality?: number
     fit?: "cover" | "contain"
     containerClassName?: string
+    showCaptions?: boolean
 }
 
 function responsiveSrcSet(sources: ResponsiveImageSources) {
@@ -38,6 +40,7 @@ function ImageCarousel({
     quality = 70,
     fit = "cover",
     containerClassName,
+    showCaptions = false,
 }: ImageCarouselProps) {
     const [index, setIndex] = useState(0)
     const resolvedImages = images.map((image) => (
@@ -55,7 +58,7 @@ function ImageCarousel({
     const next = () => setIndex((i) => (i + 1) % total)
 
     return (
-        <div className={cn("relative h-72 md:h-full overflow-hidden rounded-lg bg-card/40 mx-4", fit === "contain" && "bg-muted/50", containerClassName)}>
+        <figure className={cn("relative h-72 md:h-full overflow-hidden rounded-lg bg-card/40 mx-4", fit === "contain" && "bg-muted/50", containerClassName)}>
             {isResponsiveImageAsset(currentImage.src) ? (
                 <picture className="absolute inset-0 block h-full w-full">
                     <source type="image/webp" srcSet={responsiveSrcSet(currentImage.src.webp)} sizes={resolvedSizes} />
@@ -93,6 +96,11 @@ function ImageCarousel({
             <div className="absolute top-3 right-3 text-xs px-3 py-1 rounded-full bg-black/60 text-white">
                 {index + 1}/{total}
             </div>
+            {showCaptions ? (
+                <figcaption className="pointer-events-none absolute bottom-10 left-4 right-4 rounded-md bg-black/55 px-3 py-2 text-left text-xs leading-snug text-white shadow-sm backdrop-blur-sm">
+                    {currentImage.caption ?? currentImage.alt}
+                </figcaption>
+            ) : null}
             {!isOneImage && (
                 <>
                     <button
@@ -119,7 +127,7 @@ function ImageCarousel({
                     />
                 ))}
             </div>
-        </div>
+        </figure>
     )
 }
 

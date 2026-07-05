@@ -147,7 +147,8 @@ export const puppies: Puppy[] = [
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     },
     {
         name: "KENSHI",
@@ -261,7 +262,8 @@ export const puppies: Puppy[] = [
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     },
     {
         name: "KENSHIRO",
@@ -460,7 +462,8 @@ export const puppies: Puppy[] = [
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     },
     {
         name: "YUKI",
@@ -567,7 +570,8 @@ export const puppies: Puppy[] = [
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     },
     {
         name: "YOSHI",
@@ -603,6 +607,7 @@ export const puppies: Puppy[] = [
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     }
 ];

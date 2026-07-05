@@ -333,17 +333,22 @@ export default function AdoptionGuidePage() {
                         </div>
 
                         <div className="grid gap-4">
-                            <div className="relative min-h-70 overflow-hidden rounded-2xl">
-                                <ResponsivePicture
-                                    asset={adoptionGuideImage}
-                                    alt="Chiot Mameshiba fauve dans un espace de jeux sécurisé"
-                                    sizes="(min-width: 768px) 40vw, 100vw"
-                                    className="absolute inset-0 h-full w-full"
-                                    imageClassName="h-full w-full object-cover"
-                                    loading="eager"
-                                    fetchPriority="high"
-                                />
-                            </div>
+                            <figure className="space-y-2">
+                                <div className="relative min-h-70 overflow-hidden rounded-2xl">
+                                    <ResponsivePicture
+                                        asset={adoptionGuideImage}
+                                        alt="Chiot Mameshiba fauve dans un espace de jeux sécurisé"
+                                        sizes="(min-width: 768px) 40vw, 100vw"
+                                        className="absolute inset-0 h-full w-full"
+                                        imageClassName="h-full w-full object-cover"
+                                        loading="eager"
+                                        fetchPriority="high"
+                                    />
+                                </div>
+                                <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                    Un chiot Mameshiba découvre son espace de jeux, avec des repères simples pour rester détendu.
+                                </figcaption>
+                            </figure>
                             <div className="rounded-2xl border border-primary/20 bg-background/85 p-5">
                                 <div className="flex items-start gap-3">
                                     <HeartHandshake className="mt-1 min-h-5 min-w-5 text-primary" />
@@ -359,15 +364,20 @@ export default function AdoptionGuidePage() {
                     </section>
 
                     <section className="grid gap-8 md:grid-cols-[0.95fr_1.05fr] md:items-center">
-                        <div className="relative min-h-112 overflow-hidden rounded-3xl">
-                            <Image
-                                src="/pages/adoption/waru-mame-shiba-kawaii-shiba-portrait.webp"
-                                alt="Chiot Mameshiba calme pendant ses premières découvertes"
-                                fill
-                                className="object-cover"
-                                sizes="(min-width: 768px) 45vw, 100vw"
-                            />
-                        </div>
+                        <figure className="space-y-2">
+                            <div className="relative min-h-112 overflow-hidden rounded-3xl">
+                                <Image
+                                    src="/pages/adoption/waru-mame-shiba-kawaii-shiba-portrait.webp"
+                                    alt="Chiot Mameshiba calme pendant ses premières découvertes"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(min-width: 768px) 45vw, 100vw"
+                                />
+                            </div>
+                            <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                Un jeune Mameshiba calme et attentif pendant ses premières découvertes dans un nouvel environnement.
+                            </figcaption>
+                        </figure>
                         <div className="space-y-6">
                             <div className="space-y-3">
                                 <Badge variant="secondary" className="w-fit">
@@ -448,8 +458,8 @@ export default function AdoptionGuidePage() {
                                     sizes="(min-width: 768px) 40vw, 100vw"
                                 />
                             </div>
-                            <figcaption className="text-sm text-muted-foreground">
-                                Kaito à 7 mois à l&apos;arrivée à son hôtel
+                            <figcaption className="text-xs leading-relaxed text-muted-foreground">
+                                Kaito à 7 mois, reste en forme même apres un long trajet.
                             </figcaption>
                         </figure>
                         <div className="space-y-4">
@@ -588,8 +598,8 @@ export default function AdoptionGuidePage() {
                                         sizes="(min-width: 768px) 40vw, 100vw"
                                     />
                                 </div>
-                                <figcaption className="mt-3 text-sm text-muted-foreground">
-                                    Kaito à 7 mois, il adore dormir en voiture
+                                <figcaption className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                                    Kaito à 7 mois, dors tranquillement pendant un trajet en voiture.
                                 </figcaption>
                             </figure>
                         </div>
