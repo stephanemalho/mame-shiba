@@ -64,6 +64,30 @@ export const responsiveImages = {
         1200,
         800
     ),
+    mameshibaMarronJouantAvecDesSceaux: responsiveImageAsset(
+        "/pages/adoption/mameshiba-marron-jouant-avec-des-sceaux",
+        "mameshiba-marron-jouant-avec-des-sceaux",
+        1200,
+        800
+    ),
+    petitChiotMameJoueur: responsiveImageAsset(
+        "/pages/conditions-de-vie/petit-chiot-mame-joueur",
+        "petit-chiot-mame-joueur",
+        1200,
+        800
+    ),
+    mameshibaChiotBlancKawaiiShiba: responsiveImageAsset(
+        "/pages/conditions-de-vie/mameshba-chiot-blanc-de-kawai-shiba",
+        "mameshba-chiot-blanc-de-kawai-shiba",
+        1200,
+        800
+    ),
+    mameshibaFauveAvecBebeDauphinPeluche: responsiveImageAsset(
+        "/pages/conditions-de-vie/mameshiba-fauve-avec-bebe-dauphin-peluche",
+        "mameshiba-fauve-avec-bebe-dauphin-peluche",
+        1200,
+        800
+    ),
 } as const;
 
 export function isResponsiveImageAsset(image: unknown): image is ResponsiveImageAsset {

@@ -1,0 +1,84 @@
+{
+  "source": {
+    "width": 2048,
+    "height": 1366,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 320
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 512
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 800
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "filename": "mameshiba-marron-jouant-avec-des-sceaux-mobile.webp",
+      "relativePath": "webp/mameshiba-marron-jouant-avec-des-sceaux-mobile.webp",
+      "width": 480,
+      "height": 320,
+      "size": 17358
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "filename": "mameshiba-marron-jouant-avec-des-sceaux-tablet.webp",
+      "relativePath": "webp/mameshiba-marron-jouant-avec-des-sceaux-tablet.webp",
+      "width": 768,
+      "height": 512,
+      "size": 33304
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "filename": "mameshiba-marron-jouant-avec-des-sceaux-desktop.webp",
+      "relativePath": "webp/mameshiba-marron-jouant-avec-des-sceaux-desktop.webp",
+      "width": 1200,
+      "height": 800,
+      "size": 65058
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "filename": "mameshiba-marron-jouant-avec-des-sceaux-mobile.jpeg",
+      "relativePath": "jpeg/mameshiba-marron-jouant-avec-des-sceaux-mobile.jpeg",
+      "width": 480,
+      "height": 320,
+      "size": 27802
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "filename": "mameshiba-marron-jouant-avec-des-sceaux-tablet.jpeg",
+      "relativePath": "jpeg/mameshiba-marron-jouant-avec-des-sceaux-tablet.jpeg",
+      "width": 768,
+      "height": 512,
+      "size": 57581
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "filename": "mameshiba-marron-jouant-avec-des-sceaux-desktop.jpeg",
+      "relativePath": "jpeg/mameshiba-marron-jouant-avec-des-sceaux-desktop.jpeg",
+      "width": 1200,
+      "height": 800,
+      "size": 114859
+    }
+  ],
+  "warnings": []
+}

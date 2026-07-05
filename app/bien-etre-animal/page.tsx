@@ -9,6 +9,7 @@ import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
+import { responsiveImages } from "@/lib/responsive-images"
 import Link from "next/link"
 import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 
@@ -175,16 +176,16 @@ export default function SejoursPage() {
                                     <ImageCarousel
                                         images={[
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-sur-structure-bois-01.webp",
-                                                alt: "Mameshiba en découverte sur une structure en bois",
+                                                src: responsiveImages.petitChiotMameJoueur,
+                                                alt: "Chiot Mameshiba fauve jouant dans un espace d'éveil sécurisé",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-parmi-les-branches.webp",
-                                                alt: "Mameshiba observant son environnement pendant une phase de découverte",
+                                                src: responsiveImages.mameshibaFauveAvecBebeDauphinPeluche,
+                                                alt: "Chiot Mameshiba fauve découvrant une peluche pendant une séance de socialisation",
                                             },
                                             {
-                                                src: "/pages/image-all-shiba/mameshiba-jardin-course-02.webp",
-                                                alt: "Mameshiba en mouvement pendant une séance de jeux d'éveil",
+                                                src: responsiveImages.mameshibaChiotBlancKawaiiShiba,
+                                                alt: "Chiot Mameshiba blanc observant son environnement de jeux",
                                             },
                                         ]}
                                         alt="Carrousel d'images montrant les jeux et activités de nos chiots"

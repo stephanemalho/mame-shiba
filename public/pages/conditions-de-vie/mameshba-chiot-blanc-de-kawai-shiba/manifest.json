@@ -1,0 +1,84 @@
+{
+  "source": {
+    "width": 2048,
+    "height": 1366,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 320
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 512
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 800
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "filename": "mameshba-chiot-blanc-de-kawai-shiba-mobile.webp",
+      "relativePath": "webp/mameshba-chiot-blanc-de-kawai-shiba-mobile.webp",
+      "width": 480,
+      "height": 320,
+      "size": 11488
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "filename": "mameshba-chiot-blanc-de-kawai-shiba-tablet.webp",
+      "relativePath": "webp/mameshba-chiot-blanc-de-kawai-shiba-tablet.webp",
+      "width": 768,
+      "height": 512,
+      "size": 22244
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "filename": "mameshba-chiot-blanc-de-kawai-shiba-desktop.webp",
+      "relativePath": "webp/mameshba-chiot-blanc-de-kawai-shiba-desktop.webp",
+      "width": 1200,
+      "height": 800,
+      "size": 42492
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "filename": "mameshba-chiot-blanc-de-kawai-shiba-mobile.jpeg",
+      "relativePath": "jpeg/mameshba-chiot-blanc-de-kawai-shiba-mobile.jpeg",
+      "width": 480,
+      "height": 320,
+      "size": 20624
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "filename": "mameshba-chiot-blanc-de-kawai-shiba-tablet.jpeg",
+      "relativePath": "jpeg/mameshba-chiot-blanc-de-kawai-shiba-tablet.jpeg",
+      "width": 768,
+      "height": 512,
+      "size": 41995
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "filename": "mameshba-chiot-blanc-de-kawai-shiba-desktop.jpeg",
+      "relativePath": "jpeg/mameshba-chiot-blanc-de-kawai-shiba-desktop.jpeg",
+      "width": 1200,
+      "height": 800,
+      "size": 84311
+    }
+  ],
+  "warnings": []
+}

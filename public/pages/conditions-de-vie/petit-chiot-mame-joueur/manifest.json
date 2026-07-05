@@ -1,0 +1,84 @@
+{
+  "source": {
+    "width": 2048,
+    "height": 1366,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 320
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 512
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 800
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "filename": "petit-chiot-mame-joueur-mobile.webp",
+      "relativePath": "webp/petit-chiot-mame-joueur-mobile.webp",
+      "width": 480,
+      "height": 320,
+      "size": 17102
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "filename": "petit-chiot-mame-joueur-tablet.webp",
+      "relativePath": "webp/petit-chiot-mame-joueur-tablet.webp",
+      "width": 768,
+      "height": 512,
+      "size": 34210
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "filename": "petit-chiot-mame-joueur-desktop.webp",
+      "relativePath": "webp/petit-chiot-mame-joueur-desktop.webp",
+      "width": 1200,
+      "height": 800,
+      "size": 64522
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "filename": "petit-chiot-mame-joueur-mobile.jpeg",
+      "relativePath": "jpeg/petit-chiot-mame-joueur-mobile.jpeg",
+      "width": 480,
+      "height": 320,
+      "size": 27229
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "filename": "petit-chiot-mame-joueur-tablet.jpeg",
+      "relativePath": "jpeg/petit-chiot-mame-joueur-tablet.jpeg",
+      "width": 768,
+      "height": 512,
+      "size": 57651
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "filename": "petit-chiot-mame-joueur-desktop.jpeg",
+      "relativePath": "jpeg/petit-chiot-mame-joueur-desktop.jpeg",
+      "width": 1200,
+      "height": 800,
+      "size": 115717
+    }
+  ],
+  "warnings": []
+}

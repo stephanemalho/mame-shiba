@@ -1,0 +1,84 @@
+{
+  "source": {
+    "width": 2048,
+    "height": 1366,
+    "format": "jpeg"
+  },
+  "presets": [
+    {
+      "label": "mobile",
+      "requestedWidth": 480,
+      "outputWidth": 480,
+      "outputHeight": 320
+    },
+    {
+      "label": "tablet",
+      "requestedWidth": 768,
+      "outputWidth": 768,
+      "outputHeight": 512
+    },
+    {
+      "label": "desktop",
+      "requestedWidth": 1200,
+      "outputWidth": 1200,
+      "outputHeight": 800
+    }
+  ],
+  "files": [
+    {
+      "format": "webp",
+      "preset": "mobile",
+      "filename": "mameshiba-fauve-avec-bebe-dauphin-peluche-mobile.webp",
+      "relativePath": "webp/mameshiba-fauve-avec-bebe-dauphin-peluche-mobile.webp",
+      "width": 480,
+      "height": 320,
+      "size": 16914
+    },
+    {
+      "format": "webp",
+      "preset": "tablet",
+      "filename": "mameshiba-fauve-avec-bebe-dauphin-peluche-tablet.webp",
+      "relativePath": "webp/mameshiba-fauve-avec-bebe-dauphin-peluche-tablet.webp",
+      "width": 768,
+      "height": 512,
+      "size": 33398
+    },
+    {
+      "format": "webp",
+      "preset": "desktop",
+      "filename": "mameshiba-fauve-avec-bebe-dauphin-peluche-desktop.webp",
+      "relativePath": "webp/mameshiba-fauve-avec-bebe-dauphin-peluche-desktop.webp",
+      "width": 1200,
+      "height": 800,
+      "size": 63714
+    },
+    {
+      "format": "jpeg",
+      "preset": "mobile",
+      "filename": "mameshiba-fauve-avec-bebe-dauphin-peluche-mobile.jpeg",
+      "relativePath": "jpeg/mameshiba-fauve-avec-bebe-dauphin-peluche-mobile.jpeg",
+      "width": 480,
+      "height": 320,
+      "size": 27300
+    },
+    {
+      "format": "jpeg",
+      "preset": "tablet",
+      "filename": "mameshiba-fauve-avec-bebe-dauphin-peluche-tablet.jpeg",
+      "relativePath": "jpeg/mameshiba-fauve-avec-bebe-dauphin-peluche-tablet.jpeg",
+      "width": 768,
+      "height": 512,
+      "size": 56882
+    },
+    {
+      "format": "jpeg",
+      "preset": "desktop",
+      "filename": "mameshiba-fauve-avec-bebe-dauphin-peluche-desktop.jpeg",
+      "relativePath": "jpeg/mameshiba-fauve-avec-bebe-dauphin-peluche-desktop.jpeg",
+      "width": 1200,
+      "height": 800,
+      "size": 113167
+    }
+  ],
+  "warnings": []
+}

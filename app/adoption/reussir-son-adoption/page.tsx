@@ -18,13 +18,15 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { FAQSection } from "@/components/faq"
+import { ResponsivePicture } from "@/components/responsive-picture"
 import { filterBlogLinks } from "@/lib/blog-visibility"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
 import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
 import { responsiveImages } from "@/lib/responsive-images"
 
-const pageImage = "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg"
+const adoptionGuideImage = responsiveImages.mameshibaMarronJouantAvecDesSceaux
+const pageImage = adoptionGuideImage.metadata.src
 
 export const metadata: Metadata = {
     title: pageMetadata.adoptionGuide.title,
@@ -37,9 +39,9 @@ export const metadata: Metadata = {
         images: [
             {
                 url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot Mameshiba prêt pour une adoption en douceur",
-                width: siteConfig.ogImageWidth,
-                height: siteConfig.ogImageHeight,
+                alt: "Chiot Mameshiba fauve dans un espace de jeux",
+                width: adoptionGuideImage.metadata.width,
+                height: adoptionGuideImage.metadata.height,
                 type: "image/jpeg",
             },
         ],
@@ -332,14 +334,14 @@ export default function AdoptionGuidePage() {
 
                         <div className="grid gap-4">
                             <div className="relative min-h-70 overflow-hidden rounded-2xl">
-                                <Image
-                                    src={pageImage}
-                                    alt="Chiot Mameshiba prêt pour une arrivée douce dans sa nouvelle famille"
-                                    fill
-                                    className="object-cover"
-                                    priority
-                                    fetchPriority="high"
+                                <ResponsivePicture
+                                    asset={adoptionGuideImage}
+                                    alt="Chiot Mameshiba fauve dans un espace de jeux sécurisé"
                                     sizes="(min-width: 768px) 40vw, 100vw"
+                                    className="absolute inset-0 h-full w-full"
+                                    imageClassName="h-full w-full object-cover"
+                                    loading="eager"
+                                    fetchPriority="high"
                                 />
                             </div>
                             <div className="rounded-2xl border border-primary/20 bg-background/85 p-5">
