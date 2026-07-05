@@ -581,19 +581,19 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-06-27"
+        lastmod: "2026-07-06"
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.95,
-        lastmod: "2026-06-23"
+        lastmod: "2026-07-06"
     },
     {
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.9,
-        lastmod: "2026-06-27"
+        lastmod: "2026-07-06"
     },
     {
         url: "/nos-chiens",
@@ -605,7 +605,7 @@ export const sitemapPages = [
         url: "/adoption/reussir-son-adoption",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-05-16"
+        lastmod: "2026-07-06"
     },
     {
         url: "/mame-shiba-prix",
@@ -629,7 +629,7 @@ export const sitemapPages = [
         url: "/bien-etre-animal",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: seoLastmod
+        lastmod: "2026-07-06"
     },
     {
         url: "/contact",
