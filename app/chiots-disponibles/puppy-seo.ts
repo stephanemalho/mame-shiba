@@ -61,19 +61,29 @@ export function getPuppyWebpImageSrc(image: Puppy["images"][number]) {
 }
 
 export function getPuppySocialImageSrc(puppy: Puppy) {
-    return puppy.images[0] ? (getPuppyJpegImageSrc(puppy.images[0]) ?? getPuppySourceImageSrc(puppy.images[0])) : undefined
+    return getPuppyPrimarySeoImageSrc(puppy)
 }
 
 export function getPuppySeoImageSources(image: Puppy["images"][number]) {
     const jpegImage = getPuppyJpegImageSrc(image)
-    const webpImage = getPuppyWebpImageSrc(image)
-    const avifImage = getPuppyAvifImageSrc(image)
 
     return Array.from(new Set([
-        ...(jpegImage ? [jpegImage] : []),
-        ...(webpImage ? [webpImage] : []),
-        ...(avifImage ? [avifImage] : []),
+        jpegImage ?? getPuppySourceImageSrc(image),
     ]))
+}
+
+export function getPuppyPrimarySeoImageSrc(puppy: Puppy) {
+    const image = puppy.thumbnailImage ?? puppy.images[0]
+
+    return image ? (getPuppyJpegImageSrc(image) ?? getPuppySourceImageSrc(image)) : undefined
+}
+
+export function getPuppyListSeoImageSources(puppies: Puppy[], limit = 12) {
+    return Array.from(new Set(
+        puppies
+            .map((puppy) => getPuppyPrimarySeoImageSrc(puppy))
+            .filter((imageSrc): imageSrc is string => Boolean(imageSrc))
+    )).slice(0, limit)
 }
 
 export function getPuppyStatus(puppy: Puppy) {
@@ -202,6 +212,46 @@ export function buildPuppyItemListStructuredData(puppies: Puppy[]) {
             position: index + 1,
             url: getAbsolutePuppyUrl(puppy),
             name: `${puppy.name} - chiot Mameshiba`,
+            item: {
+                "@type": "Product",
+                "@id": `${getAbsolutePuppyUrl(puppy)}#product`,
+                name: `${puppy.name} - chiot Mameshiba ${puppy.color}`,
+                description: puppy.description,
+                url: getAbsolutePuppyUrl(puppy),
+                image: getPuppyListSeoImageSources([puppy], 1).map((source) => `${siteConfig.siteUrl}${source}`),
+                category: "Chiot Mameshiba",
+                brand: {
+                    "@type": "Brand",
+                    name: "Mameshiba",
+                },
+            },
         })),
+    }
+}
+
+export function buildPuppyCollectionPageStructuredData(puppies: Puppy[]) {
+    const imageUrls = getPuppyListSeoImageSources(puppies).map((source) => `${siteConfig.siteUrl}${source}`)
+
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": `${siteConfig.siteUrl}/chiots-disponibles#webpage`,
+        name: "Chiots Mameshiba disponibles à l'adoption",
+        description: "Liste des chiots Mameshiba disponibles ou réservés à l'élevage Kawaii Shiba.",
+        url: `${siteConfig.siteUrl}/chiots-disponibles`,
+        inLanguage: "fr-FR",
+        ...(imageUrls.length > 0 ? {
+            primaryImageOfPage: imageUrls[0],
+            image: imageUrls,
+        } : {}),
+        mainEntity: {
+            "@id": `${siteConfig.siteUrl}/chiots-disponibles#puppy-list`,
+        },
+        isPartOf: {
+            "@id": `${siteConfig.siteUrl}#website`,
+        },
+        publisher: {
+            "@id": `${siteConfig.siteUrl}#organization`,
+        },
     }
 }

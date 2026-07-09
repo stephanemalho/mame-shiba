@@ -1,6 +1,41 @@
 // Générateurs de schémas JSON-LD pour SEO structuré
 import { siteConfig } from "./seo-config";
 
+type StructuredImageInput =
+    | string
+    | {
+          url: string;
+          name?: string;
+          caption?: string;
+          width?: number;
+          height?: number;
+          encodingFormat?: string;
+      };
+
+function toAbsoluteUrl(urlOrPath: string) {
+    return new URL(urlOrPath, siteConfig.siteUrl).toString();
+}
+
+function toStructuredImage(image: StructuredImageInput) {
+    if (typeof image === "string") {
+        return toAbsoluteUrl(image);
+    }
+
+    return {
+        "@type": "ImageObject",
+        url: toAbsoluteUrl(image.url),
+        ...(image.name ? { name: image.name } : {}),
+        ...(image.caption ? { caption: image.caption } : {}),
+        ...(image.width ? { width: image.width } : {}),
+        ...(image.height ? { height: image.height } : {}),
+        ...(image.encodingFormat ? { encodingFormat: image.encodingFormat } : {})
+    };
+}
+
+function getStructuredImages(images?: StructuredImageInput[]) {
+    return images?.map(toStructuredImage).filter(Boolean) ?? [];
+}
+
 /**
  * Schéma Organization pour l'élevage Kawaii Shiba
  * Utilisé notamment sur la page d'accueil
@@ -42,7 +77,7 @@ export function generateOrganizationSchema() {
             "@type": "ImageObject",
             url: `${siteConfig.siteUrl}/icon.png`
         },
-        image: [`${siteConfig.siteUrl}${siteConfig.ogImage}`],
+        image: [toAbsoluteUrl(siteConfig.ogImage)],
         description: siteConfig.description,
         email: `mailto:${siteConfig.contact.email}`,
         telephone: siteConfig.contact.phone,
@@ -102,7 +137,7 @@ export function generateLocalBusinessSchema() {
         description: siteConfig.description,
         email: siteConfig.contact.email,
         telephone: siteConfig.contact.phone,
-        image: [`${siteConfig.siteUrl}${siteConfig.ogImage}`],
+        image: [toAbsoluteUrl(siteConfig.ogImage)],
         logo: `${siteConfig.siteUrl}/icon.png`,
         foundingDate: legal.foundingDate,
         sameAs: Object.values(siteConfig.socialLinks ?? {}).filter(Boolean),
@@ -311,7 +346,7 @@ export function generateBreadcrumbSchema(
             "@type": "ListItem",
             position: index + 1,
             name: crumb.name,
-            item: `${siteConfig.siteUrl}${crumb.url}`
+            item: toAbsoluteUrl(crumb.url)
         }))
     };
 }
@@ -338,14 +373,53 @@ export function generateCollectionPageSchema(params: {
     name: string;
     description: string;
     url: string;
+    images?: StructuredImageInput[];
 }) {
+    const images = getStructuredImages(params.images);
+
     return {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         name: params.name,
         description: params.description,
-        url: params.url,
+        url: toAbsoluteUrl(params.url),
         inLanguage: "fr-FR",
+        ...(images.length > 0
+            ? {
+                  primaryImageOfPage: images[0],
+                  image: images
+              }
+            : {}),
+        isPartOf: {
+            "@id": `${siteConfig.siteUrl}#website`
+        },
+        publisher: {
+            "@id": `${siteConfig.siteUrl}#organization`
+        }
+    };
+}
+
+export function generateWebPageSchema(params: {
+    name: string;
+    description: string;
+    url: string;
+    images?: StructuredImageInput[];
+}) {
+    const images = getStructuredImages(params.images);
+
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: params.name,
+        description: params.description,
+        url: toAbsoluteUrl(params.url),
+        inLanguage: "fr-FR",
+        ...(images.length > 0
+            ? {
+                  primaryImageOfPage: images[0],
+                  image: images
+              }
+            : {}),
         isPartOf: {
             "@id": `${siteConfig.siteUrl}#website`
         },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import BlogList from "@/app/blog/_components/BlogList";
+import { blog } from "@/constants/blog/blog";
 import { isBlogEnabled } from "@/lib/blog-visibility";
 import { buildOpenGraph, buildTwitter, pageMetadata, siteConfig } from "@/lib/seo-config";
 import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema-generators";
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
                 alt: siteConfig.ogImageAlt,
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
-                type: "image/webp",
+                type: "image/jpeg",
             },
         ],
     }),
@@ -48,6 +49,14 @@ export default function MameShibaBlogPage() {
         name: pageMetadata.blog.title,
         description: pageMetadata.blog.description,
         url: new URL("/blog/mame-shiba", siteConfig.siteUrl).toString(),
+        images: blog.posts
+            .filter((post) => post.slug.startsWith("mame-shiba/") && post.image)
+            .slice(0, 6)
+            .map((post) => ({
+                url: post.image ?? siteConfig.ogImage,
+                name: post.imageAlt ?? post.title,
+                encodingFormat: post.image?.endsWith(".webp") ? "image/webp" : "image/jpeg",
+            })),
     });
 
     return (

@@ -7,7 +7,7 @@ import { FAQSection } from "@/components/faq"
 import { InternalLinksSection, type InternalLinkItem } from "@/components/InternalLinksSection"
 import { filterBlogLinks, isBlogEnabled } from "@/lib/blog-visibility"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { faqEleveuses } from "@/lib/faq-data"
 
@@ -114,6 +114,28 @@ export default function PresentationEleveusesPage() {
             className: "col-span-3 md:col-span-3 row-span-3",
         }
     ]
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.eleveuses.title,
+        description: pageMetadata.eleveuses.description,
+        url: siteConfig.pages.eleveuses,
+        images: [
+            {
+                url: pageImage,
+                name: "L'équipe Kawaii Shiba avec des Mameshiba",
+                encodingFormat: "image/jpeg",
+            },
+            {
+                url: aurelieGallery[1].src,
+                name: aurelieGallery[1].alt,
+                encodingFormat: "image/jpeg",
+            },
+            {
+                url: marineGallery[0].src,
+                name: marineGallery[0].alt,
+                encodingFormat: "image/jpeg",
+            },
+        ],
+    })
 
     const aurelieHighlights = [
         "Lecture du comportement",
@@ -139,6 +161,10 @@ export default function PresentationEleveusesPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

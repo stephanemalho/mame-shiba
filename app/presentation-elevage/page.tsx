@@ -8,7 +8,7 @@ import { InternalLinksSection, type InternalLinkItem } from "@/components/Intern
 import { faqPresentation } from "@/lib/faq-data"
 import { ArrowUpRight, Heart, Leaf, PawPrint, Star, Users } from "lucide-react"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 
 const pageImage = "/pages/homePage/mame-shiba-good-caractere.jpg"
@@ -86,6 +86,28 @@ export default function PresentationPage() {
         { name: "Accueil", url: "/" },
         { name: "Présentation", url: siteConfig.pages.presentation },
     ])
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.presentation.title,
+        description: pageMetadata.presentation.description,
+        url: siteConfig.pages.presentation,
+        images: [
+            {
+                url: "/pages/image-all-shiba/jardin-cloture-elevage-horizontal.webp",
+                name: "Jardin clôturé de l'élevage Kawaii Shiba",
+                encodingFormat: "image/webp",
+            },
+            {
+                url: "/pages/image-all-shiba/mameshiba-parmi-les-branches.webp",
+                name: "Mameshiba dans l'environnement de l'élevage",
+                encodingFormat: "image/webp",
+            },
+            {
+                url: "/pages/image-all-shiba/mameshiba-jardin-01.webp",
+                name: "Mameshiba dans le jardin",
+                encodingFormat: "image/webp",
+            },
+        ],
+    })
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqPresentation))
     const lastMod = returnLastmod(siteConfig.pages.presentation)
 
@@ -94,6 +116,10 @@ export default function PresentationPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

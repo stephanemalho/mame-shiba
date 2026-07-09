@@ -179,9 +179,9 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: puppyImages("KENSHI", [
-            "shiba-mameshiba-kenshi-1.webp",
-            "shiba-mameshiba-kenshi-2.webp",
-            "shiba-mameshiba-kenshi-3.webp"
+            "shiba-mameshiba-kenshi-1.jpeg",
+            "shiba-mameshiba-kenshi-2.jpeg",
+            "shiba-mameshiba-kenshi-3.jpeg"
         ]),
         linkTo: yumiNatsuFormUrl,
         isReserved: true,
@@ -273,7 +273,7 @@ export const puppies: Puppy[] = [
     {
         name: "KENSHIRO",
         coat: "Mameshiba",
-        color: "Fauve",
+        color: "Blanc",
         sexe: "Mâle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
@@ -285,10 +285,10 @@ export const puppies: Puppy[] = [
         availableFrom: karasukiAvailableDateIso,
         updatedAt: "2026-07-09",
         description:
-            "Kenshiro est un mâle Mameshiba fauve issu de Karasuki et Waru. Son évolution est suivie à l'élevage afin de confirmer son gabarit, son tempérament et son type.",
+            "Kenshiro est un mâle Mameshiba blanc issu de Karasuki et Waru. Son évolution est suivie à l'élevage afin de confirmer son gabarit, son tempérament et son type.",
         highlights: [
             "Mâle",
-            "Fauve",
+            "Blanc",
             "Portée Karasuki & Waru",
             "Lignée japonaise"
         ],
@@ -312,7 +312,7 @@ export const puppies: Puppy[] = [
     {
         name: "MITSUKI",
         coat: "Mameshiba",
-        color: "Fauve",
+        color: "Feu",
         sexe: "Femelle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
@@ -324,10 +324,10 @@ export const puppies: Puppy[] = [
         availableFrom: karasukiAvailableDateIso,
         updatedAt: "2026-05-29",
         description:
-            "Mitsuki est une femelle Mameshiba fauve de la portée Karasuki et Waru. Elle possède un pédigrée Kennel Club of Japan et nous suivons son développement avec attention. Mitsuki est actuellement réservée.",
+            "Mitsuki est une femelle Mameshiba feu de la portée Karasuki et Waru. Elle possède un pédigrée Kennel Club of Japan et nous suivons son développement avec attention. Mitsuki est actuellement réservée.",
         highlights: [
             "Femelle",
-            "Fauve",
+            "Feu",
             "Réservée",
             "Pédigrée KCJ"
         ],
@@ -347,7 +347,7 @@ export const puppies: Puppy[] = [
     {
         name: "Airisu",
         coat: "Mameshiba",
-        color: "Fauve",
+        color: "Blanc",
         sexe: "Femelle",
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
@@ -359,10 +359,10 @@ export const puppies: Puppy[] = [
         availableFrom: karasukiAvailableDateIso,
         updatedAt: "2026-05-29",
         description:
-            "Airisu est une femelle Mameshiba fauve issue de Karasuki et Waru. Son profil sera précisé au fil des prochaines semaines avec de nouvelles photos, vidéos et observations. Airisu est actuellement réservée.",
+            "Airisu est une femelle Mameshiba blanche issue de Karasuki et Waru. Son profil sera précisé au fil des prochaines semaines avec de nouvelles photos, vidéos et observations. Airisu est actuellement réservée.",
         highlights: [
             "Femelle",
-            "Fauve",
+            "Blanc",
             "Réservée",
             "Portée Karasuki & Waru"
         ],

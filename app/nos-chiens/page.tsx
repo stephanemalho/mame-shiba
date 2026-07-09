@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { FAQSection } from "@/components/faq"
 import { faqReproducteurs } from "@/lib/faq-data"
 import { Dog, PawPrint, Ruler, ShieldCheck } from "lucide-react"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateCollectionPageSchema, generateFAQSchema } from "@/lib/schema-generators"
 import ImageCarousel from "@/components/client/carousel/ImageCarousel"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
@@ -80,6 +80,20 @@ export default function NosChiensPage() {
         { name: "Accueil", url: "/" },
         { name: "Nos chiens", url: siteConfig.pages.reproductors },
     ])
+    const collectionSchema = generateCollectionPageSchema({
+        name: pageMetadata.reproductors.title,
+        description: pageMetadata.reproductors.description,
+        url: siteConfig.pages.reproductors,
+        images: dogs
+            .map((dog) => dog.images[0])
+            .filter((image): image is NonNullable<typeof image> => Boolean(image))
+            .slice(0, 8)
+            .map((image) => ({
+                url: image.src,
+                name: image.alt,
+                encodingFormat: image.src.endsWith(".webp") ? "image/webp" : "image/jpeg",
+            })),
+    })
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqReproducteurs))
     const lastMod = returnLastmod(siteConfig.pages.reproductors)
 
@@ -88,6 +102,10 @@ export default function NosChiensPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
             />
             <script
                 type="application/ld+json"

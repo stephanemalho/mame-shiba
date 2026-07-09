@@ -19,8 +19,10 @@ import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-genera
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { puppies } from "./puppies"
 import {
+    buildPuppyCollectionPageStructuredData,
     buildPuppyItemListStructuredData,
     formatPuppyPrice,
+    getPuppyListSeoImageSources,
     getPuppyStatus,
     getPuppyStatusLabel,
     getPuppyUrl,
@@ -30,7 +32,9 @@ import { InternalLinksSection, type InternalLinkItem } from "@/components/Intern
 import { Badge } from "@/components/ui/badge"
 import { getPuppyParentProfiles } from "./puppy-parents"
 
-const pageImage = "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
+const visiblePuppiesForSeo = puppies.filter((puppy) => !puppy.isAdopted)
+const pageSeoImages = getPuppyListSeoImageSources(visiblePuppiesForSeo, 6)
+const pageImage = pageSeoImages[0] ?? "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
 
 const puppiesInternalLinks: InternalLinkItem[] = [
     {
@@ -63,20 +67,16 @@ export const metadata: Metadata = {
         title: pageMetadata.puppies.title,
         description: pageMetadata.puppies.description,
         url: `${siteConfig.siteUrl}/chiots-disponibles`,
-        images: [
-            {
-                url: `${siteConfig.siteUrl}${pageImage}`,
-                alt: "Chiot Mameshiba blanc disponible chez Kawaii Shiba",
-                width: 1200,
-                height: 630,
-                type: "image/jpeg",
-            },
-        ],
+        images: (pageSeoImages.length > 0 ? pageSeoImages : [pageImage]).map((image) => ({
+            url: `${siteConfig.siteUrl}${image}`,
+            alt: "Chiot Mameshiba disponible chez Kawaii Shiba",
+            type: "image/jpeg",
+        })),
     }),
     twitter: buildTwitter({
         title: pageMetadata.puppies.title,
         description: pageMetadata.puppies.description,
-        imageUrl: `${siteConfig.siteUrl}${pageImage}`,
+        images: (pageSeoImages.length > 0 ? pageSeoImages : [pageImage]).map((image) => `${siteConfig.siteUrl}${image}`),
     }),
     alternates: {
         canonical: `${siteConfig.siteUrl}/chiots-disponibles`,
@@ -90,7 +90,8 @@ export default function NosChiotsPage() {
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqNosChiots))
     const lastMod = returnLastmod(siteConfig.pages.puppies)
-    const visiblePuppies = puppies.filter((puppy) => !puppy.isAdopted)
+    const visiblePuppies = visiblePuppiesForSeo
+    const puppyCollectionPageStructuredData = buildPuppyCollectionPageStructuredData(visiblePuppies)
     const puppyStructuredData = buildPuppyItemListStructuredData(visiblePuppies)
     const availablePuppiesCount = visiblePuppies.filter((puppy) => !puppy.isReserved).length
     const availablePuppiesTitle = availablePuppiesCount > 0
@@ -107,6 +108,10 @@ export default function NosChiotsPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(puppyCollectionPageStructuredData) }}
             />
             <script
                 type="application/ld+json"

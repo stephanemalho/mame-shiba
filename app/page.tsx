@@ -7,7 +7,7 @@ import { Dog, Heart, MapPin, PawPrint, Route, Sparkles } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/schema-generators"
+import { generateLocalBusinessSchema, generateFAQSchema, generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { isBlogEnabled } from "@/lib/blog-visibility"
 import { puppies } from "@/app/chiots-disponibles/puppies"
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
         alt: siteConfig.ogImageAlt,
         width: siteConfig.ogImageWidth,
         height: siteConfig.ogImageHeight,
-        type: "image/webp",
+        type: "image/jpeg",
       },
     ],
   }),
@@ -98,6 +98,33 @@ export const metadata: Metadata = {
 export default function HomePage() {
   // Schémas JSON-LD
   const localBusinessSchema = generateLocalBusinessSchema()
+  const webPageSchema = generateWebPageSchema({
+    name: pageMetadata.home.title,
+    description: pageMetadata.home.description,
+    url: siteConfig.pages.home,
+    images: [
+      {
+        url: "/mame-shiba-in-a-sakura-tree.jpg",
+        name: "Mameshiba Kawaii Shiba",
+        caption: "Mameshiba dans un décor inspiré du Japon",
+        width: siteConfig.ogImageWidth,
+        height: siteConfig.ogImageHeight,
+        encodingFormat: "image/jpeg",
+      },
+      {
+        url: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.webp.desktop,
+        name: "Éleveuse avec Mameshiba et Shiba",
+        width: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.width,
+        height: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.height,
+        encodingFormat: "image/webp",
+      },
+      {
+        url: "/pages/homePage/marine-de-kawaii-avec-un-chiot-mame.jpg",
+        name: "Marine avec un chiot Mameshiba",
+        encodingFormat: "image/jpeg",
+      },
+    ],
+  })
   const breadcrumbSchema = generateBreadcrumbSchema([{ name: "Accueil", url: "/" }])
   const faqSchema = generateFAQSchema(convertFAQsToSchema(faqHome))
   const lastMod = returnLastmod(siteConfig.pages.home)
@@ -139,6 +166,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <script
         type="application/ld+json"

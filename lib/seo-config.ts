@@ -298,13 +298,16 @@ export const buildOpenGraph = ({
         images && images.length > 0
             ? images.map((image) => {
                   const resolvedImage = resolveSocialImage(image.url);
+                  const width = image.width ?? resolvedImage.width;
+                  const height = image.height ?? resolvedImage.height;
+                  const type = image.type ?? resolvedImage.type;
 
                   return {
                       url: resolvedImage.url,
-                      width: resolvedImage.width ?? siteConfig.ogImageWidth,
-                      height: resolvedImage.height ?? siteConfig.ogImageHeight,
+                      ...(width ? { width } : {}),
+                      ...(height ? { height } : {}),
                       alt: image.alt ?? siteConfig.ogImageAlt,
-                      type: resolvedImage.type
+                      ...(type ? { type } : {})
                   };
               })
             : (() => {
@@ -581,7 +584,7 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-07-06"
+        lastmod: "2026-07-09"
     },
     {
         url: "/chiots-disponibles",
@@ -593,49 +596,49 @@ export const sitemapPages = [
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.9,
-        lastmod: "2026-07-06"
+        lastmod: "2026-07-09"
     },
     {
         url: "/nos-chiens",
         changefreq: "monthly",
         priority: 0.85,
-        lastmod: "2026-04-12"
+        lastmod: "2026-07-09"
     },
     {
         url: "/adoption/reussir-son-adoption",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-07-06"
+        lastmod: "2026-07-09"
     },
     {
         url: "/mame-shiba-prix",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-05-16"
+        lastmod: "2026-07-09"
     },
     {
         url: "/presentation-elevage",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-06-23"
+        lastmod: "2026-07-09"
     },
     {
         url: "/presentation-eleveuses",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-06-02"
+        lastmod: "2026-07-09"
     },
     {
         url: "/bien-etre-animal",
         changefreq: "monthly",
         priority: 0.7,
-        lastmod: "2026-07-06"
+        lastmod: "2026-07-09"
     },
     {
         url: "/contact",
         changefreq: "monthly",
         priority: 0.8,
-        lastmod: "2026-05-16"
+        lastmod: "2026-07-09"
     },
     {
         url: "/mentions-legales",

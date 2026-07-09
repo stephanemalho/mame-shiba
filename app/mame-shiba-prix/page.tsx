@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { FAQSection, type FAQItem } from "@/components/faq"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig, sitemapPages } from "@/lib/seo-config"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { Banknote, Heart, NotebookText, PawPrint, ShieldCheck, Sprout } from "lucide-react"
 
 const mameshibaPriceOgJpg = "/pages/image-all-shiba/mameshiba-exterieur-profil-01.webp"
@@ -170,6 +170,28 @@ export default function MameshibaPricePage() {
         { name: "Accueil", url: "/" },
         { name: "Prix de nos Mameshiba", url: siteConfig.pages.mameshibaPrice },
     ])
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.mameshibaPrice.title,
+        description: pageMetadata.mameshibaPrice.description,
+        url: siteConfig.pages.mameshibaPrice,
+        images: [
+            {
+                url: mameshibaPriceOgJpg,
+                name: "Mameshiba en extérieur",
+                encodingFormat: "image/webp",
+            },
+            {
+                url: "/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.webp",
+                name: "Mameshiba de l'élevage Kawaii Shiba",
+                encodingFormat: "image/webp",
+            },
+            {
+                url: "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg",
+                name: "Trois chiots Mameshiba",
+                encodingFormat: "image/jpeg",
+            },
+        ],
+    })
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameshibaPrice))
     const lastMod = returnLastmod(siteConfig.pages.mameshibaPrice)
 
@@ -178,6 +200,10 @@ export default function MameshibaPricePage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

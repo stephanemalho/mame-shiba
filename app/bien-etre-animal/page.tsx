@@ -7,7 +7,7 @@ import { faqBienEtre } from "@/lib/faq-data"
 import { Calendar, MapPin, Bed, Utensils, Dumbbell, SpadeIcon as Spa, PawPrint, Dog } from "lucide-react"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { responsiveImages } from "@/lib/responsive-images"
 import Link from "next/link"
@@ -77,6 +77,32 @@ export default function SejoursPage() {
         { name: "Accueil", url: "/" },
         { name: "Bien-être animal", url: "/bien-etre-animal" },
     ])
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.wellness.title,
+        description: pageMetadata.wellness.description,
+        url: siteConfig.pages.wellness,
+        images: [
+            {
+                url: pageImage,
+                name: "Espaces de vie de l'élevage Kawaii Shiba",
+                encodingFormat: "image/webp",
+            },
+            {
+                url: responsiveImages.petitChiotMameJoueur.webp.desktop,
+                name: "Chiot Mameshiba joueur",
+                width: responsiveImages.petitChiotMameJoueur.metadata.width,
+                height: responsiveImages.petitChiotMameJoueur.metadata.height,
+                encodingFormat: "image/webp",
+            },
+            {
+                url: responsiveImages.mameshibaFauveAvecBebeDauphinPeluche.webp.desktop,
+                name: "Mameshiba fauve avec une peluche",
+                width: responsiveImages.mameshibaFauveAvecBebeDauphinPeluche.metadata.width,
+                height: responsiveImages.mameshibaFauveAvecBebeDauphinPeluche.metadata.height,
+                encodingFormat: "image/webp",
+            },
+        ],
+    })
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqBienEtre))
 
 
@@ -88,6 +114,10 @@ export default function SejoursPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

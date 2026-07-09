@@ -12,7 +12,7 @@ import { faqMameShiba } from "@/lib/faq-data"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { isResponsiveImageAsset, responsiveImages, type ResponsiveImageAsset } from "@/lib/responsive-images"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { BadgeAlert, Feather, Heart, History, PawPrint, Quote, Ruler, Scale, ScrollText, Sparkles } from "lucide-react"
 
 const pageImage = "/pages/homePage/mame-shiba-for-modern-life.jpeg"
@@ -230,6 +230,32 @@ export default function MameShibaPage() {
         { name: "Accueil", url: "/" },
         { name: "Le Mameshiba", url: siteConfig.pages.shiba },
     ])
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.shiba.title,
+        description: pageMetadata.shiba.description,
+        url: siteConfig.pages.shiba,
+        images: [
+            {
+                url: pageImage,
+                name: "Mameshiba dans un cadre de vie moderne",
+                encodingFormat: "image/jpeg",
+            },
+            {
+                url: responsiveImages.shibaVsMameshiba.webp.desktop,
+                name: "Comparaison Shiba Inu et Mameshiba",
+                width: responsiveImages.shibaVsMameshiba.metadata.width,
+                height: responsiveImages.shibaVsMameshiba.metadata.height,
+                encodingFormat: "image/webp",
+            },
+            {
+                url: responsiveImages.chiotMameshibaNoirEtBlancMale.webp.desktop,
+                name: "Chiot Mameshiba noir et blanc",
+                width: responsiveImages.chiotMameshibaNoirEtBlancMale.metadata.width,
+                height: responsiveImages.chiotMameshibaNoirEtBlancMale.metadata.height,
+                encodingFormat: "image/webp",
+            },
+        ],
+    })
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqMameShiba))
     const lastMod = returnLastmod(siteConfig.pages.shiba)
 
@@ -238,6 +264,10 @@ export default function MameShibaPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

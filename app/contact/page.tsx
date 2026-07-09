@@ -4,7 +4,7 @@ import { faqContact } from "@/lib/faq-data"
 import { Chrome, MapPin, Phone, Mail, Clock, PawPrint } from "lucide-react"
 import type { Metadata } from "next"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, siteConfig } from "@/lib/seo-config"
-import { generateLocalBusinessSchema, generateContactPointSchema, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateLocalBusinessSchema, generateContactPointSchema, generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import Image from "next/image"
 import Link from "next/link"
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
                 alt: siteConfig.ogImageAlt,
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
-                type: "image/webp",
+                type: "image/jpeg",
             },
         ],
     }),
@@ -163,6 +163,23 @@ export default function ContactPage() {
     // Schémas JSON-LD
     const localBusinessSchema = generateLocalBusinessSchema()
     const contactPointSchema = generateContactPointSchema()
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.contact.title,
+        description: pageMetadata.contact.description,
+        url: siteConfig.pages.contact,
+        images: [
+            {
+                url: "/pages/image-all-shiba/jardin-cloture-elevage-vertical.webp",
+                name: "Jardin clôturé de l'élevage Kawaii Shiba",
+                encodingFormat: "image/webp",
+            },
+            {
+                url: "/pages/image-all-shiba/mameshiba-exterieur-portrait-01.webp",
+                name: "Portrait de Mameshiba en extérieur",
+                encodingFormat: "image/webp",
+            },
+        ],
+    })
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
         { name: "Contact", url: siteConfig.pages.contact },
@@ -180,6 +197,10 @@ export default function ContactPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPointSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

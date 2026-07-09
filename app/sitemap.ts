@@ -2,13 +2,16 @@ import type { MetadataRoute } from "next";
 
 import { blog } from "@/constants/blog/blog";
 import { puppies } from "@/app/chiots-disponibles/puppies";
-import { getPuppyLastModified, getPuppyUrl } from "@/app/chiots-disponibles/puppy-seo";
+import { getPuppyLastModified, getPuppyListSeoImageSources, getPuppySeoImageSources, getPuppyUrl } from "@/app/chiots-disponibles/puppy-seo";
 import { isBlogEnabled } from "@/lib/blog-visibility";
 import { seoLastmod, siteConfig, sitemapPages } from "@/lib/seo-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = siteConfig.siteUrl;
     const toUrl = (path: string) => new URL(path, baseUrl).toString();
+
+    const visiblePuppies = puppies.filter((puppy) => !puppy.isAdopted);
+    const puppyListImageUrls = getPuppyListSeoImageSources(visiblePuppies, 20).map(toUrl);
 
     const staticPages: MetadataRoute.Sitemap = sitemapPages.map((page) => ({
         url: toUrl(page.url),
@@ -21,7 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
             | "monthly"
             | "yearly"
             | "never",
-        priority: page.priority
+        priority: page.priority,
+        ...(page.url === siteConfig.pages.puppies && puppyListImageUrls.length > 0
+            ? { images: puppyListImageUrls }
+            : {})
     }));
 
     const blogEntries: MetadataRoute.Sitemap = isBlogEnabled
@@ -56,6 +62,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: getPuppyLastModified(puppy) ?? seoLastmod,
         changeFrequency: "weekly",
         priority: puppy.isReserved || puppy.isAdopted ? 0.65 : 0.85,
+        images: puppy.images.flatMap((image) =>
+            getPuppySeoImageSources(image).map(toUrl)
+        ),
     }));
 
     return [

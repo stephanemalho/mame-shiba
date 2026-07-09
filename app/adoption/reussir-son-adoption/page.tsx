@@ -22,7 +22,7 @@ import { ResponsivePicture } from "@/components/responsive-picture"
 import { filterBlogLinks } from "@/lib/blog-visibility"
 import { convertFAQsToSchema } from "@/lib/faq-utils"
 import { buildOpenGraph, buildTwitter, pageMetadata, returnLastmod, seoLastmod, siteConfig } from "@/lib/seo-config"
-import { generateBreadcrumbSchema, generateFAQSchema } from "@/lib/schema-generators"
+import { generateBreadcrumbSchema, generateFAQSchema, generateWebPageSchema } from "@/lib/schema-generators"
 import { responsiveImages } from "@/lib/responsive-images"
 
 const adoptionGuideImage = responsiveImages.mameshibaMarronJouantAvecDesSceaux
@@ -221,6 +221,27 @@ export default function AdoptionGuidePage() {
         { name: "Accueil", url: "/" },
         { name: "Adoption", url: siteConfig.pages.adoptionGuide },
     ])
+    const webPageSchema = generateWebPageSchema({
+        name: pageMetadata.adoptionGuide.title,
+        description: pageMetadata.adoptionGuide.description,
+        url: siteConfig.pages.adoptionGuide,
+        images: [
+            {
+                url: adoptionGuideImage.webp.desktop,
+                name: "Chiot Mameshiba en espace de jeux",
+                width: adoptionGuideImage.metadata.width,
+                height: adoptionGuideImage.metadata.height,
+                encodingFormat: "image/webp",
+            },
+            {
+                url: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.webp.desktop,
+                name: "Accompagnement adoption Mameshiba",
+                width: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.width,
+                height: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.height,
+                encodingFormat: "image/webp",
+            },
+        ],
+    })
     const faqSchema = generateFAQSchema(convertFAQsToSchema(adoptionGuideFaq))
     const articleSchema = {
         "@context": "https://schema.org",
@@ -245,8 +266,8 @@ export default function AdoptionGuidePage() {
             },
         },
         image: [
-            `${siteConfig.siteUrl}${pageImage}`,
-            `${siteConfig.siteUrl}${responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.src}`,
+            `${siteConfig.siteUrl}${adoptionGuideImage.webp.desktop}`,
+            `${siteConfig.siteUrl}${responsiveImages.cloeEleveuseAvecMameshibaEtShiba.webp.desktop}`,
         ],
         about: [
             { "@type": "Thing", name: "Mameshiba" },
@@ -262,6 +283,10 @@ export default function AdoptionGuidePage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
             />
             <script
                 type="application/ld+json"

@@ -11,6 +11,8 @@ type MameShibaThemePageProps = {
     params: { theme: string } | Promise<{ theme: string }>;
 };
 
+const getThemeFromSlug = (slug: string) => slug.split("/")[1] ?? "caracteristique";
+
 export function generateStaticParams() {
     if (!isBlogEnabled) {
         return [];
@@ -49,7 +51,7 @@ export async function generateMetadata({
                         alt: siteConfig.ogImageAlt,
                         width: siteConfig.ogImageWidth,
                         height: siteConfig.ogImageHeight,
-                        type: "image/webp",
+                        type: "image/jpeg",
                     },
                 ],
             }),
@@ -84,7 +86,7 @@ export async function generateMetadata({
                     alt: siteConfig.ogImageAlt,
                     width: siteConfig.ogImageWidth,
                     height: siteConfig.ogImageHeight,
-                    type: "image/webp",
+                    type: "image/jpeg",
                 },
             ],
         }),
@@ -118,6 +120,14 @@ export default async function MameShibaThemePage({ params }: MameShibaThemePageP
         name: `${themeData.label} | Blog Mameshiba`,
         description: themeData.description ?? pageMetadata.blog.description,
         url: new URL(`/blog/mame-shiba/${themeData.slug}`, siteConfig.siteUrl).toString(),
+        images: blog.posts
+            .filter((post) => post.slug.startsWith("mame-shiba/") && getThemeFromSlug(post.slug) === themeData.slug && post.image)
+            .slice(0, 6)
+            .map((post) => ({
+                url: post.image ?? siteConfig.ogImage,
+                name: post.imageAlt ?? post.title,
+                encodingFormat: post.image?.endsWith(".webp") ? "image/webp" : "image/jpeg",
+            })),
     });
 
     return (

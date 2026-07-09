@@ -146,7 +146,7 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
         { name: "Nos chiots", url: siteConfig.pages.puppies },
-        { name: puppy.name, url: `${siteConfig.siteUrl}${getPuppyUrl(puppy)}` },
+        { name: puppy.name, url: getPuppyUrl(puppy) },
     ])
     const productStructuredData = buildPuppyProductStructuredData(puppy)
 

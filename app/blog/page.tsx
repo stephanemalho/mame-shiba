@@ -22,7 +22,7 @@ export const metadata: Metadata = {
                 alt: siteConfig.ogImageAlt,
                 width: siteConfig.ogImageWidth,
                 height: siteConfig.ogImageHeight,
-                type: "image/webp",
+                type: "image/jpeg",
             },
         ],
     }),
