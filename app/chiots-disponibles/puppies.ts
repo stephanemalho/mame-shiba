@@ -77,6 +77,11 @@ const sakuraBirthDate = "Né le 25 mai 2026";
 const sakuraBirthDateIso = "2026-05-25";
 const sakuraAvailableDate = "Disponible le 20 juillet 2026";
 const sakuraAvailableDateIso = "2026-07-20";
+const puppyImageVersion = "20260709";
+
+function withPuppyImageVersion(src: string) {
+    return `${src}?v=${puppyImageVersion}`;
+}
 
 function withoutImageExtension(file: string) {
     return file.replace(/\.(jpe?g|png|webp)$/i, "");
@@ -97,8 +102,8 @@ function puppyImage(name: string, sourceFile: string, index = 0): PuppyImage {
 
 function responsivePuppyImage(name: string, folderName: string, assetName: string, index = 0): PuppyImage {
     return {
-        src: `/pages/puppies/${folderName}/webp/${assetName}-desktop.webp`,
-        thumbSrc: `/pages/puppies/${folderName}/webp/${assetName}-mobile.webp`,
+        src: withPuppyImageVersion(`/pages/puppies/${folderName}/webp/${assetName}-desktop.webp`),
+        thumbSrc: withPuppyImageVersion(`/pages/puppies/${folderName}/webp/${assetName}-mobile.webp`),
         sourceSrc: `/pages/puppies/${folderName}/jpeg/${assetName}-desktop.jpeg`,
         alt: `${name}, chiot Mameshiba de l'élevage Kawaii Shiba - photo ${index + 1}`
     };
@@ -613,4 +618,6 @@ export const puppies: Puppy[] = [
         pedigree: "Kennel Club of Japan",
         isReserved: true
     }
-];
+].sort((leftPuppy, rightPuppy) =>
+    Number(Boolean(leftPuppy.isReserved)) - Number(Boolean(rightPuppy.isReserved))
+);

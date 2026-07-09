@@ -140,6 +140,8 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
     const priceLabel = getPuppyPriceLabel(puppy)
     const parentProfiles = getPuppyParentProfiles(puppy.parents)
     const { previousPuppy, nextPuppy } = getAdjacentPuppies(puppy)
+    const previousPuppyImage = previousPuppy?.thumbnailImage ?? previousPuppy?.images[0]
+    const nextPuppyImage = nextPuppy?.thumbnailImage ?? nextPuppy?.images[0]
     const lastModified = getPuppyLastModified(puppy)
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: "Accueil", url: "/" },
@@ -385,10 +387,10 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                                         className="group flex items-center gap-4 rounded-2xl border border-primary/10 bg-background p-4 transition hover:border-primary/30 hover:bg-primary/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                                     >
                                         <span className="relative h-18 w-18 shrink-0 overflow-hidden rounded-full border-2 border-primary/10 bg-muted">
-                                            {previousPuppy.images[0] ? (
+                                            {previousPuppyImage ? (
                                                 <Image
-                                                    src={previousPuppy.images[0].src}
-                                                    alt={previousPuppy.images[0].alt}
+                                                    src={previousPuppyImage.src}
+                                                    alt={previousPuppyImage.alt}
                                                     fill
                                                     className="object-cover"
                                                     sizes="72px"
@@ -426,10 +428,10 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                                             </span>
                                         </span>
                                         <span className="relative h-18 w-18 shrink-0 overflow-hidden rounded-full border-2 border-primary/10 bg-muted">
-                                            {nextPuppy.images[0] ? (
+                                            {nextPuppyImage ? (
                                                 <Image
-                                                    src={nextPuppy.images[0].src}
-                                                    alt={nextPuppy.images[0].alt}
+                                                    src={nextPuppyImage.src}
+                                                    alt={nextPuppyImage.alt}
                                                     fill
                                                     className="object-cover"
                                                     sizes="72px"
