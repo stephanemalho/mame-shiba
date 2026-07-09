@@ -1,16 +1,396 @@
 {
-  "folder": "mameshiba-blanc-fauve-kenshiro",
-  "generatedAt": "2026-06-20T21:13:13.114Z",
+  "folderName": "mameshiba-blanc-fauve-kenshiro",
+  "generatedAt": "2026-07-09T18:20:48.886Z",
   "images": [
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/3/34D93E16-07F8-43BF-ADFE-98E2D641EA9E.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-male-fauve-kenshiro-1",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-1-mobile.avif",
+          "filename": "mameshiba-male-fauve-kenshiro-1-mobile.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-1-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 12378
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-1-mobile.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-1-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 25470
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-1-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 36455
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-1-tablet.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-1-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-1-tablet.avif",
+          "width": 768,
+          "height": 1151,
+          "bytes": 21096
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-1-tablet.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-1-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-1-tablet.webp",
+          "width": 768,
+          "height": 1151,
+          "bytes": 47770
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-1-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-1-tablet.jpeg",
+          "width": 768,
+          "height": 1151,
+          "bytes": 71866
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-1-desktop.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-1-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-1-desktop.avif",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 35542
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-1-desktop.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-1-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-1-desktop.webp",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 88332
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-1-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 137507
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-male-fauve-kenshiro-2",
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-2-mobile.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-2-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-2-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "bytes": 8506
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-2-mobile.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-2-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-2-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15968
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-2-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-2-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "bytes": 21065
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-2-tablet.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-2-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-2-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "bytes": 13831
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-2-tablet.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-2-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-2-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "bytes": 29348
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-2-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-2-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "bytes": 41192
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-2-desktop.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-2-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-2-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "bytes": 22483
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-2-desktop.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-2-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-2-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 53840
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-2-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-2-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "bytes": 78935
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-male-fauve-kenshiro-3",
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-3-mobile.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-3-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 11777
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-3-mobile.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-3-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 24960
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-3-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 34403
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-3-tablet.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-3-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-3-tablet.avif",
+          "width": 768,
+          "height": 1151,
+          "bytes": 21841
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-3-tablet.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-3-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-3-tablet.webp",
+          "width": 768,
+          "height": 1151,
+          "bytes": 51026
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-3-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-3-tablet.jpeg",
+          "width": 768,
+          "height": 1151,
+          "bytes": 71740
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-3-desktop.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-3-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-3-desktop.avif",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 40167
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-3-desktop.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-3-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-3-desktop.webp",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 97990
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-3-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 145593
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-male-fauve-kenshiro-4",
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-4-mobile.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-4-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "bytes": 13688
+        },
+        {
+          "format": "webp",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-4-mobile.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-4-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 28816
+        },
+        {
+          "format": "jpeg",
+          "size": "mobile",
+          "filename": "mameshiba-male-fauve-kenshiro-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-4-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "bytes": 38277
+        },
+        {
+          "format": "avif",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-4-tablet.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-4-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-4-tablet.avif",
+          "width": 768,
+          "height": 1151,
+          "bytes": 25818
+        },
+        {
+          "format": "webp",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-4-tablet.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-4-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-4-tablet.webp",
+          "width": 768,
+          "height": 1151,
+          "bytes": 60310
+        },
+        {
+          "format": "jpeg",
+          "size": "tablet",
+          "filename": "mameshiba-male-fauve-kenshiro-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-4-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-4-tablet.jpeg",
+          "width": 768,
+          "height": 1151,
+          "bytes": 80812
+        },
+        {
+          "format": "avif",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-4-desktop.avif",
+          "relativePath": "avif/mameshiba-male-fauve-kenshiro-4-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-male-fauve-kenshiro-4-desktop.avif",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 46852
+        },
+        {
+          "format": "webp",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-4-desktop.webp",
+          "relativePath": "webp/mameshiba-male-fauve-kenshiro-4-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-male-fauve-kenshiro-4-desktop.webp",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 114184
+        },
+        {
+          "format": "jpeg",
+          "size": "desktop",
+          "filename": "mameshiba-male-fauve-kenshiro-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-male-fauve-kenshiro-4-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-male-fauve-kenshiro-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1799,
+          "bytes": 163152
+        }
+      ]
+    },
+    {
+      "assetName": "mameshiba-blanc-fauve-kenshiro-1",
+      "variants": [
+        {
+          "format": "avif",
+          "size": "mobile",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-1-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-1-mobile.avif",
           "width": 480,
           "height": 320,
           "bytes": 6880
@@ -18,7 +398,9 @@
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-1-mobile.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-1-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-1-mobile.webp",
           "width": 480,
           "height": 320,
           "bytes": 8748
@@ -26,7 +408,9 @@
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-1-mobile.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-1-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-1-mobile.jpeg",
           "width": 480,
           "height": 320,
           "bytes": 15011
@@ -34,7 +418,9 @@
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-1-tablet.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-1-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-1-tablet.avif",
           "width": 768,
           "height": 512,
           "bytes": 12468
@@ -42,7 +428,9 @@
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-1-tablet.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-1-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-1-tablet.webp",
           "width": 768,
           "height": 512,
           "bytes": 15540
@@ -50,7 +438,9 @@
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-1-tablet.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-1-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-1-tablet.jpeg",
           "width": 768,
           "height": 512,
           "bytes": 28160
@@ -58,7 +448,9 @@
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-1-desktop.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-1-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-1-desktop.avif",
           "width": 1200,
           "height": 800,
           "bytes": 22150
@@ -66,7 +458,9 @@
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-1-desktop.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-1-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-1-desktop.webp",
           "width": 1200,
           "height": 800,
           "bytes": 28440
@@ -74,7 +468,9 @@
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-1-desktop.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-1-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-1-desktop.jpeg",
           "width": 1200,
           "height": 800,
           "bytes": 53367
@@ -82,14 +478,14 @@
       ]
     },
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/7/7A298BC3-8494-412A-80C1-47CBAED27A55.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-blanc-fauve-kenshiro-2",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-2-mobile.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-2-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-2-mobile.avif",
           "width": 480,
           "height": 720,
           "bytes": 13309
@@ -97,7 +493,9 @@
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-2-mobile.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-2-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-2-mobile.webp",
           "width": 480,
           "height": 720,
           "bytes": 17030
@@ -105,7 +503,9 @@
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-2-mobile.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-2-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-2-mobile.jpeg",
           "width": 480,
           "height": 720,
           "bytes": 28912
@@ -113,7 +513,9 @@
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-2-tablet.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-2-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-2-tablet.avif",
           "width": 768,
           "height": 1152,
           "bytes": 26292
@@ -121,7 +523,9 @@
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-2-tablet.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-2-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-2-tablet.webp",
           "width": 768,
           "height": 1152,
           "bytes": 32640
@@ -129,7 +533,9 @@
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-2-tablet.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-2-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-2-tablet.jpeg",
           "width": 768,
           "height": 1152,
           "bytes": 58923
@@ -137,7 +543,9 @@
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-2-desktop.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-2-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-2-desktop.avif",
           "width": 1200,
           "height": 1800,
           "bytes": 52213
@@ -145,7 +553,9 @@
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-2-desktop.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-2-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-2-desktop.webp",
           "width": 1200,
           "height": 1800,
           "bytes": 67152
@@ -153,7 +563,9 @@
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-2-desktop.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-2-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-2-desktop.jpeg",
           "width": 1200,
           "height": 1800,
           "bytes": 120054
@@ -161,14 +573,14 @@
       ]
     },
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/2/2047EEA7-128A-4F18-9263-99595AD53E5B.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-blanc-fauve-kenshiro-3",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-3-mobile.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-3-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-3-mobile.avif",
           "width": 480,
           "height": 720,
           "bytes": 13032
@@ -176,7 +588,9 @@
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-3-mobile.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-3-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-3-mobile.webp",
           "width": 480,
           "height": 720,
           "bytes": 16066
@@ -184,7 +598,9 @@
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-3-mobile.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-3-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-3-mobile.jpeg",
           "width": 480,
           "height": 720,
           "bytes": 28196
@@ -192,7 +608,9 @@
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-3-tablet.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-3-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-3-tablet.avif",
           "width": 768,
           "height": 1152,
           "bytes": 24782
@@ -200,7 +618,9 @@
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-3-tablet.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-3-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-3-tablet.webp",
           "width": 768,
           "height": 1152,
           "bytes": 30328
@@ -208,7 +628,9 @@
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-3-tablet.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-3-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-3-tablet.jpeg",
           "width": 768,
           "height": 1152,
           "bytes": 56660
@@ -216,7 +638,9 @@
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-3-desktop.avif",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-fauve-kenshiro-3-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/avif/mameshiba-blanc-fauve-kenshiro-3-desktop.avif",
           "width": 1200,
           "height": 1800,
           "bytes": 47466
@@ -224,7 +648,9 @@
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-3-desktop.webp",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-fauve-kenshiro-3-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/webp/mameshiba-blanc-fauve-kenshiro-3-desktop.webp",
           "width": 1200,
           "height": 1800,
           "bytes": 60426
@@ -232,7 +658,9 @@
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-3-desktop.jpeg",
+          "filename": "mameshiba-blanc-fauve-kenshiro-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-fauve-kenshiro-3-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanc-fauve-kenshiro/jpeg/mameshiba-blanc-fauve-kenshiro-3-desktop.jpeg",
           "width": 1200,
           "height": 1800,
           "bytes": 112166

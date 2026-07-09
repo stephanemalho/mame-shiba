@@ -1,399 +1,479 @@
 {
-  "folder": "mameshiba-blanche-yuki",
-  "generatedAt": "2026-06-20T21:25:37.382Z",
+  "folderName": "mameshiba-blanche-yuki",
+  "generatedAt": "2026-07-09T18:20:48.955Z",
   "images": [
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/2/22425B56-6239-4CC2-ACAF-16682B9A1A2C.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-femelle-blanche-yuki-1",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-1-mobile.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-1-mobile.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-1-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-1-mobile.avif",
           "width": 480,
-          "height": 720,
-          "bytes": 10976
+          "height": 320,
+          "bytes": 7571
         },
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-1-mobile.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-1-mobile.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-1-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-1-mobile.webp",
           "width": 480,
-          "height": 720,
-          "bytes": 13830
+          "height": 320,
+          "bytes": 13610
         },
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-1-mobile.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-1-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-1-mobile.jpeg",
           "width": 480,
-          "height": 720,
-          "bytes": 24713
+          "height": 320,
+          "bytes": 19084
         },
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-1-tablet.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-1-tablet.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-1-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-1-tablet.avif",
           "width": 768,
-          "height": 1152,
-          "bytes": 19318
+          "height": 512,
+          "bytes": 12318
         },
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-1-tablet.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-1-tablet.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-1-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-1-tablet.webp",
           "width": 768,
-          "height": 1152,
-          "bytes": 25084
+          "height": 512,
+          "bytes": 25704
         },
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-1-tablet.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-1-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-1-tablet.jpeg",
           "width": 768,
-          "height": 1152,
-          "bytes": 46838
+          "height": 512,
+          "bytes": 37630
         },
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-1-desktop.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-1-desktop.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-1-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-1-desktop.avif",
           "width": 1200,
-          "height": 1800,
-          "bytes": 33815
+          "height": 800,
+          "bytes": 20145
         },
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-1-desktop.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-1-desktop.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-1-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-1-desktop.webp",
           "width": 1200,
-          "height": 1800,
-          "bytes": 45718
+          "height": 800,
+          "bytes": 46914
         },
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-1-desktop.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-1-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-1-desktop.jpeg",
           "width": 1200,
-          "height": 1800,
-          "bytes": 88106
+          "height": 800,
+          "bytes": 71790
         }
       ]
     },
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/1/1F606159-93A6-4405-B76C-7185A1E2CAFC.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-femelle-blanche-yuki-2",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-2-mobile.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-2-mobile.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-2-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-2-mobile.avif",
           "width": 480,
           "height": 720,
-          "bytes": 11458
+          "bytes": 10242
         },
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-2-mobile.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-2-mobile.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-2-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-2-mobile.webp",
           "width": 480,
           "height": 720,
-          "bytes": 14688
+          "bytes": 23074
         },
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-2-mobile.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-2-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-2-mobile.jpeg",
           "width": 480,
           "height": 720,
-          "bytes": 26236
+          "bytes": 32937
         },
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-2-tablet.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-2-tablet.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-2-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-2-tablet.avif",
           "width": 768,
-          "height": 1152,
-          "bytes": 19251
+          "height": 1151,
+          "bytes": 19101
         },
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-2-tablet.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-2-tablet.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-2-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-2-tablet.webp",
           "width": 768,
-          "height": 1152,
-          "bytes": 25508
+          "height": 1151,
+          "bytes": 45910
         },
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-2-tablet.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-2-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-2-tablet.jpeg",
           "width": 768,
-          "height": 1152,
-          "bytes": 48700
+          "height": 1151,
+          "bytes": 67606
         },
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-2-desktop.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-2-desktop.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-2-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-2-desktop.avif",
           "width": 1200,
-          "height": 1800,
-          "bytes": 32800
+          "height": 1799,
+          "bytes": 34504
         },
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-2-desktop.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-2-desktop.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-2-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-2-desktop.webp",
           "width": 1200,
-          "height": 1800,
-          "bytes": 45286
+          "height": 1799,
+          "bytes": 87618
         },
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-2-desktop.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-2-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-2-desktop.jpeg",
           "width": 1200,
-          "height": 1800,
-          "bytes": 90421
+          "height": 1799,
+          "bytes": 134005
         }
       ]
     },
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/3/33016EE9-A80D-4472-83DC-65AE15BEB89E.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-femelle-blanche-yuki-3",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-3-mobile.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-3-mobile.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-3-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-3-mobile.avif",
           "width": 480,
           "height": 720,
-          "bytes": 25308
+          "bytes": 12460
         },
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-3-mobile.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-3-mobile.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-3-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-3-mobile.webp",
           "width": 480,
           "height": 720,
-          "bytes": 39238
+          "bytes": 25470
         },
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-3-mobile.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-3-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-3-mobile.jpeg",
           "width": 480,
           "height": 720,
-          "bytes": 52940
+          "bytes": 34187
         },
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-3-tablet.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-3-tablet.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-3-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-3-tablet.avif",
           "width": 768,
-          "height": 1152,
-          "bytes": 43736
+          "height": 1151,
+          "bytes": 23244
         },
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-3-tablet.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-3-tablet.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-3-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-3-tablet.webp",
           "width": 768,
-          "height": 1152,
-          "bytes": 67542
+          "height": 1151,
+          "bytes": 50496
         },
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-3-tablet.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-3-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-3-tablet.jpeg",
           "width": 768,
-          "height": 1152,
-          "bytes": 103058
+          "height": 1151,
+          "bytes": 71803
         },
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-3-desktop.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-3-desktop.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-3-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-3-desktop.avif",
           "width": 1200,
-          "height": 1800,
-          "bytes": 77461
+          "height": 1799,
+          "bytes": 42112
         },
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-3-desktop.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-3-desktop.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-3-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-3-desktop.webp",
           "width": 1200,
-          "height": 1800,
-          "bytes": 121380
+          "height": 1799,
+          "bytes": 97142
         },
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-3-desktop.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-3-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-3-desktop.jpeg",
           "width": 1200,
-          "height": 1800,
-          "bytes": 198518
+          "height": 1799,
+          "bytes": 144663
         }
       ]
     },
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/0/04DE56EA-8B15-437F-A532-F675A47ECBCB.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-femelle-blanche-yuki-4",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-4-mobile.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-4-mobile.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-4-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-4-mobile.avif",
           "width": 480,
           "height": 720,
-          "bytes": 33089
+          "bytes": 15957
         },
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-4-mobile.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-4-mobile.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-4-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-4-mobile.webp",
           "width": 480,
           "height": 720,
-          "bytes": 52708
+          "bytes": 31848
         },
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-4-mobile.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-4-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-4-mobile.jpeg",
           "width": 480,
           "height": 720,
-          "bytes": 64826
+          "bytes": 41139
         },
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-4-tablet.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-4-tablet.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-4-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-4-tablet.avif",
           "width": 768,
-          "height": 1152,
-          "bytes": 61195
+          "height": 1151,
+          "bytes": 29457
         },
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-4-tablet.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-4-tablet.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-4-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-4-tablet.webp",
           "width": 768,
-          "height": 1152,
-          "bytes": 104404
+          "height": 1151,
+          "bytes": 63358
         },
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-4-tablet.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-4-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-4-tablet.jpeg",
           "width": 768,
-          "height": 1152,
-          "bytes": 134066
+          "height": 1151,
+          "bytes": 85467
         },
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-4-desktop.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-4-desktop.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-4-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-4-desktop.avif",
           "width": 1200,
-          "height": 1800,
-          "bytes": 126110
+          "height": 1799,
+          "bytes": 51064
         },
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-4-desktop.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-4-desktop.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-4-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-4-desktop.webp",
           "width": 1200,
-          "height": 1800,
-          "bytes": 215322
+          "height": 1799,
+          "bytes": 117524
         },
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-4-desktop.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-4-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-4-desktop.jpeg",
           "width": 1200,
-          "height": 1800,
-          "bytes": 285243
+          "height": 1799,
+          "bytes": 168617
         }
       ]
     },
     {
-      "source": "/Users/stephanemalho/Pictures/Photos Library.photoslibrary/originals/1/1949155C-CC4E-4140-AE12-FCEEB64EE9D2.jpeg",
-      "width": 6000,
-      "height": 4000,
+      "assetName": "mameshiba-femelle-blanche-yuki-5",
       "variants": [
         {
           "format": "avif",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-5-mobile.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-5-mobile.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-5-mobile.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-5-mobile.avif",
           "width": 480,
           "height": 720,
-          "bytes": 11354
+          "bytes": 9964
         },
         {
           "format": "webp",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-5-mobile.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-5-mobile.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-5-mobile.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-5-mobile.webp",
           "width": 480,
           "height": 720,
-          "bytes": 14402
+          "bytes": 22660
         },
         {
           "format": "jpeg",
           "size": "mobile",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-5-mobile.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-5-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-5-mobile.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-5-mobile.jpeg",
           "width": 480,
           "height": 720,
-          "bytes": 26333
+          "bytes": 31911
         },
         {
           "format": "avif",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-5-tablet.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-5-tablet.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-5-tablet.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-5-tablet.avif",
           "width": 768,
-          "height": 1152,
-          "bytes": 19550
+          "height": 1151,
+          "bytes": 19034
         },
         {
           "format": "webp",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-5-tablet.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-5-tablet.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-5-tablet.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-5-tablet.webp",
           "width": 768,
-          "height": 1152,
-          "bytes": 25808
+          "height": 1151,
+          "bytes": 45434
         },
         {
           "format": "jpeg",
           "size": "tablet",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-5-tablet.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-5-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-5-tablet.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-5-tablet.jpeg",
           "width": 768,
-          "height": 1152,
-          "bytes": 49496
+          "height": 1151,
+          "bytes": 66456
         },
         {
           "format": "avif",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-blanche-yuki-5-desktop.avif",
+          "filename": "mameshiba-femelle-blanche-yuki-5-desktop.avif",
+          "relativePath": "avif/mameshiba-femelle-blanche-yuki-5-desktop.avif",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/avif/mameshiba-femelle-blanche-yuki-5-desktop.avif",
           "width": 1200,
-          "height": 1800,
-          "bytes": 33911
+          "height": 1799,
+          "bytes": 35219
         },
         {
           "format": "webp",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-blanche-yuki-5-desktop.webp",
+          "filename": "mameshiba-femelle-blanche-yuki-5-desktop.webp",
+          "relativePath": "webp/mameshiba-femelle-blanche-yuki-5-desktop.webp",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/webp/mameshiba-femelle-blanche-yuki-5-desktop.webp",
           "width": 1200,
-          "height": 1800,
-          "bytes": 46668
+          "height": 1799,
+          "bytes": 86738
         },
         {
           "format": "jpeg",
           "size": "desktop",
-          "path": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-blanche-yuki-5-desktop.jpeg",
+          "filename": "mameshiba-femelle-blanche-yuki-5-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-femelle-blanche-yuki-5-desktop.jpeg",
+          "publicPath": "/pages/puppies/mameshiba-blanche-yuki/jpeg/mameshiba-femelle-blanche-yuki-5-desktop.jpeg",
           "width": 1200,
-          "height": 1800,
-          "bytes": 92726
+          "height": 1799,
+          "bytes": 133116
         }
       ]
     }

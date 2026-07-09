@@ -31,14 +31,21 @@ export function getPuppySourceImageSrc(image: Puppy["images"][number]) {
     return image.sourceSrc ?? image.src
 }
 
-function getFormatVariantImageSrc(image: Puppy["images"][number], format: "avif" | "jpeg") {
+function getFormatVariantImageSrc(image: Puppy["images"][number], format: "avif" | "jpeg" | "webp") {
     const source = getPuppySourceImageSrc(image)
+    const targetExtension = format === "jpeg" ? "jpeg" : format
 
-    if (!source.includes("/webp/") || !source.endsWith(".webp")) {
-        return undefined
+    if (source.includes("/avif/") || source.includes("/jpeg/") || source.includes("/webp/")) {
+        return source
+            .replace(/\/(avif|jpeg|webp)\//, `/${format}/`)
+            .replace(/\.(avif|jpe?g|webp)$/i, `.${targetExtension}`)
     }
 
-    return source.replace("/webp/", `/${format}/`).replace(/\.webp$/, `.${format}`)
+    if (format === "jpeg" && /\.(jpe?g)$/i.test(source)) return source
+
+    if (format === "webp" && image.src.endsWith(".webp")) return image.src
+
+    return undefined
 }
 
 export function getPuppyJpegImageSrc(image: Puppy["images"][number]) {
@@ -49,19 +56,24 @@ export function getPuppyAvifImageSrc(image: Puppy["images"][number]) {
     return getFormatVariantImageSrc(image, "avif")
 }
 
+export function getPuppyWebpImageSrc(image: Puppy["images"][number]) {
+    return getFormatVariantImageSrc(image, "webp")
+}
+
 export function getPuppySocialImageSrc(puppy: Puppy) {
-    return puppy.images[0] ? getPuppySourceImageSrc(puppy.images[0]) : undefined
+    return puppy.images[0] ? (getPuppyJpegImageSrc(puppy.images[0]) ?? getPuppySourceImageSrc(puppy.images[0])) : undefined
 }
 
 export function getPuppySeoImageSources(image: Puppy["images"][number]) {
     const jpegImage = getPuppyJpegImageSrc(image)
+    const webpImage = getPuppyWebpImageSrc(image)
     const avifImage = getPuppyAvifImageSrc(image)
 
-    return [
+    return Array.from(new Set([
         ...(jpegImage ? [jpegImage] : []),
-        getPuppySourceImageSrc(image),
+        ...(webpImage ? [webpImage] : []),
         ...(avifImage ? [avifImage] : []),
-    ]
+    ]))
 }
 
 export function getPuppyStatus(puppy: Puppy) {
