@@ -1,4 +1,3 @@
-import nihonMame from "@/public/pages/homePage/mame-shiba-puppy-blanc-white.jpeg";
 import primitifDog from "@/public/pages/homePage/mame-shiba-decor-champs-de-lavande.jpg";
 import shibaExpressive from "@/public/pages/homePage/mame-shiba-courant-dans-herbe.jpg";
 import shibaPolyvalent from "@/public/pages/homePage/mame-shiba-for-modern-life.jpeg";
@@ -22,7 +21,7 @@ export const shibaBenefits: BenefitCard[] = [
     {
         title: "Un nom japonais plein de sens",
         text: "« Mame » signifie haricot et « Shiba » signifie chien. Au Japon, cette expression évoque un petit chien adorable, à la fois compact et plein de caractère.",
-        image: nihonMame,
+        image: responsiveImages.mameShibaPuppyBlancWhite,
         alt: "Deux chiots Mameshiba blottis l'un contre l'autre"
     },
     {

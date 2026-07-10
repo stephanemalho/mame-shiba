@@ -46,6 +46,18 @@ export const responsiveImages = {
         1200,
         1799
     ),
+    mameShibaInSakuraTree: responsiveImageAsset(
+        "/pages/homePage/mame-shiba-in-a-sakura-tree",
+        "mame-shiba-in-a-sakura-tree",
+        1200,
+        800
+    ),
+    mameShibaPuppyBlancWhite: responsiveImageAsset(
+        "/pages/homePage/mame-shiba-puppy-blanc-white",
+        "mame-shiba-puppy-blanc-white",
+        1200,
+        787
+    ),
     shibaVsMameshiba: responsiveImageAsset(
         "/pages/homePage/shiba-vs-mameshiba",
         "shiba-vs-mameshiba",

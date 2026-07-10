@@ -12,7 +12,7 @@ export function Footer() {
                         <div className="flex items-center space-x-2">
                             <div className="h-10 w-10 relative">
                                 <Image
-                                    src="/icon-sm.webp"
+                                    src="/icon-sm-40.webp"
                                     alt="Logo Kawaii Shiba, élevage de Mameshiba"
                                     fill
                                     sizes="40px"

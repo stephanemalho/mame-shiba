@@ -210,13 +210,14 @@ export default function HomePage() {
 
                 <div className="mx-auto max-w-6xl overflow-hidden rounded-xl border border-[#57331f]/10 bg-white/70 shadow-[0_24px_90px_rgba(95,54,31,0.16)] backdrop-blur-sm md:rounded-4xl">
                   <div className="relative aspect-4/3 sm:aspect-16/11 md:aspect-16/8 lg:aspect-16/7">
-                    <Image
-                      src="/mame-shiba-in-a-sakura-tree.jpg"
+                    <ResponsivePicture
+                      asset={responsiveImages.mameShibaInSakuraTree}
                       alt="Mameshiba dans un décor inspiré du Japon"
-                      fill
-                      className="object-cover object-center"
+                      loading="eager"
+                      fetchPriority="high"
+                      className="absolute inset-0 h-full w-full"
+                      imageClassName="h-full w-full object-cover object-center"
                       sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
-                      quality={70}
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-[#6b401f]/35 via-transparent to-transparent" aria-hidden="true" />
                   </div>
