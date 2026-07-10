@@ -4,12 +4,6 @@ import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 import { Cookie } from "lucide-react"
 
-const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18234888597"
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
-const GOOGLE_TAG_IDS = [GOOGLE_ADS_ID, GA_ID].filter(
-    (id, index, array): id is string => Boolean(id) && array.indexOf(id) === index
-)
-
 const GOOGLE_CONSENT_GRANTED = {
     ad_storage: "granted",
     analytics_storage: "granted",
@@ -35,10 +29,6 @@ export default function CookieConsent() {
 
             gtag("consent", "update", granted ? GOOGLE_CONSENT_GRANTED : GOOGLE_CONSENT_DENIED)
             gtag("set", "ads_data_redaction", !granted)
-
-            if (granted) {
-                GOOGLE_TAG_IDS.forEach((id) => gtag("config", id))
-            }
         } catch { }
     }
 
@@ -110,7 +100,7 @@ export default function CookieConsent() {
         notifyConsentChange()
     }
 
-    // The Google tag is loaded globally with denied consent by default.
+    // Google tags are loaded only after explicit consent.
     useEffect(() => {
         if (consent === "accepted") {
             updateGoogleConsent(true)
