@@ -185,11 +185,12 @@ export default function HomePage() {
           <div className="relative overflow-hidden">
             <Image
               src="/pages/mameshiba-desktop.jpg"
-              alt=""
+              alt="Bébé Mameshiba dans un décor orangé"
               fill
               className="object-cover object-center"
               sizes="100vw"
               priority
+              fetchPriority="high"
             />
             <div className="container relative mx-auto px-4 py-6 md:px-6 md:py-8 lg:px-8 lg:py-10">
               <div className="mx-auto max-w-6xl space-y-5 md:space-y-6">
@@ -213,7 +214,6 @@ export default function HomePage() {
                       src="/mame-shiba-in-a-sakura-tree.jpg"
                       alt="Mameshiba dans un décor inspiré du Japon"
                       fill
-                      priority
                       className="object-cover object-center"
                       sizes="(min-width: 1280px) 960px, (min-width: 1024px) 80vw, (min-width: 768px) calc(100vw - 80px), calc(100vw - 32px)"
                       quality={70}
@@ -428,7 +428,7 @@ export default function HomePage() {
               </div>
               {availablePuppies.length > 0 ? (
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
-                  {availablePuppies.map((puppy, index) => {
+                  {availablePuppies.map((puppy) => {
                     const firstImage = puppy.thumbnailImage ?? puppy.images[0]
 
                     return (
@@ -446,7 +446,6 @@ export default function HomePage() {
                               fill
                               className="object-cover transition-transform group-hover:scale-105"
                               sizes="(min-width: 1280px) 132px, (min-width: 1024px) 15vw, (min-width: 768px) 22vw, (min-width: 640px) 30vw, 46vw"
-                              priority={index < 4}
                               quality={70}
                             />
                           ) : null}

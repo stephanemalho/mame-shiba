@@ -7,6 +7,19 @@ const nextConfig: NextConfig = {
         unoptimized: true,
         qualities: [60, 70, 75, 80, 85, 88, 90]
     },
+    async headers() {
+        return [
+            {
+                source: "/:path*\\.(jpg|jpeg|png|webp|avif|gif|svg|ico)",
+                headers: [
+                    {
+                        key: "Cache-Control",
+                        value: "public, max-age=31536000, immutable"
+                    }
+                ]
+            }
+        ];
+    },
     async redirects() {
         return [
             {
