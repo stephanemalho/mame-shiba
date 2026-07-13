@@ -9,7 +9,7 @@ import { seoLastmod, siteConfig, sitemapPages } from "@/lib/seo-config";
 const staticPageImages: Record<string, string[]> = {
     "/": [
         "/pages/mameshiba-desktop.jpg",
-        "/mame-shiba-in-a-sakura-tree.jpg",
+        "/pages/homePage/mame-shiba-in-a-sakura-tree/webp/mame-shiba-in-a-sakura-tree-desktop.webp",
         "/pages/homePage/cloe-eleveuse-avec-mameshiba-et-shiba/webp/cloe-eleveuse-avec-mameshiba-et-shiba-desktop.webp",
     ],
     "/mameshiba": [

@@ -104,12 +104,12 @@ export default function HomePage() {
     url: siteConfig.pages.home,
     images: [
       {
-        url: "/mame-shiba-in-a-sakura-tree.jpg",
+        url: responsiveImages.mameShibaInSakuraTree.webp.desktop,
         name: "Mameshiba Kawaii Shiba",
         caption: "Mameshiba dans un décor inspiré du Japon",
-        width: siteConfig.ogImageWidth,
-        height: siteConfig.ogImageHeight,
-        encodingFormat: "image/jpeg",
+        width: responsiveImages.mameShibaInSakuraTree.metadata.width,
+        height: responsiveImages.mameShibaInSakuraTree.metadata.height,
+        encodingFormat: "image/webp",
       },
       {
         url: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.webp.desktop,
