@@ -207,25 +207,19 @@ export function buildPuppyItemListStructuredData(puppies: Puppy[]) {
         name: "Chiots Mameshiba disponibles à l'adoption",
         description: "Liste des chiots Mameshiba disponibles ou réservés à l'élevage Kawaii Shiba.",
         numberOfItems: puppies.length,
-        itemListElement: puppies.map((puppy, index) => ({
-            "@type": "ListItem",
-            position: index + 1,
-            url: getAbsolutePuppyUrl(puppy),
-            name: `${puppy.name} - chiot Mameshiba`,
-            item: {
-                "@type": "Product",
-                "@id": `${getAbsolutePuppyUrl(puppy)}#product`,
-                name: `${puppy.name} - chiot Mameshiba ${puppy.color}`,
-                description: puppy.description,
-                url: getAbsolutePuppyUrl(puppy),
-                image: getPuppyListSeoImageSources([puppy], 1).map((source) => `${siteConfig.siteUrl}${source}`),
-                category: "Chiot Mameshiba",
-                brand: {
-                    "@type": "Brand",
-                    name: "Mameshiba",
-                },
-            },
-        })),
+        itemListElement: puppies.map((puppy, index) => {
+            const url = getAbsolutePuppyUrl(puppy)
+            const image = getPuppyPrimarySeoImageSrc(puppy)
+
+            return {
+                "@type": "ListItem",
+                position: index + 1,
+                url,
+                item: url,
+                name: `${puppy.name} - chiot Mameshiba`,
+                ...(image ? { image: `${siteConfig.siteUrl}${image}` } : {}),
+            }
+        }),
     }
 }
 

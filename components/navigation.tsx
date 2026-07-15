@@ -18,7 +18,7 @@ export function Navigation() {
                 <Link href="/" className="flex items-center space-x-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded">
                     <div className="h-10 w-10 relative">
                         <Image
-                            src="/icon-sm.webp"
+                            src="/icon-sm-40.webp"
                             alt="Logo Kawaii Shiba - élevage de Shiba"
                             fill
                             sizes="40px"
