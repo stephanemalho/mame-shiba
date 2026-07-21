@@ -8,6 +8,7 @@ export type SocialGalleryItem = {
     id: string
     title: string
     href: string
+    embedUrl: string
     thumbnailSrc: string
     thumbnailAlt: string
     summary: string
@@ -249,6 +250,7 @@ export async function getLatestYouTubeVideos(limit = 3): Promise<SocialGalleryIt
                     id: videoId,
                     title,
                     href: `https://www.youtube.com/shorts/${videoId}`,
+                    embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}`,
                     thumbnailSrc:
                         oEmbed?.thumbnail_url || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
                     thumbnailAlt: `Aperçu de la vidéo YouTube Kawaii Shiba : ${title}`,

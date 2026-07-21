@@ -23,6 +23,29 @@ import {
 import { generateBreadcrumbSchema, generateCollectionPageSchema } from "@/lib/schema-generators"
 
 const galleryOgImage = "/pages/image-all-shiba/mameshiba-jardin-ensemble-01.webp"
+const gallerySocialImages = [
+    {
+        url: "/pages/image-all-shiba/mameshiba-jardin-ensemble-01.jpeg",
+        alt: "Jeune Mameshiba roux dans le jardin de l'élevage Kawaii Shiba",
+        width: 1300,
+        height: 866,
+        type: "image/jpeg",
+    },
+    {
+        url: "/pages/image-all-shiba/mameshiba-jardin-course-03.jpeg",
+        alt: "Mameshiba courant dans le jardin de l'élevage Kawaii Shiba",
+        width: 1300,
+        height: 757,
+        type: "image/jpeg",
+    },
+    {
+        url: "/pages/image-all-shiba/mameshiba-en-laisse-parc-01.jpeg",
+        alt: "Mameshiba en promenade en laisse dans un parc",
+        width: 600,
+        height: 800,
+        type: "image/jpeg",
+    },
+]
 
 export const revalidate = 21600
 
@@ -34,15 +57,7 @@ export const metadata: Metadata = {
         title: pageMetadata.gallery.title,
         description: pageMetadata.gallery.description,
         url: `${siteConfig.siteUrl}${siteConfig.pages.gallery}`,
-        images: [
-            {
-                url: `${siteConfig.siteUrl}${galleryOgImage}`,
-                alt: "Mameshiba réunis dans le jardin de l'élevage Kawaii Shiba",
-                width: 1300,
-                height: 866,
-                type: "image/webp",
-            },
-        ],
+        images: gallerySocialImages,
     }),
     twitter: buildTwitter({
         title: pageMetadata.gallery.title,
@@ -78,6 +93,72 @@ function getImageEncodingFormat(src: string) {
     }
 
     return "image/webp"
+}
+
+function toGalleryAbsoluteUrl(path: string) {
+    return new URL(path, siteConfig.siteUrl).toString()
+}
+
+function buildGalleryImageList(items: GalleryImageItem[]) {
+    const galleryUrl = toGalleryAbsoluteUrl(siteConfig.pages.gallery)
+
+    return {
+        "@type": "ItemList",
+        "@id": `${galleryUrl}#photo-list`,
+        name: "Photos des Mameshiba de l'élevage Kawaii Shiba",
+        description: "Sélection de photos des Mameshiba de l'élevage Kawaii Shiba.",
+        numberOfItems: items.length,
+        itemListOrder: "https://schema.org/ItemListOrderAscending",
+        itemListElement: items.map((item, index) => {
+            const imageUrl = toGalleryAbsoluteUrl(item.src)
+
+            return {
+                "@type": "ListItem",
+                position: index + 1,
+                item: {
+                    "@type": "ImageObject",
+                    "@id": `${galleryUrl}#photo-${item.id}`,
+                    name: item.title,
+                    description: item.summary,
+                    caption: item.alt,
+                    contentUrl: imageUrl,
+                    url: imageUrl,
+                    width: item.width,
+                    height: item.height,
+                    encodingFormat: getImageEncodingFormat(item.src),
+                },
+            }
+        }),
+    }
+}
+
+function buildGalleryVideoObjects(items: SocialGalleryItem[]) {
+    const galleryUrl = toGalleryAbsoluteUrl(siteConfig.pages.gallery)
+
+    return items.flatMap((item) =>
+        item.publishedAt
+            ? [
+                  {
+                      "@type": "VideoObject",
+                      "@id": `${galleryUrl}#video-${item.id}`,
+                      name: item.title,
+                      description: `${item.title}. ${item.summary}`,
+                      thumbnailUrl: [item.thumbnailSrc],
+                      uploadDate: item.publishedAt,
+                      embedUrl: item.embedUrl,
+                      url: item.href,
+                      inLanguage: "fr-FR",
+                      isFamilyFriendly: true,
+                      mainEntityOfPage: {
+                          "@id": `${galleryUrl}#webpage`,
+                      },
+                      publisher: {
+                          "@id": `${siteConfig.siteUrl}#organization`,
+                      },
+                  },
+              ]
+            : [],
+    )
 }
 
 function PhotoGallerySection({ items }: { items: GalleryImageItem[] }) {
@@ -131,19 +212,15 @@ function VideoCard({ item }: { item: SocialGalleryItem }) {
             <CardContent className="p-0">
                 <figure className="flex h-full flex-col">
                     <div className="relative aspect-video overflow-hidden bg-muted">
-                        <Image
-                            src={item.thumbnailSrc}
-                            alt={item.thumbnailAlt}
-                            fill
-                            unoptimized
-                            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-                            className="object-cover"
+                        <iframe
+                            src={item.embedUrl}
+                            title={`Vidéo YouTube Kawaii Shiba : ${item.title}`}
+                            loading="lazy"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="absolute inset-0 h-full w-full border-0"
                         />
-                        <div className="absolute inset-0 grid place-items-center" aria-hidden="true">
-                            <span className="grid h-14 w-14 place-items-center rounded-full bg-red-600 text-white shadow-lg">
-                                <Play className="ml-1 h-6 w-6 fill-current" />
-                            </span>
-                        </div>
                     </div>
                     <figcaption className="space-y-4 p-5">
                         {publishedAt ? (
@@ -225,21 +302,37 @@ function YouTubeSection({ items }: { items: SocialGalleryItem[] }) {
 export default async function GaleriePage() {
     const youtubeVideos = await getLatestYouTubeVideos(3)
     const lastMod = returnLastmod(siteConfig.pages.gallery)
-    const breadcrumbSchema = generateBreadcrumbSchema([
-        { name: "Accueil", url: siteConfig.pages.home },
-        { name: "Galerie", url: siteConfig.pages.gallery },
-    ])
-    const collectionSchema = generateCollectionPageSchema({
-        name: pageMetadata.gallery.title,
-        description: pageMetadata.gallery.description,
-        url: siteConfig.pages.gallery,
-        images: galleryImageItems.map((item) => ({
-            url: item.src,
-            name: item.title,
-            caption: item.alt,
-            encodingFormat: getImageEncodingFormat(item.src),
-        })),
-    })
+    const galleryUrl = toGalleryAbsoluteUrl(siteConfig.pages.gallery)
+    const breadcrumbSchema = {
+        ...generateBreadcrumbSchema([
+            { name: "Accueil", url: siteConfig.pages.home },
+            { name: "Galerie", url: siteConfig.pages.gallery },
+        ]),
+        "@id": `${galleryUrl}#breadcrumb`,
+        name: "Fil d'Ariane de la galerie Mameshiba",
+    }
+    const videoObjects = buildGalleryVideoObjects(youtubeVideos)
+    const collectionSchema = {
+        ...generateCollectionPageSchema({
+            name: pageMetadata.gallery.title,
+            description: pageMetadata.gallery.description,
+            url: siteConfig.pages.gallery,
+            images: galleryImageItems.map((item) => ({
+                url: item.src,
+                name: item.title,
+                caption: item.alt,
+                width: item.width,
+                height: item.height,
+                encodingFormat: getImageEncodingFormat(item.src),
+            })),
+        }),
+        "@id": `${galleryUrl}#webpage`,
+        mainEntity: buildGalleryImageList(galleryImageItems),
+        ...(videoObjects.length > 0 ? { hasPart: videoObjects } : {}),
+        breadcrumb: {
+            "@id": `${galleryUrl}#breadcrumb`,
+        },
+    }
 
     return (
         <>
