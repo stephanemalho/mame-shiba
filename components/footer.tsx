@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram } from "lucide-react"
+import { Facebook, Instagram, Youtube } from "lucide-react"
 import { FaTiktok } from "react-icons/fa6";
 import Image from "next/image"
 
@@ -102,6 +102,14 @@ export function Footer() {
                                     Les conditions de vie
                                 </Link>
                             </li>
+                            <li>
+                                <Link
+                                    href="/galerie"
+                                    className="text-muted-foreground hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded px-1 py-0.5"
+                                >
+                                    Galerie photos et vidéos
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
 
@@ -189,6 +197,15 @@ export function Footer() {
                                 aria-label="Suivez Kawaii Mameshiba sur TikTok (lien externe)"
                             >
                                 <FaTiktok className="h-5 w-5" aria-hidden="true" />
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@Elevagekawaiimameshiba"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-muted-foreground hover:text-primary transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded p-1"
+                                aria-label="Suivez Kawaii Mameshiba sur YouTube (lien externe)"
+                            >
+                                <Youtube className="h-5 w-5" aria-hidden="true" />
                             </a>
                             {/* <a
                                 href="https://twitter.com"

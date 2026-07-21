@@ -99,7 +99,10 @@ export const siteConfig = {
     ogImageHeight: 1707,
 
     socialLinks: {
-        instagram: "https://www.instagram.com/kawaiimameshiba/"
+        facebook: "https://www.facebook.com/people/Elevage-Mameshiba-Kawaii-Shiba/100088811580709",
+        instagram: "https://www.instagram.com/kawaiimameshiba/",
+        tiktok: "https://www.tiktok.com/@kawaiimameshiba",
+        youtube: "https://www.youtube.com/@Elevagekawaiimameshiba"
     },
 
     /* ------------------------------- Pages ------------------------------------ */
@@ -112,6 +115,7 @@ export const siteConfig = {
         reproductors: "/nos-chiens",
         presentation: "/presentation-elevage",
         eleveuses: "/presentation-eleveuses",
+        gallery: "/galerie",
         wellness: "/bien-etre-animal",
         contact: "/contact",
         legalNotice: "/mentions-legales",
@@ -504,6 +508,20 @@ export const pageMetadata = {
         ]
     },
 
+    gallery: {
+        title: "Galerie Mameshiba : photos et vidéos | Kawaii Shiba",
+        description:
+            "Découvrez notre sélection de photos préférées des Mameshiba de Kawaii Shiba et les trois dernières vidéos publiées automatiquement sur notre chaîne YouTube.",
+        keywords: [
+            "galerie Mameshiba",
+            "photos Mameshiba",
+            "vidéos Mameshiba",
+            "élevage Mameshiba en photos",
+            "YouTube Mameshiba",
+            "Kawaii Shiba"
+        ]
+    },
+
     contact: {
         title: "Contact & visites",
         description:
@@ -590,7 +608,7 @@ export const sitemapPages = [
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.95,
-        lastmod: "2026-07-15"
+        lastmod: "2026-07-21"
     },
     {
         url: "/mameshiba",
@@ -633,6 +651,12 @@ export const sitemapPages = [
         changefreq: "monthly",
         priority: 0.7,
         lastmod: "2026-07-09"
+    },
+    {
+        url: "/galerie",
+        changefreq: "weekly",
+        priority: 0.75,
+        lastmod: "2026-07-21"
     },
     {
         url: "/contact",

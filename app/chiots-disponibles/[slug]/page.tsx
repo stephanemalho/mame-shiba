@@ -181,28 +181,36 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                     </div>
 
                     <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
-                        <div className="grid gap-3 sm:grid-cols-2">
-                            {puppy.images.map((image, index) => (
-                                <figure
-                                    key={image.src}
-                                    className={`relative overflow-hidden rounded-2xl border border-primary/10 bg-muted/40 ${
-                                        index === 0 ? "aspect-4/5 sm:col-span-2 lg:aspect-16/11" : "aspect-4/3"
-                                    }`}
-                                >
-                                    <Image
-                                        src={index === 0 ? image.src : (image.thumbSrc ?? image.src)}
-                                        alt={image.alt}
-                                        fill
-                                        priority={index === 0}
-                                        fetchPriority={index === 0 ? "high" : "auto"}
-                                        sizes={index === 0
-                                            ? "(min-width: 1024px) 52vw, 100vw"
-                                            : "(min-width: 1024px) 25vw, 50vw"}
-                                        className="object-contain p-2"
-                                        quality={index === 0 ? 80 : 70}
-                                    />
-                                </figure>
-                            ))}
+                        <div className="space-y-4">
+                            <div className="space-y-2">
+                                <h2 className="text-2xl font-bold">Galerie photo et évolution de {puppy.name}</h2>
+                                <p className="text-sm leading-relaxed text-muted-foreground">
+                                    Retrouvez ses portraits récents puis ses premières photos à l’élevage, conservées pour suivre son évolution.
+                                </p>
+                            </div>
+                            <div className="grid gap-3 sm:grid-cols-2">
+                                {puppy.images.map((image, index) => (
+                                    <figure
+                                        key={image.src}
+                                        className={`relative overflow-hidden rounded-2xl border border-primary/10 bg-muted/40 ${
+                                            index === 0 ? "aspect-4/5 sm:col-span-2 lg:aspect-16/11" : "aspect-4/3"
+                                        }`}
+                                    >
+                                        <Image
+                                            src={index === 0 ? image.src : (image.thumbSrc ?? image.src)}
+                                            alt={image.alt}
+                                            fill
+                                            priority={index === 0}
+                                            fetchPriority={index === 0 ? "high" : "auto"}
+                                            sizes={index === 0
+                                                ? "(min-width: 1024px) 52vw, 100vw"
+                                                : "(min-width: 1024px) 25vw, 50vw"}
+                                            className="object-contain p-2"
+                                            quality={index === 0 ? 80 : 70}
+                                        />
+                                    </figure>
+                                ))}
+                            </div>
                         </div>
 
                         <article className="space-y-6">

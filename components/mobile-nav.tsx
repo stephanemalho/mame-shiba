@@ -19,6 +19,7 @@ const navigation = [
     { name: "Nos chiots disponibles", href: "/chiots-disponibles" },
     { name: "Réussir son adoption", href: "/adoption/reussir-son-adoption" },
     { name: "Le quotidien des Mameshiba", href: "/bien-etre-animal" },
+    { name: "Galerie photos et vidéos", href: "/galerie" },
     { name: "Blog", href: "/blog/mame-shiba" },
     { name: "Contact", href: "/contact" },
 ]

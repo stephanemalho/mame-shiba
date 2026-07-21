@@ -109,8 +109,8 @@ function responsivePuppyImage(name: string, folderName: string, assetName: strin
     };
 }
 
-function responsivePuppyImages(name: string, folderName: string, assetNames: string[]): PuppyImage[] {
-    return assetNames.map((assetName, index) => responsivePuppyImage(name, folderName, assetName, index));
+function responsivePuppyImages(name: string, folderName: string, assetNames: string[], startIndex = 0): PuppyImage[] {
+    return assetNames.map((assetName, index) => responsivePuppyImage(name, folderName, assetName, startIndex + index));
 }
 
 function puppyImages(name: string, files: string[], startIndex = 0): PuppyImage[] {
@@ -283,7 +283,7 @@ export const puppies: Puppy[] = [
         age: karasukiBirthDate,
         birthDate: karasukiBirthDateIso,
         availableFrom: karasukiAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Kenshiro est un mâle Mameshiba blanc issu de Karasuki et Waru. Son évolution est suivie à l'élevage afin de confirmer son gabarit, son tempérament et son type.",
         highlights: [
@@ -293,15 +293,23 @@ export const puppies: Puppy[] = [
             "Lignée japonaise"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", [
-            "mameshiba-male-fauve-kenshiro-1",
-            "mameshiba-male-fauve-kenshiro-2",
-            "mameshiba-male-fauve-kenshiro-3",
-            "mameshiba-male-fauve-kenshiro-4",
-            "mameshiba-blanc-fauve-kenshiro-1",
-            "mameshiba-blanc-fauve-kenshiro-2",
-            "mameshiba-blanc-fauve-kenshiro-3"
-        ]),
+        images: [
+            ...responsivePuppyImages("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", [
+                "mameshiba-male-fauve-kenshiro-1",
+                "mameshiba-male-fauve-kenshiro-2",
+                "mameshiba-male-fauve-kenshiro-3",
+                "mameshiba-male-fauve-kenshiro-4",
+                "mameshiba-blanc-fauve-kenshiro-1",
+                "mameshiba-blanc-fauve-kenshiro-2",
+                "mameshiba-blanc-fauve-kenshiro-3",
+                "mameshiba-blanc-fauve-kenshiro"
+            ]),
+            ...puppyImages("KENSHIRO", [
+                "kenshiro-mameshiba-1-6semaine.jpeg",
+                "kenshiro-mameshiba-2-6semaine.jpeg",
+                "kenshiro-mameshiba-3-6semaine.jpeg"
+            ], 8)
+        ],
         thumbnailImage: responsivePuppyImage("KENSHIRO", "mameshiba-blanc-fauve-kenshiro", "mameshiba-male-fauve-kenshiro-1", 0),
         linkTo: karasukiWaruFormUrl,
         price: malePrice,
@@ -408,7 +416,7 @@ export const puppies: Puppy[] = [
         age: sakuraBirthDate,
         birthDate: sakuraBirthDateIso,
         availableFrom: sakuraAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Kaito est un mâle Mameshiba fauve issu de Sakura et Waru. Sa croissance est suivie à l'élevage afin de préciser son gabarit, son type et son tempérament.",
         highlights: [
@@ -418,13 +426,21 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
-            "mameshiba-male-fauve-kaito-1",
-            "mameshiba-male-fauve-kaito-2",
-            "mameshiba-male-fauve-kaito-3",
-            "mameshiba-male-fauve-kaito-4",
-            "mameshiba-fauve-kaito-1"
-        ]),
+        images: [
+            ...responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
+                "mameshiba-male-fauve-kaito-1",
+                "mameshiba-male-fauve-kaito-2",
+                "mameshiba-male-fauve-kaito-3",
+                "mameshiba-male-fauve-kaito-4",
+                "mameshiba-fauve-kaito-1"
+            ]),
+            ...responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
+                "mameshiba-fauve-kaito-2",
+                "mameshiba-fauve-kaito-3",
+                "mameshiba-fauve-kaito-4",
+                "mameshiba-fauve-kaito-5"
+            ], 5)
+        ],
         thumbnailImage: responsivePuppyImage("KAITO", "mameshiba-fauve-kaito", "mameshiba-male-fauve-kaito-1", 0),
         linkTo: sakuraWaruFormUrl,
         price: malePrice,
@@ -445,7 +461,7 @@ export const puppies: Puppy[] = [
         age: sakuraBirthDate,
         birthDate: sakuraBirthDateIso,
         availableFrom: sakuraAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Saku est une femelle Mameshiba blanche issue de Sakura et Waru. Son évolution sera suivie avec attention à l'élevage au fil des prochaines semaines.",
         highlights: [
@@ -455,12 +471,19 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("SAKU", "mameshiba-blanche-saku", [
-            "mameshiba-femelle-blanche-saku-1",
-            "mameshiba-femelle-blanche-saku-2",
-            "mameshiba-femelle-blanche-saku-3",
-            "mameshiba-blanche-saku-1"
-        ]),
+        images: [
+            ...responsivePuppyImages("SAKU", "mameshiba-blanche-saku", [
+                "mameshiba-femelle-blanche-saku-1",
+                "mameshiba-femelle-blanche-saku-2",
+                "mameshiba-femelle-blanche-saku-3",
+                "mameshiba-blanche-saku-1"
+            ]),
+            ...responsivePuppyImages("SAKU", "mameshiba-blanche-saku", [
+                "mameshiba-blanche-saku-2",
+                "mameshiba-blanche-saku-3",
+                "mameshiba-blanche-saku-4"
+            ], 4)
+        ],
         thumbnailImage: responsivePuppyImage("SAKU", "mameshiba-blanche-saku", "mameshiba-femelle-blanche-saku-1", 0),
         linkTo: sakuraWaruFormUrl,
         price: femalePrice,
@@ -482,7 +505,7 @@ export const puppies: Puppy[] = [
         age: sakuraBirthDate,
         birthDate: sakuraBirthDateIso,
         availableFrom: sakuraAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Yuki est une femelle Mameshiba blanche issue de Sakura et Waru. Son poids adulte est en cours d'estimation et son évolution sera suivie avec attention à l'élevage.",
         highlights: [
@@ -492,13 +515,22 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("YUKI", "mameshiba-blanche-yuki", [
-            "mameshiba-femelle-blanche-yuki-1",
-            "mameshiba-femelle-blanche-yuki-2",
-            "mameshiba-femelle-blanche-yuki-3",
-            "mameshiba-femelle-blanche-yuki-4",
-            "mameshiba-femelle-blanche-yuki-5"
-        ]),
+        images: [
+            ...responsivePuppyImages("YUKI", "mameshiba-blanche-yuki", [
+                "mameshiba-femelle-blanche-yuki-1",
+                "mameshiba-femelle-blanche-yuki-2",
+                "mameshiba-femelle-blanche-yuki-3",
+                "mameshiba-femelle-blanche-yuki-4",
+                "mameshiba-femelle-blanche-yuki-5"
+            ]),
+            ...responsivePuppyImages("YUKI", "mameshiba-blanche-yuki", [
+                "mameshiba-blanche-yuki-1",
+                "mameshiba-blanche-yuki-2",
+                "mameshiba-blanche-yuki-3",
+                "mameshiba-blanche-yuki-4",
+                "mameshiba-blanche-yuki-5"
+            ], 5)
+        ],
         thumbnailImage: responsivePuppyImage("YUKI", "mameshiba-blanche-yuki", "mameshiba-femelle-blanche-yuki-1", 0),
         linkTo: sakuraWaruFormUrl,
         price: femalePrice,
@@ -519,7 +551,7 @@ export const puppies: Puppy[] = [
         age: soboBirthDate,
         birthDate: soboBirthDateIso,
         availableFrom: soboAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Neko est une femelle Mameshiba blanche issue de Sobo et Waru. Son poids adulte est estimé entre 3 et 5 kg et son évolution sera suivie avec attention à l'élevage.",
         highlights: [
@@ -529,13 +561,21 @@ export const puppies: Puppy[] = [
             "Portée Sobo & Waru"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("NEKO", "mameshiba-blanche-neko", [
-            "mameshiba-femelle-blanche-neko-1",
-            "mameshiba-femelle-blanche-neko-2",
-            "mameshiba-femelle-blanche-neko-3",
-            "mameshiba-femelle-blanche-neko-4",
-            "mameshiba-blanche-neko-1"
-        ]),
+        images: [
+            ...responsivePuppyImages("NEKO", "mameshiba-blanche-neko", [
+                "mameshiba-femelle-blanche-neko-1",
+                "mameshiba-femelle-blanche-neko-2",
+                "mameshiba-femelle-blanche-neko-3",
+                "mameshiba-femelle-blanche-neko-4",
+                "mameshiba-blanche-neko-1"
+            ]),
+            ...responsivePuppyImages("NEKO", "mameshiba-blanche-neko", [
+                "mameshiba-blanche-neko-2",
+                "mameshiba-blanche-neko-3",
+                "mameshiba-blanche-neko-4",
+                "mameshiba-blanche-neko-5"
+            ], 5)
+        ],
         thumbnailImage: responsivePuppyImage("NEKO", "mameshiba-blanche-neko", "mameshiba-femelle-blanche-neko-1", 0),
         linkTo: soboWaruFormUrl,
         price: femalePrice,
@@ -556,7 +596,7 @@ export const puppies: Puppy[] = [
         age: soboBirthDate,
         birthDate: soboBirthDateIso,
         availableFrom: soboAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Maneki est une femelle Mameshiba fauve issue de Sobo et Waru. Son poids adulte est estimé autour de 3 kg et son évolution sera suivie avec attention à l'élevage.",
         highlights: [
@@ -566,12 +606,18 @@ export const puppies: Puppy[] = [
             "Portée Sobo & Waru"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("MANEKI", "mameshiba-fauve-maneki", [
-            "mameshiba-femelle-fauve-maneki-1",
-            "mameshiba-femelle-fauve-maneki-2",
-            "mameshiba-fauve-maneki-1",
-            "mameshiba-fauve-maneki-2"
-        ]),
+        images: [
+            ...responsivePuppyImages("MANEKI", "mameshiba-fauve-maneki", [
+                "mameshiba-femelle-fauve-maneki-1",
+                "mameshiba-femelle-fauve-maneki-2",
+                "mameshiba-fauve-maneki-1",
+                "mameshiba-fauve-maneki-2"
+            ]),
+            ...responsivePuppyImages("MANEKI", "mameshiba-fauve-maneki", [
+                "mameshiba-fauve-maneki-3",
+                "mameshiba-fauve-maneki-4"
+            ], 4)
+        ],
         thumbnailImage: responsivePuppyImage("MANEKI", "mameshiba-fauve-maneki", "mameshiba-femelle-fauve-maneki-1", 0),
         linkTo: soboWaruFormUrl,
         price: femalePrice,
@@ -593,7 +639,7 @@ export const puppies: Puppy[] = [
         age: soboBirthDate,
         birthDate: soboBirthDateIso,
         availableFrom: soboAvailableDateIso,
-        updatedAt: "2026-07-09",
+        updatedAt: "2026-07-21",
         description:
             "Yoshi est une femelle Mameshiba noir et feu issue de Sobo et Waru. Elle est présentée avec les chiots disponibles de la portée et son évolution sera suivie avec attention.",
         highlights: [
@@ -603,13 +649,19 @@ export const puppies: Puppy[] = [
             "Disponible à la réservation"
         ],
         health: defaultHealth,
-        images: responsivePuppyImages("YOSHI", "mameshiba-noir-feu-yoshi", [
-            "mameshiba-femelle-noir-feu-yoshi-1",
-            "mameshiba-femelle-noir-feu-yoshi-2",
-            "mameshiba-noir-feu-yoshi-3",
-            "mameshiba-noir-feu-yoshi-4",
-            "mameshiba-noir-feu-yoshi-5"
-        ]),
+        images: [
+            ...responsivePuppyImages("YOSHI", "mameshiba-noir-feu-yoshi", [
+                "mameshiba-femelle-noir-feu-yoshi-1",
+                "mameshiba-femelle-noir-feu-yoshi-2",
+                "mameshiba-noir-feu-yoshi-3",
+                "mameshiba-noir-feu-yoshi-4",
+                "mameshiba-noir-feu-yoshi-5"
+            ]),
+            ...responsivePuppyImages("YOSHI", "mameshiba-noir-feu-yoshi", [
+                "mameshiba-noir-feu-yoshi-6",
+                "mameshiba-noir-feu-yoshi-7"
+            ], 5)
+        ],
         thumbnailImage: responsivePuppyImage("YOSHI", "mameshiba-noir-feu-yoshi", "mameshiba-femelle-noir-feu-yoshi-1", 0),
         linkTo: soboWaruFormUrl,
         price: femalePrice,

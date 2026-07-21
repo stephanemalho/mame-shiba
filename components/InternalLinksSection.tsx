@@ -25,6 +25,7 @@ const internalLinkImagesByHref: Record<string, string> = {
     "/chiots-disponibles": "/pages/puppies/mameshiba-blanc-hotaru-1.jpg",
     "/adoption/reussir-son-adoption": "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg",
     "/bien-etre-animal": "/locaux.webp",
+    "/galerie": "/pages/image-all-shiba/mameshiba-jardin-course-03.webp",
     "/contact": siteConfig.ogImage,
     "/blog": siteConfig.ogImage,
     "/blog/mame-shiba": siteConfig.ogImage,

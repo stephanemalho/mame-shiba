@@ -61,6 +61,13 @@ const homeInternalLinks: InternalLinkItem[] = [
     description: "Voir les conditions de vie, la socialisation, les espaces et le suivi quotidien des chiens.",
   },
   {
+    href: "/galerie",
+    title: "Galerie photos et vidéos",
+    description: "Découvrir nos Mameshiba en images et regarder les trois dernières vidéos publiées par l'élevage.",
+    image: "/pages/image-all-shiba/mameshiba-jardin-course-03.webp",
+    imageAlt: "Chiot Mameshiba courant dans le jardin de l'élevage Kawaii Shiba",
+  },
+  {
     href: "/contact",
     title: "Contact adoption",
     description: "Présenter votre projet, poser vos questions et échanger avec l'élevage avant une réservation.",

@@ -37,6 +37,26 @@ const staticPageImages: Record<string, string[]> = {
         "/pages/image-all-shiba/visuel-texte-mameshiba-elevage-kawaii.webp",
         "/pages/mame-shiba-prix/trois-mame-shiba-bebe.jpg",
     ],
+    "/galerie": [
+        "/pages/image-all-shiba/mameshiba-jardin-course-03.webp",
+        "/pages/image-all-shiba/mameshiba-portrait-vertical-02.webp",
+        "/pages/image-all-shiba/mameshiba-jardin-ensemble-01.webp",
+        "/pages/image-all-shiba/mameshiba-sur-structure-bois-01.webp",
+        "/pages/image-all-shiba/mameshiba-exterieur-portrait-01.webp",
+        "/pages/image-all-shiba/mameshiba-interieur-textile-01.webp",
+        "/pages/image-all-shiba/mameshiba-en-laisse-parc-01.webp",
+        "/pages/image-all-shiba/mameshiba-parmi-les-branches.webp",
+        "/pages/image-all-shiba/mameshiba-portrait-collier-01.webp",
+        "/pages/image-all-shiba/mameshiba-jardin-ciel-01.webp",
+        "/pages/image-all-shiba/mameshiba-jardin-ensemble-02.webp",
+        "/pages/homePage/SHIBA-INU-ET-MAMESHIBA-300x261.jpeg",
+        "/pages/homePage/shiba-inu-vs-mameshiba-size-bottom.webp",
+        "/pages/homePage/white-puppy-meme-shiba-japan-bg.jpeg",
+        "/pages/homePage/ushiro-paris.jpg",
+        "/pages/le-mame-shiba/sakura-mame-shiba-kawaii-shiba-portrait-v2.webp",
+        "/pages/le-mame-shiba/mame-shiba-puppy-blanc-white.jpeg",
+        "/pages/le-mame-shiba/Yuzu-femelle-mame-shiba-couleur-feu.webp",
+    ],
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
