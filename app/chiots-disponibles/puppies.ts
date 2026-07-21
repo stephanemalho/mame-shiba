@@ -54,6 +54,7 @@ const karasukiWaruFormUrl = "https://forms.gle/NcuaYa2peT3A7ky18";
 const defaultPuppyFormUrl = "https://forms.gle/myGmQAj5Kim6UnVx8";
 const soboWaruFormUrl = defaultPuppyFormUrl;
 const sakuraWaruFormUrl = defaultPuppyFormUrl;
+const lowerPrice = 4000;
 const malePrice = 4500;
 const femalePrice = 5000;
 const defaultHealth = [
@@ -315,7 +316,8 @@ export const puppies: Puppy[] = [
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     },
     {
         name: "MITSUKI",
@@ -443,7 +445,7 @@ export const puppies: Puppy[] = [
         ],
         thumbnailImage: responsivePuppyImage("KAITO", "mameshiba-fauve-kaito", "mameshiba-male-fauve-kaito-1", 0),
         linkTo: sakuraWaruFormUrl,
-        price: malePrice,
+        price: lowerPrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan"
