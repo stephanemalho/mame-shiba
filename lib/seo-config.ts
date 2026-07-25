@@ -656,7 +656,7 @@ export const sitemapPages = [
         url: "/galerie",
         changefreq: "weekly",
         priority: 0.75,
-        lastmod: "2026-07-21"
+        lastmod: "2026-07-25"
     },
     {
         url: "/contact",
