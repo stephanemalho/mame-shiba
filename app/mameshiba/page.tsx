@@ -282,7 +282,7 @@ export default function MameShibaPage() {
                                 Le Mameshiba
                             </Badge>
                             <h1 className="text-xl md:text-3xl font-bold">
-                                Tout savoir sur le Mameshiba : son origines, sa taille et les critères d&apos;adoption, avant de se lancer.
+                                Tout savoir sur le Mameshiba : son origine, sa taille et les critères d&apos;adoption, avant de se lancer.
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 Le Mameshiba est issu du Shiba Inu, en format miniature ! Contrairement au Shiba Inu classique, souvent réputé pour son indépendance marquée, le Mameshiba présente généralement un tempérament plus souple et plus proche de l’humain, ce qui le rend globalement plus facile à éduquer.

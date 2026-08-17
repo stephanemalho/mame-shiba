@@ -99,7 +99,8 @@ export const siteConfig = {
     ogImageHeight: 1707,
 
     socialLinks: {
-        facebook: "https://www.facebook.com/people/Elevage-Mameshiba-Kawaii-Shiba/100088811580709",
+        facebook:
+            "https://www.facebook.com/people/Elevage-Mameshiba-Kawaii-Shiba/100088811580709",
         instagram: "https://www.instagram.com/kawaiimameshiba/",
         tiktok: "https://www.tiktok.com/@kawaiimameshiba",
         youtube: "https://www.youtube.com/@Elevagekawaiimameshiba"
@@ -148,7 +149,8 @@ const socialImageAssets: Record<string, SocialImageAsset> = {
     },
     [responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.src]: {
         width: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.width,
-        height: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.height,
+        height: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata
+            .height,
         type: responsiveImages.cloeEleveuseAvecMameshibaEtShiba.metadata.type
     },
     "/pages/homePage/mame-shiba-puppy-blanc-white.jpeg": {
@@ -382,9 +384,9 @@ export const pageMetadata = {
     },
 
     shiba: {
-        title: "Mameshiba : Le vrai Shiba Inu nain | Kawaii Shiba",
+        title: "Mameshiba : origine, taille, caractère et standard japonais",
         description:
-            "Découvrez le Mameshiba, le Shiba Inu de petite taille, star du Japon. Apprenez tout sur son origine, sa taille, son caractère et comment il se différencie du Shiba Inu classique.",
+            "Découvrez le Mameshiba : son origine au Japon, sa taille adulte, son caractère, son standard et les critères pour reconnaître un véritable Mameshiba.",
         keywords: [
             "mame shiba",
             "Mameshiba",

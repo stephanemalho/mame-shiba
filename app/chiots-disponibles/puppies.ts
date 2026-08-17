@@ -548,19 +548,19 @@ export const puppies: Puppy[] = [
         size: "Petit format Mameshiba",
         ruler: "Lignée japonaise",
         weight: "Estimée à 3-5 kg adulte",
-        parents: "Parents : SOBO & WARU",
-        readyDate: soboAvailableDate,
-        age: soboBirthDate,
-        birthDate: soboBirthDateIso,
-        availableFrom: soboAvailableDateIso,
+        parents: "Parents : SAKURA & WARU",
+        readyDate: sakuraAvailableDate,
+        age: sakuraBirthDate,
+        birthDate: sakuraBirthDateIso,
+        availableFrom: sakuraAvailableDateIso,
         updatedAt: "2026-07-21",
         description:
-            "Neko est une femelle Mameshiba blanche issue de Sobo et Waru. Son poids adulte est estimé entre 3 et 5 kg et son évolution sera suivie avec attention à l'élevage.",
+            "Neko est une femelle Mameshiba blanche issue de SAKURA et WARU. Son poids adulte est estimé entre 3 et 5 kg et son évolution sera suivie avec attention à l'élevage.",
         highlights: [
             "Femelle",
             "Blanche",
             "Estimée à 3-5 kg adulte",
-            "Portée Sobo & Waru"
+            "Portée SAKURA & WARU"
         ],
         health: defaultHealth,
         images: [
