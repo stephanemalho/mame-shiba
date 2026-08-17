@@ -1,0 +1,542 @@
+{
+  "folderName": "mameshiba-blanc-botan",
+  "imageCount": 5,
+  "generatedWith": "generate-puppy-responsive-assets.mjs",
+  "images": [
+    {
+      "index": 1,
+      "sourceFilename": "mameshiba-blanc-botan-source-1.jpeg",
+      "assetName": "mameshiba-blanc-botan-1",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-1-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 11515
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-1-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-1-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 20122
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-1-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-1-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 36490
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-1-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 22692
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-1-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-1-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 42494
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-1-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-1-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 82622
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 32016
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-1-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 64016
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 125914
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "sourceFilename": "mameshiba-blanc-botan-source-2.jpeg",
+      "assetName": "mameshiba-blanc-botan-2",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-2-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-2-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 16126
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-2-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-2-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 29043
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-2-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-2-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 51571
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-2-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-2-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 30766
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-2-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-2-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 57034
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-2-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-2-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 108518
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-2-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 38151
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-2-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 77060
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-2-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 153410
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "sourceFilename": "mameshiba-blanc-botan-source-3.jpeg",
+      "assetName": "mameshiba-blanc-botan-3",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-3-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 18691
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-3-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 36628
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-3-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 70558
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-3-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 34740
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-3-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 68272
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-3-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 138690
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 40562
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 86695
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 181276
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "sourceFilename": "mameshiba-blanc-botan-source-4.jpeg",
+      "assetName": "mameshiba-blanc-botan-4",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-4-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 20911
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-4-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 41834
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-4-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 80515
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-4-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 38540
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-4-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 76910
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-4-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 154576
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 43227
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 93773
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 198261
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "sourceFilename": "mameshiba-blanc-botan-source-5.jpeg",
+      "assetName": "mameshiba-blanc-botan-5",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-5-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-5-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 19929
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-5-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-5-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 40019
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-5-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-botan-5-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 75515
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-5-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-5-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 37110
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-5-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-5-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 72242
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-5-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-botan-5-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 143804
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-botan-5-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-5-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 42128
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-botan-5-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-5-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 90672
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-botan-5-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-botan-5-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 188900
+        }
+      ]
+    }
+  ]
+}

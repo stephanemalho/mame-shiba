@@ -1,0 +1,435 @@
+{
+  "folderName": "mameshiba-blanc-okami",
+  "imageCount": 4,
+  "generatedWith": "generate-puppy-responsive-assets.mjs",
+  "images": [
+    {
+      "index": 1,
+      "sourceFilename": "mameshiba-blanc-okami-source-1.jpeg",
+      "assetName": "mameshiba-blanc-okami-1",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-1-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-1-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "size": 11981
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-1-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-1-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "size": 22959
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-1-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-1-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "size": 40376
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-1-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-1-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "size": 19958
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-1-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-1-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "size": 39756
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-1-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-1-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "size": 75130
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-1-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "size": 22770
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-1-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "size": 47378
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-1-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "size": 94093
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "sourceFilename": "mameshiba-blanc-okami-source-2.jpeg",
+      "assetName": "mameshiba-blanc-okami-2",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-2-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-2-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "size": 10715
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-2-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-2-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "size": 17526
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-2-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-2-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "size": 26875
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-2-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-2-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "size": 17588
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-2-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-2-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "size": 31724
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-2-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-2-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "size": 53612
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-2-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "size": 21989
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-2-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "size": 42431
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-2-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "size": 78086
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "sourceFilename": "mameshiba-blanc-okami-source-3.jpeg",
+      "assetName": "mameshiba-blanc-okami-3",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-3-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-3-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "size": 11723
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-3-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-3-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "size": 20021
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-3-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-3-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "size": 31440
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-3-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-3-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "size": 18900
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-3-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-3-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "size": 35844
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-3-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-3-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "size": 62632
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-3-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "size": 23103
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-3-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "size": 45301
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-3-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "size": 85673
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "sourceFilename": "mameshiba-blanc-okami-source-4.jpeg",
+      "assetName": "mameshiba-blanc-okami-4",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-4-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-4-mobile.avif",
+          "width": 480,
+          "height": 320,
+          "size": 8682
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-4-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-4-tablet.avif",
+          "width": 768,
+          "height": 512,
+          "size": 14389
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-4-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-4-desktop.avif",
+          "width": 1200,
+          "height": 800,
+          "size": 24300
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-4-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-4-mobile.webp",
+          "width": 480,
+          "height": 320,
+          "size": 14244
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-4-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-4-tablet.webp",
+          "width": 768,
+          "height": 512,
+          "size": 27314
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-4-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-4-desktop.webp",
+          "width": 1200,
+          "height": 800,
+          "size": 51398
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-4-mobile.jpeg",
+          "width": 480,
+          "height": 320,
+          "size": 18890
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-4-tablet.jpeg",
+          "width": 768,
+          "height": 512,
+          "size": 37471
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-4-desktop.jpeg",
+          "width": 1200,
+          "height": 800,
+          "size": 73349
+        }
+      ]
+    }
+  ]
+}

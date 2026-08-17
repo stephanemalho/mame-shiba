@@ -163,7 +163,7 @@ export default function NosChiotsPage() {
                                                 <div className="grid md:grid-cols-[220px_1fr_auto] md:items-stretch">
                                                     <Link
                                                         href={puppyUrl}
-                                                        className="relative block h-[28rem] w-full overflow-hidden bg-muted transition-opacity hover:opacity-90 sm:h-[34rem] md:h-full md:min-h-full"
+                                                        className="relative block h-[28rem] w-full overflow-hidden bg-muted transition-opacity hover:opacity-90 sm:h-[34rem] md:aspect-[2/3] md:h-auto md:min-h-0 md:self-start"
                                                         aria-label={`Voir la fiche détaillée de ${puppy.name}`}
                                                     >
                                                         {firstImage ? (

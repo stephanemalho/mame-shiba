@@ -1,0 +1,435 @@
+{
+  "folderName": "mameshiba-blanc-bunji",
+  "imageCount": 4,
+  "generatedWith": "generate-puppy-responsive-assets.mjs",
+  "images": [
+    {
+      "index": 1,
+      "sourceFilename": "mameshiba-blanc-bunji-source-1.jpeg",
+      "assetName": "mameshiba-blanc-bunji-1",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-1-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-1-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 14820
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-1-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-1-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 25748
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-1-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-1-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 45617
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-1-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-1-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 28096
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-1-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-1-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 52252
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-1-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-1-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 100926
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-1-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-1-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 36319
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-1-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-1-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 72725
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-1-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-1-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 145242
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "sourceFilename": "mameshiba-blanc-bunji-source-2.jpeg",
+      "assetName": "mameshiba-blanc-bunji-2",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-2-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-2-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 16439
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-2-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-2-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 29544
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-2-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-2-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 51842
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-2-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-2-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 31616
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-2-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-2-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 57044
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-2-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-2-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 105648
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-2-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-2-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 38972
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-2-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-2-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 78706
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-2-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-2-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 156063
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "sourceFilename": "mameshiba-blanc-bunji-source-3.jpeg",
+      "assetName": "mameshiba-blanc-bunji-3",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-3-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-3-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 16407
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-3-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-3-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 30897
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-3-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-3-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 57626
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-3-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-3-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 30996
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-3-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-3-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 59432
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-3-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-3-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 115868
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-3-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-3-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 38008
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-3-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-3-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 78170
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-3-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-3-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 158645
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "sourceFilename": "mameshiba-blanc-bunji-source-4.jpeg",
+      "assetName": "mameshiba-blanc-bunji-4",
+      "source": {
+        "width": 6000,
+        "height": 4000,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-4-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-4-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 12986
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-4-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-4-tablet.avif",
+          "width": 768,
+          "height": 1152,
+          "size": 21973
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-4-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-bunji-4-desktop.avif",
+          "width": 1200,
+          "height": 1800,
+          "size": 37591
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-4-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-4-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 24962
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-4-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-4-tablet.webp",
+          "width": 768,
+          "height": 1152,
+          "size": 45126
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-4-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-bunji-4-desktop.webp",
+          "width": 1200,
+          "height": 1800,
+          "size": 84000
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-bunji-4-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-4-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 34109
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-bunji-4-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-4-tablet.jpeg",
+          "width": 768,
+          "height": 1152,
+          "size": 67112
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-bunji-4-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-bunji-4-desktop.jpeg",
+          "width": 1200,
+          "height": 1800,
+          "size": 130350
+        }
+      ]
+    }
+  ]
+}

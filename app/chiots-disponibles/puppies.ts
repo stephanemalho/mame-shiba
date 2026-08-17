@@ -671,6 +671,177 @@ export const puppies: Puppy[] = [
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
         isReserved: true
+    },
+    {
+        name: "OKAMI",
+        coat: "Mameshiba",
+        color: "Blanc crème",
+        sexe: "Mâle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : HOSHI & NATSU",
+        readyDate: "Date de disponibilité à confirmer",
+        age: "Né le 5 juillet 2026",
+        birthDate: "2026-07-05",
+        updatedAt: "2026-08-17",
+        description:
+            "Okami est un mâle Mameshiba blanc crème issu de Hoshi et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
+        highlights: [
+            "Mâle",
+            "Blanc crème",
+            "Portée Hoshi & Natsu",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("OKAMI", "mameshiba-blanc-okami", [
+            "mameshiba-blanc-okami-1",
+            "mameshiba-blanc-okami-2",
+            "mameshiba-blanc-okami-3",
+            "mameshiba-blanc-okami-4"
+        ]),
+        thumbnailImage: responsivePuppyImage("OKAMI", "mameshiba-blanc-okami", "mameshiba-blanc-okami-1", 0),
+        linkTo: defaultPuppyFormUrl,
+        price: malePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes
+    },
+    {
+        name: "BOTAN",
+        coat: "Mameshiba",
+        color: "Blanc crème",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : SATU & NATSU",
+        readyDate: "Date de disponibilité à confirmer",
+        age: "Née le 17 juin 2026",
+        birthDate: "2026-06-17",
+        updatedAt: "2026-08-17",
+        description:
+            "Botan est une femelle Mameshiba blanc crème issue de Satu et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
+        highlights: [
+            "Femelle",
+            "Blanc crème",
+            "Portée Satu & Natsu",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("BOTAN", "mameshiba-blanc-botan", [
+            "mameshiba-blanc-botan-1",
+            "mameshiba-blanc-botan-2",
+            "mameshiba-blanc-botan-3",
+            "mameshiba-blanc-botan-4",
+            "mameshiba-blanc-botan-5"
+        ]),
+        thumbnailImage: responsivePuppyImage("BOTAN", "mameshiba-blanc-botan", "mameshiba-blanc-botan-1", 0),
+        linkTo: defaultPuppyFormUrl,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes
+    },
+    {
+        name: "BUNJI",
+        coat: "Mameshiba",
+        color: "Blanc crème",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : SATU & NATSU",
+        readyDate: "Date de disponibilité à confirmer",
+        age: "Née le 17 juin 2026",
+        birthDate: "2026-06-17",
+        updatedAt: "2026-08-17",
+        description:
+            "Bunji est une femelle Mameshiba blanc crème issue de Satu et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
+        highlights: [
+            "Femelle",
+            "Blanc crème",
+            "Portée Satu & Natsu",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("BUNJI", "mameshiba-blanc-bunji", [
+            "mameshiba-blanc-bunji-1",
+            "mameshiba-blanc-bunji-2",
+            "mameshiba-blanc-bunji-3",
+            "mameshiba-blanc-bunji-4"
+        ]),
+        thumbnailImage: responsivePuppyImage("BUNJI", "mameshiba-blanc-bunji", "mameshiba-blanc-bunji-1", 0),
+        linkTo: defaultPuppyFormUrl,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes
+    },
+    {
+        name: "KIN",
+        coat: "Mameshiba",
+        color: "Fauve",
+        sexe: "Femelle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : KAWAII & NATSU",
+        readyDate: "Date de disponibilité à confirmer",
+        age: "Née le 11 juillet 2026",
+        birthDate: "2026-07-11",
+        updatedAt: "2026-08-17",
+        description:
+            "Kin est une femelle Mameshiba fauve issue de Kawaii et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
+        highlights: [
+            "Femelle",
+            "Fauve",
+            "Portée Kawaii & Natsu",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("KIN", "mameshiba-fauve-kin", [
+            "mameshiba-fauve-kin-1",
+            "mameshiba-fauve-kin-2",
+            "mameshiba-fauve-kin-3",
+            "mameshiba-fauve-kin-4",
+            "mameshiba-fauve-kin-5"
+        ]),
+        thumbnailImage: responsivePuppyImage("KIN", "mameshiba-fauve-kin", "mameshiba-fauve-kin-1", 0),
+        linkTo: defaultPuppyFormUrl,
+        price: femalePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes
+    },
+    {
+        name: "KO",
+        coat: "Mameshiba",
+        color: "Fauve",
+        sexe: "Mâle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : KAWAII & NATSU",
+        readyDate: "Date de disponibilité à confirmer",
+        age: "Né le 11 juillet 2026",
+        birthDate: "2026-07-11",
+        updatedAt: "2026-08-17",
+        description:
+            "Ko est un mâle Mameshiba fauve issu de Kawaii et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
+        highlights: [
+            "Mâle",
+            "Fauve",
+            "Portée Kawaii & Natsu",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: responsivePuppyImages("KO", "mameshiba-fauve-ko", [
+            "mameshiba-fauve-ko-1",
+            "mameshiba-fauve-ko-2",
+            "mameshiba-fauve-ko-3"
+        ]),
+        thumbnailImage: responsivePuppyImage("KO", "mameshiba-fauve-ko", "mameshiba-fauve-ko-1", 0),
+        linkTo: defaultPuppyFormUrl,
+        price: malePrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes
     }
 ].sort((leftPuppy, rightPuppy) =>
     Number(Boolean(leftPuppy.isReserved)) - Number(Boolean(rightPuppy.isReserved))
