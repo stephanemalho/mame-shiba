@@ -205,7 +205,7 @@ export function buildPuppyItemListStructuredData(puppies: Puppy[]) {
         "@type": "ItemList",
         "@id": `${siteConfig.siteUrl}/chiots-disponibles#puppy-list`,
         name: "Chiots Mameshiba disponibles à l'adoption",
-        description: "Liste des chiots Mameshiba disponibles ou réservés à l'élevage Kawaii Shiba.",
+        description: "Liste des chiots Mameshiba disponibles à l'adoption à l'élevage Kawaii Shiba.",
         numberOfItems: puppies.length,
         itemListElement: puppies.map((puppy, index) => {
             const url = getAbsolutePuppyUrl(puppy)
@@ -231,7 +231,7 @@ export function buildPuppyCollectionPageStructuredData(puppies: Puppy[]) {
         "@type": "CollectionPage",
         "@id": `${siteConfig.siteUrl}/chiots-disponibles#webpage`,
         name: "Chiots Mameshiba disponibles à l'adoption",
-        description: "Liste des chiots Mameshiba disponibles ou réservés à l'élevage Kawaii Shiba.",
+        description: "Liste des chiots Mameshiba disponibles à l'adoption à l'élevage Kawaii Shiba.",
         url: `${siteConfig.siteUrl}/chiots-disponibles`,
         inLanguage: "fr-FR",
         ...(imageUrls.length > 0 ? {

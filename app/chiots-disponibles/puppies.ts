@@ -78,7 +78,7 @@ const sakuraBirthDate = "Né le 25 mai 2026";
 const sakuraBirthDateIso = "2026-05-25";
 const sakuraAvailableDate = "Disponible le 20 juillet 2026";
 const sakuraAvailableDateIso = "2026-07-20";
-const puppyImageVersion = "20260709";
+const puppyImageVersion = "20260817";
 
 function withPuppyImageVersion(src: string) {
     return `${src}?v=${puppyImageVersion}`;
@@ -406,51 +406,6 @@ export const puppies: Puppy[] = [
         pedigree: "Kennel Club of Japan"
     },
     {
-        name: "KAITO",
-        coat: "Mameshiba",
-        color: "Fauve",
-        sexe: "Mâle",
-        size: "Petit format Mameshiba",
-        ruler: "Lignée japonaise",
-        weight: "Poids adulte en cours d'estimation",
-        parents: "Parents : SAKURA & WARU",
-        readyDate: sakuraAvailableDate,
-        age: sakuraBirthDate,
-        birthDate: sakuraBirthDateIso,
-        availableFrom: sakuraAvailableDateIso,
-        updatedAt: "2026-07-21",
-        description:
-            "Kaito est un mâle Mameshiba fauve issu de Sakura et Waru. Sa croissance est suivie à l'élevage afin de préciser son gabarit, son type et son tempérament.",
-        highlights: [
-            "Mâle",
-            "Fauve",
-            "Portée Sakura & Waru",
-            "Disponible à la réservation"
-        ],
-        health: defaultHealth,
-        images: [
-            ...responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
-                "mameshiba-male-fauve-kaito-1",
-                "mameshiba-male-fauve-kaito-2",
-                "mameshiba-male-fauve-kaito-3",
-                "mameshiba-male-fauve-kaito-4",
-                "mameshiba-fauve-kaito-1"
-            ]),
-            ...responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
-                "mameshiba-fauve-kaito-2",
-                "mameshiba-fauve-kaito-3",
-                "mameshiba-fauve-kaito-4",
-                "mameshiba-fauve-kaito-5"
-            ], 5)
-        ],
-        thumbnailImage: responsivePuppyImage("KAITO", "mameshiba-fauve-kaito", "mameshiba-male-fauve-kaito-1", 0),
-        linkTo: sakuraWaruFormUrl,
-        price: lowerPrice,
-        priceCurrency: "EUR",
-        priceIncludes: defaultPriceIncludes,
-        pedigree: "Kennel Club of Japan"
-    },
-    {
         name: "SAKU",
         coat: "Mameshiba",
         color: "Blanche",
@@ -740,6 +695,52 @@ export const puppies: Puppy[] = [
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes
+    },
+    {
+        name: "KAITO",
+        coat: "Mameshiba",
+        color: "Fauve",
+        sexe: "Mâle",
+        size: "Petit format Mameshiba",
+        ruler: "Lignée japonaise",
+        weight: "Poids adulte en cours d'estimation",
+        parents: "Parents : SAKURA & WARU",
+        readyDate: sakuraAvailableDate,
+        age: sakuraBirthDate,
+        birthDate: sakuraBirthDateIso,
+        availableFrom: sakuraAvailableDateIso,
+        updatedAt: "2026-07-21",
+        description:
+            "Kaito est un mâle Mameshiba fauve issu de Sakura et Waru. Sa croissance est suivie à l'élevage afin de préciser son gabarit, son type et son tempérament.",
+        highlights: [
+            "Mâle",
+            "Fauve",
+            "Portée Sakura & Waru",
+            "Disponible à la réservation"
+        ],
+        health: defaultHealth,
+        images: [
+            ...responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
+                "mameshiba-male-fauve-kaito-1",
+                "mameshiba-male-fauve-kaito-2",
+                "mameshiba-male-fauve-kaito-3",
+                "mameshiba-male-fauve-kaito-4",
+                "mameshiba-fauve-kaito-1"
+            ]),
+            ...responsivePuppyImages("KAITO", "mameshiba-fauve-kaito", [
+                "mameshiba-fauve-kaito-2",
+                "mameshiba-fauve-kaito-3",
+                "mameshiba-fauve-kaito-4",
+                "mameshiba-fauve-kaito-5"
+            ], 5)
+        ],
+        thumbnailImage: responsivePuppyImage("KAITO", "mameshiba-fauve-kaito", "mameshiba-male-fauve-kaito-1", 0),
+        linkTo: sakuraWaruFormUrl,
+        price: lowerPrice,
+        priceCurrency: "EUR",
+        priceIncludes: defaultPriceIncludes,
+        pedigree: "Kennel Club of Japan",
+        isReserved: true
     },
     {
         name: "BUNJI",

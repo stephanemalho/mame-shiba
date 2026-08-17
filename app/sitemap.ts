@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = siteConfig.siteUrl;
     const toUrl = (path: string) => new URL(path, baseUrl).toString();
 
-    const visiblePuppies = puppies.filter((puppy) => !puppy.isAdopted);
+    const visiblePuppies = puppies.filter((puppy) => !puppy.isReserved && !puppy.isAdopted);
     const puppyListImageUrls = getPuppyListSeoImageSources(visiblePuppies, 20).map(toUrl);
 
     const staticPages: MetadataRoute.Sitemap = sitemapPages.map((page) => {
@@ -97,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           ]
         : [];
 
-    const puppyEntries: MetadataRoute.Sitemap = puppies.map((puppy) => ({
+    const puppyEntries: MetadataRoute.Sitemap = visiblePuppies.map((puppy) => ({
         url: toUrl(getPuppyUrl(puppy)),
         lastModified: getPuppyLastModified(puppy) ?? seoLastmod,
         changeFrequency: "weekly",

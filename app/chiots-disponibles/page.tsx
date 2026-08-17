@@ -32,7 +32,7 @@ import { InternalLinksSection, type InternalLinkItem } from "@/components/Intern
 import { Badge } from "@/components/ui/badge"
 import { getPuppyParentProfiles } from "./puppy-parents"
 
-const visiblePuppiesForSeo = puppies.filter((puppy) => !puppy.isAdopted)
+const visiblePuppiesForSeo = puppies.filter((puppy) => !puppy.isReserved && !puppy.isAdopted)
 const pageSeoImages = getPuppyListSeoImageSources(visiblePuppiesForSeo, 6)
 const pageImage = pageSeoImages[0] ?? "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
 
@@ -93,7 +93,7 @@ export default function NosChiotsPage() {
     const visiblePuppies = visiblePuppiesForSeo
     const puppyCollectionPageStructuredData = buildPuppyCollectionPageStructuredData(visiblePuppies)
     const puppyStructuredData = buildPuppyItemListStructuredData(visiblePuppies)
-    const availablePuppiesCount = visiblePuppies.filter((puppy) => !puppy.isReserved).length
+    const availablePuppiesCount = visiblePuppies.length
     const availablePuppiesTitle = availablePuppiesCount > 0
         ? `${availablePuppiesCount} chiot${availablePuppiesCount > 1 ? "s" : ""} disponible${availablePuppiesCount > 1 ? "s" : ""} à l'adoption`
         : "Aucun chiot disponible actuellement"
@@ -193,11 +193,7 @@ export default function NosChiotsPage() {
                                                             </Badge>
                                                             <Badge variant="outline">{puppy.color}</Badge>
                                                             <Badge variant="secondary">{puppy.parents.replace("Parents : ", "")}</Badge>
-                                                            {isReserved ? (
-                                                                <Badge className="bg-green-700 text-white hover:bg-green-700">{statusLabel}</Badge>
-                                                            ) : (
-                                                                <Badge className="bg-primary text-primary-foreground hover:bg-primary">Disponible</Badge>
-                                                            )}
+                                                            <Badge className="bg-primary text-primary-foreground hover:bg-primary">Disponible dès maintenant</Badge>
                                                             {typeof puppy.price === "number" || puppy.priceLabel ? (
                                                                 <Badge variant="outline" className={priceTextClass}>
                                                                     <Banknote className="mr-1 h-4 w-4" aria-hidden="true" />

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import type { Metadata } from "next"
 import {
     ArrowLeft,
@@ -53,7 +53,7 @@ function getPuppyPriceLabel(puppy: Puppy) {
 }
 
 function getAdjacentPuppies(puppy: Puppy) {
-    const visiblePuppies = puppies.filter((item) => !item.isAdopted)
+    const visiblePuppies = puppies.filter((item) => !item.isReserved && !item.isAdopted)
     const currentIndex = visiblePuppies.findIndex((item) => getPuppySlug(item.name) === getPuppySlug(puppy.name))
 
     if (currentIndex === -1 || visiblePuppies.length <= 1) {
@@ -132,6 +132,10 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
 
     if (!puppy) {
         notFound()
+    }
+
+    if (puppy.isReserved) {
+        redirect("/chiots-disponibles")
     }
 
     const status = getPuppyStatus(puppy)
@@ -243,7 +247,7 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
                                             { icon: Dog, label: "Sexe", value: puppy.sexe },
                                             { icon: Heart, label: "Parents", value: puppy.parents.replace("Parents : ", "") },
                                             { icon: FileText, label: "Pédigrée", value: puppy.pedigree ?? "Kennel Club of Japan" },
-                                            { icon: Calendar, label: "Disponibilité", value: puppy.readyDate },
+                                            { icon: Calendar, label: "Disponibilité", value: isAvailable ? "Disponible dès maintenant" : puppy.readyDate },
                                             { icon: PawPrint, label: "Naissance", value: puppy.age },
                                             { icon: Weight, label: "Poids estimé", value: puppy.weight },
                                             { icon: BadgeCheck, label: "Sélection", value: puppy.ruler },

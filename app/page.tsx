@@ -477,7 +477,7 @@ export default function HomePage() {
                   href="/chiots-disponibles"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
-                  Voir tous les shibas
+                  Voir tous les chiots disponibles
                 </Link>
               </div>
             </div>
