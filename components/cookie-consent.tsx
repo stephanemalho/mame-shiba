@@ -4,20 +4,6 @@ import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 import { Cookie } from "lucide-react"
 
-const GOOGLE_CONSENT_GRANTED = {
-    ad_storage: "granted",
-    analytics_storage: "granted",
-    ad_user_data: "granted",
-    ad_personalization: "granted",
-} as const
-
-const GOOGLE_CONSENT_DENIED = {
-    ad_storage: "denied",
-    analytics_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied",
-} as const
-
 export default function CookieConsent() {
     const [consent, setConsent] = useState<"accepted" | "denied" | "unknown">("unknown")
     const [open, setOpen] = useState(false)
@@ -27,8 +13,7 @@ export default function CookieConsent() {
             const gtag = (window as any).gtag
             if (!gtag) return
 
-            gtag("consent", "update", granted ? GOOGLE_CONSENT_GRANTED : GOOGLE_CONSENT_DENIED)
-            gtag("set", "ads_data_redaction", !granted)
+            gtag("consent", "update", { analytics_storage: granted ? "granted" : "denied" })
         } catch { }
     }
 
@@ -100,7 +85,7 @@ export default function CookieConsent() {
         notifyConsentChange()
     }
 
-    // Google tags are loaded only after explicit consent.
+    // Google Analytics is loaded only after explicit consent.
     useEffect(() => {
         if (consent === "accepted") {
             updateGoogleConsent(true)
@@ -114,7 +99,7 @@ export default function CookieConsent() {
 
     return (
         <>
-            {/* Google consent is updated here after the visitor makes a choice. */}
+            {/* Google Analytics consent is updated here after the visitor makes a choice. */}
 
             {/* Banner/modal */}
             {open && (
