@@ -39,15 +39,7 @@ const decodePathname = (pathname: string) => {
 };
 
 export const normalizePathname = (pathname: string): string => {
-    const normalized = normalizeSlashes(decodePathname(pathname));
-
-    if (normalized === "/") {
-        return normalized;
-    }
-
-    const withoutTrailingSlash = normalized.replace(/\/+$/, "");
-
-    return withoutTrailingSlash || "/";
+    return normalizeSlashes(decodePathname(pathname));
 };
 
 const toPathSet = (paths: Iterable<string>): ReadonlySet<string> =>
