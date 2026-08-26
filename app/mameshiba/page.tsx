@@ -286,7 +286,7 @@ export default function MameShibaPage() {
                                 Tout savoir sur le Mameshiba : son origine, sa taille et les critères d&apos;adoption, avant de se lancer.
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                Le Mameshiba est issu d’une sélection japonaise visant un format plus compact. Il présente généralement un tempérament souple et proche de l’humain, ce qui le rend globalement plus facile à éduquer.
+                                Le Mameshiba a été développé au Japon à partir de lignées de Shiba Inu sélectionnées pendant plusieurs générations pour leur petit format. Il constitue aujourd’hui un type distinct, avec ses propres critères de taille et de sélection.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
                                 Sa sélection sur plusieurs générations tend à favoriser des individus plus réceptifs, plus attentifs et plus enclins à coopérer, tout en conservant le physique primitif qui fait tout son charme.
