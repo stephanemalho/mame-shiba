@@ -562,7 +562,7 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Le Mameshiba descend du Shiba Inu et lui ressemble beaucoup dans son expression, sa silhouette et son tempérament primitif.
+          Le Mameshiba a été développé à partir de lignées de Shiba Inu sélectionnées pendant plusieurs générations. Il leur ressemble beaucoup dans son expression, sa silhouette et son tempérament primitif.
         </p>
         <p>
           La différence la plus visible reste la taille : le Shiba Inu adulte se situe autour de 39,5 cm chez le mâle et 36,5 cm chez la femelle, tandis que le Mameshiba est plus compact, avec un standard situé autour de 25 à 34 cm pour le mâle et 25 à 32 cm pour la femelle selon le KCJ.
@@ -575,10 +575,10 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Non. En France, le Mameshiba n'est pas reconnu au LOF à ce jour.
+          Non. En France, le Mameshiba n’est pas reconnu au LOF à ce jour.
         </p>
         <p>
-          Le Shiba Inu, lui, appartient bien au groupe 5 des chiens de type spitz et primitifs. Pour le Mameshiba, la référence souvent citée est le Kennel Club of Japan, qui enregistre des chiens mesurés et confirmés à l'âge adulte.
+          Le Shiba Inu, lui, appartient bien au groupe 5 des chiens de type spitz et primitifs. Pour le Mameshiba, la référence souvent citée est le Kennel Club of Japan, qui enregistre des chiens mesurés et confirmés à l’âge adulte.
         </p>
       </div>
     ),
@@ -588,10 +588,10 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Un Mameshiba sérieux ne se résume pas à un chien plus petit que la moyenne. L'éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
+          Un Mameshiba sérieux ne se résume pas à un chien plus petit que la moyenne. L’éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
         </p>
         <p>
-          La confirmation à plus d'un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN confirmant la cohérence de la lignée sont des repères importants pour éviter les faux Mameshiba.
+          La confirmation à plus d’un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN confirmant la cohérence de la lignée sont des repères importants pour éviter les faux Mameshiba.
         </p>
       </div>
     ),
@@ -604,7 +604,7 @@ export const faqMameShiba: FAQItem[] = [
           Le Mameshiba reste un petit chien primitif : éveillé, agile, propre, observateur et souvent très attaché à sa famille.
         </p>
         <p>
-          Il n'est pas fait pour une éducation dure. Il a besoin de cohérence, de respect et d'une socialisation sérieuse pour exprimer son meilleur équilibre.
+          Il n’est pas fait pour une éducation dure. Il a besoin de cohérence, de respect et d’une socialisation sérieuse pour exprimer son meilleur équilibre.
         </p>
       </div>
     ),
@@ -614,10 +614,10 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Oui. Le Mameshiba reste aujourd'hui une race très rare en France.
+          Oui. Le Mameshiba reste aujourd’hui une race très rare en France.
         </p>
         <p>
-          Cette rareté explique en partie la présence d'annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits chiens sans traçabilité sérieuse.
+          Cette rareté explique en partie la présence d’annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits chiens sans traçabilité sérieuse.
         </p>
       </div>
     ),
@@ -630,7 +630,7 @@ export const faqMameShiba: FAQItem[] = [
           Le Mameshiba possède un double poil et connaît des périodes de mue marquées.
         </p>
         <p>
-          En dehors de ces périodes, l'entretien reste raisonnable avec un brossage régulier, davantage soutenu au printemps et à l'automne.
+          En dehors de ces périodes, l’entretien reste raisonnable avec un brossage régulier, davantage soutenu au printemps et à l’automne.
         </p>
       </div>
     ),
@@ -640,10 +640,10 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Parce qu'un simple petit gabarit ne suffit pas à faire un Mameshiba. Sans sélection sérieuse, on peut obtenir des chiens trop petits, mal construits ou issus de croisements douteux.
+          Parce qu’un simple petit gabarit ne suffit pas à faire un Mameshiba. Sans sélection sérieuse, on peut obtenir des chiens trop petits, mal construits ou issus de croisements douteux.
         </p>
         <p>
-          Il vaut mieux vérifier la filiation, la cohérence de l'élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot "Mameshiba" sur une annonce.
+          Il vaut mieux vérifier la filiation, la cohérence de l’élevage, les certificats fournis et la qualité du suivi plutôt que se fier uniquement au mot « Mameshiba » sur une annonce.
         </p>
       </div>
     ),

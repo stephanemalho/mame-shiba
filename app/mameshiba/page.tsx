@@ -62,7 +62,7 @@ const sizes: SizeCard[] = [
         title: "Shiba Inu vs Mameshiba",
         height: "Mâle : 38 à 41 cm • Femelle : 35 à 38 cm",
         frame: "Standard LOF du Shiba Inu",
-        text: "Le Shiba Inu constitue la référence d'origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
+        text: "Le Shiba Inu constitue la référence d’origine. Le Mameshiba en reprend le type, la noblesse et la structure générale, mais dans un format plus compact sélectionné au Japon.",
         image: responsiveImages.shibaVsMameshiba,
         alt: "Shiba Inu et Mameshiba côte à côte dans l'herbe",
         caption: "Le Shiba Inu sert de référence de taille et de type pour comprendre le format Mameshiba.",
@@ -71,7 +71,7 @@ const sizes: SizeCard[] = [
         title: "Mameshiba mâle",
         height: "25 à 34 cm au garrot",
         frame: "Format compact et masculin",
-        text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d'un an, avec validation du type et de la taille.",
+        text: "Pour être enregistré comme Mameshiba, le chien doit avoir terminé sa croissance. La mesure officielle intervient à partir d’un an, avec validation du type et de la taille.",
         image: "/pages/le-mame-shiba/ichiro-mame-shiba-kawaii-shiba-portrait-v2.webp",
         alt: "Mameshiba roux et blanc assis dans l'herbe",
         caption: "Un Mameshiba mâle adulte doit rester compact tout en conservant une construction harmonieuse.",
@@ -80,7 +80,7 @@ const sizes: SizeCard[] = [
         title: "Mameshiba femelle",
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
-        text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques de la race, dans un petit gabarit.",
+        text: "La femelle Mameshiba conserve l’expression douce, les oreilles triangulaires, la queue portée sur le dos et l’allure vive typiques de la race, dans un petit gabarit.",
         image: "/pages/le-mame-shiba/mame-shiba-femelle-noire-et-blanche.webp",
         alt: "femelle mameshiba noire et blanche debout sur l'herbe, regard vif et expressif",
         caption: "La femelle Mameshiba garde une expression vive dans un format plus léger.",
@@ -133,7 +133,7 @@ const historySteps: HistoryStep[] = [
         title: "Une sélection poursuivie à partir des années 1950",
         description: (
             <>
-                Le travail de sélection s'est construit sur plusieurs générations à partir de sujets trop petits pour
+                Le travail de sélection s’est construit sur plusieurs générations à partir de sujets trop petits pour
                 entrer dans le standard classique. Les informations diffusées par le{" "}
                 <a
                     href="https://www.kcj.gr.jp/about_mameshiba.php"
@@ -152,7 +152,7 @@ const historySteps: HistoryStep[] = [
                 >
                     retour détaillé sur la reconnaissance
                 </a>{" "}
-                rappellent que l'objectif n'était pas de produire un chien fragile, mais de fixer un petit format cohérent,
+                rappellent que l’objectif n’était pas de produire un chien fragile, mais de fixer un petit format cohérent,
                 harmonieux et sain.
             </>
         ),
@@ -172,7 +172,7 @@ const historySteps: HistoryStep[] = [
                     rel="noopener noreferrer"
                     className={historyLinkClassName}
                 >
-                    page d'enregistrement dédiée
+                    page d’enregistrement dédiée
                 </a>
                 , les{" "}
                 <a
@@ -192,7 +192,7 @@ const historySteps: HistoryStep[] = [
                 >
                     liste des formulaires KCJ
                 </a>{" "}
-                montrent que la reconnaissance s'appuie sur la mesure à l'âge adulte et sur une traçabilité généalogique
+                montrent que la reconnaissance s’appuie sur la mesure à l’âge adulte et sur une traçabilité généalogique
                 rigoureuse.
             </>
         ),
@@ -292,7 +292,7 @@ export default function MameShibaPage() {
                                 Sa sélection sur plusieurs générations tend à favoriser des individus plus réceptifs, plus attentifs et plus enclins à coopérer, tout en conservant le physique primitif qui fait tout son charme.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                C'est un chien extrêmement rare et fascinant..
+                                C’est un chien extrêmement rare et fascinant.
                             </p>
                             <aside className="rounded-2xl border border-primary/15 bg-primary/6 p-4 text-sm leading-relaxed text-muted-foreground">
                                 <p className="flex gap-3">
@@ -300,7 +300,7 @@ export default function MameShibaPage() {
                                     <span>
                                         Petite précision : on ne dit pas <strong className=" text-red-500">Mame shiba</strong>.
                                         L&apos;appellation correcte est <strong className="text-green-500">le Mameshiba</strong>.
-                                        Un éleveur qui écrit encore le nom en deux mots mérite au minimum une petite vérification avant de lui confier votre projet
+                                        Un éleveur qui écrit encore le nom en deux mots mérite au minimum une petite vérification avant de lui confier votre projet.
                                         <BadgeAlert className="ml-1 inline h-4 w-4 align-[-0.125em] text-primary" aria-hidden="true" />
                                     </span>
                                 </p>
@@ -405,8 +405,8 @@ export default function MameShibaPage() {
                                 <div className="space-y-3">
                                     <h3 className="text-2xl font-semibold">Ce que retient le standard japonais</h3>
                                     <p className="text-muted-foreground max-w-3xl">
-                                        La race est sélectionnée au Japon depuis l’année 1950 par le
-                                        Kennel club of Japan.
+                                        La sélection du Mameshiba a commencé au Japon vers 1950, notamment sous l’impulsion du
+                                        Kennel Club of Japan.
                                     </p>
                                     <p className="text-muted-foreground max-w-3xl">Le Mameshiba est enregistré comme race distincte par le KCJ lorsqu’un sujet adulte présente le bon type, la bonne taille et une filiation documentée sur plusieurs générations.
                                     </p>
@@ -434,7 +434,7 @@ export default function MameShibaPage() {
                                 Origines et but de la création du Mameshiba
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Au Japon, l'urbanisation connaît une expansion fulgurante : entre 1930 et 1975, la population
+                                Au Japon, l’urbanisation connaît une expansion fulgurante : entre 1930 et 1975, la population
                                 des grandes villes est multipliée par dix.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
@@ -455,8 +455,8 @@ export default function MameShibaPage() {
                                 en commun plus adaptés à la vie citadine.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                C'est dans ce contexte que les éleveurs japonais commencent à sélectionner les plus petits
-                                individus de petit gabarit, avec un objectif clair : créer un chien capable de s'adapter
+                                C’est dans ce contexte que les éleveurs japonais commencent à sélectionner les plus petits
+                                individus de petit gabarit, avec un objectif clair : créer un chien capable de s’adapter
                                 parfaitement à la vie urbaine moderne.
                             </p>
                             <div className="space-y-3 rounded-2xl border border-border/60 bg-muted/40 p-5">
@@ -483,7 +483,7 @@ export default function MameShibaPage() {
                                 {
                                     icon: <ScrollText className="h-4 w-4 text-primary" aria-hidden="true" />,
                                     title: "Référence KCJ",
-                                    text: "Le Kennel Club of Japan est l'organisme généralement cité pour l'enregistrement officiel du Mameshiba.",
+                                    text: "Le Kennel Club of Japan est l’organisme généralement cité pour l’enregistrement officiel du Mameshiba.",
                                 },
                                 {
                                     icon: <Heart className="h-4 w-4 text-primary" aria-hidden="true" />,
@@ -754,7 +754,7 @@ export default function MameShibaPage() {
                             <li>Poids adulte miniature : 3 à 6 kg</li>
                             <li>Pedigree du Kennel Club of Japan</li>
                             <li>Tempérament facile à éduquer</li>
-                            <li>3 couleurs : noir et feu / fauve / blanc crème</li>
+                            <li>Trois couleurs : noir et feu / fauve / blanc crème</li>
                         </ul>
                         <div className="flex flex-col gap-4 justify-center sm:flex-row">
                             <Link
