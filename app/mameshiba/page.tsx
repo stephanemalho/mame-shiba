@@ -80,10 +80,10 @@ const sizes: SizeCard[] = [
         title: "Mameshiba femelle",
         height: "25 à 32 cm au garrot",
         frame: "Format compact et féminin",
-        text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques du Shiba Inu, dans un petit gabarit.",
+        text: "La femelle Mameshiba conserve l'expression douce, les oreilles triangulaires, la queue portée sur le dos et l'allure vive typiques de la race, dans un petit gabarit.",
         image: "/pages/le-mame-shiba/mame-shiba-femelle-noire-et-blanche.webp",
         alt: "femelle mameshiba noire et blanche debout sur l'herbe, regard vif et expressif",
-        caption: "La femelle Mameshiba garde l’expression vive du Shiba Inu dans un format plus léger.",
+        caption: "La femelle Mameshiba garde une expression vive dans un format plus léger.",
     },
 ]
 
@@ -133,7 +133,7 @@ const historySteps: HistoryStep[] = [
         title: "Une sélection poursuivie à partir des années 1950",
         description: (
             <>
-                Le travail de sélection s'est construit sur plusieurs générations à partir de Shiba Inu trop petits pour
+                Le travail de sélection s'est construit sur plusieurs générations à partir de sujets trop petits pour
                 entrer dans le standard classique. Les informations diffusées par le{" "}
                 <a
                     href="https://www.kcj.gr.jp/about_mameshiba.php"
@@ -234,6 +234,7 @@ export default function MameShibaPage() {
         name: pageMetadata.shiba.title,
         description: pageMetadata.shiba.description,
         url: siteConfig.pages.shiba,
+        about: { name: "Mameshiba" },
         images: [
             {
                 url: pageImage,
@@ -285,7 +286,7 @@ export default function MameShibaPage() {
                                 Tout savoir sur le Mameshiba : son origine, sa taille et les critères d&apos;adoption, avant de se lancer.
                             </h1>
                             <p className="text-lg text-muted-foreground leading-relaxed">
-                                Le Mameshiba est issu du Shiba Inu, en format miniature ! Contrairement au Shiba Inu classique, souvent réputé pour son indépendance marquée, le Mameshiba présente généralement un tempérament plus souple et plus proche de l’humain, ce qui le rend globalement plus facile à éduquer.
+                                Le Mameshiba est issu d’une sélection japonaise visant un format plus compact. Il présente généralement un tempérament souple et proche de l’humain, ce qui le rend globalement plus facile à éduquer.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
                                 Sa sélection sur plusieurs générations tend à favoriser des individus plus réceptifs, plus attentifs et plus enclins à coopérer, tout en conservant le physique primitif qui fait tout son charme.
@@ -335,7 +336,7 @@ export default function MameShibaPage() {
                                 <div className="absolute inset-0 bg-linear-to-t from-black/45 to-transparent" aria-hidden="true" />
                             </div>
                             <figcaption className="text-xs leading-relaxed text-muted-foreground">
-                                Le Mameshiba conserve le type du Shiba Inu dans un format plus compact.
+                                Le Mameshiba conserve son type caractéristique dans un format plus compact.
                             </figcaption>
                         </figure>
                     </section>
@@ -344,8 +345,8 @@ export default function MameShibaPage() {
                         <div className="text-center space-y-3">
                             <h2 className="text-xl md:text-2xl font-bold">Tailles et repères du Mameshiba</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto">
-                                Le Mameshiba vient du Shiba Inu. Sa lecture commence donc par un comparatif simple des tailles
-                                adultes, toujours exprimées au garrot.
+                                Pour situer le Mameshiba, voici un comparatif simple des tailles adultes, toujours exprimées au
+                                garrot.
                             </p>
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                         </div>
@@ -455,7 +456,7 @@ export default function MameShibaPage() {
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
                                 C'est dans ce contexte que les éleveurs japonais commencent à sélectionner les plus petits
-                                individus de Shiba Inu, avec un objectif clair : créer un chien capable de s'adapter
+                                individus de petit gabarit, avec un objectif clair : créer un chien capable de s'adapter
                                 parfaitement à la vie urbaine moderne.
                             </p>
                             <div className="space-y-3 rounded-2xl border border-border/60 bg-muted/40 p-5">
@@ -467,7 +468,7 @@ export default function MameShibaPage() {
                                     <li>plus facile à transporter au quotidien</li>
                                 </ul>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Tout en conservant l'élégance et l'âme du Shiba Inu.
+                                    Tout en conservant son élégance et son identité.
                                 </p>
                             </div>
                         </div>
@@ -476,7 +477,7 @@ export default function MameShibaPage() {
                             {[
                                 {
                                     icon: <History className="h-4 w-4 text-primary" aria-hidden="true" />,
-                                    title: "Héritier du Shiba Inu",
+                                    title: "Héritier du type japonais",
                                     text: "Silhouette plus fine, plus compacte, même queue portée sur le dos, même oreilles dressées et tempérament plus facile",
                                 },
                                 {
@@ -515,7 +516,7 @@ export default function MameShibaPage() {
                             <h2 className="text-xl md:text-2xl font-bold">Comment la race Mameshiba s’est construite</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto">
                                 Le Mameshiba n’est pas un effet de mode récent. Son histoire s’inscrit dans une sélection longue,
-                                centrée sur la réduction du format tout en conservant l’identité du Shiba Inu.
+                                centrée sur la réduction du format tout en conservant son identité et ses caractéristiques essentielles.
                             </p>
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                         </div>
@@ -582,8 +583,8 @@ export default function MameShibaPage() {
                         <div className="text-center space-y-3">
                             <h2 className="text-xl md:text-2xl font-bold">Standard, allure et couleurs</h2>
                             <p className="text-muted-foreground max-w-3xl mx-auto">
-                                Le Mameshiba doit rester immédiatement identifiable comme un petit Shiba Inu : compact, agile,
-                                bien construit, expressif, avec un double poil dense et une vraie présence.
+                                Le Mameshiba doit rester immédiatement identifiable : compact, agile, bien construit, expressif,
+                                avec un double poil dense et une vraie présence.
                             </p>
                             <div className="w-24 h-1 bg-primary mx-auto rounded-full" aria-hidden="true" />
                         </div>
@@ -689,7 +690,7 @@ export default function MameShibaPage() {
                                 </CardHeader>
                                 <CardContent className="text-sm text-muted-foreground leading-relaxed space-y-3">
                                     <p>
-                                        Beaucoup d’arnaques consistent à présenter de petits Shiba Inu comme des Mameshiba sans
+                                        Beaucoup d’arnaques consistent à présenter de petits chiens comme des Mameshiba sans
                                         traçabilité réelle. Plus le chien est vendu comme « ultra miniature », plus la prudence doit
                                         augmenter.
                                     </p>

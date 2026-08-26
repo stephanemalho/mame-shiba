@@ -403,6 +403,10 @@ export function generateWebPageSchema(params: {
     name: string;
     description: string;
     url: string;
+    about?: {
+        name: string;
+        url?: string;
+    };
     images?: StructuredImageInput[];
 }) {
     const images = getStructuredImages(params.images);
@@ -414,6 +418,15 @@ export function generateWebPageSchema(params: {
         description: params.description,
         url: toAbsoluteUrl(params.url),
         inLanguage: "fr-FR",
+        ...(params.about
+            ? {
+                  about: {
+                      "@type": "Thing",
+                      name: params.about.name,
+                      ...(params.about.url ? { url: toAbsoluteUrl(params.about.url) } : {})
+                  }
+              }
+            : {}),
         ...(images.length > 0
             ? {
                   primaryImageOfPage: images[0],

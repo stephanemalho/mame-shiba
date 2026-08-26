@@ -616,7 +616,7 @@ export const sitemapPages = [
         url: "/mameshiba",
         changefreq: "monthly",
         priority: 0.9,
-        lastmod: "2026-07-09"
+        lastmod: "2026-08-26"
     },
     {
         url: "/nos-chiens",

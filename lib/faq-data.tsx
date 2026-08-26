@@ -588,10 +588,10 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Un Mameshiba sérieux ne se résume pas à un Shiba Inu plus petit que la moyenne. L'éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
+          Un Mameshiba sérieux ne se résume pas à un chien plus petit que la moyenne. L'éleveur doit être capable de présenter une vraie traçabilité de lignée, avec un pedigree KCJ remontant sur plusieurs générations de Mameshiba.
         </p>
         <p>
-          La confirmation à plus d'un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN montrant l'absence d'autre race que le Shiba Inu sont des repères importants pour éviter les faux Mameshiba.
+          La confirmation à plus d'un an, la mesure officielle de la taille et, dans une démarche rigoureuse, un test ADN confirmant la cohérence de la lignée sont des repères importants pour éviter les faux Mameshiba.
         </p>
       </div>
     ),
@@ -617,7 +617,7 @@ export const faqMameShiba: FAQItem[] = [
           Oui. Le Mameshiba reste aujourd'hui une race très rare en France.
         </p>
         <p>
-          Cette rareté explique en partie la présence d'annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits Shiba Inu sans traçabilité sérieuse.
+          Cette rareté explique en partie la présence d'annonces trompeuses : certains chiots vendus comme Mameshiba sont en réalité de petits chiens sans traçabilité sérieuse.
         </p>
       </div>
     ),
@@ -627,7 +627,7 @@ export const faqMameShiba: FAQItem[] = [
     answer: (
       <div className="space-y-3">
         <p>
-          Comme le Shiba Inu, le Mameshiba possède un double poil et connaît des périodes de mue marquées.
+          Le Mameshiba possède un double poil et connaît des périodes de mue marquées.
         </p>
         <p>
           En dehors de ces périodes, l'entretien reste raisonnable avec un brossage régulier, davantage soutenu au printemps et à l'automne.
