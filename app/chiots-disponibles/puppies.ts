@@ -659,7 +659,8 @@ export const puppies: Puppy[] = [
         linkTo: defaultPuppyFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
-        priceIncludes: defaultPriceIncludes
+        priceIncludes: defaultPriceIncludes,
+        isReserved: true
     },
     {
         name: "BOTAN",
