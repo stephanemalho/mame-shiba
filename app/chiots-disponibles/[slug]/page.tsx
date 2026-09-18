@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { notFound, redirect } from "next/navigation"
+import { notFound, permanentRedirect, redirect } from "next/navigation"
 import type { Metadata } from "next"
 import {
     ArrowLeft,
@@ -134,7 +134,11 @@ export default async function PuppyDetailPage({ params }: PuppyPageProps) {
         notFound()
     }
 
-    if (puppy.isReserved) {
+    if (puppy.redirectTo) {
+        permanentRedirect(puppy.redirectTo)
+    }
+
+    if (puppy.isAdopted) {
         redirect("/chiots-disponibles")
     }
 

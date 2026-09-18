@@ -154,7 +154,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/okami"
     },
     {
         name: "KENSHI",
@@ -185,7 +186,8 @@ export const puppies: Puppy[] = [
             "shiba-mameshiba-kenshi-3.jpeg"
         ]),
         linkTo: yumiNatsuFormUrl,
-        isReserved: true,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/ko",
         price: malePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -225,7 +227,8 @@ export const puppies: Puppy[] = [
         ],
         linkTo: yumiNatsuFormUrl,
         price: malePrice,
-        isReserved: true,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/okami",
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan"
@@ -269,7 +272,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/okami"
     },
     {
         name: "KENSHIRO",
@@ -317,7 +321,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/okami"
     },
     {
         name: "MITSUKI",
@@ -348,7 +353,8 @@ export const puppies: Puppy[] = [
             "shiba-inu-mameshiba-mitsuki-3-6semaine.jpeg"
         ]),
         linkTo: karasukiWaruFormUrl,
-        isReserved: true,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin",
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -399,7 +405,8 @@ export const puppies: Puppy[] = [
         ],
         thumbnailImage: puppyImage("Airisu", "airisu-mameshiba-2-6semaine.jpeg", 0),
         linkTo: karasukiWaruFormUrl,
-        isReserved: true,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin",
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -447,7 +454,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin"
     },
     {
         name: "YUKI",
@@ -490,6 +498,8 @@ export const puppies: Puppy[] = [
         ],
         thumbnailImage: responsivePuppyImage("YUKI", "mameshiba-blanche-yuki", "mameshiba-femelle-blanche-yuki-1", 0),
         linkTo: sakuraWaruFormUrl,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin",
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -535,6 +545,8 @@ export const puppies: Puppy[] = [
         ],
         thumbnailImage: responsivePuppyImage("NEKO", "mameshiba-blanche-neko", "mameshiba-femelle-blanche-neko-1", 0),
         linkTo: soboWaruFormUrl,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin",
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
@@ -581,7 +593,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin"
     },
     {
         name: "YOSHI",
@@ -625,7 +638,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin"
     },
     {
         name: "OKAMI",
@@ -639,7 +653,7 @@ export const puppies: Puppy[] = [
         readyDate: "Date de disponibilité à confirmer",
         age: "Né le 5 juillet 2026",
         birthDate: "2026-07-05",
-        updatedAt: "2026-08-17",
+        updatedAt: "2026-09-18",
         description:
             "Okami est un mâle Mameshiba blanc crème issu de Hoshi et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
         highlights: [
@@ -650,12 +664,13 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: responsivePuppyImages("OKAMI", "mameshiba-blanc-okami", [
+            "mameshiba-blanc-okami-5",
             "mameshiba-blanc-okami-1",
             "mameshiba-blanc-okami-2",
             "mameshiba-blanc-okami-3",
             "mameshiba-blanc-okami-4"
         ]),
-        thumbnailImage: responsivePuppyImage("OKAMI", "mameshiba-blanc-okami", "mameshiba-blanc-okami-1", 0),
+        thumbnailImage: responsivePuppyImage("OKAMI", "mameshiba-blanc-okami", "mameshiba-blanc-okami-5", 0),
         linkTo: defaultPuppyFormUrl,
         price: malePrice,
         priceCurrency: "EUR",
@@ -693,6 +708,8 @@ export const puppies: Puppy[] = [
         ]),
         thumbnailImage: responsivePuppyImage("BOTAN", "mameshiba-blanc-botan", "mameshiba-blanc-botan-1", 0),
         linkTo: defaultPuppyFormUrl,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin",
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes
@@ -741,7 +758,8 @@ export const puppies: Puppy[] = [
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes,
         pedigree: "Kennel Club of Japan",
-        isReserved: true
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/ko"
     },
     {
         name: "BUNJI",
@@ -773,6 +791,8 @@ export const puppies: Puppy[] = [
         ]),
         thumbnailImage: responsivePuppyImage("BUNJI", "mameshiba-blanc-bunji", "mameshiba-blanc-bunji-1", 0),
         linkTo: defaultPuppyFormUrl,
+        isAdopted: true,
+        redirectTo: "/chiots-disponibles/kin",
         price: femalePrice,
         priceCurrency: "EUR",
         priceIncludes: defaultPriceIncludes
@@ -789,7 +809,7 @@ export const puppies: Puppy[] = [
         readyDate: "Date de disponibilité à confirmer",
         age: "Née le 11 juillet 2026",
         birthDate: "2026-07-11",
-        updatedAt: "2026-08-17",
+        updatedAt: "2026-09-18",
         description:
             "Kin est une femelle Mameshiba fauve issue de Kawaii et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
         highlights: [
@@ -800,13 +820,14 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: responsivePuppyImages("KIN", "mameshiba-fauve-kin", [
+            "mameshiba-fauve-kin-6",
             "mameshiba-fauve-kin-1",
             "mameshiba-fauve-kin-2",
             "mameshiba-fauve-kin-3",
             "mameshiba-fauve-kin-4",
             "mameshiba-fauve-kin-5"
         ]),
-        thumbnailImage: responsivePuppyImage("KIN", "mameshiba-fauve-kin", "mameshiba-fauve-kin-1", 0),
+        thumbnailImage: responsivePuppyImage("KIN", "mameshiba-fauve-kin", "mameshiba-fauve-kin-6", 0),
         linkTo: defaultPuppyFormUrl,
         price: femalePrice,
         priceCurrency: "EUR",
@@ -824,7 +845,7 @@ export const puppies: Puppy[] = [
         readyDate: "Date de disponibilité à confirmer",
         age: "Né le 11 juillet 2026",
         birthDate: "2026-07-11",
-        updatedAt: "2026-08-17",
+        updatedAt: "2026-09-18",
         description:
             "Ko est un mâle Mameshiba fauve issu de Kawaii et Natsu. Son évolution et son gabarit sont suivis avec attention à l'élevage.",
         highlights: [
@@ -835,11 +856,12 @@ export const puppies: Puppy[] = [
         ],
         health: defaultHealth,
         images: responsivePuppyImages("KO", "mameshiba-fauve-ko", [
+            "mameshiba-fauve-ko-4",
             "mameshiba-fauve-ko-1",
             "mameshiba-fauve-ko-2",
             "mameshiba-fauve-ko-3"
         ]),
-        thumbnailImage: responsivePuppyImage("KO", "mameshiba-fauve-ko", "mameshiba-fauve-ko-1", 0),
+        thumbnailImage: responsivePuppyImage("KO", "mameshiba-fauve-ko", "mameshiba-fauve-ko-4", 0),
         linkTo: defaultPuppyFormUrl,
         price: malePrice,
         priceCurrency: "EUR",

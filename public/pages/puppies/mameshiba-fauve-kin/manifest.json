@@ -1,6 +1,6 @@
 {
   "folderName": "mameshiba-fauve-kin",
-  "imageCount": 5,
+  "imageCount": 6,
   "generatedWith": "generate-puppy-responsive-assets.mjs",
   "images": [
     {
@@ -535,6 +535,113 @@
           "width": 1200,
           "height": 1800,
           "size": 185213
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "sourceFilename": "mameshiba-fauve-kin-6-source.jpeg",
+      "assetName": "mameshiba-fauve-kin-6",
+      "source": {
+        "width": 1366,
+        "height": 2048,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-kin-6-mobile.avif",
+          "relativePath": "avif/mameshiba-fauve-kin-6-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 19144
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-kin-6-tablet.avif",
+          "relativePath": "avif/mameshiba-fauve-kin-6-tablet.avif",
+          "width": 768,
+          "height": 1151,
+          "size": 43655
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-kin-6-desktop.avif",
+          "relativePath": "avif/mameshiba-fauve-kin-6-desktop.avif",
+          "width": 1200,
+          "height": 1799,
+          "size": 90034
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-kin-6-mobile.webp",
+          "relativePath": "webp/mameshiba-fauve-kin-6-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 38552
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-kin-6-tablet.webp",
+          "relativePath": "webp/mameshiba-fauve-kin-6-tablet.webp",
+          "width": 768,
+          "height": 1151,
+          "size": 88060
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-kin-6-desktop.webp",
+          "relativePath": "webp/mameshiba-fauve-kin-6-desktop.webp",
+          "width": 1200,
+          "height": 1799,
+          "size": 190150
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-fauve-kin-6-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kin-6-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 42230
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-fauve-kin-6-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kin-6-tablet.jpeg",
+          "width": 768,
+          "height": 1151,
+          "size": 95204
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-fauve-kin-6-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-fauve-kin-6-desktop.jpeg",
+          "width": 1200,
+          "height": 1799,
+          "size": 209653
         }
       ]
     }

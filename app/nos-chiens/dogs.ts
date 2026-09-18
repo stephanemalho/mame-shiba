@@ -17,53 +17,6 @@ export type AdultDog = {
 
 export const dogs: AdultDog[] = [
     {
-        name: "Ichiro",
-        title: "Shota Go dit ICHIRO - Mâle Mameshiba",
-        color: "Rouge / Red",
-        origin: "Importé du Japon",
-        lineage:
-            "Lignée de champion, petit-fils et fils de KC-Champion Kairyuu Go Prosperity Dogs",
-        size: "30 cm au garrot • 6,1 kg",
-        temperament:
-            "Avenant, doux, sensible, câlin, curieux, loyal et extrêmement intelligent. Ichiro est un chien de grande prestance, élégant, avec un regard profond et une vraie présence dans la meute.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques"
-        ],
-        images: [
-            {
-                src: "/pages/reproducteurs/ichiro-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait d'Ichiro, mâle Mameshiba de l'élevage Kawaii Shiba"
-            },
-            {
-                src: "/pages/reproducteurs/ISHIRO-mame-shiba-kawaii-shiba.webp",
-                alt: "Ichiro, mâle Mameshiba de l'élevage Kawaii Shiba"
-            }
-        ]
-    },
-    {
-        name: "Yuzu",
-        title: "YUZU - Femelle Mameshiba",
-        color: "Rouge / Red",
-        origin: "Importée du Japon",
-        lineage: "Excellente lignée japonaise",
-        size: "29,5 cm au garrot • 4,8 kg",
-        temperament:
-            "Curieuse, intelligente, malicieuse, joyeuse, active et pleine de vie. Yuzu est sélective dans ses affinités, mais lorsqu’on gagne son respect et son cœur, elle devient absolument adorable et très proche de l’humain.",
-        health: [
-            "Rotules 0/0",
-            "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques"
-        ],
-        images: [
-            {
-                src: "/pages/reproducteurs/yuzu-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Portrait de Yuzu, femelle Mameshiba de l'élevage Kawaii Shiba"
-            }
-        ]
-    },
-    {
         name: "Sakura",
         title: "SAKURA - Femelle Mameshiba",
         color: "Crème",
@@ -249,6 +202,85 @@ export const dogs: AdultDog[] = [
             {
                 src: "/pages/reproducteurs/WARU-male-mame-shiba-couleur-feu.webp",
                 alt: "Waru, mâle Mameshiba couleur feu"
+            }
+        ]
+    },
+    {
+        name: "Ikigai",
+        title: "IKIGAI - Femelle Mameshiba",
+        color: "Noire et feu",
+        origin: "Non précisé",
+        size: "27 cm au garrot • 3,4 kg",
+        temperament:
+            "Ikigai est une femelle Mameshiba noire et feu au format très compact, fidèle à la sélection de l’élevage Kawaii Shiba.",
+        health: [
+            "Rotules 0/0"
+        ],
+        images: [
+            {
+                src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Ikigai, femelle Mameshiba noire et feu de l'élevage Kawaii Shiba, debout dans l'herbe"
+            },
+            {
+                src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-2.webp",
+                alt: "Portrait d'Ikigai, femelle Mameshiba noire et feu, parmi le feuillage d'automne"
+            },
+            {
+                src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-3.webp",
+                alt: "Ikigai, femelle Mameshiba noire et feu, en mouvement dans l'herbe"
+            }
+        ]
+    },
+    {
+        name: "Hanami",
+        title: "HANAMI - Femelle Mameshiba",
+        color: "Blanche",
+        origin: "Née chez Kawaii Mameshiba",
+        lineage: "Certifiée et confirmée au Kennel Club of Japan",
+        size: "Taille au garrot à préciser • 3,3 kg",
+        temperament:
+            "Hanami est une femelle Mameshiba blanche née chez Kawaii Mameshiba, certifiée et confirmée au Kennel Club of Japan, dans un format compact fidèle à la sélection de l’élevage.",
+        health: [
+            "Rotules 0/0"
+        ],
+        images: [
+            {
+                src: "/pages/reproducteurs/hanami-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Hanami, femelle Mameshiba blanche de l'élevage Kawaii Shiba, debout dans l'herbe"
+            },
+            {
+                src: "/pages/reproducteurs/hanami-mame-shiba-kawaii-shiba-2.webp",
+                alt: "Hanami, femelle Mameshiba blanche, les pattes posées sur une branche"
+            },
+            {
+                src: "/pages/reproducteurs/hanami-mame-shiba-kawaii-shiba-3.webp",
+                alt: "Portrait de Hanami, femelle Mameshiba blanche née chez Kawaii Mameshiba"
+            }
+        ]
+    },
+    {
+        name: "Kitsune",
+        title: "KITSUNE - Femelle Mameshiba",
+        color: "Blanche",
+        origin: "Non précisé",
+        size: "26 cm au garrot • 3 kg",
+        temperament:
+            "Kitsune est une femelle Mameshiba blanche au très petit gabarit, fidèle à la sélection de l’élevage Kawaii Shiba.",
+        health: [
+            "Rotules 0/0"
+        ],
+        images: [
+            {
+                src: "/pages/reproducteurs/kitsune-mame-shiba-kawaii-shiba-portrait.webp",
+                alt: "Kitsune, femelle Mameshiba blanche de l'élevage Kawaii Shiba, en marche dans l'herbe"
+            },
+            {
+                src: "/pages/reproducteurs/kitsune-mame-shiba-kawaii-shiba-2.webp",
+                alt: "Kitsune, femelle Mameshiba blanche au très petit gabarit, dans l'herbe"
+            },
+            {
+                src: "/pages/reproducteurs/kitsune-mame-shiba-kawaii-shiba-3.webp",
+                alt: "Portrait de Kitsune, femelle Mameshiba blanche de l'élevage Kawaii Shiba"
             }
         ]
     }

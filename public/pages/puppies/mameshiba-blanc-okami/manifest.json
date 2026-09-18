@@ -1,6 +1,6 @@
 {
   "folderName": "mameshiba-blanc-okami",
-  "imageCount": 4,
+  "imageCount": 5,
   "generatedWith": "generate-puppy-responsive-assets.mjs",
   "images": [
     {
@@ -428,6 +428,113 @@
           "width": 1200,
           "height": 800,
           "size": 73349
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "sourceFilename": "mameshiba-blanc-okami-5-source.jpeg",
+      "assetName": "mameshiba-blanc-okami-5",
+      "source": {
+        "width": 1366,
+        "height": 2048,
+        "format": "jpeg"
+      },
+      "presets": [
+        {
+          "label": "mobile",
+          "requestedWidth": 480
+        },
+        {
+          "label": "tablet",
+          "requestedWidth": 768
+        },
+        {
+          "label": "desktop",
+          "requestedWidth": 1200
+        }
+      ],
+      "files": [
+        {
+          "format": "avif",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-5-mobile.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-5-mobile.avif",
+          "width": 480,
+          "height": 720,
+          "size": 12372
+        },
+        {
+          "format": "avif",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-5-tablet.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-5-tablet.avif",
+          "width": 768,
+          "height": 1151,
+          "size": 22452
+        },
+        {
+          "format": "avif",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-5-desktop.avif",
+          "relativePath": "avif/mameshiba-blanc-okami-5-desktop.avif",
+          "width": 1200,
+          "height": 1799,
+          "size": 40647
+        },
+        {
+          "format": "webp",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-5-mobile.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-5-mobile.webp",
+          "width": 480,
+          "height": 720,
+          "size": 24642
+        },
+        {
+          "format": "webp",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-5-tablet.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-5-tablet.webp",
+          "width": 768,
+          "height": 1151,
+          "size": 49300
+        },
+        {
+          "format": "webp",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-5-desktop.webp",
+          "relativePath": "webp/mameshiba-blanc-okami-5-desktop.webp",
+          "width": 1200,
+          "height": 1799,
+          "size": 95184
+        },
+        {
+          "format": "jpeg",
+          "preset": "mobile",
+          "filename": "mameshiba-blanc-okami-5-mobile.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-5-mobile.jpeg",
+          "width": 480,
+          "height": 720,
+          "size": 32411
+        },
+        {
+          "format": "jpeg",
+          "preset": "tablet",
+          "filename": "mameshiba-blanc-okami-5-tablet.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-5-tablet.jpeg",
+          "width": 768,
+          "height": 1151,
+          "size": 66207
+        },
+        {
+          "format": "jpeg",
+          "preset": "desktop",
+          "filename": "mameshiba-blanc-okami-5-desktop.jpeg",
+          "relativePath": "jpeg/mameshiba-blanc-okami-5-desktop.jpeg",
+          "width": 1200,
+          "height": 1799,
+          "size": 132842
         }
       ]
     }

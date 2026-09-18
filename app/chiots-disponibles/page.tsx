@@ -33,6 +33,8 @@ import { Badge } from "@/components/ui/badge"
 import { getPuppyParentProfiles } from "./puppy-parents"
 
 const visiblePuppiesForSeo = puppies.filter((puppy) => !puppy.isReserved && !puppy.isAdopted)
+// Les chiots réservés restent affichés pour suivre la portée ; les chiots adoptés sont retirés.
+const displayedPuppies = puppies.filter((puppy) => !puppy.isAdopted)
 const pageSeoImages = getPuppyListSeoImageSources(visiblePuppiesForSeo, 6)
 const pageImage = pageSeoImages[0] ?? "/pages/puppies/mameshiba-blanc-hotaru-1.jpg"
 
@@ -90,10 +92,10 @@ export default function NosChiotsPage() {
     ])
     const faqSchema = generateFAQSchema(convertFAQsToSchema(faqNosChiots))
     const lastMod = returnLastmod(siteConfig.pages.puppies)
-    const visiblePuppies = visiblePuppiesForSeo
+    const visiblePuppies = displayedPuppies
     const puppyCollectionPageStructuredData = buildPuppyCollectionPageStructuredData(visiblePuppies)
     const puppyStructuredData = buildPuppyItemListStructuredData(visiblePuppies)
-    const availablePuppiesCount = visiblePuppies.length
+    const availablePuppiesCount = visiblePuppiesForSeo.length
     const availablePuppiesTitle = availablePuppiesCount > 0
         ? `${availablePuppiesCount} chiot${availablePuppiesCount > 1 ? "s" : ""} disponible${availablePuppiesCount > 1 ? "s" : ""} à l'adoption`
         : "Aucun chiot disponible actuellement"

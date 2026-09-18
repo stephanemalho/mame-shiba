@@ -604,13 +604,13 @@ export const sitemapPages = [
         url: "/",
         changefreq: "monthly",
         priority: 1.0,
-        lastmod: "2026-08-17"
+        lastmod: "2026-09-18"
     },
     {
         url: "/chiots-disponibles",
         changefreq: "weekly",
         priority: 0.95,
-        lastmod: "2026-08-17"
+        lastmod: "2026-09-18"
     },
     {
         url: "/mameshiba",
