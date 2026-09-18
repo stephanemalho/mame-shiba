@@ -83,6 +83,36 @@ export const puppyParentProfilesByLabel: Record<string, PuppyParentProfile[]> = 
             href: "/nos-chiens#natsuko",
         },
     ],
+    "Parents : KAWAII & NATSU": [
+        {
+            role: "Mère",
+            name: "Kawaii",
+            image: "/pages/reproducteurs/kawaii-de-nuit-sur-un-rocher.webp",
+            description: "Femelle Mameshiba red, lignée 100% japonaise",
+            href: "/nos-chiens#kawaii",
+        },
+        {
+            role: "Père",
+            name: "Natsu",
+            image: "/pages/reproducteurs/natsuko-dit-natsu-mame-shiba-kawaii-shiba-portrait.webp",
+            description: "Mâle Mameshiba noir et feu",
+            href: "/nos-chiens#natsuko",
+        },
+    ],
+    "Parents : HOSHI & NATSU": [
+        {
+            role: "Mère",
+            name: "Hoshi",
+            description: "Fiche parent bientôt disponible",
+        },
+        {
+            role: "Père",
+            name: "Natsu",
+            image: "/pages/reproducteurs/natsuko-dit-natsu-mame-shiba-kawaii-shiba-portrait.webp",
+            description: "Mâle Mameshiba noir et feu",
+            href: "/nos-chiens#natsuko",
+        },
+    ],
 }
 
 export function getPuppyParentProfiles(parentLabel: string) {

@@ -142,7 +142,7 @@ export const dogs: AdultDog[] = [
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques",
+            "Indemne de maladies génétiques"
         ],
         images: [
             {
@@ -167,7 +167,7 @@ export const dogs: AdultDog[] = [
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques",
+            "Indemne de maladies génétiques"
         ],
         images: [
             {
@@ -192,7 +192,7 @@ export const dogs: AdultDog[] = [
         health: [
             "Rotules 0/0",
             "Test ADN Embark 100% Shiba Inu",
-            "Indemne de maladies génétiques",
+            "Indemne de maladies génétiques"
         ],
         images: [
             {
@@ -213,21 +213,15 @@ export const dogs: AdultDog[] = [
         size: "27 cm au garrot • 3,4 kg",
         temperament:
             "Ikigai est une femelle Mameshiba noire et feu au format très compact, fidèle à la sélection de l’élevage Kawaii Shiba.",
-        health: [
-            "Rotules 0/0"
-        ],
+        health: ["Rotules 0/0"],
         images: [
             {
-                src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Ikigai, femelle Mameshiba noire et feu de l'élevage Kawaii Shiba, debout dans l'herbe"
+                src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-3.webp",
+                alt: "Ikigai, femelle Mameshiba noire et feu, en mouvement dans l'herbe"
             },
             {
                 src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-2.webp",
                 alt: "Portrait d'Ikigai, femelle Mameshiba noire et feu, parmi le feuillage d'automne"
-            },
-            {
-                src: "/pages/reproducteurs/ikigai-mame-shiba-kawaii-shiba-3.webp",
-                alt: "Ikigai, femelle Mameshiba noire et feu, en mouvement dans l'herbe"
             }
         ]
     },
@@ -240,18 +234,8 @@ export const dogs: AdultDog[] = [
         size: "Taille au garrot à préciser • 3,3 kg",
         temperament:
             "Hanami est une femelle Mameshiba blanche née chez Kawaii Mameshiba, certifiée et confirmée au Kennel Club of Japan, dans un format compact fidèle à la sélection de l’élevage.",
-        health: [
-            "Rotules 0/0"
-        ],
+        health: ["Rotules 0/0"],
         images: [
-            {
-                src: "/pages/reproducteurs/hanami-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Hanami, femelle Mameshiba blanche de l'élevage Kawaii Shiba, debout dans l'herbe"
-            },
-            {
-                src: "/pages/reproducteurs/hanami-mame-shiba-kawaii-shiba-2.webp",
-                alt: "Hanami, femelle Mameshiba blanche, les pattes posées sur une branche"
-            },
             {
                 src: "/pages/reproducteurs/hanami-mame-shiba-kawaii-shiba-3.webp",
                 alt: "Portrait de Hanami, femelle Mameshiba blanche née chez Kawaii Mameshiba"
@@ -266,14 +250,8 @@ export const dogs: AdultDog[] = [
         size: "26 cm au garrot • 3 kg",
         temperament:
             "Kitsune est une femelle Mameshiba blanche au très petit gabarit, fidèle à la sélection de l’élevage Kawaii Shiba.",
-        health: [
-            "Rotules 0/0"
-        ],
+        health: ["Rotules 0/0"],
         images: [
-            {
-                src: "/pages/reproducteurs/kitsune-mame-shiba-kawaii-shiba-portrait.webp",
-                alt: "Kitsune, femelle Mameshiba blanche de l'élevage Kawaii Shiba, en marche dans l'herbe"
-            },
             {
                 src: "/pages/reproducteurs/kitsune-mame-shiba-kawaii-shiba-2.webp",
                 alt: "Kitsune, femelle Mameshiba blanche au très petit gabarit, dans l'herbe"
